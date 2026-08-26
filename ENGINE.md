@@ -14,7 +14,7 @@
 2. **若 N 超表（TOPICS.md 已无未写条目）：立即停止本次运行——不生成任何页面、不改 TOPICS.md、不自己发明新主题；只发一条 PushNotification『🏺 sociology-anthropology 已写完 TOPICS 路线图，请补充新主题后再继续』，然后结束。**（新条目由 BigCat / deep-research 反哺加进 TOPICS.md，届时你自动继续。）
 
 ## 版式基准（照抄）
-- **第一期（Day 1）确立全站版式基准**：配色照 index.html（暖陶土底 `#f7f3ee`、赤陶 `#7c3a2d`、青灰蓝 `#40586b`、卡片 `#fdfaf6`），衬线字体 Georgia/Noto Serif SC，卡片式版面，移动端响应式。**之后每期照第一期的配色 / CSS / 结构 / 深度照抄，别自造风格。**
+- **第一期（Day 1）确立全站版式基准**：配色照 index.html——深色博物馆夜展风（陶器打光感）：底 `#171210`、卡片 `#201915`、正文 `#e6dacc`、赤陶 `#e08155`、青灰蓝 `#8fb0cc`、弱化文字 `#a08b78`、描边 `#33261d`，衬线字体 Georgia/Noto Serif SC，卡片式版面，移动端响应式。**之后每期照第一期的配色 / CSS / 结构 / 深度照抄，别自造风格。**
 - **不要手动加** `← Hub` / comments.js / search.js / index-button.js / i18n-tts.js（Action 自动注入；但按 CLAUDE.md 要求在 `</body>` 前直接写入那 4 行共享脚本，免得机器人追加提交）。
 
 ## 每期结构
