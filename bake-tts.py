@@ -196,6 +196,11 @@ def normalize_for_tts(text: str) -> str:
     # obviously numeric/short-word contexts; leave "A=B" style alone since
     # it's often used as inline labelling in Chinese copy.
     text = _re.sub(r"\s+=\s+", " 等于 ", text)
+    # Field labels are written 【一句话直觉】 in the markup. Azure treats the
+    # brackets as punctuation and gives them no pause, so the label runs
+    # straight into the sentence after it. Turn them into "label，" instead:
+    # the label is announced, then a natural comma pause before the content.
+    text = _re.sub(r"【\s*([^】]{1,24}?)\s*】", r"\1，", text)
     # Strip decorative icons. Azure narrates them by name (🌀 → "龙卷风"),
     # which derails a heading like "🌀 越界 · 跨学科的联想". Runs AFTER the
     # ✓/✗/⚠ replacements above, which need those glyphs intact.
@@ -382,7 +387,7 @@ def collect_groups(soup) -> list[tuple]:
         for node in body.descendants:
             if id(node) in h2_set:
                 h2_seen += 1
-            if not hasattr(node, "name") or node.name not in NARRATION_TAGS:
+            if not hasattr(node, "name") or node.name not in NARRATION_TAGS + ("span",):
                 continue
             if node.find_parent("nav") or node.find_parent(class_="mmd-controls"):
                 continue
@@ -403,6 +408,24 @@ def collect_groups(soup) -> list[tuple]:
                     for child in node.children
                 )
                 if has_block_children:
+                    continue
+            # Field labels (【一句话直觉】, "Why it works", 照读模板 …) sit in a
+            # <span class="label"> whose parent div ALSO holds block children.
+            # That div is skipped just above as a wrapper, and a span is not a
+            # block tag — so without this the label was dropped from narration
+            # entirely and the listener got the fields run together with no
+            # markers. Mirrors the rule hub i18n-tts.js already uses in its
+            # client-side fallback: narrate a span only when its parent is a
+            # NON-leaf div; otherwise the parent (p / h2 / leaf div) already
+            # contains the span's text and we would say it twice. In particular
+            # <h2>中文<span class="en">English</span></h2> stays untouched — that
+            # span's parent is an h2, not a div.
+            if node.name == "span":
+                parent = node.parent
+                if getattr(parent, "name", None) != "div":
+                    continue
+                if not any(getattr(c, "name", None) in _BLOCK_TAGS
+                           for c in parent.children):
                     continue
             # Skip elements explicitly tagged as the opposite language
             if lang == "zh" and "en" in classes:
