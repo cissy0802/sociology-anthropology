@@ -77,9 +77,12 @@ for F in $NEW_FILES; do
     grep -q "$F" index.html || { echo "ERROR: index.html does not reference $F"; exit 1; }
   fi
 
-  # Forbidden hardcoded scripts (auto-injected by GitHub Action)
+  # Shared scripts: pages are expected to carry exactly one tag each (see CLAUDE.md).
+  # The inject-comments Action is idempotent, so pre-including them just avoids a bot
+  # commit; only a DUPLICATE tag is an error.
   for s in comments.js search.js index-button.js i18n-tts.js; do
-    grep -q "$s" "$F" && { echo "ERROR: $F hardcodes $s (auto-injected, will duplicate)"; exit 1; }
+    CNT=$(grep -c "$s" "$F" || true)
+    [ "$CNT" -gt 1 ] && { echo "ERROR: $F has $CNT copies of $s (duplicate script tag)"; exit 1; }
   done
   grep -q "← Hub" "$F" && echo "WARN: $F hardcodes ← Hub button (will be deduped, consider removing)"
 
