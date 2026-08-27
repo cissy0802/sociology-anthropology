@@ -1,159 +1,156 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>Sociology &amp; Anthropology Day 2: Durkheim and Social Facts</title>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sociology &amp; Anthropology Day 2: Durkheim and Social Facts</title>
 <style>
+
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:#171210;color:#e6dacc;line-height:1.85}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:linear-gradient(170deg,#1a140f,#171210 42%,#120e0b);color:#e6dacc;line-height:1.9;min-height:100vh}
 .container{max-width:760px;margin:0 auto;padding:24px 20px 60px}
-header{text-align:center;padding:48px 0 28px;border-bottom:1px solid #33261d}
-header .day{font-size:0.82rem;letter-spacing:3px;color:#a08b78;text-transform:uppercase}
-header h1{font-size:1.85rem;font-weight:800;color:#e08155;margin-top:10px;letter-spacing:1px}
-header .sub{font-size:0.95rem;color:#8fb0cc;margin-top:8px;font-style:italic}
-header .meta{margin-top:14px;font-size:0.8rem;color:#a08b78}
-header .meta span{display:inline-block;background:#2b211a;border-radius:20px;padding:3px 12px;margin:0 4px}
-.lede{margin:30px 0 6px;font-size:1.02rem;color:#cbbba9}
-.card{background:#201915;border-radius:8px;box-shadow:0 1px 10px rgba(0,0,0,0.35);border-left:3px solid #e08155;padding:26px 26px 22px;margin:30px 0}
-.card h2{font-size:1.28rem;color:#e08155;font-weight:700;line-height:1.5}
-.card h2 .en{display:block;font-size:0.9rem;color:#8fb0cc;font-weight:400;font-style:italic;margin-top:3px}
-.card .who{margin-top:10px;font-size:0.8rem;color:#a08b78}
-.card .who b{color:#8fb0cc;font-weight:600}
-.card .who .tag{background:#2b211a;border-radius:20px;padding:2px 10px;margin-left:6px;color:#e08155}
-.field{margin-top:20px}
-.field .label{font-size:0.85rem;font-weight:700;color:#8fb0cc;letter-spacing:1px;display:block;margin-bottom:5px}
-.field p{margin-bottom:9px}
-.field p:last-child{margin-bottom:0}
-em{color:#e08155;font-style:normal;font-weight:600}
-.term{color:#8fb0cc;font-style:italic}
-.evi{font-size:0.86rem;color:#a08b78;border-left:2px solid #33261d;padding-left:12px;margin-top:10px}
-.gist{margin-top:22px;padding:16px 18px;background:#241c17;border-radius:6px;font-size:0.96rem}
-.gist .one{font-weight:700;color:#e08155}
-.gist .q{display:block;margin-top:8px;color:#8fb0cc;font-style:italic}
-figure{margin:34px 0;text-align:center}
-figure svg{max-width:100%;height:auto}
-figcaption{font-size:0.83rem;color:#a08b78;margin-top:10px;font-style:italic}
-.deep{margin-top:46px;border-top:1px solid #33261d;padding-top:28px}
-.deep h2{font-size:1.3rem;color:#e08155;text-align:center;margin-bottom:20px}
-details{background:#201915;border-radius:6px;padding:14px 18px;margin-bottom:12px;box-shadow:0 1px 6px rgba(0,0,0,0.3)}
-summary{cursor:pointer;font-weight:600;color:#8fb0cc}
-details div{margin-top:10px;font-size:0.94rem;color:#cbbba9}
-footer{text-align:center;padding:40px 0 12px;font-size:0.8rem;color:#a08b78}
-@media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.container{padding:16px 14px 40px}}
+header{padding:52px 0 30px;border-bottom:1px solid #33261d}
+header .kicker{font-size:0.75rem;color:#8fb0cc;letter-spacing:2.5px;font-family:"SF Mono",Menlo,monospace}
+header h1{font-size:2.1rem;font-weight:800;background:linear-gradient(100deg,#e08155,#eda07c 58%,#8fb0cc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:0.5px;margin-top:12px;line-height:1.28}
+header h2{font-size:1rem;color:#a08b78;margin-top:10px;font-weight:400}
+header .meta{margin-top:14px;font-size:0.85rem;color:#a08b78}
+header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
+.intro{margin-top:30px;font-size:1.02rem;color:#d8c9b8}
+.intro p{margin-bottom:13px}
+.section{margin:46px 0;background:rgba(255,255,255,0.028);padding:28px 26px;border-radius:14px;border:1px solid rgba(255,255,255,0.06)}
+.section .num{display:inline-block;font-size:0.75rem;color:#e08155;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;margin-bottom:8px}
+.section h2{font-size:1.32rem;color:#f4ece2;margin-bottom:16px;font-weight:700;line-height:1.35}
+.section p{margin-bottom:14px;font-size:0.98rem}
+.section strong{color:#fff}
+.section em{color:#e08155;font-style:normal}
+.section ul{list-style:none;margin:14px 0}
+.section li{margin-bottom:10px;padding-left:20px;position:relative}
+.section li::before{content:"◈";position:absolute;left:0;top:0.42em;color:#e08155;font-size:0.7rem}
+.fig{margin:24px 0 10px;text-align:center}
+.fig svg{max-width:100%;height:auto}
+.fig .cap{font-size:0.82rem;color:#a08b78;margin-top:8px;text-align:left;line-height:1.65}
+.en-brief{margin-top:18px;padding:12px 16px;border-left:2px solid rgba(160,139,120,0.5);background:rgba(255,255,255,0.02);border-radius:0 8px 8px 0;font-size:0.85rem;color:#b0a08e;line-height:1.62}
+.en-brief b{color:#bda994;font-family:"SF Mono",Menlo,monospace;font-size:0.68rem;letter-spacing:1.5px;margin-right:9px;font-weight:700}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(143,176,204,0.12),rgba(224,129,85,0.05));border:1px solid rgba(143,176,204,0.34);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#8fb0cc;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#dfe3e6;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e08155;font-size:0.72rem}
+.crossx b{color:#aecbe2;font-weight:600}
+.thinking{background:linear-gradient(135deg,rgba(224,129,85,0.06),rgba(143,176,204,0.05));border:1px solid rgba(224,129,85,0.24);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e08155;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(18,14,11,0.5);border:1px solid rgba(224,129,85,0.2);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(224,129,85,0.06);border-color:rgba(224,129,85,0.42)}
+.thinking summary{cursor:pointer;color:#eda07c;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#8fb0cc}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(143,176,204,0.22);color:#ddd0c1;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#8fb0cc;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a08b78}
+.refs a{color:#e08155;text-decoration:none;border-bottom:1px dotted rgba(224,129,85,0.42)}
+.refs a:hover{color:#eda07c;border-bottom-color:#eda07c}
+.bigcat{margin:40px 0 0;background:linear-gradient(135deg,rgba(224,129,85,0.11),rgba(143,176,204,0.04));border:1px solid rgba(224,129,85,0.32);border-radius:14px;padding:22px 26px}
+.bigcat h3{color:#eda07c;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.bigcat ul{list-style:none;margin:0}
+.bigcat li{color:#ece0d2;font-size:0.93rem;line-height:1.8;margin-bottom:14px}
+.bigcat li:last-child{margin-bottom:0}
+.bigcat b{color:#eda07c;font-weight:600}
+footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
+@media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
 </style></head><body>
 <div class="container">
+
 <header>
-<div class="day">Day 2</div>
-<h1>Sociology &amp; Anthropology: Durkheim and Social Facts</h1>
-<div class="sub">Social facts · The sociology of suicide rates · Anomie · Integration and collective conscience</div>
-<div class="meta"><span>Sociological theory</span><span>Methodology</span><span>2026-08-26</span></div>
+<div class="kicker">DAY 2 · SOCIOLOGICAL THEORY</div>
+<h1>Durkheim and Social Facts</h1>
+<h2>Something that is neither in your head nor in your body, and still holds your hand down</h2>
+<div class="meta">2026-08-26 · BigCat</div>
+<div class="pitch">Individuals are unpredictable; rates have regularities. The whole discipline is staked on that one sentence.</div>
 </header>
-<p class="lede">Durkheim (Émile Durkheim, 1858–1917) founded a discipline on the least sociological subject imaginable: suicide. That was not coldness but strategy — if even the most private act can be systematically explained by social conditions, then the claim holds: there is a class of facts that lives neither in your head nor in your body, yet still moves your hand. Here are the four tools he built his case on, and where each stands today.</p>
-<div class="card">
-<h2>Social Fact<span class="en">Fait Social</span></h2>
-<div class="who">Theorist: <b>Émile Durkheim</b>, <i>The Rules of Sociological Method</i> (1895)<span class="tag">methodology</span></div>
-<div class="field"><span class="label">CORE INSIGHT</span>
-<p>Durkheim was staking out territory for a new discipline. Psychology already owned "individual consciousness," biology owned "the body" — what was left? His answer: there is a class of phenomena whose carrier is no single person but the relations between people — language, law, money, marriage customs, fashion. They bear two testable marks: <span class="term">exteriority</span> (they existed before you did) and <span class="term">constraint</span> (violate one and you meet resistance, from legal sanction to an awkward glance). The decisive move is not the platitude that "society influences individuals," but this: <em>treat social facts as things (choses)</em> — don't ask people why they say they act this way, ask under what conditions such acts become more or less common.</p></div>
-<div class="field"><span class="label">CLASSIC STUDY / FIELD CASE</span>
-<p>The cleanest examples are language and money. You had no part in setting the grammar of your first language; it was there before you, and you may violate it at the price of not being understood — that price is the whole content of constraint. A banknote's purchasing power likewise sits neither in the paper nor in any one person's belief, but in the distributed state where everyone believes that everyone else believes. His own methodological demonstration was <i>Suicide</i>: rather than guessing at any individual's inner state, compare the <b>suicide rate</b> — a quantity that exists only at the population level.</p>
-<div class="evi">Strength of evidence: this is a <b>disciplinary program</b>, not an empirical finding. Its initial empirical warrant was nineteenth-century moral statistics — Quetelet and others had noticed that crime and marriage rates were startlingly stable year over year. Durkheim started from exactly that contrast: individuals unpredictable, aggregates steady.</div></div>
-<div class="field"><span class="label">MECHANISM</span>
-<p>How can exteriority and constraint both hold without anyone issuing orders? Because a social fact is a <em>self-sustaining equilibrium</em>: each person complies because they expect others to comply, and each person's compliance constitutes everyone else's expectation. The rule sits in no single head; it lives in the loop of heads pointing at one another — which also explains why it resists change: the cost of deviating falls on the deviator alone, while the payoff arrives only if everyone moves together.</p></div>
-<div class="field"><span class="label">TODAY + CRITIQUE</span>
-<p>What companies call "culture" is mostly this: written into no policy document, yet new hires learn within weeks what hour it is acceptable to message and which remarks don't belong in a meeting. It is exterior and it constrains — which is why changing it is far harder than changing a process.</p>
-<p>Critique: the most durable objection is the charge of "social realism" — treating society as an entity standing above individuals, which slides easily into circular explanation. Methodological individualism insists that social phenomena must ultimately be reducible to intelligible chains of individual action. Most sociologists now hold a middle position: emergent patterns are real, but you owe an account of which individual interactions generate them — <em>irreducible is not the same as unexplained</em>.</p></div>
-<div class="field"><span class="label">CROSS-DISCIPLINARY ECHO</span>
-<p>Isomorphic with <span class="term">emergence</span> in complexity science: temperature is in no single molecule, yet it is really measurable and obeys laws of its own. But social facts carry one extra layer — they are visible to the participants, who adjust their behavior accordingly. Physical systems have no such reflexivity.</p></div>
-<div class="gist"><span class="one">In one line:</span> the evidence for a social fact isn't where it's written down — it's the resistance you meet when you break it.
-<span class="q">Question: in your team, is the rule with the most binding force precisely the one that was never written down?</span></div>
+
+<div class="intro">
+<p>To claim territory for a new discipline, Durkheim picked the least sociological subject available: suicide.</p>
+<p>That was not coldness, it was tactics. If even this — the most private thing, the thing that looks most like something going wrong inside one person — can be systematically explained by social conditions, then the claim he actually wanted to establish will hold: <strong>there is a class of facts that is neither in your head nor in your body, and that still holds your hand down.</strong></p>
 </div>
-<div class="card">
-<h2>The Sociology of Suicide Rates<span class="en">Le Suicide (1897)</span></h2>
-<div class="who">Theorist: <b>Durkheim</b>, <i>Suicide</i> · key critique: <b>Van Poppel &amp; Day</b> (1996)<span class="tag">classic study</span></div>
-<div class="field"><span class="label">CORE INSIGHT</span>
-<p>His claim is not that "society caused this person's death," but that "under different social conditions, suicide rates differ in stable ways" — <em>individuals are unpredictable; rates have regularities</em>. He proposed two axes: <span class="term">integration</span> (how far a person is woven into group life) and <span class="term">regulation</span> (how far the group normatively bounds individual desires and goals). Each axis can run too low or too high, yielding four types: egoistic (too little integration), altruistic (too much), anomic (too little regulation), fatalistic (too much regulation — mentioned only in a footnote).</p></div>
-<div class="field"><span class="label">CLASSIC STUDY / FIELD CASE</span>
-<p>Working from official statistics across Europe, he reported several stable differences: rates higher in Protestant than in Catholic regions; higher among the unmarried than the married, and lower still among those with children; falling during wars and major political crises. His explanation was consistent throughout — all of these are differences in integration: Catholicism wove believers into denser shared rites and shared doctrine while Protestantism handed interpretation back to the individual; marriage and childrearing lock people into networks of obligation; war manufactures an intense if temporary collective belonging.</p>
-<div class="evi">Strength of evidence: keep three layers apart. <b>(1) The methodological legacy</b> — using population-level rates for causal inference — is enormously influential and uncontested. <b>(2) The classic data</b> face a substantive challenge: Van Poppel &amp; Day (<i>ASR</i>, 1996) used Dutch individual death registrations from 1905–1910 that recorded each decedent's religion, and found Catholics far more likely than Protestants to be classified under "sudden," "accidental," or "unknown" cause of death — arguing the confessional gap was in large part an artifact of recording practice. That challenge was itself rebutted; the dispute is unsettled. Douglas (1967) and Atkinson (1978) go further: official suicide statistics are themselves the product of coroners' classification work, so using them to study social factors risks circularity. <b>(3) The core correlations</b> — marital status and religious participation against suicide rates — have recurred across a century and dozens of countries and are directionally robust; but the inference from those correlations to "integration" as the mechanism is far less secure than the correlations themselves.</div></div>
-<div class="field"><span class="label">MECHANISM</span>
-<p>A more general methodological lesson grew out of this: the <span class="term">ecological fallacy</span>. Robinson (1950) showed that a correlation at the group level cannot be carried down to individuals — "regions with more Protestants have higher suicide rates" does not entail "most of the deceased were Protestant," since the elevated rate could come from the Catholic minority in those regions. Durkheim's reasoning is the famous case of this inference. That doesn't refute his conclusions; it draws a clean boundary around what was actually demonstrated.</p></div>
-<div class="field"><span class="label">TODAY + CRITIQUE</span>
-<p>Today's public conversation about loneliness is a direct descendant of the egoistic strand: treating loneliness as a measurable health risk factor is precisely the move of re-encoding a private feeling as a comparable social condition. But beware Durkheim's excessive tidiness — integration is not monotonically good. Brantez &amp; Houle (<i>Socius</i>, 2024) analyzing U.S. county data suggest that highly integrated communities have lower overall suicide rates yet are more prone to suicide <b>clusters</b>: the same tie that carries support also carries imitation.</p>
-<p>Critique: the boundaries between the four types are often inoperable in real data, and how to measure "integration" and "regulation" independently of each other still has no agreed answer.</p></div>
-<div class="gist"><span class="one">In one line: individuals are unpredictable, rates have regularities — sociology bets everything on that sentence.</span>
-<span class="q">Question: of the "shoulds" you felt today, how many came from a specific person, and how many from a crowd of people you have never met?</span></div>
+
+<div class="section">
+<span class="num">// 01</span>
+<h2>You did not write the grammar of your language, and breaking it just means nobody understands you</h2>
+<p>Psychology had already taken individual consciousness, biology had taken the body. What was left for sociology?</p>
+<p>Durkheim&#39;s answer: there is a class of phenomena whose carrier is not any person but <strong>the relations between people</strong> — language, law, money, marriage custom, fashion. He called them <strong>social facts</strong> (<em>faits sociaux</em>) and gave two testable marks: <strong>exteriority</strong> (they existed before you) and <strong>constraint</strong> (breaking them meets resistance, from legal sanction to an awkward look).</p>
+<p>Language is the cleanest case. You did not help write the grammar of your language; it was there before you were born. You may of course break it, and the cost is that nobody understands what you said — <strong>that cost is the entire content of "constraint"</strong>, and it needs no enforcer. Money is the same: the purchasing power of a piece of paper is not in the paper but in the state of everyone believing that everyone else believes in it.</p>
+<p>The step that really matters is not "society influences individuals", which everyone agrees with. It is the methodological move that follows: <strong>study social facts as things</strong> — do not ask people why they say they do it, ask under what conditions this practice becomes more common and under what conditions it becomes rarer.</p>
+<p>How can something be exterior and constraining without anyone giving orders? Because a social fact is a <strong>self-sustaining equilibrium</strong>: each person conforms because they expect the others to, and each person&#39;s conformity constitutes everyone else&#39;s expectation. The rule is in no one&#39;s head; it lives in the loop of heads pointing at one another. Which also explains why it is so hard to change — <strong>the cost of deviating falls on the deviator alone, while the benefit only arrives if everyone moves together.</strong></p>
+<p>What a company calls its "culture" is mostly this: written into no policy document, yet a new hire learns within weeks what hour it is acceptable to message and what must not be said in a meeting. It is exterior and it constrains, which is why changing it is far harder than changing a process.</p>
+<p>On evidence: this is a <strong>disciplinary programme</strong>, not an empirical finding. Its empirical footing was nineteenth-century moral statistics — people had already noticed that crime rates and marriage rates were startlingly stable year to year, and Durkheim set out from precisely that contrast between unpredictable individuals and very steady totals. The most persistent criticism is that it treats society as an entity standing above individuals, which slides easily into circular explanation. Most people now take a middle position: <strong>the emergent pattern is real, but you owe an account of which individual interactions generate it — irreducible does not mean unexplainable.</strong></p>
 </div>
-<figure>
-<svg aria-label="Two-axis quadrant diagram of integration and regulation: egoistic, altruistic, anomic, fatalistic" role="img" viewbox="0 0 620 340">
-<rect fill="#201915" height="340" rx="8" width="620" x="0" y="0"></rect>
-<line stroke="#33261d" stroke-width="1.5" x1="60" x2="560" y1="170" y2="170"></line>
-<line stroke="#33261d" stroke-width="1.5" x1="310" x2="310" y1="34" y2="306"></line>
-<circle cx="310" cy="170" fill="#2b211a" r="42" stroke="#e08155" stroke-width="1.5"></circle>
-<text fill="#e08155" font-family="Georgia,serif" font-size="12" font-weight="bold" text-anchor="middle" x="310" y="167">Moderate</text>
-<text fill="#a08b78" font-family="Georgia,serif" font-size="9" text-anchor="middle" x="310" y="183">neither axis extreme</text>
-<text fill="#8fb0cc" font-family="Georgia,serif" font-size="11" text-anchor="middle" x="146" y="162">← too little integration</text>
-<text fill="#8fb0cc" font-family="Georgia,serif" font-size="11" text-anchor="middle" x="474" y="162">too much integration →</text>
-<text fill="#8fb0cc" font-family="Georgia,serif" font-size="11" text-anchor="middle" x="392" y="58">↑ too much regulation</text>
-<text fill="#8fb0cc" font-family="Georgia,serif" font-size="11" text-anchor="middle" x="392" y="292">↓ too little regulation</text>
-<rect fill="#241c17" height="46" rx="6" stroke="#e08155" stroke-width="1" width="140" x="58" y="196"></rect>
-<text fill="#e08155" font-family="Georgia,serif" font-size="12" font-weight="bold" text-anchor="middle" x="128" y="215">Egoistic</text>
-<text fill="#a08b78" font-family="Georgia,serif" font-size="9" text-anchor="middle" x="128" y="231">thin ties, no one counting on you</text>
-<rect fill="#241c17" height="46" rx="6" stroke="#e08155" stroke-width="1" width="140" x="422" y="196"></rect>
-<text fill="#e08155" font-family="Georgia,serif" font-size="12" font-weight="bold" text-anchor="middle" x="492" y="215">Altruistic</text>
-<text fill="#a08b78" font-family="Georgia,serif" font-size="9" text-anchor="middle" x="492" y="231">self dissolved into group duty</text>
-<rect fill="#241c17" height="46" rx="6" stroke="#8fb0cc" stroke-width="1" width="140" x="58" y="86"></rect>
-<text fill="#8fb0cc" font-family="Georgia,serif" font-size="12" font-weight="bold" text-anchor="middle" x="128" y="105">Fatalistic</text>
-<text fill="#a08b78" font-family="Georgia,serif" font-size="9" text-anchor="middle" x="128" y="121">every path sealed off</text>
-<rect fill="#241c17" height="46" rx="6" stroke="#8fb0cc" stroke-width="1" width="140" x="422" y="86"></rect>
-<text fill="#8fb0cc" font-family="Georgia,serif" font-size="12" font-weight="bold" text-anchor="middle" x="492" y="105">Anomic</text>
-<text fill="#a08b78" font-family="Georgia,serif" font-size="9" text-anchor="middle" x="492" y="121">baseline jumps, desire loses its scale</text>
-<text fill="#a08b78" font-family="Georgia,serif" font-size="10" text-anchor="middle" x="310" y="326">Horizontal = integration (immersion in group life) · Vertical = regulation (normative bounds on desire)</text>
-</svg>
-<figcaption>The four types are not four kinds of people but names for two continuous variables at their extremes — the value of the framework is in the axes, not the boxes.</figcaption>
-</figure>
-<div class="card">
-<h2>Anomie<span class="en">Anomie</span></h2>
-<div class="who">Theorist: <b>Durkheim</b>, <i>The Division of Labour</i> (1893), <i>Suicide</i> (1897) · reworked by <b>Robert K. Merton</b> (1938)<span class="tag">core concept</span></div>
-<div class="field"><span class="label">CORE INSIGHT</span>
-<p><span class="term">Anomie</span> literally means "without norms" and is usually rendered as "disorder," but Durkheim's sense is sharper and more counterintuitive: human desire has no intrinsic biological ceiling, and only social norms can set one. Once norms abruptly fail — through catastrophe or through prosperity alike — desire loses its frame of reference and can never catch up with itself. Hence the judgment that scandalized his contemporaries: <em>suicide rates rise in booms too</em>. It isn't getting poorer that hurts; it's that an abrupt change of position leaves "how much is enough" without an answer.</p></div>
-<div class="field"><span class="label">CLASSIC STUDY / FIELD CASE</span>
-<p>Forty years later, Merton's "Social Structure and Anomie" (<i>ASR</i>, 1938) rebuilt the concept entirely: anomie is no longer the disappearance of norms but a <b>structural mismatch between cultural goals and institutionalized means</b> — a society preaches one success goal to everyone (in his case, monetary success) while opening the legitimate route to only some. The resulting strain has five modes of adaptation: conformity, innovation (accepting the goal, not the means), ritualism (abandoning the goal, clinging to the procedure), retreatism, and rebellion.</p>
-<div class="evi">Strength of evidence: Merton's strain theory is among the most influential frameworks in twentieth-century criminology, but direct tests have been mixed — individual-level studies often fail to support the simple form in which a goals–means gap predicts deviance. Later revisions (Agnew's general strain theory, which widens the sources of strain well past blocked goals) are precisely a response to those inconsistencies. <b>Strong as an explanatory lens, weak as a predictive model.</b></div></div>
-<div class="field"><span class="label">MECHANISM</span>
-<p>Both versions share one structure: <em>the reference frame fails</em>. Durkheim's is vertical — you measure yourself against yesterday's self while the baseline lurches. Merton's is horizontal — everyone gets the same yardstick but roads of different lengths. The shared consequence: pain is set not by the absolute level but by the gap against an expectation that was <b>distributed</b> to you. Which is why simply raising the absolute level so often fails to help — expectations rise with it.</p></div>
-<div class="field"><span class="label">TODAY + CRITIQUE</span>
-<p>Ritualism is the cell most easily recognized in large organizations today: nobody believes in the goal any more, yet the procedure is executed scrupulously — the weekly report filed on time, the quarterly objectives written on schedule, with no one expecting either to change anything. That isn't laziness; it is a rational strategy for holding onto compliant standing when the goal is out of reach.</p>
-<p>Critique: Merton's version all but assumes monetary success is a society-wide unified goal, a questionable simplification in plural societies; Durkheim's version is hard to falsify — after the fact, any anomaly can be called a failure of norms. Fine as a diagnostic lens, risky as a causal model.</p></div>
-<div class="field"><span class="label">CROSS-DISCIPLINARY ECHO</span>
-<p>The same mechanism at two scales as psychology's <span class="term">relative deprivation</span>: at the individual level it is the felt gap after comparison with a reference group; at the social level the question becomes who distributes that reference frame and to whom it is open. The joint is this — <b>expectations are not chosen by the individual, they are handed out</b>; changing how they are handed out gets closer to the cause than urging people to adjust their attitude.</p></div>
-<div class="gist"><span class="one">In one line: it isn't scarcity that unmoors people — it's that "how much is enough" no longer has an answer.</span>
-<span class="q">Question: the goal you are chasing — did you set it, or did you inherit it from a reference frame that no longer applies?</span></div>
+
+<div class="section">
+<span class="num">// 02</span>
+<h2>Individuals are unpredictable; rates have regularities</h2>
+<p>Durkheim never argued that society causes a particular person&#39;s suicide. What he set out to show was different: <strong>under different social conditions, suicide rates differ stably.</strong></p>
+<p>From official statistics across Europe he reported several differences: Protestant regions above Catholic ones; unmarried above married, and those with children lower still; rates falling during wars and major political crises. His explanation was consistent throughout — differences in <strong>integration</strong>. Catholicism wove believers into denser shared ritual and doctrine, while Protestantism handed interpretation back to the individual; marriage and child-rearing lock a person into a web of obligations; war manufactures a temporary but intense collective belonging.</p>
+<p>How much of this survives? It has to be read in three layers, and the layers do not agree.</p>
+<p><strong>The methodological legacy</strong>: using group-level rates for causal inference. Enormously influential, and uncontested.</p>
+<p><strong>The original data</strong>: substantially challenged. One study used individual death registrations from the Netherlands for 1905–1910, which recorded the deceased&#39;s religion, and found that Catholic deaths were far more often filed under "sudden death", "accident" or "cause unknown" — suggesting the gap between the denominations was to a considerable degree an artefact of <strong>registration practice</strong>. That challenge was itself rebutted, and the argument is unresolved. A stronger version says official suicide statistics are products of coroners&#39; classification work in the first place, so using them to study social factors risks circularity.</p>
+<p><strong>The core correlations</strong>: the associations between marital status, religious participation and suicide rates have recurred across more than a century and dozens of countries, and the direction is robust. But moving from the correlation to "integration is what is doing the work" is far less secure than the correlation itself.</p>
+<p>One more general lesson grows out of this, called the <strong>ecological fallacy</strong>: a correlation at group level cannot be carried down to individuals. "Regions with more Protestants have higher suicide rates" does not imply "most people who die by suicide are Protestant" — the high rate could come from the Catholic minority in those regions. Durkheim&#39;s reasoning is the most famous case of this inference. It does not refute his conclusions; it draws a clear line around what was actually shown.</p>
 </div>
-<div class="card">
-<h2>Collective Conscience and Two Solidarities<span class="en">Conscience Collective / Mechanical &amp; Organic Solidarity</span></h2>
-<div class="who">Theorist: <b>Durkheim</b>, <i>The Division of Labour</i> (1893), <i>The Elementary Forms of Religious Life</i> (1912)<span class="tag">social theory</span></div>
-<div class="field"><span class="label">CORE INSIGHT</span>
-<p>Durkheim chased one question his whole life: people in modern societies grow ever more unlike one another — why hasn't the thing fallen apart? His answer is that solidarity changed form. Small traditional societies run on <span class="term">mechanical solidarity</span> — members resemble each other and share an intense <span class="term">collective conscience</span> (conscience collective); deviance injures that shared consensus itself, so law is primarily punitive. Modern societies run on <span class="term">organic solidarity</span> — the division of labour makes people unlike yet mutually dependent, and law shifts toward restoring the prior state. <em>Consensus did not vanish; it thinned and grew abstract</em>: the one sacred object modern society has left, he argued, is the individual.</p></div>
-<div class="field"><span class="label">CLASSIC STUDY / FIELD CASE</span>
-<p><i>The Elementary Forms</i> asks where consensus comes from. Using the Australian Aboriginal ethnographic material available at the time — chiefly Spencer &amp; Gillen's 1899 account of the Arunta of central Australia — he argued that what totemism holds sacred is in fact the clan's own emblem, and that the core of religion is not doctrine but <b>assembly itself</b>: people ordinarily dispersed gather at intervals, act in concert, and generate an excitement larger than any individual, which he called <span class="term">collective effervescence</span>.</p>
-<div class="evi">Strength of evidence: Durkheim never did fieldwork, relied entirely on secondhand reports, and leaned heavily on material from a single group (the Arunta). Radcliffe-Brown and others, drawing on their own fieldwork, argued that totemic institutions varied widely across Australia, that the central Australian pattern cannot stand for the whole, and that his selection of sources was selective. <b>The book's value today lies in its mechanism hypothesis, not its ethnographic conclusions</b>; the latter do not hold by modern standards. The legal-evolution thesis of <i>The Division of Labour</i> fared no better: Schwartz &amp; Miller (1964), comparing 51 societies, found restitutive sanctions (mediation, damages) common even in societies with almost no division of labour, contradicting the sequence in which penal law precedes restitutive law — though that finding has itself been debated since.</div></div>
-<div class="field"><span class="label">MECHANISM</span>
-<p>Collective effervescence can be spelled out concretely: co-presence + a shared focus of attention + synchronized movement and feeling → participants sense a force not their own → that feeling attaches to a symbol (totem, flag, team crest) → once the gathering disperses, the symbol becomes the storage medium for the emotion, letting the community persist through the days people spend apart. <em>Ritual does not express a community that already exists; it periodically remanufactures one.</em></p></div>
-<div class="field"><span class="label">TODAY + CRITIQUE</span>
-<p>This explains many modern settings with no religious content at all: concerts, stadiums, in-person tech conferences. Remote-first organizations often report a loss they struggle to name; the Durkheimian reading is that what moves online is information, while what does not move is the emotional energy generated by co-presence — and that is the adhesive of community. The mechanism itself is neutral: the same apparatus can generate mutual aid or exclusion.</p>
-<p>Critique: the standard functionalist ailment — inferring "why it exists" from "what function it serves" — slides easily into post-hoc rationalization and tends to underweight conflict and domination. That is the chief complaint from the conflict-theory tradition.</p></div>
-<div class="gist"><span class="one">In one line: a community is not expressed — it is periodically remanufactured.</span>
-<span class="q">Question: when was your last genuine moment of co-presence with a group you belong to? Has your sense of belonging grown since, or been quietly draining?</span></div>
+
+<div class="section">
+<span class="num">// 03</span>
+<h2>When the economy suddenly improves, suicide rates rise too</h2>
+<p>This is the most counterintuitive finding in the book, and the doorway to his second concept.</p>
+<p>That rates rise when an economy collapses is easy to understand. But he noticed that <strong>rates rise in sudden booms as well.</strong> If the suffering came from poverty, that makes no sense.</p>
+<p>His explanation is <strong>anomie</strong> (<em>anomie</em>) — literally "without norm", though it does not mean "no rules". It means this: <strong>desire has no internal stopping point, and what stops it is always an external yardstick</strong> — how much counts as enough in the position you occupy, what counts as respectable, who it is reasonable to compare yourself with. That yardstick is maintained collectively by the people around you, and in ordinary times you have no idea it is there.</p>
+<p>Violent change in either direction shatters it. Your position moves suddenly, the old frame of reference stops working and no new one has grown; desire loses its scale, becomes unbounded, and can therefore never be satisfied. <strong>What breaks people is not being poor, it is losing the means of measuring "enough".</strong></p>
+<p>The easiest place to recognise this today is any setting where income or feedback has no ceiling and no shared reference: the six months after a reorganisation, when seniority, career paths and the meaning of "doing well" have all been reshuffled; or work whose pay is set entirely by opaque distribution rules, so that neither a rise nor a fall comes with an explanation. <strong>What hurts is often not the number but that nobody can tell you what counts as normal.</strong></p>
+<p>Be explicit about evidence: this layer is weaker than the previous one. The original evidence for booms raising suicide rates comes from nineteenth-century statistics, coarsely defined and poorly comparable; and anomie is extremely hard to measure independently — how to quantify integration and regulation separately has no agreed answer, and the four suicide types are often inoperable on real data. <strong>The concept earns its keep through the question it poses — what gives desire its scale — rather than through the numbers it came with.</strong></p>
 </div>
-<div class="deep">
-<h2>Going Deeper</h2>
-<details><summary>How do you tell a "social fact" from "lots of people happening to do the same thing"?</summary>
-<div>Two tests. The <b>resistance test</b>: does deviating carry a cost independent of your own preferences — not "I don't like it" but "I get into trouble if I don't"? More useful still is the <b>replacement test</b>: swap out the whole group of people; is the practice still there? Coincidental uniformity dissipates as the population turns over; a social fact does not — it hangs on positions and relations, not on particular people.</div></details>
-<details><summary>Once the classic data are questioned, what is left of <i>Suicide</i>?</summary>
-<div>Be precise about which layer survives. The data layer took the heaviest damage; the mechanism layer is partly in doubt ("integration" still resists independent measurement); the method layer is nearly intact — posing causal questions with population-level rates and ruling out rivals by comparison defined the next century of quantitative sociology. A classic's value often lies in changing how later people ask questions, even when its own answers are overturned. <b>That a discipline can say exactly where its founding text went wrong is a sign of health.</b></div></details>
-<details><summary>Why is Durkheim so often read as biased toward order?</summary>
-<div>Because his central question — how is society possible? — already treats integration as the default good state and conflict as pathology. The conflict tradition's strongest rebuttal: what passes for consensus is often the product of domination rather than a spontaneous equilibrium, and the phrase "society needs X" hides the question of who benefits from X. In fairness, he also criticized the "forced division of labour" of his own society, where people were assigned positions by birth rather than talent; he was no apologist for the status quo. But the framework is genuinely better at explaining stability than change. Keep both, and the toolkit is complete.</div></details>
-<details><summary>If suicide rates are largely set by social conditions, what can an individual do?</summary>
-<div>Guard against a common misreading: Durkheim's proposition concerns <b>rates</b>, not any particular person — the regularity of a rate predicts nobody, and cancels no one's circumstances or choices. Its practical import is in fact quite concrete: the density of ties and the stability of norms shift with institutional arrangements, so directing resources at those conditions is a second path running alongside help at the individual level, not a substitute for it.</div></details>
+
+<div class="bigcat">
+<h3>🎒 Scenarios · BigCat</h3>
+<ul>
+<li><b>① Engineering and system design</b> — to find out what a team&#39;s real rules are, <strong>do not read the documentation; count who apologises and when</strong>. &ldquo;You did not write the grammar of your language&rdquo; says the whole content of constraint is the resistance you meet when you break something — so the real rules live where the resistance shows up, not where they were written down. Concretely: for two weeks, note every "sorry about that" and every interruption. You will end up with a rule list quite unlike the documented one.</li>
+<li><b>② Practice and inner life</b> — whenever a "I ought to…" surfaces, ask: <b>did a specific person say this to me, or is it a rule nobody can name a source for?</b> Same mechanism from &ldquo;you did not write the grammar of your language&rdquo;: a social fact is exterior and constraining and yet has no one issuing orders. The distinction changes one concrete action — if it came from a person, it can be discussed; if it came from that sourceless yardstick, discussion does nothing, and what you can do is write it down, see plainly what it is demanding, and then decide whether to grant it.</li>
+</ul>
 </div>
-<footer>BigCat Learning Hub · Sociology &amp; Anthropology · Day 2</footer>
+
+<div class="crossx">
+<h3>🌀 Crossing over</h3>
+<ul>
+<li><b>Distributed systems · common knowledge</b>: there is a classic problem in distributed systems where "I know" is not enough, and even "I know that you know" is not enough — some coordination only works when <b>everyone knows that everyone knows</b>. That is exactly what the mechanism in &ldquo;you did not write the grammar of your language&rdquo; describes: <b>each conforms because each expects the others to, and that expectation is constituted by their conformity</b>. From which follows something you would not otherwise see: <b>changing an unwritten rule by persuading people one at a time barely works</b> — the person you persuaded still expects everyone else to be unpersuaded, so behaves as before. What works is manufacturing a <b>public event everyone witnesses at the same time</b>, flipping the expectation in one move; which is why organisational change so often needs an all-hands rather than a round of conversations. <b>But here it breaks down</b>: a distributed system can be given an atomic broadcast primitive guaranteeing simultaneous delivery. Society has no such primitive — a "public event" is only an approximation, and someone is always absent, unconvinced, or pretending not to have heard.</li>
+<li><b>Evolutionary biology · selection acts on rates</b>: natural selection never predicts the fate of one animal either; it says only that under these conditions a certain type leaves offspring at a stably higher <b>rate</b>. The mechanism in &ldquo;individuals are unpredictable; rates have regularities&rdquo; is the same shape. From which follows a conclusion worth stating plainly: <b>explanations of this kind are constitutionally unable to answer "why me"</b>, and that is the only question a person in difficulty is asking — so they are bound to sound cold. That is not a matter of tone but of explanatory level; using one to console a specific person is the wrong tool. <b>But here it breaks down</b>: the rate in biology can be counted directly (how many survived, how many offspring), whereas a social rate has first to pass through a human classification step — which is precisely the coroner problem in &ldquo;individuals are unpredictable; rates have regularities&rdquo;. Biology has no layer where the statistic itself is constructed.</li>
+<li><b>Psychology · reference points</b>: experiments repeatedly show that what people feel about gains and losses depends on change <b>relative to some reference point</b> rather than on the absolute level, and that the same sum feels quite different going up and coming down. That is the individual-level counterpart of the mechanism in &ldquo;when the economy suddenly improves&rdquo;: <b>what stops desire is an external yardstick, not an absolute quantity</b>. Which yields a counterintuitive conclusion: <b>things getting better for everyone can also make everyone uneasy</b> — if every position is moving quickly, the reference point itself drifts, and improvement can make "how much is enough" harder to fix rather than easier. <b>But here it breaks down</b>: psychological reference points are mostly personal history and expectation, and adjusting your expectations does move them; the yardstick Durkheim describes is maintained collectively, so adjusting it alone changes nothing, because the people around you are still measuring you with the old one.</li>
+</ul>
+</div>
+
+<div class="thinking">
+<h3>One layer deeper</h3>
+<details><summary>If a social fact is exterior and constraining, where exactly does it exist?</summary>
+<div>Not in any person, but not somewhere outside people either. The safer formulation is that it exists in <strong>mutually pointing expectations</strong> — each person carries a prediction of what others will do, and those predictions together make themselves true. So it is neither an illusion (it has measurable consequences) nor an entity (there is nothing carrying it). That also explains its two ways of dying: either everyone stops expecting it at once (a form of etiquette vanishes almost overnight), or the people who maintained it are no longer there.</div>
+</details>
+<details><summary>If only rates have regularities, what can sociology say to a particular person?</summary>
+<div>More than you would think, but of a different type. It cannot say what will happen to you; it can say <strong>which distribution you are in and what is holding that distribution up</strong>. That helps in two situations: judging whether a kind of pain is widespread (which decides whether to look for a method or for other people in the same position), and judging whether an arrangement can be changed (which decides whether to invest or to leave). What it cannot do is replace individual-level explanation — why one person decided what they did on a given day always needs another vocabulary. Mixing the two produces sentences like "because of society, I…" which neither explain nor console.</div>
+</details>
+<details><summary>Does Durkheim&#39;s notion of integration imply that tighter communities are better?</summary>
+<div>No, and he did not say so — each of his two axes has a too-little and a too-much end, and excessive integration has its own cost (the individual is swallowed). Later data support this non-monotonicity: research suggests communities with high social integration have lower overall suicide rates but are more prone to <strong>clustering</strong> — the same ties that carry support also carry imitation. So "tight" is not a quantity to be monotonically optimised; it raises the conductivity of good things and bad things alike, and the net effect depends on what is being conducted.</div>
+</details>
+</div>
+
+<div class="refs">
+<h3>Further reading</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/%C3%89mile_Durkheim" target="_blank" rel="noopener">Émile Durkheim</a> · <a href="https://en.wikipedia.org/wiki/Suicide_(book)" target="_blank" rel="noopener"><em>Suicide</em> (1897)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Social_fact" target="_blank" rel="noopener">Social fact</a> — the two marks in &ldquo;you did not write the grammar of your language&rdquo;</li>
+<li><a href="https://en.wikipedia.org/wiki/Anomie" target="_blank" rel="noopener">Anomie</a> — the yardstick in &ldquo;when the economy suddenly improves&rdquo;</li>
+<li><a href="https://en.wikipedia.org/wiki/Ecological_fallacy" target="_blank" rel="noopener">Ecological fallacy</a> — why group correlations do not transfer to individuals</li>
+<li><a href="https://en.wikipedia.org/wiki/Common_knowledge_(logic)" target="_blank" rel="noopener">Common knowledge</a> — the distributed-systems item in the crossing-over box</li>
+</ul>
+</div>
+
+<footer>BigCat Learning Hub · Sociology &amp; Anthropology</footer>
 </div>
 <script src="https://hub.cissychen.com/comments.js" defer></script>
 <script src="https://hub.cissychen.com/search.js" defer></script>
