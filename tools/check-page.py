@@ -15,7 +15,7 @@ import sys, re, glob
 
 SINGLETON = ["header", "intro", "crossx", "bigcat", "thinking", "refs"]
 REQUIRED = ["crossx", "thinking", "refs"]
-LO, HI = 2900, 4000
+LO, HI = 2900, 4000  # 硬上限；ENGINE 建议区间 2900–3900
 
 
 def check(f):
