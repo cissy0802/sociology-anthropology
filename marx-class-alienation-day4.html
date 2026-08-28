@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>社会学与人类学 Day 4：马克思的社会学遗产</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:linear-gradient(170deg,#1a140f,#171210 42%,#120e0b);color:#e6dacc;line-height:1.9;min-height:100vh}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 60px}
+header{padding:52px 0 30px;border-bottom:1px solid #33261d}
+header .kicker{font-size:0.75rem;color:#8fb0cc;letter-spacing:2.5px;font-family:"SF Mono",Menlo,monospace}
+header h1{font-size:2.1rem;font-weight:800;background:linear-gradient(100deg,#e08155,#eda07c 58%,#8fb0cc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:0.5px;margin-top:12px;line-height:1.28}
+header h2{font-size:1rem;color:#a08b78;margin-top:10px;font-weight:400}
+header .meta{margin-top:14px;font-size:0.85rem;color:#a08b78}
+header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
+.intro{margin-top:30px;font-size:1.02rem;color:#d8c9b8}
+.intro p{margin-bottom:13px}
+.section{margin:46px 0;background:rgba(255,255,255,0.028);padding:28px 26px;border-radius:14px;border:1px solid rgba(255,255,255,0.06)}
+.section .num{display:inline-block;font-size:0.75rem;color:#e08155;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;margin-bottom:8px}
+.section h2{font-size:1.32rem;color:#f4ece2;margin-bottom:16px;font-weight:700;line-height:1.35}
+.section p{margin-bottom:14px;font-size:0.98rem}
+.section strong{color:#fff}
+.section em{color:#e08155;font-style:normal}
+.section ul{list-style:none;margin:14px 0}
+.section li{margin-bottom:10px;padding-left:20px;position:relative}
+.section li::before{content:"◈";position:absolute;left:0;top:0.42em;color:#e08155;font-size:0.7rem}
+.fig{margin:24px 0 10px;text-align:center}
+.fig svg{max-width:100%;height:auto}
+.fig .cap{font-size:0.82rem;color:#a08b78;margin-top:8px;text-align:left;line-height:1.65}
+.en-brief{margin-top:18px;padding:12px 16px;border-left:2px solid rgba(160,139,120,0.5);background:rgba(255,255,255,0.02);border-radius:0 8px 8px 0;font-size:0.85rem;color:#b0a08e;line-height:1.62}
+.en-brief b{color:#bda994;font-family:"SF Mono",Menlo,monospace;font-size:0.68rem;letter-spacing:1.5px;margin-right:9px;font-weight:700}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(143,176,204,0.12),rgba(224,129,85,0.05));border:1px solid rgba(143,176,204,0.34);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#8fb0cc;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#dfe3e6;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e08155;font-size:0.72rem}
+.crossx b{color:#aecbe2;font-weight:600}
+.thinking{background:linear-gradient(135deg,rgba(224,129,85,0.06),rgba(143,176,204,0.05));border:1px solid rgba(224,129,85,0.24);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e08155;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(18,14,11,0.5);border:1px solid rgba(224,129,85,0.2);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(224,129,85,0.06);border-color:rgba(224,129,85,0.42)}
+.thinking summary{cursor:pointer;color:#eda07c;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#8fb0cc}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(143,176,204,0.22);color:#ddd0c1;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#8fb0cc;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a08b78}
+.refs a{color:#e08155;text-decoration:none;border-bottom:1px dotted rgba(224,129,85,0.42)}
+.refs a:hover{color:#eda07c;border-bottom-color:#eda07c}
+.bigcat{margin:40px 0 0;background:linear-gradient(135deg,rgba(224,129,85,0.11),rgba(143,176,204,0.04));border:1px solid rgba(224,129,85,0.32);border-radius:14px;padding:22px 26px}
+.bigcat h3{color:#eda07c;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.bigcat ul{list-style:none;margin:0}
+.bigcat li{color:#ece0d2;font-size:0.93rem;line-height:1.8;margin-bottom:14px}
+.bigcat li:last-child{margin-bottom:0}
+.bigcat b{color:#eda07c;font-weight:600}
+footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
+@media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+</style></head><body>
+<div class="container">
+<header>
+<div class="kicker">DAY 4 · 社会学理论</div>
+<h1>马克思的社会学遗产</h1>
+<h2>他的很多预测落空了，他留下的那几件分析工具却被所有阵营接着用</h2>
+<div class="meta">2026-08-28 · BigCat</div>
+<div class="pitch">那批最早看穿"读书能改命"对自己多半不成立的孩子，正因为看穿了，才最先走进了工厂。</div>
+</header>
+<div class="intro">
+<p>一天结束，有人问你今天做了什么。你手上过了七八件事，可你说不清哪一件是"你的"。你不是不累，你是空。</p>
+<p>这一页讲的三件工具都从这种感觉出发：为什么干活会让人变空、社会里的位置按什么划、一套说法凭什么变成常识。先划一条界——这里只讲工具本身和它们后来受过的经验检验，不讲政治主张。一套解释说得清"会发生什么"，就是说不出"该要什么"。</p>
+</div>
+<div class="section">
+<span class="num">// 01</span>
+<h2>你做的东西，做完就不再跟你有关</h2>
+<p>1844 年，一个二十六岁的人在巴黎写了一叠手稿，生前没发表，躺了将近九十年，到 1930 年代初才印出来——所以二十世纪的读者认识的这位"青年马克思"，比《资本论》晚半个多世纪才进入视野。</p>
+<p>手稿里有个词：异化（Entfremdung，也译疏离），最容易被理解错。它<strong>不是</strong>"活儿太累"，也<strong>不是</strong>"不喜欢这份工作"，而是一组<strong>关系被切断</strong>。马克思列了四条：</p>
+<p>一是和产品：东西你做出来，做完归别人，攒成的力量反过来压在你头上。二是和劳动过程：做什么、怎么做、什么时候停都不由你定，于是干活的时候你反而最不像自己，下了班才觉得活过来。三是和人之为人的那部分（他叫类本质，Gattungswesen）：人跟别的动物的区别在于能先在脑子里画出图纸再动手，一旦劳动只剩下换饭吃的手段，这条就被抽掉了。四是和别人：同做一件事的人相互变成竞争者。</p>
+<div class="fig">
+<svg viewbox="0 0 620 300" xmlns="http://www.w3.org/2000/svg">
+<circle cx="310" cy="150" fill="rgba(224,129,85,0.16)" r="52" stroke="#e08155" stroke-width="1.6"></circle>
+<text fill="#f4ece2" font-family="Georgia,serif" font-size="14" text-anchor="middle" x="310" y="146">干活的</text>
+<text fill="#f4ece2" font-family="Georgia,serif" font-size="14" text-anchor="middle" x="310" y="166">那个人</text>
+<line stroke="#8fb0cc" stroke-dasharray="6 7" stroke-width="1.4" x1="258" x2="150" y1="118" y2="66"></line>
+<line stroke="#8fb0cc" stroke-dasharray="6 7" stroke-width="1.4" x1="362" x2="470" y1="118" y2="66"></line>
+<line stroke="#8fb0cc" stroke-dasharray="6 7" stroke-width="1.4" x1="258" x2="150" y1="182" y2="234"></line>
+<line stroke="#8fb0cc" stroke-dasharray="6 7" stroke-width="1.4" x1="362" x2="470" y1="182" y2="234"></line>
+<g fill="none" stroke="#e08155" stroke-width="2">
+<path d="M198 88 l14 12 M212 88 l-14 12"></path>
+<path d="M408 88 l14 12 M422 88 l-14 12"></path>
+<path d="M198 200 l14 12 M212 200 l-14 12"></path>
+<path d="M408 200 l14 12 M422 200 l-14 12"></path>
+</g>
+<rect fill="rgba(143,176,204,0.10)" height="40" rx="9" stroke="rgba(143,176,204,0.45)" width="196" x="30" y="26"></rect>
+<text fill="#bfd2e2" font-family="Georgia,serif" font-size="12.5" x="46" y="51">做出来的东西：归别人</text>
+<rect fill="rgba(143,176,204,0.10)" height="40" rx="9" stroke="rgba(143,176,204,0.45)" width="196" x="394" y="26"></rect>
+<text fill="#bfd2e2" font-family="Georgia,serif" font-size="12.5" x="410" y="51">劳动过程：不由你定</text>
+<rect fill="rgba(143,176,204,0.10)" height="40" rx="9" stroke="rgba(143,176,204,0.45)" width="196" x="30" y="234"></rect>
+<text fill="#bfd2e2" font-family="Georgia,serif" font-size="12.5" x="46" y="259">先构想再动手：被抽掉</text>
+<rect fill="rgba(143,176,204,0.10)" height="40" rx="9" stroke="rgba(143,176,204,0.45)" width="196" x="394" y="234"></rect>
+<text fill="#bfd2e2" font-family="Georgia,serif" font-size="12.5" x="410" y="259">同做一件事的人：成对手</text>
+</svg>
+<div class="cap">四条被切断的关系。没有一条画的是"辛苦程度"——这套说法的自变量始终是决定权与归属。</div>
+</div>
+<p>1964 年，Blauner 把这四条改写成能问出口的问题——无力感、无意义感、孤立感、自我疏离——去四种技术条件完全不同的工厂做调查：印刷厂（手艺活）、纺织厂（看管机器）、汽车装配线、化工厂（连续流程）。结果不是"技术越先进越异化"，而是一条倒 U 形：手艺工人最低，装配线最高，化工厂又降回来——那里的工人靠专业知识盯着整套系统，手上反而有裁量权。</p>
+<p>证据强度要标死：1960 年代的<strong>横截面问卷加行业个案</strong>，不是因果设计。它挨的批评也硬——Blauner 把技术当成主因，等于把"归谁所有"那条放到一边，而那正是马克思这套说法的核心。所以这是个双面结论：支持了自主性是关键变量，同时推开了所有权解释。</p>
+<p>1983 年，Hochschild 在一家航空公司的空乘训练中心看到了另一层：学员被反复教导，把客舱当成自家客厅、把陌生人当成自己请来的客人，微笑必须显得是真的。她把这叫情感劳动，并分出表层扮演（只改表情）与深层扮演（真的把情绪调动起来）。异化清单于是多一项——被买走的不只是时间和手，还有你的感受该是什么样。证据是<strong>训练观察加访谈的个案</strong>。</p>
+<p class="en-brief"><b>EN</b> Alienation, in the 1844 manuscripts, is not fatigue or dislike of a job but four severed relations: to the product, to the act of producing, to what makes us human, and to other people. Its driving variable is control and ownership, not how hard the work is. Blauner (1964) operationalised it across four industries and found an inverted-U curve; the study supports autonomy as the key variable while quietly dropping the ownership claim. Hochschild (1983) added a fifth item to the list: feeling itself written into the job description.</p>
+</div>
+<div class="section">
+<span class="num">// 02</span>
+<h2>问的不是你挣多少，是你的钱从哪里来</h2>
+<p>两个人这个月收入一样：一个是工资，一个是把两套房子租出去。在收入排行榜上他们并排站着；可要是两人同时停下手里的事，下个月的日子立刻分开。</p>
+<p>马克思的阶级不是收入梯子上的高低，是<strong>你和生产资料的关系</strong>——你手里有没有能让别人替你干活的东西（厂房、设备、资本），还是只有自己的劳动力可卖。这带来两个后果。一是阶级是<strong>关系性</strong>的：一方的位置由另一方定义，不像"年收入"那样是各人自己的属性。二是双方在分配上的利益系统性地不重合，秩序里因此内建着张力，<strong>不需要任何人心怀恶意</strong>。这就是冲突论的骨架。</p>
+<p>另一派的最强表述也要摆出来。1945 年 Davis 和 Moore 给了功能论版本：分层是一台配置机器——有些位置更难、更要紧、要训练更久，社会得给更高的报酬和声望才招得到人。1953 年 Tumin 的反驳同样有力：谁来判定哪个位置"更要紧"？分层本身还会挡住一批有能力的人，让他们连试的机会都没有。这场辩论吵了二十多年<strong>没有裁决</strong>，两边都别当定论用。</p>
+<p>还要诚实地说：他几条主要预测的方向都没走对。中间阶层没有被挤压殆尽，二十世纪反而大幅扩张；工人没有在绝对意义上越来越穷，发达工业国的实际工资长期上升；革命也没有先发生在工业化最深的地方，而是出现在农业国。</p>
+<p>修补也在这个传统内部发生。1970 年代 Erik Olin Wright 造了"矛盾的阶级位置"：一个中层管理者既不拥有这家企业，又实实在在地支配别人的劳动，他同时占着两个位置的一部分。今天做经验研究更常用的则是另一套图式（按三位作者的姓氏叫 Erikson–Goldthorpe–Portocarero）：不按所有权二分，而按<strong>雇佣关系的类型</strong>分——一端是按小时或按件计的劳动合约，另一端是给专业与管理岗位的"服务关系"：薪水、职业阶梯、长期承诺，换忠诚和裁量权。</p>
+<p>证据强度：这类图式在预测健康、教育和投票上有稳定的<strong>相关</strong>，但它和收入、学历高度重叠，很难说清哪一个在起作用；近年也有研究质疑它建立在工业时代的雇佣形态上。</p>
+<p class="en-brief"><b>EN</b> For Marx class is not a rung on an income ladder but a relation to the means of production, which makes it relational and structurally conflictual without anyone being malicious. The functionalist counter-case (Davis and Moore 1945, Tumin's 1953 reply) is presented at full strength and was never settled. Several of Marx's own predictions ran the wrong way; later work inside the tradition patched the two-class picture with contradictory class locations and, in empirical research, with schemas built on employment relations rather than ownership.</p>
+</div>
+<div class="section">
+<span class="num">// 03</span>
+<h2>一套说法能不能流行，跟它对不对是两件事</h2>
+<p>重组那阵子，"我们是一家人"这句话出现的频率会突然升高。这不一定是谁在演。有意思的是：<strong>为什么偏偏是这句，偏偏在这时候，被这么多人同时说出口。</strong></p>
+<p>马克思 1859 年给过一个著名比喻：一个社会有它的经济基础（人们怎么生产、生产中结成什么关系），上面立着法律、政治和观念的上层建筑。批评先说在前面：严格版本太机械，箭头只朝一个方向。这不只是外人的意见——恩格斯晚年在信里就退了一步，说经济只是"归根到底"起作用。今天几乎没人用严格版。</p>
+<p>耐用的是另一条。《德意志意识形态》里的说法是：每个时代占统治地位的思想，是统治阶级的思想。要把它读成<strong>机制</strong>而不是阴谋——不是有人撒谎，而是<strong>哪些说法有条件被大量生产、反复重复、最后被当成常识</strong>，这跟谁掌握着印刷机、学校、片场、推荐位有关。一个说法流不流行和它对不对，走的是两条因果链，没理由默认它们总是重合。</p>
+<p>最能说明这条机制的田野工作，得出的却是一个反直觉的结论。1970 年代前期，Paul Willis 在英格兰中部一所男校跟了 12 个工人阶级男孩，在校观察一年半，又跟着他们进厂半年。这些孩子不是被学校骗了。他们<strong>看穿了</strong>"好好读书就能翻身"对他们这一群人多半不成立：升上去的名额很少，代价是十几年的顺从。看穿之后他们选了反抗——课上捣乱、看不起用功的同学、把体力活里的男子气概抬得很高。正是这一整套姿态，让他们自己走进了体力工作。Willis 的结论是：把人送回原处不一定要靠欺骗，<strong>部分的看穿也能做到</strong>。</p>
+<p>证据强度必须钉死：12 个人的<strong>个案民族志</strong>，单一学校、全是男生、五十年前的英国工业区，不能外推成普遍规律。常见批评还包括：他把这套反抗文化写得偏浪漫，对其中的性别歧视与暴力谈得太轻。</p>
+<p>相反方向的一手也要摆上。「韦伯与理性化」那期走的正是反路：观念不是派生物，一套关于救赎的焦虑能造出一整套经济纪律。两边加起来才是今天的常规做法——在哪个场合谁更吃重是经验问题，不是立场问题。</p>
+<p class="en-brief"><b>EN</b> The base-and-superstructure metaphor survives today only in a loose form; Engels himself softened it late in life. The durable claim is about ideology read as a mechanism rather than a conspiracy: which accounts get mass-produced and repeated until they count as common sense. Willis's twelve boys are the counter-intuitive case — they saw through the promise of schooling and, by rebelling, walked into manual work themselves. Reproduction does not require deception.</p>
+</div>
+<div class="bigcat">
+<h3>🎒 场景 · BigCat</h3>
+<ul>
+<li><b>① 带团队与组织</b>——一个反复发生的情境：某个东西做完上线，人当天就被调去下一件，之后再没人回来说它后来怎么样了。「你做的东西，做完就不再跟你有关」那节说，这里断掉的是"我做的—我看见它的下场"，和报酬无关，加钱补不上。可改的动作很小：交付时就把一个<b>回访时点</b>写进计划——三个月后把使用情况发回给做的人，明说不作考核用途——并停掉"上线即结项"这个默认。</li>
+<li><b>② 健康与精力</b>——同样是十个小时，有几天你晚上还想读点东西，有几天回家只想瘫着，而两天的辛苦程度看着差不多。差别常常不在时长，在这十个小时里<b>有多少是你自己排的顺序</b>。可改的是记录口径：别记工时，记"今天有几小时是我自己定的先后"，连记两周，再看它跟晚上还有没有余力对不对得上。</li>
+</ul>
+</div>
+<div class="crossx">
+<h3>🌀 越界 · 跨学科的联想</h3>
+<ul>
+<li><b>神经科学 · 主体感是知觉，不是判断</b>：实验室里有个很稳的发现叫意向捆绑——你自己按下按钮再听到一声响，会觉得这两件事之间的间隔比实际更短；同样的手指被别人推着动、听到同样的声音，这个压缩就消失了。也就是说，"这是我做的"不是事后想出来的结论，它已经改变了知觉本身。「你做的东西，做完就不再跟你有关」那节的机制说，关键变量是决定权而不是劳动强度。由此能推出一个原本看不出的结论：<b>同一件工作，"被指派"和"自己选的"不是两种说法，它们在最底层的知觉上就已经分岔了</b>；那么把自主权当成一种可以用加薪替换的福利，在机制上讲不通——报酬作用在愿不愿意做上，决定权作用在这件事被经验成什么样上，两者不同层。<b>但这里不成立</b>：意向捆绑是毫秒尺度、个体之内、实验室里可以任意操纵的效应；异化那套说的是制度性的、人和人之间的关系——谁定做什么、成果归谁、你和同事是什么关系。你完全可以在所有权和分配一动不动的地方，靠让人自己排任务顺序造出一点主体感，可那四条关系一条也没动。把异化当成主体感的放大版，会把整个分析悄悄化约成界面设计问题。</li>
+<li><b>演化生物学 · 拉扯不需要谁不懂事</b>：1974 年 Trivers 指出，父母和子女的遗传利益重合但不完全一致，所以断奶、争食这类拉扯可以预期，不需要假设谁任性。二十年后 Haig 把同一逻辑推进到怀孕：胎儿这边的基因被选择去多要养分，母体这边的被选择去把转移限制在自身最优点上，妊娠期糖尿病、子痫前期因此被解释成这场拉扯的副产品。「问的不是你挣多少，是你的钱从哪里来」那节的机制正是这个形状：冲突来自位置决定的利益不重合，而双方仍然必须继续合作。由此能推出一个原本看不出的结论：<b>一段长期合作关系里反复出现的同一种拉扯，其强度能从利益重合度预测，而跟双方的性格和沟通质量基本无关</b>；那么想把它压下去，该动的是分配规则，不是多开几次会。<b>但这里不成立</b>：演化里的"利益"是遗传相关度，一个算得出来、当事者改不了的数；社会位置是历史造出来的安排，可以变，而且人对自己的位置有解释、有认同，甚至可以站到它的对立面去（马克思本人就不是工人）。把社会冲突当成基因冲突那样的定数，恰恰是这个传统最反对的东西。</li>
+</ul>
+</div>
+<div class="thinking">
+<h3>深入思考</h3>
+<details><summary>主要预测都落空了，为什么这套分析工具还在用？</summary>
+<div>因为预测和概念可以分开评价。"中间阶层会消失"是能被数据判死的命题，它死了；"阶级是一种关系而不是一个排名"是一把量尺，只能被替换，不能被证伪。今天的经验图式已经不按所有权二分，却保留了那个提问方式：先看你和雇佣关系是什么关系，再看收入。要防的是反过来用——拿工具好用替落空的预测续命。</div>
+</details>
+<details><summary>异化能被消除，还是只能减轻？</summary>
+<div>取消雇佣关系并不自动解决问题：自己给自己干活的人，同样被订单、平台规则、还款期限推着走，四条关系里至少两条照样断着。反过来，Blauner 那份调查提示，即使所有权不变，光把裁量权还回去就能压低无力感。更稳的说法是：四条关系各有各的可动范围，捆成"要么全有要么全无"的总量就没法讨论了。</div>
+</details>
+<details><summary>说一套观念"服务于某些人的利益"，怎么才不至于变成万能解释？</summary>
+<div>这是这条工具最大的风险：它太好用，任何说法都能被这样解释一遍，于是等于什么都没解释。要让它有内容，至少得给出独立于结论的证据：这套说法通过哪些渠道被反复生产？有没有对同一群人不利、却同样流行的说法？最要紧的是那条不对称——指出一个说法的来源，不等于证明它是假的，反过来也一样。</div>
+</details>
+</div>
+<div class="refs">
+<h3>延伸阅读</h3>
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/卡尔·马克思" rel="noopener" target="_blank">卡尔·马克思</a> · <a href="https://en.wikipedia.org/wiki/Economic_and_Philosophic_Manuscripts_of_1844" rel="noopener" target="_blank">1844 年经济学哲学手稿</a>（英文）</li>
+<li><a href="https://en.wikipedia.org/wiki/Marx%27s_theory_of_alienation" rel="noopener" target="_blank">异化理论</a>（英文）· <a href="https://archive.org/details/alienationfreedo00blau" rel="noopener" target="_blank">Blauner《异化与自由》(1964)</a>——四个行业的那份调查</li>
+<li><a href="https://en.wikipedia.org/wiki/The_Managed_Heart" rel="noopener" target="_blank">Hochschild《被管理的心》(1983)</a>（英文）——情感劳动</li>
+<li><a href="http://faculty.upj.pitt.edu/dsantoro/davis_moore.htm" rel="noopener" target="_blank">Davis &amp; Moore (1945)</a> · <a href="https://www.jstor.org/stable/2087551" rel="noopener" target="_blank">Tumin (1953)</a>——功能论的分层解释与它的反驳</li>
+<li><a href="https://en.wikipedia.org/wiki/Erik_Olin_Wright" rel="noopener" target="_blank">Erik Olin Wright</a>（英文）· <a href="https://www.iser.essex.ac.uk/archives/esec/history-and-background/state-of-the-art" rel="noopener" target="_blank">按雇佣关系划分的阶级图式</a>（英文）</li>
+<li><a href="https://en.wikipedia.org/wiki/Learning_to_Labour" rel="noopener" target="_blank">Willis《学做工》(1977)</a>（英文）· <a href="https://pubmed.ncbi.nlm.nih.gov/8115596/" rel="noopener" target="_blank">Haig (1993) 人类妊娠中的遗传冲突</a>（英文）</li>
+</ul>
+</div>
+<footer>BigCat Learning Hub · Sociology &amp; Anthropology</footer>
+</div>
+<script src="https://hub.cissychen.com/comments.js" defer></script>
+<script src="https://hub.cissychen.com/search.js" defer></script>
+<script src="https://hub.cissychen.com/index-button.js" defer></script>
+<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
+</body></html>
