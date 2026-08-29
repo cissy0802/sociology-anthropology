@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>社会学与人类学 Day 5：田野与民族志</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:linear-gradient(170deg,#1a140f,#171210 42%,#120e0b);color:#e6dacc;line-height:1.9;min-height:100vh}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 60px}
+header{padding:52px 0 30px;border-bottom:1px solid #33261d}
+header .kicker{font-size:0.75rem;color:#8fb0cc;letter-spacing:2.5px;font-family:"SF Mono",Menlo,monospace}
+header h1{font-size:2.1rem;font-weight:800;background:linear-gradient(100deg,#e08155,#eda07c 58%,#8fb0cc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:0.5px;margin-top:12px;line-height:1.28}
+header h2{font-size:1rem;color:#a08b78;margin-top:10px;font-weight:400}
+header .meta{margin-top:14px;font-size:0.85rem;color:#a08b78}
+header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
+.intro{margin-top:30px;font-size:1.02rem;color:#d8c9b8}
+.intro p{margin-bottom:13px}
+.section{margin:46px 0;background:rgba(255,255,255,0.028);padding:28px 26px;border-radius:14px;border:1px solid rgba(255,255,255,0.06)}
+.section .num{display:inline-block;font-size:0.75rem;color:#e08155;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;margin-bottom:8px}
+.section h2{font-size:1.32rem;color:#f4ece2;margin-bottom:16px;font-weight:700;line-height:1.35}
+.section p{margin-bottom:14px;font-size:0.98rem}
+.section strong{color:#fff}
+.section em{color:#e08155;font-style:normal}
+.section ul{list-style:none;margin:14px 0}
+.section li{margin-bottom:10px;padding-left:20px;position:relative}
+.section li::before{content:"◈";position:absolute;left:0;top:0.42em;color:#e08155;font-size:0.7rem}
+.fig{margin:24px 0 10px;text-align:center}
+.fig svg{max-width:100%;height:auto}
+.fig .cap{font-size:0.82rem;color:#a08b78;margin-top:8px;text-align:left;line-height:1.65}
+.en-brief{margin-top:18px;padding:12px 16px;border-left:2px solid rgba(160,139,120,0.5);background:rgba(255,255,255,0.02);border-radius:0 8px 8px 0;font-size:0.85rem;color:#b0a08e;line-height:1.62}
+.en-brief b{color:#bda994;font-family:"SF Mono",Menlo,monospace;font-size:0.68rem;letter-spacing:1.5px;margin-right:9px;font-weight:700}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(143,176,204,0.12),rgba(224,129,85,0.05));border:1px solid rgba(143,176,204,0.34);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#8fb0cc;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#dfe3e6;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e08155;font-size:0.72rem}
+.crossx b{color:#aecbe2;font-weight:600}
+.thinking{background:linear-gradient(135deg,rgba(224,129,85,0.06),rgba(143,176,204,0.05));border:1px solid rgba(224,129,85,0.24);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e08155;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(18,14,11,0.5);border:1px solid rgba(224,129,85,0.2);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(224,129,85,0.06);border-color:rgba(224,129,85,0.42)}
+.thinking summary{cursor:pointer;color:#eda07c;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#8fb0cc}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(143,176,204,0.22);color:#ddd0c1;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#8fb0cc;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a08b78}
+.refs a{color:#e08155;text-decoration:none;border-bottom:1px dotted rgba(224,129,85,0.42)}
+.refs a:hover{color:#eda07c;border-bottom-color:#eda07c}
+.bigcat{margin:40px 0 0;background:linear-gradient(135deg,rgba(224,129,85,0.11),rgba(143,176,204,0.04));border:1px solid rgba(224,129,85,0.32);border-radius:14px;padding:22px 26px}
+.bigcat h3{color:#eda07c;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.bigcat ul{list-style:none;margin:0}
+.bigcat li{color:#ece0d2;font-size:0.93rem;line-height:1.8;margin-bottom:14px}
+.bigcat li:last-child{margin-bottom:0}
+.bigcat b{color:#eda07c;font-weight:600}
+footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
+@media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+</style></head><body>
+<div class="container">
+<header>
+<div class="kicker">DAY 5 · 人类学方法</div>
+<h1>田野与民族志</h1>
+<h2>一群人最重要的规矩，往往正是他们自己觉得不值一提、因此从来没人说出口的那些</h2>
+<div class="meta">2026-08-29 · BigCat</div>
+<div class="pitch">同一群人打保龄球，每个人当晚的分数跟他在这群人里的位置对得上——而没人知道这条规律存在，包括他们自己。</div>
+</header>
+<div class="intro">
+<p>你问一个新同事「你们这儿有什么规矩」，他会给你一份手册。他不会告诉你：周会上第一个开口的永远是那两个人里的一个，而这从来没人规定过，也没人注意到。</p>
+<p>这一页讲社会科学里最不像科学的那套办法——搬过去住上一两年，跟着干活、跟着吃饭，把看见的写下来。它凭什么算数、它能拿到什么问卷永远拿不到的东西、以及它绕不过去的那个弱点：写的人自己也站在现场里。</p>
+</div>
+<div class="section">
+<span class="num">// 01</span>
+<h2>你问不出来的那部分，正好是他们觉得不用说的那部分</h2>
+<p>1922 年有本书叫《西太平洋的航海者》，作者 Bronisław Malinowski 在开头立了一条今天听着平常、当年却是翻篇的规矩：把帐篷搭在村子中间，别住进传教站或商站；学当地话，别隔着翻译；一住就是一两年。他 1915 到 1918 年间在特罗布里恩群岛（今属巴布亚新几内亚）前后做了两段这样的田野。</p>
+<p>这套做法后来叫参与观察（participant observation）。他要的东西自己起了个名字：<strong>日常生活里的不可测量者</strong>（imponderabilia）——一天是怎么开始的，饭怎么分，熟人迎面走来说什么，吵完架之后气氛靠什么恢复。问卷上没有它们的格子，只有在场才看得见。</p>
+<p>但「待着」本身不是方法。它要求你同时干两件互相拆台的事：<strong>足够近</strong>，近到别人不再为你调整；又<strong>足够远</strong>，远到你还记得哪些事值得写下来。</p>
+<p>1930 年代末，William Foote Whyte 搬进波士顿一个意大利裔街区住了三年多。他跟着一群固定在街角活动的年轻人混，一起打保龄球，打着打着看出一件事：<strong>每个人当晚的分数，跟他在这群人里的位置对得上。</strong>有个人平时球打得挺好，位置却靠后，一到跟位置靠前的人同场就打崩——不是故意让球，是真的打不出来。</p>
+<p>没有任何一份问卷问得出这件事，因为没人知道它存在，包括打球的人自己。这就是这套方法最硬的那一格：<strong>它能发现你原本想不到要问的问题。</strong></p>
+<p>证据强度得标死：这是<strong>单点、长期、深度的个案</strong>。它擅长「原来是这么运转的」，不擅长「这在多大比例的人身上成立」——跟「涂尔干与社会事实」那期靠统计率做的事正好互补，谁也替代不了谁。也别浪漫化：待得久不自动等于看得准，同一个社会由两个人写出两份对不上的民族志是有过的，关于萨摩亚的那场争论吵了几十年没有裁决。</p>
+<p class="en-brief"><b>EN</b> Malinowski's 1922 rule — pitch your tent in the village, learn the language, stay a year or two — created participant observation, aimed at the "imponderabilia" of daily life that no interview surfaces. The method demands two things that undercut each other: close enough that people stop adjusting for you, distant enough that you still notice what is worth recording. Whyte's bowling finding is the canonical payoff: scores tracked each man's standing in the group, a regularity no questionnaire could have asked about because nobody knew it existed. Strength of evidence: a single deep case — good at mechanism, silent on prevalence.</p>
+</div>
+<div class="section">
+<span class="num">// 02</span>
+<h2>眨眼和使眼色，摄像机拍下来一模一样</h2>
+<p>一个人的眼皮飞快地合了一下。摄像机拍下来就是那么几格画面。可这一下可以是眼睛不舒服的抽动，可以是在跟你串通一件事的使眼色，可以是学别人使眼色逗大家笑，也可以是一个人在家对着镜子练。<strong>物理动作完全相同，是四件不同的事。</strong></p>
+<p>这个例子是哲学家 Gilbert Ryle 举的。1973 年 Clifford Geertz 把它借来给民族志立了一条标准：只记录眼皮的运动，叫薄描（thin description）；要写出这一下究竟是哪件事，你得知道在这群人里「使眼色」意味着什么、什么场合能用、对谁能用——这叫<strong>深描</strong>（thick description）。</p>
+<div class="fig">
+<svg viewbox="0 0 640 280" xmlns="http://www.w3.org/2000/svg">
+<rect fill="rgba(224,129,85,0.14)" height="52" rx="10" stroke="#e08155" stroke-width="1.6" width="212" x="26" y="112"></rect>
+<text fill="#f4ece2" font-family="Georgia,serif" font-size="13" x="46" y="134">眼皮合了一下</text>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="11.5" x="46" y="152">摄像机能记下的全部</text>
+<line stroke="#8fb0cc" stroke-dasharray="5 6" stroke-width="1.4" x1="238" x2="330" y1="138" y2="42"></line>
+<line stroke="#8fb0cc" stroke-dasharray="5 6" stroke-width="1.4" x1="238" x2="330" y1="138" y2="106"></line>
+<line stroke="#8fb0cc" stroke-dasharray="5 6" stroke-width="1.4" x1="238" x2="330" y1="138" y2="170"></line>
+<line stroke="#8fb0cc" stroke-dasharray="5 6" stroke-width="1.4" x1="238" x2="330" y1="138" y2="234"></line>
+<rect fill="rgba(143,176,204,0.10)" height="36" rx="9" stroke="rgba(143,176,204,0.45)" width="282" x="332" y="24"></rect>
+<text fill="#bfd2e2" font-family="Georgia,serif" font-size="12.5" x="348" y="47">抽动：眼睛不舒服</text>
+<rect fill="rgba(143,176,204,0.10)" height="36" rx="9" stroke="rgba(143,176,204,0.45)" width="282" x="332" y="88"></rect>
+<text fill="#bfd2e2" font-family="Georgia,serif" font-size="12.5" x="348" y="111">使眼色：跟你串通一件事</text>
+<rect fill="rgba(143,176,204,0.10)" height="36" rx="9" stroke="rgba(143,176,204,0.45)" width="282" x="332" y="152"></rect>
+<text fill="#bfd2e2" font-family="Georgia,serif" font-size="12.5" x="348" y="175">模仿：学别人使眼色逗人笑</text>
+<rect fill="rgba(143,176,204,0.10)" height="36" rx="9" stroke="rgba(143,176,204,0.45)" width="282" x="332" y="216"></rect>
+<text fill="#bfd2e2" font-family="Georgia,serif" font-size="12.5" x="348" y="239">排练：对着镜子练</text>
+</svg>
+<div class="cap">左边那一格是摄像机的极限。要分开右边四件事，缺的不是分辨率，是知道这群人怎么用眼色——深描换的是层次，不是精度。</div>
+</div>
+<p>1958 年 4 月，Geertz 夫妇到巴厘岛一个村子。头些日子没人搭理他们，人们从他们身边走过像走过空气。第十天他们去看了一场斗鸡——那时这类活动被官方禁止，那一场是为盖学校筹钱办的。警察来了，全场炸开，他们跟着一户人家跑进院子；那家的主人对警察撒了个谎，说这两个人整个下午都在他家喝茶。第二天，整个村子都开口跟他们说话了。隔阂不是靠解释破掉的，是靠一次一起逃跑。</p>
+<p>他后来的分析是这样的：在下注金额最大的那类场合，赌的其实不是钱。人们不会押自己这一边的鸡输；对阵通常发生在有亲属或村落对立关系的双方之间；而越是「深」的比赛，赔率越被压到接近对半，从算账角度根本不划算。钱在这里是一把尺子，量的是地位——<strong>同一笔钱，在薄描里是一次赌博，在深描里是一次公开站队。</strong></p>
+<p>「韦伯与理性化」那期讲过理解社会学（Verstehen）：要解释一个人为什么这么做，先得知道他觉得自己在干什么。深描就是把这句话变成能上手的办法。</p>
+<p>批评也很硬，得摆出来：<strong>深描没有明显的证伪办法。</strong>读者手里只有人类学家写的那一份文本，没法检验这套解读是不是过度诠释。1986 年一本叫《写文化》的论文集里就有人直接拿这篇斗鸡的文章开刀，说他笔下那个「巴厘人的观点」，巴厘人自己未必认；争论至今没有收口。诚实的说法是：深描给出的是<strong>一个可以被别的解读挑战的候选解释</strong>，不是一份测量结果。</p>
+<p class="en-brief"><b>EN</b> Ryle's wink example — twitch, wink, parody, rehearsal, all identical on camera — became Geertz's 1973 standard: thin description records the movement, thick description recovers which act it was. Crucially this is a change of level, not of resolution. In Bali in 1958 the police raid, and Geertz's flight alongside his hosts, opened the village to him; his reading of deep matches is that the money measures standing rather than gain — people never bet against their own side, and odds in the deepest fights approach even. The standing objection is that thick description offers no clear route to falsification; the 1986 collection Writing Culture pressed exactly this against the cockfight essay.</p>
+</div>
+<div class="section">
+<span class="num">// 03</span>
+<h2>写的人是谁，会留在写出来的东西里</h2>
+<p>1967 年，Malinowski 去世二十五年后，他的私人日记出版。里面那个人跟《西太平洋的航海者》里那位沉稳的观察者判若两人：烦躁、想家、大段写自己的身体和情绪，对当地人也用过刻薄甚至带种族偏见的字眼。</p>
+<p>学科内部为此震了很久。要紧的不是他人品如何——而是这份日记捅破了一个默认：民族志的可信度一直建立在「我在那儿，我看见了」上，可这个「我」从来不出现在正文里。日记让「我」现了形，一个问题于是躲不开：这份材料是<strong>谁</strong>、在<strong>什么处境</strong>下取回来的？</p>
+<p>这条后来叫反身性（reflexivity）：观察者的身份、语言能力、来路、经费从哪儿来，本身就是数据的一部分，该写进去而不是抹掉。今天的民族志开头常有一节交代作者是谁、怎么进的场——那一节就是从这场震动里长出来的。</p>
+<p>伦理上的教训来自另外几件事。1958 年出过一本关于纽约州一个小镇的社会学著作，镇名和人名全用了化名。可镇上的人一读就认出了自己和邻居，觉得被当成了标本。第二年镇上的国庆游行里出现了一串嘲讽这本书的花车，最后一辆上坐着作者的模拟像。<strong>化名没保护任何人</strong>——几百人的地方，描述本身就是身份证。</p>
+<p>更重的一件在 1965 年：一个由军方资助、以拉丁美洲社会动荡为题的项目被曝光，招募研究者时没有讲清资金来源和真实用途，当年就被取消。这件事直接推动了美国人类学会在 1971 年通过一份职业责任原则——对被研究者的义务优先，研究目的与资助来源必须公开。</p>
+<p>更长的一段问题史也要如实说：这门学科的早期成长和殖民行政缠在一起——很多田野发生在殖民地，部分经费与通行便利来自殖民当局，有些成果被用于管理；今天关于这段历史的清算性文献很多，且都出自学科内部。</p>
+<p>所以这门手艺真正的难题从来不是「怎么保持客观」。彻底不介入的观察者不存在——他一进村，村里就多了一个人。能做的是把自己的位置写清楚：读者检验不了作者的解读，至少能检验作者的处境。</p>
+<p class="en-brief"><b>EN</b> The 1967 posthumous publication of Malinowski's private diary shook the discipline less for what it revealed about him than for exposing an unstated warrant: ethnographic authority rested on "I was there" while the "I" never appeared in the text. Hence reflexivity — the observer's position, language, funding and route into the field are themselves data. Two ethics cases anchor the rest: a 1958 community study whose pseudonyms failed completely in a town of a few hundred, and a 1965 military-funded project whose exposure pushed the American Anthropological Association to adopt its 1971 principles of professional responsibility. The colonial entanglement of early fieldwork is an in-house topic, not an outside accusation.</p>
+</div>
+<div class="bigcat">
+<h3>🎒 场景 · BigCat</h3>
+<ul>
+<li><b>① 工程与系统设计</b>——反复发生的那个情境：某个问题只在真实用户那儿出现，你这边怎么都复现不了，追查停在「用户操作有误」，工单关掉，下个月又来一次。「你问不出来的那部分，正好是他们觉得不用说的那部分」那节的机制说，自我报告和实际操作是两件事——用户不是在瞒你，是他做的那几步在他自己眼里根本不算一步。可改的：停掉「复现不了就关单」这条默认，换成约一次实际操作的旁观，<b>全程只看不指导</b>——一纠正，现场就变成教学，那些不算数的小动作立刻消失。记录口径也换：别记是否复现成功，记「几步跟文档不一样」。</li>
+<li><b>② 育儿与教育</b>——反复发生的那个情境：你陪着的时候作业一切正常，你不在就崩，于是你永远不知道他一个人时卡在哪一步。这是同一机制的另一面：<b>在场改变现场</b>，你只能观察到被你改变过的那个版本。可改的是把「实时陪写」换成「事后读痕迹」——草稿纸留着别扔，看他从哪题开始跳、哪里擦了三遍、做题顺序是什么。痕迹是他独处时留下的，那才是你要的数据；同时停掉当场纠正。</li>
+</ul>
+</div>
+<div class="crossx">
+<h3>🌀 越界 · 跨学科的联想</h3>
+<ul>
+<li><b>分布式系统与 AI · 观测本身要花钱</b>：一套跑在很多台机器上的服务，要查清一个请求经过了哪些环节，得给它带上追踪记录。全量记录太贵——拖慢响应、产生海量数据，所以工程上只抽一小部分样本。而一旦为了逮住某个罕见故障把采样率调高，系统的时延和资源占用本身就变了，你测到的已经不是原来那个系统。「写的人是谁，会留在写出来的东西里」那节的机制正是这个形状：观察者一进场，场就不是原来的场了。由此能推出一个原本看不出的结论：<b>「先把监控加得更细再查问题」这个默认顺序，对某一类故障是自我否定的——观测精度越高，被观测的对象离原状越远</b>；因此有些问题只能靠事后的痕迹（残缺日志、崩溃现场的内存快照）反推。<b>但这里不成立</b>：机器上的扰动是资源竞争，能用毫秒和字节量出来，服务器也不知道自己在被观察、不会为你表演；田野里的人知道你在看，会调整<b>给你看什么</b>，这是有意图的，量不成开销。反过来还有一条：长期居留会让这种调整衰减，人会习惯你；采样率调高一个月，服务器不会慢慢适应。</li>
+<li><b>物理与数学 · 层次不能靠精度爬上去</b>：统计物理里，同一团气体可以在两个层次上描述——微观是每个分子的位置和速度，宏观是温度、压强、熵。关键在于「温度」这个量在微观层次上根本不存在：单个分子没有温度。「眨眼和使眼色，摄像机拍下来一模一样」那节说的正是这件事：薄描和深描不是详略之分，是层次之分。由此能推出一个原本看不出的结论：<b>把行为记录得更精确并不会自动逼近意义，两者不在同一条精度轴上</b>——把采样频率和传感器分辨率再提一个数量级，也替代不了对情境的了解，就像分子位置测得再准也不会自己冒出「温度」。<b>但这里不成立</b>，而且失配的方向很要命：物理里从微观到宏观有一座严格可推导的桥，温度确实是微观量的某种平均；使眼色的意义却不是眼皮运动的函数——同一个动作在不同社群里可以意思相反，桥不在系统内部，在人们共享的约定里。这个类比只给得出「层次不可互换」那一半，给不出「上层可由下层导出」那一半，而后者恰恰是最常被套到社会科学头上的期待。</li>
+</ul>
+</div>
+<div class="thinking">
+<h3>深入思考</h3>
+<details><summary>深描没法证伪，那它凭什么算知识？</summary>
+<div>一种回答是：它给的不是命题，是<em>更好的候选解释</em>，评价方式跟历史学接近——看它能不能把更多零散细节收进同一个说法里，看别的研究者带着不同预设进同一个现场会不会得出别的结论。另一种回答更狠：那就别把它当知识产出，当<em>假设生成器</em>，检验交给别的方法。两种都有人信，这本身说明这门学科对自己的定位还没统一。</div>
+</details>
+<details><summary>被写的人有权改写关于自己的记述吗？</summary>
+<div>这是伦理里最难的一处张力。给了这个权，研究可能被删成一份宣传材料——最尖锐的观察往往正是当事人最不愿公开的；不给，那本小镇研究的遭遇就会重演，当事人无处申辩。常见的折中是成稿前给对方看：事实错误必须改，解读分歧并列写出来。但这仍然假设作者手握最终定稿权。</div>
+</details>
+<details><summary>如果有人来给你所在的团队做一年田野，他会写下什么你自己看不见的？</summary>
+<div>试着自问几个只有外人问得出的问题：哪些话只在某些人不在场时才说得出口？哪类失败会被反复复盘、哪类会被安静跳过？新人第几周开始不再问「为什么这样做」？答案你多半说不上来，可它们每天都在发生——说不上来这件事本身，正是这套方法存在的理由。</div>
+</details>
+</div>
+<div class="refs">
+<h3>延伸阅读</h3>
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/布罗尼斯拉夫·马林诺夫斯基" rel="noopener" target="_blank">马林诺夫斯基</a> · <a href="https://archive.org/details/argonautsofweste0000mali" rel="noopener" target="_blank">《西太平洋的航海者》(1922)</a>（英文）——参与观察的方法宣言</li>
+<li><a href="https://en.wikipedia.org/wiki/A_Diary_in_the_Strict_Sense_of_the_Term" rel="noopener" target="_blank">《严格意义上的日记》(1967)</a>（英文）——引发反身性转向的那份私人日记</li>
+<li><a href="https://archive.org/details/streetcornersoci00whyt" rel="noopener" target="_blank">Whyte《街角社会》(1943)</a>（英文）——保龄球分数与群体位置</li>
+<li><a href="https://en.wikipedia.org/wiki/Thick_description" rel="noopener" target="_blank">深描</a>（英文）· <a href="https://people.potsdam.edu/betrusak/566/readings/DeepPlay.pdf" rel="noopener" target="_blank">Geertz《深层游戏》(1972) 全文</a>（英文）</li>
+<li><a href="https://www.ucpress.edu/books/writing-culture/paper" rel="noopener" target="_blank">《写文化》(1986)</a>（英文）——对民族志书写权威的内部批评</li>
+<li><a href="https://en.wikipedia.org/wiki/Project_Camelot" rel="noopener" target="_blank">1965 年那个被取消的军方资助项目</a>（英文）· <a href="https://www.press.uillinois.edu/books/?id=p068904" rel="noopener" target="_blank">《大众社会中的小镇》(1958)</a>（英文）——化名失效的那个案例</li>
+</ul>
+</div>
+<footer>BigCat Learning Hub · Sociology &amp; Anthropology</footer>
+</div>
+<script src="https://hub.cissychen.com/comments.js" defer></script>
+<script src="https://hub.cissychen.com/search.js" defer></script>
+<script src="https://hub.cissychen.com/index-button.js" defer></script>
+<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
+</body></html>

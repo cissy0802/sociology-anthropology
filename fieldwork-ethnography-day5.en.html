@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sociology &amp; Anthropology Day 5: Fieldwork and Ethnography</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:linear-gradient(170deg,#1a140f,#171210 42%,#120e0b);color:#e6dacc;line-height:1.9;min-height:100vh}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 60px}
+header{padding:52px 0 30px;border-bottom:1px solid #33261d}
+header .kicker{font-size:0.75rem;color:#8fb0cc;letter-spacing:2.5px;font-family:"SF Mono",Menlo,monospace}
+header h1{font-size:2.1rem;font-weight:800;background:linear-gradient(100deg,#e08155,#eda07c 58%,#8fb0cc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:0.5px;margin-top:12px;line-height:1.28}
+header h2{font-size:1rem;color:#a08b78;margin-top:10px;font-weight:400}
+header .meta{margin-top:14px;font-size:0.85rem;color:#a08b78}
+header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
+.intro{margin-top:30px;font-size:1.02rem;color:#d8c9b8}
+.intro p{margin-bottom:13px}
+.section{margin:46px 0;background:rgba(255,255,255,0.028);padding:28px 26px;border-radius:14px;border:1px solid rgba(255,255,255,0.06)}
+.section .num{display:inline-block;font-size:0.75rem;color:#e08155;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;margin-bottom:8px}
+.section h2{font-size:1.32rem;color:#f4ece2;margin-bottom:16px;font-weight:700;line-height:1.35}
+.section p{margin-bottom:14px;font-size:0.98rem}
+.section strong{color:#fff}
+.section em{color:#e08155;font-style:normal}
+.section ul{list-style:none;margin:14px 0}
+.section li{margin-bottom:10px;padding-left:20px;position:relative}
+.section li::before{content:"◈";position:absolute;left:0;top:0.42em;color:#e08155;font-size:0.7rem}
+.fig{margin:24px 0 10px;text-align:center}
+.fig svg{max-width:100%;height:auto}
+.fig .cap{font-size:0.82rem;color:#a08b78;margin-top:8px;text-align:left;line-height:1.65}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(143,176,204,0.12),rgba(224,129,85,0.05));border:1px solid rgba(143,176,204,0.34);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#8fb0cc;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#dfe3e6;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e08155;font-size:0.72rem}
+.crossx b{color:#aecbe2;font-weight:600}
+.thinking{background:linear-gradient(135deg,rgba(224,129,85,0.06),rgba(143,176,204,0.05));border:1px solid rgba(224,129,85,0.24);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e08155;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(18,14,11,0.5);border:1px solid rgba(224,129,85,0.2);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(224,129,85,0.06);border-color:rgba(224,129,85,0.42)}
+.thinking summary{cursor:pointer;color:#eda07c;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#8fb0cc}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(143,176,204,0.22);color:#ddd0c1;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#8fb0cc;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a08b78}
+.refs a{color:#e08155;text-decoration:none;border-bottom:1px dotted rgba(224,129,85,0.42)}
+.refs a:hover{color:#eda07c;border-bottom-color:#eda07c}
+.bigcat{margin:40px 0 0;background:linear-gradient(135deg,rgba(224,129,85,0.11),rgba(143,176,204,0.04));border:1px solid rgba(224,129,85,0.32);border-radius:14px;padding:22px 26px}
+.bigcat h3{color:#eda07c;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.bigcat ul{list-style:none;margin:0}
+.bigcat li{color:#ece0d2;font-size:0.93rem;line-height:1.8;margin-bottom:14px}
+.bigcat li:last-child{margin-bottom:0}
+.bigcat b{color:#eda07c;font-weight:600}
+footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
+@media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+</style></head><body>
+<div class="container">
+<header>
+<div class="kicker">DAY 5 · METHODS IN ANTHROPOLOGY</div>
+<h1>Fieldwork and Ethnography</h1>
+<h2>The rules that matter most to a group are usually the ones nobody thinks worth mentioning, and so nobody ever says out loud</h2>
+<div class="meta">2026-08-29 · BigCat</div>
+<div class="pitch">The same men go bowling, and each man's score that night lines up with his standing in the group — and nobody knows the regularity exists, including them.</div>
+</header>
+<div class="intro">
+<p>Ask a new colleague what the rules are around here and you get a handbook. What you don't get: the first person to speak at the weekly meeting is always one of the same two people, and nobody ever decided that, and nobody has noticed it.</p>
+<p>This page is about the least scientific-looking method in social science — move in for a year or two, work alongside people, eat with them, write down what you see. Why it counts as evidence, what it can get that a survey never will, and the weakness it cannot design away: the person writing is also standing in the scene.</p>
+</div>
+<div class="section">
+<span class="num">// 01</span>
+<h2>What you can't get people to tell you is exactly the part they think doesn't need saying</h2>
+<p>In 1922 a book called <em>Argonauts of the Western Pacific</em> opened with a rule that sounds obvious now and turned a page then: pitch your tent in the middle of the village, not at the mission station or the trading post; learn the local language rather than working through an interpreter; stay a year or two. Its author, Bronisław Malinowski, had done two such stretches of fieldwork in the Trobriand Islands (now part of Papua New Guinea) between 1915 and 1918.</p>
+<p>The practice came to be called participant observation. What he was after he gave a name of its own: the <strong>imponderabilia</strong> of everyday life — how a day starts, how food gets divided, what people say when they meet on a path, what restores the mood after an argument. A questionnaire has no box for any of it. You can only be there.</p>
+<p>But being there is not itself a method. It asks you to do two things that undercut each other: get <strong>close enough</strong> that people stop adjusting for you, and stay <strong>distant enough</strong> that you still notice which things are worth writing down.</p>
+<p>In the late 1930s William Foote Whyte moved into an Italian-American neighbourhood in Boston and stayed more than three years. He spent his time with a group of young men who hung around a particular street corner, and went bowling with them. Eventually he saw something: <strong>each man's score on a given night matched his position in the group.</strong> One man who bowled well elsewhere, but ranked low, fell apart whenever he was up against men who ranked above him — not throwing the game, genuinely unable to bowl.</p>
+<p>No questionnaire could have asked about this, because nobody knew it existed, the bowlers included. That is the method's hardest claim: <strong>it finds the question you would never have thought to ask.</strong></p>
+<p>Nail down the strength of the evidence: this is a <strong>single, long, deep case</strong>. It is good at "so that's how it runs" and silent on "in what fraction of people does this hold" — the exact complement of what the statistical rates in the piece on Durkheim and social facts can do, and neither substitutes for the other. Nor should it be romanticised: staying long does not automatically mean seeing straight. Two ethnographers have written irreconcilable accounts of the same society; the argument over Samoa ran for decades without a verdict.</p>
+</div>
+<div class="section">
+<span class="num">// 02</span>
+<h2>A twitch and a wink look identical on camera</h2>
+<p>An eyelid closes fast, once. On camera that is a few frames. But it could be an involuntary twitch, or a wink letting you in on something, or someone imitating a wink to get a laugh, or a person practising in front of a mirror at home. <strong>The physical movement is identical and these are four different acts.</strong></p>
+<p>The example is the philosopher Gilbert Ryle's. In 1973 Clifford Geertz borrowed it to set a standard for ethnography: recording the movement of the eyelid is <strong>thin description</strong>; saying which act it was requires knowing what a wink means among these people, when it can be used and with whom — that is <strong>thick description</strong>.</p>
+<div class="fig">
+<svg viewbox="0 0 640 280" xmlns="http://www.w3.org/2000/svg">
+<rect fill="rgba(224,129,85,0.14)" height="52" rx="10" stroke="#e08155" stroke-width="1.6" width="212" x="26" y="112"></rect>
+<text fill="#f4ece2" font-family="Georgia,serif" font-size="13" x="46" y="134">An eyelid closes once</text>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="11.5" x="46" y="152">all a camera can record</text>
+<line stroke="#8fb0cc" stroke-dasharray="5 6" stroke-width="1.4" x1="238" x2="330" y1="138" y2="42"></line>
+<line stroke="#8fb0cc" stroke-dasharray="5 6" stroke-width="1.4" x1="238" x2="330" y1="138" y2="106"></line>
+<line stroke="#8fb0cc" stroke-dasharray="5 6" stroke-width="1.4" x1="238" x2="330" y1="138" y2="170"></line>
+<line stroke="#8fb0cc" stroke-dasharray="5 6" stroke-width="1.4" x1="238" x2="330" y1="138" y2="234"></line>
+<rect fill="rgba(143,176,204,0.10)" height="36" rx="9" stroke="rgba(143,176,204,0.45)" width="282" x="332" y="24"></rect>
+<text fill="#bfd2e2" font-family="Georgia,serif" font-size="12.5" x="348" y="47">Twitch: something in the eye</text>
+<rect fill="rgba(143,176,204,0.10)" height="36" rx="9" stroke="rgba(143,176,204,0.45)" width="282" x="332" y="88"></rect>
+<text fill="#bfd2e2" font-family="Georgia,serif" font-size="12.5" x="348" y="111">Wink: letting you in on it</text>
+<rect fill="rgba(143,176,204,0.10)" height="36" rx="9" stroke="rgba(143,176,204,0.45)" width="282" x="332" y="152"></rect>
+<text fill="#bfd2e2" font-family="Georgia,serif" font-size="12.5" x="348" y="175">Parody: mocking someone's wink</text>
+<rect fill="rgba(143,176,204,0.10)" height="36" rx="9" stroke="rgba(143,176,204,0.45)" width="282" x="332" y="216"></rect>
+<text fill="#bfd2e2" font-family="Georgia,serif" font-size="12.5" x="348" y="239">Rehearsal: practising at the mirror</text>
+</svg>
+<div class="cap">The box on the left is the camera's ceiling. Telling the four on the right apart takes not more resolution but knowledge of how these people use a wink — thick description changes the level, not the precision.</div>
+</div>
+<p>In April 1958 Geertz and his wife arrived in a Balinese village. For days nobody acknowledged them; people walked past as though past empty air. On the tenth day they went to a cockfight — the activity was banned by the authorities at the time, and this one was raising money for a school. The police came, the crowd scattered, and the couple ran with a household into its courtyard; the man of the house lied to the police, saying the two had been drinking tea with him all afternoon. The next day the whole village talked to them. The barrier came down not through explanation but through one shared escape.</p>
+<p>His analysis afterwards ran like this: in the matches with the largest stakes, what is being wagered is not money. People never bet against a cock from their own side; matches are typically between parties standing in some kin or village opposition; and the deeper the match, the closer the odds are pushed to even, which makes it a bad deal as arithmetic. The money here is a measuring stick, and what it measures is standing — <strong>the same sum of money is a bet under thin description and a public act of allegiance under thick.</strong></p>
+<p>The piece on Weber and rationalisation described interpretive sociology (Verstehen): to explain why someone did something you first have to know what they take themselves to be doing. Thick description is that sentence turned into a craft you can practise.</p>
+<p>The objection is hard and belongs on the table: <strong>thick description has no obvious route to falsification.</strong> The reader holds only the anthropologist's text and cannot check whether the reading is over-reading. In the 1986 collection <em>Writing Culture</em> the cockfight essay was taken on directly — the charge being that the "Balinese point of view" it constructs is not one Balinese would necessarily recognise; the argument has never closed. The honest formulation: thick description yields <strong>a candidate interpretation that other interpretations can challenge</strong>, not a measurement.</p>
+</div>
+<div class="section">
+<span class="num">// 03</span>
+<h2>Who did the writing stays inside what got written</h2>
+<p>In 1967, twenty-five years after Malinowski's death, his private diary was published. The man in it is unrecognisable next to the composed observer of <em>Argonauts</em>: irritable, homesick, pages on his own body and moods, and at times harsh and racially prejudiced language about the people around him.</p>
+<p>The discipline was unsettled for a long time. What mattered was not his character but that the diary punctured an unstated warrant: ethnographic credibility had always rested on "I was there, I saw it", while that "I" never appeared in the text. The diary made the "I" visible, and with it a question that could no longer be avoided: <strong>who</strong> brought this material back, and from <strong>what position</strong>?</p>
+<p>This became known as reflexivity: the observer's identity, language competence, route in and source of funding are themselves part of the data, to be written in rather than scrubbed out. Ethnographies today often open with a section on who the author is and how they got into the field — that section grew out of this shock.</p>
+<p>The ethical lessons come from elsewhere. In 1958 a study of a small town in New York State appeared with the town and everyone in it under pseudonyms. Residents read it and recognised themselves and their neighbours at once, and felt they had been turned into specimens. The following year the town's Fourth of July parade carried a string of floats mocking the book, the last one bearing an effigy of the author. <strong>The pseudonyms protected nobody</strong> — in a place of a few hundred people, a description is an identity document.</p>
+<p>A heavier case came in 1965: a military-funded social science project on unrest in Latin America was exposed, having recruited researchers without disclosing its funding or actual purpose, and was cancelled that year. The episode pushed the American Anthropological Association to adopt principles of professional responsibility in 1971 — obligations to those studied come first, and the aims and sponsorship of research must be disclosed.</p>
+<p>A longer history has to be stated plainly too: this discipline grew up entangled with colonial administration. Much early fieldwork happened in colonies, some funding and freedom of movement came from colonial authorities, and some findings were put to administrative use. There is a large literature reckoning with that period, and it comes from inside the discipline rather than from its critics outside.</p>
+<p>So the real difficulty of the craft was never "how do I stay objective". The wholly uninvolved observer does not exist — the moment he walks into the village, the village has one more person in it. What can be done is to state your own position clearly: readers cannot audit the author's interpretation, but they can at least audit the author's situation.</p>
+</div>
+<div class="bigcat">
+<h3>🎒 SCENES · BIGCAT</h3>
+<ul>
+<li><b>① Engineering and systems design</b>—the recurring situation: a problem that shows up only at real users' machines and never reproduces on yours, the investigation stalls at "user error", the ticket closes, and next month it is back. The mechanism in "what you can't get people to tell you is exactly the part they think doesn't need saying" is that self-report and actual operation are two different things — the user is not hiding anything, it is that the steps they take don't register as steps to them. What to change: retire the default of "can't reproduce, close it", and instead sit in on one real session, <b>watching without ever coaching</b> — one correction turns the scene into a lesson and the un-counted little moves vanish. Change the record you keep too: not whether it reproduced, but how many steps departed from the documented ones.</li>
+<li><b>② Parenting and education</b>—the recurring situation: homework goes fine while you sit there and falls apart when you don't, so you never learn where the child gets stuck alone. Same mechanism from the other side: <b>presence changes the scene</b>, and you only get to observe the version you have already altered. What to change: swap real-time supervision for reading the traces afterwards — keep the scratch paper, look at which problem got skipped, what was erased three times, what order things were done in. The traces were made in your absence, which is what makes them the data you want; and stop correcting on the spot.</li>
+</ul>
+</div>
+<div class="crossx">
+<h3>🌀 CROSSING OVER · ASSOCIATIONS ACROSS FIELDS</h3>
+<ul>
+<li><b>Distributed systems and AI · observation has a price tag</b>: in a service running across many machines, working out which components a request passed through means attaching a trace to it. Recording every request is expensive — it slows responses and produces enormous volumes of data — so in practice only a small sample is kept. And the moment you raise the sampling rate to catch some rare fault, the system's latency and resource use themselves change, and what you are measuring is no longer quite the system you had. That is the shape of the mechanism in "who did the writing stays inside what got written": the observer enters and the scene is no longer the scene. Which yields a conclusion you would not otherwise reach: <b>the default order of "instrument more finely, then investigate" is self-defeating for a class of faults — the finer the observation, the further the observed object drifts from its ordinary state</b>; some problems can only be reconstructed from traces left behind, such as truncated logs and memory dumps from the crash. <b>Where it fails</b>: perturbation in machines is resource contention, quantifiable in milliseconds and bytes, and a server does not know it is being watched and will not perform for you; people in the field know you are looking and adjust <b>what they show you</b>, which is intentional and cannot be priced as overhead. And the reverse also fails: long residence lets that adjustment decay because people get used to you, whereas a server will not gradually adapt to a month of denser sampling.</li>
+<li><b>Physics and mathematics · you cannot climb between levels by adding precision</b>: in statistical physics the same body of gas can be described at two levels — microscopically, as the position and velocity of every molecule, and macroscopically, as temperature, pressure and entropy. The crucial point is that "temperature" does not exist at the micro level at all: a single molecule has no temperature. That is exactly what "a twitch and a wink look identical on camera" is about — thin and thick description differ by level, not by amount of detail. Which yields a conclusion you would not otherwise reach: <b>recording behaviour more precisely does not automatically converge on meaning; the two are not on the same axis of resolution</b> — raising sampling rates and sensor resolution by an order of magnitude is no substitute for knowing the setting, just as measuring molecular positions ever more exactly will never make "temperature" appear on its own. <b>Where it fails</b>, and the direction of the mismatch matters: physics has a rigorous derivable bridge from micro to macro, and temperature really is a kind of average over microscopic quantities. The meaning of a wink is not a function of eyelid motion — the same movement can mean opposite things in different communities, and the bridge lies not inside the system but in shared convention. So the analogy delivers only the half that says levels are not interchangeable, and none of the half that says the upper level can be derived from the lower — and that second half is precisely what gets wrongly expected of social science.</li>
+</ul>
+</div>
+<div class="thinking">
+<h3>GOING DEEPER</h3>
+<details><summary>If thick description can't be falsified, what makes it knowledge?</summary>
+<div>One answer: what it offers is not a proposition but a <em>better candidate interpretation</em>, judged the way history is — does it gather more scattered details into one account, and would another researcher entering the same setting with different assumptions arrive somewhere else? A blunter answer: then don't treat it as an output of knowledge at all, treat it as a <em>hypothesis generator</em> and leave testing to other methods. Both have adherents, which is itself a sign the discipline has not settled what it is.</div>
+</details>
+<details><summary>Should the people written about have the right to rewrite the account?</summary>
+<div>This is the hardest tension in the ethics. Grant it, and the study can be edited down into promotional material — the sharpest observations are usually the ones people least want made public. Withhold it, and the small-town episode repeats itself with nobody able to answer back. The common compromise is to show the draft first: factual errors must be fixed, disagreements over interpretation are printed side by side. That still assumes the author holds final say.</div>
+</details>
+<details><summary>If someone spent a year doing fieldwork on your team, what would they write that you can't see?</summary>
+<div>Try a few questions only an outsider can ask. Which things get said only when certain people are absent? Which kinds of failure get reviewed over and over, and which get quietly skipped? In what week does a new hire stop asking why it's done this way? You probably can't answer, yet these things happen daily — and being unable to answer is the whole reason this method exists.</div>
+</details>
+</div>
+<div class="refs">
+<h3>FURTHER READING</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Bronis%C5%82aw_Malinowski" rel="noopener" target="_blank">Bronisław Malinowski</a> · <a href="https://archive.org/details/argonautsofweste0000mali" rel="noopener" target="_blank">Argonauts of the Western Pacific (1922)</a> — the manifesto of participant observation</li>
+<li><a href="https://en.wikipedia.org/wiki/A_Diary_in_the_Strict_Sense_of_the_Term" rel="noopener" target="_blank">A Diary in the Strict Sense of the Term (1967)</a> — the private diary that triggered the reflexive turn</li>
+<li><a href="https://archive.org/details/streetcornersoci00whyt" rel="noopener" target="_blank">Whyte, Street Corner Society (1943)</a> — bowling scores and standing in the group</li>
+<li><a href="https://en.wikipedia.org/wiki/Thick_description" rel="noopener" target="_blank">Thick description</a> · <a href="https://people.potsdam.edu/betrusak/566/readings/DeepPlay.pdf" rel="noopener" target="_blank">Geertz, "Deep Play" (1972), full text</a></li>
+<li><a href="https://www.ucpress.edu/books/writing-culture/paper" rel="noopener" target="_blank">Writing Culture (1986)</a> — the in-house critique of ethnographic authority</li>
+<li><a href="https://en.wikipedia.org/wiki/Project_Camelot" rel="noopener" target="_blank">The military-funded project cancelled in 1965</a> · <a href="https://www.press.uillinois.edu/books/?id=p068904" rel="noopener" target="_blank">Small Town in Mass Society (1958)</a> — the case where pseudonyms failed</li>
+</ul>
+</div>
+<footer>BigCat Learning Hub · Sociology &amp; Anthropology</footer>
+</div>
+<script src="https://hub.cissychen.com/comments.js" defer></script>
+<script src="https://hub.cissychen.com/search.js" defer></script>
+<script src="https://hub.cissychen.com/index-button.js" defer></script>
+<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
+</body></html>
