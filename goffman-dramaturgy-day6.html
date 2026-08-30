@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>社会学与人类学 Day 6：戈夫曼的拟剧论</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:linear-gradient(170deg,#1a140f,#171210 42%,#120e0b);color:#e6dacc;line-height:1.9;min-height:100vh}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 60px}
+header{padding:52px 0 30px;border-bottom:1px solid #33261d}
+header .kicker{font-size:0.75rem;color:#8fb0cc;letter-spacing:2.5px;font-family:"SF Mono",Menlo,monospace}
+header h1{font-size:2.1rem;font-weight:800;background:linear-gradient(100deg,#e08155,#eda07c 58%,#8fb0cc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:0.5px;margin-top:12px;line-height:1.28}
+header h2{font-size:1rem;color:#a08b78;margin-top:10px;font-weight:400}
+header .meta{margin-top:14px;font-size:0.85rem;color:#a08b78}
+header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
+.intro{margin-top:30px;font-size:1.02rem;color:#d8c9b8}
+.intro p{margin-bottom:13px}
+.section{margin:46px 0;background:rgba(255,255,255,0.028);padding:28px 26px;border-radius:14px;border:1px solid rgba(255,255,255,0.06)}
+.section .num{display:inline-block;font-size:0.75rem;color:#e08155;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;margin-bottom:8px}
+.section h2{font-size:1.32rem;color:#f4ece2;margin-bottom:16px;font-weight:700;line-height:1.35}
+.section p{margin-bottom:14px;font-size:0.98rem}
+.section strong{color:#fff}
+.section em{color:#e08155;font-style:normal}
+.section ul{list-style:none;margin:14px 0}
+.section li{margin-bottom:10px;padding-left:20px;position:relative}
+.section li::before{content:"◈";position:absolute;left:0;top:0.42em;color:#e08155;font-size:0.7rem}
+.fig{margin:24px 0 10px;text-align:center}
+.fig svg{max-width:100%;height:auto}
+.fig .cap{font-size:0.82rem;color:#a08b78;margin-top:8px;text-align:left;line-height:1.65}
+.en-brief{margin-top:18px;padding:12px 16px;border-left:2px solid rgba(160,139,120,0.5);background:rgba(255,255,255,0.02);border-radius:0 8px 8px 0;font-size:0.85rem;color:#b0a08e;line-height:1.62}
+.en-brief b{color:#bda994;font-family:"SF Mono",Menlo,monospace;font-size:0.68rem;letter-spacing:1.5px;margin-right:9px;font-weight:700}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(143,176,204,0.12),rgba(224,129,85,0.05));border:1px solid rgba(143,176,204,0.34);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#8fb0cc;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#dfe3e6;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e08155;font-size:0.72rem}
+.crossx b{color:#aecbe2;font-weight:600}
+.thinking{background:linear-gradient(135deg,rgba(224,129,85,0.06),rgba(143,176,204,0.05));border:1px solid rgba(224,129,85,0.24);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e08155;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(18,14,11,0.5);border:1px solid rgba(224,129,85,0.2);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(224,129,85,0.06);border-color:rgba(224,129,85,0.42)}
+.thinking summary{cursor:pointer;color:#eda07c;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#8fb0cc}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(143,176,204,0.22);color:#ddd0c1;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#8fb0cc;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a08b78}
+.refs a{color:#e08155;text-decoration:none;border-bottom:1px dotted rgba(224,129,85,0.42)}
+.refs a:hover{color:#eda07c;border-bottom-color:#eda07c}
+.bigcat{margin:40px 0 0;background:linear-gradient(135deg,rgba(224,129,85,0.11),rgba(143,176,204,0.04));border:1px solid rgba(224,129,85,0.32);border-radius:14px;padding:22px 26px}
+.bigcat h3{color:#eda07c;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.bigcat ul{list-style:none;margin:0}
+.bigcat li{color:#ece0d2;font-size:0.93rem;line-height:1.8;margin-bottom:14px}
+.bigcat li:last-child{margin-bottom:0}
+.bigcat b{color:#eda07c;font-weight:600}
+footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
+@media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+</style></head><body>
+<div class="container">
+<header>
+<div class="kicker">DAY 6 · 微观互动</div>
+<h1>戈夫曼的拟剧论</h1>
+<h2>把社会生活当成一场演出来看，最反直觉的一条不是「大家都在演」，而是「观众一直在帮忙演」</h2>
+<div class="meta">2026-08-30 · BigCat</div>
+<div class="pitch">一个人说错了话，尴尬的却是满屋子人——因为掉脸的是他，崩掉的是大家共同维持的那个场。</div>
+</header>
+<div class="intro">
+<p>你坐在餐厅里，服务生端着盘子过来，脚步稳、语气软、笑得刚刚好。他推门进厨房，那扇门还没合上，你瞥见他把托盘往台上一摔，跟里面的人说了句什么。门合上，下一趟出来，又是那个样子。</p>
+<p>这一页讲一套专门用来看这类瞬间的办法：把见面当成演出，把场所分成台前和台后。它最容易被误读成「人人都在骗人」，而它想说的几乎相反——正是这些配合，才让两个人能把一次对话说完。</p>
+</div>
+<div class="section">
+<span class="num">// 01</span>
+<h2>厨房那扇门推开的一瞬间，人换了一副样子</h2>
+<p>1949 年底，一个自称「对海岛农业经济感兴趣的美国大学生」住进了苏格兰设得兰群岛最北边的翁斯特岛。他叫 Erving Goffman，在岛上前后待了约十二个月，1953 年交出一篇博士论文，题目是《一个岛屿社区中的沟通行为》。他住在岛上一家旅馆里——那正好是看清那扇门的最佳位置。</p>
+<p>1959 年他把这套看法写成《日常生活中的自我呈现》，给出两个词：<strong>前台</strong>（front region，有观众在场、按某种标准演出的地方）和<strong>后台</strong>（back region，观众进不来、可以卸下那套标准的地方）。旅馆的厅堂和厨房、教室和办公室，都是同一道门的不同版本。</p>
+<p>这里有一条最常被读错的地方，值得说死：<strong>后台不是「真实的他」。</strong>厨房里那副样子也是演的，只是观众换成了同事，剧本松了很多。后台的功能是准备和卸妆，不是袒露。所以「找到一个人的后台就等于看穿了他」这句话，按这套说法根本不成立——你只是被换到了另一个观众席上。</p>
+<p>前台还常常是<strong>一伙人合演</strong>的（他叫「剧班」）：一家店的服务生对着客人维持同一套定义。所以后台最要紧的用处不是休息，是让同伙能当面商量下一步。</p>
+<p>把这套镜头对准今天：1983 年社会学家 Arlie Hochschild 出版《被管理的心》。她看过 Delta 航空的空乘培训——把客舱当成自家客厅、把陌生人当成私人客人。她给这种活儿起名叫<strong>情绪劳动</strong>（emotional labor），并分出「表层表演」（脸上做出来）和「深层表演」（把自己真的调成那个情绪）。要点在于：当前台被写成一套公司规程，后台的性质就变了——它从休息的地方，变成了唯一还能不按规程活着的地方。</p>
+<p>证据强度要标死：这不是能被证伪的假设，是一副<strong>镜头</strong>。它让你看见原来看不见的分区，代价是它几乎什么都能解释——这正是它挨批评最多的一点。</p>
+<p class="en-brief"><b>EN</b> From late 1949 Goffman spent about twelve months on Unst, Shetland, posing as an American student interested in island farming; the 1953 dissertation became the ground for The Presentation of Self in Everyday Life (1959) and its front region / back region distinction. The most misread point: the back region is not the "real" person — it is where the performance is prepared, with a looser script and a different audience. Performances are usually staged by a team, which is what the back region is really for. Hochschild's 1983 study of Delta flight attendants extends this: once the front region is written into company procedure, the back region becomes the only place left to live off-script. Strength of evidence: a lens, not a falsifiable hypothesis — and that is the standing objection to it.</p>
+</div>
+<div class="section">
+<span class="num">// 02</span>
+<h2>你其实一直在帮别人把戏演下去</h2>
+<p>会上有人放了一张图，数字明显是上个季度的。没人当场说。有人接了句别的把话头岔开，散会以后才有人私信他。</p>
+<p>这几秒里发生的事，是这套说法最硬的一格。一次见面能进行下去，靠的是在场的人默认了一套<strong>情境定义</strong>——这是什么场合、谁是什么身份、什么话能说。Goffman 说这套定义是<em>合作</em>出来的：不是大家真心同意，是大家同意暂时不去挑战。</p>
+<p>由此推出一句很反直觉的话：<strong>维持一个印象的活儿，大部分不是表演的人干的，是看的人干的。</strong>不往后台瞟、看见破绽装没看见、给对方留出改口的台阶——他把这一侧的动作叫<strong>体谅</strong>（tact）。你每天替别人做这件事的次数，远多于你替自己做的次数。</p>
+<div class="fig">
+<svg viewbox="0 0 640 250" xmlns="http://www.w3.org/2000/svg">
+<rect fill="rgba(143,176,204,0.10)" height="150" rx="12" stroke="rgba(143,176,204,0.42)" stroke-width="1.4" width="180" x="24" y="52"></rect>
+<text fill="#bfd2e2" font-family="Georgia,serif" font-size="13" x="44" y="80">后台</text>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="11.5" x="44" y="102">同伙在这儿商量</text>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="11.5" x="44" y="122">剧本松，但仍在演</text>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="11.5" x="44" y="142">观众换成了同事</text>
+<rect fill="rgba(224,129,85,0.10)" height="150" rx="12" stroke="#e08155" stroke-width="1.6" width="180" x="248" y="52"></rect>
+<text fill="#f4ece2" font-family="Georgia,serif" font-size="13" x="268" y="80">前台</text>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="11.5" x="268" y="102">一伙人合演</text>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="11.5" x="268" y="122">维持同一套定义</text>
+<rect fill="rgba(143,176,204,0.06)" height="150" rx="12" stroke="rgba(143,176,204,0.3)" stroke-dasharray="5 5" width="164" x="452" y="52"></rect>
+<text fill="#bfd2e2" font-family="Georgia,serif" font-size="13" x="472" y="80">观众</text>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="11.5" x="472" y="102">不往那扇门瞟</text>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="11.5" x="472" y="122">看见了装没看见</text>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="11.5" x="472" y="142">留出改口的台阶</text>
+<line stroke="#e08155" stroke-width="2.4" x1="228" x2="228" y1="52" y2="202"></line>
+<text fill="#e08155" font-family="Georgia,serif" font-size="11.5" x="196" y="228">那扇门</text>
+<path d="M436 127 L448 127" stroke="rgba(143,176,204,0.6)" stroke-width="1.4"></path>
+<path d="M448 127 L442 123 M448 127 L442 131" stroke="rgba(143,176,204,0.6)" stroke-width="1.4"></path>
+<path d="M448 160 C 400 190, 300 190, 258 168" fill="none" stroke="rgba(143,176,204,0.55)" stroke-dasharray="4 5" stroke-width="1.4"></path>
+<text fill="#8fb0cc" font-family="Georgia,serif" font-size="11" x="300" y="205">观众这一侧的维护动作</text>
+</svg>
+<div class="cap">竖线是那扇门。左右两格是通常被讲的部分；真正撑住这场演出的，是最右边那格里那几个不作为的动作——它们回过头来替前台补漏。</div>
+</div>
+<p>最有力的证据来自一个极端场景。1955 到 1956 年，Goffman 以体育教员助理的身份在华盛顿的圣伊丽莎白医院做了近一年田野，1961 年写成《收容所》。他管这类吃穿住行全被规定、人无法离开的地方叫<strong>总体机构</strong>（total institution）：个人物品、衣着、称呼、时间表全被收走，前台的道具被清空了。可他记下的是，人们随即造出一整套「底下的生活」——藏东西的角落、私下的交换、拿规则空子换来的一点自主。<strong>一被彻底剥夺准备前台的条件，人做的第一件事就是重新造一个后台出来。</strong></p>
+<p>所以把这套说法读成「人人都在骗人」是读反了。如果每个人都坚持当场戳穿每一处不一致，任何一次谈话都进行不到第三句。配合，本身就是秩序的一部分。</p>
+<p class="en-brief"><b>EN</b> An encounter runs on a definition of the situation that participants do not so much believe as agree not to challenge. The counter-intuitive consequence: most of the work of sustaining an impression is done by the audience, through what Goffman calls tact — not looking behind the door, not naming the lapse, leaving room to correct course. The strongest evidence comes from the limiting case: at St Elizabeths Hospital in 1955–56 Goffman found that inmates of a total institution, stripped of every prop, immediately rebuilt an "underlife" of hiding places and private exchanges. Read as "everyone is lying" the theory is inverted; without the cooperation, no conversation would reach its third sentence.</p>
+</div>
+<div class="section">
+<span class="num">// 03</span>
+<h2>他说错了话，尴尬的是全场</h2>
+<p>有人在会上提到一个已经离职的同事，还说「他会跟进」。接下来几秒里发生了一串很小的动作：有人低头看屏幕，有人接了半句把话头带走，说错的人自己笑了一下改口。全场合力把这几秒抹平了。</p>
+<p>1955 年 Goffman 在《精神病学》杂志上发了篇《论面子工作》。他给面子（face）下的定义有一处很容易滑过去：面子不长在人身上，<strong>它长在这一次相遇里</strong>——是你在这个场合主张、并且被在场的人认下来的那份正面价值。所以同一个人可以在这张桌上有面子，换一张桌就没有。</p>
+<p>面子工作是双向的，而且第二个方向才是关键：你得保住对方的脸，<strong>不是因为你厚道，是因为对方一掉脸，这个场就崩了，而你也在场。</strong>最常用的办法是回避——根本不提。其次是一套四步的补救：冒犯发生、有人点出来、给出补偿、对方接受。观察一次真实的道歉，基本能把这四步数出来；哪一步卡住，尴尬就留在屋里散不掉。</p>
+<p>这个概念的来路要交代清楚。Goffman 在文章里明说 face 借自中文。1944 年人类学家胡先缙在《美国人类学家》上发表《中国人的「面子」观念》，把它拆成两样不同的东西：<strong>脸</strong>（群体对一个人道德声誉的认可，丢了是道德问题）和<strong>面子</strong>（靠成就与铺排积累的声望，丢了是场面问题）。要防的误读是把这段概念史读成「某个民族更在乎面子」——Goffman 的论证恰恰相反：面子工作在任何一次面对面里都在发生，跨文化的差别不在有没有，而在<em>什么算掉脸</em>、以及<em>补救的脚本长什么样</em>。</p>
+<p>晚年他把这层现实命名为<strong>互动秩序</strong>（the interaction order）：面对面这一层有它自己的规则，既不能还原成个人心理，也不是制度往下投的影子。那篇作为美国社会学会主席演讲写下的文字，他因病未能亲自宣读，1983 年才发表。</p>
+<p>证据强度：这是观察性概括，不是测量。后来语言学的礼貌研究把其中一部分做成了可比较的东西，但也一直有批评说，这套模型归纳自特定社会的场景，当普适规律用要打折。</p>
+<p class="en-brief"><b>EN</b> Goffman's 1955 paper "On Face-Work" locates face not in the person but in the encounter — the positive value one claims and others ratify, here and now. Face-work runs both ways, and the second direction carries the weight: you protect the other's face because if they lose it the encounter collapses and you are standing in it. Avoidance comes first; then a four-step remedial interchange — offence, challenge, offering, acceptance. Goffman took the term from Chinese usage, citing Hu Hsien Chin's 1944 paper, which separates lien (moral standing granted by the group) from mien-tzu (prestige accumulated through success). The point is not that some peoples care more about face; cross-cultural variation lies in what counts as losing it and what the repair script looks like. Late in his career Goffman named this layer the interaction order — irreducible to psychology and not a projection of institutions.</p>
+</div>
+<div class="bigcat">
+<h3>🎒 场景 · BigCat</h3>
+<ul>
+<li><b>① 带团队与组织</b>——反复发生的那个情境：为了透明，团队定了「讨论一律走公开频道、会议一律留纪要」。两三个月后你发现，真正的决策在几个人的私聊里做完了，公开频道只剩结论和客套。「厨房那扇门推开的一瞬间，人换了一副样子」那节的机制说，后台不是不诚实的地方，是准备的地方——你取消不掉它，只能把它挤到你看不见也管不着的位置。可改的：把「必须公开」的要求从<b>过程</b>收回到<b>结论</b>——结论和依据必须公开可查，过程明确不要求（设计讨论不留纪要、草稿不入库）。另外把「谁在公开频道说得多」从任何评价口径里拿掉：它现在量的不是贡献，是谁愿意在台上演。</li>
+<li><b>② 修行与心性</b>——反复发生的那个情境：每次坐完，你都在心里给这一坐打个分，或者已经在想怎么把这段体验讲给谁听。你以为独处终于是不演了。同一条机制说：后台也有观众，只是这次的观众是想象出来的。可改的动作很具体：一周之内把「事后复述」整个停掉——不写记录、不评估今天坐得好不好、不跟任何人讲。然后留意这有多难受——那份难受的大小，就是这场表演的规模。</li>
+</ul>
+</div>
+<div class="crossx">
+<h3>🌀 越界 · 跨学科的联想</h3>
+<ul>
+<li><b>心理学 · 没人注意你，和大家一起装作没注意，是两回事</b>：2000 年康奈尔的一组实验里，学生被要求穿一件尴尬的 T 恤走进讨论室；事后他们估计约 46% 的在场者注意到了衣服上的图案，而实际回忆得起来的只有约 23%——高估了一倍。这叫聚光灯效应（spotlight effect）。这类结果被重复过不少次，但效应大小明显依赖场景，别当常数用。「他说错了话，尴尬的是全场」那节的机制却指出另一条路径：在场的人也可能<i>注意到了，但共同装作没有</i>，因为点破的代价点破的人自己也要担。由此能推出一个原本看不出的结论：<b>「没人拆穿我」在两种场合下由完全不同的机制产生，而对应的做法相反</b>——一次性相遇（机场、陌生的会）里是真的没人在看，你为破绽付的焦虑是纯浪费；而在要长期同场的团队里，人是看见了替你圆过去的，那意味着这是一笔真实存在的人情负债，会在关系变差那天被一次性拿出来清账。<b>但这里不成立</b>：那组实验的设计是陌生人、一次见面、几分钟，观众没有维持共同定义的动机，测到的是纯粹的知觉偏差；面子工作的前提恰恰是双方还要继续同场。把实验结论直接搬进熟人场景，就是把「没被注意到」和「被体谅了」混成一件事。</li>
+<li><b>演化生物学 · 装不出来的那部分才被当真</b>：雄孔雀的尾巴又重又扎眼，按理是纯负担。1975 年 Zahavi 的解释是：正因为昂贵，装不起的个体装不出来，所以可信；1990 年 Grafen 给出模型后，这一度成了动物通讯的主流说法。现状要说清楚：2020 年一篇综述系统论证「代价」既不充分也不必要，如今更被接受的框架是「权衡」——诚实靠的是好个体发信号的净收益更高。但一条硬核留了下来：<b>一个谁都能零成本发出的信号不携带信息。</b>「你其实一直在帮别人把戏演下去」那节说，前台的可信度不在表演本身，在于观众判断它有多难伪造。由此能推出：当某类前台的后台成本被压到接近零——模板化的措辞、一键生成的作品集、自动打磨语气的写作工具——这类信号不是变得更有效，而是<b>自动贬值</b>，接收方会转去看还没被压到零成本的那一格：现场追问、当场写下的推导过程。所以「人人都能做得更漂亮」的技术，可预测地把评判标准往仍然昂贵的地方推，而不是让评判变松。<b>但这里不成立</b>：动物信号的成本由生理硬约束担保，接收方是对手，绝无动机替发信者掩饰；而这一期讲的观众恰恰相反，他们主动配合，看见破绽装没看见，因为戏一崩大家都难堪。于是人这一侧多出一整条动物那边没有的通路——<b>可信度可以由观众的合作维持，而不必由发信者的成本担保</b>；这也解释了为什么明显不划算的伪装能在长期共处的群体里活很久，在一次性相遇里却活不过五分钟。</li>
+</ul>
+</div>
+<div class="thinking">
+<h3>深入思考</h3>
+<details><summary>如果后台也是演给另一批观众看的，那有没有一个谁都不演的时刻？</summary>
+<div>一种回答是没有：只要还有「我」在旁边评估这个「我」，观众席就没空过。另一种回答是有，但它不长在独处里，而长在<em>共同专注</em>里——两个人一起修一台机器、一起把一个孩子哄睡，注意力全在事上时，自我呈现这件事会短暂地掉线。注意这两种回答对应完全不同的实践建议：前者让你不要指望独处，后者让你去找事做。</div>
+</details>
+<details><summary>「配合别人把戏演下去」和「纵容」的界线在哪？</summary>
+<div>这套说法本身给不出这条线——它描述机制，不给规范。能给的只有一个可观察的判据：这次不点破，代价是落在场里的人身上，还是落在不在场的人身上？同事的一处口误只涉及在场者，替他圆过去；一个已经在影响别人的错误数字则不然，不在场的人要为它买单。这个判据不解决所有情况，但它把问题从「我厚道不厚道」挪到了「谁承担后果」，这一步挪动本身就有用。</div>
+</details>
+<details><summary>面子这个概念在不同社会里差的是量，还是内容？</summary>
+<div>「某些社会更要面子」这种量的说法很难成立，因为衡量的尺子本身是文化内部的。更站得住的是内容上的问法：什么事算掉脸——能力不行、失礼、还是让人不好下台？补救时谁先开口、要不要第三方在场、道歉是当众还是私下？把这些排出来比较，得到的是可检验的差异；问「谁更在乎」得到的往往只是刻板印象。</div>
+</details>
+</div>
+<div class="refs">
+<h3>延伸阅读</h3>
+<ul>
+<li><a href="https://zh.wikipedia.org/wiki/欧文·戈夫曼" rel="noopener" target="_blank">欧文·戈夫曼</a> · <a href="https://en.wikipedia.org/wiki/The_Presentation_of_Self_in_Everyday_Life" rel="noopener" target="_blank">《日常生活中的自我呈现》(1959)</a>（英文）——前台与后台</li>
+<li><a href="https://www.mediastudies.press/pub/yves-introduction" rel="noopener" target="_blank">《一个岛屿社区中的沟通行为》(1953) 开放版</a>（英文）——设得兰田野的博士论文</li>
+<li><a href="https://www.tandfonline.com/doi/abs/10.1080/00332747.1955.11023008" rel="noopener" target="_blank">Goffman《论面子工作》(1955)</a>（英文）· <a href="https://anthrosource.onlinelibrary.wiley.com/doi/10.1525/aa.1944.46.1.02a00040" rel="noopener" target="_blank">胡先缙《中国人的「面子」观念》(1944)</a>（英文）</li>
+<li><a href="https://www.penguinrandomhouse.com/books/61103/asylums-by-erving-goffman/" rel="noopener" target="_blank">《收容所》(1961)</a>（英文）——总体机构与「底下的生活」</li>
+<li><a href="https://www.ucpress.edu/books/the-managed-heart/paper" rel="noopener" target="_blank">Hochschild《被管理的心》(1983)</a>（英文）——情绪劳动</li>
+<li><a href="https://en.wikipedia.org/wiki/Spotlight_effect" rel="noopener" target="_blank">聚光灯效应</a>（英文）· <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/brv.12563" rel="noopener" target="_blank">2020 年对「累赘原理」的系统性批评</a>（英文）</li>
+</ul>
+</div>
+<footer>BigCat Learning Hub · Sociology &amp; Anthropology</footer>
+</div>
+<script src="https://hub.cissychen.com/comments.js" defer></script>
+<script src="https://hub.cissychen.com/search.js" defer></script>
+<script src="https://hub.cissychen.com/index-button.js" defer></script>
+<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
+</body></html>
