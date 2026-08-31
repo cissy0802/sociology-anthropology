@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sociology &amp; Anthropology Day 7: Deviance and Labeling</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:linear-gradient(170deg,#1a140f,#171210 42%,#120e0b);color:#e6dacc;line-height:1.9;min-height:100vh}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 60px}
+header{padding:52px 0 30px;border-bottom:1px solid #33261d}
+header .kicker{font-size:0.75rem;color:#8fb0cc;letter-spacing:2.5px;font-family:"SF Mono",Menlo,monospace}
+header h1{font-size:2.1rem;font-weight:800;background:linear-gradient(100deg,#e08155,#eda07c 58%,#8fb0cc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:0.5px;margin-top:12px;line-height:1.28}
+header h2{font-size:1rem;color:#a08b78;margin-top:10px;font-weight:400}
+header .meta{margin-top:14px;font-size:0.85rem;color:#a08b78}
+header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
+.intro{margin-top:30px;font-size:1.02rem;color:#d8c9b8}
+.intro p{margin-bottom:13px}
+.section{margin:46px 0;background:rgba(255,255,255,0.028);padding:28px 26px;border-radius:14px;border:1px solid rgba(255,255,255,0.06)}
+.section .num{display:inline-block;font-size:0.75rem;color:#e08155;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;margin-bottom:8px}
+.section h2{font-size:1.32rem;color:#f4ece2;margin-bottom:16px;font-weight:700;line-height:1.35}
+.section p{margin-bottom:14px;font-size:0.98rem}
+.section strong{color:#fff}
+.section em{color:#e08155;font-style:normal}
+.section ul{list-style:none;margin:14px 0}
+.section li{margin-bottom:10px;padding-left:20px;position:relative}
+.section li::before{content:"◈";position:absolute;left:0;top:0.42em;color:#e08155;font-size:0.7rem}
+.fig{margin:24px 0 10px;text-align:center}
+.fig svg{max-width:100%;height:auto}
+.fig .cap{font-size:0.82rem;color:#a08b78;margin-top:8px;text-align:left;line-height:1.65}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(143,176,204,0.12),rgba(224,129,85,0.05));border:1px solid rgba(143,176,204,0.34);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#8fb0cc;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#dfe3e6;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e08155;font-size:0.72rem}
+.crossx b{color:#aecbe2;font-weight:600}
+.thinking{background:linear-gradient(135deg,rgba(224,129,85,0.06),rgba(143,176,204,0.05));border:1px solid rgba(224,129,85,0.24);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e08155;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(18,14,11,0.5);border:1px solid rgba(224,129,85,0.2);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(224,129,85,0.06);border-color:rgba(224,129,85,0.42)}
+.thinking summary{cursor:pointer;color:#eda07c;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#8fb0cc}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(143,176,204,0.22);color:#ddd0c1;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#8fb0cc;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a08b78}
+.refs a{color:#e08155;text-decoration:none;border-bottom:1px dotted rgba(224,129,85,0.42)}
+.refs a:hover{color:#eda07c;border-bottom-color:#eda07c}
+.bigcat{margin:40px 0 0;background:linear-gradient(135deg,rgba(224,129,85,0.11),rgba(143,176,204,0.04));border:1px solid rgba(224,129,85,0.32);border-radius:14px;padding:22px 26px}
+.bigcat h3{color:#eda07c;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.bigcat ul{list-style:none;margin:0}
+.bigcat li{color:#ece0d2;font-size:0.93rem;line-height:1.8;margin-bottom:14px}
+.bigcat li:last-child{margin-bottom:0}
+.bigcat b{color:#eda07c;font-weight:600}
+footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
+@media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+</style></head><body>
+<div class="container">
+<header>
+<div class="kicker">DAY 7 · MICRO-INTERACTION</div>
+<h1>Deviance and Labeling</h1>
+<h2>The most counter-intuitive line of the day: deviance is not a quality the act carries — it is something that exists only after the act has been dealt with</h2>
+<div class="meta">2026-08-31 · BigCat</div>
+<div class="pitch">The same sentence: from one person it is a joke, from another it earns a written warning — and the difference is not in the sentence.</div>
+</header>
+<div class="intro">
+<p>Someone posts a half-joking complaint in the group chat. If the old hand posts it, a string of laughing replies follows. If the person who joined three months ago posts it, they get pulled aside by their manager the next day for "a quick chat." Same line of text, same chat.</p>
+<p>The method on this page starts from that asymmetry. Do not ask first whether the sentence was a problem; ask who, from what position, treated it as one. The reading it invites most easily is "labels are just made up by other people," and what it actually says is far colder: whether a label sticks, and what happens once it does, both follow regularities — and a few of them can be measured.</p>
+</div>
+<div class="section">
+<span class="num">// 01</span>
+<h2>The same act by a different person turns from "messing around" into "an incident"</h2>
+<p>In 1963 the sociologist Howard Becker published Outsiders. As a young man he played piano in Chicago bars to pay for his studies — sociology by day, dance-band musicians by night — and his fieldwork grew out of that. The line from the book that has been quoted for sixty years says: social groups make the rules first, and breaking them is what deviance means. <strong>Deviance is not a quality of what the person did; it is a consequence of other people applying a rule to them.</strong></p>
+<p>In more detail: for deviance to exist, two things have to be in place at once — someone did the act, and someone successfully applied the rule. So Becker tells you to count four kinds of people: those who did it and were caught, those who did it and were not, those who did not do it and were accused, and those who did neither. <em>Study only the first group and what you are studying is not the behaviour — it is the machinery that catches people.</em></p>
+<p>The rules themselves do not appear on their own. Becker coined the term <strong>moral entrepreneur</strong>: a rule usually becomes a rule because some person or agency put work into pushing it. His own example is the 1937 Marihuana Tax Act in the United States — he traced the publicity campaign of the Federal Bureau of Narcotics around the legislation and argued that this newly created agency's push was a key link. Historians later argued he overestimated that agency's role; the dispute has not closed.</p>
+<p>For a rule to land on an actual person, someone has to be there doing it. In 1968 Aaron Cicourel published The Social Organization of Juvenile Justice, based on going to work alongside police and probation officers in two California cities: how the same kind of incident ends in two sentences of advice on the spot in one case and in a written file in another. What he recorded is that the staff carried a background picture of which children go bad — whether anyone at home is watching, how the child speaks, which part of town they live in — and that picture decided whether a record got written. So "which city has more delinquents" is a number that partly measures children and partly measures two office routines.</p>
+<p>Strength of evidence, stated flatly: Becker's book is ethnography plus a conceptual frame, not a falsifiable hypothesis; Cicourel is field observation, and two cities are not a controlled comparison. The objection deserves its strongest version too: if deviance were purely applied, then hurting someone and littering would be indistinguishable — and nearly every known society prohibits a few categories of act, which "somebody pushed for it" cannot explain away. The defensible settlement is a division of labour: the consequences of behaviour belong to the study of behaviour, and "what gets recorded as what" belongs to this lens.</p>
+</div>
+<div class="section">
+<span class="num">// 02</span>
+<h2>After being called that once, he started living the way the word said</h2>
+<p>A child gets told in front of the class, once, "you just refuse to learn." Six months later he really has stopped doing homework — and does so with a clear conscience.</p>
+<p>In 1951 Edwin Lemert, in Social Pathology, split this into two layers. <strong>Primary deviance</strong> happens episodically and leaves the person's view of themselves untouched. <strong>Secondary deviance</strong> comes after the act has been dealt with and the name applied: the person reorganises life around the new identity — defending it, making friends among others called the same thing. The point is that the causes of the second layer are not the causes of the first; the cause is the social reaction itself. Unpack the chain and there are three pathways, and they differ enormously in how measurable they are.</p>
+<div class="fig">
+<svg viewbox="0 0 640 260" xmlns="http://www.w3.org/2000/svg">
+<rect fill="rgba(143,176,204,0.10)" height="54" rx="10" stroke="rgba(143,176,204,0.42)" stroke-width="1.4" width="146" x="10" y="100"></rect>
+<text fill="#bfd2e2" font-family="Georgia,serif" font-size="12.5" x="26" y="124">Primary deviance</text>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="11" x="26" y="143">episodic, self intact</text>
+<path d="M160 127 L188 127" stroke="#e08155" stroke-width="1.6"></path>
+<path d="M188 127 L180 122 M188 127 L180 132" stroke="#e08155" stroke-width="1.6"></path>
+<rect fill="rgba(224,129,85,0.12)" height="54" rx="10" stroke="#e08155" stroke-width="1.6" width="112" x="192" y="100"></rect>
+<text fill="#f4ece2" font-family="Georgia,serif" font-size="12.5" x="208" y="124">Dealt with</text>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="11" x="208" y="143">a rule applied</text>
+<path d="M308 118 C 334 96, 352 60, 384 52" fill="none" stroke="rgba(143,176,204,0.55)" stroke-width="1.4"></path>
+<path d="M308 127 L384 127" stroke="rgba(143,176,204,0.55)" stroke-width="1.4"></path>
+<path d="M308 136 C 334 158, 352 194, 384 202" fill="none" stroke="rgba(143,176,204,0.55)" stroke-width="1.4"></path>
+<text fill="#bfd2e2" font-family="Georgia,serif" font-size="11.5" x="392" y="42">1. Others treat you differently</text>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="10.5" x="392" y="60">small, and only before first impressions</text>
+<text fill="#f4ece2" font-family="Georgia,serif" font-size="11.5" x="392" y="122">2. Doors close</text>
+<text fill="#e08155" font-family="Georgia,serif" font-size="10.5" x="392" y="140">dullest, hardest causal evidence</text>
+<text fill="#bfd2e2" font-family="Georgia,serif" font-size="11.5" x="392" y="200">3. The person rereads themselves</text>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="10.5" x="392" y="218">best story, least measurable</text>
+<line stroke="rgba(255,255,255,0.14)" stroke-dasharray="4 5" x1="380" x2="380" y1="24" y2="232"></line>
+</svg>
+<div class="cap">All three pathways lead to secondary deviance, but their evidence grades differ completely: the two that tell best are the hardest to measure, and the least eye-catching one is the sturdiest.</div>
+</div>
+<p><strong>Pathway one</strong> carries the most famous evidence and needs the most care. Rosenthal and Jacobson's Pygmalion in the Classroom (1968) told teachers that certain pupils were about to bloom academically — the list was in fact drawn at random — and those pupils scored higher on an intelligence test by the end of the year. The study drew heavy methodological criticism as soon as it appeared. In 1984 Raudenbush pooled 18 experiments of the same kind: the average effect was small (about 0.14 standard deviations), with a clear regularity — if teachers had already spent roughly two weeks with the pupils before receiving the list, the effect essentially disappeared. What survives is not "expectations can remake a child" but <em>expectations matter most where no first impression has formed yet</em>.</p>
+<p><strong>Pathway three</strong> is the hardest to measure and the easiest to overstate. In 1973 Rosenhan published "On Being Sane in Insane Places" in Science: eight healthy people feigned hearing a voice, were all admitted, and were never detected. The current status has to be stated plainly: in 2019 the journalist Susannah Cahalan spent years in the archives and could find only a very few of the pseudopatients, and found that Rosenhan's own record did not match the paper's description — <strong>the study can no longer be used as evidence.</strong> What survives is a weaker but steadier observation: once a person is inside an institution of a certain kind, their subsequent conduct gets read through that classification.</p>
+<p><strong>Pathway two</strong> is the dullest and the best measured. Chicago's juvenile courts assign cases to judges at random, and judges differ in how readily they detain. In 2015 two economists used that fact to compare similar children who happened to draw different judges, and found the detained group markedly less likely to finish high school and more likely to be incarcerated as adults. That is a natural experiment, and the causal inference is far harder than in the other two. The scope has to be fenced in as well: one city, one period, one class of cases. So the next time you hear that a label can ruin a person, ask first: which pathway?</p>
+</div>
+<div class="section">
+<span class="num">// 03</span>
+<h2>Some marks can be hidden and some cannot, and those are two entirely different troubles</h2>
+<p>In one team, someone came last in the quarterly review and everybody knows. Someone else has a gap year that never made it onto their résumé, and nobody knows. Both have a hard year ahead, but the hard part is not the same thing.</p>
+<p>Goffman published Stigma in 1963. One distinction of his is usually skipped over and is the most useful cell in the book: the <strong>discredited</strong> and the <strong>discreditable</strong>. The first lives a life of managing tension — everyone already knows, and the problem is getting through the encounter. The second lives a life of managing information — who knows, who gets told, when. The skills required are completely different, and outsiders usually only see the first kind.</p>
+<p>Two moves follow: <strong>passing</strong> is keeping it unknown; <strong>covering</strong> is keeping it from taking up the room once it is known. Stigma also spreads to the people standing nearby, which he calls <strong>courtesy stigma</strong>. And stigma never lives in the attribute — the same thing counts for nothing in another setting, so what you always have to look at is <em>the attribute-plus-setting combination</em>.</p>
+<p>In 2001 Bruce Link and Jo Phelan tightened the concept once, and it is worth memorising: stigma requires four things to happen together — a difference gets labelled, the label is linked to a set of stereotypes, the labelled are sorted into "them", and status loss and discrimination follow — plus one condition: the labeller must have the <strong>power</strong> to make all of it stick. That last clause moves the discussion off "who has it worse" and onto an observable question: this label — who can make it stick, and in which settings?</p>
+<p>The status cell can be measured. In 2003 Devah Pager ran an audit study in Milwaukee: comparable young men applied for the same entry-level openings, with résumés differing only in whether they carried a single drug conviction. Among white applicants, callbacks ran at about 34% without a record and about 17% with one — a record cut the chances in half. The experiment also grouped by ethnicity, with corresponding figures of about 14% and 5% for Black applicants. Note that it measures callbacks rather than hires, and that it is one city in one year.</p>
+<p>The criticism, stated plainly: the concept is often stretched too far, until every negative judgement counts as stigma and the term empties out; and putting all the effort into "changing attitudes" tends to route around the harder question of whether doors were actually closed.</p>
+</div>
+<div class="bigcat">
+<h3>🎒 In practice · BigCat</h3>
+<ul>
+<li><b>1. Engineering and system design</b> — the recurring situation: some service gets characterised in a postmortem as "legacy, scheduled for decommissioning." A year later it has not been decommissioned, but nobody has put a line of improvement into it: new requirements route around it, its alerts get triaged a notch lower. At year end, sure enough, it has the most incidents. Of the three pathways in "After being called that once, he started living the way the word said," this is the doors-close one. What to change: force "scheduled for decommissioning" to come with an expiry date and a named owner, and until that date its bugs get fixed at normal priority; and read the annual incident stats by <b>failure category</b>, not by service name — read by service name, what you are measuring is the label.</li>
+<li><b>2. Health and energy</b> — the recurring situation: a check-up flags one measure as "elevated." From that day you have an extra identity: measuring daily, logging daily, referring every small discomfort back to it. A 1978 study recorded that a group of workers screened for high blood pressure and told about it subsequently took more days of sick leave. What to do about treatment is a matter for a doctor; this is only about the label layer. What to change: fix the measurement frequency to whatever recheck interval the doctor gives and do not measure in between; and swap "I am a person with high blood pressure" for "my last reading fell in this range." The first is an identity, the second is data.</li>
+</ul>
+</div>
+<div class="crossx">
+<h3>🌀 Crossing over · Notes from other fields</h3>
+<ul>
+<li><b>Distributed systems and AI · You only see outcomes for the ones you let through</b>: an automated approval system — lending, risk scoring, content moderation, all the same — grows an "outcome" field only for the samples it lets through; for the ones it blocks, what would have happened is never known. Machine learning calls this the <i>selective labels</i> problem. What is running is exactly the doors-close pathway from "After being called that once, he started living the way the word said": once the label lands it shuts off part of the future, so "sure enough, it went wrong later" is partly manufactured by the label. From this follows a conclusion you could not otherwise see: <b>such a system's live metrics will improve on their own while the model does not change at all</b> — it narrows the pass-through set on one side and scores itself only on that set on the other. Accuracy therefore cannot vouch for itself; the only way to separate the model's skill from the loop's contribution is to let a small random slice through and pay the real cost of doing so. Without that slice, "ship it and watch the numbers for a while" proves less the longer it runs. <b>Where it does not hold</b>: on the machine side the loop runs entirely through the observer's data — a machine tagged "high failure rate" does not become more likely to break because of the tag. The human side has an extra pathway: the labelled person rereads themselves. So random pass-through cleans up the machine-side bias completely and fixes only half of it in a system that handles people — even with the data bias fully removed, the gap between the two groups will not go to zero, and what remains is a difference the label really produced.</li>
+<li><b>Evolutionary biology · The line is drawn where there is no break</b>: California has a salamander, Ensatina, that spread south along both sides of the Central Valley; neighbouring populations interbreed all the way down, yet where the two arms meet again at the southern end they barely can. Whether they are one species has no factual answer — this is a <i>ring species</i>. As "The same act by a different person turns from 'messing around' into 'an incident'" puts it, deviance is not in the behaviour but in the step where a rule is successfully applied; species boundaries likewise are not in the salamanders but in the classification rule. What follows is not "all classification is arbitrary" — quite the opposite: drawing by interbreeding, by gene flow, or by morphology yields different boundaries, and each works for its own purpose. So <b>"is this classification correct" is the wrong question; the answerable one is "which decision is this line drawn for"</b>. Bring that back: do not ask whether a label is accurate, ask whose decision it is saving work for — which lands precisely on the power condition Link and Phelan added in the stigma section. <b>Where it does not hold</b>: boundary disputes in biology have an independent referee — gene-flow data do not change with what taxonomists think — so "wait for more data to settle it" is a viable route. Social classification has no such external referee: once a line is drawn, how officials write records and how employers screen résumés both shift with it, so the data collected afterwards already contain the line. Waiting for data to settle the dispute is, here, a circle.</li>
+</ul>
+</div>
+<div class="thinking">
+<h3>Going deeper</h3>
+<details><summary>If deviance is applied, does "some things are simply bad" still hold?</summary>
+<div>It holds, and this lens never set out to deny it. It answers a different question: among the acts already prohibited, whose instance gets recorded. Once the two are separated, positions that look opposed turn out not to conflict — "hurting someone has consequences" and "who gets a file opened follows regularities" can both be true. What does go wrong is using the lens as a value judgement: "this was applied" does not entail "so it should not be dealt with."</div>
+</details>
+<details><summary>Can "doors close" and "the person rereads themselves" be told apart in a real setting?</summary>
+<div>Basically not, though design can approach it. The randomly assigned judges studies are powerful because they measure the two pathways bundled as one total effect while ruling out the confound that children more prone to trouble get detained more often. To split them further you would need situations that close doors without conferring an identity, or confer an identity without closing doors. Such natural experiments are hard to find, which is why knowledge in this cell grows slowly.</div>
+</details>
+<details><summary>Why do some labels never come off while others nobody takes seriously?</summary>
+<div>One checkable difference is whether the label has a <em>carrier</em>: written into a file or held in a system, it keeps working long after whoever applied it has forgotten; passed around in a few people's talk, it decays with staff turnover. Another is whether there is a removal procedure — with a clear route of expiry, review or deletion the label behaves more like a status; without one, more like an identity.</div>
+</details>
+</div>
+<div class="refs">
+<h3>Further reading</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Labeling_theory" rel="noopener" target="_blank">Labeling theory</a> · <a href="https://en.wikipedia.org/wiki/Outsiders_(Becker_book)" rel="noopener" target="_blank">Becker, Outsiders (1963)</a> — deviance and moral entrepreneurs</li>
+<li><a href="https://www.routledge.com/The-Social-Organization-of-Juvenile-Justice/Cicourel/p/book/9781560007791" rel="noopener" target="_blank">Cicourel, The Social Organization of Juvenile Justice (1968)</a> — how records get written</li>
+<li><a href="https://en.wikipedia.org/wiki/Stigma:_Notes_on_the_Management_of_Spoiled_Identity" rel="noopener" target="_blank">Goffman, Stigma (1963)</a> · <a href="https://www.annualreviews.org/content/journals/10.1146/annurev.soc.27.1.363" rel="noopener" target="_blank">Link &amp; Phelan, "Conceptualizing Stigma" (2001)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Rosenhan_experiment" rel="noopener" target="_blank">The Rosenhan experiment and the later challenge to it</a> · <a href="https://en.wikipedia.org/wiki/Pygmalion_in_the_Classroom" rel="noopener" target="_blank">Pygmalion in the Classroom (1968)</a></li>
+<li><a href="https://academic.oup.com/qje/article/130/2/759/2330352" rel="noopener" target="_blank">Randomly assigned judges and the long-run effects of juvenile detention (2015)</a> · <a href="https://scholar.harvard.edu/files/pager/files/pager_ajs.pdf" rel="noopener" target="_blank">Pager, "The Mark of a Criminal Record" (2003)</a></li>
+<li><a href="https://dl.acm.org/doi/10.1145/3097983.3098066" rel="noopener" target="_blank">The selective labels problem (2017)</a> · <a href="https://en.wikipedia.org/wiki/Ensatina" rel="noopener" target="_blank">Ensatina, a ring species</a> · <a href="https://www.nejm.org/doi/10.1056/NEJM197810052991403" rel="noopener" target="_blank">Hypertension labelling and absenteeism (1978)</a></li>
+</ul>
+</div>
+<footer>BigCat Learning Hub · Sociology &amp; Anthropology</footer>
+</div>
+<script defer="" src="https://hub.cissychen.com/comments.js"></script>
+<script defer="" src="https://hub.cissychen.com/search.js"></script>
+<script defer="" src="https://hub.cissychen.com/index-button.js"></script>
+<script defer="" src="https://hub.cissychen.com/i18n-tts.js"></script>
+</body></html>
