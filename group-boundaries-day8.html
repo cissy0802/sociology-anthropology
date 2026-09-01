@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>社会学与人类学 Day 8：群体的力量</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:linear-gradient(170deg,#1a140f,#171210 42%,#120e0b);color:#e6dacc;line-height:1.9;min-height:100vh}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 60px}
+header{padding:52px 0 30px;border-bottom:1px solid #33261d}
+header .kicker{font-size:0.75rem;color:#8fb0cc;letter-spacing:2.5px;font-family:"SF Mono",Menlo,monospace}
+header h1{font-size:2.1rem;font-weight:800;background:linear-gradient(100deg,#e08155,#eda07c 58%,#8fb0cc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:0.5px;margin-top:12px;line-height:1.28}
+header h2{font-size:1rem;color:#a08b78;margin-top:10px;font-weight:400}
+header .meta{margin-top:14px;font-size:0.85rem;color:#a08b78}
+header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
+.intro{margin-top:30px;font-size:1.02rem;color:#d8c9b8}
+.intro p{margin-bottom:13px}
+.section{margin:46px 0;background:rgba(255,255,255,0.028);padding:28px 26px;border-radius:14px;border:1px solid rgba(255,255,255,0.06)}
+.section .num{display:inline-block;font-size:0.75rem;color:#e08155;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;margin-bottom:8px}
+.section h2{font-size:1.32rem;color:#f4ece2;margin-bottom:16px;font-weight:700;line-height:1.35}
+.section p{margin-bottom:14px;font-size:0.98rem}
+.section strong{color:#fff}
+.section em{color:#e08155;font-style:normal}
+.section ul{list-style:none;margin:14px 0}
+.section li{margin-bottom:10px;padding-left:20px;position:relative}
+.section li::before{content:"◈";position:absolute;left:0;top:0.42em;color:#e08155;font-size:0.7rem}
+.fig{margin:24px 0 10px;text-align:center}
+.fig svg{max-width:100%;height:auto}
+.fig .cap{font-size:0.82rem;color:#a08b78;margin-top:8px;text-align:left;line-height:1.65}
+.en-brief{margin-top:18px;padding:12px 16px;border-left:2px solid rgba(160,139,120,0.5);background:rgba(255,255,255,0.02);border-radius:0 8px 8px 0;font-size:0.85rem;color:#b0a08e;line-height:1.62}
+.en-brief b{color:#bda994;font-family:"SF Mono",Menlo,monospace;font-size:0.68rem;letter-spacing:1.5px;margin-right:9px;font-weight:700}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(143,176,204,0.12),rgba(224,129,85,0.05));border:1px solid rgba(143,176,204,0.34);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#8fb0cc;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#dfe3e6;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e08155;font-size:0.72rem}
+.crossx b{color:#aecbe2;font-weight:600}
+.thinking{background:linear-gradient(135deg,rgba(224,129,85,0.06),rgba(143,176,204,0.05));border:1px solid rgba(224,129,85,0.24);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e08155;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(18,14,11,0.5);border:1px solid rgba(224,129,85,0.2);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(224,129,85,0.06);border-color:rgba(224,129,85,0.42)}
+.thinking summary{cursor:pointer;color:#eda07c;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#8fb0cc}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(143,176,204,0.22);color:#ddd0c1;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#8fb0cc;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a08b78}
+.refs a{color:#e08155;text-decoration:none;border-bottom:1px dotted rgba(224,129,85,0.42)}
+.refs a:hover{color:#eda07c;border-bottom-color:#eda07c}
+.bigcat{margin:40px 0 0;background:linear-gradient(135deg,rgba(224,129,85,0.11),rgba(143,176,204,0.04));border:1px solid rgba(224,129,85,0.32);border-radius:14px;padding:22px 26px}
+.bigcat h3{color:#eda07c;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.bigcat ul{list-style:none;margin:0}
+.bigcat li{color:#ece0d2;font-size:0.93rem;line-height:1.8;margin-bottom:14px}
+.bigcat li:last-child{margin-bottom:0}
+.bigcat b{color:#eda07c;font-weight:600}
+footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
+@media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+</style></head><body>
+<div class="container">
+<header>
+<div class="kicker">DAY 8 · 微观互动</div>
+<h1>群体的力量</h1>
+<h2>这一期最反直觉的一句：让你把话咽回去的不是人多，是没有第二个人跟你不一样</h2>
+<div class="meta">2026-09-01 · BigCat</div>
+<div class="pitch">屋里只要有一个人先说「我有点不同看法」，你就敢说了——哪怕他说的也不对。</div>
+</header>
+<div class="intro">
+<p>新来的同事第一次参加方案评审。他前一晚看出了一个洞，还写了两行字准备说。轮到他时，前面五个人都说没问题。他张嘴说出来的是：「我也差不多这个想法。」</p>
+<p>这一页拆的就是这一秒。它最容易被读成「群众都是盲从的」，而真实的机制细得多：改口的开关往往不在人数上；群体的边界经常和文化差异对不上；至于偏袒自己人，用抛硬币分出来的组，十分钟就够了。</p>
+</div>
+<div class="section">
+<span class="num">// 01</span>
+<h2>你举手之前，先看了一圈屋里的人</h2>
+<p>1951 年，Solomon Asch 在斯沃斯莫尔学院做了个简单到可笑的实验。给你看一张卡片，上面一条标准线；另一张上三条线，问哪条跟它一样长。答案明显到一个人做几乎不会错。但屋里坐着七八个人，除你之外全是安排好的托，他们在十二个关键轮次里齐声说同一个错答案。结果：约三分之一的关键回答跟着错了，四分之三的人至少跟过一次。</p>
+<p>真正有用的是后面那组变体。Asch 动的是「一致」这一格：只要多数派里出现一个人给出不一样的答案，从众率就从约三分之一掉到百分之五上下。而且这个人说得对不对无所谓——他只要不跟大伙儿一样就行。<strong>所以起作用的不是人数，是一致性。</strong>压住你的不是五个人，是「唯一」这个位置。</p>
+<p>改口的原因还分两种，1955 年 Morton Deutsch 与 Harold Gerard 把它拆开了：一种是你真觉得这么多人都这么说、大概是我看走眼了，这叫<strong>信息性影响</strong>；另一种是你心里清楚是错的，但不想当那个唯一的异类，这叫<strong>规范性影响</strong>。分开很值：对付前者要给独立证据，对付后者要让「不同意」这件事不需要勇气，两条路不通用。</p>
+<p>这套结果稳不稳？1996 年 Rod Bond 与 Peter Smith 把 17 个国家的 133 项同类研究合起来算：从众程度与社会的集体主义倾向相关，而美国那批研究显示，从众自 1950 年代以来一路走低。<em>所以从众率不是人性常数，它是一个会随社会和年代变的量。</em></p>
+<p>再往上一格是服从。1961 年起 Stanley Milgram 在耶鲁做的实验，基准条件下 40 人里有 26 人（65%）把电压一路加到最高一档。这个数字今天得带注解用：2013 年 Gina Perry 查耶鲁档案，发现主试常常脱稿加压，不少参与者当场就怀疑电击是假的；2009 年 Jerry Burger 做了个只推进到 150 伏的版本，70% 选择继续，与 Milgram 那版对应的 82.5% 差别不大。被推翻的不是「人会服从」，是解释：原来那套「代理状态」（人把责任交出去、像机器一样执行）现在少有人用，更被接受的读法是<strong>投入的追随</strong>——人是被说服了自己在配合一件有价值的事，才留在那儿。两种说法要防的东西不同：一个是权威，一个是叙事。</p>
+<p>还有一项曾被引得最多的研究现在得除名。1971 年的斯坦福监狱实验长期当作「情境能把普通人变成施暴者」的证明；2019 年 Thibault Le Texier 用档案、未公开录音和对 15 位当事人的访谈还原出来：狱警事先被明确要求要「强硬」，不够狠还会被提醒。<strong>它不能再当证据用了。</strong>证据强度按序排：Asch 那套复制得好，Milgram 的数字要打折、解释已换，斯坦福那次归零。</p>
+<p class="en-brief"><b>EN</b> Asch's line-judgment studies (from 1951, Swarthmore) found roughly a third of critical responses went along with a unanimous wrong majority, and three-quarters of participants conformed at least once. The decisive variation concerns unanimity, not size: one confederate breaking ranks — even with a different wrong answer — cut conformity to around five percent. Deutsch and Gerard (1955) separate informational from normative influence, which need different remedies. Bond and Smith's 1996 meta-analysis of 133 studies across 17 countries found conformity tracks collectivism and has declined in the United States since the 1950s, so it is a social variable, not a human constant. On obedience, Milgram's 65% baseline now needs caveats: Perry's 2013 archival work showed off-script pressure and widespread suspicion, while Burger's 2009 replication to 150 volts found 70% continuing against Milgram's comparable 82.5%. The agentic-state explanation has largely given way to engaged followership. Le Texier's 2019 archival study removed the Stanford prison experiment from the evidence base entirely: the guards were coached to be tough.</p>
+</div>
+<div class="section">
+<span class="num">// 02</span>
+<h2>你说不出他们和隔壁村差在哪，可他们自己一口就说得出</h2>
+<p>1960 到 1961 年，人类学家 Michael Moerman 在泰国北部清康附近的一个村子住了一年，本想弄清一个看起来很简单的问题：谁是泐人（Lue）？他挨条试标准——说什么话、穿什么、房子怎么盖、怎么种地、拜什么——每条要么把隔壁的泰人也划进来，要么把村里一部分人划出去。最后剩下的唯一可靠标准是：自称是泐人的人。而同一个人换个场合会说自己是泰人。1965 年他写成一篇文章，标题就是那个问题：《谁是泐人？》</p>
+<p>这不是「他们自己也搞不清」。这是说，<strong>族群名称不是文化差异的标签，它是一套分类系统里的位置</strong>，而位置随场合变。</p>
+<div class="fig">
+<svg viewbox="0 0 640 236" xmlns="http://www.w3.org/2000/svg">
+<text fill="#a08b78" font-family="Georgia,serif" font-size="11.5" x="20" y="20">按里面装的东西划</text>
+<ellipse cx="112" cy="120" fill="rgba(143,176,204,0.10)" rx="74" ry="46" stroke="rgba(143,176,204,0.5)" stroke-dasharray="5 4" stroke-width="1.3"></ellipse>
+<ellipse cx="164" cy="98" fill="rgba(224,129,85,0.08)" rx="74" ry="46" stroke="rgba(224,129,85,0.55)" stroke-dasharray="5 4" stroke-width="1.3"></ellipse>
+<ellipse cx="150" cy="150" fill="rgba(255,255,255,0.03)" rx="74" ry="46" stroke="rgba(230,218,204,0.42)" stroke-dasharray="5 4" stroke-width="1.3"></ellipse>
+<text fill="#bfd2e2" font-family="Georgia,serif" font-size="11" x="34" y="122">语言</text>
+<text fill="#eda07c" font-family="Georgia,serif" font-size="11" x="196" y="76">生计</text>
+<text fill="#e6dacc" font-family="Georgia,serif" font-size="11" x="150" y="196">信仰</text>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="10.5" x="20" y="222">三条标准划出三条不重合的线</text>
+<line stroke="rgba(255,255,255,0.14)" stroke-dasharray="4 5" x1="318" x2="318" y1="14" y2="226"></line>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="11.5" x="348" y="20">按成员资格划</text>
+<rect fill="rgba(143,176,204,0.09)" height="112" rx="10" stroke="rgba(143,176,204,0.42)" stroke-width="1.3" width="112" x="348" y="66"></rect>
+<rect fill="rgba(224,129,85,0.09)" height="112" rx="10" stroke="rgba(224,129,85,0.5)" stroke-width="1.3" width="112" x="504" y="66"></rect>
+<text fill="#bfd2e2" font-family="Georgia,serif" font-size="12.5" x="386" y="112">我们</text>
+<text fill="#eda07c" font-family="Georgia,serif" font-size="12.5" x="542" y="112">他们</text>
+<line stroke="#f4ece2" stroke-width="2" x1="482" x2="482" y1="52" y2="192"></line>
+<path d="M436 142 L528 142" stroke="rgba(230,218,204,0.7)" stroke-width="1.4"></path>
+<path d="M528 142 L520 137 M528 142 L520 147" stroke="rgba(230,218,204,0.7)" stroke-width="1.4"></path>
+<path d="M528 164 L436 164" stroke="rgba(230,218,204,0.35)" stroke-width="1.4"></path>
+<path d="M436 164 L444 159 M436 164 L444 169" stroke="rgba(230,218,204,0.35)" stroke-width="1.4"></path>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="10.5" x="348" y="216">人来回穿过，线照样在</text>
+</svg>
+<div class="cap">左边是常识做法：按文化特征划，可每条特征划出的线都不一样。右边是另一种问法：只看一条线，看它怎么被维持——人不断穿过去，它也不消失。</div>
+</div>
+<p>1969 年 Fredrik Barth 编的《族群与边界》把这件事推成了通则：该研究的是<strong>边界</strong>，不是边界里装的那些「文化内容」（cultural stuff）。他的关键观察正是图右边那件事：人不断穿过边界，边界却稳稳地在。他自己的田野在阿富汗与巴基斯坦交界一带，记下一个不对称：南部的帕坦人（Pathan）失去土地之后可以变成俾路支人（Baluch），反过来几乎不行。原因在两套成员资格的算法上——帕坦人的身份挂在族谱与土地上，丢了地就掉出去；俾路支人那套是等级化的依附关系，能把外人接进来。</p>
+<p>收得住的一句是：<em>群体的边界不是文化差异的自然结果，它是被维持出来的。</em>于是可问的问题换了一批：这条线由谁维持、越过去要付什么、什么样的人过得去。这几个都能拿田野材料查。</p>
+<p>证据强度：两项都是民族志个案，不是能证伪的假设，靠的是后来大量田野反复用得上。批评说最强的那版：只盯边界会低估文化内容自己的惯性，语言和习惯不是想换就换；另一条是 Barth 偏向个体的策略选择，解释不了那些世代不变、几乎无人穿过的边界。</p>
+<p class="en-brief"><b>EN</b> Moerman spent 1960–61 in a village near Chiang Kham in northern Thailand asking a simple question: who are the Lue? Every objective criterion he tried — language, dress, housing, farming, religion — either swept in neighbouring Thai or excluded some of the villagers; the only reliable criterion left was self-ascription, and the same person would call himself Thai in another setting. His 1965 paper concludes that an ethnic name marks a position in a classification system, not a distinct cultural inventory. Barth's Ethnic Groups and Boundaries (1969) generalises this: study the boundary, not the "cultural stuff" it encloses, because people cross continually while the boundary persists. His own fieldwork records an asymmetry on the Afghan-Pakistan frontier: southern Pathans who lose land can become Baluch, but not the reverse, because membership is reckoned differently on each side — genealogy and land versus incorporation through clientage. Evidence: ethnographic cases. The strongest objections are that boundary-first analysis underrates the inertia of cultural content, and that Barth's strategic actor cannot explain boundaries that almost nobody crosses.</p>
+</div>
+<div class="section">
+<span class="num">// 03</span>
+<h2>用抛硬币分的组，十分钟后你就开始偏心自己人</h2>
+<p>1971 年，Henri Tajfel 和同事在布里斯托尔找了一批十四五岁的男生。先看两位画家的画，说是按你更喜欢谁分组——其实是随机分的。接着让每人给别的参与者分点数，对方只有一个代号和组别，你既不认识他，自己也一分拿不到。按理说没有任何理由偏心。</p>
+<p>结果是：他们偏心，而且方式很特别。比起「让自己组拿到最多」，他们更常选<strong>拉开差距</strong>那种分法——哪怕自己组因此拿得比另一种分法还少。这个范式后来被反复复制，是这一格里少数很稳的结果。</p>
+<p>但结论得说准，不然就滑出去了。1999 年 Marilynn Brewer 那篇提醒得很硬：最小群体里长出来的主要是<em>偏爱自己人</em>，不是<em>敌视对方</em>。这两件事在心理上和后果上都不是一回事，也不必然一起出现——把这类实验读成「人天生排外」是过度解读。真实世界里的偏袒，很多时候不需要任何敌意：谁被想起来、谁被推荐、谁被默认信任。</p>
+<p>那敌意怎么才长出来？教科书答案是 1954 年 Muzafer Sherif 的强盗洞夏令营：两组男孩先各自成团，再安排竞赛，很快互相敌视，最后靠几件必须两边合力才办得成的事（修水管、拖抛锚的卡车）缓和下来。现状必须交代：2018 年 Gina Perry 在档案里发现，Sherif 1953 年在纽约州先做过一次几乎相同的设计，失败了——男孩们跨组的友谊太牢，怎么挑拨都不肯敌对，此后他几乎没再提这一次；而且实验者本身做了不少推动冲突的动作。所以强盗洞不该再当「敌意会自然产生」的干净证据。</p>
+<p>反倒是「接触」那一侧证据更硬。2006 年 Thomas Pettigrew 与 Linda Tropp 汇总了 515 项研究、713 个独立样本、二十五万多人：群际接触与偏见的相关平均约 −0.21，方向稳定，他们也检查了发表偏倚和参与者自选择。要框住的是：多数是横断面数据，「本来就宽容的人更愿意去接触」这条反向解释在单项研究里排不干净。稳的是方向和量级，不是「接触必然减少偏见」。</p>
+<p class="en-brief"><b>EN</b> Tajfel and colleagues (1971, Bristol) assigned teenage boys to groups by an ostensible painting preference that was in fact random, then had them allocate points to anonymous coded others, with nothing for themselves. They favoured their own group, and preferred maximum difference over maximum in-group gain. The paradigm replicates robustly. Brewer (1999) sharpens the reading: what minimal groups generate is in-group favouritism, not out-group hostility — distinct phenomena that need not co-occur, so "people are innately hostile to outsiders" overreads the result. On where hostility does come from, Sherif's 1954 Robbers Cave camp is no longer clean evidence: Perry's 2018 archival work uncovered a nearly identical 1953 study in New York state that failed because cross-group friendships held, which Sherif then set aside, and documented experimenter prodding. Contact has the harder evidence: Pettigrew and Tropp's 2006 synthesis of 515 studies and 713 samples found a stable mean correlation of about −0.21 with prejudice, though mostly cross-sectional, leaving self-selection hard to rule out.</p>
+</div>
+<div class="bigcat">
+<h3>🎒 场景 · BigCat</h3>
+<ul>
+<li><b>① 带团队与组织</b>——反复发生的那个情境：方案评审按座位轮流表态，第一个发言的人定了调，后面全变成补充。半年后回看，方案质量跟「第一个发言的是谁」相关得刺眼。跑的是「你举手之前，先看了一圈屋里的人」那节里规范性影响那一半——不是没人看出问题，是没人想当唯一的那个。可改的：口头轮流改成同时提交书面评分（各自写完再念），主持人最后说；再指定一个人专职提反面意见，当众点明这是他今天的角色。这跟「鼓励大家多说」不是一回事——要的是有人先破掉一致，不是气氛好。</li>
+<li><b>② 投资与仓位</b>——反复发生的那个情境：一个标的你看了五六篇分析，方向一致，于是加仓。事后一查，其中四篇引的是同一份原始报告。跑的是同一节里的信息性影响：你以为收到五个独立信号，实际是一个信号被转述了五遍。可改的：每条看多或看空的理由记一个「原始出处」字段，同源只算一票；仓位建完就停掉「继续找同方向观点」这个动作——它不增加信息，只把重复计数做厚。</li>
+</ul>
+</div>
+<div class="crossx">
+<h3>🌀 越界 · 跨学科的联想</h3>
+<ul>
+<li><b>复杂性科学 · 一个人的门槛挪一格，整屋人两种结局</b>：1978 年 Mark Granovetter 提过一个门槛模型——每个人有一个「看到多少人已经动了，我才动」的数。他举的极端例子是一百个人，门槛分别是 0、1、2……一直到 99：门槛 0 的先动，门槛 1 的看到有人动了也动，一路连锁，全体都动。现在只把门槛为 1 的那人换成门槛 2，链条第一步就断，最后只有一个人动。同样一百个人，两种结局。跑的正是「你举手之前，先看了一圈屋里的人」那节里的规范性影响：人是按「已经有几个人这么做了」决定自己开不开口的。由此能推出一个原本看不出的结论：<b>会议室里的沉默不必用「团队氛围不好」来解释</b>——同一批人、同样的意见分布，差别可能只在有没有那一两个门槛特别低的人在场。想改结果，去降最左边那一两个人的开口成本，比改所有人的态度便宜得多，也可测得多。<b>但这里不成立</b>：门槛模型假设人人看得见全场比例，是在数人头；Asch 那组变体说的却不是比例——一个盟友就够，而且他答错也算数。变的不是数量，是「唯一」这个状态没了。纯计数模型会把这件事算成百分之一的扰动，从而系统性地低估第一个开口的人。</li>
+<li><b>神经科学 · 被踢出传球游戏的那六十秒</b>：2003 年 Naomi Eisenberger 等人让人躺在扫描仪里玩一个三人网络传球游戏，玩到一半，另外两个「玩家」（其实是程序）不再传球给他。被排除的人报告难受，背侧前扣带回一带活动增强。跑的是「用抛硬币分的组，十分钟后你就开始偏心自己人」那节的机制：成员资格是被授予的，授予得毫无理由也照样是真的——因而也能被毫无理由地撤回。由此能推出一个原本看不出的结论：<b>把一个人移出一个群，代价不为零，而且不经过任何实质利益</b>；那游戏里既没有钱，也没有熟人。于是组织里那些被当成零成本的动作——把人移出群、不再抄送、换个不带他的频道——其实是可测量的自变量，不是纯行政操作。<b>但这里不成立</b>：脑区重叠推不出「是同一种痛」，这是典型的反向推断问题；2014 年 Woo 等人用多体素模式分析发现，生理疼痛与社会排斥在同一片解剖区域里其实是两套可区分的表征。能用的只有「排除这个操作产生了可测反应」，不能升级成「社会排斥就是疼」。</li>
+</ul>
+</div>
+<div class="thinking">
+<h3>深入思考</h3>
+<details><summary>从众率会随社会和年代变，那这些实验到底在测什么？</summary>
+<div>大概不是「人有多软」，而是「在这个社会里，当唯一的异类要付多少代价」。这代价能查：异议者事后被怎么对待、还有没有人找他合作。把从众当性格看，你会去挑人；当代价看，你会去改场子——后者还更容易验证。</div>
+</details>
+<details><summary>如果边界不是文化差异的结果，为什么有些边界几乎穿不过去？</summary>
+<div>看成员资格是靠什么发的。挂在能改的东西上（职业、语言、依附关系）的边界，穿过去有路径也有价码；挂在出生和族谱上的，个体几乎没有操作空间。所以「这条边界硬不硬」不是文化问题，是成员资格怎么算的问题。</div>
+</details>
+<details><summary>「偏爱自己人」和「敌视外人」真能分开吗？分开有什么用？</summary>
+
+<div>在测量上分得开：一个看资源怎么分给自己人，一个看愿不愿意伤害对方，两者相关但不重合。用处在于，很多不平等的后果只要前者就够——没有任何敌意，光靠「想起谁、推荐谁、默认信任谁」就完成了。</div>
+</details>
+<details><summary>第一个开口的人靠什么？能不能不靠勇气？</summary>
+<div>能靠制度设计替代一部分：发言改成书面同时提交，提反面意见变成被指派的角色，异议记成流程产物而不是个人立场。这些都在做同一件事——把「唯一」这个位置拆掉。剩下的那部分才需要勇气。</div>
+</details>
+</div>
+<div class="refs">
+<h3>延伸阅读</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Asch_conformity_experiments" rel="noopener" target="_blank">Asch 从众实验</a>（英文）· <a href="https://psycnet.apa.org/record/1996-01401-006" rel="noopener" target="_blank">Bond &amp; Smith 跨文化元分析 (1996)</a>（英文）</li>
+<li><a href="https://en.wikipedia.org/wiki/Milgram_experiment" rel="noopener" target="_blank">Milgram 服从实验及其后续质疑</a>（英文）· <a href="https://gwern.net/doc/psychology/2019-letexier.pdf" rel="noopener" target="_blank">Le Texier《为斯坦福监狱实验祛魅》(2019)</a>（英文）</li>
+<li><a href="https://anthrosource.onlinelibrary.wiley.com/doi/10.1525/aa.1965.67.5.02a00070" rel="noopener" target="_blank">Moerman《谁是泐人？》(1965)</a>（英文）· <a href="https://en.wikipedia.org/wiki/Fredrik_Barth" rel="noopener" target="_blank">Fredrik Barth 与《族群与边界》(1969)</a>（英文）</li>
+<li><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/ejsp.2420010202" rel="noopener" target="_blank">Tajfel 等《社会分类与群际行为》(1971)</a>（英文）· <a href="https://www.strategian.com/fulltext/Brewer1999.pdf" rel="noopener" target="_blank">Brewer《偏爱自己人还是敌视外人？》(1999)</a>（英文）</li>
+<li><a href="https://en.wikipedia.org/wiki/Robbers_Cave_experiment" rel="noopener" target="_blank">强盗洞实验与 Perry 的档案研究</a>（英文）· <a href="https://ideas.wharton.upenn.edu/wp-content/uploads/2018/07/Pettigrew-Tropp.pdf" rel="noopener" target="_blank">Pettigrew &amp; Tropp 群际接触元分析 (2006)</a>（英文）</li>
+<li><a href="https://gwern.net/doc/sociology/1978-granovetter.pdf" rel="noopener" target="_blank">Granovetter《集体行为的门槛模型》(1978)</a>（英文）· <a href="https://www.nature.com/articles/ncomms6380" rel="noopener" target="_blank">Woo 等《生理疼痛与社会排斥的分离表征》(2014)</a>（英文）</li>
+</ul>
+</div>
+<footer>BigCat Learning Hub · Sociology &amp; Anthropology</footer>
+</div>
+<script src="https://hub.cissychen.com/comments.js" defer></script>
+<script src="https://hub.cissychen.com/search.js" defer></script>
+<script src="https://hub.cissychen.com/index-button.js" defer></script>
+<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
+</body></html>

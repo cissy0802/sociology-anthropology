@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sociology &amp; Anthropology Day 8: The Power of Groups</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:linear-gradient(170deg,#1a140f,#171210 42%,#120e0b);color:#e6dacc;line-height:1.9;min-height:100vh}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 60px}
+header{padding:52px 0 30px;border-bottom:1px solid #33261d}
+header .kicker{font-size:0.75rem;color:#8fb0cc;letter-spacing:2.5px;font-family:"SF Mono",Menlo,monospace}
+header h1{font-size:2.1rem;font-weight:800;background:linear-gradient(100deg,#e08155,#eda07c 58%,#8fb0cc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:0.5px;margin-top:12px;line-height:1.28}
+header h2{font-size:1rem;color:#a08b78;margin-top:10px;font-weight:400}
+header .meta{margin-top:14px;font-size:0.85rem;color:#a08b78}
+header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
+.intro{margin-top:30px;font-size:1.02rem;color:#d8c9b8}
+.intro p{margin-bottom:13px}
+.section{margin:46px 0;background:rgba(255,255,255,0.028);padding:28px 26px;border-radius:14px;border:1px solid rgba(255,255,255,0.06)}
+.section .num{display:inline-block;font-size:0.75rem;color:#e08155;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;margin-bottom:8px}
+.section h2{font-size:1.32rem;color:#f4ece2;margin-bottom:16px;font-weight:700;line-height:1.35}
+.section p{margin-bottom:14px;font-size:0.98rem}
+.section strong{color:#fff}
+.section em{color:#e08155;font-style:normal}
+.section ul{list-style:none;margin:14px 0}
+.section li{margin-bottom:10px;padding-left:20px;position:relative}
+.section li::before{content:"◈";position:absolute;left:0;top:0.42em;color:#e08155;font-size:0.7rem}
+.fig{margin:24px 0 10px;text-align:center}
+.fig svg{max-width:100%;height:auto}
+.fig .cap{font-size:0.82rem;color:#a08b78;margin-top:8px;text-align:left;line-height:1.65}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(143,176,204,0.12),rgba(224,129,85,0.05));border:1px solid rgba(143,176,204,0.34);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#8fb0cc;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#dfe3e6;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e08155;font-size:0.72rem}
+.crossx b{color:#aecbe2;font-weight:600}
+.thinking{background:linear-gradient(135deg,rgba(224,129,85,0.06),rgba(143,176,204,0.05));border:1px solid rgba(224,129,85,0.24);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e08155;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(18,14,11,0.5);border:1px solid rgba(224,129,85,0.2);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(224,129,85,0.06);border-color:rgba(224,129,85,0.42)}
+.thinking summary{cursor:pointer;color:#eda07c;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#8fb0cc}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(143,176,204,0.22);color:#ddd0c1;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#8fb0cc;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a08b78}
+.refs a{color:#e08155;text-decoration:none;border-bottom:1px dotted rgba(224,129,85,0.42)}
+.refs a:hover{color:#eda07c;border-bottom-color:#eda07c}
+.bigcat{margin:40px 0 0;background:linear-gradient(135deg,rgba(224,129,85,0.11),rgba(143,176,204,0.04));border:1px solid rgba(224,129,85,0.32);border-radius:14px;padding:22px 26px}
+.bigcat h3{color:#eda07c;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.bigcat ul{list-style:none;margin:0}
+.bigcat li{color:#ece0d2;font-size:0.93rem;line-height:1.8;margin-bottom:14px}
+.bigcat li:last-child{margin-bottom:0}
+.bigcat b{color:#eda07c;font-weight:600}
+footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
+@media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+</style></head><body>
+<div class="container">
+<header>
+<div class="kicker">DAY 8 · MICRO-INTERACTION</div>
+<h1>The Power of Groups</h1>
+<h2>The most counter-intuitive line here: what makes you swallow the objection is not that they are many, it is that nobody else differs</h2>
+<div class="meta">2026-09-01 · BigCat</div>
+<div class="pitch">One person in the room saying "I see it differently" is enough to free you — even when what they say is also wrong.</div>
+</header>
+<div class="intro">
+<p>A new colleague sits through his first design review. The night before he had spotted a hole in the proposal and written down two lines about it. When his turn comes, the five people ahead of him have all said it looks fine. What he says is: "Roughly the same view here."</p>
+<p>This page takes that one second apart. It is easy to read as "crowds are just sheep", and the real machinery is finer than that: the switch that makes you change your answer usually is not the head count; group boundaries often fail to line up with cultural differences; and as for favouring your own side, a group made by a coin toss will do it in ten minutes.</p>
+</div>
+<div class="section">
+<span class="num">// 01</span>
+<h2>Before you raise your hand, you scan the room</h2>
+<p>In 1951 Solomon Asch ran an experiment at Swarthmore College so simple it is almost comic. You see a card with one standard line, and another with three lines; which one matches? Alone, you would almost never get it wrong. But seven or eight people sit in the room with you, all of them briefed confederates, and on twelve critical rounds they announce the same wrong answer in unison. About a third of critical responses went along with the majority, and three-quarters of participants conformed at least once.</p>
+<p>The useful part is the variations that followed. Asch changed unanimity rather than size: if one member of the majority gives a different answer, conformity drops from roughly a third to around five percent. And it does not matter whether that person is right — he only has to differ from the rest. <strong>So the lever is unanimity, not numbers.</strong> What pins you down is not five people; it is the position of being the only one.</p>
+<p>There are also two quite different reasons to change your answer, separated by Morton Deutsch and Harold Gerard in 1955. One is that you genuinely think so many people cannot all be wrong, so you must have misjudged: <strong>informational influence</strong>. The other is that you know they are wrong but do not want to be the lone deviant: <strong>normative influence</strong>. The split earns its keep, because the remedies do not transfer — the first calls for independent evidence, the second calls for making disagreement cost nothing.</p>
+<p>How stable is any of this? In 1996 Rod Bond and Peter Smith pooled 133 studies using this task across 17 countries: conformity tracks how collectivist a society is, and the American studies show conformity declining steadily since the 1950s. <em>So the conformity rate is not a human constant; it is a social quantity that moves with place and period.</em></p>
+<p>One notch up is obedience. In the experiments Stanley Milgram began at Yale in 1961, 26 of 40 people (65%) in the baseline condition raised the voltage to the top of the board. That number now needs footnotes: in 2013 Gina Perry went through the Yale archives and found the experimenter frequently improvising off-script pressure, and many participants doubting on the spot that the shocks were real; in 2009 Jerry Burger ran a version stopping at 150 volts, where 70% chose to continue against Milgram's comparable 82.5%. What has been overturned is not "people obey" but the explanation. Milgram's agentic state — the person hands over responsibility and executes like a machine — has few takers now; the more accepted reading is <strong>engaged followership</strong>: people stay because they have been persuaded they are helping with something worthwhile. The two readings imply guarding against different things: authority in one case, a narrative in the other.</p>
+<p>And one study that was once cited more than any of these has to come off the list. The 1971 Stanford prison experiment was long treated as proof that a situation can turn ordinary people into abusers; in 2019 Thibault Le Texier reconstructed it from archives, unreleased recordings and interviews with 15 participants: the guards had been explicitly told to be tough, and were prompted when they were not tough enough. <strong>It can no longer be used as evidence.</strong> Ranked by evidence: Asch's paradigm replicates well, Milgram's numbers need discounting and his explanation has been replaced, Stanford goes to zero.</p>
+</div>
+<div class="section">
+<span class="num">// 02</span>
+<h2>You cannot say how they differ from the next village, but they can, instantly</h2>
+<p>From 1960 to 1961 the anthropologist Michael Moerman lived for a year in a village near Chiang Kham in northern Thailand, meaning to settle a question that looks easy: who are the Lue? He tried the criteria one by one — what they speak, what they wear, how the houses are built, how they farm, what they worship — and each either swept in the neighbouring Thai or cut out part of the village. The only reliable criterion left was: the people who call themselves Lue. And the same person, in another setting, will say he is Thai. In 1965 he published the paper under that same question as its title.</p>
+<p>This is not "they are confused about who they are". It is that <strong>an ethnic name is not a label for a distinct cultural inventory; it is a position in a system of classification</strong> — and the position shifts with the setting.</p>
+<div class="fig">
+<svg viewbox="0 0 640 236" xmlns="http://www.w3.org/2000/svg">
+<text fill="#a08b78" font-family="Georgia,serif" font-size="11.5" x="20" y="20">By what it contains</text>
+<ellipse cx="112" cy="120" fill="rgba(143,176,204,0.10)" rx="74" ry="46" stroke="rgba(143,176,204,0.5)" stroke-dasharray="5 4" stroke-width="1.3"></ellipse>
+<ellipse cx="164" cy="98" fill="rgba(224,129,85,0.08)" rx="74" ry="46" stroke="rgba(224,129,85,0.55)" stroke-dasharray="5 4" stroke-width="1.3"></ellipse>
+<ellipse cx="150" cy="150" fill="rgba(255,255,255,0.03)" rx="74" ry="46" stroke="rgba(230,218,204,0.42)" stroke-dasharray="5 4" stroke-width="1.3"></ellipse>
+<text fill="#bfd2e2" font-family="Georgia,serif" font-size="11" x="26" y="122">language</text>
+<text fill="#eda07c" font-family="Georgia,serif" font-size="11" x="196" y="76">livelihood</text>
+<text fill="#e6dacc" font-family="Georgia,serif" font-size="11" x="136" y="196">religion</text>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="10.5" x="20" y="222">Three criteria, three lines that never coincide</text>
+<line stroke="rgba(255,255,255,0.14)" stroke-dasharray="4 5" x1="318" x2="318" y1="14" y2="226"></line>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="11.5" x="348" y="20">By membership</text>
+<rect fill="rgba(143,176,204,0.09)" height="112" rx="10" stroke="rgba(143,176,204,0.42)" stroke-width="1.3" width="112" x="348" y="66"></rect>
+<rect fill="rgba(224,129,85,0.09)" height="112" rx="10" stroke="rgba(224,129,85,0.5)" stroke-width="1.3" width="112" x="504" y="66"></rect>
+<text fill="#bfd2e2" font-family="Georgia,serif" font-size="12.5" x="386" y="112">Us</text>
+<text fill="#eda07c" font-family="Georgia,serif" font-size="12.5" x="544" y="112">Them</text>
+<line stroke="#f4ece2" stroke-width="2" x1="482" x2="482" y1="52" y2="192"></line>
+<path d="M436 142 L528 142" stroke="rgba(230,218,204,0.7)" stroke-width="1.4"></path>
+<path d="M528 142 L520 137 M528 142 L520 147" stroke="rgba(230,218,204,0.7)" stroke-width="1.4"></path>
+<path d="M528 164 L436 164" stroke="rgba(230,218,204,0.35)" stroke-width="1.4"></path>
+<path d="M436 164 L444 159 M436 164 L444 169" stroke="rgba(230,218,204,0.35)" stroke-width="1.4"></path>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="10.5" x="348" y="216">People cross both ways; the line stays</text>
+</svg>
+<div class="cap">On the left, the commonsense move: sort by cultural traits, and every trait draws a different line. On the right, a different question: look at one line and ask how it is maintained — people keep crossing it and it does not dissolve.</div>
+</div>
+<p>In 1969 Fredrik Barth's edited volume <em>Ethnic Groups and Boundaries</em> turned this into a general rule: study the <strong>boundary</strong>, not the "cultural stuff" it encloses. His key observation is exactly what the right panel shows — personnel flow across, and the boundary holds. His own fieldwork on the Afghan-Pakistani frontier records an asymmetry: southern Pathans who lose their land can become Baluch, but not the reverse. The reason lies in how each side reckons membership — Pathan identity hangs on genealogy and land, so losing the land drops you out; the Baluch system is a hierarchy of clientage that can take outsiders in.</p>
+<p>The line that holds: <em>a group boundary is not the natural result of cultural difference; it is maintained.</em> Which swaps in a different set of questions: who maintains this line, what does crossing cost, what kind of person gets across. All of them can be checked against fieldwork.</p>
+<p>Evidence: both are ethnographic cases, not falsifiable hypotheses; what they rest on is how often later fieldwork has found them usable. The strongest objections deserve stating: a boundary-first view underrates the inertia of cultural content — language and habit are not swapped at will; and Barth leans on individual strategy, which cannot account for boundaries that stand unchanged for generations with almost nobody crossing.</p>
+</div>
+<div class="section">
+<span class="num">// 03</span>
+<h2>Split by a coin toss, and ten minutes later you favour your own side</h2>
+<p>In 1971 Henri Tajfel and colleagues took a set of fourteen- and fifteen-year-old boys in Bristol. They looked at paintings by two artists and were told the grouping followed which painter they preferred — in fact it was random. Then each boy allocated points to other participants, identified only by a code and a group, none of whom he knew, and from which he himself got nothing. On paper there is no reason to favour anyone.</p>
+<p>They favoured anyway, and in a peculiar way. Rather than "give my own group the most", they more often chose the allocation that <strong>maximised the gap</strong> — even when their own group ended up with less than another option would have given it. The paradigm has been replicated many times over; it is one of the few very stable results in this corner.</p>
+<p>The conclusion has to be stated precisely or it slides. Marilynn Brewer's 1999 paper puts it firmly: what minimal groups generate is mainly <em>favouring your own side</em>, not <em>hostility to the other</em>. Psychologically and in their consequences these are not the same thing, and they do not have to travel together — reading these experiments as "people are innately xenophobic" overreads them. Much real-world favouritism needs no hostility at all: who gets thought of, who gets recommended, who gets trusted by default.</p>
+<p>So where does hostility come from? The textbook answer is Muzafer Sherif's 1954 Robbers Cave camp: two groups of boys form separately, a tournament is arranged, hostility follows fast, and it eases only through tasks neither group can complete alone — fixing the water line, hauling a stalled truck. The current status has to be stated: in 2018 Gina Perry found in the archives that Sherif had run a nearly identical design in New York state in 1953 and it failed — cross-group friendships were too strong for the boys to turn on each other, however hard they were prodded — after which he barely mentioned it again; and the experimenters themselves did a good deal to push the conflict along. So Robbers Cave should no longer be used as clean evidence that hostility arises on its own.</p>
+<p>The contact side actually has the harder evidence. In 2006 Thomas Pettigrew and Linda Tropp synthesised 515 studies, 713 independent samples and more than 250,000 people: intergroup contact correlates with lower prejudice at around −0.21 on average, stably in that direction, with checks for publication bias and self-selection. The framing to keep: most of the data is cross-sectional, and within any single study you cannot rule out that tolerant people seek contact in the first place. What is solid is the direction and magnitude, not "contact necessarily reduces prejudice".</p>
+</div>
+<div class="bigcat">
+<h3>🎒 In practice · BigCat</h3>
+<ul>
+<li><b>1. Leading teams and organisations</b> — the situation that keeps recurring: a design review where people give their verdict in seating order, the first speaker sets the key, and everything after is elaboration. Six months on, proposal quality correlates embarrassingly well with who happened to speak first. This is the normative half of the mechanism in "Before you raise your hand, you scan the room" — it is not that nobody saw the problem, it is that nobody wanted to be the only one. What to change: replace verbal round-robin with written scores submitted simultaneously (everyone writes, then reads), and let the chair speak last; then assign one person to argue the opposing case and say out loud that this is their role today. Note this is not the same as "encouraging people to speak up" — what you need is for someone to break unanimity first, not for the mood to be pleasant.</li>
+<li><b>2. Investing and position sizing</b> — the situation that keeps recurring: you read five or six analyses of one position, they agree, you size up. Checking afterwards, four of them cite the same original report. This is informational influence from the same section: you thought you had five independent signals, and it was one signal restated five times. What to change: give every bullish or bearish reason an "original source" field and count same-source reasons once; and once the position is on, stop the act of hunting for more views in the same direction — it adds no information, it only thickens the double counting.</li>
+</ul>
+</div>
+<div class="crossx">
+<h3>🌀 Crossing over · interdisciplinary echoes</h3>
+<ul>
+<li><b>Complexity science · move one person's threshold by one and the whole room lands elsewhere</b>: in 1978 Mark Granovetter proposed a threshold model — each person has a number for "how many others must already be doing it before I do". His extreme illustration is a hundred people with thresholds 0, 1, 2, all the way to 99: the person at 0 goes first, the one at 1 sees someone acting and joins, and the chain runs until everyone has acted. Now change only the person at threshold 1 to threshold 2: the chain breaks at the first step and exactly one person acts. The same hundred people, two outcomes. What is running is the normative influence from "Before you raise your hand, you scan the room": people decide whether to speak by how many already have. Which yields a conclusion you would not otherwise reach: <b>silence in a meeting room need not be explained by "poor team culture"</b> — the same people with the same distribution of opinions may differ only in whether one or two very low-threshold people are present. To change the outcome, lowering the cost of speaking for those one or two at the left edge is far cheaper than shifting everyone's attitude, and far easier to measure. <b>Where it does not hold</b>: the threshold model assumes everyone can see the overall proportion; it counts heads. Asch's variations are not about proportion — one ally suffices, and it counts even when the ally is wrong. What changed is not the number but the disappearance of the "only one" position. A pure counting model scores that as a one-percent perturbation and therefore systematically underrates whoever speaks first.</li>
+<li><b>Neuroscience · the sixty seconds after they stop throwing you the ball</b>: in 2003 Naomi Eisenberger and colleagues had people play a three-way online ball-tossing game inside a scanner; halfway through, the other two "players" (in fact a program) stopped passing to them. The excluded reported distress, with heightened activity around the dorsal anterior cingulate. The mechanism at work is the one in "Split by a coin toss, and ten minutes later you favour your own side": membership is conferred, it is real even when conferred for no reason at all — and so it can be withdrawn for no reason at all. Which yields a conclusion you would not otherwise reach: <b>removing someone from a group has a non-zero cost, and that cost passes through no material interest</b>; there was no money in the game and nobody the player knew. So the moves an organisation treats as costless — dropping someone from a channel, quietly ending the cc, moving the conversation somewhere they are not — are measurable independent variables, not pure administration. <b>Where it does not hold</b>: overlapping activation cannot license "it is the same pain" — that is the classic reverse-inference problem, and in 2014 Woo and colleagues used multivariate pattern analysis to show that physical pain and social rejection are separable representations within the same anatomical territory. What sociology may use is that exclusion as an operation produces a measurable response; not that social rejection simply is pain.</li>
+</ul>
+</div>
+<div class="thinking">
+<h3>Deeper questions</h3>
+<details><summary>If conformity rates fall across societies and decades, what are these experiments measuring?</summary>
+<div>Probably not how weak people are, but what it costs, in this society, to be the only deviant. That cost is checkable: how dissenters are treated afterwards, whether anyone still works with them. Treat conformity as character and you go looking for the right people; treat it as a cost and you go redesign the room — and the second is easier to verify.</div>
+</details>
+<details><summary>If a boundary is not the result of cultural difference, why are some boundaries almost impossible to cross?</summary>
+<div>Look at what membership is issued against. Boundaries hanging on things that can change — occupation, language, ties of clientage — have both a route across and a price. Boundaries hanging on birth and genealogy leave an individual almost no room to operate. So "how hard is this boundary" is not a cultural question but a question about how membership is reckoned.</div>
+</details>
+<details><summary>Can favouring your own side really be separated from hostility to the other? What is the separation worth?</summary>
+<div>They separate in measurement: one looks at how resources go to your own side, the other at willingness to harm the other side; correlated, not the same. The value is that many unequal outcomes need only the first — with no hostility anywhere, who gets thought of, who gets recommended, who gets trusted by default is enough.</div>
+</details>
+<details><summary>What does it take to be the first to speak? Can it be done without courage?</summary>
+<div>Institutional design substitutes for part of it: written comments submitted simultaneously, opposing arguments assigned as a role, dissent recorded as an artefact of the process rather than a personal stance. All of these do the same job — they dismantle the position of being the only one. What is left over is where courage is still needed.</div>
+</details>
+</div>
+<div class="refs">
+<h3>Further reading</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Asch_conformity_experiments" rel="noopener" target="_blank">Asch conformity experiments</a> · <a href="https://psycnet.apa.org/record/1996-01401-006" rel="noopener" target="_blank">Bond &amp; Smith, culture and conformity meta-analysis (1996)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Milgram_experiment" rel="noopener" target="_blank">The Milgram experiment and its later critics</a> · <a href="https://gwern.net/doc/psychology/2019-letexier.pdf" rel="noopener" target="_blank">Le Texier, Debunking the Stanford Prison Experiment (2019)</a></li>
+<li><a href="https://anthrosource.onlinelibrary.wiley.com/doi/10.1525/aa.1965.67.5.02a00070" rel="noopener" target="_blank">Moerman, Who Are the Lue? (1965)</a> · <a href="https://en.wikipedia.org/wiki/Fredrik_Barth" rel="noopener" target="_blank">Fredrik Barth and Ethnic Groups and Boundaries (1969)</a></li>
+<li><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/ejsp.2420010202" rel="noopener" target="_blank">Tajfel et al., Social Categorization and Intergroup Behaviour (1971)</a> · <a href="https://www.strategian.com/fulltext/Brewer1999.pdf" rel="noopener" target="_blank">Brewer, Ingroup Love or Outgroup Hate? (1999)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Robbers_Cave_experiment" rel="noopener" target="_blank">The Robbers Cave experiment and Perry's archival work</a> · <a href="https://ideas.wharton.upenn.edu/wp-content/uploads/2018/07/Pettigrew-Tropp.pdf" rel="noopener" target="_blank">Pettigrew &amp; Tropp, intergroup contact meta-analysis (2006)</a></li>
+<li><a href="https://gwern.net/doc/sociology/1978-granovetter.pdf" rel="noopener" target="_blank">Granovetter, Threshold Models of Collective Behavior (1978)</a> · <a href="https://www.nature.com/articles/ncomms6380" rel="noopener" target="_blank">Woo et al., Separate Neural Representations for Physical Pain and Social Rejection (2014)</a></li>
+</ul>
+</div>
+<footer>BigCat Learning Hub · Sociology &amp; Anthropology</footer>
+</div>
+<script src="https://hub.cissychen.com/comments.js" defer></script>
+<script src="https://hub.cissychen.com/search.js" defer></script>
+<script src="https://hub.cissychen.com/index-button.js" defer></script>
+<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
+</body></html>
