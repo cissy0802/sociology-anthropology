@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sociology &amp; Anthropology Day 9: The Gift</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:linear-gradient(170deg,#1a140f,#171210 42%,#120e0b);color:#e6dacc;line-height:1.9;min-height:100vh}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 60px}
+header{padding:52px 0 30px;border-bottom:1px solid #33261d}
+header .kicker{font-size:0.75rem;color:#8fb0cc;letter-spacing:2.5px;font-family:"SF Mono",Menlo,monospace}
+header h1{font-size:2.1rem;font-weight:800;background:linear-gradient(100deg,#e08155,#eda07c 58%,#8fb0cc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:0.5px;margin-top:12px;line-height:1.28}
+header h2{font-size:1rem;color:#a08b78;margin-top:10px;font-weight:400}
+header .meta{margin-top:14px;font-size:0.85rem;color:#a08b78}
+header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
+.intro{margin-top:30px;font-size:1.02rem;color:#d8c9b8}
+.intro p{margin-bottom:13px}
+.section{margin:46px 0;background:rgba(255,255,255,0.028);padding:28px 26px;border-radius:14px;border:1px solid rgba(255,255,255,0.06)}
+.section .num{display:inline-block;font-size:0.75rem;color:#e08155;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;margin-bottom:8px}
+.section h2{font-size:1.32rem;color:#f4ece2;margin-bottom:16px;font-weight:700;line-height:1.35}
+.section p{margin-bottom:14px;font-size:0.98rem}
+.section strong{color:#fff}
+.section em{color:#e08155;font-style:normal}
+.section ul{list-style:none;margin:14px 0}
+.section li{margin-bottom:10px;padding-left:20px;position:relative}
+.section li::before{content:"◈";position:absolute;left:0;top:0.42em;color:#e08155;font-size:0.7rem}
+.fig{margin:24px 0 10px;text-align:center}
+.fig svg{max-width:100%;height:auto}
+.fig .cap{font-size:0.82rem;color:#a08b78;margin-top:8px;text-align:left;line-height:1.65}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(143,176,204,0.12),rgba(224,129,85,0.05));border:1px solid rgba(143,176,204,0.34);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#8fb0cc;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#dfe3e6;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e08155;font-size:0.72rem}
+.crossx b{color:#aecbe2;font-weight:600}
+.thinking{background:linear-gradient(135deg,rgba(224,129,85,0.06),rgba(143,176,204,0.05));border:1px solid rgba(224,129,85,0.24);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e08155;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(18,14,11,0.5);border:1px solid rgba(224,129,85,0.2);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(224,129,85,0.06);border-color:rgba(224,129,85,0.42)}
+.thinking summary{cursor:pointer;color:#eda07c;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#8fb0cc}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(143,176,204,0.22);color:#ddd0c1;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#8fb0cc;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a08b78}
+.refs a{color:#e08155;text-decoration:none;border-bottom:1px dotted rgba(224,129,85,0.42)}
+.refs a:hover{color:#eda07c;border-bottom-color:#eda07c}
+.bigcat{margin:40px 0 0;background:linear-gradient(135deg,rgba(224,129,85,0.11),rgba(143,176,204,0.04));border:1px solid rgba(224,129,85,0.32);border-radius:14px;padding:22px 26px}
+.bigcat h3{color:#eda07c;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.bigcat ul{list-style:none;margin:0}
+.bigcat li{color:#ece0d2;font-size:0.93rem;line-height:1.8;margin-bottom:14px}
+.bigcat li:last-child{margin-bottom:0}
+.bigcat b{color:#eda07c;font-weight:600}
+footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
+@media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+</style></head><body>
+<div class="container">
+<header>
+<div class="kicker">DAY 9 · ECONOMIC ANTHROPOLOGY</div>
+<h1>The Gift</h1>
+<h2>The most counterintuitive line here: cash on delivery closes a relationship; giving for nothing is what opens one</h2>
+<div class="meta">2026-09-02 · BigCat</div>
+<div class="pitch">You can easily afford that dinner. You didn't transfer the money because you know that once you do, there is no next time.</div>
+</header>
+<div class="intro">
+<p>A colleague picks up a coffee for you on the way in. You reach for your phone to send them the money and they wave it off. The next day you leave two slices of cake on their desk — worth a little more than the coffee, and delivered a day late.</p>
+<p>This page takes that small sequence apart. It is easy to read as an inefficiency, the friction of a culture that runs on favours. The real mechanism is finer than that: a gift binds harder than a contract precisely because it cannot be settled; one group of people can run two opposite exchange systems on the same voyage; and converting a gift into a price does not always simplify things — sometimes it stops people doing it at all.</p>
+</div>
+<div class="section">
+<span class="num">// 01</span>
+<h2>When you say "next one's on me," you are leaving the account open on purpose</h2>
+<p>Transferring the money on the spot does something quite specific: it prices the meal and settles it. Once settled, nothing is outstanding between you — and so there is no particular reason for a next time. "Next one's on me" leaves the account open. That open account is not a burden. It is the evidence that you are going to meet again.</p>
+<p>In 1925 the French sociologist Marcel Mauss published <i>Essai sur le don</i> ("The Gift") in the journal <i>L'Année Sociologique</i>. He laid material from scattered places side by side: the Northwest Coast of North America, the islands of Melanesia, Roman law, classical Hindu legal texts, old Germanic law. His question was plain: a gift is given for nothing, so why must the person who takes it give something back?</p>
+<p>His answer is three obligations locked into a loop: <strong>the obligation to give, the obligation to receive, the obligation to reciprocate</strong>. The middle one is the one people skip. You are not really free to decline. In many settings, refusing a gift in public comes close to a declaration of hostility. Chain the three together and a society is stitched shut: you gave, so they owe; they repay, so you owe; nobody gets to step out of the loop.</p>
+<p>The mechanism rests on two constraints: <em>the return must be late, and it is better if it is not equal.</em> Too soon and exactly equal is change from a purchase. Once the account is settled, the relationship resets to zero. So what sustains a bond is never "paid in full" — it is always owing a little. That also explains something familiar: with the people closest to you, the accounts can never quite be worked out. Not because nobody can be bothered, but because working them out is the thing you must not do.</p>
+<p>The evidence needs stating honestly. Mauss never did fieldwork. <i>The Gift</i> is a comparative synthesis built entirely on other people's material. The passage most attacked concerns the Maori <i>hau</i>, roughly "the spirit of a thing": Mauss drew on Elsdon Best's transcription of the words of a Maori elder, Tamati Ranapiri, to the effect that a gift carries part of the giver, and that part wants to return home. In 1929 Raymond Firth argued Mauss had read far too much in — the <i>hau</i> is a vaguer and much more passive notion. In 1972 Marshall Sahlins reread the same text and took Ranapiri to be describing something closer to a practical rule about passing on yield than any mystical animation. <strong>So the three obligations hold up; "the gift contains the giver's soul" carries a question mark.</strong></p>
+</div>
+<div class="section">
+<span class="num">// 02</span>
+<h2>Two sets of rules on the same boat: one you may haggle over, one you may not</h2>
+<p>Between 1915 and 1918 the anthropologist Bronis&#322;aw Malinowski spent, on and off, more than two years in the Trobriand Islands, now part of Papua New Guinea. He recorded something that looked to Europeans of the period like pure waste: the kula.</p>
+<p>Across a ring of islands hundreds of kilometres wide, people put out to sea in canoes carrying two kinds of object. Necklaces of red shell discs, <i>soulava</i>, travelled one way around the ring; armshells of white shell, <i>mwali</i>, travelled the other. The rules were as firm as a protocol: a necklace is answered with an armshell and an armshell with a necklace, and the return never happens on the spot — it comes months or years later.</p>
+<p>Stranger still, the objects are largely unusable. Some necklaces run to several metres and cannot be worn at all; nor can you hold on to one for long without your reputation suffering. Their only use is to be passed on again.</p>
+<p>Here is the part that matters: <strong>the same voyages also carried ordinary trade</strong> — clay pots, stone axes, food, haggled over openly. That was called <i>gimwali</i>, and nobody thought it beneath them. The two were kept rigorously apart: to conduct kula as though it were gimwali was a serious insult.</p>
+<div class="fig">
+<svg viewBox="0 0 640 250" xmlns="http://www.w3.org/2000/svg">
+<circle cx="230" cy="126" r="88" fill="none" stroke="rgba(255,255,255,0.10)" stroke-width="1"></circle>
+<circle cx="230" cy="38" r="7" fill="#e08155"></circle>
+<circle cx="308" cy="88" r="7" fill="#8fb0cc"></circle>
+<circle cx="308" cy="170" r="7" fill="#8fb0cc"></circle>
+<circle cx="230" cy="214" r="7" fill="#e08155"></circle>
+<circle cx="152" cy="170" r="7" fill="#8fb0cc"></circle>
+<circle cx="152" cy="88" r="7" fill="#8fb0cc"></circle>
+<path d="M230 20 A106 106 0 0 1 330 92" fill="none" stroke="#e08155" stroke-width="1.7"></path>
+<path d="M330 92 L322 84 M330 92 L321 94" stroke="#e08155" stroke-width="1.7"></path>
+<text fill="#eda07c" font-family="Georgia,serif" font-size="11.5" x="342" y="70">soulava necklaces</text>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="10.5" x="342" y="88">one direction</text>
+<path d="M230 232 A106 106 0 0 1 130 160" fill="none" stroke="#8fb0cc" stroke-width="1.7"></path>
+<path d="M130 160 L138 168 M130 160 L139 158" stroke="#8fb0cc" stroke-width="1.7"></path>
+<text fill="#bfd2e2" font-family="Georgia,serif" font-size="11.5" x="342" y="176">mwali armshells</text>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="10.5" x="342" y="194">the other way</text>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="10.5" x="192" y="130">island to island</text>
+<line stroke="rgba(255,255,255,0.13)" stroke-dasharray="4 5" x1="470" x2="470" y1="16" y2="234"></line>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="11.5" x="498" y="34">same voyage</text>
+<rect fill="rgba(224,129,85,0.08)" height="66" rx="9" stroke="rgba(224,129,85,0.45)" stroke-width="1.2" width="122" x="498" y="52"></rect>
+<text fill="#eda07c" font-family="Georgia,serif" font-size="12" x="512" y="80">kula</text>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="10.5" x="512" y="100">no haggling · delayed</text>
+<rect fill="rgba(143,176,204,0.08)" height="66" rx="9" stroke="rgba(143,176,204,0.45)" stroke-width="1.2" width="122" x="498" y="140"></rect>
+<text fill="#bfd2e2" font-family="Georgia,serif" font-size="12" x="512" y="168">gimwali</text>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="10.5" x="512" y="188">haggled · settled now</text>
+</svg>
+<div class="cap">Left: two kinds of shell valuable circulate in opposite directions around a ring of islands; receiving one obliges you to send back the other, long afterwards. Right: the same people on the same voyage run a second exchange system as well — and the two must never be confused.</div>
+</div>
+<p>So "gift" and "trade" are not two stages of civilisation. They are two tools in the same hands, doing different jobs. Gimwali gets you goods. Kula gets you <em>a partner on another island</em> — someone who feeds and houses you when you land, and speaks for you if there is trouble. On a sea crossing that could kill you, the kula ring is really a safe corridor.</p>
+<p>Fifty years later, something else happened on the same islands. In 1971 and 1972 Annette Weiner spent ten months in a village on Kiriwina, intending to study men carving wood for tourists. On her first day she walked into a scene Malinowski had barely written about: at mortuary ceremonies, women distributing bundles of dried banana leaves and banana-leaf skirts by the thousand — many thousands in a single day. It was an entire wealth system belonging to women, and it was not small. Her book <i>Women of Value, Men of Renown</i> appeared in 1976. <strong>Same field site, different observer, different world visible</strong> — the hardest available example of the reflexivity discussed in the fieldwork and ethnography issue. Weiner later added a further point: it is precisely because some things can never be given away — she called them inalienable possessions — that the things you do give away carry weight. The capacity to give rests on the capacity to keep.</p>
+<p>Evidence: both are ethnographic cases rather than falsifiable hypotheses. What supports them is that decades of later fieldwork kept finding them useful.</p>
+</div>
+<div class="section">
+<span class="num">// 03</span>
+<h2>The person who cannot return the gift loses something other than money</h2>
+<p>Among the Kwakwaka'wakw and neighbouring peoples of the Northwest Coast of North America — in what is now British Columbia — there is a large ceremony called the potlatch. The host distributes great quantities of goods: blankets, coppers, canoes, sometimes destroyed in front of everyone. Whoever accepts is now obliged, and must one day hold a larger event in return. Fail, and you lose standing.</p>
+<p>This side is not warm, but it is the same mechanism as above: <strong>wherever owing defines position, giving can be used as pressure.</strong> You have seen the small version in an office — a favour you could not refuse and cannot repay.</p>
+<p>The colonial record needs stating plainly. Canada amended the Indian Act in 1884 to prohibit the potlatch, in force from 1885, on the stated grounds that it obstructed assimilation; the provision was not removed until 1951. Enforcement was intermittent and the ceremony largely continued out of sight. This is the history of an imposed law, not a stage these peoples passed through.</p>
+<p>Sahlins offered a useful axis in 1972: reciprocity laid out along a line, with <em>generalized reciprocity</em> at one end (given without tallying, with no due date — how a household works), <em>balanced reciprocity</em> in the middle (equal value, a deadline, lending money to a friend), and <em>negative reciprocity</em> at the other (trying to get more than you give, with strangers), the position sliding with social distance. It is an analytic frame, not a testable hypothesis; do not use it as a law.</p>
+<p>The contemporary version of the question is concrete: does paying for something drive out the goodwill? In 1970 Richard Titmuss compared unpaid blood donation in Britain with the paid blood system then operating in the United States and argued that payment crowds out voluntary donors. The claim was argued over for decades. In 2008 Carl Mellström and Magnus Johannesson ran a randomised experiment in Sweden with 262 university students who had never donated, split three ways: no payment; SEK 50 (about seven dollars); SEK 50 with the option of passing it to charity. Among men the three groups did not differ significantly. Among women, willingness roughly halved in the paid group — and the option to give the money away cancelled that effect entirely. <strong>So crowding out is conditional, not a general law</strong> — what does the work is what the payment makes the act into.</p>
+<p>A second much-cited piece of evidence needs discounting. In 2000 Uri Gneezy and Aldo Rustichini ran a twenty-week study across ten day-care centres in Haifa, Israel; from week five, six of them fined parents who collected their children late. Lateness went up, and it stayed up after the fine was withdrawn. Their reading: the fine converted an embarrassment — I have kept a teacher half an hour past their shift — into a service you can buy. Evidence: a single natural experiment on a small sample, rarely directly replicated. Treat the direction as suggestive, not settled. The line worth keeping is this: <em>converting a relationship into a price changes more than the amount; it changes which category the act belongs to in people's heads.</em></p>
+</div>
+<div class="bigcat">
+<h3>🎒 IN CONTEXT · BigCat</h3>
+<ul>
+<li><b>① Parenting and education</b>—the situation that keeps recurring: a child comes home from a friend's house holding a small toy or a packet of snacks. Your first instinct is "we should send something back tomorrow," and then you do it for them. This runs the mechanism from "when you say 'next one's on me,' you are leaving the account open on purpose": the delay and the inexactness of the return <i>are</i> the content, and everything a child learns about reciprocity happens inside that suspended interval. Settling it for them in one move completes the lesson without them attending it. What to change: stop the move where you prepare the return gift yourself, and ask instead, "when do you want to give something back, and what?" — then accept the answer even when it is plainly unequal. The measure is not whether they reciprocated; it is whether they raise it themselves as unfinished.</li>
+<li><b>② Writing and this learning site itself</b>—the situation that keeps recurring: someone writes a long, careful comment, or points out a factual error. You reply the same day: "thanks, fixed." That runs the same mechanism in reverse — immediate, equivalent, settled. Polite, and it quietly closes the relationship. What to change: drop the standard thank-you template and instead actually use their point in the next piece, naming which reader comment it came from. Late, unequal, public — those three are what give the other person a reason to come back. The measure is not reply rate; it is the share of people who comment a second time.</li>
+</ul>
+</div>
+<div class="crossx">
+<h3>🌀 CROSSING OVER · CONNECTIONS BEYOND THE FIELD</h3>
+<ul>
+<li><b>Physics and mathematics · move the discount rate and the cooperation account stops balancing</b>: game theory has a standard result (a special case of the folk theorem for the infinitely repeated prisoner's dilemma): when two parties deal with each other over and over, cooperation can sustain itself through "defect on me and I stop cooperating" — provided they weight the future heavily enough, which is to say the discount factor is large enough. Let the future get cheap and defection immediately pays. That is exactly the mechanism from "when you say 'next one's on me,' you are leaving the account open on purpose": the binding force comes from an unsettled future, not from the consideration exchanged this time. Which yields a conclusion that was not visible before: <b>to make a relationship hold, making "we will meet again" concrete beats raising the penalty for breach</b> — a fixed review cadence, a stable counterpart, a predictable next round all raise the discount factor. Penalty clauses move the payoff of a single round: visible, and with diminishing returns. The discount factor moves the whole sum at once. <b>Where it fails</b>: game theory requires payoffs that can be priced and added up before anything can be discounted. Gift systems work to prevent exactly that. An unequal return is not sloppy accounting; it is deliberately unaccountable, because once the books can be balanced they are closed and the relationship ends with them. That is why a kula necklace and an armshell may not be valued against each other on the spot. The model explains why there must be a next round; it cannot explain why this round must stay uncountable.</li>
+<li><b>Buddhism · what almsgiving trains is the cancelling of that very account</b>: Buddhism teaches d&#257;na, giving — but the real threshold is the "emptiness of the three spheres": contemplating giver, receiver and gift as none of them graspable, which in practice means leaving no entry in the mind saying "I gave to them, they owe me." The Theravada alms round works the same way: monks beg house by house in sequence without choosing, and do not thank the donor for the food. This runs the mechanism from "the person who cannot return the gift loses something other than money": owing defines position, which is what lets giving become pressure. Which yields a conclusion that was not visible before: <b>anonymous and named donation are not two versions of one act; their social consequences are close to opposite</b> — one deliberately generates no relationship and therefore no difference in standing, the other exists to generate one. A charity carving donors' names into a wall is not managing vanity; it is choosing whether to weave that web of obligation at all. <b>Where it fails</b>: within a karmic framework the gift is still being recorded — the creditor has merely shifted from a particular person to an impersonal system (merit). So reciprocity is not abolished, only relocated. The only layer genuinely cancelled is "this person owes that person."</li>
+</ul>
+</div>
+<div class="thinking">
+<h3>GOING DEEPER</h3>
+<details><summary>If the binding force comes from what cannot be settled, is there any relationship left inside a priced service?</summary>
+<div>A different kind: one that runs on repetition and reputation rather than on obligation. The difference shows at the break. A priced relationship that ends has ended; an obligated one that ends still leaves an account open, which is why people come back. It is also why so many industries insist on a dinner alongside the contract.</div>
+</details>
+<details><summary>Friends splitting every bill exactly through an app — what does that save, and what does it lose?</summary>
+<div>It saves the memory load and the sense of unfairness, which is a real saving. What it loses is the outstanding account — and the reason for the next dinner grew out of that account. You can have both: settle the money exactly, then deliberately leave one small thing unsettled (I'll bring it next time; borrow this book).</div>
+</details>
+<details><summary>Where can you still see the "give more than they can return" move today?</summary>
+<div>Anywhere giving is publicly counted and failing to return costs reputation. The test is not the scale of the display but three questions: was something given, was it seen by others, and does someone who cannot return it lose standing? With all three present the mechanism is running, whatever the setting.</div>
+</details>
+<details><summary>If an ethnography can be overturned in the same village fifty years later, how much can we trust these findings?</summary>
+<div>Weiner did not show that Malinowski recorded things wrongly — she showed that he did not see them, with an entire women's wealth system in plain view. So what should fall is confidence that a record is complete, not confidence that it is true. The reading habit changes accordingly: treat each ethnography as a report from an observer with a position, and ask where they stood and who they could see, which gets you further than asking whether they were right.</div>
+</details>
+</div>
+<div class="refs">
+<h3>FURTHER READING</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/The_Gift_(essay)" rel="noopener" target="_blank">Mauss, The Gift (1925)</a> · <a href="https://en.wikipedia.org/wiki/Hau_(spirit)" rel="noopener" target="_blank">Hau, and the Firth / Sahlins debate</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Kula_ring" rel="noopener" target="_blank">The kula ring</a> · <a href="https://archive.org/details/argonautsofweste0000mali" rel="noopener" target="_blank">Malinowski, Argonauts of the Western Pacific (1922)</a></li>
+<li><a href="https://archive.org/details/womenofvaluemeno0000wein" rel="noopener" target="_blank">Weiner, Women of Value, Men of Renown (1976)</a> · <a href="https://www.ucpress.edu/books/inalienable-possessions/paper" rel="noopener" target="_blank">Weiner, Inalienable Possessions (1992)</a></li>
+<li><a href="https://www.thecanadianencyclopedia.ca/en/article/potlatch-ban" rel="noopener" target="_blank">The potlatch ban in Canada (1885–1951)</a> · <a href="https://en.wikipedia.org/wiki/Stone_Age_Economics" rel="noopener" target="_blank">Sahlins, Stone Age Economics (1972)</a></li>
+<li><a href="https://academic.oup.com/jeea/article/6/4/845/2295788" rel="noopener" target="_blank">Mellström &amp; Johannesson, Crowding Out in Blood Donation (2008)</a> · <a href="https://rady.ucsd.edu/_files/faculty-research/uri-gneezy/fine.pdf" rel="noopener" target="_blank">Gneezy &amp; Rustichini, A Fine is a Price (2000)</a></li>
+</ul>
+</div>
+<footer>BigCat Learning Hub · Sociology &amp; Anthropology</footer>
+</div>
+<script src="https://hub.cissychen.com/comments.js" defer></script>
+<script src="https://hub.cissychen.com/search.js" defer></script>
+<script src="https://hub.cissychen.com/index-button.js" defer></script>
+<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
+</body></html>
