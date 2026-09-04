@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sociology &amp; Anthropology Day 11: Social Stratification</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:linear-gradient(170deg,#1a140f,#171210 42%,#120e0b);color:#e6dacc;line-height:1.9;min-height:100vh}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 60px}
+header{padding:52px 0 30px;border-bottom:1px solid #33261d}
+header .kicker{font-size:0.75rem;color:#8fb0cc;letter-spacing:2.5px;font-family:"SF Mono",Menlo,monospace}
+header h1{font-size:2.1rem;font-weight:800;background:linear-gradient(100deg,#e08155,#eda07c 58%,#8fb0cc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:0.5px;margin-top:12px;line-height:1.28}
+header h2{font-size:1rem;color:#a08b78;margin-top:10px;font-weight:400}
+header .meta{margin-top:14px;font-size:0.85rem;color:#a08b78}
+header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
+.intro{margin-top:30px;font-size:1.02rem;color:#d8c9b8}
+.intro p{margin-bottom:13px}
+.section{margin:46px 0;background:rgba(255,255,255,0.028);padding:28px 26px;border-radius:14px;border:1px solid rgba(255,255,255,0.06)}
+.section .num{display:inline-block;font-size:0.75rem;color:#e08155;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;margin-bottom:8px}
+.section h2{font-size:1.32rem;color:#f4ece2;margin-bottom:16px;font-weight:700;line-height:1.35}
+.section p{margin-bottom:14px;font-size:0.98rem}
+.section strong{color:#fff}
+.section em{color:#e08155;font-style:normal}
+.section ul{list-style:none;margin:14px 0}
+.section li{margin-bottom:10px;padding-left:20px;position:relative}
+.section li::before{content:"◈";position:absolute;left:0;top:0.42em;color:#e08155;font-size:0.7rem}
+.fig{margin:24px 0 10px;text-align:center}
+.fig svg{max-width:100%;height:auto}
+.fig .cap{font-size:0.82rem;color:#a08b78;margin-top:8px;text-align:left;line-height:1.65}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(143,176,204,0.12),rgba(224,129,85,0.05));border:1px solid rgba(143,176,204,0.34);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#8fb0cc;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#dfe3e6;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e08155;font-size:0.72rem}
+.crossx b{color:#aecbe2;font-weight:600}
+.thinking{background:linear-gradient(135deg,rgba(224,129,85,0.06),rgba(143,176,204,0.05));border:1px solid rgba(224,129,85,0.24);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e08155;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(18,14,11,0.5);border:1px solid rgba(224,129,85,0.2);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(224,129,85,0.06);border-color:rgba(224,129,85,0.42)}
+.thinking summary{cursor:pointer;color:#eda07c;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#8fb0cc}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(143,176,204,0.22);color:#ddd0c1;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#8fb0cc;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a08b78}
+.refs a{color:#e08155;text-decoration:none;border-bottom:1px dotted rgba(224,129,85,0.42)}
+.refs a:hover{color:#eda07c;border-bottom-color:#eda07c}
+.bigcat{margin:40px 0 0;background:linear-gradient(135deg,rgba(224,129,85,0.11),rgba(143,176,204,0.04));border:1px solid rgba(224,129,85,0.32);border-radius:14px;padding:22px 26px}
+.bigcat h3{color:#eda07c;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.bigcat ul{list-style:none;margin:0}
+.bigcat li{color:#ece0d2;font-size:0.93rem;line-height:1.8;margin-bottom:14px}
+.bigcat li:last-child{margin-bottom:0}
+.bigcat b{color:#eda07c;font-weight:600}
+footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
+@media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+</style></head><body>
+<div class="container">
+<header>
+<div class="kicker">DAY 11 · STRATIFICATION AND MOBILITY</div>
+<h1>Social Stratification</h1>
+<h2>The most counterintuitive line here: from a snapshot of how big the gap is, you cannot read whether any one person will get stuck in it</h2>
+<div class="meta">2026-09-04 · BigCat</div>
+<div class="pitch">Ask what class someone belongs to and the most informative answer is not how much they earn, but on what grounds and at what rhythm their money arrives.</div>
+</header>
+<div class="intro">
+<p>Loan applications, visa forms, health questionnaires — every one of them has a line labelled "occupation". You fill in two words and turn the page. That line is a ruler sociology spent seventy-odd years calibrating, and what it measures is not how much you earn.</p>
+<p>This page takes apart three things: how that ruler was built, why the gap it measures is not the same thing as what happens to one person over a lifetime, and where the sieve that actually decides whether a position gets passed down is turning.</p>
+</div>
+<div class="section">
+<span class="num">// 01</span>
+<h2>Ask what class you belong to, and the most useful answer is not how much you earn</h2>
+<p>Start with the oldest ruler. In 1947 the National Opinion Research Center in the United States, under Cecil North and Paul Hatt, ran a survey: read ninety occupations out to ordinary people and ask them to rank them. That is the origin of the occupational prestige scale. In 1964 Robert Hodge, Paul Siegel and Peter Rossi repeated it as closely as they could, and the two sets of results correlated at 0.99 — sixteen years, almost no movement. In 1977 Donald Treiman put prestige surveys from about sixty countries side by side and found the orderings broadly similar there too.</p>
+<p>Be clear about the strength of that evidence: it is a cross-sectional survey correlation. It establishes one thing only — <em>that the consensus about how to rank occupations is unusually stable</em> — and not that the occupations carry any intrinsic rank.</p>
+<p>The second ruler is completely different. The classification built by the British sociologist John Goldthorpe and his collaborators (usually called the EGP schema, after the initials of Erikson, Goldthorpe and Portocarero) does not sort by income at all. It sorts by <strong>employment relation</strong>. The core distinction is between two very different contracts: a service relationship, in which the employer is buying long-term loyalty and judgement and pays with a salary, a promotion ladder and a cushion when things go wrong; and a labour contract, settled by the hour, the piece or the month, with nothing owed either way afterwards.</p>
+<p>The power of that distinction: two people take home the same amount this month, one of them by hourly settlement, the other on a salary with a ladder attached — and one serious illness or one industry downturn sends their lives in different directions. <em>Class is not an income bracket. It is the logic by which your money arrives.</em></p>
+<p>The third ruler gets mentioned least: income is a flow, wealth is a stock. The two are correlated, but the shapes of their distributions are not alike — national statistics agree everywhere that wealth is far more concentrated than income. The reason is not mysterious: a stock has positive feedback, since money makes money, and a flow does not.</p>
+<p>Three rulers, three different things, and none of them the "right" one. The Weber and rationalisation page described his insistence that class, status and power are three axes that cannot be reduced to one another — these three rulers are roughly the workable version of those axes. So when two reports on inequality contradict each other, first check whether they are measuring the same thing.</p>
+</div>
+<div class="section">
+<span class="num">// 02</span>
+<h2>If your father earned a lot you probably will too — but that "probably" was once systematically measured too small</h2>
+<p>The relative at the dinner table who says "our kid is bound to do well" has a counterpart number in sociology: the intergenerational income elasticity. It asks how much higher a child's income is, on average, when a parent's income is 10% higher.</p>
+<p>US estimates in the 1980s sat near 0.2, which made the society look rather mobile. In 1992 Gary Solon, using the long-running Michigan survey that has revisited the same families every year since 1968, pointed out a hard flaw in the older calculation: <strong>a single year of income contains a great deal of transitory noise</strong> — the year the bonus was unusually good, the year someone was ill. Use a noisy ruler as your explanatory variable and the correlation you measure is pulled systematically toward zero. Switching to a five-year average moved the estimate from roughly 0.3 to roughly 0.4.</p>
+<p>That is the methodological lesson most worth keeping from this page: <em>part of the conclusion "this society is quite mobile" was manufactured by measurement error.</em> Noise does not push a result off in a random direction. It has a fixed one — it flattens the relationship.</p>
+<p>One number for a whole country is still far too coarse. In 2014 Raj Chetty, Nathaniel Hendren, Patrick Kline and Emmanuel Saez used tens of millions of de-identified tax records to compute this at the level of commuting zones: the probability that a child born into the bottom fifth of the income distribution reaches the top fifth as an adult is 4.4% in Charlotte and 12.9% in San Jose — one country, one legal system, a gap of nearly three times. Evidence: whole-population administrative data, extremely solid as description.</p>
+<div class="fig">
+<svg viewBox="0 0 640 240" xmlns="http://www.w3.org/2000/svg">
+<line stroke="#8fb0cc" stroke-dasharray="6 5" stroke-width="1.4" x1="60" x2="600" y1="60" y2="60"></line>
+<text fill="#8fb0cc" font-family="Georgia,serif" font-size="11" x="60" y="52">Perfect-mobility reference line: 20%</text>
+<rect fill="rgba(224,129,85,0.32)" height="36" stroke="#e08155" stroke-width="1" width="150" x="150" y="96"></rect>
+<rect fill="rgba(224,129,85,0.62)" height="36" stroke="#e08155" stroke-width="1" width="440" x="150" y="156"></rect>
+<line stroke="rgba(143,176,204,0.5)" stroke-dasharray="3 4" x1="150" x2="150" y1="60" y2="206"></line>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="12.5" x="60" y="120">Charlotte</text>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="12.5" x="60" y="180">San Jose</text>
+<text fill="#f4ece2" font-family="Georgia,serif" font-size="13" x="312" y="120">4.4%</text>
+<text fill="#f4ece2" font-family="Georgia,serif" font-size="13" x="602" y="180">12.9%</text>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="10.5" x="150" y="226">Chance a child born in the bottom fifth reaches the top fifth as an adult</text>
+</svg>
+<div class="cap">The dashed line is what perfect mobility would give: if origin and destination were unrelated, the chance of reaching the top box from any starting box would be 20%. Both bars sit far below it, and they differ from each other by nearly three times — a mobility rate is not one number per country; it varies enormously inside one.</div>
+</div>
+<p>Is the regional difference caused by the places themselves? That needs a different kind of evidence. In 2018 Chetty and Hendren built a quasi-experiment out of families who moved, treating a child's age at the move as close to random: the earlier a child moved to a high-mobility area, the higher their adult income, with the gain accumulating roughly linearly in years of residence. Stronger than a bare regional correlation, still not a randomised experiment.</p>
+<p>Finally, the pair of numbers most often mixed up. In <i>Science</i> in 2017 Chetty and colleagues measured something else: the share of children earning more at thirty than their parents did at the same age fell from about 90% for those born in 1940 to about 50% for those born in 1980. <strong>Relative mobility — who swaps places with whom — has barely moved for decades, while absolute mobility, whether you live better than your parents, has halved.</strong> In the everyday argument about whether there is still any hope, each side is usually holding one of those numbers, and both numbers are true.</p>
+</div>
+<div class="section">
+<span class="num">// 03</span>
+<h2>The real sieve had already turned before you ever heard of the job</h2>
+<p>You send in a CV assuming that what follows is a contest of ability. Lauren Rivera wanted to see what actually happens at that step, so she sat inside the hiring process at several top investment banks, consultancies and law firms, from the campus presentation through to the final deliberation table, and added a large number of anonymised in-depth interviews. In 2015 she published that fieldwork as <i>Pedigree</i>.</p>
+<p>The first thing she saw: the comparison does not begin at the CV. These firms present and collect applications at a very short list of "core schools", and everyone outside that list never enters the same pool at all. The second thing happens at the interview table: a large share of the assessment is so-called cultural fit, and the way interviewers judge fit is largely by looking for people whose leisure pursuits resemble their own — rowing, skiing, a particular style of travel.</p>
+<p>Those pursuits are not ability signals. They are things that take years and a great deal of money to cultivate. Sociology calls this cultural capital: <em>the competences picked up at home as a by-product, with no tuition fee but not without cost — which topics count as tasteful, how to talk to authority, which kind of joke you can hear.</em> Its one decisive property is that in a screening room, it looks like ability. Evidence: ethnography of one industry and a handful of firms; the direction is credible, the proportions are not general.</p>
+<p>Further upstream there is another gate. In 2023 Chetty, David Deming and John Friedman linked de-identified admissions records to tax data for the most selective private colleges in the United States. Holding standardised test scores equal, applicants from families in the top 1% of the income distribution were roughly twice as likely to attend those colleges as equally-scoring applicants from middle-class families; among those, legacy applicants were roughly five times as likely as comparable peers. Three channels: alumni preference, recruited athletics, and the non-academic ratings supplied by private high schools. Evidence: large-scale administrative data with a same-score comparison, very strong descriptively, though the authors themselves note it is not a randomised experiment.</p>
+<p>How to interpret these facts splits sociology into two opposed readings, and both deserve their strongest version. In 1945 Kingsley Davis and Wilbert Moore argued that inequality is an incentive device: important and difficult positions must carry enough reward, or nobody will put in the years of training first. In 1953 Melvin Tumin's two hardest counters were these. First, "importance" cannot be measured independently of reward — saying a position is important because it pays well and pays well because it is important is a circle. Second, opportunity itself is unequally distributed, so the same device that allocates talent also systematically wastes the talent that never gets a chance to try.</p>
+<p>That argument ran from the 1950s into the 1980s and never converged. Every number on this page is usable by both sides — <strong>the disagreement is not about the facts, but about which face of them counts as the main effect.</strong></p>
+</div>
+<div class="bigcat">
+<h3>🎒 In practice · BigCat</h3>
+<ul>
+<li><b>① Engineering and system design</b> — the weekly service-health report, whose first metric is "average response time". This runs the mechanism from "Ask what class you belong to, and the most useful answer is not how much you earn": <em>what you measure decides who becomes visible</em>, and a mean erases the small group in the tail entirely. What to change: delete the average from the report and put P50 / P95 / P99 side by side instead (P99 being the figure such that, once all requests are sorted by duration, only 1% are slower). What to watch is not whether the average fell, but how many times per quarter a post-mortem contains "users were already complaining and the dashboard was green".</li>
+<li><b>② Investing and position sizing</b> — the two days of the annual review, deciding whether to keep a strategy by looking at "annualised return over three years". This runs the mechanism from "If your father earned a lot you probably will too — but that 'probably' was once systematically measured too small": in a short window transitory noise carries too much weight, and the estimate it yields is biased in a direction. What to change: move the evaluation window from "the last three years" to "at least one complete drawdown and recovery", and use a multi-period average rather than a single period. What to watch is not the annualised return itself but how many percentage points it moves when you shift the start year forward and back by one — that sensitivity tells you more than the return does about whether you are holding skill or luck.</li>
+</ul>
+</div>
+<div class="crossx">
+<h3>🌀 Crossing over · connections beyond the field</h3>
+<ul>
+<li><b>Complexity science · a small head start gets amplified by the system into a chasm</b>: citation counts, inbound links to websites, city populations — none of these are bell-shaped. They are long tails in which a very few take most of everything. In 1999 Albert-László Barabási and Réka Albert gave a minimal model: the probability that a new node attaches to an old one is proportional to the connections that old node already has. The rule is called preferential attachment, and it needs no node to be "better" than any other to grow a long tail. This runs the mechanism from "The real sieve had already turned before you ever heard of the job": <b>each round of selection takes the previous round's output as this round's input signal</b> — the school on the list, the previous employer on the CV — so advantage compounds itself. Robert Merton named the phenomenon in <i>Science</i> in 1968: the Matthew effect. From which follows a conclusion you could not otherwise see: <b>the shape of an outcome distribution does not let you infer the shape of an ability distribution.</b> Even if ability is bell-shaped and people differ very little, positive feedback of this kind still produces an extreme long tail. Seeing that "the top one percent holds most of it" cannot be read backwards as "that one percent is dozens of times more able" — mathematically the two need not be related at all. <b>Where it does not hold</b>: nodes in that model have no origin. A new node arrives with zero connections and its parent's connection count is not transferred to it. Yet transfer across generations is exactly what stratification is most centrally about — a child arrives already carrying the parents' stock. So models of this kind can explain why concentration happens within one generation; they cannot explain why several generations concentrate on the same surnames.</li>
+<li><b>Physics and mathematics · the average over a crowd and the average over a life are not the same average</b>: statistical physics distinguishes two averages — look at a great many systems at one instant and you have an ensemble average; watch a single system for a long time and you have a time average. Only a system where the two coincide is called ergodic. This runs the distinction between relative and absolute mobility from "If your father earned a lot you probably will too — but that 'probably' was once systematically measured too small": <b>Gini coefficients and quintile shares are all ensemble quantities</b>, a snapshot of one year, whereas "what happens to one person over a lifetime" is a time quantity. From which follows a conclusion you could not otherwise see: <b>two societies can have identical cross-sectional inequality and completely different individual experience</b> — in one, the same families sit at the bottom every year; in the other, people take turns. So "how big the gap is" and "whether you get stuck" are two independent quantities, and the first does not let you read off the second. <b>Where it does not hold</b>: ergodicity in physics is a precisely defined property of a stationary process, and where the process is not stationary the term does not apply. Social mobility is conspicuously non-stationary — absolute mobility falling from nine in ten to one in two means the transmission rules between generations are themselves changing. So "society is non-ergodic" works only as a reminder not to read a cross-section as a personal fate. It cannot be used as a theorem, and it certainly cannot tell you by how much.</li>
+</ul>
+</div>
+<div class="thinking">
+<h3>Going deeper</h3>
+<details><summary>If every screening step were made anonymous, would stratification disappear?</summary>
+<div>All the mechanism licenses is one sentence: anonymity acts at the very end of the chain, and the differences from every earlier link are already inside the material it reads — who had time to prepare, whose portfolio was assembled with help. So to judge whether a blind screen did anything, do not look at whether the shortlist's composition changed; look at which link's signal it actually blocked, and how much of the whole chain that link accounts for.</div>
+</details>
+<details><summary>Prestige rankings look similar in sixty countries. Does that show they are "natural"?</summary>
+<div>No. The similarity can come from elsewhere: the occupational structures of those countries already resemble each other (the division of labour after industrialisation is much the same everywhere), and the surveys asked about the same set of occupational categories, so part of the comparability was manufactured by the question. Stable is not the same as objective. To tell them apart you would have to ask societies whose structure genuinely differs — and such societies are growing scarcer, which is itself a hard limit on this kind of cross-national comparison.</div>
+</details>
+<details><summary>Someone you know climbed all the way up from the bottom. Doesn't that show the system is open?</summary>
+<div>That is the difference between a case and a rate. As the Durkheim and social facts page put it: individuals are unpredictable, rates are regular. Any one person's trajectory can neither confirm nor refute a claim about a rate — and the commuting-zone figures are computing exactly a rate: out of a batch of people with the same starting point, how many arrive at the same destination. The converse holds too: a low rate does not mean any particular person cannot make it.</div>
+</details>
+</div>
+<div class="refs">
+<h3>Further reading</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Occupational_prestige" rel="noopener" target="_blank">Occupational prestige scales and the 1947 NORC survey</a> · <a href="https://www.sciencedirect.com/book/9780126987508/occupational-prestige-in-comparative-perspective" rel="noopener" target="_blank">Treiman, <i>Occupational Prestige in Comparative Perspective</i> (1977)</a></li>
+<li><a href="https://www.encyclopedia.com/social-sciences/dictionaries-thesauruses-pictures-and-press-releases/goldthorpe-class-scheme" rel="noopener" target="_blank">The Goldthorpe class schema and employment relations</a> · <a href="https://www.irp.wisc.edu/wp/wp-content/uploads/2018/11/foc332b.pdf" rel="noopener" target="_blank">Survey of intergenerational elasticity research (including Solon 1992)</a></li>
+<li><a href="https://www.nber.org/papers/w19843" rel="noopener" target="_blank">Chetty et al., <i>Where is the Land of Opportunity?</i> (2014)</a> · <a href="https://www.science.org/doi/10.1126/science.aal4617" rel="noopener" target="_blank">Chetty et al., <i>The Fading American Dream</i> (2017)</a></li>
+<li><a href="https://archive.org/details/pedigreehowelite0000rive" rel="noopener" target="_blank">Rivera, <i>Pedigree</i> (2015)</a> · <a href="https://opportunityinsights.org/paper/collegeadmissions/" rel="noopener" target="_blank">Chetty, Deming &amp; Friedman on selective college admissions (2023)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Davis%E2%80%93Moore_hypothesis" rel="noopener" target="_blank">The Davis–Moore thesis on stratification (1945)</a> · <a href="https://www.semanticscholar.org/paper/Some-Principles-of-Stratification:-A-Critical-Tumin/7e4509e5e3deb6135e562ca3650330ef62992088" rel="noopener" target="_blank">Tumin's critique (1953)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Barab%C3%A1si%E2%80%93Albert_model" rel="noopener" target="_blank">The Barabási–Albert preferential attachment model (1999)</a> · <a href="https://en.wikipedia.org/wiki/Matthew_effect" rel="noopener" target="_blank">Merton's Matthew effect (1968)</a></li>
+</ul>
+</div>
+<footer>BigCat Learning Hub · Sociology &amp; Anthropology</footer>
+</div>
+<script src="https://hub.cissychen.com/comments.js" defer></script>
+<script src="https://hub.cissychen.com/search.js" defer></script>
+<script src="https://hub.cissychen.com/index-button.js" defer></script>
+<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
+</body></html>

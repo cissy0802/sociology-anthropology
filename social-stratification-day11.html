@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>社会学与人类学 Day 11：社会分层</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:linear-gradient(170deg,#1a140f,#171210 42%,#120e0b);color:#e6dacc;line-height:1.9;min-height:100vh}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 60px}
+header{padding:52px 0 30px;border-bottom:1px solid #33261d}
+header .kicker{font-size:0.75rem;color:#8fb0cc;letter-spacing:2.5px;font-family:"SF Mono",Menlo,monospace}
+header h1{font-size:2.1rem;font-weight:800;background:linear-gradient(100deg,#e08155,#eda07c 58%,#8fb0cc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:0.5px;margin-top:12px;line-height:1.28}
+header h2{font-size:1rem;color:#a08b78;margin-top:10px;font-weight:400}
+header .meta{margin-top:14px;font-size:0.85rem;color:#a08b78}
+header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
+.intro{margin-top:30px;font-size:1.02rem;color:#d8c9b8}
+.intro p{margin-bottom:13px}
+.section{margin:46px 0;background:rgba(255,255,255,0.028);padding:28px 26px;border-radius:14px;border:1px solid rgba(255,255,255,0.06)}
+.section .num{display:inline-block;font-size:0.75rem;color:#e08155;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;margin-bottom:8px}
+.section h2{font-size:1.32rem;color:#f4ece2;margin-bottom:16px;font-weight:700;line-height:1.35}
+.section p{margin-bottom:14px;font-size:0.98rem}
+.section strong{color:#fff}
+.section em{color:#e08155;font-style:normal}
+.section ul{list-style:none;margin:14px 0}
+.section li{margin-bottom:10px;padding-left:20px;position:relative}
+.section li::before{content:"◈";position:absolute;left:0;top:0.42em;color:#e08155;font-size:0.7rem}
+.fig{margin:24px 0 10px;text-align:center}
+.fig svg{max-width:100%;height:auto}
+.fig .cap{font-size:0.82rem;color:#a08b78;margin-top:8px;text-align:left;line-height:1.65}
+.en-brief{margin-top:18px;padding:12px 16px;border-left:2px solid rgba(160,139,120,0.5);background:rgba(255,255,255,0.02);border-radius:0 8px 8px 0;font-size:0.85rem;color:#b0a08e;line-height:1.62}
+.en-brief b{color:#bda994;font-family:"SF Mono",Menlo,monospace;font-size:0.68rem;letter-spacing:1.5px;margin-right:9px;font-weight:700}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(143,176,204,0.12),rgba(224,129,85,0.05));border:1px solid rgba(143,176,204,0.34);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#8fb0cc;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#dfe3e6;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e08155;font-size:0.72rem}
+.crossx b{color:#aecbe2;font-weight:600}
+.thinking{background:linear-gradient(135deg,rgba(224,129,85,0.06),rgba(143,176,204,0.05));border:1px solid rgba(224,129,85,0.24);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e08155;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(18,14,11,0.5);border:1px solid rgba(224,129,85,0.2);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(224,129,85,0.06);border-color:rgba(224,129,85,0.42)}
+.thinking summary{cursor:pointer;color:#eda07c;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#8fb0cc}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(143,176,204,0.22);color:#ddd0c1;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#8fb0cc;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a08b78}
+.refs a{color:#e08155;text-decoration:none;border-bottom:1px dotted rgba(224,129,85,0.42)}
+.refs a:hover{color:#eda07c;border-bottom-color:#eda07c}
+.bigcat{margin:40px 0 0;background:linear-gradient(135deg,rgba(224,129,85,0.11),rgba(143,176,204,0.04));border:1px solid rgba(224,129,85,0.32);border-radius:14px;padding:22px 26px}
+.bigcat h3{color:#eda07c;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.bigcat ul{list-style:none;margin:0}
+.bigcat li{color:#ece0d2;font-size:0.93rem;line-height:1.8;margin-bottom:14px}
+.bigcat li:last-child{margin-bottom:0}
+.bigcat b{color:#eda07c;font-weight:600}
+footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
+@media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+</style></head><body>
+<div class="container">
+<header>
+<div class="kicker">DAY 11 · 分层与流动</div>
+<h1>社会分层</h1>
+<h2>这一期最反直觉的一句：从「差距有多大」这张照片，读不出「一个人这辈子会不会卡住」</h2>
+<div class="meta">2026-09-04 · BigCat</div>
+<div class="pitch">问一个人属于哪个阶层，最有信息量的答案不是他挣多少，是他的钱凭什么理由、按什么节奏到账。</div>
+</header>
+<div class="intro">
+<p>办贷款、办签证、填体检表，都有一栏叫「职业」。你随手写两个字就翻页了。这一栏其实是社会学花了七十多年校准出来的一把尺子——而且它量的并不是你挣多少钱。</p>
+<p>这一页拆三件事：这把尺怎么造出来的、量出来的差距为什么和一个人一生的经历不是同一回事、以及真正决定位置能不能传下去的那道筛子在哪儿转。</p>
+</div>
+<div class="section">
+<span class="num">// 01</span>
+<h2>问你属于哪个阶层，最有用的答案不是你挣多少</h2>
+<p>先说最老的那把尺。1947 年，美国全国民意研究中心（National Opinion Research Center）在 Cecil North 和 Paul Hatt 主持下做了一次调查：把九十种职业念给普通人听，请他们排个高低。这就是职业声望量表的起点。1964 年 Robert Hodge、Paul Siegel 和 Peter Rossi 原样重做了一遍，两次结果的相关系数是 0.99——十六年过去，排序几乎没动。1977 年 Donald Treiman 把大约六十个国家的声望调查放到一起比，发现各国的排法也高度相似。</p>
+<p>证据强度要说清楚：这是横截面的问卷相关。它证明的只有一件事——<em>人们对职业的排序有异常稳定的共识</em>，而不是这些职业本身有什么内在高低。</p>
+<p>第二把尺完全不同。英国社会学家 John Goldthorpe 和合作者做的那套分类（常被叫作 EGP 图式，取三位作者 Erikson、Goldthorpe、Portocarero 姓氏的首字母）不按收入排高低，按<strong>雇佣关系</strong>分类。核心区分是两种截然不同的契约：一种叫服务关系，雇主买的是长期的忠诚和判断力，所以给的是年薪、晋升梯子、出事时的缓冲；另一种叫劳动契约，按时、按件、按月结清，两不相欠。</p>
+<p>这个区分的力量在于：两个人这个月到手一样多，一个的钱来自时薪结算，一个来自有梯子的年薪——遇上一场大病或一次行业下行，人生就分岔了。<em>阶级不是收入的档位，是你的钱按什么逻辑到账。</em></p>
+<p>第三把尺更少被提起：收入是流量，财富是存量。两者相关，分布形状却很不一样——各国统计一致显示财富比收入集中得多。原因不神秘：存量有正反馈，钱本身会生钱；流量没有这个性质。</p>
+<p>三把尺量的是三样东西，没有哪把「对」。「韦伯与理性化」那期讲过他坚持阶级、身份、权力互不还原——这三把尺差不多就是那三条轴的可操作版本。所以两份关于不平等的报告结论打架时，先看它们量的是不是同一样东西。</p>
+<p class="en-brief"><b>EN</b> Three rulers, three different things. Occupational prestige begins with the 1947 National Opinion Research Center survey run by Cecil North and Paul Hatt; when Hodge, Siegel and Rossi repeated it in 1964 the two rankings correlated at 0.99, and Treiman's 1977 comparison of prestige surveys from about sixty countries found the orderings broadly similar. Evidence: cross-sectional survey correlation. It shows only that consensus about ranking is unusually stable, not that the jobs carry any intrinsic rank. The EGP schema of Erikson, Goldthorpe and Portocarero sorts instead by employment relation: a service relationship, where the employer buys long-term loyalty and judgement and pays with salary, promotion prospects and a cushion, versus a labour contract settled by the hour or the piece. Two people taking home the same amount this month diverge permanently after one illness. Class is not an income bracket but the logic by which your money arrives. A third distinction is rarely made: income is a flow, wealth a stock, and stocks carry positive feedback that flows do not — which is why wealth is everywhere far more concentrated than income.</p>
+</div>
+<div class="section">
+<span class="num">// 02</span>
+<h2>你爸挣得多你大概率也挣得多，但「大概率」这个数曾经被系统性地量小了</h2>
+<p>亲戚饭桌上那句「我们家孩子肯定有出息」，社会学里有个对应的数：代际收入弹性。它问的是——父辈收入高 10%，子辈平均高百分之几。</p>
+<p>1980 年代美国的估计大约是 0.2，看上去这个社会相当流动。1992 年 Gary Solon 用密歇根大学那份从 1968 年起年年回访同一批家庭的长期调查，指出旧算法有个硬伤：<strong>单一年份的收入里混着大量偶然波动</strong>——那年奖金特别好、那年生了场病。用带噪音的尺子当自变量，量出的相关系数会被系统性地拉向 0。他换成五年平均，估计值从约 0.3 跳到约 0.4。</p>
+<p>这是本页最值得记住的方法学教训：<em>「这个社会挺流动」这个结论，有一部分是测量误差造出来的。</em>噪音不会让结论随机地偏，它有固定方向——把关系抹平。</p>
+<p>全国一个数还是太粗。2014 年 Raj Chetty、Nathaniel Hendren、Patrick Kline、Emmanuel Saez 用上千万人的匿名税务记录，把这件事算到通勤区一级：出生在收入最低五分之一家庭的孩子，长大后进入最高五分之一的概率，在 Charlotte 是 4.4%，在 San Jose 是 12.9%——同一个国家、同一套法律，差了近三倍。证据强度：全样本行政数据，作为描述极硬。</p>
+<div class="fig">
+<svg viewBox="0 0 640 240" xmlns="http://www.w3.org/2000/svg">
+<line stroke="#8fb0cc" stroke-dasharray="6 5" stroke-width="1.4" x1="60" x2="600" y1="60" y2="60"></line>
+<text fill="#8fb0cc" font-family="Georgia,serif" font-size="11" x="60" y="52">完全流动的参照线：20%</text>
+<rect fill="rgba(224,129,85,0.32)" height="36" stroke="#e08155" stroke-width="1" width="150" x="150" y="96"></rect>
+<rect fill="rgba(224,129,85,0.62)" height="36" stroke="#e08155" stroke-width="1" width="440" x="150" y="156"></rect>
+<line stroke="rgba(143,176,204,0.5)" stroke-dasharray="3 4" x1="150" x2="150" y1="60" y2="206"></line>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="12.5" x="60" y="120">Charlotte</text>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="12.5" x="60" y="180">San Jose</text>
+<text fill="#f4ece2" font-family="Georgia,serif" font-size="13" x="312" y="120">4.4%</text>
+<text fill="#f4ece2" font-family="Georgia,serif" font-size="13" x="602" y="180">12.9%</text>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="10.5" x="150" y="226">出身最低五分之一的孩子，成年后进入最高五分之一的概率</text>
+</svg>
+<div class="cap">虚线是「完全流动」下该有的数：出身与终点若无关，从任何一格进入顶格的概率都该是 20%。两根柱都远低于它，而且彼此差了近三倍——流动率不是一个国家一个数，它在国境内部就已经天差地别。</div>
+</div>
+<p>地区差异是不是地方本身造成的？这需要另一种证据。2018 年 Chetty 和 Hendren 用搬过家的家庭做了个准实验：把孩子搬家时的年龄当成近似随机的变量，发现越早搬到流动率高的地区，成年后收入越高，增益大致随住的年数线性累加。比单纯的地区相关强，但仍不是随机实验。</p>
+<p>最后是一组最容易被混着用的数。2017 年 Chetty 等人在《科学》上算的是另一件事：孩子三十岁时收入超过父母同龄时收入的比例——从 1940 年出生那批人的约九成，掉到 1980 年出生那批人的约五成。<strong>相对流动（谁跟谁换位）几十年几乎没动，绝对流动（是不是过得比父母好）腰斩。</strong>日常那场「现在还有没有希望」的争论，两边常常各握着其中一个数，而两个数都是对的。</p>
+<p class="en-brief"><b>EN</b> Intergenerational elasticity asks how much a child's income rises with a parent's. US estimates sat near 0.2 in the 1980s until Gary Solon (1992) showed that single-year income carries large transitory noise — a good bonus year, a year of illness — and that a noisy regressor biases the estimate systematically toward zero. Averaging five years moved it from roughly 0.3 to roughly 0.4: part of the conclusion that America was mobile was measurement error. Chetty, Hendren, Kline and Saez (2014), using tens of millions of de-identified tax records at commuting-zone level, found that a child born in the bottom income fifth reaches the top fifth 4.4% of the time in Charlotte and 12.9% in San Jose — one country, one legal system, a threefold gap. Chetty and Hendren (2018) added quasi-experimental evidence by treating a child's age at a family move as near-random. Chetty et al. (<i>Science</i>, 2017) measured something different: the share of children out-earning their parents at thirty fell from about 90% for the 1940 birth cohort to about 50% for the 1980 cohort. Relative mobility barely moved while absolute mobility halved — two true numbers that support opposite everyday verdicts.</p>
+</div>
+<div class="section">
+<span class="num">// 03</span>
+<h2>真正的筛子，在你听说这份工作之前就已经转过了</h2>
+<p>你投了简历，觉得接下来比的是能力。Lauren Rivera 想看清这一步到底发生了什么，于是坐进几家顶级投行、咨询公司和律所的招聘现场，从宣讲会一直看到最后的评议桌，再加上大量匿名深访。她 2015 年把这份田野写成《Pedigree》。</p>
+<p>她看到的第一件事是：比较根本不是从简历开始的。这些公司只在一份很短的「核心院校」名单上办宣讲、收简历，名单之外的人不进同一个池子。第二件事发生在面试桌上：评价里占很大分量的是所谓「文化匹配」，而面试官判断匹配的方式，很大程度上是找和自己业余爱好相似的人——划船、滑雪、某一类旅行。</p>
+<p>这些爱好不是能力信号，是要花很多年和很多钱才养得出来的东西。社会学管这类东西叫文化资本（cultural capital）：<em>在家里顺带学会、不交学费但很花钱的那些能力——什么话题算得体、怎么跟权威说话、听得懂哪种笑话。</em>它的关键性质只有一条：在筛选场合，它长得像能力。证据强度：单一行业、少数公司的民族志，方向可信，别当成普遍比例。</p>
+<p>再往上游还有一道。2023 年 Chetty、David Deming 和 John Friedman 用去识别化的入学记录接税务数据，看美国最挑的那批私立大学。在标准化考试分数相同的条件下，来自收入最高 1% 家庭的申请者进入这些学校的概率，约是同分中产家庭申请者的两倍；其中属于校友子女的那部分，约是条件相当者的五倍。三条渠道：校友子女优待、体育特招、私立高中给出的非学业评分。证据强度：大规模行政数据加同分比较，描述性极强，但作者自己也说明这不是随机实验。</p>
+<p>这些事实怎么解释，社会学里有两套针锋相对的读法，都给最强版本。1945 年 Kingsley Davis 和 Wilbert Moore 提出：不平等是一套激励装置——重要又难的位置必须给足够回报，才有人肯先付出多年训练。1953 年 Melvin Tumin 的反驳有两条最硬：一，「重要性」没法独立于回报来测量，说它重要所以给得多、给得多所以看着重要，这是个圈；二，机会本身分布不均，所以这套装置在配置人才的同时也系统性地浪费掉一批没机会试的天赋。</p>
+<p>这场争论从五十年代吵到八十年代，没有收敛。本页给出的所有数字，两边都能拿去用——<strong>分歧不在事实，在于把哪一面算作主效果。</strong></p>
+<p class="en-brief"><b>EN</b> Lauren Rivera sat in on hiring at elite investment banks, consultancies and law firms, from campus events to the deliberation table, and interviewed the interviewers; <i>Pedigree</i> (2015) reports two findings. Comparison does not begin at the résumé: firms recruit from a short list of core schools, and everyone else never enters the same pool. And at interview a large share of the judgement is cultural fit, which evaluators operationalise as sharing their own leisure pursuits — rowing, skiing, a certain kind of travel. Those are not ability signals; they are cultural capital, the competences absorbed at home without tuition but not without cost, whose one decisive property is that in a screening room they look like ability. Evidence: ethnography of one industry and a few firms. Upstream, Chetty, Deming and Friedman (2023), linking de-identified admissions records to tax data, found that among applicants with the same standardised test scores those from top-1% families were about twice as likely to attend the most selective private colleges, with legacy applicants from such families roughly five times as likely — via alumni preference, recruited athletics and private-school non-academic ratings. Both sides of the classic dispute use these same facts: Davis and Moore (1945) read stratification as an incentive that staffs demanding positions; Tumin (1953) answered that importance cannot be measured independently of reward, and that unequal opportunity wastes talent that never gets to try. The argument ran into the 1980s and never converged.</p>
+</div>
+<div class="bigcat">
+<h3>🎒 场景 · BigCat</h3>
+<ul>
+<li><b>① 工程与系统设计</b>——每周汇报服务健康度，指标栏第一个数是「平均响应时间」。跑的是「问你属于哪个阶层，最有用的答案不是你挣多少」那节的机制：<em>量什么决定了谁被看见</em>——均值把尾部那一小撮人整体抹掉。可改的：把平均值从周报里删掉，换成 P50 / P95 / P99 三个数并排（P99 是把所有请求按耗时排序之后，只有 1% 比它更慢的那个数）。要盯的不是平均值有没有降，是复盘里「用户已经在抱怨、仪表盘还是绿的」这类事件一个季度出现几次。</li>
+<li><b>② 投资与仓位</b>——年度复盘那两天，判断一个策略要不要继续，看的是「这三年年化多少」。跑的是「你爸挣得多你大概率也挣得多，但『大概率』这个数曾经被系统性地量小了」那节的机制：短窗口里偶然波动占的比重太大，估出来的关系偏得有方向。可改的：评估窗口从「最近三年」改成「至少覆盖一次完整回撤的那段」，用多期平均而不是单期。要盯的不是年化收益，是把起始年份前后各挪一年重算、年化会变几个百分点——这个敏感度比收益率更能说明你手里的是本事还是运气。</li>
+</ul>
+</div>
+<div class="crossx">
+<h3>🌀 越界 · 跨学科的联想</h3>
+<ul>
+<li><b>复杂性科学 · 开头多出的一点点，会被系统自己放大成悬殊</b>：论文的引用数、网站被链接的次数、城市的人口，都不是钟形分布，而是极少数占掉绝大部分的长尾。1999 年 Albert-László Barabási 和 Réka Albert 给了一个极简模型：新节点连向某个老节点的概率，正比于那个老节点已有的连接数。这条规则叫优先连接（preferential attachment），不需要任何节点比别人「更好」，光靠它就能长出长尾。跑的是「真正的筛子，在你听说这份工作之前就已经转过了」那节的机制：<b>每一轮筛选把上一轮的结果当成这一轮的输入信号</b>——名单上的学校、简历上的前雇主——优势于是自己给自己加码。Robert Merton 1968 年在《科学》上给这个现象起过名字：马太效应。由此能推出一个原本看不出的结论：<b>从结果分布的形状，推不出能力分布的形状。</b>哪怕能力是钟形的、人和人差得很小，只要有这种正反馈，产出的仍是极端长尾。看到「顶端百分之一占了大半」，不能反过来读成「这百分之一的能力是别人的几十倍」——这两件事在数学上根本不需要有关系。<b>但这里不成立</b>：那个模型里的节点没有出身，新节点带着零连接进场，父节点的连接数不会传给它。而社会分层最核心的恰恰是跨代转移——孩子进场时就带着父母的存量。所以这类模型能解释一代人内部为什么会集中，解释不了为什么几代人集中在同一批姓氏上。</li>
+<li><b>物理与数学 · 一群人的平均，和一个人的一生，不是同一个平均</b>：统计物理里区分两种平均——同一时刻看一大堆系统，叫系综平均；盯着一个系统看很久，叫时间平均。两者相等的系统才叫遍历的（ergodic）。跑的是「你爸挣得多你大概率也挣得多，但『大概率』这个数曾经被系统性地量小了」那节里相对流动与绝对流动的分野：<b>基尼系数、五分位占比这类数全是系综量</b>（某一年的横截面照片），而「一个人这辈子会怎么样」是时间量。由此能推出一个原本看不出的结论：<b>两个社会可以有一模一样的横截面不平等，个人经历却完全不同</b>——一个里面每年是同一批家庭待在底部，另一个里面大家轮流待。所以「差距有多大」和「卡不卡得住」是两个独立的量，从前者读不出后者。<b>但这里不成立</b>：物理里的遍历性是平稳过程的一个有精确定义的性质，过程不平稳就根本谈不上。而社会流动恰恰不平稳——绝对流动从九成掉到一半，说明代际之间的转移规则本身在变。所以「社会不遍历」只能当一句提醒你别把横截面读成个人命运的比喻，不能当定理用，更算不出偏离了多少。</li>
+</ul>
+</div>
+<div class="thinking">
+<h3>深入思考</h3>
+<details><summary>如果把所有筛选环节都改成匿名的，分层会消失吗？</summary>
+<div>机制上能说的只有一句：匿名作用在链条最末端，而前面每一环的差异都已经进了它读到的那份材料里——谁有时间准备、谁的作品集是谁帮着攒的。所以判断一次盲筛有没有用，别看入围名单的构成变没变，看它挡掉的是哪一环的信号、那一环在整条链子上占多大分量。</div>
+</details>
+<details><summary>六十个国家的声望排序都差不多，这算不算说明它是「自然的」？</summary>
+<div>不算。相似可以有别的来源：这些国家的职业结构本来就相近（工业化之后分工大同小异），而且调查问的是同一套职业分类，可比性有一部分是问法造出来的。稳定不等于客观。真要区分，得去问结构真的不同的社会——而这样的社会越来越少，这本身就是这类跨国比较的硬限制。</div>
+</details>
+<details><summary>身边有人明明从底层一路向上，这不就说明系统是通的吗？</summary>
+<div>这是个案和率的区别。「涂尔干与社会事实」那期讲过：个体不可预测，率却有规律。任何一个人的轨迹既证实不了也证伪不了关于率的说法——通勤区那组数算的正是率：同样起点的一批人里，有多少到了同样的终点。反过来也一样，率低不代表某个具体的人上不去。</div>
+</details>
+</div>
+<div class="refs">
+<h3>延伸阅读</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Occupational_prestige" rel="noopener" target="_blank">职业声望量表与 1947 年 NORC 调查</a>（英文）· <a href="https://www.sciencedirect.com/book/9780126987508/occupational-prestige-in-comparative-perspective" rel="noopener" target="_blank">Treiman《比较视野下的职业声望》(1977)</a>（英文）</li>
+<li><a href="https://www.encyclopedia.com/social-sciences/dictionaries-thesauruses-pictures-and-press-releases/goldthorpe-class-scheme" rel="noopener" target="_blank">Goldthorpe 阶级图式与雇佣关系</a>（英文）· <a href="https://www.irp.wisc.edu/wp/wp-content/uploads/2018/11/foc332b.pdf" rel="noopener" target="_blank">代际收入弹性研究综述（含 Solon 1992）</a>（英文）</li>
+<li><a href="https://www.nber.org/papers/w19843" rel="noopener" target="_blank">Chetty 等《机会之地在哪里》(2014)</a>（英文）· <a href="https://www.science.org/doi/10.1126/science.aal4617" rel="noopener" target="_blank">Chetty 等《渐渐褪色的美国梦》(2017)</a>（英文）</li>
+<li><a href="https://archive.org/details/pedigreehowelite0000rive" rel="noopener" target="_blank">Rivera《Pedigree》(2015)</a>（英文）· <a href="https://opportunityinsights.org/paper/collegeadmissions/" rel="noopener" target="_blank">Chetty、Deming &amp; Friedman 精英大学录取研究 (2023)</a>（英文）</li>
+<li><a href="https://en.wikipedia.org/wiki/Davis%E2%80%93Moore_hypothesis" rel="noopener" target="_blank">Davis–Moore 分层命题 (1945)</a>（英文）· <a href="https://www.semanticscholar.org/paper/Some-Principles-of-Stratification:-A-Critical-Tumin/7e4509e5e3deb6135e562ca3650330ef62992088" rel="noopener" target="_blank">Tumin 的批评 (1953)</a>（英文）</li>
+<li><a href="https://en.wikipedia.org/wiki/Barab%C3%A1si%E2%80%93Albert_model" rel="noopener" target="_blank">Barabási–Albert 优先连接模型 (1999)</a>（英文）· <a href="https://en.wikipedia.org/wiki/Matthew_effect" rel="noopener" target="_blank">Merton 的马太效应 (1968)</a>（英文）</li>
+</ul>
+</div>
+<footer>BigCat Learning Hub · Sociology &amp; Anthropology</footer>
+</div>
+<script src="https://hub.cissychen.com/comments.js" defer></script>
+<script src="https://hub.cissychen.com/search.js" defer></script>
+<script src="https://hub.cissychen.com/index-button.js" defer></script>
+<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
+</body></html>
