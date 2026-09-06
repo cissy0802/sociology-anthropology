@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sociology &amp; Anthropology Day 13: Social Networks</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:linear-gradient(170deg,#1a140f,#171210 42%,#120e0b);color:#e6dacc;line-height:1.9;min-height:100vh}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 60px}
+header{padding:52px 0 30px;border-bottom:1px solid #33261d}
+header .kicker{font-size:0.75rem;color:#8fb0cc;letter-spacing:2.5px;font-family:"SF Mono",Menlo,monospace}
+header h1{font-size:2.1rem;font-weight:800;background:linear-gradient(100deg,#e08155,#eda07c 58%,#8fb0cc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:0.5px;margin-top:12px;line-height:1.28}
+header h2{font-size:1rem;color:#a08b78;margin-top:10px;font-weight:400}
+header .meta{margin-top:14px;font-size:0.85rem;color:#a08b78}
+header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
+.intro{margin-top:30px;font-size:1.02rem;color:#d8c9b8}
+.intro p{margin-bottom:13px}
+.section{margin:46px 0;background:rgba(255,255,255,0.028);padding:28px 26px;border-radius:14px;border:1px solid rgba(255,255,255,0.06)}
+.section .num{display:inline-block;font-size:0.75rem;color:#e08155;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;margin-bottom:8px}
+.section h2{font-size:1.32rem;color:#f4ece2;margin-bottom:16px;font-weight:700;line-height:1.35}
+.section p{margin-bottom:14px;font-size:0.98rem}
+.section strong{color:#fff}
+.section em{color:#e08155;font-style:normal}
+.section ul{list-style:none;margin:14px 0}
+.section li{margin-bottom:10px;padding-left:20px;position:relative}
+.section li::before{content:"◈";position:absolute;left:0;top:0.42em;color:#e08155;font-size:0.7rem}
+.fig{margin:24px 0 10px;text-align:center}
+.fig svg{max-width:100%;height:auto}
+.fig .cap{font-size:0.82rem;color:#a08b78;margin-top:8px;text-align:left;line-height:1.65}
+.en-brief{margin-top:18px;padding:12px 16px;border-left:2px solid rgba(160,139,120,0.5);background:rgba(255,255,255,0.02);border-radius:0 8px 8px 0;font-size:0.85rem;color:#b0a08e;line-height:1.62}
+.en-brief b{color:#bda994;font-family:"SF Mono",Menlo,monospace;font-size:0.68rem;letter-spacing:1.5px;margin-right:9px;font-weight:700}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(143,176,204,0.12),rgba(224,129,85,0.05));border:1px solid rgba(143,176,204,0.34);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#8fb0cc;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#dfe3e6;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e08155;font-size:0.72rem}
+.crossx b{color:#aecbe2;font-weight:600}
+.thinking{background:linear-gradient(135deg,rgba(224,129,85,0.06),rgba(143,176,204,0.05));border:1px solid rgba(224,129,85,0.24);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e08155;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(18,14,11,0.5);border:1px solid rgba(224,129,85,0.2);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(224,129,85,0.06);border-color:rgba(224,129,85,0.42)}
+.thinking summary{cursor:pointer;color:#eda07c;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#8fb0cc}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(143,176,204,0.22);color:#ddd0c1;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#8fb0cc;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a08b78}
+.refs a{color:#e08155;text-decoration:none;border-bottom:1px dotted rgba(224,129,85,0.42)}
+.refs a:hover{color:#eda07c;border-bottom-color:#eda07c}
+.bigcat{margin:40px 0 0;background:linear-gradient(135deg,rgba(224,129,85,0.11),rgba(143,176,204,0.04));border:1px solid rgba(224,129,85,0.32);border-radius:14px;padding:22px 26px}
+.bigcat h3{color:#eda07c;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.bigcat ul{list-style:none;margin:0}
+.bigcat li{color:#ece0d2;font-size:0.93rem;line-height:1.8;margin-bottom:14px}
+.bigcat li:last-child{margin-bottom:0}
+.bigcat b{color:#eda07c;font-weight:600}
+footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
+@media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+</style></head><body>
+<div class="container">
+<header>
+<div class="kicker">DAY 13 · TIES AND NETWORKS</div>
+<h1>Social Networks</h1>
+<h2>The most counterintuitive line here: the relationship that brings you an opportunity is usually the one you put the least care into keeping</h2>
+<div class="meta">2026-09-06 · BigCat</div>
+<div class="pitch">The handful of people you see every day know almost exactly what you know — so however willing they are, they cannot bring anything new in.</div>
+</header>
+<div class="intro">
+<p>How did you get your last job? Set the application history aside and think of the person who first mentioned it to you: how often do the two of you actually meet? Many people find the answer surprising — not a close friend they talk to daily, but a former colleague, a classmate's classmate, someone they worked with on one project years ago and barely spoke to since.</p>
+<p>This page takes apart three things: why the most useful news tends to arrive from people you are not close to; why the position wedged between two groups is both valuable and uncomfortable; and why "the world is small" and "things spread" are not the same claim at all.</p>
+</div>
+<div class="section">
+<span class="num">// 01</span>
+<h2>The person who found you that job is someone you see twice a year at most</h2>
+<p>In 1969 Mark Granovetter sent out a survey in Newton, a suburb of Boston, to 282 professional, technical and managerial workers who had changed jobs within the previous five years. The question was plain: how did you first hear about this job?</p>
+<p>Among those who got the job through a personal contact, only about 17% said they saw that person often (twice a week or more); roughly 56% saw them occasionally; and nearly 28% rarely — once a year or less.</p>
+<p>A word first: sociology calls a single relationship between two people a tie, and its strength is a matter of time spent together, closeness, and how much help passes back and forth.</p>
+<p>What needs explaining is not that contacts help, but that <strong>less close contacts help more</strong>. The mechanism in Granovetter's 1973 paper, "The Strength of Weak Ties", is clean: the people you see daily mostly know each other too — a state where your two closest friends are complete strangers to one another rarely lasts. So strong ties close up into clusters, and <em>inside a cluster the news overlaps heavily: what you have heard, they have probably heard as well.</em></p>
+<p>The value of a weak tie is therefore not about affection but about position: it is more likely to be a bridge joining two clusters that were otherwise unconnected. <strong>The point is not the weakness; it is the non-overlap.</strong></p>
+<p>State the evidence separately. The 1973 case is a correlation plus an argument: one suburb, one occupational stratum, all male respondents, 1969 data — not a universal law. The causal test had to wait until 2022, when researchers reported in <i>Science</i> a series of randomised experiments run through LinkedIn's "People You May Know" recommendations, covering over 20 million people across five years, during which 2 billion new ties and 600,000 job changes were created. Weak ties did raise the probability of moving jobs, but with a twist — the relationship is an inverted U, and the most useful band is the moderately weak one. Someone who can no longer place who you are transmits nothing, however long the bridge.</p>
+<p>One precondition is routinely skipped: <em>having the tie is not the same as the tie being used.</em> The sociologist Sandra Smith's 2005 study, built on in-depth interviews with 105 low-income African Americans, found the bottleneck was often not a lack of contacts holding opportunities but those contacts choosing not to speak up — if the person referred performs badly, the account is charged to the referrer, and some interviewees had indeed lost jobs that way. <strong>A referral is not forwarding a message; it is posting your own credit as collateral.</strong> As the gift and reciprocity topic argued, what is given freely binds precisely because it enters both parties into an unwritten account; a referral is that kind of account. Evidence: qualitative interviews, mechanism clear, proportions not to be extrapolated.</p>
+</div>
+<div class="section">
+<span class="num">// 02</span>
+<h2>Both sides know you, and they do not know each other</h2>
+<p>You get added to a cross-department channel and quickly notice you are the only person who knows people on both sides. So every time the two sides need to align, the message routes through you. That position has a name.</p>
+<p>Ronald Burt calls the missing relationship between two groups a structural hole — note that the hole is not a person but an absence of ties — and the person who stands across it and joins the two sides a broker.</p>
+<p>His 2004 study worked like this: 673 managers running the supply chain of a large American electronics company in 2001 were asked to write down ideas for improving that supply chain, and the ideas were then rated by senior executives. Managers whose networks spanned more structural holes (technically, low network constraint — their contacts were not all bunched into one pile) had ideas rated more valuable and dismissed out of hand less often; their pay, evaluations and promotions ran higher too.</p>
+<p>The mechanism is no mystery: it is <strong>vision arbitrage</strong>. Talk converges inside a group — everyone reads the same material, explains it to each other a few times, and soon they all think that way. Someone standing between two groups need not be smarter; they simply see both repertoires at once, so "take what works over here and apply it to the problem over there" is obvious to them and to nobody on either side.</p>
+<div class="fig">
+<svg viewBox="0 0 640 320" xmlns="http://www.w3.org/2000/svg">
+<g stroke="rgba(160,139,120,0.5)" stroke-width="1.1">
+<line x1="95" x2="160" y1="95" y2="68"></line><line x1="95" x2="215" y1="95" y2="122"></line><line x1="160" x2="215" y1="68" y2="122"></line><line x1="95" x2="108" y1="95" y2="205"></line><line x1="108" x2="172" y1="205" y2="240"></line><line x1="172" x2="232" y1="240" y2="172"></line><line x1="215" x2="232" y1="122" y2="172"></line><line x1="160" x2="232" y1="68" y2="172"></line><line x1="108" x2="215" y1="205" y2="122"></line>
+<line x1="408" x2="470" y1="170" y2="110"></line><line x1="470" x2="532" y1="110" y2="88"></line><line x1="532" x2="558" y1="88" y2="178"></line><line x1="558" x2="496" y1="178" y2="242"></line><line x1="496" x2="424" y1="242" y2="246"></line><line x1="424" x2="408" y1="246" y2="170"></line><line x1="470" x2="496" y1="110" y2="242"></line><line x1="408" x2="558" y1="170" y2="178"></line><line x1="470" x2="424" y1="110" y2="246"></line>
+</g>
+<line stroke="#e08155" stroke-dasharray="5 4" stroke-width="1.8" x1="232" x2="408" y1="172" y2="170"></line>
+<g fill="#8fb0cc">
+<circle cx="95" cy="95" r="5"></circle><circle cx="160" cy="68" r="5"></circle><circle cx="215" cy="122" r="5"></circle><circle cx="108" cy="205" r="5"></circle><circle cx="172" cy="240" r="5"></circle>
+<circle cx="470" cy="110" r="5"></circle><circle cx="532" cy="88" r="5"></circle><circle cx="558" cy="178" r="5"></circle><circle cx="496" cy="242" r="5"></circle><circle cx="424" cy="246" r="5"></circle>
+</g>
+<circle cx="232" cy="172" fill="#e08155" r="6.5"></circle>
+<circle cx="408" cy="170" fill="#e08155" r="6.5"></circle>
+<text fill="#eda07c" font-family="Georgia,serif" font-size="11.5" text-anchor="middle" x="320" y="160">the only bridge</text>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="11.5" text-anchor="middle" x="163" y="292">one cluster: news overlaps inside</text>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="11.5" text-anchor="middle" x="483" y="292">the other: a different set of news</text>
+</svg>
+<div class="cap">Both clusters are dense inside: cut any one line and there is still another route — the internal ties are redundant, and news that goes around comes back the same. In the middle there is a single dashed line. Delete it and the two clusters go from three or four steps apart to unreachable; and the two people at its ends are the only ones in the picture who can see both repertoires at once.</div>
+</div>
+<p>Be clear about the causal chain: <strong>position cannot be randomly assigned.</strong> It is entirely possible that those managers were abler to begin with, and so acquired both the cross-group network and the good ideas. That gap has not been closed. Evidence: a cross-sectional correlation from one firm in one year.</p>
+<p>The counterweight matters too. James Coleman stressed something else — closure: in a small circle where every triangle is filled in, everyone learns what everyone did, so norms can actually be enforced and trust has a footing. <em>Bridging and closure do different jobs: new ideas travel over bridges, getting things delivered on time depends on closure.</em></p>
+<p>Nor should the broker's costs be left out: all of the cross-group coordination lands on one person, and neither side quite counts them as their own. As the social stratification topic noted, advantages of position get read as personal traits — same here, and "he always hears things first" is often just "he sits on the hole".</p>
+</div>
+<div class="section">
+<span class="num">// 03</span>
+<h2>A short path does not mean the thing will spread</h2>
+<p>In the late 1960s Stanley Milgram and Jeffrey Travers ran an experiment: people in Nebraska and Boston were asked to get a document to a stockbroker in Boston whom they did not know, with the rule that they could only send it to someone they knew by name, who would pass it on. 296 people were asked to start, 64 chains arrived, and the completed chains passed through 5.2 intermediaries on average. This is where "six degrees of separation" comes from.</p>
+<p>The honest reading: <strong>fewer than three in ten chains completed</strong>, and the broken ones were probably systematically longer — 5.2 is the average over the chains that got through. Researchers later went through the archives of such experiments and found completion rates consistently low, which makes treating "six degrees" as a precise constant an overstatement.</p>
+<p>So why are paths in fact short? In 1998 Duncan Watts and Steven Strogatz gave a minimal explanation: take a tidy ring lattice where everyone is tied only to a few near neighbours, so two distant points are many steps apart, then randomly rewire a tiny number of edges to far-off nodes. Average path length collapses immediately, while the degree to which "your friends are also friends with each other" barely changes. <em>A few long-range shortcuts are enough</em> — that is a small world. In 2016 Facebook estimated an average separation of 3.57 across its then 1.59 billion active accounts, though that counts only active accounts on that platform, and reading it as "all of humanity" goes too far.</p>
+<p>Here is the turn that matters: <strong>short paths mean news can arrive fast; they do not mean behaviour follows.</strong> In 2010 Damon Centola reported a study that made network structure itself the experimental variable: 1,528 participants were randomly placed into one of two structures — a clustered one (your neighbours are also each other's neighbours, so ties are redundant) or a random one (the same number of ties, spread wider with more shortcuts) — and a health behaviour was watched as it diffused. The result runs against intuition: <em>the behaviour spread farther and faster in the clustered network.</em></p>
+<p>The reason is that adoption needs repeated confirmation. To know a piece of news, once is enough; to actually change what you do usually waits until several people around you are already doing it. In the random network each person hears it once from one source, and the chain stops there; in the clustered network those apparently "redundant" edges supply the second and third confirmation. Researchers call this kind of diffusion, which only moves under repeated reinforcement, complex contagion — as opposed to simple contagion, which travels on a single contact.</p>
+<p>So two logics run on the same network: <strong>news takes shortcuts, behaviour needs redundancy.</strong> Being in a position where you hear about everything does not put you in a position to make anyone actually change. Evidence: a randomised experiment on network structure, a strong design by social-science standards; but the setting is online and the behaviour is one particular kind, so extrapolate carefully.</p>
+</div>
+<div class="bigcat">
+<h3>🎒 In practice · BigCat</h3>
+<ul>
+<li><b>① Writing, and this learning site itself</b> — every time an issue goes out, it gets forwarded to the same few groups of familiar people, and the referrer data always shows the same handful of sources. This runs the mechanism from "The person who found you that job is someone you see twice a year at most": <em>a strong tie's information overlaps heavily with your own</em>, so however many times a piece circulates inside one cluster, it does not leave that cluster. What to change: stop reposting into the same group, and each issue send it once, individually, to one person whose interests have nothing to do with the topic. The metric to watch is not total reads but how many sources appeared this issue that had never appeared before.</li>
+<li><b>② Investing and position sizing</b> — in the days before adding to a position you typically have three supporting reasons in hand, which look like three independent confirmations. The same mechanism from the other side: if those three sources cite the same underlying material, they are three points inside one cluster rather than three bridges — you have read redundancy as corroboration. What to change: before placing the order, write down the original source behind each reason and merge the ones that share a source, turning "several people have said so" into "several sources that do not cite each other". The number getting smaller is normal.</li>
+</ul>
+</div>
+<div class="crossx">
+<h3>🌀 Crossing over · Interdisciplinary echoes</h3>
+<ul>
+<li><b>Evolutionary biology · Relationships have to be fed with time, so the affordable part is necessarily small</b>: primates maintain bonds by grooming — two monkeys spend a quarter of an hour picking through each other's fur, which is barely necessary hygienically; what it produces is the relationship itself. The cost is linear: one more partner is one more slice of time, and a day holds only so many hours. This runs the mechanism from "The person who found you that job is someone you see twice a year at most": <b>ties are stratified by maintenance cost, and it is the cheapest ones that reach outside your existing circle</b>. From which follows a conclusion not otherwise visible: <b>any technology that makes "staying in touch" cheap expands only the periphery, never the core</b> — the core is expensive in shared time, not in contact; and since a bridge is worth what it is scarce, more bridges means each is worth less. Landing on an observable consequence: to judge whether a platform has genuinely widened your information intake, do not look at the number of connections, look at how many of the things you first heard about there your existing circle would have told you anyway — if that redundancy rate does not fall, a tenfold rise in connections buys nothing. <b>But it does not hold here</b>: the figure extrapolated from that primate regression line, that a human can maintain about 150 relationships, does not survive scrutiny. A 2021 reanalysis found point estimates jumping between the teens and well over a hundred depending on dataset and method, with 95% intervals running from single digits to over five hundred. And humans can maintain a tie without being present — through a third party's relay, through shared institutions, through one message every six months — none of which is grooming's linear cost in time. So "maintenance has a cost" carries over; "how large the cost is and where the ceiling sits" does not.</li>
+<li><b>Complexity science · The average number of people someone knows is a nearly useless number</b>: those who run epidemic models on networks discovered long ago that what decides whether an outbreak takes off is not the average number of contacts but how dispersed that number is. In 2001 two physicists showed that on a network with a heavy-tailed degree distribution (a few nodes with enormous numbers of contacts), the classic threshold below which an epidemic dies out on its own approaches zero. This runs the mechanism from "A short path does not mean the thing will spread": <b>structure is not uniform, and a few long-range ties and a few very high-degree nodes carry the great majority of paths</b>. From which follows a conclusion not otherwise visible: the critical nodes are few and you do not know what the whole network looks like, so picking people at random is waste — <b>but there is a method that needs no global information: pick a person at random, ask them to name any acquaintance, and act on that acquaintance</b>. People who get named have systematically more ties (this is the statistical fact behind "your friends have more friends than you do"). For the same budget, that sampling covers far more transmission paths than sampling people at random, while demanding exactly as little information. <b>But it does not hold here</b>: disease can pass on a single contact, and social behaviour cannot. The complex contagion described in "A short path does not mean the thing will spread" needs repeated confirmation, and shortcuts thin the confirmations out. So the "spreads like a virus" metaphor, applied to ideas and behaviour, prescribes the opposite of what is needed: against disease, cut the shortcuts; for behaviour, manufacture redundancy.</li>
+</ul>
+</div>
+<div class="thinking">
+<h3>Questions worth sitting with</h3>
+<details><summary>Can "weak ties are useful" be turned around into advice — just meet more people?</summary>
+<div>It does not invert. A bridge is worth what its two sides fail to overlap, not what it adds to a count; and the inverted U in the LinkedIn experiment shows that too weak does not work either. There is only one question you can check yourself against: of the things people you met in the last three months told you, how many would your existing cluster never have told you?</div>
+</details>
+<details><summary>If everyone rushes to occupy structural holes, are there any holes left?</summary>
+<div>A hole is defined by an absence of ties, and each time it is bridged it gets filled in a little, so a broker's advantage is essentially a scarcity rent that dissipates as others imitate. The real question becomes: what keeps producing holes? Language, time zones, industry jargon, organisational walls, legal boundaries — they manufacture fresh absences continuously.</div>
+</details>
+<details><summary>What is the number "six degrees" actually good for?</summary>
+<div>It says a short path exists, not that you can find it. In Milgram-style experiments each link depends on someone guessing "which of the people I know is closer to the target", and a wrong guess moves away while a broken chain ends the story. Existence and reachability are two different things: a three-hop path in a graph does not mean a node that can see only its own neighbours can get a message across.</div>
+</details>
+</div>
+<div class="refs">
+<h3>Further reading</h3>
+<ul>
+<li><a href="https://www.journals.uchicago.edu/doi/10.1086/225469" rel="noopener" target="_blank">Granovetter, The Strength of Weak Ties (1973)</a> · <a href="https://en.wikipedia.org/wiki/Interpersonal_ties" rel="noopener" target="_blank">Strong and weak ties: the concept</a></li>
+<li><a href="https://www.science.org/doi/10.1126/science.abl4476" rel="noopener" target="_blank">Rajkumar et al., A Causal Test of the Strength of Weak Ties (2022, Science)</a> · <a href="https://www.journals.uchicago.edu/doi/abs/10.1086/428814" rel="noopener" target="_blank">Smith, "Don't Put My Name on It" (2005)</a></li>
+<li><a href="https://www.journals.uchicago.edu/doi/full/10.1086/421787" rel="noopener" target="_blank">Burt, Structural Holes and Good Ideas (2004)</a> · <a href="https://en.wikipedia.org/wiki/Structural_holes" rel="noopener" target="_blank">Structural holes and network constraint</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Small-world_experiment" rel="noopener" target="_blank">The Milgram small-world experiment and its critics</a> · <a href="https://www.nature.com/articles/30918" rel="noopener" target="_blank">Watts &amp; Strogatz, small-world networks (1998, Nature)</a></li>
+<li><a href="https://www.science.org/doi/10.1126/science.1185231" rel="noopener" target="_blank">Centola, The Spread of Behavior in an Online Social Network Experiment (2010, Science)</a> · <a href="https://www.geekwire.com/2016/6-degrees-of-separation-is-so-last-century-facebook-says-everyones-connected-by-3-57-people/" rel="noopener" target="_blank">Facebook's 3.57 degrees estimate (2016)</a></li>
+<li><a href="https://link.aps.org/doi/10.1103/PhysRevLett.86.3200" rel="noopener" target="_blank">Pastor-Satorras &amp; Vespignani, Epidemic Spreading in Scale-Free Networks (2001)</a> · <a href="https://royalsocietypublishing.org/doi/10.1098/rsbl.2021.0158" rel="noopener" target="_blank">Lindenfors et al., "Dunbar's number" deconstructed (2021)</a></li>
+</ul>
+</div>
+<footer>BigCat Learning Hub · Sociology &amp; Anthropology</footer>
+</div>
+<script src="https://hub.cissychen.com/comments.js" defer></script>
+<script src="https://hub.cissychen.com/search.js" defer></script>
+<script src="https://hub.cissychen.com/index-button.js" defer></script>
+<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
+</body></html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>社会学与人类学 Day 13：社会网络</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:linear-gradient(170deg,#1a140f,#171210 42%,#120e0b);color:#e6dacc;line-height:1.9;min-height:100vh}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 60px}
+header{padding:52px 0 30px;border-bottom:1px solid #33261d}
+header .kicker{font-size:0.75rem;color:#8fb0cc;letter-spacing:2.5px;font-family:"SF Mono",Menlo,monospace}
+header h1{font-size:2.1rem;font-weight:800;background:linear-gradient(100deg,#e08155,#eda07c 58%,#8fb0cc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:0.5px;margin-top:12px;line-height:1.28}
+header h2{font-size:1rem;color:#a08b78;margin-top:10px;font-weight:400}
+header .meta{margin-top:14px;font-size:0.85rem;color:#a08b78}
+header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
+.intro{margin-top:30px;font-size:1.02rem;color:#d8c9b8}
+.intro p{margin-bottom:13px}
+.section{margin:46px 0;background:rgba(255,255,255,0.028);padding:28px 26px;border-radius:14px;border:1px solid rgba(255,255,255,0.06)}
+.section .num{display:inline-block;font-size:0.75rem;color:#e08155;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;margin-bottom:8px}
+.section h2{font-size:1.32rem;color:#f4ece2;margin-bottom:16px;font-weight:700;line-height:1.35}
+.section p{margin-bottom:14px;font-size:0.98rem}
+.section strong{color:#fff}
+.section em{color:#e08155;font-style:normal}
+.section ul{list-style:none;margin:14px 0}
+.section li{margin-bottom:10px;padding-left:20px;position:relative}
+.section li::before{content:"◈";position:absolute;left:0;top:0.42em;color:#e08155;font-size:0.7rem}
+.fig{margin:24px 0 10px;text-align:center}
+.fig svg{max-width:100%;height:auto}
+.fig .cap{font-size:0.82rem;color:#a08b78;margin-top:8px;text-align:left;line-height:1.65}
+.en-brief{margin-top:18px;padding:12px 16px;border-left:2px solid rgba(160,139,120,0.5);background:rgba(255,255,255,0.02);border-radius:0 8px 8px 0;font-size:0.85rem;color:#b0a08e;line-height:1.62}
+.en-brief b{color:#bda994;font-family:"SF Mono",Menlo,monospace;font-size:0.68rem;letter-spacing:1.5px;margin-right:9px;font-weight:700}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(143,176,204,0.12),rgba(224,129,85,0.05));border:1px solid rgba(143,176,204,0.34);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#8fb0cc;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#dfe3e6;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e08155;font-size:0.72rem}
+.crossx b{color:#aecbe2;font-weight:600}
+.thinking{background:linear-gradient(135deg,rgba(224,129,85,0.06),rgba(143,176,204,0.05));border:1px solid rgba(224,129,85,0.24);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e08155;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(18,14,11,0.5);border:1px solid rgba(224,129,85,0.2);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(224,129,85,0.06);border-color:rgba(224,129,85,0.42)}
+.thinking summary{cursor:pointer;color:#eda07c;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#8fb0cc}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(143,176,204,0.22);color:#ddd0c1;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#8fb0cc;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a08b78}
+.refs a{color:#e08155;text-decoration:none;border-bottom:1px dotted rgba(224,129,85,0.42)}
+.refs a:hover{color:#eda07c;border-bottom-color:#eda07c}
+.bigcat{margin:40px 0 0;background:linear-gradient(135deg,rgba(224,129,85,0.11),rgba(143,176,204,0.04));border:1px solid rgba(224,129,85,0.32);border-radius:14px;padding:22px 26px}
+.bigcat h3{color:#eda07c;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.bigcat ul{list-style:none;margin:0}
+.bigcat li{color:#ece0d2;font-size:0.93rem;line-height:1.8;margin-bottom:14px}
+.bigcat li:last-child{margin-bottom:0}
+.bigcat b{color:#eda07c;font-weight:600}
+footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
+@media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+</style></head><body>
+<div class="container">
+<header>
+<div class="kicker">DAY 13 · 关系与网络</div>
+<h1>社会网络</h1>
+<h2>这一期最反直觉的一句：给你带来机会的那条关系，往往是你最不用心维护的那条</h2>
+<div class="meta">2026-09-06 · BigCat</div>
+<div class="pitch">你天天见的那几个人，知道的事和你几乎完全一样——所以他们再热心，也带不进来新东西。</div>
+</header>
+<div class="intro">
+<p>上一份工作你是怎么拿到的？先别看简历投递记录，回想那个最早跟你提起这件事的人：你们多久见一次？很多人算完会有点意外——不是天天说话的好友，是前同事、同学的同学、几年前一起做过一个项目后来就没怎么联系的人。</p>
+<p>这一页拆三件事：为什么最有用的消息常从不熟的人那儿来；夹在两群人中间那个位置为什么既值钱又难受；以及为什么「世界很小」和「事情传得开」压根是两回事。</p>
+</div>
+<div class="section">
+<span class="num">// 01</span>
+<h2>帮你找到那份工作的那个人，你一年见不了两次</h2>
+<p>1969 年，Mark Granovetter 在波士顿郊区的牛顿镇发了一批问卷，对象是 282 位近五年换过工作的专业、技术和管理岗位从业者，问题很朴素：这份工作你最早是怎么知道的。</p>
+<p>在那些通过熟人拿到工作的人里，只有约一成七说自己经常见到这个人（一周两次以上）；五成半左右是「偶尔见」；还有近三成「很少见」——一年碰上一次或者更少。</p>
+<p>先把词说清楚：社会学里管人和人之间的一条关系叫连带（tie），强弱看你们花在一起的时间、亲密程度和互相帮忙的多少。</p>
+<p>需要解释的不是「熟人有用」，是<strong>不太熟的人反而更有用</strong>。Granovetter 1973 年那篇《弱连带的力量》给的机制很干净：你天天见的人多半彼此也认识——最好的两个朋友互相完全不认识，这种状态撑不久。于是强关系一团一团闭合起来，<em>团里的人消息高度重合：你听说的，他们八成也听说了。</em></p>
+<p>所以弱连带的价值不在交情，在位置：它更可能是一座桥，把两团原本不相通的人接上。<strong>「弱」不是重点，「不重合」才是。</strong></p>
+<p>证据强度分开说。1973 年那套是相关性加一个理论论证：单一郊区、单一职业层、受访者全是男性、1969 年的数据，别当普适定律。因果检验要等到 2022 年：一组研究者在《科学》上报告了借领英（LinkedIn）「你可能认识的人」这个推荐功能做的多轮随机实验，五年覆盖两千多万人，期间产生 20 亿条新连接、60 万次换工作。弱连带确实提高换工作的概率，但拐了个弯——两者之间是倒 U 形，最管用的是「中等偏弱」那一档。一个已经想不起你是谁的人，桥再长也传不过来东西。</p>
+<p>还有一层前提常被跳过：<em>有这条连带，不等于它会被启用。</em>社会学家 Sandra Smith 2005 年那项研究深度访谈了 105 位低收入的非裔美国人，发现卡住的常常不是「不认识手里有机会的人」，而是有机会的那一方选择不开口——被推荐的人一旦表现不好，账算到推荐人头上，受访者里确实有人因此丢过工作。<strong>推荐不是转发一条消息，是拿自己的信用做担保。</strong>「礼物与互惠」那期讲过，白给的东西之所以有约束力，正因为它把双方绑进一笔没写下来的账；一次内推就是这种账。证据强度：定性访谈，机制清楚，比例别外推。</p>
+<p class="en-brief"><b>EN</b> In 1969 Mark Granovetter surveyed 282 professional, technical and managerial workers in Newton, a Boston suburb, who had changed jobs within five years. Among those who got the job through a personal contact, only about 17% saw that contact often (twice a week or more), roughly 56% saw them occasionally, and some 28% rarely — once a year or less. What needs explaining is not that contacts help but that less close ones help more. His 1973 paper gives a clean mechanism: people you see daily tend to know each other, a triangle with two strong ties rarely keeps its third edge missing for long, so strong ties close into clusters whose members hear overlapping news. A weak tie is more likely to be a bridge between two otherwise unconnected clusters — the point is not weakness but non-overlap. Evidence: the 1973 case is correlational plus an argument, from one suburb, one occupational stratum, male respondents, 1969. The causal test came in 2022, when researchers reported multi-round randomised experiments on LinkedIn's "People You May Know" recommendations covering over 20 million people across five years, 2 billion new ties and 600,000 job changes. Weak ties did raise job mobility, but with an inverted-U twist: moderately weak ties helped most, and the very weakest less. One precondition is often skipped — a tie existing is not a tie being used. Sandra Smith's 2005 study, based on in-depth interviews with 105 low-income African Americans, found the bottleneck was frequently the holder of the opportunity declining to refer, because a bad referral is charged to the referrer's account, and some had lost jobs that way. A referral is not forwarding news; it is posting your own credit as collateral. Evidence: qualitative interviews, mechanism clear, proportions not to be extrapolated.</p>
+</div>
+<div class="section">
+<span class="num">// 02</span>
+<h2>两边都认识你，可他们俩互相不认识</h2>
+<p>你被拉进一个跨部门的群，很快发现只有你一个人两边的人都熟。于是每次两边要对齐，消息都得从你这里过一趟。这个位置有名字。</p>
+<p>Ronald Burt 管两群人之间那段缺失的关系叫结构洞（structural hole）——注意，洞不是人，是关系的空缺；站在洞两边把它接起来的那个人，叫经纪人（broker）。</p>
+<p>他 2004 年那项研究是这么做的：2001 年，一家大型美国电子公司供应链部门的 673 位管理者被请求写下改进供应链的点子，再交给资深高管评分。结果是，网络跨越结构洞越多的人（技术上叫「网络约束度低」，即联系人不都挤在同一堆里），点子被评为更有价值，也更少被当场否掉；薪酬、考评、晋升同样偏高。</p>
+<p>机制不神秘，是<strong>视野套利</strong>：同一群人内部的说法会趋同——看的材料一样，互相解释几轮，很快就都这么想了。跨在两群之间的人不必更聪明，他只是同时看得见两套做法，于是「把这边的办法搬到那边的问题上」对他显然，对两边都不显然。</p>
+<div class="fig">
+<svg viewBox="0 0 640 320" xmlns="http://www.w3.org/2000/svg">
+<g stroke="rgba(160,139,120,0.5)" stroke-width="1.1">
+<line x1="95" x2="160" y1="95" y2="68"></line><line x1="95" x2="215" y1="95" y2="122"></line><line x1="160" x2="215" y1="68" y2="122"></line><line x1="95" x2="108" y1="95" y2="205"></line><line x1="108" x2="172" y1="205" y2="240"></line><line x1="172" x2="232" y1="240" y2="172"></line><line x1="215" x2="232" y1="122" y2="172"></line><line x1="160" x2="232" y1="68" y2="172"></line><line x1="108" x2="215" y1="205" y2="122"></line>
+<line x1="408" x2="470" y1="170" y2="110"></line><line x1="470" x2="532" y1="110" y2="88"></line><line x1="532" x2="558" y1="88" y2="178"></line><line x1="558" x2="496" y1="178" y2="242"></line><line x1="496" x2="424" y1="242" y2="246"></line><line x1="424" x2="408" y1="246" y2="170"></line><line x1="470" x2="496" y1="110" y2="242"></line><line x1="408" x2="558" y1="170" y2="178"></line><line x1="470" x2="424" y1="110" y2="246"></line>
+</g>
+<line stroke="#e08155" stroke-dasharray="5 4" stroke-width="1.8" x1="232" x2="408" y1="172" y2="170"></line>
+<g fill="#8fb0cc">
+<circle cx="95" cy="95" r="5"></circle><circle cx="160" cy="68" r="5"></circle><circle cx="215" cy="122" r="5"></circle><circle cx="108" cy="205" r="5"></circle><circle cx="172" cy="240" r="5"></circle>
+<circle cx="470" cy="110" r="5"></circle><circle cx="532" cy="88" r="5"></circle><circle cx="558" cy="178" r="5"></circle><circle cx="496" cy="242" r="5"></circle><circle cx="424" cy="246" r="5"></circle>
+</g>
+<circle cx="232" cy="172" fill="#e08155" r="6.5"></circle>
+<circle cx="408" cy="170" fill="#e08155" r="6.5"></circle>
+<text fill="#eda07c" font-family="Georgia,serif" font-size="11.5" text-anchor="middle" x="320" y="160">唯一的桥</text>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="11.5" text-anchor="middle" x="163" y="292">一团人：内部消息高度重合</text>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="11.5" text-anchor="middle" x="483" y="292">另一团：另一套消息</text>
+</svg>
+<div class="cap">两团内部都密：断掉任意一条线还有别的路可走——团内连接是冗余的，消息绕一圈回来还是那些。中间只有一条虚线：删掉它，两团之间从「三四步能到」变成走不通；虚线两端那两个人，是全图里唯一能同时看见两套做法的。</div>
+</div>
+<p>因果链要说清楚：<strong>位置不能随机分配。</strong>完全有可能是那些人本来就更能干，于是既攒下了跨群的网络，也提得出好点子。这条到今天没关死。证据强度：单一公司、单一年份的横截面相关。</p>
+<p>反面也重要。James Coleman 强调的是另一样东西——闭合（closure）：在一个三角都连上的小圈子里，谁做了什么所有人都会知道，规范才执行得下去，信任才有着落。<em>桥接和闭合各管各的事：要新点子靠桥，要把事情按时做成靠闭合。</em></p>
+<p>做桥的代价也别省略：跨组的协调成本全落在同一个人身上，而且两边都不完全把你当自己人。「社会分层」那期讲过，位置带来的优势常被读成个人特质——这里也一样，「他消息特别灵通」很多时候只是「他坐在洞上」。</p>
+<p class="en-brief"><b>EN</b> Ronald Burt calls the missing relationship between two groups a structural hole — the hole is not a person but an absence of ties — and the person who spans it a broker. His 2004 study took 673 managers running the supply chain of a large American electronics company in 2001, asked them for ideas to improve that supply chain, and had senior executives rate the ideas. Managers whose contacts were spread across groups rather than bunched in one (low network constraint) produced ideas rated more valuable and were less likely to have them dismissed; their pay, evaluations and promotions ran higher too. The mechanism is vision arbitrage: opinion converges inside a group because everyone reads the same material and explains it to each other, so someone standing between two groups need not be smarter — carrying one group's solution to the other's problem is simply obvious to them and to nobody else. The causal chain is not closed: position cannot be randomly assigned, and abler people may acquire both the network and the ideas. Evidence: cross-sectional data from one firm in one year. The counterweight is James Coleman's closure — in a closed circle everyone learns what everyone did, so norms can be enforced and trust has a footing. Bridging and closure do different jobs: new ideas come over bridges, delivery on time depends on closure. The broker also pays: all the cross-group coordination lands on one person, and neither side counts them fully as their own. As in the social stratification topic, advantages of position get read as personal traits — "he always knows first" is often just "he sits on the hole".</p>
+</div>
+<div class="section">
+<span class="num">// 03</span>
+<h2>路径短，不等于事情传得开</h2>
+<p>1960 年代末，Stanley Milgram 和 Jeffrey Travers 做过一个实验：请内布拉斯加和波士顿的人把一份文件寄给一位他们不认识的、住在波士顿的股票经纪人，规则是只能寄给自己叫得出名字的熟人，由他往下传。296 人被请求发起，64 条链条到达，完成的链条平均经过 5.2 个中间人。「六度分隔」就是从这儿传开的。</p>
+<p>诚实的读法：<strong>完成率不到三成</strong>，断掉的链条很可能系统性地更长——5.2 是「走通了的那些」的平均数。后来有研究者翻查这类实验的档案，指出几轮下来完成率都偏低，把「六度」当精确常数是言过其实。</p>
+<p>那路径为什么确实短？1998 年 Duncan Watts 和 Steven Strogatz 给了个极简解释：拿一个规规矩矩的环形网络，每个人只跟身边几个邻居相连，两个远处的点之间要走很多步；然后随机把极少数几条边重新接到远方。平均路径长度立刻塌下来，而「你的朋友们互相也是朋友」的程度几乎没变。<em>几条长程捷径就够了</em>，这就是小世界（small world）。2016 年 Facebook 用当时 15.9 亿活跃账号估算，平均间隔 3.57——但只算这个平台上活跃的账号，读成「全人类」就过头了。</p>
+<p>关键的转折在这里：<strong>路径短说明消息能很快到，不说明行为会跟着变。</strong>Damon Centola 2010 年报告了一个把网络结构本身当实验变量的研究：1528 名参与者被随机放进两种结构——一种聚集（你的邻居之间也互相是邻居，连接有冗余），一种随机（连接数一样多，但铺得更开、捷径更多），看一个健康行为怎么扩散。结果和直觉相反：<em>行为在聚集的那种网络里传得更远、也更快。</em></p>
+<p>原因是需要重复确认。听说一件事，一次就够；真改掉自己原来的做法，通常要看到身边好几个人都这么干了才动。随机网络里每个人只从一个来源听到一次，链条断在那儿；聚集网络里那些看着「多余」的边，恰好提供了第二次、第三次确认。研究者把这类要多次强化才扩散得动的东西叫复杂传染（complex contagion），区别于一次接触就能传的简单传染。</p>
+<p>于是同一张网上跑着两套逻辑：<strong>消息走捷径，行为靠冗余。</strong>你在一个「什么都听说过」的位置上，未必就在「能带动别人真的改」的位置上。证据强度：随机分配网络结构的在线实验，社会科学里算相当硬的设计；但场景是线上、行为只是特定的一种，外推要小心。</p>
+<p class="en-brief"><b>EN</b> In the late 1960s Stanley Milgram and Jeffrey Travers asked people in Nebraska and Boston to forward a document to a stockbroker they did not know, passing it only to someone they knew by name: 296 people were asked to start, 64 chains arrived, and completed chains averaged 5.2 intermediaries — the source of "six degrees of separation". Read it honestly: fewer than three in ten chains completed, and broken chains were probably systematically longer, so 5.2 is an average over the ones that got through. Later archival work on such experiments found consistently low completion rates, making a precise constant an overstatement. Why are paths short at all? Watts and Strogatz showed in 1998 that taking a regular ring lattice — everyone tied only to near neighbours, distant points many steps apart — and randomly rewiring a handful of edges to far-off nodes collapses average path length while leaving clustering almost untouched. A few long-range shortcuts suffice; that is a small world. A contemporary measurement: in 2016 Facebook estimated an average separation of 3.57 among its 1.59 billion active accounts, though only among active account holders and via a probabilistic algorithm. The turn that matters: short paths mean news arrives fast, not that behaviour follows. Damon Centola's 2010 study made network structure itself the experimental variable, randomly assigning 1,528 participants either to a clustered lattice (neighbours who are also each other's neighbours, redundant ties) or to a random network with the same number of ties spread wider. A health behaviour spread farther and faster in the clustered condition, because adopting takes repeated confirmation: hearing something once is enough to know it, changing what you do usually waits until several people around you have. The redundant-looking edges supply the second and third confirmation; researchers call this complex contagion, as opposed to simple contagion that travels on one contact. Two logics on one network: news takes shortcuts, behaviour needs redundancy. Evidence: a randomised structural experiment, strong by social-science standards, but online and on one kind of behaviour.</p>
+</div>
+<div class="bigcat">
+<h3>🎒 场景 · BigCat</h3>
+<ul>
+<li><b>① 写作与这个学习站本身</b>——每写完一期，转出去的还是那几个熟人群，后台看到的来源永远是同一批。跑的是「帮你找到那份工作的那个人，你一年见不了两次」那节的机制：<em>强连带的信息面和你自己高度重合</em>，在同一团里转多少次也出不了这团。可改的：停掉在同一个群反复贴，改成每期挑一个跟这主题完全不搭的人单独发一次。盯的指标不是总阅读数，是这期出现了几个以前没出现过的来源。</li>
+<li><b>② 投资与仓位</b>——准备加仓的那几天，你手上通常有三条支持的理由，看起来像三次独立确认。同一条机制的反面：如果这三条来源互相引用同一份材料，它们在网络上是一团里的三个点，不是三座桥——冗余被你读成了印证。可改的：下单前把每条理由的原始出处写下来，同源的合并成一条，把「几个人说过」换成「几条互相不引用的来源」。数字变小是正常的。</li>
+</ul>
+</div>
+<div class="crossx">
+<h3>🌀 越界 · 跨学科的联想</h3>
+<ul>
+<li><b>演化生物学 · 关系要花时间养，养得起的那部分注定很小</b>：灵长类维持关系靠理毛——两只猴子花十几分钟给对方梳毛，卫生上没什么必要，产出的是关系本身。这是线性成本：多一个伙伴多一份时间，而一天只有那么多小时。跑的是「帮你找到那份工作的那个人，你一年见不了两次」那节的机制：<b>连带按维护成本分层，而最便宜的那些才伸得出你原有的圈子</b>。由此能推出一个原本看不出的结论：<b>任何把「保持联系」变便宜的技术，扩张的只会是外圈，不是内核</b>——内核贵在共同经历的时间，不在联络本身；而桥的价值来自稀缺，桥一多，每座值的就少。落到可观察的后果上：判断一个平台有没有真扩大你的信息面，别看好友数，看你在那儿第一次听说的事里有多少条是原有的圈子也会告诉你的——这个冗余率不降，连接数涨十倍也没用。<b>但这里不成立</b>：从灵长类那条回归线外推出的「人大约能维持一百五十个关系」撑不住。2021 年一组研究者重做这项统计，点估计随数据集和方法在十几到一百多之间跳，95% 的区间宽到从个位数到五百多。而且人维持关系可以不靠在场——靠第三方转述、靠共同的机构、靠隔半年一条消息，都不是理毛那种线性成本。所以「维护有成本」过得来，「成本多大、上限在哪」过不来。</li>
+<li><b>复杂性科学 · 平均每个人认识多少人，是个几乎没用的数字</b>：跑传染病模型的人早就发现，决定一场传播能不能起来的不是平均连接数，是连接数的离散程度。2001 年两位物理学家论证：在连接数分布长尾很重的网络上（少数节点连接数极高），经典模型里「传播率低于某个阈值疫情就自己熄灭」的那个阈值会趋近于零。跑的是「路径短，不等于事情传得开」那节的机制：<b>结构不是均匀的，少数长程连接和少数超高连接度的节点承担了绝大部分路径</b>。由此能推出一个原本看不出的结论：关键节点是少数，而你并不知道整张网长什么样，随机找人纯属浪费——<b>但有个不需要全局信息的办法：随机挑一个人，请他随口说出一个熟人，去处理那个熟人</b>。被别人说出来的人天然连接数更高（这就是「你的朋友平均比你朋友多」那个统计事实）。同样的预算，这样抽样覆盖的传播路径远多于随机抽人，而两者要的信息量一样少。<b>但这里不成立</b>：疾病一次接触就可能传，社会行为不是。「路径短，不等于事情传得开」那节讲的复杂传染要的是重复确认，捷径反而把确认摊薄了。所以「像病毒一样传播」这个比喻套到观念和行为上会给出相反的处方：对病要切断捷径，对行为要制造冗余。</li>
+</ul>
+</div>
+<div class="thinking">
+<h3>深入思考</h3>
+<details><summary>「弱连带有用」能不能倒过来当建议：多认识人就行？</summary>
+<div>倒不过来。桥的价值来自两边信息不重合，不来自数量；领英那个实验的倒 U 形也说明弱过头不行。能自查的只有一个问题：最近三个月新认识的人告诉你的事，有多少条是你原来那团人不会告诉你的。</div>
+</details>
+<details><summary>如果人人都去占结构洞，结构洞还在吗？</summary>
+<div>洞由关系的空缺定义，每被桥接一次就填掉一点，所以经纪人的优势本质上是稀缺租，会随模仿消散。真问题于是换成：什么东西让洞持续存在？语言、时区、行业黑话、组织墙、法律边界——它们不断造出新的空缺。</div>
+</details>
+<details><summary>「六度」这个数字到底能用来干什么？</summary>
+<div>它说的是短路径存在，不是你找得到。Milgram 那类实验里，链条靠每个人猜「我认识的人里谁离目标更近」，猜错就走远、断了就没下文。存在性和可达性是两件事：图里有一条三跳路径，不等于只看得见自己邻居的节点能把消息送过去。</div>
+</details>
+</div>
+<div class="refs">
+<h3>延伸阅读</h3>
+<ul>
+<li><a href="https://www.journals.uchicago.edu/doi/10.1086/225469" rel="noopener" target="_blank">Granovetter《弱连带的力量》(1973) 原文页</a>（英文）· <a href="https://en.wikipedia.org/wiki/Interpersonal_ties" rel="noopener" target="_blank">强弱连带的概念条目</a>（英文）</li>
+<li><a href="https://www.science.org/doi/10.1126/science.abl4476" rel="noopener" target="_blank">Rajkumar 等《弱连带的因果检验》(2022, Science)</a>（英文）· <a href="https://www.journals.uchicago.edu/doi/abs/10.1086/428814" rel="noopener" target="_blank">Smith《别把我的名字写上去》(2005)</a>（英文）</li>
+<li><a href="https://www.journals.uchicago.edu/doi/full/10.1086/421787" rel="noopener" target="_blank">Burt《结构洞与好点子》(2004)</a>（英文）· <a href="https://en.wikipedia.org/wiki/Structural_holes" rel="noopener" target="_blank">结构洞与网络约束度</a>（英文）</li>
+<li><a href="https://en.wikipedia.org/wiki/Small-world_experiment" rel="noopener" target="_blank">Milgram 小世界实验及其批评</a>（英文）· <a href="https://www.nature.com/articles/30918" rel="noopener" target="_blank">Watts &amp; Strogatz 小世界网络 (1998, Nature)</a>（英文）</li>
+<li><a href="https://www.science.org/doi/10.1126/science.1185231" rel="noopener" target="_blank">Centola《在线社会网络实验中的行为扩散》(2010, Science)</a>（英文）· <a href="https://www.geekwire.com/2016/6-degrees-of-separation-is-so-last-century-facebook-says-everyones-connected-by-3-57-people/" rel="noopener" target="_blank">Facebook 3.57 度的测算 (2016)</a>（英文）</li>
+<li><a href="https://link.aps.org/doi/10.1103/PhysRevLett.86.3200" rel="noopener" target="_blank">Pastor-Satorras &amp; Vespignani《无标度网络上的传染》(2001)</a>（英文）· <a href="https://royalsocietypublishing.org/doi/10.1098/rsbl.2021.0158" rel="noopener" target="_blank">Lindenfors 等《解构「邓巴数」》(2021)</a>（英文）</li>
+</ul>
+</div>
+<footer>BigCat Learning Hub · Sociology &amp; Anthropology</footer>
+</div>
+<script src="https://hub.cissychen.com/comments.js" defer></script>
+<script src="https://hub.cissychen.com/search.js" defer></script>
+<script src="https://hub.cissychen.com/index-button.js" defer></script>
+<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
+</body></html>
