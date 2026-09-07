@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>社会学与人类学 Day 14：组织与制度</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:linear-gradient(170deg,#1a140f,#171210 42%,#120e0b);color:#e6dacc;line-height:1.9;min-height:100vh}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 60px}
+header{padding:52px 0 30px;border-bottom:1px solid #33261d}
+header .kicker{font-size:0.75rem;color:#8fb0cc;letter-spacing:2.5px;font-family:"SF Mono",Menlo,monospace}
+header h1{font-size:2.1rem;font-weight:800;background:linear-gradient(100deg,#e08155,#eda07c 58%,#8fb0cc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:0.5px;margin-top:12px;line-height:1.28}
+header h2{font-size:1rem;color:#a08b78;margin-top:10px;font-weight:400}
+header .meta{margin-top:14px;font-size:0.85rem;color:#a08b78}
+header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
+.intro{margin-top:30px;font-size:1.02rem;color:#d8c9b8}
+.intro p{margin-bottom:13px}
+.section{margin:46px 0;background:rgba(255,255,255,0.028);padding:28px 26px;border-radius:14px;border:1px solid rgba(255,255,255,0.06)}
+.section .num{display:inline-block;font-size:0.75rem;color:#e08155;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;margin-bottom:8px}
+.section h2{font-size:1.32rem;color:#f4ece2;margin-bottom:16px;font-weight:700;line-height:1.35}
+.section p{margin-bottom:14px;font-size:0.98rem}
+.section strong{color:#fff}
+.section em{color:#e08155;font-style:normal}
+.section ul{list-style:none;margin:14px 0}
+.section li{margin-bottom:10px;padding-left:20px;position:relative}
+.section li::before{content:"◈";position:absolute;left:0;top:0.42em;color:#e08155;font-size:0.7rem}
+.fig{margin:24px 0 10px;text-align:center}
+.fig svg{max-width:100%;height:auto}
+.fig .cap{font-size:0.82rem;color:#a08b78;margin-top:8px;text-align:left;line-height:1.65}
+.en-brief{margin-top:18px;padding:12px 16px;border-left:2px solid rgba(160,139,120,0.5);background:rgba(255,255,255,0.02);border-radius:0 8px 8px 0;font-size:0.85rem;color:#b0a08e;line-height:1.62}
+.en-brief b{color:#bda994;font-family:"SF Mono",Menlo,monospace;font-size:0.68rem;letter-spacing:1.5px;margin-right:9px;font-weight:700}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(143,176,204,0.12),rgba(224,129,85,0.05));border:1px solid rgba(143,176,204,0.34);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#8fb0cc;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#dfe3e6;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e08155;font-size:0.72rem}
+.crossx b{color:#aecbe2;font-weight:600}
+.thinking{background:linear-gradient(135deg,rgba(224,129,85,0.06),rgba(143,176,204,0.05));border:1px solid rgba(224,129,85,0.24);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e08155;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(18,14,11,0.5);border:1px solid rgba(224,129,85,0.2);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(224,129,85,0.06);border-color:rgba(224,129,85,0.42)}
+.thinking summary{cursor:pointer;color:#eda07c;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#8fb0cc}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(143,176,204,0.22);color:#ddd0c1;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#8fb0cc;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a08b78}
+.refs a{color:#e08155;text-decoration:none;border-bottom:1px dotted rgba(224,129,85,0.42)}
+.refs a:hover{color:#eda07c;border-bottom-color:#eda07c}
+.bigcat{margin:40px 0 0;background:linear-gradient(135deg,rgba(224,129,85,0.11),rgba(143,176,204,0.04));border:1px solid rgba(224,129,85,0.32);border-radius:14px;padding:22px 26px}
+.bigcat h3{color:#eda07c;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.bigcat ul{list-style:none;margin:0}
+.bigcat li{color:#ece0d2;font-size:0.93rem;line-height:1.8;margin-bottom:14px}
+.bigcat li:last-child{margin-bottom:0}
+.bigcat b{color:#eda07c;font-weight:600}
+footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
+@media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+</style></head><body>
+<div class="container">
+<header>
+<div class="kicker">DAY 14 · 组织与制度</div>
+<h1>组织与制度</h1>
+<h2>这一期最反直觉的一句：一个部门的成立，常常不是因为它有用，而是因为别人都有</h2>
+<div class="meta">2026-09-07 · BigCat</div>
+<div class="pitch">公司里最认真执行的那套流程，可能没几个人真信它有用——但撤掉它的代价，比养着它高得多。</div>
+</header>
+<div class="intro">
+<p>换过公司的话，第二家的第一周会有一种奇怪的熟悉感：绩效面谈的表格长得差不多，季度目标的写法差不多，连墙上「文化价值观」的条数都差不多。这两家做的生意完全不同，人数差好几倍。谁规定要这么办的？没有人规定。</p>
+<p>这一页拆三件事：为什么做着完全不同生意的组织会越长越像；为什么文件上那一套和实际干活那一套常年不重合，而这未必是坏事；规则又是怎么从手段变成目的的。</p>
+</div>
+<div class="section">
+<span class="num">// 01</span>
+<h2>新公司的组织架构图，你第一天就看懂了</h2>
+<p>先看一段真实的历史。1880 到 1935 年间，美国的城市陆续采用了文官制度——考试录用、任期保障，取代「谁上台谁安排自己人」的老做法。Pamela Tolbert 和 Lynne Zucker 1983 年把各城市采纳的时间点排开，问一个笨问题：什么能预测这座城什么时候采纳？</p>
+<p>答案分成两半。早期采纳的那批，城市自身的特征能预测：城市多大、移民多不多、行政摊子多复杂——那时候装上它，是因为真的需要它。越到后期，这些特征越预测不动：一座城采不采纳，跟它自己的规模和麻烦程度基本脱钩了。</p>
+<p>那晚期是为什么采纳的？因为到那时，「一个正经的市政府该有文官制度」已经成了不用论证的常识。<strong>早期看需要，晚期看体面。</strong></p>
+<p>把词挂上：组织社会学管这种「同一个圈子里的组织越长越像」叫制度同构（institutional isomorphism），这个圈子叫场域（organizational field）——不只是竞争对手，还有监管方、大客户、发证机构、招你的人和你招的人。</p>
+<p>Paul DiMaggio 和 Walter Powell 1983 年那篇《铁笼重访》把趋同的来路拆成三条：</p>
+<ul>
+<li><strong>被逼的</strong>：法规、审计、大客户的合规要求，逼你长出对应的部门和文件。</li>
+<li><strong>抄来的</strong>：目标模糊、说不清什么算做对、成败不好归因的时候，抄一个看起来成功的同行是最省力的办法。</li>
+<li><strong>带进来的</strong>：同一批专业训练出来的人在行业之间流动，把同一套「事情该怎么办」带来带去。商学院、行业协会、认证考试都在干这件事。</li>
+</ul>
+<p>三条里最值得盯的是第二条，因为它的触发条件是不确定，不是有效。<em>你不知道哪种做法对，于是抄；抄完，你和被抄的那家一起变成了「大家都这么做」的证据。</em>这就是为什么一个行业可以整齐地走向一个谁也没验证过的做法。</p>
+<p>批评也得给。这套说法最常挨的批评是太好用了：看到趋同就说合法性压力，看到不同就说场域还没成熟，很难被推翻；它解释组织为什么像，对为什么有人偏不随大流说得少。证据强度：Tolbert 和 Zucker 那项是历史档案上的相关性分析，不是实验；但「早期由需要驱动、晚期由体面驱动」这个模式，在后来大量扩散研究里反复出现。</p>
+<p class="en-brief"><b>EN</b> Between 1880 and 1935 American cities progressively adopted civil service reform — competitive examination and tenure protection replacing patronage appointments. Pamela Tolbert and Lynne Zucker asked in 1983 what predicts when a given city adopts. The answer splits in two: among early adopters, the city's own characteristics predict adoption — size, immigrant population, administrative complexity — so the reform went in because it was needed. Among later adopters those characteristics stop predicting anything; by then "a proper city government has a civil service" had become common sense requiring no argument. Early adoption tracks need, late adoption tracks respectability. Organizational sociology calls this convergence within a field institutional isomorphism, and the field includes not just competitors but regulators, large customers, certifying bodies, and the people you hire and are hired by. DiMaggio and Powell's 1983 paper separates three routes: coercive (law, audit, client compliance demands), mimetic (copying a plausible peer when goals are ambiguous and success is hard to attribute), and normative (professionals trained alike carrying the same templates between firms). The mimetic route matters most because it is triggered by uncertainty rather than effectiveness: you copy because you don't know, and the copying itself becomes the evidence that everyone does it. The standard criticism is that the theory is too accommodating — convergence is legitimacy pressure, divergence is an immature field — and that it explains similarity better than change. Evidence: archival correlational analysis, not an experiment, though the early-need/late-legitimacy pattern recurs across later diffusion studies.</p>
+</div>
+<div class="section">
+<span class="num">// 02</span>
+<h2>写在文件里的那一套，和实际干活的那一套，本来就不是一套</h2>
+<p>1977 年 John Meyer 和 Brian Rowan 提出一个到今天还很扎人的说法：一个组织的正式结构，很大一部分不是用来干活的，是用来给外面看的——它证明这家机构「是正经的」。他们用的词是神话与仪式（myth and ceremony）；正式结构和实际活动之间那种挂着但不咬合的关系，叫脱钩（decoupling）。</p>
+<p>同一时期，Karl Weick 用学校讲松散耦合（loose coupling）：课程表、教师资格、评估流程一样不缺，可教室门一关，老师具体怎么讲、学生到底学没学会，这条链子中间是松的——校长手上那些正式手段，多数动不到教室里。</p>
+<p>一个可以查的例子。James Westphal 和 Edward Zajac 2001 年翻了 1980 年代末到 1990 年代初大量美国大公司宣布的股票回购计划，发现相当一部分宣布之后并没有真的去买回股票——而市场对「宣布」这件事本身就给了正面反应。<strong>形式上的采纳先发生，实质上的执行是另一回事，有时候干脆没发生。</strong>证据强度：大样本档案的相关性研究，别读成「公司都在骗人」。</p>
+<div class="fig">
+<svg viewbox="0 0 640 300" xmlns="http://www.w3.org/2000/svg">
+<g fill="none" stroke="#8fb0cc" stroke-width="1.4">
+<rect height="52" rx="8" width="126" x="58" y="72"></rect><rect height="52" rx="8" width="126" x="222" y="72"></rect><rect height="52" rx="8" width="126" x="386" y="72"></rect>
+</g>
+<g fill="none" stroke="#e08155" stroke-width="1.4">
+<rect height="52" rx="8" width="126" x="58" y="206"></rect><rect height="52" rx="8" width="126" x="222" y="206"></rect><rect height="52" rx="8" width="126" x="386" y="206"></rect>
+</g>
+<g stroke="#a08b78" stroke-dasharray="4 6" stroke-width="1.2">
+<line x1="121" x2="121" y1="124" y2="206"></line><line x1="285" x2="285" y1="124" y2="206"></line><line x1="449" x2="449" y1="124" y2="206"></line>
+</g>
+<g stroke="rgba(143,176,204,0.75)" stroke-width="1.3">
+<line x1="121" x2="121" y1="36" y2="66"></line><line x1="285" x2="285" y1="36" y2="66"></line><line x1="449" x2="449" y1="36" y2="66"></line>
+<path d="M117 60 L121 68 L125 60" fill="none"></path><path d="M281 60 L285 68 L289 60" fill="none"></path><path d="M445 60 L449 68 L453 60" fill="none"></path>
+</g>
+<text fill="#8fb0cc" font-family="Georgia,serif" font-size="11.5" text-anchor="middle" x="285" y="28">外面要求的「正经样子」</text>
+<g fill="#dfe3e6" font-family="Georgia,serif" font-size="11.5" text-anchor="middle">
+<text x="121" y="103">合规部门</text><text x="285" y="103">季度目标表</text><text x="449" y="103">认证与流程</text>
+</g>
+<g fill="#ece0d2" font-family="Georgia,serif" font-size="11.5" text-anchor="middle">
+<text x="121" y="237">谁来拍板</text><text x="285" y="237">这周做什么</text><text x="449" y="237">活怎么干出来</text>
+</g>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="11" text-anchor="end" x="620" y="103">形式层</text>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="11" text-anchor="end" x="620" y="237">活动层</text>
+</svg>
+<div class="cap">上面一层是给外面看的，下面一层是活真正被干出来的地方。中间的连线是虚的——不是断，是松：上面换一套，下面常常照旧。压力压在形式层，它扩张不需要下层同意。</div>
+</div>
+<p>这里最容易读歪的一步是道德化。脱钩当然可以是虚伪，但它也有功能：外部要求常常互相打架、又常常和真正的活没关系，把它们接在形式那一层，反倒护住了里面干活的人。<em>松散耦合还让局部的失败不至于顺着链子拖垮全局。</em></p>
+<p>代价在另一头：形式那一层会自己长大。它有专职的人、有预算、有证明自己存在的动力，于是流程只增不减。Patricia Bromley 和 Walter Powell 2012 年提醒过一个更麻烦的版本：今天常见的已经不是政策没落地，而是手段和目的脱钩——活动认认真真做了一大堆，却没人回头查它有没有产生想要的结果。<strong>不落地至少还看得出来；落地了但和结果无关，看起来一切正常。</strong></p>
+<p class="en-brief"><b>EN</b> In 1977 John Meyer and Brian Rowan argued that much of an organisation's formal structure exists not to get work done but to be seen from outside — to demonstrate that the organisation is a proper one. Their term is myth and ceremony, and the loose fit between formal structure and actual activity is decoupling. Around the same time Karl Weick described schools as loosely coupled systems: timetables, teaching credentials and evaluation procedures are all in place, yet once the classroom door closes, how a teacher teaches and whether students learn is only slackly tied to any of it. A checkable case: James Westphal and Edward Zajac studied stock repurchase programmes announced by large American firms in the late 1980s and early 1990s and found a substantial share never bought back the shares — while the market reacted positively to the announcement itself. Formal adoption comes first; implementation is a separate matter and sometimes does not happen. Evidence: large-sample archival correlation, not proof that firms are lying. The moralising reading is the trap. Decoupling can be hypocrisy, but it also does work: external demands often contradict each other and often have little to do with the task, and hanging them on the formal layer protects the people doing the work. Loose coupling also keeps a local failure from propagating through the whole chain. The cost sits elsewhere: the formal layer grows on its own, with staff, budget and an interest in proving its necessity, so procedure only accumulates. Patricia Bromley and Walter Powell noted in 2012 a harder version — not policy that fails to land but means decoupled from ends: activity is performed diligently and nobody checks whether it produced the intended result. Unimplemented policy is at least visible; implemented-but-irrelevant activity looks like everything is fine.</p>
+</div>
+<div class="section">
+<span class="num">// 03</span>
+<h2>规则本来是手段，后来变成了目的</h2>
+<p>Robert Merton 1940 年给了一个到现在还在用的词：目标替代（goal displacement）。组织为了可靠和公平，要求成员严格照规则办；照久了，遵守规则本身变成了要守护的东西，原来那个目标退到背景里。窗口那位工作人员把你挡回去时说的「规定就是这样」是真话——对他来说，那确实就是这份工作。先标清楚：这是理论论证，不是实证研究。</p>
+<p>一个真的田野。1940 年代末到 1950 年代初，Alvin Gouldner 带着学生在美国北部一家石膏矿和它的加工厂做了长期观察，1954 年出版。他看到的不是「规则严不严」，而是<strong>规则被执行到什么程度，本身是一笔交换</strong>：老厂长睁一只眼闭一只眼——迟到、顺点公司材料回家，规则白纸黑字写着但不较真；工人以配合回报。Gouldner 管这个叫宽容模式（indulgency pattern）。后来新厂长来了，照章办事，结果不是效率上升，是野猫罢工。那些平时没被执行的规则不是废纸，是被存着当筹码的。证据强度：单一工厂的民族志，别当普遍规律。</p>
+<p>当代版本更眼熟。Wendy Espeland 和 Michael Sauder 2007 年花了几年访谈美国法学院的院长和招生人员，看一份公开排名怎么改造了学校。学校开始照着排名的算法反过来管理自己：奖学金从看家境需要转向看考试分数，因为分数进排名；就业率不好看的时候，学校自己出钱造临时岗位先把人装进去。他们把这个叫反身性（reactivity）——<em>一个指标一旦被公开地用来评价人，被评价的人就会改变行为去迎合它，于是这个指标测的东西变了。</em>证据强度：多年访谈加档案的定性研究。</p>
+<p>那结论是「科层制不好」吗？不是。讲韦伯与理性化那期说过铁笼，这里补上反面：把规则拿掉，回来的通常不是自由，是人身依附和任意裁量——谁跟领导关系近谁说了算，而这正是文官制度当初要治的病。Robert Michels 1911 年从德国社会民主党里看到的寡头铁律指着同一边：连纲领上最讲民主的组织，规模一大、需要专职人员，也会长出一个不容易换掉的领导层（从个案推出的强命题，后来多有修正）。</p>
+<p><em>所以真正的问题不是要不要规则，是哪些事该交给规则。</em>规则擅长可重复、后果明确、必须一视同仁的事，不擅长要当场判断的事——而组织的默认漂移方向是把后者也塞进前者，因为前者能写进报告。</p>
+<p class="en-brief"><b>EN</b> Robert Merton's 1940 term still works: goal displacement. An organisation demands strict rule-following for reliability and fairness; follow long enough and compliance itself becomes the thing to defend while the original purpose recedes. The clerk who turns you away saying "those are the rules" is telling the truth — for them that is the job. This is an argument, not an empirical study. A real fieldwork case: from the late 1940s into the early 1950s Alvin Gouldner and his students observed a gypsum mine and its plant in the northern United States, publishing in 1954. What he saw was not how strict the rules were but that the degree to which rules are enforced is itself an exchange. The old manager looked the other way — lateness, taking company material home — rules on paper, unenforced; workers repaid with cooperation. Gouldner called it the indulgency pattern. A new manager arrived and enforced by the book; the result was not higher output but a wildcat strike. Unenforced rules are not waste paper; they are held in reserve as bargaining chips. Evidence: single-plant ethnography, clear mechanism, not a general law. The contemporary version is more familiar. Wendy Espeland and Michael Sauder spent years interviewing deans and admissions staff at American law schools to see how a public ranking reshaped them. Schools began managing themselves by the ranking's algorithm: scholarships shifted from need to test scores because scores enter the formula, and when graduate employment looked bad, schools funded temporary positions to place people. They call this reactivity — once a measure is publicly used to evaluate people, the evaluated change their behaviour to meet it, and the measure ends up measuring something else. Evidence: multi-year qualitative interviews plus archives. Does this mean bureaucracy is bad? No. As the Weber and rationalisation topic put it, the iron cage is real; the other side is that removing rules usually brings back personal dependence and arbitrary discretion rather than freedom — exactly what civil service reform was invented to treat. Michels' 1911 iron law of oligarchy, drawn from the German Social Democratic Party, holds that even organisations with the most democratic programme grow a hard-to-replace leadership once scale requires full-time staff; a strong claim from one case, substantially qualified by later work. So the question is not whether to have rules but which matters to hand them: rules are good at repeatable things with clear consequences that must be treated alike, and bad at things requiring judgement on the spot — and organisations drift toward stuffing the latter into the former, because the former can be written into a report.</p>
+</div>
+<div class="bigcat">
+<h3>🎒 场景 · BigCat</h3>
+<ul>
+<li><b>① 工程与系统设计</b>——架构评审上有人提议引入某个组件或某套流程，理由归总起来是「大厂都这么做」。跑的是「新公司的组织架构图，你第一天就看懂了」那节的机制：不确定越大，抄越是最省力的合法性来源，而抄来的东西带着别人的约束条件。可改的：要求提案人写出被抄那家在什么数据量、什么故障率、什么团队规模下引入它——三个数里两个和你们差一个数量级，就降级成「以后再说」。停掉拿「业界标准」当论据。</li>
+<li><b>② 带团队与组织</b>——每季度目标写完之后，真正决定大家做什么的还是那几个中途插进来的需求；文档和实际是两层皮，可没人敢不写。跑的是「写在文件里的那一套，和实际干活的那一套，本来就不是一套」那节的机制：脱钩有它的功能，硬把两层拧成一层通常拧不动。所以要改的不是让文档贴合现实，是别让形式层继续吃资源：季度目标从「写满」改成「最多三条，每条给一个季末能查的数」，中途插进来的需求另起一栏，季末算它占了多少人天——盯这个数，别盯完成率。</li>
+</ul>
+</div>
+<div class="crossx">
+<h3>🌀 越界 · 跨学科的联想</h3>
+<ul>
+<li><b>分布式系统与 AI · 层级省下了沟通，代价是每一跳都在压缩</b>：一组机器要就一件事达成一致，两两直连的通道数随台数的平方涨；所以真实系统几乎都选一个协调者出来，把平方压成线性。组织长出层级是同一笔账：五十个人两两对齐是灾难，分成小队各有负责人就不是。跑的是「规则本来是手段，后来变成了目的」那节的机制：<b>每一跳都按本层的考核口径把上报的东西重新表述一遍</b>。由此能推出一个原本看不出的结论：<b>失真不是随层数相加，是相乘</b>——每层只走样两成，六层之后到顶上的还剩不到三成；所以扁平化确实降失真，但它把扇入压到顶点那一个人身上，两者不能同时优化，这个取舍的形状能算出来，不是态度问题。落到可观察的后果：想知道一条汇报链有多失真，别问人，去比同一件事在最底层的原始记录和最顶层的看板上分别长什么样。<b>但这里不成立</b>：分布式系统里消息是逐位复制的，损失发生在聚合环节，噪声大体无偏；组织里每一跳的动机方向一致——坏消息向上过滤，进度向上取整。所以「多路径冗余加表决」这套纠错在这里失效：三条汇报线受同一个激励压弯，表决只会把偏差再确认一遍。</li>
+<li><b>佛学 · 产出验证不了的组织，只能靠程序立信</b>：僧团的戒律（Vinaya）里占篇幅最大的不是「什么算证悟」，而是程序：布萨（uposatha）诵戒怎么走、羯磨（saṅghakamma）表决要几个人、谁有资格出席、争议按哪套流程消解。一个存续两千多年的组织，规则几乎全长在「怎么做决定」上，不在「什么算做成了」。跑的是「写在文件里的那一套，和实际干活的那一套，本来就不是一套」那节的机制反过来用：<b>核心产出没法从外部检验时，可信度只能挂在形式结构上</b>。由此能推出一个可以拿去核对的结论：<b>规程的繁复程度可以从「产出多难验收」预测</b>——宗教、教育、咨询、同行评审这类当场验不了货的地方，规则会往程序上长；反过来，产出明明可测的组织却把规程写得极细，那多半说明它真正在处理的不是效率，是责任归属。落到可观察的后果：翻一份组织手册，量一下「怎么做决定」和「什么算做成了」各占多少篇幅。<b>但这里不成立</b>：脱钩理论的前提是形式那层主要演给外部观众看，而戒律的第一受众是僧团自己，破戒有实打实的后果，形式和实践是紧耦合的。更根本的是，仪轨不是证明修行的外壳，它就是修行的一部分——「形式 / 实质」这对区分在这里失去了着力点。</li>
+</ul>
+</div>
+<div class="thinking">
+<h3>深入思考</h3>
+<details><summary>如果趋同是抄来的，怎么和「大家各自发现了同一个最优解」区分开？</summary>
+<div>两条可查的痕迹：采纳时间跟内部需要的相关性有没有随时间衰减（Tolbert 和 Zucker 用的就是这条）；采纳之后绩效有没有出现拐点。都没有，模仿的解释更省事。麻烦在于两条都不容易做干净——绩效常常没有可比的对照，而「内部需要」本身也是被同一套话语定义的。</div>
+</details>
+<details><summary>一个指标被公开之后，必然会被做坏吗？</summary>
+<div>不必然，但抵抗的条件很苛刻：测的是最终结果而不是中间动作；数据来源不在被评价者手里；多个互不相通的来源可以互相对账。三条缺一，做数字的成本就低于做事的成本。所以真正的设计问题不是「指标准不准」，是「操纵它比达成它更贵吗」。</div>
+</details>
+<details><summary>组织为什么能记住人记不住的东西？那它要忘掉一件事需要什么条件？</summary>
+<div>制度是外部记忆：规程、档案、岗位——人走了岗位还在，新人照着岗位说明重新长成上一个人的样子。所以组织要忘掉一件事，往往得把承载它的岗位或表格一起去掉；只换人不动结构，忘不掉。这也解释了为什么废掉一条没用的流程比新增一条难得多。</div>
+</details>
+</div>
+<div class="refs">
+<h3>延伸阅读</h3>
+<ul>
+<li><a href="https://www.jstor.org/stable/2095101" rel="noopener" target="_blank">DiMaggio &amp; Powell《铁笼重访》(1983, ASR)</a>（英文）· <a href="https://en.wikipedia.org/wiki/Isomorphism_(sociology)" rel="noopener" target="_blank">社会学中的同构概念</a>（英文）</li>
+<li><a href="https://ecommons.cornell.edu/entities/publication/65b24167-62ff-49ec-8689-74b63af6894f" rel="noopener" target="_blank">Tolbert &amp; Zucker《文官制度改革的扩散，1880–1935》(1983)</a>（英文）</li>
+<li><a href="http://www.iot.ntnu.no/innovation/norsi-pims-courses/harrison/Meyer%20&amp;%20Rowan%20(1977).PDF" rel="noopener" target="_blank">Meyer &amp; Rowan《制度化组织：作为神话与仪式的正式结构》(1977)</a>（英文）· <a href="https://en.wikipedia.org/wiki/Loose_coupling" rel="noopener" target="_blank">松散耦合词条</a>（英文）</li>
+<li><a href="https://journals.sagepub.com/doi/10.2307/2667086" rel="noopener" target="_blank">Westphal &amp; Zajac《政策与实践的脱钩：股票回购计划》(2001, ASQ)</a>（英文）</li>
+<li><a href="https://en.wikipedia.org/wiki/Alvin_Ward_Gouldner" rel="noopener" target="_blank">Gouldner 与《工业科层的模式》(1954)</a>（英文）· <a href="https://en.wikipedia.org/wiki/Iron_law_of_oligarchy" rel="noopener" target="_blank">Michels 的寡头铁律</a>（英文）</li>
+<li><a href="https://www.journals.uchicago.edu/doi/10.1086/517897" rel="noopener" target="_blank">Espeland &amp; Sauder《排名与反身性》(2007, AJS)</a>（英文）· <a href="https://en.wikipedia.org/wiki/Robert_K._Merton" rel="noopener" target="_blank">Merton 与目标替代</a>（英文）</li>
+</ul>
+</div>
+<footer>BigCat Learning Hub · Sociology &amp; Anthropology</footer>
+</div>
+<script defer="" src="https://hub.cissychen.com/comments.js"></script>
+<script defer="" src="https://hub.cissychen.com/search.js"></script>
+<script defer="" src="https://hub.cissychen.com/index-button.js"></script>
+<script defer="" src="https://hub.cissychen.com/i18n-tts.js"></script>
+</body></html>
