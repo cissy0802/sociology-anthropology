@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sociology &amp; Anthropology Day 15: The Social Construction of Gender</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:linear-gradient(170deg,#1a140f,#171210 42%,#120e0b);color:#e6dacc;line-height:1.9;min-height:100vh}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 60px}
+header{padding:52px 0 30px;border-bottom:1px solid #33261d}
+header .kicker{font-size:0.75rem;color:#8fb0cc;letter-spacing:2.5px;font-family:"SF Mono",Menlo,monospace}
+header h1{font-size:2.1rem;font-weight:800;background:linear-gradient(100deg,#e08155,#eda07c 58%,#8fb0cc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:0.5px;margin-top:12px;line-height:1.28}
+header h2{font-size:1rem;color:#a08b78;margin-top:10px;font-weight:400}
+header .meta{margin-top:14px;font-size:0.85rem;color:#a08b78}
+header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
+.intro{margin-top:30px;font-size:1.02rem;color:#d8c9b8}
+.intro p{margin-bottom:13px}
+.section{margin:46px 0;background:rgba(255,255,255,0.028);padding:28px 26px;border-radius:14px;border:1px solid rgba(255,255,255,0.06)}
+.section .num{display:inline-block;font-size:0.75rem;color:#e08155;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;margin-bottom:8px}
+.section h2{font-size:1.32rem;color:#f4ece2;margin-bottom:16px;font-weight:700;line-height:1.35}
+.section p{margin-bottom:14px;font-size:0.98rem}
+.section strong{color:#fff}
+.section em{color:#e08155;font-style:normal}
+.section ul{list-style:none;margin:14px 0}
+.section li{margin-bottom:10px;padding-left:20px;position:relative}
+.section li::before{content:"◈";position:absolute;left:0;top:0.42em;color:#e08155;font-size:0.7rem}
+.fig{margin:24px 0 10px;text-align:center}
+.fig svg{max-width:100%;height:auto}
+.fig .cap{font-size:0.82rem;color:#a08b78;margin-top:8px;text-align:left;line-height:1.65}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(143,176,204,0.12),rgba(224,129,85,0.05));border:1px solid rgba(143,176,204,0.34);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#8fb0cc;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#dfe3e6;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e08155;font-size:0.72rem}
+.crossx b{color:#aecbe2;font-weight:600}
+.thinking{background:linear-gradient(135deg,rgba(224,129,85,0.06),rgba(143,176,204,0.05));border:1px solid rgba(224,129,85,0.24);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e08155;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(18,14,11,0.5);border:1px solid rgba(224,129,85,0.2);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(224,129,85,0.06);border-color:rgba(224,129,85,0.42)}
+.thinking summary{cursor:pointer;color:#eda07c;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#8fb0cc}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(143,176,204,0.22);color:#ddd0c1;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#8fb0cc;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a08b78}
+.refs a{color:#e08155;text-decoration:none;border-bottom:1px dotted rgba(224,129,85,0.42)}
+.refs a:hover{color:#eda07c;border-bottom-color:#eda07c}
+.bigcat{margin:40px 0 0;background:linear-gradient(135deg,rgba(224,129,85,0.11),rgba(143,176,204,0.04));border:1px solid rgba(224,129,85,0.32);border-radius:14px;padding:22px 26px}
+.bigcat h3{color:#eda07c;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.bigcat ul{list-style:none;margin:0}
+.bigcat li{color:#ece0d2;font-size:0.93rem;line-height:1.8;margin-bottom:14px}
+.bigcat li:last-child{margin-bottom:0}
+.bigcat b{color:#eda07c;font-weight:600}
+footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
+@media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+</style></head><body>
+<div class="container">
+<header>
+<div class="kicker">DAY 15 · THE SOCIAL CONSTRUCTION OF GENDER</div>
+<h1>The Social Construction of Gender</h1>
+<h2>The most counterintuitive line here: scramble a group's sex composition and many supposed personality differences vanish on the spot</h2>
+<div class="meta">2026-09-08 · BigCat</div>
+<div class="pitch">The same job belongs to men in this valley and to women over the ridge — and people on both sides feel this is not an allocation but the order of things.</div>
+</header>
+<div class="intro">
+<p>A family dinner breaks up, the table is a mess. Who stands up to clear the dishes? Usually nothing is discussed: several people move at almost the same moment while the others keep talking. Nobody gave an order, and the ones who moved do not feel they are obeying anyone. When someone actually names what just happened, the room gets awkward — the arrangement never existed as a rule, and it is held in place by not being mentioned.</p>
+<p>This page takes apart three things: which divisions of labour look the same almost everywhere in the cross-cultural record and which flip from place to place; what keeps the assignment running day to day (a hint: not anybody's beliefs); and why, in places where the institutions have been reformed several times over, the remaining gap concentrates at one identifiable moment. This is contested territory, so the page states the strongest version of each account and labels how hard the evidence is, and leaves the judgement to you.</p>
+</div>
+<div class="section">
+<span class="num">// 01</span>
+<h2>The same job belongs to men in this valley and to women over the ridge</h2>
+<p>In 1973 George Murdock and Caterina Provost did a piece of plodding work: they coded ethnographic material from 185 societies and went through 50 technological activities one by one, asking who performs each — hunting, metalworking, weaving, pottery, fetching water, minding children.</p>
+<p>Both ends are firm. Hunting large game, smelting metal, quarrying and lumbering are done by men in nearly every recorded society; infant care is done by women in nearly every one. Twenty-four of the fifty activities fall into this near-unanimous class.</p>
+<p>But the middle band is wide. Sowing, harvesting, milking, weaving, pottery, house-building — in some societies these are men's proper work, in others women's, and neighbouring peoples often assign them in opposite directions. <strong>The same task changes hands when you cross one mountain, and both sides typically regard their own arrangement as the natural one.</strong> (Cross-cultural coding of this kind rests on ethnographies of uneven vintage and quality, and neighbouring societies are not independent samples; good for patterns, bad for precise proportions.)</p>
+<div class="fig">
+<svg viewbox="0 0 640 210" xmlns="http://www.w3.org/2000/svg">
+<defs><lineargradient id="g1" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#8fb0cc" stop-opacity="0.85"></stop><stop offset="0.5" stop-color="#a08b78" stop-opacity="0.35"></stop><stop offset="1" stop-color="#e08155" stop-opacity="0.85"></stop></lineargradient></defs>
+<rect fill="url(#g1)" height="26" rx="13" width="540" x="50" y="70"></rect>
+<g fill="none" stroke="#a08b78" stroke-dasharray="3 5" stroke-width="1"><line x1="185" x2="185" y1="60" y2="140"></line><line x1="455" x2="455" y1="60" y2="140"></line></g>
+<g fill="#a08b78" font-family="Georgia,serif" font-size="11" text-anchor="middle">
+<text x="118" y="58">near-universal, one side</text><text x="320" y="58">the band that flips</text><text x="522" y="58">near-universal, other side</text>
+</g>
+<g fill="#dfe3e6" font-family="Georgia,serif" font-size="11" text-anchor="middle">
+<text x="118" y="122">hunting large game</text><text x="118" y="140">metalwork · quarrying</text>
+<text x="320" y="122">sowing · harvest · milking</text><text x="320" y="140">weaving · pottery · building</text>
+<text x="522" y="122">infant care</text><text x="522" y="140">daily cooking</text>
+</g>
+<text fill="#e08155" font-family="Georgia,serif" font-size="11.5" text-anchor="middle" x="320" y="180">the firm ends and the variable middle need different explanations</text>
+</svg>
+<div class="cap">Schematic of the coding across 185 societies and 50 activities. Almost the entire argument sits in the middle band: how wide it is decides how much the bodily account still explains.</div>
+</div>
+<p>Both accounts deserve their strongest statement. <em>The bodily side</em> (the factors Murdock and Provost themselves offer run along this line): men are on average stronger lifters and throwers, women are constrained during pregnancy and lactation, so dangerous, distant, uninterruptible work drifts one way and interruptible work near the dwelling drifts the other. It explains the two ends and not the middle — it cannot predict who weaves.</p>
+<p>The other side introduced a distinction still in use: sex for the classification of bodies, gender for the whole social arrangement of what such a person should do and be like, brought into sociology in the 1970s by Ann Oakley and others. The claim is not that bodies do not exist, but that <em>the stretch between bodily difference and specific assignment is not deduced — it is filled in locally</em>. A stronger version came from Judith Butler in 1990: even the sex end carries social markings. That step is heavily contested; critics hold that it argues away measurable physiology. This page does not adjudicate, it only locates the disagreement: <strong>the argument is about which stretch society fills in, not about whether bodies exist.</strong></p>
+</div>
+<div class="section">
+<span class="num">// 02</span>
+<h2>Nobody gives an order, yet the same people always raise a hand</h2>
+<p>In 2017 a group of economists — Linda Babcock, Maria Recalde, Lise Vesterlund and Laurie Weingart — ran a clean experiment. A group is given a job everyone would rather someone else did: it helps the group and does nothing for your own evaluation — taking the minutes, sitting on a cross-departmental committee, onboarding a newcomer. If someone volunteers everyone scores; if nobody does, everyone gets less.</p>
+<p>In mixed-sex groups, women volunteered markedly more often than men. Up to here it is easy to conclude that women simply like taking such work on.</p>
+<p>Then the groups were made single-sex. <strong>The difference disappeared: men in all-male groups volunteered at about the rate women did in all-female groups.</strong> So it is not a preference — in mixed settings everyone's expectation about who will step forward has a direction, and asking for volunteers converts that expectation straight into the outcome. Field evidence points the same way. Evidence: laboratory experiment plus field data, the firmest item on this page.</p>
+<p>The term for it: Candace West and Don Zimmerman's 1987 phrase, doing gender. The core is not what you are but that <em>you are liable at any moment to be settled up against a category</em> — their word is accountability. The cost of not complying is usually no written penalty at all but a re-evaluation: too pushy, not a team player, not proper. This requires nobody to actually believe anything; it only requires everyone to expect that others are watching.</p>
+<p>A real fieldwork case. From the late 1970s into the early 1980s Barrie Thorne spent close to a year altogether in two elementary schools in California and Michigan, watching children in the playground and the classroom. What she recorded was not "boys and girls differ" but something odder: <em>most of the time the children played mixed and gender went unmentioned</em>; yet in certain situations the boundary lit up — team contests, chasing games, cooties teasing. She called it borderwork. Often it was adults who lit it: one line from a teacher, "boys on this side, girls on that side," and the boundary hardened again. <strong>Gender is less a background always in force than a switch thrown by situations.</strong> (Ethnography in two schools; do not read it as statistically representative.)</p>
+<p>Honesty in the other direction: an individual-level explanation that was once enormously popular, stereotype threat — being reminded that you belong to a devalued category depresses performance on the spot. After correction for publication bias, almost nothing is left of this effect for women's mathematics performance, and preregistered large-sample studies do not detect it. <em>It cannot serve as a foundation now</em>; the interactional and structural evidence above is a separate matter.</p>
+</div>
+<div class="section">
+<span class="num">// 03</span>
+<h2>The year the child arrived, two earnings curves separated and never closed again</h2>
+<p>In 2019 Henrik Kleven, Camille Landais and Jakob Søgaard did something clever with Danish administrative data covering the whole population: instead of aligning earnings by age or by calendar year, they re-sorted each person's earnings by years relative to the birth of a first child.</p>
+<p>Before the birth the two curves run parallel. In the year of the birth one barely moves, the other drops, and ten years on it has not returned to its old track — a long-run shortfall of about 20 percent, split roughly evenly between participation, hours and wage rates. The number worth watching more closely is another one: the share of total gender earnings inequality attributable to children rose from about 40 percent in 1980 to about 80 percent in 2013. <strong>The penalty did not grow; the other sources shrank and this one did not.</strong> Evidence: whole-population administrative data with an event-study design, about as hard as this field gets.</p>
+<div class="fig">
+<svg viewbox="0 0 640 250" xmlns="http://www.w3.org/2000/svg">
+<g stroke="#a08b78" stroke-width="1"><line x1="70" x2="600" y1="200" y2="200"></line><line x1="70" x2="70" y1="40" y2="200"></line></g>
+<line stroke="#e08155" stroke-dasharray="4 5" stroke-width="1.2" x1="280" x2="280" y1="40" y2="200"></line>
+<path d="M80 92 L280 78 L600 62" fill="none" stroke="#8fb0cc" stroke-width="2.2"></path>
+<path d="M80 96 L280 84 L320 150 L380 160 L600 152" fill="none" stroke="#e08155" stroke-width="2.2"></path>
+<g fill="#a08b78" font-family="Georgia,serif" font-size="11">
+<text x="232" y="222">first birth</text><text x="82" y="222">before</text><text text-anchor="end" x="600" y="222">ten years later</text>
+<text text-anchor="end" x="62" y="70">earnings</text>
+</g>
+<text fill="#8fb0cc" font-family="Georgia,serif" font-size="11.5" x="452" y="50">one curve barely interrupted</text>
+<text fill="#e08155" font-family="Georgia,serif" font-size="11.5" x="418" y="180">the other drops and stays down</text>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="10.5" x="300" y="112">gap ≈ 20% long run</text>
+</svg>
+<div class="cap">Schematic of the shape of the Danish event-study curves (not exact values). What matters is not the size of the gap but that it opens at a nameable moment and does not converge afterwards — which makes "a diffuse disadvantage present all along" hard to sustain as an explanation.</div>
+</div>
+<p>Why? The strongest accounts, none of which excludes the others:</p>
+<ul>
+<li><strong>The employer end</strong>. Shelley Correll and colleagues in 2007 combined lab evaluation with real applications: identical materials plus a cue of motherhood produced lower competence ratings, lower recommended starting salaries and fewer callbacks, while fathers were not penalised and sometimes benefited. But a later large-scale Swedish field experiment (Bygren and Gähler, 2021) did not detect such discrimination at the hiring stage. <em>This channel is sensitive to institutional setting; it is not a constant that holds everywhere.</em></li>
+<li><strong>The pricing of hours</strong>. Claudia Goldin's argument: in some occupations pay rises non-linearly with being continuously available — clients cannot be handed over, cases cannot be interrupted — so whichever side absorbs the need for flexibility is taxed systematically. This produces a gap without anyone holding a prejudice.</li>
+<li><strong>Expectation itself</strong>. Kleven and colleagues found that a person's child penalty correlates with their own mother's labour supply years earlier, pointing at expectation transmitted across generations rather than any current decision.</li>
+</ul>
+<p>How much weight each carries is still contested — this is the place on the page where "no conclusion yet" most needs saying.</p>
+<p>Half of care work enters no ledger at all. Allison Daminger's 2019 study, 70 in-depth interviews with 35 couples, splits the cognitive side of household labour into four phases: anticipating a need before it becomes urgent, identifying the options, deciding, and monitoring the result. Deciding was often shared, <em>while anticipating and monitoring fell more heavily on one side</em> — precisely the two phases that are least visible and least amenable to "tell me and I'll do it". (Qualitative interviews with educated American couples; not generalisable.)</p>
+<p>What these three sections support is limited: they describe how the gap is produced, and they cannot say whether or at which end to intervene — that is a value judgement, outside this discipline's measuring range. <strong>What can be said is that any intervention has to name the mechanism it aims at</strong> — hiring, the pricing of hours, or who does the anticipating. Aim wrong and the money is spent while the curve does not move.</p>
+</div>
+<div class="bigcat">
+<h3>🎒 In context · BigCat</h3>
+<ul>
+<li><b>① Leading a team and organisations</b> — "who's taking the minutes this time", "who'll onboard this new person", "who joins that cross-team group": each time it is asked on the spot as "anyone want to?", and each time it is the same few people. This runs the mechanism from "Nobody gives an order, yet the same people always raise a hand": asking for volunteers converts a directional expectation straight into the outcome. What to change: list these jobs explicitly, switch to a named rota or direct assignment, and stop asking for volunteers on the spot. Every six months pull the list and look at how work that never reaches a promotion case is distributed across people — watch the distribution, not who seems "more willing".</li>
+<li><b>② Health and energy</b> — in anything you maintain jointly with others over a long stretch (a household, a shared flat, a project running two years), what drains you is usually not the doing but the having-to-keep-it-in-mind. This runs the four phases of cognitive labour from "The year the child arrived": anticipating and monitoring appear in nobody's ledger and cannot be split off by "tell me and I'll do it". What to change: when you keep a week's tally, give "who thought of it first" its own column; and when you hand something over, hand over the decision with it — what the budget is, what counts as done, when to re-check. Handing over only the execution is not handing it over.</li>
+</ul>
+</div>
+<div class="crossx">
+<h3>🌀 Crossing over · interdisciplinary echoes</h3>
+<ul>
+<li><b>Evolutionary biology · being tied down by a body and being assigned a task are two separate accounts</b>: among mammals the burden of rearing falls almost always on the female side, since gestation and lactation are non-transferable. Humans are an outlier among primates, though — Sarah Hrdy and others argue that humans are a cooperative-breeding species: children are raised over long stretches by people other than the mother, and male investment in offspring is far higher than in our closest relatives. This runs the mechanism from "The same job belongs to men in this valley": <b>constraint and assignment are two stretches, and the middle one is filled in locally</b>. From which follows a conclusion you would not otherwise see: <b>a division of labour that is highly consistent across cultures cannot be read straight off as the body speaking</b> — one of the factors Murdock and Provost list is a purely social rule (whoever uses the product makes it), and that too can generate near-universal consistency. To tell them apart, look at whether the assignment loosens once technology removes the constraint: the items that stay put after milking becomes mechanical and water arrives by pipe are not being held by the constraint. The history of agricultural mechanisation can be checked for this. <b>But it does not hold here</b>: the range of an evolutionary account is an average across many generations, and it yields no prediction at all for one society in one year, whereas this page's mechanism runs at the scale of who gets named this week. Two rulers several orders of magnitude apart; neither is evidence for the other.</li>
+<li><b>Psychology · the group-level gap is stable, the individual-level explanation is not, and this is no contradiction</b>: stereotype threat was cited for decades; after correction for publication bias little is left, and preregistered large samples do not detect it. Meanwhile the group-level gap measured in administrative data is stable enough to draw as a curve. This runs the mechanism from "Nobody gives an order, yet the same people always raise a hand": <b>accountability operates in interaction and assignment and need not pass through anyone's inner states</b>. From which follows a conclusion you would not otherwise see: a mechanism that requires nothing to happen inside anyone predicts exactly that experiments probing inner mediators will often measure nothing — so those replication failures are not bad news for this account. It also yields a testable dividing line: <b>situation-changing interventions (how work is assigned, who is named, whether volunteers are solicited) should replicate more reliably than belief-changing ones</b>, which you can see by tallying replication rates for the two classes separately. <b>But it does not hold here</b>: psychology experiments measure one-shot causation inside a few minutes, while this page's mechanism is decades of accumulated path dependence, which a single manipulation cannot contain in principle. So "the experiment found nothing" neither confirms nor refutes the account — it only shows the two methods are not measuring the same thing.</li>
+</ul>
+</div>
+<div class="thinking">
+<h3>Going deeper</h3>
+<details><summary>If assignment is filled in locally, how do we explain the items that are near-identical everywhere?</summary>
+<div>Consistency has two possible sources: a physical constraint that holds everywhere, and a social rule that holds everywhere (such as "whoever uses it makes it"). To separate them, look at how quickly assignment responds when the constraint changes. Also, "near-unanimous" depends on the coding grain — split hunting into tracking, trapping and processing and code them separately, and the consistency drops. The grain of the categories decides the conclusion.</div>
+</details>
+<details><summary>Can the doing-gender account be falsified?</summary>
+<div>The danger is that it is too accommodating: a difference is accountability at work, no difference is a situation that did not light up. The checkable trace is the behaviour of the same people across situations — mixed versus single-sex groups, playground versus classroom. If switching the situation does not change the behaviour, the account has to retreat. What holds it up is that class of contrast, not how much it can explain.</div>
+</details>
+<details><summary>Would the gap at first birth disappear under different institutions?</summary>
+<div>The Nordic countries have long parental leave and public childcare; the gap narrowed but did not vanish. Policies reserving part of the leave for the other parent on a use-it-or-lose-it basis have an effect, usually a modest one. That suggests the gap also hangs on who does the anticipating and monitoring — the part policy cannot reach. The evidence here is cross-national comparison, where institutions and culture move together, so the causal story is not clean.</div>
+</details>
+</div>
+<div class="refs">
+<h3>Further reading</h3>
+<ul>
+<li><a href="https://hraf.yale.edu/ehc/summaries/gender" rel="noopener" target="_blank">Yale Human Relations Area Files: gender and the division of labour</a> · <a href="https://en.wikipedia.org/wiki/Sexual_division_of_labour" rel="noopener" target="_blank">Sexual division of labour</a></li>
+<li><a href="https://journals.sagepub.com/doi/10.1177/0891243287001002002" rel="noopener" target="_blank">West &amp; Zimmerman, "Doing Gender" (1987, Gender &amp; Society)</a> · <a href="https://en.wikipedia.org/wiki/Ann_Oakley" rel="noopener" target="_blank">Ann Oakley and the sex/gender distinction</a></li>
+<li><a href="https://www.rutgersuniversitypress.org/gender-play/9781978838253" rel="noopener" target="_blank">Barrie Thorne, Gender Play: Girls and Boys in School (1993)</a></li>
+<li><a href="https://www.aeaweb.org/articles?id=10.1257/aer.20141734" rel="noopener" target="_blank">Babcock et al., "Gender Differences in Accepting and Receiving Requests for Tasks with Low Promotability" (2017, AER)</a></li>
+<li><a href="https://www.aeaweb.org/articles?id=10.1257/app.20180010" rel="noopener" target="_blank">Kleven et al., "Children and Gender Inequality: Evidence from Denmark" (2019, AEJ: Applied)</a> · <a href="https://www.aeaweb.org/articles?id=10.1257/aer.104.4.1091" rel="noopener" target="_blank">Goldin, "A Grand Gender Convergence: Its Last Chapter" (2014, AER)</a></li>
+<li><a href="https://www.journals.uchicago.edu/doi/abs/10.1086/511799" rel="noopener" target="_blank">Correll et al., "Getting a Job: Is There a Motherhood Penalty?" (2007, AJS)</a> · <a href="https://academic.oup.com/sp/article/28/4/921/6352264" rel="noopener" target="_blank">Bygren &amp; Gähler's Swedish field experiment (2021)</a></li>
+<li><a href="https://journals.sagepub.com/doi/10.1177/0003122419859007" rel="noopener" target="_blank">Daminger, "The Cognitive Dimension of Household Labor" (2019, ASR)</a> · <a href="http://icelab.psych.uw.edu.pl/wp-content/uploads/2018/10/florewicherts2015-Stereotype-threat.pdf" rel="noopener" target="_blank">Flore &amp; Wicherts, meta-analysis of stereotype threat (2015)</a></li>
+</ul>
+</div>
+<footer>BigCat Learning Hub · Sociology &amp; Anthropology</footer>
+</div>
+<script defer="" src="https://hub.cissychen.com/comments.js"></script>
+<script defer="" src="https://hub.cissychen.com/search.js"></script>
+<script defer="" src="https://hub.cissychen.com/index-button.js"></script>
+<script defer="" src="https://hub.cissychen.com/i18n-tts.js"></script>
+</body></html>

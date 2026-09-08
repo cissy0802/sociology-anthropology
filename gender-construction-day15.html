@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>社会学与人类学 Day 15：性别的社会建构</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:linear-gradient(170deg,#1a140f,#171210 42%,#120e0b);color:#e6dacc;line-height:1.9;min-height:100vh}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 60px}
+header{padding:52px 0 30px;border-bottom:1px solid #33261d}
+header .kicker{font-size:0.75rem;color:#8fb0cc;letter-spacing:2.5px;font-family:"SF Mono",Menlo,monospace}
+header h1{font-size:2.1rem;font-weight:800;background:linear-gradient(100deg,#e08155,#eda07c 58%,#8fb0cc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:0.5px;margin-top:12px;line-height:1.28}
+header h2{font-size:1rem;color:#a08b78;margin-top:10px;font-weight:400}
+header .meta{margin-top:14px;font-size:0.85rem;color:#a08b78}
+header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
+.intro{margin-top:30px;font-size:1.02rem;color:#d8c9b8}
+.intro p{margin-bottom:13px}
+.section{margin:46px 0;background:rgba(255,255,255,0.028);padding:28px 26px;border-radius:14px;border:1px solid rgba(255,255,255,0.06)}
+.section .num{display:inline-block;font-size:0.75rem;color:#e08155;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;margin-bottom:8px}
+.section h2{font-size:1.32rem;color:#f4ece2;margin-bottom:16px;font-weight:700;line-height:1.35}
+.section p{margin-bottom:14px;font-size:0.98rem}
+.section strong{color:#fff}
+.section em{color:#e08155;font-style:normal}
+.section ul{list-style:none;margin:14px 0}
+.section li{margin-bottom:10px;padding-left:20px;position:relative}
+.section li::before{content:"◈";position:absolute;left:0;top:0.42em;color:#e08155;font-size:0.7rem}
+.fig{margin:24px 0 10px;text-align:center}
+.fig svg{max-width:100%;height:auto}
+.fig .cap{font-size:0.82rem;color:#a08b78;margin-top:8px;text-align:left;line-height:1.65}
+.en-brief{margin-top:18px;padding:12px 16px;border-left:2px solid rgba(160,139,120,0.5);background:rgba(255,255,255,0.02);border-radius:0 8px 8px 0;font-size:0.85rem;color:#b0a08e;line-height:1.62}
+.en-brief b{color:#bda994;font-family:"SF Mono",Menlo,monospace;font-size:0.68rem;letter-spacing:1.5px;margin-right:9px;font-weight:700}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(143,176,204,0.12),rgba(224,129,85,0.05));border:1px solid rgba(143,176,204,0.34);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#8fb0cc;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#dfe3e6;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e08155;font-size:0.72rem}
+.crossx b{color:#aecbe2;font-weight:600}
+.thinking{background:linear-gradient(135deg,rgba(224,129,85,0.06),rgba(143,176,204,0.05));border:1px solid rgba(224,129,85,0.24);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e08155;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(18,14,11,0.5);border:1px solid rgba(224,129,85,0.2);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(224,129,85,0.06);border-color:rgba(224,129,85,0.42)}
+.thinking summary{cursor:pointer;color:#eda07c;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#8fb0cc}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(143,176,204,0.22);color:#ddd0c1;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#8fb0cc;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a08b78}
+.refs a{color:#e08155;text-decoration:none;border-bottom:1px dotted rgba(224,129,85,0.42)}
+.refs a:hover{color:#eda07c;border-bottom-color:#eda07c}
+.bigcat{margin:40px 0 0;background:linear-gradient(135deg,rgba(224,129,85,0.11),rgba(143,176,204,0.04));border:1px solid rgba(224,129,85,0.32);border-radius:14px;padding:22px 26px}
+.bigcat h3{color:#eda07c;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.bigcat ul{list-style:none;margin:0}
+.bigcat li{color:#ece0d2;font-size:0.93rem;line-height:1.8;margin-bottom:14px}
+.bigcat li:last-child{margin-bottom:0}
+.bigcat b{color:#eda07c;font-weight:600}
+footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
+@media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+</style></head><body>
+<div class="container">
+<header>
+<div class="kicker">DAY 15 · 性别的社会建构</div>
+<h1>性别的社会建构</h1>
+<h2>这一期最反直觉的一句：把一群人的性别构成打散，很多所谓的性格差异会当场消失</h2>
+<div class="meta">2026-09-08 · BigCat</div>
+<div class="pitch">同一件活，在这个山谷归男人，翻过山就归女人——而两边的人都觉得，这不是分配，这是天经地义。</div>
+</header>
+<div class="intro">
+<p>家宴散场，桌上一片狼藉。谁站起来收碗？多半不用商量：有几个人几乎同时动了，另外几个继续坐着聊天。没人下命令，动的那几个也不觉得自己在服从谁。等到有人真把它挑明，气氛反而尴尬——那套安排从来不以「规定」的形式存在，它靠没人提起来维持。</p>
+<p>这一页拆三件事：跨文化的记录里，哪些分工几乎到处一样、哪些随地方翻脸；这套分派靠什么在日常里维持住（提示：不靠任何人的信念）；以及为什么在制度改过很多轮的地方，剩下的差距会集中出现在一个特定时刻上。这块争论很多，本页把几家最强的说法都摆出来、标清证据有多硬，判断留给你。</p>
+</div>
+<div class="section">
+<span class="num">// 01</span>
+<h2>同一件活，在这个山谷归男人，翻过山就归女人</h2>
+<p>1973 年，George Murdock 和 Caterina Provost 干了件笨活：把 185 个社会的民族志材料编码，逐项去看 50 种技术活动分别由谁来做——打猎、冶金、编织、制陶、背水、看孩子。</p>
+<p>两头很硬。追捕大型猎物、冶炼金属、采石伐木，在几乎所有有记录的社会里由男性承担；照看婴儿几乎到处由女性承担。50 项里有 24 项属于这种「几乎一边倒」。</p>
+<p>但中间那条带很宽。播种、收割、挤奶、编织、制陶、盖房子——这些活在有的社会是男人的本行，在另一些社会是女人的本行，相邻的两个族群还常常正好相反。<strong>同一件事，翻过一座山，归属就换了；而两边通常都认为自己这边才是自然的。</strong>（这类跨文化编码材料年代与质量不齐、相邻社会也不是独立样本，适合看模式，不适合当精确比例。）</p>
+<div class="fig">
+<svg viewbox="0 0 640 210" xmlns="http://www.w3.org/2000/svg">
+<defs><lineargradient id="g1" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#8fb0cc" stop-opacity="0.85"></stop><stop offset="0.5" stop-color="#a08b78" stop-opacity="0.35"></stop><stop offset="1" stop-color="#e08155" stop-opacity="0.85"></stop></lineargradient></defs>
+<rect fill="url(#g1)" height="26" rx="13" width="540" x="50" y="70"></rect>
+<g fill="none" stroke="#a08b78" stroke-dasharray="3 5" stroke-width="1"><line x1="185" x2="185" y1="60" y2="140"></line><line x1="455" x2="455" y1="60" y2="140"></line></g>
+<g fill="#a08b78" font-family="Georgia,serif" font-size="11" text-anchor="middle">
+<text x="118" y="58">几乎处处一边</text><text x="320" y="58">随地方翻脸的宽带</text><text x="522" y="58">几乎处处另一边</text>
+</g>
+<g fill="#dfe3e6" font-family="Georgia,serif" font-size="11" text-anchor="middle">
+<text x="118" y="122">猎大型动物</text><text x="118" y="140">冶金 · 采石</text>
+<text x="320" y="122">播种 · 收割 · 挤奶</text><text x="320" y="140">编织 · 制陶 · 盖房</text>
+<text x="522" y="122">照看婴儿</text><text x="522" y="140">日常炊事</text>
+</g>
+<text fill="#e08155" font-family="Georgia,serif" font-size="11.5" text-anchor="middle" x="320" y="180">两头的一致，和中间的可变，需要各自不同的解释</text>
+</svg>
+<div class="cap">185 个社会、50 项活动的编码示意。争论几乎全在中间那条带上：它有多宽，决定身体差异这套解释还剩多少。</div>
+</div>
+<p>两边最强的说法都得摆出来。<em>身体那一侧</em>（Murdock 和 Provost 自己给的因素也在这条线上）：男性平均力量与投掷能力更强，女性在怀孕哺乳期间行动受限，于是危险的、要走远的、不能中断的活落向一边，可中断、靠近住处的活落向另一边。这条能解释两头，解释不了中间——它推不出编织该归谁。</p>
+<p>另一侧提出了一对沿用至今的区分：生理性别（sex）指身体上的分类，社会性别（gender）指一整套「这类人该做什么、该像什么」的社会安排，1970 年代经 Ann Oakley 等人带进社会学。主张不是身体不存在，而是<em>从身体差异到具体分派之间那一段不是推导出来的，是各地各自填的</em>。更强的版本来自 Judith Butler 1990 年：连 sex 这一头也带着社会的刻度——争议很大，批评者认为它把可测量的生理差异说没了。本页不裁判，只标出分歧的位置：<strong>争的是哪一段由社会填，不是有没有身体。</strong></p>
+<p class="en-brief"><b>EN</b> In 1973 George Murdock and Caterina Provost coded ethnographic material from 185 societies, asking who performs each of 50 technological activities. Both ends of the distribution are firm: hunting large game, metalworking, quarrying and lumbering are done by men in nearly every recorded society; infant care is done by women in nearly every one. Twenty-four of the fifty activities fall into this near-unanimous class. But the middle band is wide — sowing, harvesting, milking, weaving, pottery, house-building — and neighbouring societies often assign them in opposite directions, with each side regarding its own arrangement as natural. Both explanations deserve their strongest statement. The bodily account, which is also the one Murdock and Provost themselves lean on: men are on average stronger throwers and lifters, women are constrained during pregnancy and lactation, so dangerous, distant and uninterruptible work drifts one way and interruptible, near-home work the other. It explains the two ends and not the middle; it cannot predict who weaves. The other side introduced a distinction still in use: sex for bodily classification, gender for the whole social arrangement of what such a person should do and be like, brought into sociology in the 1970s by Ann Oakley and others. The claim is not that bodies do not exist but that the stretch between bodily difference and specific assignment is filled in locally rather than deduced. A stronger version, Judith Butler's in 1990, holds that even sex is not a purely natural given, since the ruler we use to divide bodies carries social markings; critics say this argues away measurable physiology. This page does not adjudicate, but locates the disagreement: it is about which stretch is socially filled, not about whether bodies exist. On evidence: cross-cultural coding draws on ethnographies of uneven vintage and quality, and neighbouring societies are not independent samples (Galton's problem). Good for patterns, bad for precise proportions.</p>
+</div>
+<div class="section">
+<span class="num">// 02</span>
+<h2>没人下命令，可举手的总是同一批人</h2>
+<p>2017 年一组经济学家（Linda Babcock、Maria Recalde、Lise Vesterlund、Laurie Weingart）做了个干净的实验。给小组一件「大家都希望别人去做」的活：做了对集体有好处，对自己的评价没帮助——写会议纪要、进跨部门委员会、带一次新人。有人举手大家都得分，没人举手大家都少拿。</p>
+<p>混合性别的组里，女性举手明显多于男性。到这里为止，很容易得出「女性更爱担这种活」。</p>
+<p>然后他们把组换成清一色同性别。<strong>差别消失了：全男组里男性举手的比例，和全女组里女性的基本一样。</strong>所以那不是偏好——是混合场合里所有人对「谁会先举手」的预期有方向，而征集自愿这个动作正好把预期原样变成结果。实地数据指向同一边。证据强度：实验室实验加实地证据，本页最硬的一项。</p>
+<p>挂个词：Candace West 和 Don Zimmerman 1987 年的说法叫做性别（doing gender）。核心不是「你是什么」，而是<em>你随时可能被按某个类别来结账</em>——他们的词是可追责性（accountability）。不照做的代价通常不是明文处罚，是被重新评价：太强势、不合群、不像话。这不需要谁真的相信什么，只需要每个人都预期别人在看。</p>
+<p>一个真的田野。Barrie Thorne 在 1970 年代末到 1980 年代初，在加州和密歇根的两所小学前后蹲了近一年，看孩子们的课间和教室。她记下的不是「男孩女孩不一样」，而是更奇怪的东西：<em>大部分时候孩子们混着玩，性别根本没被提起</em>；但在某些场合边界会突然被点亮——分队比赛、追人游戏、「谁碰了谁有虱子」这类玩笑。她管这叫边界工作（borderwork）。点亮它的往往是大人：老师一句「男生一队、女生一队」，边界立刻硬一次。<strong>性别不是一直在起作用的背景，是被情境切上去的开关。</strong>（两所学校的民族志，别当统计代表性。）</p>
+<p>反过来也要老实说：曾经极流行的一个个体层解释叫刻板印象威胁（stereotype threat）——被提醒自己属于某个被看低的类别会当场拉低表现。校正发表偏倚之后，女性数学表现上的这条效应几乎剩不下什么，预注册的大样本也没测到。<em>它现在不能当地基用</em>；上面那些互动与结构层面的证据和它是两码事。</p>
+<p class="en-brief"><b>EN</b> In 2017 Linda Babcock, Maria Recalde, Lise Vesterlund and Laurie Weingart ran a clean experiment on tasks everyone would rather someone else did: work that benefits the group but does nothing for your own evaluation — taking minutes, sitting on a committee, onboarding a newcomer. In mixed-sex groups women volunteered markedly more often than men, which invites the conclusion that women simply prefer such work. Then the groups were made single-sex and the difference vanished: men in all-male groups volunteered at about the rate women did in all-female groups. So it is not a preference. In mixed settings everyone's expectation about who will step forward has a direction, and asking for volunteers converts that expectation into the outcome. Field evidence points the same way; this is the firmest item on the page. The term: Candace West and Don Zimmerman's 1987 "doing gender". The point is not what you are but that you are always liable to be held to account against a category — their word is accountability. The cost of not complying is usually not any written penalty but re-evaluation: too pushy, not a team player, not proper. This requires nobody to actually believe anything; it only requires everyone to expect that others are watching. A real fieldwork case: Barrie Thorne spent close to a year altogether in two elementary schools in California and Michigan around 1980, watching playgrounds and classrooms. What she recorded was not that boys and girls differ but something odder — most of the time children played mixed and gender went unmentioned, yet in particular situations the boundary lit up: team contests, chasing games, cooties teasing. She called it borderwork. Often adults did the lighting: a teacher saying "boys on one side, girls on the other" hardened the line on the spot. Gender is less a constant background than a switch thrown by situations. Evidence: ethnography in two schools, clear mechanism, not statistically representative. Honesty in the other direction: stereotype threat, once an enormously popular individual-level explanation, largely fails to survive correction for publication bias in the women-and-mathematics literature, and preregistered large-sample studies do not detect it. It cannot serve as a foundation. The interactional and structural evidence above is a separate matter.</p>
+</div>
+<div class="section">
+<span class="num">// 03</span>
+<h2>孩子出生那一年，两条收入曲线分开了，然后再没合上</h2>
+<p>2019 年，Henrik Kleven、Camille Landais 和 Jakob Søgaard 用丹麦全国行政数据做了件很聪明的事：不按年龄或年份对齐，而是把每个人的收入按「距离第一个孩子出生几年」重新排。</p>
+<p>孩子出生之前，两条曲线一路平行。出生那一年，一条几乎不动，另一条掉下去，之后十年再没回到原轨道，长期低约 20%，由参与率、工时和时薪大致均摊。更值得盯的是另一个数：由孩子造成的那部分占全部性别收入差距的比例，从 1980 年的约四成涨到 2013 年的约八成。<strong>不是这一项变大了，是别的来源缩小了，它没有。</strong>证据强度：全人口行政数据加事件研究设计，在这门学科里属于很硬的一类。</p>
+<div class="fig">
+<svg viewbox="0 0 640 250" xmlns="http://www.w3.org/2000/svg">
+<g stroke="#a08b78" stroke-width="1"><line x1="70" x2="600" y1="200" y2="200"></line><line x1="70" x2="70" y1="40" y2="200"></line></g>
+<line stroke="#e08155" stroke-dasharray="4 5" stroke-width="1.2" x1="280" x2="280" y1="40" y2="200"></line>
+<path d="M80 92 L280 78 L600 62" fill="none" stroke="#8fb0cc" stroke-width="2.2"></path>
+<path d="M80 96 L280 84 L320 150 L380 160 L600 152" fill="none" stroke="#e08155" stroke-width="2.2"></path>
+<g fill="#a08b78" font-family="Georgia,serif" font-size="11">
+<text x="238" y="222">孩子出生</text><text x="88" y="222">出生前</text><text text-anchor="end" x="600" y="222">十年后</text>
+<text text-anchor="end" x="62" y="70">收入</text>
+</g>
+<text fill="#8fb0cc" font-family="Georgia,serif" font-size="11.5" x="470" y="50">一条几乎没被打断</text>
+<text fill="#e08155" font-family="Georgia,serif" font-size="11.5" x="440" y="180">另一条掉下去就没回来</text>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="10.5" x="300" y="112">缺口长期约两成</text>
+</svg>
+<div class="cap">丹麦事件研究的曲线形状示意（非精确数值）。关键不在缺口多大，在于它出现在一个能指名的时刻、此后不收敛——「一直存在的模糊劣势」这类解释因此很难成立。</div>
+</div>
+<p>为什么？几家最强的说法都摆上来，它们并不互斥：</p>
+<ul>
+<li><strong>雇主那一端</strong>。Shelley Correll 等人 2007 年做了实验室评估加真实投递：同样的材料加上一条暗示有孩子的信息，母亲被评为能力更低、推荐起薪更低、回电更少；父亲没受罚，有时还受益。但后来瑞典的大规模实地投递（Bygren 与 Gähler 2021）没测到招聘环节的这种歧视。<em>这一条对制度环境很敏感，不是到处成立的常数。</em></li>
+<li><strong>工作时间的定价</strong>。Claudia Goldin 的论证：有些职业里报酬随「连续在岗、随叫随到」非线性上升——客户不能换手、案子不能中断——于是承担弹性需求的那一方被系统性罚款。这条不需要任何人有偏见也能产生差距。</li>
+<li><strong>预期本身</strong>。Kleven 等人发现，一个人的孩子惩罚与她母亲当年的劳动供给相关，指向代代传下来的预期，而非当下某个决策。</li>
+</ul>
+<p>三条各占多大比重仍有争论——这是本页最该说「还没结论」的地方。</p>
+<p>照护里还有一半不进任何账本。Allison Daminger 2019 年对 35 对伴侣做了 70 次深访，把家务的脑力部分拆成四段：预判（在事情变紧急之前先想到）、找选项、做决定、盯结果。「做决定」常常共享，<em>「预判」和「盯结果」更多落向一方</em>——恰恰是最看不见、也最没法靠「你说我做」分掉的两段。（定性访谈，样本是美国受过高等教育的伴侣，不能外推。）</p>
+<p>这三节能推出的东西有限：它说清差距怎么被生产出来，说不出该不该干预、该干预哪一端——那是价值判断，不在这门学科的量程里。<strong>能说的只是：任何一条干预都得指名它打哪个机制</strong>——招聘、工时定价，还是预判归谁。打错了，钱花了，曲线不动。</p>
+<p class="en-brief"><b>EN</b> In 2019 Henrik Kleven, Camille Landais and Jakob Søgaard used Danish administrative data on the whole population and aligned earnings not by age or calendar year but by years relative to the birth of a first child. Before the birth the two curves run parallel. In the year of the birth one barely moves and the other drops, and ten years later it has not returned — a long-run gap of roughly 20 percent, split about evenly between participation, hours and wage rates. The more striking number is the share: the fraction of total gender earnings inequality attributable to children rose from about 40 percent in 1980 to about 80 percent in 2013. The penalty did not grow; other sources shrank and this one did not. Evidence: whole-population administrative data with an event-study design, about as strong as this field gets. Why? Several accounts, not mutually exclusive. On the employer side, Shelley Correll and colleagues in 2007 combined lab evaluation with real applications: identical materials plus a cue of motherhood produced lower competence ratings, lower recommended starting salaries and fewer callbacks, while fathers were not penalised and sometimes benefited. Yet a large Swedish field experiment (Bygren and Gähler, 2021) did not detect such hiring discrimination — so this channel is sensitive to institutional setting rather than a constant. On pay structure, Claudia Goldin's argument: in some occupations pay rises non-linearly with continuous availability, because clients cannot be handed over and cases cannot be interrupted, so whichever side absorbs the need for flexibility is systematically taxed — no prejudice required. On expectations, Kleven and colleagues found a person's child penalty correlates with their own mother's labour supply, pointing at transmitted expectation rather than a current decision. How much weight each carries is still contested. Half of care work never enters any ledger: Allison Daminger's 2019 study, 70 interviews with 35 couples, splits the cognitive side of household labour into anticipating a need before it becomes urgent, identifying options, deciding, and monitoring the result. Deciding was often shared; anticipating and monitoring fell disproportionately on one side — precisely the two least visible parts and the ones that cannot be delegated by being told what to do. Evidence: qualitative interviews with educated American couples, not generalisable. What these three sections support is limited and worth stating: they describe how the gap is produced; they cannot say whether or where to intervene, which is a value judgement outside this discipline's range. What can be said is that any intervention has to name the mechanism it targets — hiring, the pricing of hours, or who does the anticipating. Aim at the wrong one and the money is spent while the curve does not move.</p>
+</div>
+<div class="bigcat">
+<h3>🎒 场景 · BigCat</h3>
+<ul>
+<li><b>① 带团队与组织</b>——「这次纪要谁写」「谁带这个新人」「谁进那个跨部门小组」，每次都当场问一句「有人愿意吗」，然后总是那几个人。跑的是「没人下命令，可举手的总是同一批人」那节的机制：征集自愿把有方向的预期原样变成结果。可改的：这类活列成明表，改成按名单轮值或直接指派，停掉当场征集自愿。每半年拉一次清单，看「进不了晋升材料的活」在人头上怎么分布——盯分布，别盯谁「更主动」。</li>
+<li><b>② 健康与精力</b>——任何和别人长期共同维持的一摊事（家里、合租、跑了两年的项目），最耗电的往往不是执行，是「一直得记着」。跑的是「孩子出生那一年」那节里认知劳动四段的机制：预判和盯结果不进任何人的账本，也没法靠「你说我做」分掉。可改的：记账时把「谁先想起来的」单列一栏；移交时连决定权一起交——预算多少、什么算完成、什么时候复查——只交执行等于没交。</li>
+</ul>
+</div>
+<div class="crossx">
+<h3>🌀 越界 · 跨学科的联想</h3>
+<ul>
+<li><b>演化生物学 · 谁被身体拴住，和谁被派去做什么，是两笔账</b>：哺乳动物里育幼的重担几乎总落在雌性一侧，怀孕和泌乳不可转让。但人类在灵长类里是个异类——Sarah Hrdy 等人论证人类是合作育幼（cooperative breeding）的物种：孩子长期由母亲之外的人一起带，雄性的育幼投入也远高于近亲物种。跑的是「同一件活，在这个山谷归男人」那节的机制：<b>约束和分派是两段，中间那段各地自己填</b>。由此能推出一个原本看不出的结论：<b>一项分工跨文化高度一致，不能直接当成身体在说话</b>——Murdock 和 Provost 自己列的因素里就有一条纯社会规则（谁使用这个产品，谁就来生产它），它同样能造出近乎普遍的一致。要分辨，去看约束被技术解除之后分派有没有跟着松：挤奶换成机器、运水换成管道之后仍然纹丝不动的那些项，就不是约束在起作用——农业机械化的历史资料能查。<b>但这里不成立</b>：演化解释的量程是许多代之间的平均，落到某个具体社会的某一年不产生任何预测；本期机制跑在「这周谁被点名」的尺度上。两把尺子差几个数量级，谁也不是对方的证据。</li>
+<li><b>心理学 · 群体层的差距很稳，个体层的解释很不稳，这不矛盾</b>：刻板印象威胁被引用几十年，校正发表偏倚后效应所剩无几，预注册大样本也没测到；与此同时，行政数据测出来的群体层差距稳定得可以画成曲线。跑的是「没人下命令，可举手的总是同一批人」那节的机制：<b>追责发生在互动和分派上，不必经过任何人的内在状态</b>。由此能推出一个原本看不出的结论：一个不需要内心发生什么的机制，恰好预测「测内心」的中介实验经常测不到东西——那批复制失败因此不是这套说法的坏消息。它还给出一条能查的分界线：<b>改情境的干预（怎么分派、谁被点名、要不要征集自愿）在复制上应该比改观念的干预更稳</b>，把两类干预的复制率分开统计就能看出来。<b>但这里不成立</b>：心理学实验测的是几分钟内的一次性因果，本期机制是几十年累积的路径依赖，一次性操纵在原理上装不下它。所以「实验没测到」既不证实也不证伪本页的说法——它只说明两套方法测的不是同一个东西。</li>
+</ul>
+</div>
+<div class="thinking">
+<h3>深入思考</h3>
+<details><summary>如果分派是各地自己填的，两头那些几乎处处一致的项怎么解释？</summary>
+<div>一致性有两个来源：到处成立的物理约束，和到处成立的社会规则（比如「谁用谁做」）。要区分，看约束变化时的响应速度。另外「几乎一边倒」依赖编码口径——把打猎拆成追踪、设陷阱、处理猎物分别编码，一致性就下降——分类的粗细直接决定结论。</div>
+</details>
+<details><summary>做性别这套说法能被证伪吗？</summary>
+<div>危险在于它太好用：有差异说是被追责出来的，没差异说是场合没点亮。可查的痕迹是同一批人在不同情境里的行为差异——混合组与同性别组、操场与教室。切换情境不改变行为，它就得往回退——撑住它的是这类对照，不是它解释了多少现象。</div>
+</details>
+<details><summary>孩子出生那道缺口，换一套制度会消失吗？</summary>
+<div>北欧有很长的育儿假和公共托育，缺口缩小了但没消失；把一部分假期专门留给另一方、不用就作废的政策有效果，幅度通常不大。这提示缺口还挂在预判和盯结果归谁——那部分政策够不着。证据是跨国比较，制度和文化一起在变，因果不干净。</div>
+</details>
+</div>
+<div class="refs">
+<h3>延伸阅读</h3>
+<ul>
+<li><a href="https://hraf.yale.edu/ehc/summaries/gender" rel="noopener" target="_blank">耶鲁人类关系区域档案：性别与劳动分工综述</a>（英文）· <a href="https://en.wikipedia.org/wiki/Sexual_division_of_labour" rel="noopener" target="_blank">性别劳动分工词条</a>（英文）</li>
+<li><a href="https://journals.sagepub.com/doi/10.1177/0891243287001002002" rel="noopener" target="_blank">West &amp; Zimmerman《做性别》(1987, Gender &amp; Society)</a>（英文）· <a href="https://en.wikipedia.org/wiki/Ann_Oakley" rel="noopener" target="_blank">Ann Oakley 与 sex/gender 区分</a>（英文）</li>
+<li><a href="https://www.rutgersuniversitypress.org/gender-play/9781978838253" rel="noopener" target="_blank">Barrie Thorne《性别游戏：学校里的女孩与男孩》(1993)</a>（英文）</li>
+<li><a href="https://www.aeaweb.org/articles?id=10.1257/aer.20141734" rel="noopener" target="_blank">Babcock 等《低晋升价值任务的承接与被请求》(2017, AER)</a>（英文）</li>
+<li><a href="https://www.aeaweb.org/articles?id=10.1257/app.20180010" rel="noopener" target="_blank">Kleven 等《孩子与性别不平等：来自丹麦的证据》(2019, AEJ:Applied)</a>（英文）· <a href="https://www.aeaweb.org/articles?id=10.1257/aer.104.4.1091" rel="noopener" target="_blank">Goldin《一场大趋同的最后一章》(2014, AER)</a>（英文）</li>
+<li><a href="https://www.journals.uchicago.edu/doi/abs/10.1086/511799" rel="noopener" target="_blank">Correll 等《找工作：存在母职惩罚吗？》(2007, AJS)</a>（英文）· <a href="https://academic.oup.com/sp/article/28/4/921/6352264" rel="noopener" target="_blank">Bygren &amp; Gähler 的瑞典实地实验 (2021)</a>（英文）</li>
+<li><a href="https://journals.sagepub.com/doi/10.1177/0003122419859007" rel="noopener" target="_blank">Daminger《家务劳动的认知维度》(2019, ASR)</a>（英文）· <a href="http://icelab.psych.uw.edu.pl/wp-content/uploads/2018/10/florewicherts2015-Stereotype-threat.pdf" rel="noopener" target="_blank">Flore &amp; Wicherts 关于刻板印象威胁的元分析 (2015)</a>（英文）</li>
+</ul>
+</div>
+<footer>BigCat Learning Hub · Sociology &amp; Anthropology</footer>
+</div>
+<script defer="" src="https://hub.cissychen.com/comments.js"></script>
+<script defer="" src="https://hub.cissychen.com/search.js"></script>
+<script defer="" src="https://hub.cissychen.com/index-button.js"></script>
+<script defer="" src="https://hub.cissychen.com/i18n-tts.js"></script>
+</body></html>
