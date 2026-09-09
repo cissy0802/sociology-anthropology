@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>社会学与人类学 Day 16：种族与族群</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:linear-gradient(170deg,#1a140f,#171210 42%,#120e0b);color:#e6dacc;line-height:1.9;min-height:100vh}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 60px}
+header{padding:52px 0 30px;border-bottom:1px solid #33261d}
+header .kicker{font-size:0.75rem;color:#8fb0cc;letter-spacing:2.5px;font-family:"SF Mono",Menlo,monospace}
+header h1{font-size:2.1rem;font-weight:800;background:linear-gradient(100deg,#e08155,#eda07c 58%,#8fb0cc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:0.5px;margin-top:12px;line-height:1.28}
+header h2{font-size:1rem;color:#a08b78;margin-top:10px;font-weight:400}
+header .meta{margin-top:14px;font-size:0.85rem;color:#a08b78}
+header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
+.intro{margin-top:30px;font-size:1.02rem;color:#d8c9b8}
+.intro p{margin-bottom:13px}
+.section{margin:46px 0;background:rgba(255,255,255,0.028);padding:28px 26px;border-radius:14px;border:1px solid rgba(255,255,255,0.06)}
+.section .num{display:inline-block;font-size:0.75rem;color:#e08155;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;margin-bottom:8px}
+.section h2{font-size:1.32rem;color:#f4ece2;margin-bottom:16px;font-weight:700;line-height:1.35}
+.section p{margin-bottom:14px;font-size:0.98rem}
+.section strong{color:#fff}
+.section em{color:#e08155;font-style:normal}
+.section ul{list-style:none;margin:14px 0}
+.section li{margin-bottom:10px;padding-left:20px;position:relative}
+.section li::before{content:"◈";position:absolute;left:0;top:0.42em;color:#e08155;font-size:0.7rem}
+.fig{margin:24px 0 10px;text-align:center}
+.fig svg{max-width:100%;height:auto}
+.fig .cap{font-size:0.82rem;color:#a08b78;margin-top:8px;text-align:left;line-height:1.65}
+.en-brief{margin-top:18px;padding:12px 16px;border-left:2px solid rgba(160,139,120,0.5);background:rgba(255,255,255,0.02);border-radius:0 8px 8px 0;font-size:0.85rem;color:#b0a08e;line-height:1.62}
+.en-brief b{color:#bda994;font-family:"SF Mono",Menlo,monospace;font-size:0.68rem;letter-spacing:1.5px;margin-right:9px;font-weight:700}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(143,176,204,0.12),rgba(224,129,85,0.05));border:1px solid rgba(143,176,204,0.34);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#8fb0cc;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#dfe3e6;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e08155;font-size:0.72rem}
+.crossx b{color:#aecbe2;font-weight:600}
+.thinking{background:linear-gradient(135deg,rgba(224,129,85,0.06),rgba(143,176,204,0.05));border:1px solid rgba(224,129,85,0.24);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e08155;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(18,14,11,0.5);border:1px solid rgba(224,129,85,0.2);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(224,129,85,0.06);border-color:rgba(224,129,85,0.42)}
+.thinking summary{cursor:pointer;color:#eda07c;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#8fb0cc}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(143,176,204,0.22);color:#ddd0c1;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#8fb0cc;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a08b78}
+.refs a{color:#e08155;text-decoration:none;border-bottom:1px dotted rgba(224,129,85,0.42)}
+.refs a:hover{color:#eda07c;border-bottom-color:#eda07c}
+.bigcat{margin:40px 0 0;background:linear-gradient(135deg,rgba(224,129,85,0.11),rgba(143,176,204,0.04));border:1px solid rgba(224,129,85,0.32);border-radius:14px;padding:22px 26px}
+.bigcat h3{color:#eda07c;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.bigcat ul{list-style:none;margin:0}
+.bigcat li{color:#ece0d2;font-size:0.93rem;line-height:1.8;margin-bottom:14px}
+.bigcat li:last-child{margin-bottom:0}
+.bigcat b{color:#eda07c;font-weight:600}
+footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
+@media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+</style></head><body>
+<div class="container">
+<header>
+<div class="kicker">DAY 16 · 种族与族群</div>
+<h1>种族与族群</h1>
+<h2>这一期最反直觉的一句：人不停地从边界这边走到那边，边界反而更清楚</h2>
+<div class="meta">2026-09-09 · BigCat</div>
+<div class="pitch">同一张脸，在这个国家的表格上该填一个格子，飞一趟海就该填另一个——而两边的表格都不觉得自己在做选择。</div>
+</header>
+<div class="intro">
+<p>到一个陌生地方，有人问你「你是哪里人」。答案随着问的人在变：同城的你报到区，外省的你报到省，外国人你报国家。哪个都不假，哪个都不是全部。而且你几乎不用想——嘴自动挑好了那一层。</p>
+<p>这一页拆三件事：族群边界靠什么维持住（提示：不靠两边文化差多少）；一个族群名称什么时候真的变成一群能一起行动的人；同一批人被两套分类体系切开时会发生什么。本页只把各家最强的说法摆出来、标清证据有多硬，判断留给你。</p>
+</div>
+<div class="section">
+<span class="num">// 01</span>
+<h2>一户人家攒够了牛，几年后就换了族——那道边界还在原地</h2>
+<p>这门学科长期默认族群像一个个袋子：里面装着语言、衣着、习俗、婚配规则，袋子的边缘就是这些东西开始不一样的地方。1969 年，挪威人类学家 Fredrik Barth 编的一本论文集把次序倒了过来。</p>
+<p>书里 Gunnar Haaland 那章讲 1960 年代苏丹达尔富尔的田野。当地两拨人相邻而居：Fur 是种小米的定居农民，Baggara 赶着牛群走。一户 Fur 人家攒下几头牛，在村里没处投——地扩不了，也养不了大群，最划算的是离开村子跟着牧群走。几年之后这家日常说阿拉伯语，孩子在牛群里长大，周围人开始把他们算作 Baggara，他们自己报的也是。<strong>人跨过去了，边界一动没动。</strong></p>
+<p>Barth 自己那章讲人为什么跨。做一个 Pathan 要一直做到位：有地，能在自家男客厅（hujra）待客，能在长老议事会（jirga）上说得上话；地丢了的人按这套标准就是失败者，且翻不了身——那套组织是平等主义的，容不下没地的成员。南边 Baluch 那侧有层级，能用投靠契约吸收外来户，没地的人在那边是某位首领的门下，不是一个失败的 Pathan。所以人只往一个方向流。<strong>决定往哪走的不是文化像不像，是哪边有站得住的位子。</strong></p>
+<div class="fig">
+<svg viewbox="0 0 640 200" xmlns="http://www.w3.org/2000/svg">
+<rect fill="rgba(143,176,204,0.10)" height="120" rx="10" width="230" x="40" y="40"></rect>
+<rect fill="rgba(224,129,85,0.10)" height="120" rx="10" width="230" x="370" y="40"></rect>
+<line stroke="#e08155" stroke-width="2.6" x1="320" x2="320" y1="26" y2="174"></line>
+<g fill="none" stroke="#a08b78" stroke-width="1.6" marker-end=""><path d="M200 78 L430 78"></path><path d="M200 112 L430 112"></path><path d="M200 146 L430 146"></path></g>
+<g fill="#a08b78"><path d="M430 78 l-9 -4 v8 z"></path><path d="M430 112 l-9 -4 v8 z"></path><path d="M430 146 l-9 -4 v8 z"></path></g>
+<g fill="#dfe3e6" font-family="Georgia,serif" font-size="12" text-anchor="middle"><text x="155" y="34">这一侧</text><text x="485" y="34">那一侧</text></g>
+<g fill="#a08b78" font-family="Georgia,serif" font-size="11" text-anchor="middle"><text x="155" y="62">人 · 牛 · 语言</text><text x="485" y="62">人 · 牛 · 语言</text></g>
+<text fill="#e08155" font-family="Georgia,serif" font-size="11.5" text-anchor="middle" x="320" y="192">流量很大，界线不动</text>
+</svg>
+<div class="cap">Barth 的翻转示意。旧问法：袋子里装的东西差多少。新问法：这么大的流量之下，那条线为什么还在。</div>
+</div>
+<p>Barth 那句被引用了半个世纪的结论大意是：该盯的是<em>定义这个群体的那条边界，不是它围起来的文化材料</em>。边界靠两个动作一直在做才立得住——我把你归成某一类，你也自认某一类（学界叫互归与自归，ascription and self-ascription）。这两个动作还在做，两边通婚、通商、说同一种语言，边界照样在。文化差异不是边界的原因，更像它的产物。</p>
+<p>这套说法挨的最重的批评是太像在算账：如果换族群可以权衡，怎么解释有人为族群去死？回应都不否认边界是被维持出来的，争的是维持成本多高——有的地方那是一扇门，有的地方是一堵墙。证据强度：1960 年代的民族志个案，不能当统计代表性；同一片地区后来几十年边界硬得多，<strong>这本身提示软硬不是边界的固有属性。</strong></p>
+<p class="en-brief"><b>EN</b> For a long time the field treated ethnic groups as bags: language, dress, custom and marriage rules inside, and the edge of the bag wherever those things start to differ. In 1969 the Norwegian anthropologist Fredrik Barth edited a volume that reversed the order. In it, Gunnar Haaland's chapter reports 1960s fieldwork in Darfur, Sudan, where two neighbouring populations lived side by side: the Fur, settled millet farmers, and the Baggara, cattle nomads. A Fur household that accumulated cattle had almost nowhere to invest inside the village economy — no more land, no room for a large herd — so the paying move was to leave and follow the herding routes. After some years such a household spoke Arabic day to day, its children grew up among the cattle, neighbours counted them as Baggara and they described themselves that way. People crossed; the boundary did not move. Barth's own chapter concerns another boundary and makes the point sharper. Being a Pathan has to be performed continuously: holding land, hosting in one's men's house (hujra), speaking in the council (jirga). A man who loses his land fails by Pathan standards and cannot recover, because that organisation is egalitarian and has no place for a landless member. On the Baluch side the organisation is hierarchical and absorbs outsiders through contracts of clientage, so a landless man there is a chief's dependant rather than a failed Pathan. Movement therefore runs one way only, and what decides the direction is not cultural similarity but where a viable position exists. Barth's conclusion, quoted for half a century since: what to study is the boundary that defines the group, not the cultural stuff it encloses. The boundary is held in place by two acts that keep being performed — I assign you to a category, and you assign yourself to one (ascription and self-ascription). While those continue, the two sides can intermarry, trade and share a language and the boundary still stands. Cultural difference is less the cause of the boundary than its product: once the line holds, each side has reason to make itself look unlike the other. The heaviest criticism is that this reads like accounting — if switching can be weighed up, why do people die for ethnicity? Two lines of reply: crossability varies enormously between places (a door in one, a wall in another), and long membership becomes internalised and hard to renounce. Neither denies that boundaries are maintained; they argue over how costly the maintenance is. Evidence: 1960s ethnographic cases, clear mechanism, not statistically representative — and boundaries in that same region hardened greatly in later decades, which itself suggests hardness is not intrinsic to a boundary.</p>
+</div>
+<div class="section">
+<span class="num">// 02</span>
+<h2>大多数日子里，没有人在过族群生活</h2>
+<p>新闻里写「A 族和 B 族关系紧张」时，句子的主语是两个群体，像两个能商量、能决定、能一起动手的东西。社会学家 Rogers Brubaker 2002 年那篇《没有群体的族性》就冲着这一步去：它是白送的，得先证明。</p>
+<p>要分开的是两样东西。<em>族群类别</em>是一个名称、一栏、登记表上的一格；<em>族群群体</em>是真能一致行动的一群人。前者到处都是，后者稀少，要花很大力气才造得出来。所以<strong>群体性（groupness）是个变量</strong>：它会「发作」，不是一直在那儿等着被激活。</p>
+<p>他和几位同事把这说法拿到田野里试：2000 年前后在罗马尼亚一座罗马尼亚语与匈牙利语双语的城市（Cluj／Kolozsvár）做了几年访谈和观察。那城当时的公共政治语言极度族群化，连路灯杆漆什么色都有讲究。可他们看日常——买菜、上班、抱怨物价——<em>大部分时候族群根本没被提起</em>，人们用的是别的分类（同事、邻居、有钱没钱）；说哪种语言多半随对方会不会来定，不是表态。</p>
+<p>把族群推到前台的往往是有组织的一方：政党、协会、报纸、学校怎么编班。由此有一条很重的提醒：<strong>「某个组织在为某族群发言」不能当成「这个族群是一个群体」的证据</strong>——组织是真的，代表性得单独证明。这跟「越轨与标签」那期一路：类别被谁拿去用，比它准不准更能决定后果。</p>
+<p>批评也强。一是容易被误读成「族群不重要」——Brubaker 自己反复否认：类别不必是群体，照样能决定一个人被怎么对待（下一节全是这类证据）。二是在暴力反复发生的地方，说群体性只是个变量太轻飘。<strong>能稳稳说住的只是：群体性高的时候需要解释，不能当默认状态。</strong>证据强度：一座城市的多年田野，不能外推；这条更像一条分析纪律——它逼你把「群体在行动」拆成「谁在组织、谁在响应」。</p>
+<p class="en-brief"><b>EN</b> When a report says "relations between group A and group B are tense", the subject of the sentence is two groups, as if each were a thing that can deliberate, decide and act. Rogers Brubaker's 2002 article aimed straight at that move: "Ethnicity without Groups". The step, he argued, is given away for free and has to be earned. He separates two things. An ethnic category is a name, a column, a box on a form. An ethnic group is a set of people who can actually act in concert. Categories are everywhere; groups are rare and expensive to produce. His formulation: groupness is a variable that rises and falls — groupness happens, as an event, rather than sitting there waiting to be activated. He and several colleagues took the claim into the field. Around 2000 they spent several years interviewing and observing in a Romanian–Hungarian bilingual town in Romania (Cluj/Kolozsvár), publishing the book in 2006. Public political language there was intensely ethnicised at the time, down to the colour the lamp-posts were painted. But in everyday life — shopping, working, complaining about prices, falling in love — ethnicity mostly went unmentioned, and people used other categories: colleague, neighbour, whether someone has money. Which language got spoken depended more on what the other person understood than on any stance. Ethnicity was unmarked background, pushed to the front only in particular settings. What pushes it forward is usually an organised party: political parties, associations, newspapers, how a school sorts its classes. Hence a warning that sounds technical and is not: that an organisation speaks for an ethnic group is not evidence that the group is a group. The organisation is real; its representativeness has to be shown separately. This runs with the mechanism from the page on deviance and labelling — who picks a category up matters more for the consequences than whether the category is accurate. The account draws hard criticism too. First, it is easily misread as "ethnicity does not matter", which Brubaker repeatedly denies: a category need not be a group to determine how a person is treated, as the next section is entirely about. Second, where violence recurs, calling groupness a variable can sound weightless to the people living there. What holds is narrower: high groupness is the thing that needs explaining, and must not be assumed as the default state. Evidence: several years of fieldwork and interviews in one town, clear mechanism, not generalisable; and "groupness is a variable" is less a falsifiable empirical claim than a discipline of analysis — it forces "the group acted" to be unpacked into who organised and who responded.</p>
+</div>
+<div class="section">
+<span class="num">// 03</span>
+<h2>同一张脸，在两个国家的表格上填不同的格子</h2>
+<p>1976 年，巴西的国家统计机构做全国住户抽样调查，把「肤色」那道题改成不给选项、让人自己说。收回来的答案有 136 种。官方表格上只有五格：白、黑、褐（parda）、黄、原住民。</p>
+<p>美国那侧跟着<em>血统</em>走而不是外观。19 世纪末的普查表上还有「四分之一」「八分之一」这样的格子，到 1930 年前后收敛成一条规则——有一点非白人祖先就归到非白人一侧（通称一滴血规则）。直到 2000 年才第一次允许一个人勾多个格子。</p>
+<div class="fig">
+<svg viewbox="0 0 640 220" xmlns="http://www.w3.org/2000/svg">
+<defs><lineargradient id="sk" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#f0e2d2"></stop><stop offset="1" stop-color="#4a3225"></stop></lineargradient></defs>
+<rect fill="url(#sk)" height="24" rx="12" width="520" x="60" y="44"></rect>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="11" text-anchor="middle" x="320" y="34">同一批人，外观连续</text>
+<g stroke="#8fb0cc" stroke-width="1.6"><line x1="150" x2="150" y1="86" y2="112"></line><line x1="250" x2="250" y1="86" y2="112"></line><line x1="360" x2="360" y1="86" y2="112"></line><line x1="470" x2="470" y1="86" y2="112"></line></g>
+<text fill="#8fb0cc" font-family="Georgia,serif" font-size="11" text-anchor="middle" x="320" y="130">切法一：按外观切格，同一家的兄弟姐妹可落进不同格</text>
+<line stroke="#e08155" stroke-dasharray="6 4" stroke-width="1.8" x1="105" x2="105" y1="150" y2="176"></line>
+<text fill="#e08155" font-family="Georgia,serif" font-size="11" text-anchor="middle" x="320" y="194">切法二：按血统切一刀，不看长相</text>
+</svg>
+<div class="cap">两种分类逻辑的示意（非任何一国的实际口径）。切法一变，按类别汇总的数字跟着变，而人一个没动。</div>
+</div>
+<p>格子还会自己动：2022 年那次巴西全国普查，自报 parda 的比例（45.3%）第一次超过自报 branca（约 43.5%），而这段时间并没有对应规模的人口变动。<strong>变的是人怎么填，不是人。</strong>社会学家 Edward Telles 的调查里还有一条：自报的类别和访员判定的经常对不上，对不上的方向和这人的教育、收入有关。</p>
+<p>到这儿很容易滑向下一句：所以这些类别是假的、不该当真。证据不支持这一步。Quillian 等人 2017 年把 1989 至 2015 年间美国的寄简历实地实验做了元分析：同一份简历配上暗示不同族裔的名字，白人名字平均比非裔美国人名字多拿到约 36% 的回电，二十多年基本没动。同一批人 2019 年的跨国研究覆盖九个欧美国家、97 项实验、二十多万份申请：最高的国家里白人本地人的回电接近少数族裔的两倍，最低的只多约 25%。<strong>类别是切上去的，后果是实打实的；而它在不同制度下差好几倍，说明它是被生产出来的，不是恒定的。</strong></p>
+<p>是什么在生产？两条互不排斥的解释一直在争：一条说筛简历的人对某些名字有直接的负评价，一条说筛的人拿类别当信息用来省事（这叫统计性歧视，statistical discrimination）。回电数据本身分不开，<em>这是本页最该说「还没定论」的地方</em>；而且它测的是回电，不是最终录用。</p>
+<p>分类体系本身也是政策工具，两边最强的说法同样摆出来。法国几乎不采集族裔统计（1978 年的数据法禁止采集这类数据，2007 年宪法委员会又否决了为测量歧视开口子的条款），背后既有「公民不分出身」的共和原则，也有二战期间登记造册被用于迫害的记忆：<strong>国家一旦按族裔登记人，就在生产它想消除的那个分类。</strong>英美等国走反方向，理由同样硬：<strong>不采集就无法测量，差距会因不可见而无人负责。</strong>没有免费选项，本页不裁判。</p>
+<p>这三节推不出任何一条「所以该怎么做」——那是价值判断，不在这门学科的量程里。<strong>能说的只是：任何主张都得指名它打的是哪个机制</strong>——维持边界的那两个动作、把类别做成群体的那些组织，还是分派环节的差别对待。打错了，指标动了，机制没动。</p>
+<p class="en-brief"><b>EN</b> In 1976 Brazil's national statistics agency ran its household survey with the colour question left open — no options, describe yourself — and got back 136 distinct terms. The official form has five boxes: white, black, parda (brown), yellow, indigenous. The United States went the other way, classifying by descent rather than appearance: late-nineteenth-century census forms still had "quadroon" and "octoroon" boxes, and by around 1930 this collapsed into a rule under which any non-white ancestry placed a person on the non-white side (the one-drop rule). That same 1930 census counted "Mexican" as a race and 1940 dropped it again. Only in 2000 could a person mark more than one box. The sociologist Edward Telles found in Brazilian survey work that respondents' self-classification and interviewers' classification often disagree, and that the direction of disagreement correlates with the person's education and income. The boxes also move on their own: in the 2022 national census the share self-reporting as parda (45.3%) exceeded the share reporting branca (about 43.5%) for the first time, with preta about 10.2% — with no demographic change on anything like that scale. What changed is how people fill the form, not the people. It is tempting to conclude that the categories are therefore fake and should not be taken seriously. The evidence does not support that step. Quillian and colleagues' 2017 meta-analysis pooled United States résumé field experiments from 1989 to 2015: identical résumés carrying names cueing different ethnicities, and white names drew on average about 36% more callbacks than African American names, a gap essentially unchanged across twenty-five years. The categories are cut, and the consequences are real. What shows this is not a constant of human nature is the same team's 2019 cross-national study: nine countries in Europe and North America, 97 field experiments, over 200,000 applications. Countries differ widely — in the highest-discrimination countries white natives received nearly twice the callbacks of minorities; in the lowest, about 25% more. A difference of several times across institutional settings means the outcome is produced by something rather than fixed. What produces it is contested, with at least two non-exclusive accounts: that screeners hold a direct negative evaluation of certain names, or that they use the category as a shortcut for information (statistical discrimination). Callback data alone cannot separate the two. This is where the page most needs to say that there is no verdict yet. Evidence: meta-analysed field experiments, the firmest item here — but it measures callbacks, not final hiring. Classification systems are themselves policy instruments, so both strongest cases go on the table. France essentially does not collect ethnic statistics: a 1978 data law forbids collecting such personal data, and in 2007 the Constitutional Council struck down a provision that would have opened a path for measuring discrimination. Behind this lie both the republican principle that citizens are counted without regard to origin and the historical memory of registration being used for persecution during the Second World War. The case: once a state starts registering people by ethnicity it is producing the very classification it wants to dissolve. Britain, the United States and others run the opposite way on an equally hard argument: what is not collected cannot be measured, and gaps that are invisible are nobody's responsibility. Neither side is saying anything false; the conflict is real, and there is no free option between measurability and the cost of being registered. This page does not adjudicate. What these three sections support is limited: how boundaries are maintained, how groups get produced, and at which point consequences arise. They yield no "therefore we should" — whether to collect statistics, whether to design policy by category, are value judgements outside this discipline's measuring range. What can be said is that any proposal must name the mechanism it targets: the two acts that maintain a boundary, the organisations that turn a category into a group, or differential treatment at the point of assignment. Aim wrong and the indicator moves while the mechanism does not.</p>
+</div>
+<div class="bigcat">
+<h3>🎒 场景 · BigCat</h3>
+<ul>
+<li><b>① 工程与系统设计</b>——一个枚举字段（客户类型、渠道来源）当初定了五个值，两年后报表还按这五格出，没人注意到「其他」已经占了三成多：前端只能选这五个，不像的全被塞进「其他」。跑的是「同一张脸，在两个国家的表格上填不同的格子」那节的机制：格子是切上去的，下游统计全继承这个切法，格子还会反过来塑造被记录的行为。可改的：给每个枚举字段配一条固定报表——「其他」占比与增长率，过阈值就重新切分；采集端保留自由文本原值。停掉：跨期比枚举统计而不查口径是否同一套。</li>
+<li><b>② 修行与心性</b>——观呼吸时一个念头刚起，你就给它贴了名字：「这是焦虑」「这又是攀比」，贴完之后你处理的是那个名字，不是那个念头。跑的是「大多数日子里，没有人在过族群生活」那节的机制：类别是被某个动作点亮的，点亮之后类内差别被压平。可改的：把观察和命名分成两步——先记下具体质地（哪个部位、持续多久、随呼吸变不变），再决定要不要归类。停掉：给同一件事反复贴同一个标签。</li>
+</ul>
+</div>
+<div class="crossx">
+<h3>🌀 越界 · 跨学科的联想</h3>
+<ul>
+<li><b>物理与数学 · 一条被大量穿过、却依然存在的边界，在数学上一点也不奇怪</b>：图论里有个东西叫「割」——把网络的点分成两堆，跨过去的边叫割边。一个割可以被极多的边穿过，它仍然是那个割；判断有没有社区结构的量（模块度）看的从来不是跨界连边的<b>绝对数量</b>，而是它相对于「随机混起来该有多少」的偏离。跑的是「一户人家攒够了牛」那节的机制：<b>边界靠持续维持，不靠密封</b>。由此推出一个原本看不出的结论：<b>「他们已经通婚、通商、说同一种语言了，所以族群差异在消失」这个推论无效</b>——跨界互动的绝对量增加，完全可能伴随相对于随机期望的偏离不降反升。这是可算的：普查的婚配交叉表就能算出同类相配的强度，逐年比那个比值，不是比总数。<b>但这里不成立</b>：图上的割是分析者事后切的，节点不会因为被划到哪边就改变自己去连谁；族群边界会——被归到哪一格会改变一个人被谁接纳、跟谁通婚，于是下一期的网络已经被上一期的切法改造过。</li>
+<li><b>神经科学与意识 · 知觉系统天生就在连续量上切格子，但它切不出边界画在哪</b>：语音研究里有个稳固现象叫类别知觉——把一段声音沿一条连续的物理维度慢慢改，人听到的却是「巴」突然变成「帕」，中间那段被压掉了；颜色和面孔上也有类似压缩。面孔这侧还有个被反复复制的发现：辨认自己不常接触的那类面孔更差，且与接触量有关。跑的是「同一张脸，在两个国家的表格上填不同的格子」那节的机制：<b>切格子这个动作本身会压平格内差异、放大跨格差异</b>。由此推出一个原本看不出的结论：<b>「他们看着都差不多」不需要任何敌意就能产生</b>，它是知觉训练量的副产品；因此改变态度的干预不该期待它变化，增加跨类别接触量的干预才该——两类干预可以分开测。<b>但这里不成立</b>：知觉窄化在一个人脑袋里、几百毫秒，本期机制跑在登记表和几十年上；更要命的是知觉解释不了边界画在哪——同一张脸在两个国家被切进不同格子，两地的知觉系统是一样的。</li>
+</ul>
+</div>
+<div class="thinking">
+<h3>深入思考</h3>
+<details><summary>如果边界靠互归与自归维持，那「归错了」是什么意思？</summary>
+<div>按这套说法，没有一个独立于人们实际怎么归类的「正确答案」可拿来对照。但也不是怎么归都行：归类要生效，得被别人接着用——你自认某类而周围没人这么待你，这个类别就没跑起来。可查的痕迹是自报类别与他人判定的差距，以及它和什么相关。</div>
+</details>
+<details><summary>为什么有的边界给的是一扇门，有的是一堵墙？</summary>
+<div>Barth 那两个案例里，能跨过去靠的是对面有一种容纳外来户的组织形式（投靠契约、跟着牧群走的生计）。反过来，当归属被写进出生登记、财产继承、通婚规则这些不由当事人决定的制度时，跨越成本就跳升。这提示「软硬」可以拆成具体条目去查。</div>
+</details>
+<details><summary>「群体性是变量」这条，怎么才能被证明是错的？</summary>
+<div>它的麻烦在于太好用：族群显著时说群体性发作了，不显著时说它低。要让它可查，得预先指定哪些场合会点亮它（学校编班、选举动员），再看同一批人在这些场合和别的场合的行为差异。测不出差异，这说法就得往回退。</div>
+</details>
+</div>
+<div class="refs">
+<h3>延伸阅读</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Fredrik_Barth" rel="noopener" target="_blank">Fredrik Barth 与《族群与边界》(1969)</a> · <a href="http://www.bylany.com/kvetina/kvetina_etnoarcheologie/literatura_eseje/2_literatura.pdf" rel="noopener" target="_blank">该书导论 PDF</a>（英文）</li>
+<li><a href="https://www.hup.harvard.edu/books/9780674022317" rel="noopener" target="_blank">Brubaker, Ethnicity without Groups (2004, Harvard)</a> · <a href="https://press.princeton.edu/books/paperback/9780691136226/nationalist-politics-and-everyday-ethnicity-in-a-transylvanian-town" rel="noopener" target="_blank">Nationalist Politics and Everyday Ethnicity in a Transylvanian Town (2006)</a>（英文）</li>
+<li><a href="https://www.pnas.org/doi/abs/10.1073/pnas.1706255114" rel="noopener" target="_blank">Quillian 等，招聘歧视的实地实验元分析 (2017, PNAS)</a> · <a href="https://sociologicalscience.com/articles-v6-18-467/" rel="noopener" target="_blank">97 项实地实验的跨国比较 (2019, Sociological Science)</a>（英文）</li>
+<li><a href="https://en.wikipedia.org/wiki/Race_and_ethnicity_in_Brazil" rel="noopener" target="_blank">巴西的种族分类（含 1976 年开放式调查）</a> · <a href="https://en.wikipedia.org/wiki/2022_Brazilian_census" rel="noopener" target="_blank">2022 年巴西普查</a>（英文）</li>
+<li><a href="https://en.wikipedia.org/wiki/Race_and_ethnicity_in_the_United_States_census" rel="noopener" target="_blank">美国普查种族分类变迁史</a> · <a href="https://en.wikipedia.org/wiki/One-drop_rule" rel="noopener" target="_blank">一滴血规则</a>（英文）</li>
+<li><a href="https://www.insee.fr/en/information/2388586" rel="noopener" target="_blank">法国统计局关于「族裔统计」的说明</a>（英文）· <a href="https://www.conseil-constitutionnel.fr/actualites/communique/decision-n-2007-557-dc-du-15-novembre-2007-communique-de-presse" rel="noopener" target="_blank">2007 年宪法委员会决定新闻稿</a>（法文）</li>
+</ul>
+</div>
+<footer>BigCat Learning Hub · Sociology &amp; Anthropology</footer>
+</div>
+<script defer="" src="https://hub.cissychen.com/comments.js"></script>
+<script defer="" src="https://hub.cissychen.com/search.js"></script>
+<script defer="" src="https://hub.cissychen.com/index-button.js"></script>
+<script defer="" src="https://hub.cissychen.com/i18n-tts.js"></script>
+</body></html>
