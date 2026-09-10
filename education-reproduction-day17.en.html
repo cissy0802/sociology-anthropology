@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sociology &amp; Anthropology Day 17: Education and Reproduction</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:linear-gradient(170deg,#1a140f,#171210 42%,#120e0b);color:#e6dacc;line-height:1.9;min-height:100vh}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 60px}
+header{padding:52px 0 30px;border-bottom:1px solid #33261d}
+header .kicker{font-size:0.75rem;color:#8fb0cc;letter-spacing:2.5px;font-family:"SF Mono",Menlo,monospace}
+header h1{font-size:2.1rem;font-weight:800;background:linear-gradient(100deg,#e08155,#eda07c 58%,#8fb0cc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:0.5px;margin-top:12px;line-height:1.28}
+header h2{font-size:1rem;color:#a08b78;margin-top:10px;font-weight:400}
+header .meta{margin-top:14px;font-size:0.85rem;color:#a08b78}
+header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
+.intro{margin-top:30px;font-size:1.02rem;color:#d8c9b8}
+.intro p{margin-bottom:13px}
+.section{margin:46px 0;background:rgba(255,255,255,0.028);padding:28px 26px;border-radius:14px;border:1px solid rgba(255,255,255,0.06)}
+.section .num{display:inline-block;font-size:0.75rem;color:#e08155;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;margin-bottom:8px}
+.section h2{font-size:1.32rem;color:#f4ece2;margin-bottom:16px;font-weight:700;line-height:1.35}
+.section p{margin-bottom:14px;font-size:0.98rem}
+.section strong{color:#fff}
+.section em{color:#e08155;font-style:normal}
+.section ul{list-style:none;margin:14px 0}
+.section li{margin-bottom:10px;padding-left:20px;position:relative}
+.section li::before{content:"◈";position:absolute;left:0;top:0.42em;color:#e08155;font-size:0.7rem}
+.fig{margin:24px 0 10px;text-align:center}
+.fig svg{max-width:100%;height:auto}
+.fig .cap{font-size:0.82rem;color:#a08b78;margin-top:8px;text-align:left;line-height:1.65}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(143,176,204,0.12),rgba(224,129,85,0.05));border:1px solid rgba(143,176,204,0.34);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#8fb0cc;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#dfe3e6;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e08155;font-size:0.72rem}
+.crossx b{color:#aecbe2;font-weight:600}
+.thinking{background:linear-gradient(135deg,rgba(224,129,85,0.06),rgba(143,176,204,0.05));border:1px solid rgba(224,129,85,0.24);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e08155;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(18,14,11,0.5);border:1px solid rgba(224,129,85,0.2);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(224,129,85,0.06);border-color:rgba(224,129,85,0.42)}
+.thinking summary{cursor:pointer;color:#eda07c;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#8fb0cc}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(143,176,204,0.22);color:#ddd0c1;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#8fb0cc;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a08b78}
+.refs a{color:#e08155;text-decoration:none;border-bottom:1px dotted rgba(224,129,85,0.42)}
+.refs a:hover{color:#eda07c;border-bottom-color:#eda07c}
+.bigcat{margin:40px 0 0;background:linear-gradient(135deg,rgba(224,129,85,0.11),rgba(143,176,204,0.04));border:1px solid rgba(224,129,85,0.32);border-radius:14px;padding:22px 26px}
+.bigcat h3{color:#eda07c;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.bigcat ul{list-style:none;margin:0}
+.bigcat li{color:#ece0d2;font-size:0.93rem;line-height:1.8;margin-bottom:14px}
+.bigcat li:last-child{margin-bottom:0}
+.bigcat b{color:#eda07c;font-weight:600}
+footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
+@media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+</style></head><body>
+<div class="container">
+<header>
+<div class="kicker">DAY 17 · EDUCATION AND REPRODUCTION</div>
+<h1>Education and Reproduction</h1>
+<h2>The most counterintuitive line here: the more everyone sits the same exam, the more those who fail charge the result to themselves</h2>
+<div class="meta">2026-09-10 · BigCat</div>
+<div class="pitch">A selection anyone may enter, measured by one ruler for all, produces a ranking close to the one produced in the era before selection — except that this time everyone feels it was earned.</div>
+</header>
+<div class="intro">
+<p>Think of the one or two children in your primary school class. Not the ones with the best marks — the ones who talked to teachers the way you talk to an adult: who would ask "could I do this assignment a different way", who would put in a word for themselves when told off. Everyone else just nodded. The thing looks too small to mention, and the return on it is absurd.</p>
+<p>This page takes apart three things: school says it is picking talent, so what is it actually measuring; how the set of lessons that is not on the timetable gets learnt; and why, as everyone studies longer and longer, the same certificate buys less and less. The strongest version of each account goes on the table, with a label for how hard the evidence is; the judgement is yours.</p>
+</div>
+<div class="section">
+<span class="num">// 01</span>
+<h2>The answer was right, the way of saying it was wrong, so it counted as not answering well</h2>
+<p>The American sociologist Annette Lareau and her assistants got that small thing on record. In the mid-1990s they picked twelve households out of an interview sample of 88, and spent three weeks with each around a child of about ten: at the dinner table, at the edge of the ball field, in the doctor's office, at parents' evening.</p>
+<p>She saw two logics of raising children. Middle-class families packed the child's schedule with organised activities, reasoned with them, and encouraged them to make requests of teachers and doctors (she calls this concerted cultivation). Working-class and poor families got food, clothing and safety solidly handled and let the child grow on their own (the accomplishment of natural growth), and dealt with institutions more by keeping a distance and not causing trouble.</p>
+<p>The point is not which one is better. It is that <strong>one of them happens to match what institutions like schools and hospitals expect</strong>. In the surgery, one child interrupted the doctor with a question and the doctor explained two things more; another had been told beforehand not to talk so much, and came out with nothing extra. The same behaviour is called quick in one setting and rude in another — and the ruling is made by the institution, not at home.</p>
+<p>The harshest statement of this chain comes from Bourdieu and Passeron. In 1964 they set out the social origins of French university students: in the academic year 1961–62, children of senior executives and the intellectual professions had roughly 42 times the chance of entering university that children of workers had.</p>
+<p>Their real target was not that gap but <em>how school makes it look deserved</em>. Everyone sits the same exam and is ranked by the same ruler, so those who lose charge the result to themselves — not clever enough, not hard-working enough. School therefore does not merely pass the gap on; it translates origin into talent, and talent into merit. That step is what they call méconnaissance: the real mechanism is taken by the participants for something else, and the people who get it wrong have signed off on it themselves. As for what the ruler measures — how you speak, whether you stay at ease in front of authority — the page on cultural capital and habitus covered how those get accumulated at home, day by day.</p>
+<p>Two criticisms of this account are hard ones. First, it is difficult to falsify: any outcome at all can be described as reproduction. Second, in later quantitative work, cultural capital does have measurable effects on attainment, but they are generally smaller than the original theory expected, and they vary a lot between countries. And one fact cannot be skipped: educational expansion really has put more people through school — while, as the page on social stratification separated out, absolute mobility and relative mobility are two different numbers. <strong>What holds up is that chain of translation, not "school does nothing".</strong> Evidence: Lareau is deep fieldwork on twelve households, giving mechanism rather than distribution; the French figures are administrative statistics from over sixty years ago.</p>
+</div>
+<div class="section">
+<span class="num">// 02</span>
+<h2>The bell rings and you switch subject whatever you were thinking about — that is also a lesson, given daily</h2>
+<p>Bells, raised hands, queues, handing work in on time, dropping one task for another on command. Not one of these is written on the timetable, and each is drilled dozens of times a day. Drilled long enough, it stops looking like a rule and starts looking like the way the world is.</p>
+<p>In the 1978–79 school year the education scholar Jean Anyon spent a year in each of five New Jersey elementary schools, watching what "doing schoolwork" actually looked like in fifth grade. She sorted the five by the occupational make-up of their communities into four tiers: two working-class schools, one middle-class, one in an affluent professional community, one executive elite.</p>
+<p>The same arithmetic, four versions of what counts as doing it well. In the working-class schools, work meant following the steps, and getting it right meant having followed them. In the middle-class school, work meant arriving at the correct answer, by whatever route you chose. The affluent professional school stressed expression and creativity: what you handed in had to carry your own ideas. The executive elite school stressed analysis and reasoning, and students were required to answer for their own output. <strong>What is taught daily is not the content but which kind of authority relation makes work count as done right.</strong> This unwritten syllabus has a name: the hidden curriculum.</p>
+<p>Bowles and Gintis gave a harder version in 1976, the correspondence principle: the organisational form of school (grading, punctuality, obeying superiors, working for external rewards) corresponds one-to-one with the organisational form of the workplace. The criticism it draws is that this is too mechanical, treating students as blank pages to be written on.</p>
+<p>The strongest rebuttal comes from a piece of fieldwork (covered on the page about Marx's sociological legacy): in a boys' school in the English Midlands in the early 1970s, Paul Willis followed twelve working-class boys for a year and a half, then followed them into work for another six months. These lads simply did not believe that studying hard would get you up; they mocked the compliant openly and made manual work into a matter of masculinity. And it was precisely that resistance that walked them into the shop floor themselves. <strong>Reproduction does not require anyone to believe in it; seeing through it and doing the opposite can land you in the same place.</strong></p>
+<p>One classic study here needs its current status stated. In 1968 Rosenthal and Jacobson's <i>Pygmalion in the Classroom</i> picked students at random, told teachers they were about to bloom, and reported at year's end that this group had gained on intelligence tests. Three decades of replication went badly: Raudenbush's 1984 meta-analysis pooled a very small effect (d ≈ 0.14), and where teachers had already known the students for more than two weeks before the expectation was planted, the effect all but vanished. <strong>What stands is much narrower: teachers do treat different students differently, but "expectations can substantially raise intelligence" has not replicated.</strong></p>
+<p>Evidence: Anyon and Willis are both small-sample ethnographies, giving mechanism rather than distribution; the expectancy result is a meta-analysis with a small effect under tight conditions.</p>
+</div>
+<div class="section">
+<span class="num">// 03</span>
+<h2>The same certificate no longer buys what it bought twenty years ago</h2>
+<p>Degree requirements in job adverts keep being raised while the work barely changes. This is not an impression; it can be counted.</p>
+<p>Take the stock first. The share of people aged 25 and over in the United States holding a bachelor's degree or higher was 4.6% in 1940 and 37.9% in 2021. Same piece of paper, eight times as many holders.</p>
+<p>Now the threshold. In 2017 Joseph Fuller and Manjari Raman at Harvard Business School analysed 26 million job postings: for the job of production supervisor, 67% of the adverts demanded a college degree, while only 16% of the people then working as production supervisors had one. <strong>The bar sits well above the people currently doing the job, and the job is the same job.</strong></p>
+<div class="fig">
+<svg viewbox="0 0 640 200" xmlns="http://www.w3.org/2000/svg">
+<path d="M60 130 C110 130 120 74 175 74 C230 74 240 130 290 130" fill="rgba(143,176,204,0.14)" stroke="#8fb0cc" stroke-width="1.8"></path>
+<path d="M300 130 C350 130 360 74 415 74 C470 74 480 130 530 130" fill="rgba(224,129,85,0.14)" stroke="#e08155" stroke-width="1.8"></path>
+<line stroke="#8fb0cc" stroke-dasharray="5 4" stroke-width="1.6" x1="228" x2="228" y1="52" y2="146"></line>
+<line stroke="#e08155" stroke-dasharray="5 4" stroke-width="1.6" x1="468" x2="468" y1="52" y2="146"></line>
+<g fill="#a08b78" font-family="Georgia,serif" font-size="11" text-anchor="middle"><text x="175" y="164">Before: distribution of schooling</text><text x="415" y="164">Now: the whole thing shifts right</text></g>
+<g fill="#dfe3e6" font-family="Georgia,serif" font-size="11" text-anchor="middle"><text x="228" y="44">bar</text><text x="468" y="44">bar</text></g>
+<text fill="#e08155" font-family="Georgia,serif" font-size="11.5" text-anchor="middle" x="320" y="188">The bar travels with the distribution, so the share to the right of it hardly moves</text>
+</svg>
+<div class="cap">Schematic, not real data. What rises is the absolute level; what does not move is relative rank — and opportunities are handed out by rank.</div>
+</div>
+<p>The sociologist Randall Collins named the process in 1979: credential inflation. His argument is that educational expansion is driven mainly by status competition rather than by the skill demands of jobs — a credential behaves like a currency, worth less the more of it is issued, so everyone is forced to study longer and the bar rises to follow.</p>
+<p>Economics has a sharper version. Michael Spence's 1973 signalling model says that even if school teaches nothing at all, so long as getting through it costs less for the more able, the credential still sorts people and still commands a wage. It leaves a checkable trace: the jump in earnings in the year a degree is completed is clearly larger than the increment from one more year of study (the sheepskin effect). In 1996 Jaeger and Page recomputed this using survey data that recorded years of schooling and actual degrees separately, and put the bachelor's jump above 20%.</p>
+<p>But pure signalling is too strong. Natural experiments built on reforms to compulsory schooling — the law changes, a cohort is forced into an extra year, and they are comparable with those who just missed it — generally show a real causal return to education in earnings. <strong>Both components are present; how much each accounts for is still unsettled, and this is the place on the page that most deserves "no answer yet".</strong></p>
+<p>What matters more mechanically is the <em>positionality</em> of a credential: part of its value comes from who you are ahead of. Everyone studies three years longer, the ranking is unchanged and the costs all rise; and nobody can withdraw unilaterally — whoever does drops behind at once. This is exactly what follows an expansion: when the bachelor's stops separating people, employers look at the institution; when that stops separating them, at the master's, at the internship. <strong>The sorting device moves up a level, and the sorting has not paused for a second.</strong> With every level it moves up, more of the cost lands on the family's side — back on the chain from "the answer was right, the way of saying it was wrong".</p>
+<p>These three sections support no "therefore we should do X"; that is a value judgement, outside this discipline's measuring range. What can be said is that the three mechanisms have to be aimed at separately. Widening admission moves the positional one; the school's ruler and what the classroom rewards daily do not budge. Their evidence differs too — positionality has large-sample data behind it, the other two only the mechanism fieldwork supplies. <strong>Treating them as one thing is the commonest error on this topic.</strong></p>
+</div>
+<div class="bigcat">
+<h3>🎒 In Practice · BigCat</h3>
+<ul>
+<li><b>① Leading teams and organisations</b>——the onboarding handbook says "ask any time you have a question", but what the new hire sees in the first week's meetings is that whoever asks gets cut off with "let's take that offline", while whoever quietly finishes the work gets named and praised. Three weeks later they stop asking, and you read that as being up to speed. This runs the mechanism from "the bell rings and you switch subject": what is really taught is whatever gets rewarded repeatedly, not what is written down. What to change: skip the satisfaction survey and count something — the number of questions a new hire asks in public channels in their first 30 days (direct messages don't count; a direct message is precisely the sign they judge public asking to be costly). What to stop: postponing other people's questions in public.</li>
+<li><b>② Writing, and this learning site itself</b>——each time you write an issue you take the last one as the floor: the last one had a diagram, so this one can hardly go without; the last one ran long, so this one can hardly run short. Six months on, the pages are much longer and there is not much more new in them. This runs the positional mechanism from "the same certificate": the previous round's position defines this round's pass mark, the absolute quantity climbs, and the relative information content stays put. What to change: track an absolute quantity instead — how many independent studies not covered before this issue brings in; if the count is short, cut words rather than add them. What to stop: adding a structural element just because the last issue had one of that kind.</li>
+</ul>
+</div>
+<div class="crossx">
+<h3>🌀 Crossing Over · Connections Beyond the Field</h3>
+<ul>
+<li><b>Complexity science · Add one more road to a network and everyone can end up slower</b>: in 1968 Dietrich Braess proved a perverse result — in a network where every driver picks their own fastest route, adding a shortcut can make travel time longer for everyone, because it changes each individual's optimal choice and funnels traffic onto the same few stretches. This runs the positional mechanism from "the same certificate": <b>when each person's payoff depends on relative position, individual optima do not add up to a better collective outcome</b>. From which follows a conclusion you could not otherwise see: <b>"more places" and "better outcomes" are not necessarily connected and have to be measured separately</b> — after an expansion, what to watch is not enrolment numbers but whether employers' sorting devices moved up (the share of adverts asking for things beyond a degree: years, projects, internships). <b>But here it does not hold</b>: in Braess's setting travel time is an objectively measurable physical quantity and everyone agrees faster is better, so a "socially optimal allocation" is a point you can compute. In the credential race, "better" is itself defined by ranking, with no objective quantity independent of the ranking — the optimum an engineer could compute simply does not exist here.</li>
+<li><b>Distributed systems and AI · A model learns whatever kept getting rewarded, not the thing you meant to teach</b>: an image classifier calls a husky a wolf, and it turns out to be reading the snow in the background, because in the training set most wolf photographs were taken on snow (the well-known example from Ribeiro and colleagues' 2016 paper on explaining models); medical imaging models have been found to decide on the scanner model or a ruler mark in the picture, and to collapse at another hospital. The family of faults is called shortcut learning. This runs the mechanism from "the bell rings and you switch subject": <b>what is rewarded repeatedly is what actually gets taught, and it is often not on the syllabus</b>. From which follows a conclusion you could not otherwise see: <b>spending on more data, more compute, teaching the lesson more carefully does not change a shortcut already learnt; only changing the reward structure does</b> — and there is a test you can run: scramble the co-varying features (change the background, change the scanner, set a form of exam never drilled) and a collapse in scores tells you what was learnt was the co-variation. <b>But here it does not hold</b>: a model has no stance and will not rebel because it has seen through the shortcut. The lads Willis followed saw that school was sorting them and set themselves against it openly, and it was that very opposition that walked them onto the shop floor. When the thing being optimised has agency, the agency reroutes reproduction without necessarily changing where it ends up — and there is no counterpart to that layer in an optimisation system.</li>
+</ul>
+</div>
+<div class="thinking">
+<h3>Going Deeper</h3>
+<details><summary>If school swapped its ruler for another one, would the gap narrow?</summary>
+<div>Swapping the ruler certainly changes who benefits, but not necessarily the size of the gap — not as long as the ability the new ruler measures is still practised more in some families' ordinary days. This one is checkable: after a change in the form of assessment, did the strength of the correlation between results and family background move? If it did not, what changed was the form.</div>
+</details>
+<details><summary>What could ever show "the hidden curriculum" to be wrong?</summary>
+<div>Its trouble is that it is too handy: any phenomenon at all can be described as the hidden curriculum teaching something. To make it checkable you have to specify in advance — under which reward structure, which particular class of behaviour, increasing by how much and after how long. If that cannot be measured, the idea has to fall back to being a way of describing rather than a mechanism.</div>
+</details>
+<details><summary>If everyone saw through the fact that credentials are largely signals, would the inflation stop?</summary>
+<div>By the positional mechanism, no. Seeing through it does not change the payoff structure: the first person to withdraw drops behind immediately. Things like this are called positional goods — the individually optimal choice diverges from the collective result, and knowing that changes nothing you can do unilaterally. Stopping it would mean changing the allocation rule itself, which is a different question.</div>
+</details>
+</div>
+<div class="refs">
+<h3>Further Reading</h3>
+<ul>
+<li><a href="https://www.ucpress.edu/books/unequal-childhoods/paper" rel="noopener" target="_blank">Lareau, Unequal Childhoods (University of California Press)</a> · <a href="https://en.wikipedia.org/wiki/Unequal_Childhoods" rel="noopener" target="_blank">entry on the book</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Pierre_Bourdieu" rel="noopener" target="_blank">Bourdieu, with Les Héritiers (1964) and Reproduction (1970)</a> · <a href="https://theconversation.com/les-heritiers-ce-que-bourdieu-et-passeron-nous-ont-appris-de-linegalite-des-chances-177185" rel="noopener" target="_blank">a retrospective on the book's figures</a> (in French)</li>
+<li><a href="https://journals.sagepub.com/doi/10.1177/002205748016200106" rel="noopener" target="_blank">Anyon, Social Class and the Hidden Curriculum of Work (1980)</a> · <a href="https://www1.udel.edu/educ/whitson/897s05/files/hiddencurriculum.htm" rel="noopener" target="_blank">full text</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Learning_to_Labour" rel="noopener" target="_blank">Willis, Learning to Labour (1977)</a> · <a href="https://en.wikipedia.org/wiki/Schooling_in_Capitalist_America" rel="noopener" target="_blank">Bowles &amp; Gintis and the correspondence principle (1976)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Pygmalion_in_the_Classroom" rel="noopener" target="_blank">Pygmalion in the Classroom and the controversy over replicating it</a> · <a href="https://www.sciencedirect.com/science/article/abs/pii/S0160289699000264" rel="noopener" target="_blank">a history of that controversy</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Credentialism_and_educational_inflation" rel="noopener" target="_blank">Credential inflation and Collins, The Credential Society (1979)</a> · <a href="https://en.wikipedia.org/wiki/Signalling_(economics)" rel="noopener" target="_blank">Spence's signalling model (1973)</a> · <a href="https://en.wikipedia.org/wiki/Sheepskin_effect" rel="noopener" target="_blank">the sheepskin effect</a></li>
+<li><a href="https://www.census.gov/library/visualizations/time-series/demo/cps-historical-time-series.html" rel="noopener" target="_blank">US Census Bureau: historical series on educational attainment</a> · <a href="https://en.wikipedia.org/wiki/Braess%27s_paradox" rel="noopener" target="_blank">Braess's paradox</a></li>
+</ul>
+</div>
+<footer>BigCat Learning Hub · Sociology &amp; Anthropology</footer>
+</div>
+<script defer="" src="https://hub.cissychen.com/comments.js"></script>
+<script defer="" src="https://hub.cissychen.com/search.js"></script>
+<script defer="" src="https://hub.cissychen.com/index-button.js"></script>
+<script defer="" src="https://hub.cissychen.com/i18n-tts.js"></script>
+</body></html>

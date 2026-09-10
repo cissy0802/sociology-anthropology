@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>社会学与人类学 Day 17：教育与再生产</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:linear-gradient(170deg,#1a140f,#171210 42%,#120e0b);color:#e6dacc;line-height:1.9;min-height:100vh}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 60px}
+header{padding:52px 0 30px;border-bottom:1px solid #33261d}
+header .kicker{font-size:0.75rem;color:#8fb0cc;letter-spacing:2.5px;font-family:"SF Mono",Menlo,monospace}
+header h1{font-size:2.1rem;font-weight:800;background:linear-gradient(100deg,#e08155,#eda07c 58%,#8fb0cc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:0.5px;margin-top:12px;line-height:1.28}
+header h2{font-size:1rem;color:#a08b78;margin-top:10px;font-weight:400}
+header .meta{margin-top:14px;font-size:0.85rem;color:#a08b78}
+header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
+.intro{margin-top:30px;font-size:1.02rem;color:#d8c9b8}
+.intro p{margin-bottom:13px}
+.section{margin:46px 0;background:rgba(255,255,255,0.028);padding:28px 26px;border-radius:14px;border:1px solid rgba(255,255,255,0.06)}
+.section .num{display:inline-block;font-size:0.75rem;color:#e08155;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;margin-bottom:8px}
+.section h2{font-size:1.32rem;color:#f4ece2;margin-bottom:16px;font-weight:700;line-height:1.35}
+.section p{margin-bottom:14px;font-size:0.98rem}
+.section strong{color:#fff}
+.section em{color:#e08155;font-style:normal}
+.section ul{list-style:none;margin:14px 0}
+.section li{margin-bottom:10px;padding-left:20px;position:relative}
+.section li::before{content:"◈";position:absolute;left:0;top:0.42em;color:#e08155;font-size:0.7rem}
+.fig{margin:24px 0 10px;text-align:center}
+.fig svg{max-width:100%;height:auto}
+.fig .cap{font-size:0.82rem;color:#a08b78;margin-top:8px;text-align:left;line-height:1.65}
+.en-brief{margin-top:18px;padding:12px 16px;border-left:2px solid rgba(160,139,120,0.5);background:rgba(255,255,255,0.02);border-radius:0 8px 8px 0;font-size:0.85rem;color:#b0a08e;line-height:1.62}
+.en-brief b{color:#bda994;font-family:"SF Mono",Menlo,monospace;font-size:0.68rem;letter-spacing:1.5px;margin-right:9px;font-weight:700}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(143,176,204,0.12),rgba(224,129,85,0.05));border:1px solid rgba(143,176,204,0.34);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#8fb0cc;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#dfe3e6;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e08155;font-size:0.72rem}
+.crossx b{color:#aecbe2;font-weight:600}
+.thinking{background:linear-gradient(135deg,rgba(224,129,85,0.06),rgba(143,176,204,0.05));border:1px solid rgba(224,129,85,0.24);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e08155;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(18,14,11,0.5);border:1px solid rgba(224,129,85,0.2);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(224,129,85,0.06);border-color:rgba(224,129,85,0.42)}
+.thinking summary{cursor:pointer;color:#eda07c;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#8fb0cc}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(143,176,204,0.22);color:#ddd0c1;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#8fb0cc;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a08b78}
+.refs a{color:#e08155;text-decoration:none;border-bottom:1px dotted rgba(224,129,85,0.42)}
+.refs a:hover{color:#eda07c;border-bottom-color:#eda07c}
+.bigcat{margin:40px 0 0;background:linear-gradient(135deg,rgba(224,129,85,0.11),rgba(143,176,204,0.04));border:1px solid rgba(224,129,85,0.32);border-radius:14px;padding:22px 26px}
+.bigcat h3{color:#eda07c;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.bigcat ul{list-style:none;margin:0}
+.bigcat li{color:#ece0d2;font-size:0.93rem;line-height:1.8;margin-bottom:14px}
+.bigcat li:last-child{margin-bottom:0}
+.bigcat b{color:#eda07c;font-weight:600}
+footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
+@media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+</style></head><body>
+<div class="container">
+<header>
+<div class="kicker">DAY 17 · 教育与再生产</div>
+<h1>教育与再生产</h1>
+<h2>这一期最反直觉的一句：越是所有人考同一张卷子，落选的人越会把结果算到自己头上</h2>
+<div class="meta">2026-09-10 · BigCat</div>
+<div class="pitch">一场谁都能报名、谁都用同一把尺子量的选拔，排出来的名次和不选拔的年代相当接近——而这一次每个人都觉得是凭本事。</div>
+</header>
+<div class="intro">
+<p>你想想小学班上那一两个同学。不是成绩最好的那种，是跟老师说话像跟大人说话的那种：会问「这个作业能不能换个做法」，被批评时会替自己解释两句。别人只会点头。这件小事看着不值一提，回报却高得离谱。</p>
+<p>这一页拆三件事：学校说自己在挑才能，它实际在量什么；课程表之外每天在教的那套是怎么学会的；以及为什么书越读越多，同一张文凭越来越不管用。各家最强的说法都摆出来、标清证据有多硬，判断留给你。</p>
+</div>
+<div class="section">
+<span class="num">// 01</span>
+<h2>答案是对的，说法不对，于是算作没答好</h2>
+<p>美国社会学家 Annette Lareau 和助手把开头那件小事拍了下来。1990 年代中期，他们从 88 户的访谈样本里挑出 12 户，每户跟一个十岁上下的孩子，一跟三个星期：跟到饭桌上、球场边、诊室里、家长会上。</p>
+<p>她看到两套养孩子的逻辑。中产家庭把孩子的日程排满有组织的活动，大人跟孩子讲道理，鼓励他们向老师和医生提要求（她管这叫协作培养，concerted cultivation）。工人与贫困家庭把吃穿安全办扎实，剩下的让孩子自己长（成就自然成长，accomplishment of natural growth），跟机构打交道更多是保持距离、别惹事。</p>
+<p>关键不在哪套更好，在于<strong>其中一套正好和学校、医院这类机构的期待对得上</strong>。诊室里，一个孩子打断医生问了个问题，医生就多解释了两句；另一个被叮嘱「别多话」，出来什么也没多得到。同一种行为，一处叫会来事，一处叫没规矩——判定权在机构手里，不在家里。</p>
+<p>把这条链子说得最狠的是 Bourdieu 和 Passeron。1964 年他们统计法国大学生的出身：1961–62 学年，高级职员与知识职业的子女进大学的机会大约是工人子女的 42 倍。</p>
+<p>他们真正的重点不是这个差距，是<em>学校怎么让它显得正当</em>。所有人考同一张卷子、按同一把尺子排名，于是落选的人会把结果算到自己头上——不够聪明、不够努力。学校因此不只是把差距传下去，它还把「出身」译成「才能」，再译成「凭本事」。这一步他们叫误识（méconnaissance）：真实的机制被参与者认成了另一回事，而且认错的人自己也签了字。那把尺子量的是什么——怎么说话、面对权威还自不自如——文化资本与惯习那期讲过它们怎么在家里攒出来。</p>
+<p>这套说法挨的批评有两条硬的。一是难以证伪——什么结果都能说成再生产。二是后来的量化研究里，文化资本对成绩确有可测的效应，但普遍小于原始理论的期待，国与国之间也差很多。还有一条不能略过：教育扩张确实让更多人念上了书，而社会分层那期分过，绝对流动与相对流动是两个数。<strong>能稳住的是那条转化链，不是「学校没用」。</strong>证据强度：Lareau 是 12 户的深度田野，给机制不给分布；法国那组是六十多年前的统计。</p>
+<p class="en-brief"><b>EN</b> In the mid-1990s the American sociologist Annette Lareau and her assistants followed twelve families intensively — drawn from a larger interview sample of 88 — spending three weeks with each around a ten-year-old child: at dinner, at ball games, in the doctor's office. She found two logics of childrearing. Middle-class families filled the child's schedule with organised activities, reasoned with them, and encouraged them to make requests of teachers and doctors (concerted cultivation). Working-class and poor families got food, clothing and safety right and let the child grow (accomplishment of natural growth), keeping a wary distance from institutions. Neither is better as parenting; what matters is that one of them matches what schools and hospitals expect. Bourdieu and Passeron pushed the point further with 1964 statistics on French students: in 1961–62 the children of senior executives and intellectual professions had roughly 42 times the chance of entering university as the children of workers. Their real target was not the gap but how school makes it look deserved: everyone sits the same exam, so those who fail charge the result to themselves. School translates origin into talent and talent into merit — a step they call méconnaissance. Criticisms: the account is hard to falsify, and later quantitative work finds cultural-capital effects real but smaller than the theory expected and highly variable across countries. Evidence: twelve households of deep fieldwork, clear mechanism, not statistically representative.</p>
+</div>
+<div class="section">
+<span class="num">// 02</span>
+<h2>铃一响就换科目，不管你正在想什么——这也是每天在上的一课</h2>
+<p>打铃、举手、排队、按时交、听指令换任务。没有一条写在课程表上，可每天要练几十遍。练得够久，它就不像规定了，像世界本来的样子。</p>
+<p>1978 到 1979 学年，教育学者 Jean Anyon 在美国新泽西五所小学各待了一年，看五年级课堂上「做功课」到底长什么样。五所学校按社区的职业构成分四档：两所工人阶级学校、一所中产、一所专业人士社区、一所高管精英。</p>
+<p>同样是算术，四种「什么叫做得好」。工人阶级学校里，功课是照步骤做，做对的意思是有没有照着走。中产学校里，功课是拿到正确答案，路子自己挑。专业人士社区那所强调表达和创作，交上去的东西要带着自己的想法。高管精英那所强调分析推理，学生要为自己的产出负责。<strong>每天被教的不是内容，是「在什么样的权威关系里做事才算做对」。</strong>这套没写下来的课程有个名字：隐性课程（hidden curriculum）。</p>
+<p>Bowles 和 Gintis 1976 年给过更硬的版本，叫对应原则：学校的组织形式（打分、守时、服从上级、为外在奖励做事）和工作场所一一对应。它挨的批评是太机械，把学生当成一张被写入的白纸。</p>
+<p>最有力的反驳来自一项田野（马克思的社会学遗产那期讲过）：1970 年代前期英格兰中部一所男校，Paul Willis 跟了 12 个工人阶级男孩一年半，又跟着他们进厂半年。这批人根本不信「念好书就能上去」，公开嘲笑听话的同学，把体力活抬成男子气。可正是这套反抗让他们自己走进了车间。<strong>再生产不需要人相信它；看穿了、反着来，也可能落到同一个位置。</strong></p>
+<p>还有一项经典研究要交代现状。1968 年 Rosenthal 和 Jacobson 的《课堂中的皮格马利翁》随机挑出一批学生、告诉老师他们即将「开窍」，学年末报告这批人的智力测验分数有提升。后来三十年复制得并不顺：1984 年 Raudenbush 的元分析合并出的效应很小（d 约 0.14），且老师若在实验前已认识学生超过两周，效应几乎归零。<strong>站得住的窄得多：老师的对待确有差别，但「期望能大幅抬高智力」没被复制住。</strong></p>
+<p>证据强度：Anyon 与 Willis 都是小样本田野，给机制不给分布；期望效应那条是元分析，效应小、条件严。</p>
+<p class="en-brief"><b>EN</b> Bells, raised hands, lines, deadlines, switching task on command: none of it is on the timetable, and all of it is drilled dozens of times a day. In the 1978–79 school year the education scholar Jean Anyon spent a year in each of five New Jersey elementary schools, watching what "doing schoolwork" actually meant in fifth grade. The schools were sorted by the occupational make-up of their communities into two working-class schools, a middle-class school, an affluent professional school and an executive elite school. Same arithmetic, four versions of what counts as doing it well: follow the steps; get the right answer by your own route; produce something with your own ideas in it; reason it out and take responsibility for your own output. What is taught daily is not the content but which kind of authority relation makes work count as correct — the hidden curriculum. Bowles and Gintis gave a harder version in 1976, the correspondence principle, criticised as too mechanical for treating students as blank pages. The strongest rebuttal is Paul Willis's fieldwork with twelve working-class boys in a Midlands school in the early 1970s: they saw through the promise of schooling, mocked the compliant, and that very resistance walked them into the factory. Reproduction does not require belief. One classic here needs its current status stated: Rosenthal and Jacobson's Pygmalion study (1968) reported that randomly designated "bloomers" gained on intelligence tests; three decades of replication were rocky, Raudenbush's 1984 meta-analysis pooled a small effect (d ≈ 0.14) that all but vanishes when teachers had known the students for over two weeks. Evidence: two small ethnographies giving mechanism, not distribution; a meta-analysed effect that is real but modest.</p>
+</div>
+<div class="section">
+<span class="num">// 03</span>
+<h2>同一张文凭，二十年前能换到的东西，现在换不到了</h2>
+<p>招聘广告上的学历门槛这些年一直往上抬，活没怎么变。这不是错觉，是能数出来的。</p>
+<p>先看存量。美国 25 岁以上人口里拿到学士及以上学位的比例，1940 年是 4.6%，2021 年是 37.9%。同一张纸，拿到的人多了八倍。</p>
+<p>再看门槛。2017 年 Joseph Fuller 和 Manjari Raman 在哈佛商学院分析了 2600 万条招聘广告：生产主管这个岗位，67% 的广告要求大学学位，而当时在岗的生产主管里只有 16% 有学位。<strong>门槛比正在干这活的人高出一大截，活还是那个活。</strong></p>
+<div class="fig">
+<svg viewbox="0 0 640 200" xmlns="http://www.w3.org/2000/svg">
+<path d="M60 130 C110 130 120 74 175 74 C230 74 240 130 290 130" fill="rgba(143,176,204,0.14)" stroke="#8fb0cc" stroke-width="1.8"></path>
+<path d="M300 130 C350 130 360 74 415 74 C470 74 480 130 530 130" fill="rgba(224,129,85,0.14)" stroke="#e08155" stroke-width="1.8"></path>
+<line stroke="#8fb0cc" stroke-dasharray="5 4" stroke-width="1.6" x1="228" x2="228" y1="52" y2="146"></line>
+<line stroke="#e08155" stroke-dasharray="5 4" stroke-width="1.6" x1="468" x2="468" y1="52" y2="146"></line>
+<g fill="#a08b78" font-family="Georgia,serif" font-size="11" text-anchor="middle"><text x="175" y="164">从前：学历分布</text><text x="415" y="164">现在：整体右移</text></g>
+<g fill="#dfe3e6" font-family="Georgia,serif" font-size="11" text-anchor="middle"><text x="228" y="44">门槛</text><text x="468" y="44">门槛</text></g>
+<text fill="#e08155" font-family="Georgia,serif" font-size="11.5" text-anchor="middle" x="320" y="188">门槛跟着分布走，所以线右边的人占比几乎没变</text>
+</svg>
+<div class="cap">示意，非实际数据。涨的是绝对水平，不动的是相对位次——而机会是按位次分的。</div>
+</div>
+<p>社会学家 Randall Collins 1979 年给这件事起了名字：文凭通胀（credential inflation）。他的论点是：教育扩张主要由地位竞争推动，不由岗位技能需求推动——文凭像货币，发得越多越不值钱，所有人被迫多念，门槛跟着上挪。</p>
+<p>经济学那侧有个更精确的说法。1973 年 Michael Spence 的信号模型说：就算学校什么也没教，只要「念下来」对能力强的人成本更低，文凭照样筛得了人、换得到工资。它留下可查的痕迹——拿到学位那一年的收入跳升，明显大于多念一年书的增量（羊皮纸效应，sheepskin effect）。1996 年 Jaeger 和 Page 用一份同时记录年限和实际学位的数据重算，学士学位那一跳超过 20%。</p>
+<p>但纯信号论也过强了。用义务教育年限改革做的自然实验——法律改了，一批人被迫多念一年，他们和差一点没赶上的人可比——普遍显示教育有真实的因果收入回报。<strong>两种成分都在，各占多少至今没有定论，这是本页最该说「还没有答案」的地方。</strong></p>
+<p>机制上更要紧的是文凭的<em>位置性</em>：它的价值有一部分来自你排在谁前面。所有人都多念三年，排序不变，成本齐涨；而且没人能单方面退出——退出的那个立刻掉到后面。扩招之后发生的就是这个：本科分不出来就看学校，再分不出来就看研究生、看实习。<strong>区分器往上挪一层，筛人一秒钟也没停。</strong>每挪一层，成本就更多落到家庭那一侧，落回「答案是对的，说法不对」那节的链子上。</p>
+<p>这三节推不出任何一条「所以该怎么办」，那是价值判断，不在这门学科的量程里。能说的是：三条机制得分开打。扩大名额动的是位置性那条，学校那把尺子和课堂每天在奖励什么一动不动；证据强度也不一样——位置性有大样本数据，另两条只有田野给的机制。<strong>把它们当成同一件事谈，是这个话题上最常见的错。</strong></p>
+<p class="en-brief"><b>EN</b> Degree requirements in job adverts keep climbing while the work stays the same, and this is countable. In the United States the share of people aged 25 and over holding a bachelor's degree or higher went from 4.6% in 1940 to 37.9% in 2021. In 2017 Joseph Fuller and Manjari Raman at Harvard Business School analysed 26 million job postings and found that 67% of adverts for production supervisors demanded a college degree while only 16% of people then working as production supervisors had one. Randall Collins named the process in 1979: credential inflation, driven mainly by status competition rather than by the skill demands of jobs. Economics has a sharper version — Michael Spence's 1973 signalling model, where a credential sorts people and commands a wage even if nothing is taught, so long as completing it costs less for the more able. It leaves a checkable trace: the earnings jump in the year a degree is completed exceeds the increment from an extra year of study (the sheepskin effect; Jaeger and Page in 1996 put the bachelor's jump above 20%). Pure signalling is too strong, though: natural experiments using compulsory-schooling reforms generally find real causal returns to education. Both components are present and their shares remain unsettled — the point on this page that most deserves "no verdict yet". What matters mechanically is positionality: everyone studies three years longer, the ranking does not move, the costs all rise, and nobody can withdraw unilaterally. Hence what follows expansion — when the bachelor's stops sorting, employers look at the institution, then the master's, the internship, the contest. The sorting device moves up a level and the sorting never pauses.</p>
+</div>
+<div class="bigcat">
+<h3>🎒 场景 · BigCat</h3>
+<ul>
+<li><b>① 带团队与组织</b>——新人手册上写着「有问题随时问」，可他头一周在周会上看到的是：提问的人被一句「这个会后聊」打断，闷头把活做完的人被点名表扬。三周后他不再提问了，你以为他上手了。跑的是「铃一响就换科目」那节的机制：真正被教的是被反复奖励的那条，不是写下来的那条。可改的：别看满意度调查，数新人前 30 天在公开频道提问的条数（私聊不算，私聊恰恰说明他判断公开提问有代价）。停掉：在公开场合把别人的提问改期。</li>
+<li><b>② 写作与这个学习站本身</b>——每写一期，你都拿上一期当底线：上期有图，这期不好意思没有；上期三千五，这期不好意思写三千。半年下来页面长了一大截，新东西没多多少。跑的是「同一张文凭」那节的位置性机制：以上一轮的位置定义这一轮的合格线，绝对量一路涨，相对信息量不变。可改的：改盯绝对量——本期引入了几项此前没写过的独立研究，数不够就砍字，不是加字。停掉：因为上期有某个结构，这期就补一个同类结构。</li>
+</ul>
+</div>
+<div class="crossx">
+<h3>🌀 越界 · 跨学科的联想</h3>
+<ul>
+<li><b>复杂性科学 · 给路网多修一条路，所有人可能都变慢</b>：1968 年 Dietrich Braess 证明了一个反常结果——在每个司机各自选最快路线的网络里，新增一条捷径可以让所有人的通行时间都变长，因为它改变了每个人的最优选择，把车流挤进同几段路。跑的是「同一张文凭」那节的位置性机制：<b>当每个人的收益取决于相对位置，个体最优叠加起来不等于集体更好</b>。由此推出一个原本看不出的结论：<b>「多给名额」和「结果更好」之间没有必然联系，得分开测</b>——扩招之后该看的不是入学人数，是招聘方的区分器有没有往上挪（学位之外的年限、项目、实习要求在广告里的占比）。<b>但这里不成立</b>：Braess 那套里通行时间是客观可测的物理量，谁都同意快就是好，所以「社会最优配置」是能算出来的一个点。文凭赛跑里「更好」本身由排名定义，没有独立于排名的客观量——工程里能算出的那个最优解，这里根本不存在。</li>
+<li><b>分布式系统与 AI · 模型学会的是一直被奖励的东西，不是你想教的那条</b>：图像分类器把哈士奇判成狼，事后查出来它看的是背景里的雪，因为训练集里狼的照片多半在雪地（Ribeiro 等 2016 年讲模型解释那篇里的著名例子）；医学影像模型被发现按扫描仪型号或图上的标尺记号下判断，换一家医院就崩。这类毛病叫捷径学习。跑的是「铃一响就换科目」那节的机制：<b>被反复奖励的那条才是真正被教会的那条，而它常常不在课程表上</b>。由此推出一个原本看不出的结论：<b>「加数据、加算力、把课讲得更用心」这一类投入不改变已经学到的捷径，只有改奖励结构才改得动</b>；而且有个可做的检验——把伴随变量打乱（换背景、换扫描仪、换一种没练过的考法）之后成绩骤降，就说明学到的是伴随规律。<b>但这里不成立</b>：模型没有立场，不会因为看穿了捷径而反抗。Willis 跟的那批男生看穿了学校在筛人、公开对着干，而正是那套对着干把他们送进了车间。被优化的对象有能动性时，能动性会改掉再生产的路径却不保证改掉终点——这一层在优化系统里没有对应物。</li>
+</ul>
+</div>
+<div class="thinking">
+<h3>深入思考</h3>
+<details><summary>如果学校换一把尺子量人，差距会缩小吗？</summary>
+<div>换尺子一定会换掉谁占便宜，但不一定缩小差距——只要新尺子量的那种能力仍然在某些家庭的日常里被更多练到。这条可查：换考法之后，成绩与家庭背景的相关强度动没动。没动就说明换的是形式。</div>
+</details>
+<details><summary>「隐性课程」这个说法，怎么才可能被证明是错的？</summary>
+<div>它的麻烦是太好用：看到什么现象都能说成隐性课程在教。要让它可查，得预先指定——哪种奖励结构下、哪一类具体行为、多久之后增加多少。测不出来，它就得退回「一种描述视角」，而不是「一条机制」。</div>
+</details>
+<details><summary>如果人人都看穿了文凭大半是信号，通胀会停吗？</summary>
+<div>按位置性那条机制，不会。看穿不改变收益结构：第一个退出的人立刻掉到后面。这类东西叫位置性商品——个人的最优选择和集体的结果背离，明知如此也没法单方面停手。要停得改分配规则本身，那是另一个问题。</div>
+</details>
+</div>
+<div class="refs">
+<h3>延伸阅读</h3>
+<ul>
+<li><a href="https://www.ucpress.edu/books/unequal-childhoods/paper" rel="noopener" target="_blank">Lareau, Unequal Childhoods (加州大学出版社)</a> · <a href="https://en.wikipedia.org/wiki/Unequal_Childhoods" rel="noopener" target="_blank">该书条目</a>（英文）</li>
+<li><a href="https://en.wikipedia.org/wiki/Pierre_Bourdieu" rel="noopener" target="_blank">Bourdieu 与《继承人》(1964)、《再生产》(1970)</a> · <a href="https://theconversation.com/les-heritiers-ce-que-bourdieu-et-passeron-nous-ont-appris-de-linegalite-des-chances-177185" rel="noopener" target="_blank">关于该书数据的回顾</a>（法文）</li>
+<li><a href="https://journals.sagepub.com/doi/10.1177/002205748016200106" rel="noopener" target="_blank">Anyon, Social Class and the Hidden Curriculum of Work (1980)</a> · <a href="https://www1.udel.edu/educ/whitson/897s05/files/hiddencurriculum.htm" rel="noopener" target="_blank">全文</a>（英文）</li>
+<li><a href="https://en.wikipedia.org/wiki/Learning_to_Labour" rel="noopener" target="_blank">Willis《学做工》(1977)</a> · <a href="https://en.wikipedia.org/wiki/Schooling_in_Capitalist_America" rel="noopener" target="_blank">Bowles &amp; Gintis 与对应原则 (1976)</a>（英文）</li>
+<li><a href="https://en.wikipedia.org/wiki/Pygmalion_in_the_Classroom" rel="noopener" target="_blank">《课堂中的皮格马利翁》及其复制争议</a> · <a href="https://www.sciencedirect.com/science/article/abs/pii/S0160289699000264" rel="noopener" target="_blank">Snow 等对该争议的史学梳理</a>（英文）</li>
+<li><a href="https://en.wikipedia.org/wiki/Credentialism_and_educational_inflation" rel="noopener" target="_blank">文凭通胀与 Collins《文凭社会》(1979)</a> · <a href="https://en.wikipedia.org/wiki/Signalling_(economics)" rel="noopener" target="_blank">Spence 的信号模型 (1973)</a> · <a href="https://en.wikipedia.org/wiki/Sheepskin_effect" rel="noopener" target="_blank">羊皮纸效应</a>（英文）</li>
+<li><a href="https://www.census.gov/library/visualizations/time-series/demo/cps-historical-time-series.html" rel="noopener" target="_blank">美国人口普查局：学历分布历史序列</a> · <a href="https://en.wikipedia.org/wiki/Braess%27s_paradox" rel="noopener" target="_blank">布雷斯悖论</a>（英文）</li>
+</ul>
+</div>
+<footer>BigCat Learning Hub · Sociology &amp; Anthropology</footer>
+</div>
+<script defer="" src="https://hub.cissychen.com/comments.js"></script>
+<script defer="" src="https://hub.cissychen.com/search.js"></script>
+<script defer="" src="https://hub.cissychen.com/index-button.js"></script>
+<script defer="" src="https://hub.cissychen.com/i18n-tts.js"></script>
+</body></html>
