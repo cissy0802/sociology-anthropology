@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>社会学与人类学 Day 18：城市社会学</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:linear-gradient(170deg,#1a140f,#171210 42%,#120e0b);color:#e6dacc;line-height:1.9;min-height:100vh}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 60px}
+header{padding:52px 0 30px;border-bottom:1px solid #33261d}
+header .kicker{font-size:0.75rem;color:#8fb0cc;letter-spacing:2.5px;font-family:"SF Mono",Menlo,monospace}
+header h1{font-size:2.1rem;font-weight:800;background:linear-gradient(100deg,#e08155,#eda07c 58%,#8fb0cc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:0.5px;margin-top:12px;line-height:1.28}
+header h2{font-size:1rem;color:#a08b78;margin-top:10px;font-weight:400}
+header .meta{margin-top:14px;font-size:0.85rem;color:#a08b78}
+header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
+.intro{margin-top:30px;font-size:1.02rem;color:#d8c9b8}
+.intro p{margin-bottom:13px}
+.section{margin:46px 0;background:rgba(255,255,255,0.028);padding:28px 26px;border-radius:14px;border:1px solid rgba(255,255,255,0.06)}
+.section .num{display:inline-block;font-size:0.75rem;color:#e08155;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;margin-bottom:8px}
+.section h2{font-size:1.32rem;color:#f4ece2;margin-bottom:16px;font-weight:700;line-height:1.35}
+.section p{margin-bottom:14px;font-size:0.98rem}
+.section strong{color:#fff}
+.section em{color:#e08155;font-style:normal}
+.section ul{list-style:none;margin:14px 0}
+.section li{margin-bottom:10px;padding-left:20px;position:relative}
+.section li::before{content:"◈";position:absolute;left:0;top:0.42em;color:#e08155;font-size:0.7rem}
+.fig{margin:24px 0 10px;text-align:center}
+.fig svg{max-width:100%;height:auto}
+.fig .cap{font-size:0.82rem;color:#a08b78;margin-top:8px;text-align:left;line-height:1.65}
+.en-brief{margin-top:18px;padding:12px 16px;border-left:2px solid rgba(160,139,120,0.5);background:rgba(255,255,255,0.02);border-radius:0 8px 8px 0;font-size:0.85rem;color:#b0a08e;line-height:1.62}
+.en-brief b{color:#bda994;font-family:"SF Mono",Menlo,monospace;font-size:0.68rem;letter-spacing:1.5px;margin-right:9px;font-weight:700}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(143,176,204,0.12),rgba(224,129,85,0.05));border:1px solid rgba(143,176,204,0.34);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#8fb0cc;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#dfe3e6;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e08155;font-size:0.72rem}
+.crossx b{color:#aecbe2;font-weight:600}
+.thinking{background:linear-gradient(135deg,rgba(224,129,85,0.06),rgba(143,176,204,0.05));border:1px solid rgba(224,129,85,0.24);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e08155;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(18,14,11,0.5);border:1px solid rgba(224,129,85,0.2);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(224,129,85,0.06);border-color:rgba(224,129,85,0.42)}
+.thinking summary{cursor:pointer;color:#eda07c;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#8fb0cc}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(143,176,204,0.22);color:#ddd0c1;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#8fb0cc;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a08b78}
+.refs a{color:#e08155;text-decoration:none;border-bottom:1px dotted rgba(224,129,85,0.42)}
+.refs a:hover{color:#eda07c;border-bottom-color:#eda07c}
+.bigcat{margin:40px 0 0;background:linear-gradient(135deg,rgba(224,129,85,0.11),rgba(143,176,204,0.04));border:1px solid rgba(224,129,85,0.32);border-radius:14px;padding:22px 26px}
+.bigcat h3{color:#eda07c;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.bigcat ul{list-style:none;margin:0}
+.bigcat li{color:#ece0d2;font-size:0.93rem;line-height:1.8;margin-bottom:14px}
+.bigcat li:last-child{margin-bottom:0}
+.bigcat b{color:#eda07c;font-weight:600}
+footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
+@media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+</style></head><body>
+<div class="container">
+<header>
+<div class="kicker">DAY 18 · 城市社会学</div>
+<h1>城市社会学</h1>
+<h2>这一期最反直觉的一句：一个街区的人可以几乎没被赶走，同时整条街已经换了人</h2>
+<div class="meta">2026-09-11 · BigCat</div>
+<div class="pitch">从同一个地铁口出来往左走两百米和往右走两百米，招牌、路人、一碗面的价钱全不一样——行政上是同一个区，走路三分钟。</div>
+</header>
+<div class="intro">
+<p>你大概有过这种时刻：在住了几年的城市里拐进一条没走过的街，忽然觉得自己不该在这儿。没人说什么，也没发生什么，就是店铺的密度、走路的速度、谁在朝谁看，全换了一套。</p>
+<p>城市把人按地址分好组，然后这一组一组的人过着差别巨大的日子。这一页拆三件事：最早那批研究者怎么看、又看漏了什么；「住在哪」到底有多大力气；以及一个街区涨价时，原来的人究竟去哪了——最后这问的答案跟直觉不一样，差别出在口径上，不在立场上。</p>
+</div>
+<div class="section">
+<span class="num">// 01</span>
+<h2>有人搬进「一团乱」的街区住了三年半，才发现那里的秩序密得吓人</h2>
+<p>1920 年代的芝加哥，人口几十年翻了好几番，新移民挤进城中心那圈旧房子。芝加哥大学有位 Robert Park，进学界前当了十几年报社记者，对学生的要求出了名：别坐在图书馆里，去街上，把裤子坐脏。学生真去了——跳舞厅、廉租旅馆、帮派的地盘。这批研究后来叫芝加哥学派，直觉很好用：<strong>城市不是一堆房子，是一台把人分配到位置上去的机器。</strong>1925 年 Ernest Burgess 画的同心圆图里，紧挨商业区的一圈叫过渡带——最廉价、最拥挤、流动性最高。</p>
+<p>更早一点，德国社会学家 Georg Simmel 在 1903 年说，都市人会长出一种厌倦态度（blasé attitude）：刺激太多，神经没法样样都反应，索性把差别调平——不是冷漠，是带宽用完了。1938 年 Louis Wirth 把这一路收成三个变量：<em>规模、密度、异质性</em>——人越多、越挤、越不一样，熟人间的关系就越让位给按功能打交道的关系。</p>
+<p>问题出在下一句：他们把过渡带那些拥挤的穷街区判成了「社会解组」——没有规范、没有组织、只剩散沙。</p>
+<p>把这句话按在地上摩擦的是个二十多岁的年轻人。1937 到 1940 年，William Foote Whyte 搬进波士顿北区一个意大利裔社区住了三年半（书里化名 Cornerville），跟着一个叫 Doc 的人和他那伙街角青年混。他发现这里的秩序细得可怕：谁该请客、谁先开口、谁欠谁人情，都有稳定的位次。</p>
+<p>最漂亮的一笔是保龄球。Whyte 把分数一场场记下来，发现<strong>球打得好不好跟帮里的地位对得上</strong>——地位低但球技好的人，在高位者面前就是打不出来，旁边人起哄、他自己也泄气。同一双手，换个场合分数就变。地位不是抽象说法，它当场把球打歪了。</p>
+<p><strong>可迁移的那条是：所谓「没有秩序」，很多时候是「用错了看秩序的方法」</strong>——观察者带着自己那套秩序的长相进去，找不到就说没有。（1962 年 Herbert Gans 在同城另一个区得出同样的结论，书名直接叫《城市村民》。）「社会解组」这个词后来挨了大量批评，也确实该挨：它把一群人的生活方式判成了病理。证据强度：同心圆图只是对一座城市的描述性归纳；Whyte 和 Gans 是单点长期田野，给机制不给分布。</p>
+<p class="en-brief"><b>EN</b> In 1920s Chicago, where the population had multiplied within decades, Robert Park — a newspaper reporter for over a decade before he turned academic — sent his students out of the library and into dance halls, flophouses and gang turf. The resulting Chicago School treated the city as a machine that sorts people into positions; Ernest Burgess drew the concentric-zone diagram in 1925, with a cheap, crowded, high-turnover "zone of transition" ringing the business district. Earlier, Georg Simmel (1903) had described the blasé attitude of the metropolitan mind: too much stimulus, so the nervous system flattens differences — not coldness, exhausted bandwidth. Louis Wirth (1938) boiled the tradition down to three variables: size, density, heterogeneity. The trouble was their next step, declaring the crowded poor districts "socially disorganised". William Foote Whyte demolished that by moving into an Italian-American neighbourhood in Boston's North End from 1937 to 1940 — three and a half years alongside a man he called Doc. The order there was dense, not absent. His finest detail is bowling: he recorded scores game by game and found they tracked rank within the group, so a low-status man who bowled well elsewhere simply could not perform against his seniors. Herbert Gans found the same in 1962 and called his book The Urban Villagers. The transferable point: "no order here" is usually "wrong instrument for seeing order". The disorganisation vocabulary deserved the criticism it got, since it read a way of life as pathology. Evidence: the concentric-zone model is descriptive induction from one city; Whyte and Gans are single-site long-term fieldwork giving mechanism, not distribution.</p>
+</div>
+<div class="section">
+<span class="num">// 02</span>
+<h2>隔两条街，孩子长大后的收入就不一样——难的是证明这是街区干的</h2>
+<p>同一座城市里，不同邮编的人预期寿命能差十几年。差距谁都测得出来，难的是下一步：<em>是街区造成了这些人的境遇，还是境遇本就不同的人被分到了不同街区？</em>这不是抬杠：住在哪从来不是随机的——收入、工作、亲戚在哪、能不能拿到贷款，全都参与了这个分配。所以「穷街区的孩子后来也穷」什么也没证明。</p>
+<p>第一条路是把街区本身的性质测出来。1995 年，Robert Sampson 和 Stephen Raudenbush、Felton Earls 在芝加哥访了 8782 名居民，分属 343 个邻里群，量的东西叫集体效能（collective efficacy）：邻居之间信不信得过，加上愿不愿意为公共的事出手——看见几个半大孩子上学时间在街上晃，有没有人会去说一句。</p>
+<p>结果发表在 1997 年的《科学》上：集体效能高的邻里暴力水平明显更低；把贫困程度、居住稳定性、个人特征和此前的暴力水平都控制掉，关联仍在。但它是相关性研究——效能低也可能是暴力的果。</p>
+<p>第二条路硬得多：直接随机。1994 到 1998 年，美国住房与城市发展部做了个叫「搬向机会」（Moving to Opportunity）的实验，在五座城市招募 4604 户住在高贫困公租房社区的家庭随机分组，其中一组拿到只能用于低贫困社区的租房券。社会科学里很罕见——「住在哪」真的被随机化了。</p>
+<p>早期结果让很多人失望：2007 年 Kling、Liebman 和 Katz 报告，大人的就业和收入没有改善。转折在 2016 年——Chetty、Hendren 和 Katz 把实验名单接上税务记录，等孩子长到二十多岁再看：<strong>搬家时不满 13 岁的，二十五六岁时年收入比对照组高约 3477 美元</strong>（对照组均值 11270 美元，即高出约 31%），上大学比例也更高；搬家时已过 13 岁的，收益是零甚至略负。</p>
+<p>这一下把问题的形状换了。街区不是「有影响／没影响」的开关，更像<em>按年累积的剂量</em>：住得越久攒得越多，十几岁才换就攒不够了。早期看不到效应，是看得太早、也看错了人。</p>
+<p>诚实交代两条。样本是自愿申请搬迁的高贫困公租房家庭，外推要小心；更要紧的是——<strong>我们知道有效，但不太知道靠什么有效</strong>：学校？同伴？治安？至今没有定论，而不同答案指向完全不同的做法。</p>
+<p class="en-brief"><b>EN</b> Life expectancy can differ by more than a decade between postcodes in one city. The hard part is not measuring the gap but deciding whether the neighbourhood caused it or merely received people whose trajectories already differed — nobody is randomly assigned an address. One route is to measure the neighbourhood itself. In 1995 Robert Sampson, Stephen Raudenbush and Felton Earls surveyed 8,782 residents across 343 Chicago neighbourhood clusters, measuring collective efficacy: trust among neighbours plus willingness to intervene for the common good. Their 1997 Science paper found violence markedly lower where collective efficacy was high, holding poverty, residential stability, individual characteristics and prior violence constant — influential, but correlational, and the causal arrow could run backwards. The harder route is randomisation. From 1994 to 1998 the US Department of Housing and Urban Development ran Moving to Opportunity, enrolling 4,604 families from high-poverty public housing in five cities, one randomised group receiving a voucher usable only in low-poverty areas plus counselling. Early results disappointed: Kling, Liebman and Katz reported in 2007 that adult employment and earnings did not improve. The turn came in 2016, when Chetty, Hendren and Katz linked the roster to tax records: children who moved before age 13 earned about $3,477 more per year in their mid-twenties against a control mean of $11,270 — roughly 31% — and attended college at higher rates, while those who moved after 13 gained nothing. A neighbourhood is not a switch but a dose accumulating by the year. Two honest caveats: the sample is families who volunteered to move, and we know it works without knowing through what — school, peers, safety remain unsettled, and different answers imply very different policies.</p>
+</div>
+<div class="section">
+<span class="num">// 03</span>
+<h2>租金涨了，原来的人却没怎么被赶走——统计和直觉在这里打架</h2>
+<p>1964 年，在伦敦做研究的社会学家 Ruth Glass 给她看到的事造了个词：工人阶级住的一排排旧房子被中产一栋栋买下、翻新，整片的社会构成随之换掉。她管这叫士绅化（gentrification）。它由什么驱动，一直有两套解释并存。</p>
+<p>一套看资本：1979 年 Neil Smith 提出租隙（rent gap）——老城区当前收到的地租远低于它本可以收到的，差额够大，资本就流进来翻新套利，谁搬进来是结果不是原因。另一套看人：David Ley 说是需求侧，战后长出一批做文化与知识工作的新中产，要老房子、要步行可达，是他们的偏好把资本引过去的。<strong>两边证据都拿得出手，谁也没压倒谁——争的是权重，不是有无</strong>，本页不替任何一边下判断。</p>
+<p>真正反直觉的在下一层。直觉上士绅化＝原住民被赶走。但从 2000 年代起，一批追踪具体个人的研究给出了别的结果：Freeman 用全国住房调查数据、Ding 等人用费城的信用局面板、Brummet 和 Reed 用人口普查纵向数据——<strong>士绅化街区里低收入居民的迁出率，普遍不比相似的非士绅化街区更高。</strong></p>
+<p>先别下结论：同一批研究还发现，街区人口构成之所以变，主要来自<em>迁入端</em>——受过大学教育的人搬进来的速率高得多。</p>
+<div class="fig">
+<svg viewbox="0 0 640 214" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<marker id="mb" markerheight="8" markerwidth="8" orient="auto" refx="6.4" refy="2.9"><path d="M0 0 L6.4 2.9 L0 5.8 z" fill="#8fb0cc"></path></marker>
+<marker id="mo" markerheight="8" markerwidth="8" orient="auto" refx="6.4" refy="2.9"><path d="M0 0 L6.4 2.9 L0 5.8 z" fill="#e08155"></path></marker>
+</defs>
+<rect fill="rgba(143,176,204,0.10)" height="46" rx="8" stroke="#8fb0cc" stroke-width="1.6" width="168" x="92" y="74"></rect>
+<rect fill="rgba(224,129,85,0.10)" height="46" rx="8" stroke="#e08155" stroke-width="1.6" width="168" x="382" y="74"></rect>
+<line marker-end="url(#mb)" stroke="#8fb0cc" stroke-width="3" x1="176" x2="176" y1="36" y2="68"></line>
+<line marker-end="url(#mo)" stroke="#e08155" stroke-width="3" x1="466" x2="466" y1="36" y2="68"></line>
+<line marker-end="url(#mb)" stroke="#8fb0cc" stroke-width="3" x1="176" x2="176" y1="122" y2="156"></line>
+<line marker-end="url(#mb)" stroke="#8fb0cc" stroke-width="3" x1="466" x2="466" y1="122" y2="156"></line>
+<g fill="#dfe3e6" font-family="Georgia,serif" font-size="11.5" text-anchor="middle"><text x="176" y="101">普通街区</text><text x="466" y="101">士绅化街区</text></g>
+<g fill="#a08b78" font-family="Georgia,serif" font-size="11" text-anchor="middle"><text x="176" y="28">迁入：还是同一类人</text><text x="466" y="28">迁入：换了一类人</text><text x="176" y="174">迁出率</text><text x="466" y="174">迁出率：几乎一样</text></g>
+<text fill="#e08155" font-family="Georgia,serif" font-size="11.5" text-anchor="middle" x="320" y="200">两边走掉的人一样多，街区却换了人</text>
+</svg>
+<div class="cap">示意，非实际数据。迁出率只看得见走掉的人；房子被谁接手，它测不到。</div>
+</div>
+<p>这两件事放在一起，说明迁出率只对准了一半画面。房子腾出来是常事——换工作、结婚、回老家。真正决定街区变不变的是<strong>它被谁接手</strong>：接手的都是付得起新价钱的人，原住民的下一代就再也进不来了。Peter Marcuse 在 1980 年代给这种情况起过名字：排斥性位移（exclusionary displacement）——被挡住的人从不出现在任何迁出名单上，因为他们根本没来过。</p>
+<p>所以这里的分歧<em>首先不是立场之争，是口径之争</em>：一个测流出，一个要测本来会有的流入。同一批研究还发现：迁出的低收入居民搬去的地方往往更差，租户里教育程度较低的受冲击更大。<strong>「总体迁出率不高」和「某些人被打得很重」可以同时成立。</strong></p>
+<p>证据强度：这几项是行政数据或信贷面板，能跟踪同一批人，比横截面强，但都不是随机化实验，不同城市差别很大。至于该不该干预，那是价值判断，不在这门学科的量程里——这里能说清的只是：你要改的是哪一根箭头。</p>
+<p class="en-brief"><b>EN</b> In 1964 the sociologist Ruth Glass coined "gentrification" for what she saw in London: working-class terraces bought up, refurbished, and the social composition of whole districts replaced. Two explanations have coexisted ever since. Neil Smith's rent-gap theory (1979) looks at capital: when the rent a decayed district currently earns falls far enough below what it could earn, investment flows in to capture the difference, and who moves in is consequence rather than cause. David Ley's account looks at demand: a post-war professional and cultural middle class whose tastes ran to old housing and walkable districts drew the capital after them. Both have solid evidence; the dispute is over weights, not existence, and this page takes no side. The counterintuitive layer is below. Studies that track individuals — Freeman on national housing survey data, Ding, Hwang and Divringi on a Philadelphia credit-bureau panel, Brummet and Reed on longitudinal census data — generally find that low-income residents of gentrifying neighbourhoods do not move out at higher rates than comparable residents elsewhere. The same studies find that compositional change comes mostly from the inflow side: college-educated in-migrants arrive at much higher rates. So an out-migration rate captures half the picture. Homes empty routinely; what decides whether the district changes is who takes them next. Peter Marcuse named this in the 1980s: exclusionary displacement, where the excluded never appear on any list because they never arrived. The disagreement here is first of all about measurement aperture, not values. The same work also finds that those who do leave land in worse places, and that less-educated renters are hit hardest: a modest overall out-migration rate and severe harm to specific groups are both true at once.</p>
+</div>
+<div class="bigcat">
+<h3>🎒 场景 · BigCat</h3>
+<ul>
+<li><b>① 投资与仓位</b>——每年复盘策略时，你拉某个指数「过去十年的成分股」跑一遍历史价格，结果总比实盘好看。跑的是「租金涨了」那节的口径机制：手上这份是幸存者名单，当年在里面、后来被剔除或退市的那些从数据里消失了，就像迁出率看不见没能搬进来的人。可改的：改用当时那天的成分股名单逐期回溯重跑，差额就是这套复盘一直虚报的部分。停掉：拿现成的「某指数成分股历史数据」当样本池。</li>
+<li><b>② 育儿与教育</b>——每隔几年冒出来一次的那个决定：要不要为了环境搬一次家、换一次学校、接一次外派。摆在桌上的通常是「那边好多少」。跑的是「隔两条街」那节的机制：搬向机会实验里同样一次搬迁，13 岁前和 13 岁后结果完全不同——起作用的是暴露的年数。可改的：决策变量从「好多少」改成「好多少 × 还能住几年」。停掉：用「以后还能调」推迟——推迟本身就在削那个乘数，削的还是最值钱的几年。</li>
+</ul>
+</div>
+<div class="crossx">
+<h3>🌀 越界 · 跨学科的联想</h3>
+<ul>
+<li><b>物理与数学 · 每个人都乐意住在混居的街区，最后所有人都住进了纯色的街区</b>：1971 年 Thomas Schelling 在纸上摆了个格子，放两种棋子，给每个棋子一条很温和的规则：周围同类邻居太少就搬到最近一个满足条件的空位。「太少」可以定得很宽松，宽松到每个棋子都乐意住在混居环境里；迭代下去，棋盘照样裂成大片纯色区块。后来物理学家把它和磁铁里自旋对齐的模型对上了号，相变、临界阈值那套工具就能用上。跑的是「隔两条街」那节的机制：街区构成是个中介层，个体选择不是直接加总，而是先改写它、再由它改写下一轮的选择。由此推出一个原本看不出的结论：<b>观察到的隔离程度推不出个体偏好的强度</b>——「隔离这么严重，可见排斥有多深」这个推论无效：温和偏好和强烈偏好能画出同一张图。<b>但这里不成立</b>：格子里搬家免费、空位等着你、每个棋子按同一条规则动。真实城市里搬迁要钱、房源先被价格和信贷筛过，哪些人拿得到哪片的贷款还有一段制度史。所以它证的是「不需要强偏好也<em>能</em>产生隔离」，不是「隔离<em>只</em>来自偏好」——把前者当后者用是最常见的误用。</li>
+<li><b>演化生物学 · 动物越大越省，城市越大越费，这两笔账得分开算</b>：生物学里有条很稳的经验规律，Kleiber 定律——动物体重翻倍，静息代谢率只增加约 68%（体重的四分之三次方）。所以大象按每公斤算比老鼠省，靠的是共享一套输送网络摊薄成本。2007 年 Bettencourt 和 West 那一组把同样的拟合搬到城市：美国都会区车道总里程随人口增长的指数约 0.85，亚线性，跟生物同向；社会经济那侧却翻了过来——专利、工资、经济产出的指数普遍大于 1，人越多人均产出越高。跑的是「有人搬进『一团乱』的街区」那节里 Wirth 的<em>密度</em>变量：密度直接抬高单位时间里的相遇次数。由此推出一个原本看不出的结论：<b>「城市越大越高效」在基建上和在产出上是两件事，得分开测</b>；而且相遇率那一半正负通吃，同样的超线性也出现在犯罪和传染病的数据里，没法一边把创新归功于城市、一边把犯罪归罪于人。<b>但这里不成立</b>：生物体越大节奏越慢，城市越大节奏越快，这个反号说明城市不是放大的生物体，共享网络那套只解释得了亚线性那一半；而且这类指数对「城市边界画在哪」很敏感，用行政边界还是通勤区去圈，数就会变。</li>
+</ul>
+</div>
+<div class="thinking">
+<h3>深入思考</h3>
+<details><summary>如果一个街区的房子、马路、店铺全都不动，只把住的人整批换掉，犯罪率会跟着人走吗？</summary>
+<div>这是「集体效能是因还是果」的极端版本。搬向机会实验搬的是人不是街区，回答不了它；得找到人整批更替而物理环境没变的自然实验。陷阱是：换人时往往也换了管理方式和警力配置，那测出来的就不是人的效应。</div>
+</details>
+<details><summary>集体效能这个概念，怎么才可能被证明是错的？</summary>
+<div>它的麻烦是好用过头：哪个街区安静就说它效能高。要让它可查，测量必须独立于结果——先测出效能分数，再预测<em>此后</em>的暴力变化，而不是回头解释已经发生的。</div>
+</details>
+<details><summary>这一套是在人口净流入的城市里做出来的。人口在流出、房子在空的城市，还跑得动吗？</summary>
+<div>值得怀疑。租隙的前提是「潜在地租会兑现」，人口净流出时这前提没了，老旧街区可能一直烂下去也没人翻新。反过来集体效能那条可能更吃重：留下的人少了，愿不愿意出手管事的差别会被放大。本页所有数字都来自少数几座城市，跨文化推广要格外小心。</div>
+</details>
+</div>
+<div class="refs">
+<h3>延伸阅读</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Chicago_school_(sociology)" rel="noopener" target="_blank">芝加哥学派与 Burgess 同心圆模型</a> · <a href="https://en.wikipedia.org/wiki/The_Metropolis_and_Mental_Life" rel="noopener" target="_blank">Simmel《大都会与精神生活》(1903)</a> · <a href="https://en.wikipedia.org/wiki/Urbanism_as_a_Way_of_Life" rel="noopener" target="_blank">Wirth《作为一种生活方式的都市性》(1938)</a>（英文）</li>
+<li><a href="https://press.uchicago.edu/ucp/books/book/chicago/S/bo3684722.html" rel="noopener" target="_blank">Whyte《街角社会》(芝加哥大学出版社)</a> · <a href="https://archive.org/details/streetcornersoci00whyt" rel="noopener" target="_blank">全书扫描</a>（英文）</li>
+<li><a href="https://www.science.org/doi/10.1126/science.277.5328.918" rel="noopener" target="_blank">Sampson, Raudenbush &amp; Earls, 邻里与暴力犯罪 (Science, 1997)</a> · <a href="https://faculty.washington.edu/matsueda/courses/517/Readings/Sampson%201997%20Science.pdf" rel="noopener" target="_blank">全文</a>（英文）</li>
+<li><a href="https://www.aeaweb.org/articles?id=10.1257%2Faer.20150572" rel="noopener" target="_blank">Chetty, Hendren &amp; Katz, 搬向机会实验的新证据 (AER, 2016)</a> · <a href="https://en.wikipedia.org/wiki/Moving_to_Opportunity" rel="noopener" target="_blank">该实验条目</a>（英文）</li>
+<li><a href="https://www.ucl.ac.uk/bartlett/ideas/100-years-bartlett/ruth-glass-and-coining-gentrification" rel="noopener" target="_blank">Ruth Glass 与「士绅化」一词的由来 (1964)</a> · <a href="https://en.wikipedia.org/wiki/Rent_gap" rel="noopener" target="_blank">Smith 的租隙理论</a>（英文）</li>
+<li><a href="https://www.philadelphiafed.org/-/media/frbp/assets/working-papers/2019/wp19-30.pdf" rel="noopener" target="_blank">Ding &amp; Hwang, 士绅化与居民迁移（费城联储工作论文）</a> · <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10789166/" rel="noopener" target="_blank">位移证据的文献综述</a>（英文）</li>
+<li><a href="https://en.wikipedia.org/wiki/Schelling%27s_model_of_segregation" rel="noopener" target="_blank">Schelling 的隔离模型 (1971)</a> · <a href="https://www.pnas.org/doi/10.1073/pnas.0610172104" rel="noopener" target="_blank">Bettencourt &amp; West, 城市的标度律 (PNAS, 2007)</a> · <a href="https://en.wikipedia.org/wiki/Kleiber%27s_law" rel="noopener" target="_blank">Kleiber 定律</a>（英文）</li>
+</ul>
+</div>
+<footer>BigCat Learning Hub · Sociology &amp; Anthropology</footer>
+</div>
+<script defer="" src="https://hub.cissychen.com/comments.js"></script>
+<script defer="" src="https://hub.cissychen.com/search.js"></script>
+<script defer="" src="https://hub.cissychen.com/index-button.js"></script>
+<script defer="" src="https://hub.cissychen.com/i18n-tts.js"></script>
+</body></html>
