@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sociology &amp; Anthropology Day 19: Cultural Relativism</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:linear-gradient(170deg,#1a140f,#171210 42%,#120e0b);color:#e6dacc;line-height:1.9;min-height:100vh}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 60px}
+header{padding:52px 0 30px;border-bottom:1px solid #33261d}
+header .kicker{font-size:0.75rem;color:#8fb0cc;letter-spacing:2.5px;font-family:"SF Mono",Menlo,monospace}
+header h1{font-size:2.1rem;font-weight:800;background:linear-gradient(100deg,#e08155,#eda07c 58%,#8fb0cc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:0.5px;margin-top:12px;line-height:1.28}
+header h2{font-size:1rem;color:#a08b78;margin-top:10px;font-weight:400}
+header .meta{margin-top:14px;font-size:0.85rem;color:#a08b78}
+header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
+.intro{margin-top:30px;font-size:1.02rem;color:#d8c9b8}
+.intro p{margin-bottom:13px}
+.section{margin:46px 0;background:rgba(255,255,255,0.028);padding:28px 26px;border-radius:14px;border:1px solid rgba(255,255,255,0.06)}
+.section .num{display:inline-block;font-size:0.75rem;color:#e08155;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;margin-bottom:8px}
+.section h2{font-size:1.32rem;color:#f4ece2;margin-bottom:16px;font-weight:700;line-height:1.35}
+.section p{margin-bottom:14px;font-size:0.98rem}
+.section strong{color:#fff}
+.section em{color:#e08155;font-style:normal}
+.section ul{list-style:none;margin:14px 0}
+.section li{margin-bottom:10px;padding-left:20px;position:relative}
+.section li::before{content:"◈";position:absolute;left:0;top:0.42em;color:#e08155;font-size:0.7rem}
+.fig{margin:24px 0 10px;text-align:center}
+.fig svg{max-width:100%;height:auto}
+.fig .cap{font-size:0.82rem;color:#a08b78;margin-top:8px;text-align:left;line-height:1.65}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(143,176,204,0.12),rgba(224,129,85,0.05));border:1px solid rgba(143,176,204,0.34);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#8fb0cc;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#dfe3e6;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e08155;font-size:0.72rem}
+.crossx b{color:#aecbe2;font-weight:600}
+.thinking{background:linear-gradient(135deg,rgba(224,129,85,0.06),rgba(143,176,204,0.05));border:1px solid rgba(224,129,85,0.24);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e08155;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(18,14,11,0.5);border:1px solid rgba(224,129,85,0.2);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(224,129,85,0.06);border-color:rgba(224,129,85,0.42)}
+.thinking summary{cursor:pointer;color:#eda07c;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#8fb0cc}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(143,176,204,0.22);color:#ddd0c1;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#8fb0cc;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a08b78}
+.refs a{color:#e08155;text-decoration:none;border-bottom:1px dotted rgba(224,129,85,0.42)}
+.refs a:hover{color:#eda07c;border-bottom-color:#eda07c}
+.bigcat{margin:40px 0 0;background:linear-gradient(135deg,rgba(224,129,85,0.11),rgba(143,176,204,0.04));border:1px solid rgba(224,129,85,0.32);border-radius:14px;padding:22px 26px}
+.bigcat h3{color:#eda07c;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.bigcat ul{list-style:none;margin:0}
+.bigcat li{color:#ece0d2;font-size:0.93rem;line-height:1.8;margin-bottom:14px}
+.bigcat li:last-child{margin-bottom:0}
+.bigcat b{color:#eda07c;font-weight:600}
+footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
+@media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+</style></head><body>
+<div class="container">
+<header>
+<div class="kicker">DAY 19 · CULTURAL RELATIVISM</div>
+<h1>Cultural Relativism</h1>
+<h2>The most counterintuitive line here: "hold your judgement for now" is a tool and "nothing may be judged" is a different sentence, and for a century the two have been used as one</h2>
+<div class="meta">2026-09-12 · BigCat</div>
+<div class="pitch">The first time you eat at someone else's house you find them a little rude; over the same meal, they are finding you rude. Both sides can give reasons, and neither set of reasons is absurd.</div>
+</header>
+<div class="intro">
+<p>"Respect other cultures" is so mild today that it carries almost no content, like a slogan on a wall. A century ago it was an aggressive scientific claim: the orthodoxy of the day held that human societies stood in a queue, some ahead and some behind, and that the ranking could be measured off the body. The people who overturned it did not do so by calling for equality. They did it by measuring.</p>
+<p>The trouble arrives immediately after. If every set of practices can only be understood by its own standards, then "respect" is itself just one more standard, and the language for criticising anything from outside is gone. This page takes apart three things: how the claim was established, which single sentence its boundary turns on, and why "see it from their side" is much harder than it sounds.</p>
+</div>
+<div class="section">
+<span class="num">// 01</span>
+<h2>He spent a winter in the Arctic and came back no longer trusting the classification table he had brought with him</h2>
+<p>In 1883 a twenty-five-year-old German boarded a ship and spent about a year on Baffin Island, in what is now northern Canada. His name was Franz Boas, he had trained as a physicist, and his doctorate was on the colour of seawater — why, looking at the same water, you see one colour and I see another. He would later move that question wholesale onto people.</p>
+<p>What he set out to overturn was the orthodoxy: the nineteenth-century mainstream put human societies on a single line, from savagery through barbarism to civilisation, and museums were arranged to match — the world's fishhooks in one case, ordered crude to refined, so a visitor could see "evolution" at a glance. In an 1887 exchange in the journal Science, Boas fought this out with Otis Mason of the Smithsonian: things of the same shape can arise in different places for completely different reasons — <em>unlike causes can produce like effects</em>. So an object is first of all part of the way of life it belongs to, not a specimen of a type, and should be arranged by tribe and region. The position is called historical particularism.</p>
+<p><strong>This is the foundation of the whole of cultural relativism, and it is a plain mechanism: what a practice means is set by its position in the whole arrangement.</strong> The same act is not the same thing in two arrangements, because what it is attached to differs in each.</p>
+<p>What punctured the orthodoxy was a measurement. Between 1908 and 1910, commissioned by the US Immigration Commission, Boas took body measurements of more than ten thousand immigrants and their American-born children. The result: in the American-born generation the cephalic index — the skull length-to-width ratio then used to sort "racial types" — had shifted measurably. An index that moves within a single generation does not qualify as a fixed racial marker. On evidence strength, honestly: the data have since been reanalysed twice with opposite conclusions and the matter is unsettled; but the stronger claim, that head form does not change, never got back up.</p>
+<p>One episode has to be stated plainly, because it is part of this discipline's record. In 1897 Boas wanted one Inuk from northern Greenland brought to the American Museum of Natural History, where he worked, to be studied; the explorer Robert Peary brought back six people, four of whom died of tuberculosis and other illnesses. Among them was Qisuk, whose seven-year-old son Minik was deceived by the museum with a staged burial while his father's skeleton entered the collection; his demands for the remains went unmet, and the four were only returned to Greenland for burial in 1993. <strong>A person can oppose ranking humanity in theory while treating humans as specimens in practice.</strong></p>
+</div>
+<div class="section">
+<span class="num">// 02</span>
+<h2>"Hold your judgement for now" is a method; "nothing may be judged" is a different sentence</h2>
+<p>In 1934 Ruth Benedict, a student of Boas, published Patterns of Culture with an image that sticks: the practices humanity could adopt lie along one great arc, each society selects only a short stretch of it, and then integrates that stretch into a style. She contrasted the Zuni of the American Southwest with the Kwakiutl of the Northwest Coast — restraint and not standing out on one side, competition and display on the other, with ceremonies contesting who could give away the most property.</p>
+<div class="fig">
+<svg viewBox="0 0 640 214" xmlns="http://www.w3.org/2000/svg">
+<g fill="#5c4b3e"><circle cx="58.0" cy="168.0" r="4.6"></circle><circle cx="61.2" cy="149.5" r="4.6"></circle><circle cx="70.8" cy="131.5" r="4.6"></circle><circle cx="201.1" cy="62.9" r="4.6"></circle><circle cx="239.0" cy="55.8" r="4.6"></circle><circle cx="279.0" cy="51.5" r="4.6"></circle><circle cx="320.0" cy="50.0" r="4.6"></circle><circle cx="361.0" cy="51.5" r="4.6"></circle><circle cx="401.0" cy="55.8" r="4.6"></circle><circle cx="438.9" cy="62.9" r="4.6"></circle><circle cx="532.0" cy="98.6" r="4.6"></circle><circle cx="553.4" cy="114.4" r="4.6"></circle><circle cx="569.2" cy="131.5" r="4.6"></circle><circle cx="578.8" cy="149.5" r="4.6"></circle><circle cx="582.0" cy="168.0" r="4.6"></circle></g>
+<g fill="#e08155"><circle cx="86.6" cy="114.4" r="6.6"></circle><circle cx="108.0" cy="98.6" r="6.6"></circle><circle cx="134.7" cy="84.6" r="6.6"></circle><circle cx="166.0" cy="72.5" r="6.6"></circle></g>
+<g fill="#8fb0cc"><circle cx="474.0" cy="72.5" r="6.6"></circle><circle cx="505.3" cy="84.6" r="6.6"></circle></g>
+<text fill="#e08155" font-family="Georgia,serif" font-size="11.5" x="80" y="146">the stretch one society selected</text>
+<text fill="#8fb0cc" font-family="Georgia,serif" font-size="11.5" text-anchor="end" x="562" y="66">what another selected</text>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="11" text-anchor="middle" x="320" y="30">practices humanity could adopt: the whole arc</text>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="11" text-anchor="middle" x="320" y="200">the unselected ones are not impossible, just not integrated into any style</text>
+</svg>
+<div class="cap">Schematic, not actual data. The criticism lands precisely on "integrates" — real societies are nowhere near that uniform inside.</div>
+</div>
+<p>The book turned "different" into something intelligible rather than defective; the criticism it earned is that integration was overstated, with a whole society written as a single personality. Work like this is interpretive pattern-finding, not testable measurement — and Margaret Mead's Coming of Age in Samoa (1928), from the same circle, which Derek Freeman half a century later claimed had been misled by its informants' joking, is the same kind of fragility: single-site fieldwork against single-site fieldwork, with no third-party data on either side.</p>
+<p>Now the cut that matters most on this page. <strong>Two things have to be kept apart.</strong> Methodological relativism: while describing, set your own standards aside, or you will not see the other logic — that is a tool. Moral relativism: no practice may be judged from outside — that is a normative claim. <strong>The first does not imply the second.</strong> "This is coherent within their arrangement" is a sentence about facts, and it contains no "therefore one ought".</p>
+<p>The slide really did happen in history, and with weight. In 1947 Melville Herskovits drafted a Statement on Human Rights, published in American Anthropologist, responding to the universal declaration of human rights the United Nations was then preparing: standards can only be relative to the culture one belongs to, and "universal human rights" in fact packages Euro-American notions of the individual and of property. Its motive has to be seen clearly — the colonial system was still running, and this was raising a shield for colonised peoples' cultural integrity. The strongest statement from the other side: that same shield also removes the language for criticising abuses from outside, and the people who need that language most are usually the least powerful within any arrangement. Neither side is a straw man; the discipline later moved on its own, and the American Anthropological Association's 1999 declaration turned towards actively asserting human rights. This page takes no side, but those two sentences have to be kept apart — Boas opposed Nazi race science, and that opposition too requires standing somewhere across cultures.</p>
+</div>
+<div class="section">
+<span class="num">// 03</span>
+<h2>Someone wrote up a tribe's washing rituals in ethnographic prose, and halfway through readers realised it was about them</h2>
+<p>In 1956 Horace Miner published a straight-faced report in American Anthropologist on a people called the Nacirema: every household has a shrine, its cabinet holding magical potions prescribed by medicine men that nobody dares throw out; devotees perform a mouth-rite before holy water every morning, and periodically visit a kind of mouth-magician who probes their teeth with sharp instruments. You read on and something is off — Nacirema spelled backwards is American, and the rite is brushing your teeth. It is a joke and also a precision instrument: <strong>exoticism is not emitted by the practice being described; it is carried in by the angle of description.</strong></p>
+<p>The word ethnocentrism was popularised by William Graham Sumner in Folkways (1906), and means treating the group you belong to as the centre and measure of everything. The mechanism is unmysterious: any classification system needs an origin point, and the origin point of the one in your hands is your own way of life. This is the other face of the boundary mechanism from the page on race and ethnicity: a boundary always needs one side as the baseline, and by default that side is you.</p>
+<p>The fieldwork case from the other direction is lovely. Between 1949 and 1953 Laura Bohannan did fieldwork among the Tiv of central Nigeria, arriving with one conviction: Shakespeare is universal. She told Hamlet to a group of elders, who corrected her as she went: the dead do not come back, so that "ghost" must be witchcraft or an omen; and as for an uncle marrying his brother's widow and becoming chief, what is the problem, that is how it should be. Their closing verdict was that people where she came from should listen to Tiv elders more, so as to stop misunderstanding things. The point is not that they missed Shakespeare: what the elders did is what a literature professor does, applying a coherent theory to a plot. The theory changed, not the capacity to interpret.</p>
+<p>Relativism can also crash in the other direction, into a subtler othering: in 1983 Johannes Fabian singled out ethnography's habit of writing in the present tense ("the Tiv believe…"), arguing that it puts the people studied in a position without history, not in the same era as the writer. So <strong>where your units of comparison came from has itself to be audited</strong> — audit today's most widely used tool and you will see the point is not empty. The most popular version of cross-cultural comparison in companies is Geert Hofstede's national culture dimensions: between 1967 and 1973 he ran employee value surveys inside IBM, over a hundred thousand questionnaires, and computed a handful of dimensions (power distance, the individualist-collectivist leaning, and so on) from the results for forty countries, which business schools and multinationals have used for training ever since. The criticism is hard too, Brendan McSweeney's 2002 paper being the best known: the respondents were white-collar staff at a single firm, mostly men, and only six of the forty countries had more than a thousand respondents; more fundamentally, the nation is taken as the unit of culture and culture as a static scale. Schwartz's value surveys and the GLOBE project cut the dimensions differently and do not agree. Cross-sectional questionnaires, correlational, plus one questionable assumption: fine as a rough prompt, not as a ruler.</p>
+</div>
+<div class="bigcat">
+<h3>🎒 In Practice · BigCat</h3>
+<ul>
+<li><b>① Engineering and system design</b>——you take over a system someone else worked on for years and read a stretch of defensive code with no visible purpose: a redundant retry, a table nobody queries. Your first reaction is "what is this", you delete it, and two weeks later production breaks. This runs the mechanism from "he spent a winter in the Arctic": what a practice does is set by the whole arrangement it sits in, and pulled out and looked at alone you cannot measure what it is holding off. What to change: instead of asking "is this useful", ask "which incident was this written to hold off", and go dig through the commit history and the incident tickets. What to stop: deleting before you have found the thing it was holding off.</li>
+<li><b>② Writing and this learning site itself</b>——the decision that comes up every time a page describes practices from elsewhere: whether to add a line of judgement on the way past. This runs the mechanism from "hold your judgement for now is a method": descriptive sentences and normative sentences are two kinds of sentence, one slip changes the character of the whole passage, and the reader can no longer separate them either. What to change: give normative sentences a subject — "the strongest statement from the critics is…" — and leave no ownerless verdicts. What to stop: closing with phrases like "worthy of respect" or "each has its own wisdom", which are neither description nor argument, only judgement in hiding.</li>
+</ul>
+</div>
+<div class="crossx">
+<h3>🌀 Crossing Over · Connections Beyond the Field</h3>
+<ul>
+<li><b>Buddhist studies · One body of teaching grew opposite practices in different places, while the criteria did not change</b>: Buddhism arriving in China grew the farming-and-meditation monasteries of Chan; in Tibet, elaborate ritual and formal debate; in the Theravada world, monastic life built around the precepts and a graded path of meditation. Individual practices are often exactly opposed: in some places a monk working the fields is a duty, in others touching agricultural work is expressly forbidden. This runs the mechanism from "he spent a winter in the Arctic": lift "no farming" out of the whole cycle of alms round, lay support and merit-making and it is left as nothing but a strange prohibition. Which yields a conclusion you could not otherwise see: <b>"which tradition is more orthodox" is a question asked at the wrong level</b>; what can be compared is what fills the same functional slot in each arrangement (who provides support, what counters craving and aversion, how lineage is verified), not a list of individual practices — and this is where reformers most often come unstuck, importing a practice from elsewhere without importing the half of the cycle it leans on. <b>But here it fails</b>: cultural relativism is a descriptive method and does not adjudicate truth, whereas this tradition is itself a normative system that draws an explicit line between right and wrong view. Using relativism to underwrite any practice at all does not pass inside its own frame either — "each has its own set" does not imply "every set works equally well".</li>
+<li><b>Distributed systems and AI · Two vector spaces are each coherent internally, yet their coordinates cannot be matched directly</b>: models that turn words into strings of numbers (word vectors) are coherent inside each training run — near-synonyms sit close, analogies hold. But the two sets of axes are not the same set, the numbers for one word on either side are entirely incomparable, and to compare them you first have to learn an alignment mapping. In 2018 Conneau and colleagues showed this can be done without even a bilingual dictionary; follow-up work promptly found the boundary: the more distant the language pair, the worse such unsupervised alignment degrades, sometimes collapsing into a useless solution, because it quietly assumes the two spaces are approximately isomorphic. This runs the mechanism from "someone wrote up a tribe's washing rituals": any comparison needs an origin point, and the origin point is not in the data — it is chosen from outside. Which yields a conclusion you could not otherwise see: <b>"cross-cultural comparison is impossible" is too strong a claim — comparison is not cancelled, it is prepaid with an alignment cost, and that cost is measurable, rising with distance</b>. <b>But here it fails</b>: a vector space at least has a loss function telling you how good the alignment is, plus words solid enough to serve as anchors. Between cultures there is no such loss function, and nobody guarantees two arrangements are approximately isomorphic, so the optimism that "translation can always be done" has no grounding here.</li>
+</ul>
+</div>
+<div class="thinking">
+<h3>Going Deeper</h3>
+<details><summary>If "every standard is valid only inside itself" is true, by which standard is that sentence itself true?</summary>
+<div>This is relativism's oldest self-reference problem. The usual way out is to demote it from a truth claim to a rule of method: like blinding in a laboratory, it is not a proposition about the world but a discipline about how to look. The price is that it can no longer be used as a shield.</div>
+</details>
+<details><summary>To say a practice "is coherent within their arrangement", what do you have to produce for that to count as shown?</summary>
+<div>A checkable version: point to the specific things it is attached to — what else collapses if you remove it, how local people themselves explain it, whether anyone inside is arguing against it. If the coherence is something only an outside researcher can articulate, it was probably supplied by the researcher.</div>
+</details>
+<details><summary>Is there anything every known society has? If so, can those things serve as anchors for comparison?</summary>
+<div>There are candidates: kinship terms always form a system, every language has a phonology, all have norms forbidding the arbitrary killing of members of the group. But they are abstract to the point of carrying almost no content — knowing that every language has a phonology tells you nothing about what any particular phonology looks like. The harder the anchor, the less information it carries.</div>
+</details>
+</div>
+<div class="refs">
+<h3>Further Reading</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Franz_Boas" rel="noopener" target="_blank">Franz Boas: life and work</a> · <a href="https://www.science.org/doi/10.1126/science.ns-9.228.587.a" rel="noopener" target="_blank">Boas, Museums of Ethnology and Their Classification (Science, 1887)</a></li>
+<li><a href="https://www.pnas.org/doi/10.1073/pnas.242622399" rel="noopener" target="_blank">Sparks &amp; Jantz, revisiting Boas on the plasticity of head form (PNAS, 2002)</a> · <a href="https://anthrosource.onlinelibrary.wiley.com/doi/abs/10.1525/aa.2003.105.1.125" rel="noopener" target="_blank">Gravlee, Bernard &amp; Leonard, a reanalysis of Boas's immigrant data (American Anthropologist, 2003)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Minik_Wallace" rel="noopener" target="_blank">Minik Wallace and what happened to the six people brought over in 1897</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Patterns_of_Culture" rel="noopener" target="_blank">Benedict, Patterns of Culture (1934)</a> · <a href="https://onlinelibrary.wiley.com/doi/10.1002/9781118924396.wbiea1361" rel="noopener" target="_blank">Shankman's survey of the Mead–Freeman controversy</a></li>
+<li><a href="https://americananthro.org/advocacy-statements/2020-statement-on-anthropology-and-human-rights/" rel="noopener" target="_blank">Shifts in the American Anthropological Association's position on human rights</a> · <a href="https://www.anthroencyclopedia.com/entry/human-rights" rel="noopener" target="_blank">Anthropology and human rights (open encyclopaedia entry)</a></li>
+<li><a href="https://www.naturalhistorymag.com/picks-from-the-past/12476/shakespeare-in-the-bush" rel="noopener" target="_blank">Bohannan, Shakespeare in the Bush, full text (1966)</a> · <a href="https://en.wikipedia.org/wiki/Body_Ritual_among_the_Nacirema" rel="noopener" target="_blank">Miner, Body Ritual among the Nacirema (1956)</a></li>
+<li><a href="https://journals.sagepub.com/doi/10.1177/0018726702551004" rel="noopener" target="_blank">McSweeney's critique of Hofstede's model (2002)</a> · <a href="https://en.wikipedia.org/wiki/Hofstede%27s_cultural_dimensions_theory" rel="noopener" target="_blank">Hofstede's cultural dimensions</a></li>
+</ul>
+</div>
+<footer>BigCat Learning Hub · Sociology &amp; Anthropology</footer>
+</div>
+<script src="https://hub.cissychen.com/comments.js" defer></script>
+<script src="https://hub.cissychen.com/search.js" defer></script>
+<script src="https://hub.cissychen.com/index-button.js" defer></script>
+<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
+</body></html>
