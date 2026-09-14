@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sociology &amp; Anthropology Day 21: Witchcraft and Rationality</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:linear-gradient(170deg,#1a140f,#171210 42%,#120e0b);color:#e6dacc;line-height:1.9;min-height:100vh}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 60px}
+header{padding:52px 0 30px;border-bottom:1px solid #33261d}
+header .kicker{font-size:0.75rem;color:#8fb0cc;letter-spacing:2.5px;font-family:"SF Mono",Menlo,monospace}
+header h1{font-size:2.1rem;font-weight:800;background:linear-gradient(100deg,#e08155,#eda07c 58%,#8fb0cc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:0.5px;margin-top:12px;line-height:1.28}
+header h2{font-size:1rem;color:#a08b78;margin-top:10px;font-weight:400}
+header .meta{margin-top:14px;font-size:0.85rem;color:#a08b78}
+header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
+.intro{margin-top:30px;font-size:1.02rem;color:#d8c9b8}
+.intro p{margin-bottom:13px}
+.section{margin:46px 0;background:rgba(255,255,255,0.028);padding:28px 26px;border-radius:14px;border:1px solid rgba(255,255,255,0.06)}
+.section .num{display:inline-block;font-size:0.75rem;color:#e08155;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;margin-bottom:8px}
+.section h2{font-size:1.32rem;color:#f4ece2;margin-bottom:16px;font-weight:700;line-height:1.35}
+.section p{margin-bottom:14px;font-size:0.98rem}
+.section strong{color:#fff}
+.section em{color:#e08155;font-style:normal}
+.section ul{list-style:none;margin:14px 0}
+.section li{margin-bottom:10px;padding-left:20px;position:relative}
+.section li::before{content:"◈";position:absolute;left:0;top:0.42em;color:#e08155;font-size:0.7rem}
+.fig{margin:24px 0 10px;text-align:center}
+.fig svg{max-width:100%;height:auto}
+.fig .cap{font-size:0.82rem;color:#a08b78;margin-top:8px;text-align:left;line-height:1.65}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(143,176,204,0.12),rgba(224,129,85,0.05));border:1px solid rgba(143,176,204,0.34);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#8fb0cc;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#dfe3e6;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e08155;font-size:0.72rem}
+.crossx b{color:#aecbe2;font-weight:600}
+.thinking{background:linear-gradient(135deg,rgba(224,129,85,0.06),rgba(143,176,204,0.05));border:1px solid rgba(224,129,85,0.24);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e08155;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(18,14,11,0.5);border:1px solid rgba(224,129,85,0.2);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(224,129,85,0.06);border-color:rgba(224,129,85,0.42)}
+.thinking summary{cursor:pointer;color:#eda07c;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#8fb0cc}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(143,176,204,0.22);color:#ddd0c1;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#8fb0cc;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a08b78}
+.refs a{color:#e08155;text-decoration:none;border-bottom:1px dotted rgba(224,129,85,0.42)}
+.refs a:hover{color:#eda07c;border-bottom-color:#eda07c}
+.bigcat{margin:40px 0 0;background:linear-gradient(135deg,rgba(224,129,85,0.11),rgba(143,176,204,0.04));border:1px solid rgba(224,129,85,0.32);border-radius:14px;padding:22px 26px}
+.bigcat h3{color:#eda07c;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.bigcat ul{list-style:none;margin:0}
+.bigcat li{color:#ece0d2;font-size:0.93rem;line-height:1.8;margin-bottom:14px}
+.bigcat li:last-child{margin-bottom:0}
+.bigcat b{color:#eda07c;font-weight:600}
+footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
+@media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+</style></head><body>
+<div class="container">
+<header>
+<div class="kicker">DAY 21 · WITCHCRAFT AND RATIONALITY</div>
+<h1>Witchcraft and Rationality</h1>
+<h2>The most counterintuitive line here: this kind of explanation never competes with causal accounts — it answers the half they never touch, why this time and not another</h2>
+<div class="meta">2026-09-14 · BigCat</div>
+<div class="pitch">A granary collapses on the people sheltering from the midday sun beneath it. Everyone knows termites hollowed out the supports, and nobody denies it. They simply add one more question: why did it fall at the moment those particular people were sitting under it?</div>
+</header>
+<div class="intro">
+<p>After something goes wrong, someone always asks "why me". The doctor explains the pathology perfectly clearly and you still add, silently, one more question: so why me, why this year? Today that question usually goes unanswered — it gets filed under emotion, or luck, and there it stops. Plenty of systems have existed whose whole business is to answer it, and witchcraft is the one that has been studied most closely.</p>
+<p>The counterintuitive part: it does not deny the termites, nor does it replace them. It fills a different slot. This page takes apart three things — what such a system actually answers, how it stays standing when it gets an answer wrong, and why the accused are always the same handful of people.</p>
+</div>
+<div class="section">
+<span class="num">// 01</span>
+<h2>"Termites hollowed out the supports" cannot answer "why did it fall while they were sitting under it"</h2>
+<p>Between 1926 and 1930 an Englishman named Evans-Pritchard made several trips to the southern part of what was then the Anglo-Egyptian Sudan and lived among the Zande. Their descendants live today in South Sudan, the Democratic Republic of the Congo and the Central African Republic — living people, not specimens. During those years the area was under colonial administration, and the roads he travelled and the villages he stayed in were open to him partly because of that administration. <strong>An observation can be accurate while the place it was gathered from stays on the table.</strong></p>
+<p>The first thing he recorded overturns the assumption that these people did not understand causation. A Zande granary stands on posts; the shade underneath is cool, and people often sit there through the midday heat. Termites hollow out the wooden supports and the granary comes down on whoever is beneath it. Ask why it fell and the answer is termites — exactly the answer you would give. But go on to say that the people under it were simply unlucky and the answer is refused. Termites explain why a granary falls; they do not explain why it fell <em>at the moment those particular people were sitting under it</em>. Two chains are each perfectly clear, and nothing at all accounts for their crossing here and now. That gap is what witchcraft covers.</p>
+<p>Zande hunters have a rule: when an animal goes down, the first spear and the second spear both count, and the meat is divided between two men. Evans-Pritchard borrowed the phrase — witchcraft is the second spear. It does not replace the termites; it is laid on top of them.</p>
+<div class="fig">
+<svg viewBox="0 0 620 250" xmlns="http://www.w3.org/2000/svg">
+<g fill="none" stroke="#8fb0cc" stroke-width="1.4">
+<rect x="24" y="44" width="120" height="34" rx="6"></rect>
+<rect x="196" y="44" width="120" height="34" rx="6"></rect>
+<rect x="24" y="150" width="120" height="34" rx="6"></rect>
+<rect x="196" y="150" width="120" height="34" rx="6"></rect>
+<rect x="400" y="96" width="150" height="40" rx="8" stroke="#e08155"></rect>
+</g>
+<g stroke="#8fb0cc" stroke-width="1.2">
+<line x1="144" y1="61" x2="188" y2="61"></line>
+<line x1="144" y1="167" x2="188" y2="167"></line>
+<line x1="316" y1="61" x2="368" y2="104"></line>
+<line x1="316" y1="167" x2="368" y2="128"></line>
+</g>
+<path d="M188,57 L196,61 L188,65" fill="none" stroke="#8fb0cc" stroke-width="1.2"></path>
+<path d="M188,163 L196,167 L188,171" fill="none" stroke="#8fb0cc" stroke-width="1.2"></path>
+<circle cx="374" cy="116" r="7" fill="none" stroke="#e08155" stroke-width="1.6"></circle>
+<g fill="#d8c9b8" font-family="Georgia,serif" font-size="11.5" text-anchor="middle">
+<text x="84" y="65">termites eat wood</text>
+<text x="256" y="65">supports hollow out</text>
+<text x="84" y="171">midday heat</text>
+<text x="256" y="171">people sit in the shade</text>
+</g>
+<text x="475" y="112" fill="#eda07c" font-family="Georgia,serif" font-size="11.5" text-anchor="middle">the two chains cross</text>
+<text x="475" y="128" fill="#eda07c" font-family="Georgia,serif" font-size="11.5" text-anchor="middle">who arranged this moment?</text>
+<text x="310" y="222" fill="#a08b78" font-family="Georgia,serif" font-size="11" text-anchor="middle">both sides tell the left-hand chains identically; only the circle on the right is disputed</text>
+</svg>
+<div class="cap">Each chain makes sense on its own. What is empty is the intersection: no chain explains why it ran into the other one just then. That circle is what witchcraft fills.</div>
+</div>
+<p>The witchcraft they speak of, mangu, is a concrete thing: it sits in the belly, passes down the bloodline, and can be found by opening the body after death. Its bearer need not know he has it, and need not intend anyone harm. Keep it separate from the other thing: ngua, magic and medicines deliberately prepared and used — conduct, not constitution. The first is misfortune; only the second is a crime. <strong>To call someone a witch is not to call him bad; it is to say the thing in him happened to go off in your direction.</strong></p>
+<p>Evidence strength: a single-site ethnography from the 1930s, resting on one person's observation, with no independent data to check it against. It holds up because the record is unusually detailed and because others went back later and carried on.</p>
+</div>
+<div class="section">
+<span class="num">// 02</span>
+<h2>When the oracle is wrong it is not counted as wrong, because being wrong already has eight explanations waiting</h2>
+<p>To find out who did it, the Zande consult oracles. The weightiest is benge: a red poison ground from a forest creeper, mixed with water into a paste and fed into the beak of a young fowl, with the question put as "if it is so-and-so, kill this fowl." One detail is worth pausing on: anything serious must be asked twice, with the question reversed the second time — if the first fowl dies the second must live, or the answer does not count. <strong>This is not an absence of testing; it is a built-in consistency check.</strong> Before the British took over, an oracle's verdict carried legal weight at a prince's court.</p>
+<p>So what happens when the check fails? Evans-Pritchard collected the reasons the Zande give, roughly eight kinds: the wrong variety of poison was gathered, someone breached a taboo, witchcraft interfered, the owners of the forest where the creeper grows were angry, the poison was too old, ghosts were angry, sorcery was at work, the handling was faulty. Not one of them is absurd on its own. Together the effect is that the oracle can never be overturned, and every "ah, it was a breached taboo" leaves people more certain the oracle itself is sound — <em>failure is recycled as evidence</em>. He wrote a much-quoted line to the effect that every strand of the web hangs on every other, and a person cannot get out because it is the only world he knows; the web is not something wrapped around him from outside, it is the texture of his thought itself.</p>
+<p>Now the step that is easiest to skip. You probably want to say that science is different, because science can be refuted. Slow down here. The physicist Duhem and later the philosopher Quine pointed out that no hypothesis is ever tested on its own: it always comes to the test dragging a pile of auxiliary assumptions — the instrument is calibrated, the sample is uncontaminated, the background conditions held. When the result comes out wrong, you can always, logically, adjust one of those and keep the core intact. Lakatos simply gave that adjustable ring a name: the protective belt. So <strong>"there is always an excuse" cannot be the dividing line — both sides have one.</strong></p>
+<div class="fig">
+<svg viewBox="0 0 620 200" xmlns="http://www.w3.org/2000/svg">
+<g fill="none" stroke="#8fb0cc" stroke-width="1.3">
+<circle cx="170" cy="100" r="74" stroke-dasharray="5 4"></circle>
+<circle cx="450" cy="100" r="74" stroke-dasharray="5 4"></circle>
+<circle cx="170" cy="100" r="33" stroke="#e08155" stroke-width="1.6"></circle>
+<circle cx="450" cy="100" r="33" stroke="#e08155" stroke-width="1.6"></circle>
+</g>
+<g fill="#eda07c" font-family="Georgia,serif" font-size="11.5" text-anchor="middle">
+<text x="170" y="104">oracle is sound</text>
+<text x="450" y="104">core hypothesis</text>
+</g>
+<g fill="#d8c9b8" font-family="Georgia,serif" font-size="10.5" text-anchor="middle">
+<text x="170" y="42">wrong poison · taboo breached</text>
+<text x="170" y="176">angry ghosts · faulty handling</text>
+<text x="450" y="42">bad instrument · dirty sample</text>
+<text x="450" y="176">conditions shifted · miscalculation</text>
+</g>
+</svg>
+<div class="cap">The same shape on both sides: a core wrapped in a ring of adjustable auxiliary assumptions, and the ring moves first when results disagree. The difference has to be looked for somewhere else.</div>
+</div>
+<p>Where, then? One usable version is to ask <strong>whether adjusting the ring costs anything</strong>: after the adjustment you owe a new prediction someone can go and check, and the adjustment is on the record, so others can hold you to it later. By that standard, systems fall along a continuous axis rather than sorting into "rational" and "irrational" heaps. That line is a philosophical argument, not an experimental finding, and should be used with the label on.</p>
+<p>The argument ran long in the literature: in 1964 the philosopher Winch held that standards of rationality genuinely differ between societies and that judging one by another's ruler oversteps; in 1967 the anthropologist Horton stressed a shared impulse to explain the world, with the difference lying in how open a system is. It is still disputed. Both sides grant one thing: within their own premises, the Zande reason with no slack at all.</p>
+</div>
+<div class="section">
+<span class="num">// 03</span>
+<h2>The person accused almost always lives close by, ranks about the same, and recently had friction with you</h2>
+<p>If witchcraft were only a way of explaining bad luck, who gets named should look fairly random. The real distribution is nothing of the kind. The accusations Evans-Pritchard recorded fall almost entirely between people who live near each other and stand at about the same rank: the same neighbourhood, the several wives of one husband. Accusing upward does not work — cross a noble and you are the one who loses. <strong>To be accusable, a person first has to be someone you can afford to offend.</strong></p>
+<p>A harder comparison comes from another continent. In 1970 the historian Macfarlane worked through the assize records of Essex, England, for 1560 to 1680, where more than five hundred witchcraft indictments survive, and the episodes follow nearly one template: a poor neighbour comes to the door asking for food or the loan of something, is refused, mutters on the way out; soon afterwards the refusing household's cow dies or a child falls ill; and the muttering becomes evidence. Thomas published the same reading a year later: accusations cluster where old obligations of neighbourly help are coming loose while refusing still stings. Among the accused, women and the old were markedly over-represented.</p>
+<p>The criticisms have to be stated too. Later work holds that the charity-refused model does not cover every case: the rise and fall of a wave of prosecutions is often better explained by who was pushing them and how the statutes changed; and court records are themselves a filtered sample. What is robust is the shape, not the motive — draw the arrows of every accusation over a stretch of time and they crowd into those few pairs of people who are close, mutually indebted, and have just had friction. <em>The distribution of accusations maps social tension, not the distribution of misfortune.</em></p>
+<p>None of this is frozen into "tradition" either. In 2024 a researcher reported fieldwork done in 2014–2016 in local Zande courts in South Sudan: mangu as a category has all but vanished from court business, while ngua is still there, and the courts are busy with the latter. Same people, ninety years, and the category itself has changed. One more thing needs saying plainly: in some places today accusations of witchcraft lead to real violence and real harm. Explaining the mechanism is the opposite of excusing it — precisely because the target follows a pattern, it is possible to see in advance who is about to be pushed into that position.</p>
+</div>
+<div class="bigcat">
+<h3>🎒 Scenes · BigCat</h3>
+<ul>
+<li><b>① Engineering and system design</b> — an incident happens in production, the postmortem runs its course, and the line marked "root cause" ends up holding a person's name or a single commit. This runs the mechanism from "termites hollowed out the supports": the technical chain answers how it fell and cannot answer why this time, and that blank gets filled with the most convenient name in the room. Change this: split the postmortem template into two columns, one for the causal chain and one that accepts only triggering conditions (that day's traffic, the release window, the alert that was missing) and no people. Stop doing this: writing "who committed it" on the root-cause line.</li>
+<li><b>② Health and energy</b> — the fortnight after a lab value comes back out of range for the first time: you hang it on one salient recent thing and then rearrange a string of habits around that explanation. This runs the mechanism from "when the oracle is wrong it is not counted as wrong": once an explanation settles, later data gets filed into its protective belt. Change this: write the attribution down, and next to it one observation that would overturn it plus a retest date — then actually retest. Stop doing this: changing habits long-term off a single reading and never measuring again.</li>
+</ul>
+</div>
+<div class="crossx">
+<h3>🌀 Crossing over · Notes from other fields</h3>
+<ul>
+<li><b>Distributed systems and AI · the model writes out its reasoning for you, and that reasoning need not be what it actually computed</b>: in 2023 Turpin and colleagues ran a clean experiment. In the few worked examples shown to the model they put the correct option always in the same slot (always A, say); the model's answers drifted toward that hint, with accuracy dropping by more than thirty points on some tasks — and the passage it wrote explaining how it had thought never mentioned the hint at all, offering a perfectly reasonable-sounding rationale instead. This runs the mechanism from "when the oracle is wrong it is not counted as wrong": an explanatory system can be internally consistent and persuasive while being wired to nothing that actually drove the result. Hence a conclusion you could not otherwise see: <b>how reasonable an explanation sounds and whether it is the real cause are two things that must be measured separately</b> — and the only way to measure the second is to move the real cause (remove the hint, shuffle the options) and see whether the explanation moves with it; asking for more explanation only makes an unfaithful one rounder. <b>But it does not hold here</b>: with the model you can rewrite the input at will, run it a thousand times, and check against a known answer, and the witchcraft system offers none of the three. Its use was never prediction, but assigning responsibility and repair to a specific person after something has gone wrong.</li>
+<li><b>Neuroscience and consciousness · one hand picks up a shovel, the mouth supplies a reason on the spot, and the reason has nothing to do with the cause</b>: a class of epilepsy surgery cuts the main channel between the two hemispheres. In the classic demonstration a chicken claw is shown to the right visual field (seen by the left hemisphere) and a snow scene to the left; the patient's right hand points to a chicken and the left hand to a shovel. Asked why he pointed at the shovel — the left hemisphere never saw the snow — he does not say "I don't know". He says: you need a shovel to clean out the chicken shed. Gazzaniga and LeDoux called this the left-brain interpreter. This runs the mechanism from "termites hollowed out the supports": the causal chain and the why-this-time are two separate slots, and an empty second slot gets filled from whatever is nearest to hand. Hence a conclusion you could not otherwise see: <b>that a person can produce a reason is no evidence that the reason is the cause</b> — to find the cause you have to change the actual triggering conditions and watch whether the behaviour changes, while asking "why did you do that" mostly returns the output of this interpreter. <b>But it does not hold here</b>: the interpreter is inside one skull, instantaneous, with nobody present to contradict it, whereas the Zande system is public and procedural — the oracle is asked twice, reviewed at a prince's court, and someone else can bring a different consultation against yours. Having a procedure and having none is a difference in kind; blurring the two into "everyone is self-deceived" is where this crossing gets overused. Evidence strength: split-brain work rests on a handful of patients, and recent work by Pinto and colleagues has revised parts of the classic reading.</li>
+</ul>
+</div>
+<div class="thinking">
+<h3>Going deeper</h3>
+<details><summary>If an account can explain any outcome whatsoever, is it therefore useless?</summary>
+<div>Not necessarily, but be clear about what it is doing. As a predictive tool it really is useless — something that predicts nothing cannot be bet on. Elsewhere it is very useful: it gives suffering a place, gives a damaged relationship a route to repair, and answers the question of who to go and talk to next. Ask first what an account is actually used for, then pick the matching ruler.</div>
+</details>
+<details><summary>Asking twice, with the question reversed the second time — is that a test? How does it differ from a randomised control?</summary>
+<div>It is a real test: it catches instability in the poison and in the handling. The difference is that it only checks internal consistency, never the external link — whether the fowl's death has anything to do with this person — and a randomised control spends all its effort precisely there. Consistency and validity are two different things, which applies just as well to any modern dashboard where every internal metric is green.</div>
+</details>
+<details><summary>If the arrows of accusation follow social tension, where do they point when institutions change?</summary>
+<div>The material from the South Sudanese local courts suggests a direction: the accusable categories themselves get filtered by institutions, with what a court will hear surviving and what it will not fading out. That yields a checkable expectation: after a society opens a new channel for grievances, the friction that used to travel as accusation moves into the new channel, the shape unchanged and the name different. That is an expectation, not a finding.</div>
+</details>
+</div>
+<div class="refs">
+<h3>Further reading</h3>
+<ul>
+<li><a href="https://books.google.com/books/about/Witchcraft_Oracles_and_Magic_Among_the_A.html?id=z7dFEAAAQBAJ" rel="noopener" target="_blank">Evans-Pritchard, Witchcraft, Oracles and Magic Among the Azande (1937)</a> · <a href="https://en.wikipedia.org/wiki/Witchcraft,_Oracles_and_Magic_Among_the_Azande" rel="noopener" target="_blank">entry on the book</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Azande_witchcraft" rel="noopener" target="_blank">mangu and ngua distinguished</a> · <a href="https://en.wikipedia.org/wiki/Benge" rel="noopener" target="_blank">how the benge poison oracle is run</a></li>
+<li><a href="https://www.cambridge.org/core/journals/philosophy/article/understanding-a-primitive-society/EA5612592C672622E38B19DFD2129A5A" rel="noopener" target="_blank">Winch, Understanding a Primitive Society (1964)</a> · <a href="https://www.semanticscholar.org/paper/African-Traditional-Thought-and-Western-Science-Horton/8987c73835d65d15ffdbf16418fd40d430bff19d" rel="noopener" target="_blank">Horton, African Traditional Thought and Western Science (1967)</a> · <a href="https://philpapers.org/rec/HORPWO-2" rel="noopener" target="_blank">Horton's reply to Winch</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Duhem%E2%80%93Quine_thesis" rel="noopener" target="_blank">The Duhem–Quine thesis</a> · <a href="https://plato.stanford.edu/entries/lakatos/" rel="noopener" target="_blank">Lakatos and the protective belt (Stanford Encyclopedia)</a></li>
+<li><a href="https://www.alanmacfarlane.com/FILES/witch_asa_1.htm" rel="noopener" target="_blank">Macfarlane on the Essex witchcraft records</a> · <a href="https://academic.oup.com/past/article/261/1/259/7246025" rel="noopener" target="_blank">Religion and the Decline of Magic at fifty (Past &amp; Present, 2023)</a></li>
+<li><a href="https://onlinelibrary.wiley.com/doi/full/10.1111/1468-0424.12717" rel="noopener" target="_blank">Carter, Work, Gender and Witchcraft in Early Modern England (Gender &amp; History, 2025)</a></li>
+<li><a href="https://www.journals.uchicago.edu/doi/abs/10.1086/732342" rel="noopener" target="_blank">Braak, Witchcraft, disputes, and trials among the Azande (2014–2016)</a> · <a href="https://www.journals.uchicago.edu/doi/10.1086/732662" rel="noopener" target="_blank">the accompanying Revisiting the Azande collection</a></li>
+<li><a href="https://arxiv.org/abs/2305.04388" rel="noopener" target="_blank">Turpin et al., unfaithful chain-of-thought explanations (2023)</a> · <a href="https://en.wikipedia.org/wiki/Left-brain_interpreter" rel="noopener" target="_blank">The left-brain interpreter</a> · <a href="https://academic.oup.com/brain/article/140/5/1231/2951052" rel="noopener" target="_blank">Pinto et al., revisiting split-brain findings (Brain, 2017)</a></li>
+</ul>
+</div>
+<footer>BigCat Learning Hub · Sociology &amp; Anthropology</footer>
+</div>
+<script src="https://hub.cissychen.com/comments.js" defer></script>
+<script src="https://hub.cissychen.com/search.js" defer></script>
+<script src="https://hub.cissychen.com/index-button.js" defer></script>
+<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
+</body></html>
