@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>社会学与人类学 Day 22：洁净与危险</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:linear-gradient(170deg,#1a140f,#171210 42%,#120e0b);color:#e6dacc;line-height:1.9;min-height:100vh}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 60px}
+header{padding:52px 0 30px;border-bottom:1px solid #33261d}
+header .kicker{font-size:0.75rem;color:#8fb0cc;letter-spacing:2.5px;font-family:"SF Mono",Menlo,monospace}
+header h1{font-size:2.1rem;font-weight:800;background:linear-gradient(100deg,#e08155,#eda07c 58%,#8fb0cc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:0.5px;margin-top:12px;line-height:1.28}
+header h2{font-size:1rem;color:#a08b78;margin-top:10px;font-weight:400}
+header .meta{margin-top:14px;font-size:0.85rem;color:#a08b78}
+header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
+.intro{margin-top:30px;font-size:1.02rem;color:#d8c9b8}
+.intro p{margin-bottom:13px}
+.section{margin:46px 0;background:rgba(255,255,255,0.028);padding:28px 26px;border-radius:14px;border:1px solid rgba(255,255,255,0.06)}
+.section .num{display:inline-block;font-size:0.75rem;color:#e08155;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;margin-bottom:8px}
+.section h2{font-size:1.32rem;color:#f4ece2;margin-bottom:16px;font-weight:700;line-height:1.35}
+.section p{margin-bottom:14px;font-size:0.98rem}
+.section strong{color:#fff}
+.section em{color:#e08155;font-style:normal}
+.section ul{list-style:none;margin:14px 0}
+.section li{margin-bottom:10px;padding-left:20px;position:relative}
+.section li::before{content:"◈";position:absolute;left:0;top:0.42em;color:#e08155;font-size:0.7rem}
+.fig{margin:24px 0 10px;text-align:center}
+.fig svg{max-width:100%;height:auto}
+.fig .cap{font-size:0.82rem;color:#a08b78;margin-top:8px;text-align:left;line-height:1.65}
+.en-brief{margin-top:18px;padding:12px 16px;border-left:2px solid rgba(160,139,120,0.5);background:rgba(255,255,255,0.02);border-radius:0 8px 8px 0;font-size:0.85rem;color:#b0a08e;line-height:1.62}
+.en-brief b{color:#bda994;font-family:"SF Mono",Menlo,monospace;font-size:0.68rem;letter-spacing:1.5px;margin-right:9px;font-weight:700}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(143,176,204,0.12),rgba(224,129,85,0.05));border:1px solid rgba(143,176,204,0.34);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#8fb0cc;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#dfe3e6;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e08155;font-size:0.72rem}
+.crossx b{color:#aecbe2;font-weight:600}
+.thinking{background:linear-gradient(135deg,rgba(224,129,85,0.06),rgba(143,176,204,0.05));border:1px solid rgba(224,129,85,0.24);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e08155;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(18,14,11,0.5);border:1px solid rgba(224,129,85,0.2);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(224,129,85,0.06);border-color:rgba(224,129,85,0.42)}
+.thinking summary{cursor:pointer;color:#eda07c;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#8fb0cc}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(143,176,204,0.22);color:#ddd0c1;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#8fb0cc;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a08b78}
+.refs a{color:#e08155;text-decoration:none;border-bottom:1px dotted rgba(224,129,85,0.42)}
+.refs a:hover{color:#eda07c;border-bottom-color:#eda07c}
+.bigcat{margin:40px 0 0;background:linear-gradient(135deg,rgba(224,129,85,0.11),rgba(143,176,204,0.04));border:1px solid rgba(224,129,85,0.32);border-radius:14px;padding:22px 26px}
+.bigcat h3{color:#eda07c;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.bigcat ul{list-style:none;margin:0}
+.bigcat li{color:#ece0d2;font-size:0.93rem;line-height:1.8;margin-bottom:14px}
+.bigcat li:last-child{margin-bottom:0}
+.bigcat b{color:#eda07c;font-weight:600}
+footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
+@media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+</style></head><body>
+<div class="container">
+<header>
+<div class="kicker">DAY 22 · 洁净与危险</div>
+<h1>洁净与危险</h1>
+<h2>这一期最反直觉的一句：「脏」说的从来不是那样东西本身，而是它待错了地方——一张分类表留下多少剩余，就会长出多少危险</h2>
+<div class="meta">2026-09-15 · BigCat</div>
+<div class="pitch">头发长在你头上，你每天摸它。同一根头发掉进汤里，整碗汤就不能喝了。头发一点没变，变的只有它在哪儿。</div>
+</header>
+<div class="intro">
+<p>鞋放进鞋柜没问题，放上餐桌就不行。这些反应来得又快又确定，快到你根本不觉得它需要理由。可只要换个地方住两天，你就会撞见另一套同样确定、内容却对不上的反应：有的地方左手不能递东西，有的地方穿鞋进屋天经地义。</p>
+<p>1966 年有人提出：这类规矩讲的根本不是卫生，是分类。她后来亲手推翻了自己最有名的那一章，而底下那条机制反倒更站得住了。这一页拆三件事：脏到底指什么、那张著名的禁食清单是怎么推出来的、关于身体的规矩为什么会突然变多。</p>
+</div>
+<div class="section">
+<span class="num">// 01</span>
+<h2>头发掉进汤里，变的不是头发，是它的位置</h2>
+<p>Mary Douglas 是英国人类学家。1949 年起她两次去当时比属刚果的开赛地区，跟 Lele 人住在一起（他们的后代今天生活在刚果民主共和国）。1966 年她出了《洁净与危险》，开篇就把「脏」这个字拆了：<strong>不存在绝对的脏。</strong>饭本身不脏，饭糊在衣襟上才脏。她借用了一句老话——脏是「放错地方的东西」（matter out of place）。</p>
+<p>这句话反过来听才有劲：要判断一样东西「待错了地方」，你手上必须先有一张表，写着什么该待在哪。<em>所以每一次觉得脏，都是那张分类表在替你说话。</em>而任何一张表都做不到严丝合缝。Douglas 的整本书就是在追问：哪个格子都装不进去的那些，后来怎么样了。</p>
+<p>她自己的田野里就有一个。Lele 人的分类表里有走兽、飞禽、水族，而穿山甲哪一条都不合：有鳞像鱼，却爬树；四条腿，却一胎只生一只，像人；没有牙；被人碰上时不逃跑。按「不合类就引起厌弃」这个直觉，它该被当成禁忌避开。实际正相反——它是一个祭仪的中心，只有入会的人可以吃，吃它被认为关系到狩猎与生育。</p>
+<div class="fig">
+<svg viewBox="0 0 620 258" xmlns="http://www.w3.org/2000/svg">
+<g fill="none" stroke="#8fb0cc" stroke-width="1.3">
+<rect x="30" y="34" width="110" height="38" rx="6"></rect>
+<rect x="30" y="86" width="110" height="38" rx="6"></rect>
+<rect x="30" y="138" width="110" height="38" rx="6"></rect>
+<rect x="196" y="86" width="104" height="38" rx="8" stroke="#e08155" stroke-width="1.7"></rect>
+</g>
+<g stroke="#8fb0cc" stroke-width="1.1">
+<line x1="140" y1="53" x2="190" y2="99"></line>
+<line x1="140" y1="105" x2="190" y2="105"></line>
+<line x1="140" y1="157" x2="190" y2="111"></line>
+</g>
+<g stroke="#e08155" stroke-width="1.1">
+<line x1="300" y1="99" x2="392" y2="40"></line>
+<line x1="300" y1="103" x2="392" y2="82"></line>
+<line x1="300" y1="111" x2="392" y2="128"></line>
+<line x1="300" y1="115" x2="392" y2="170"></line>
+</g>
+<g fill="#d8c9b8" font-family="Georgia,serif" font-size="11.5" text-anchor="middle">
+<text x="85" y="58">走兽</text>
+<text x="85" y="110">飞禽</text>
+<text x="85" y="162">水族</text>
+</g>
+<text x="248" y="110" fill="#eda07c" font-family="Georgia,serif" font-size="11.5" text-anchor="middle">哪格都不合</text>
+<g fill="#d8c9b8" font-family="Georgia,serif" font-size="11" text-anchor="start">
+<text x="400" y="44">硬判进一类，抹掉歧义</text>
+<text x="400" y="86">隔开，不让它挨着别的</text>
+<text x="400" y="132">宣布危险，碰了要清洗</text>
+<text x="400" y="174">抬成神圣，围着它办仪式</text>
+</g>
+</svg>
+<div class="cap">剩余项不是只有「被厌弃」一种下场。Douglas 收到的处置至少四类，穿山甲走的是最后一条。</div>
+</div>
+<p>这是全书最耐用的部分：<strong>剩余项一定会被处置，方向却是开放的。</strong>同一样不合类的东西可以被当成脏，也可以被当成圣；光凭「它不合类」推不出是哪一头。</p>
+<p>最该挨的批评也在这里：Douglas 坚持污染规则跟卫生无关，这条太满了。Curtis 等人 2004 年借一个电视台网站做过四万多人的图片评分，构图相近的两张图里，带疾病线索的那张（伤口、寄生虫、腐肉）被评得更恶心，各地区一致。这是自选的网络调查，属相关性证据、不是实验，但足以说明厌恶确实咬住了一部分真实的疾病线索。老实的讲法是：污染规则<em>有一部分跟病原传播重合，有一部分完全不重合，要分开查。</em></p>
+<p class="en-brief"><b>EN</b> Mary Douglas lived among the Lele of the Kasai from 1949 and published <i>Purity and Danger</i> in 1966. Her opening move: there is no such thing as absolute dirt. Shoes are not dirty; shoes on the dining table are. Dirt, in a phrase she borrowed rather than coined, is matter out of place — which means every judgement of dirtiness is a classification scheme speaking on your behalf, and no scheme covers everything. Her own field had a case: the pangolin fits none of the Lele categories — scaled like a fish yet climbing trees, four-legged yet bearing one young at a time like a human, toothless, and it does not flee. By the intuition that anomalies repel, it should have been shunned. Instead it sits at the centre of a cult. The durable point is that residue must be dealt with, while the direction is open: the same anomaly can be made filthy or made sacred. The strongest criticism is Douglas's insistence that pollution has nothing to do with hygiene. Curtis and colleagues in 2004 collected over 40,000 web ratings of matched image pairs; those carrying disease cues were rated more disgusting across every region. That is correlational survey data, not an experiment, but it shows disgust does track some real disease cues. Some pollution rules overlap with pathogen transmission and some do not, and the two have to be checked separately.</p>
+</div>
+<div class="section">
+<span class="num">// 02</span>
+<h2>那张著名的禁食清单，按的不是营养学，是「这一类东西该长成什么样」</h2>
+<p>《希伯来圣经》的《利未记》11 章和《申命记》14 章列了一份可吃与不可吃的清单。最流行的解释是卫生：猪肉容易带寄生虫。Douglas 说这条读不通——清单里很多东西没有卫生问题，而且经文给的理由从来不是「会生病」，是「不洁」。</p>
+<p>她的读法是：经文先规定了每一类该有的标准形，再把不达标的划出去。陆上走的，既反刍又分蹄才算合格（牛、羊）；猪分蹄却不反刍，不合；骆驼、蹄兔、野兔按经文的说法反刍却不分蹄，也不合。水里的要有鳍有鳞，虾蟹贝类不合。还有一类被点名的「在地上爬来爬去的」，移动方式不属于走、飞、游中任何一种。<strong>不可吃的不是危险的，是不合格的</strong>——分类表留下的剩余，被处置成了禁忌。</p>
+<div class="fig">
+<svg viewBox="0 0 560 250" xmlns="http://www.w3.org/2000/svg">
+<g fill="none" stroke="#8fb0cc" stroke-width="1.3">
+<rect x="150" y="56" width="180" height="70" rx="6"></rect>
+<rect x="330" y="56" width="180" height="70" rx="6"></rect>
+<rect x="150" y="126" width="180" height="70" rx="6"></rect>
+<rect x="330" y="126" width="180" height="70" rx="6"></rect>
+</g>
+<g fill="#a08b78" font-family="Georgia,serif" font-size="11.5">
+<text x="176" y="44">反刍 ✓</text>
+<text x="360" y="44">反刍 ✗</text>
+</g>
+<g fill="#a08b78" font-family="Georgia,serif" font-size="11.5" text-anchor="end">
+<text x="140" y="96">分蹄 ✓</text>
+<text x="140" y="166">分蹄 ✗</text>
+</g>
+<g font-family="Georgia,serif" font-size="12" text-anchor="middle">
+<text x="240" y="88" fill="#8fb0cc">合格</text>
+<text x="240" y="108" fill="#d8c9b8">牛 · 绵羊 · 山羊</text>
+<text x="420" y="88" fill="#eda07c">剩余</text>
+<text x="420" y="108" fill="#d8c9b8">猪</text>
+<text x="240" y="158" fill="#eda07c">剩余</text>
+<text x="240" y="178" fill="#d8c9b8">骆驼 · 蹄兔 · 野兔</text>
+<text x="420" y="158" fill="#eda07c">剩余</text>
+<text x="420" y="178" fill="#d8c9b8">其余走兽</text>
+</g>
+</svg>
+<div class="cap">两个条件都满足才算合格，只满足一个反而更扎眼：猪的问题不在于它脏，在于它只对了一半。</div>
+</div>
+<p>有个细节反过来撑住了她：蹄兔和野兔其实并不反刍，只是嘴部有类似的嚼动。经文按的是肉眼看到的民间分类，不是动物学——依据正是「看起来该属于哪一类」。</p>
+<p>反对方最强的表述来自 Marvin Harris：这类禁令是把一件长期划不来的事写成了规矩——在那片干旱地带养猪代价很高，猪不吃草、要阴凉要水、不产奶也不拉犁。这条把猪解释得漂亮，却解释不了贝类和蹄兔。两种读法各盖住一部分，至今没有谁全盘胜出。</p>
+<p>最该讲的一件事是 Douglas 后来推翻了这一章。「不合类就引起厌弃」是个普遍命题，一做跨文化比较就不成立——她自己田野里的穿山甲就是现成的反例。到 1999 年的《作为文学的利未记》，她改口说那些动物不是被厌弃，而是被保护的，整部经卷的结构对应的是会幕的布局。值得记住的是：<strong>一个理论最有名的那个例子可以是错的，而它底下那条机制照样站得住。</strong>证据强度：这一整场是文本解释之争，没有可做的实验，判准只能是哪种读法盖住的条款更多。</p>
+<p class="en-brief"><b>EN</b> Leviticus 11 and Deuteronomy 14 list clean and unclean animals. The popular hygiene reading fails: many listed items pose no health problem, and the text's own reason is never sickness but uncleanness. Douglas read the list as a grid — land animals must both chew the cud and have a cloven hoof; the pig has the hoof without the cud, while camel, hyrax and hare are described as having the cud without the hoof. Water creatures need fins and scales. What is forbidden is not dangerous but ill-fitting: residue of a classification, handled as taboo. A detail supports her: hyrax and hare do not in fact ruminate, so the list runs on folk classification, not zoology. The strongest rival is Marvin Harris's materialist account — pigs were costly in an arid pastoral economy — which explains the pig beautifully and the shellfish not at all. The decisive fact is that Douglas later retracted this chapter: her universal claim that anomaly repels failed comparative testing, her own pangolin being the counterexample, and in <i>Leviticus as Literature</i> (1999) she argued the animals are protected rather than abhorred and the book's structure mirrors the tabernacle. A theory's most famous example can be wrong while the mechanism beneath it stands. Evidence strength: this is textual interpretation, with no available experiment.</p>
+</div>
+<div class="section">
+<span class="num">// 03</span>
+<h2>关于身体开口的规矩，在一个群体最说不清自己边界的时候变得最多</h2>
+<p>Douglas 的第二步大胆得多：人给身体定的规矩，形状上抄的是这个群体对自己边界的处境。身体是个有边界的系统，它有开口，也有进出的东西——唾液、血、乳汁、排泄物。凡是关于这些的讲究，她主张不能当卫生读，得当社会边界读。</p>
+<p>好处是能推出一个可查的预期：<em>一个群体越是把「谁算自己人」当成一件要费劲维持、又随时可能被冲破的事，它关于身体开口的规矩就越细。</em>她举的例子是 Srinivas 1952 年对南印度 Coorg 人的民族志：一个人数不多、边界意识很强的群体。</p>
+<p>最有分量也最有争议的案例是印度的种姓。Dumont 在 1966 年的《Homo Hierarchicus》里主张，洁净与不洁这一对区分是整套等级的核心原理，连世俗权力都被它统摄。批评很硬，而且来自好几个方向：Raheja 1988 年在北印度村庄的田野指出，组织村庄关系的中心是控制土地的支配种姓和一套赠予往来，不是婆罗门那把洁净的尺子；Dirks 2001 年主张今天那套刚性分类很大程度上是殖民时期的普查与行政做出来的；更早的批评指出 Dumont 采信的是上层的自我表述，底层经历到的是支配与匮乏。这里不站队——但有一件事得说明白：基于种姓的歧视造成的是真实的伤害，印度宪法第十七条已明令废除不可接触制。把它当机制来拆，跟把它当奇观来看，是两回事。</p>
+<p>那当代呢？有个诱人的说法：道德上的「脏」会不会真的让人想去洗手。2006 年 Zhong 与 Liljenquist 在《科学》上报告，回想一件自己做过的不道德的事之后，人更想要清洁用品——这被称作麦克白效应，引用极多。后来的直接复制没能重现：Earp 等人 2014 年用原始材料、更大样本、多国被试重做了三次，一次都没测到；2018 年一篇涵盖 15 项研究的元分析给出的合并效应量很小（g 约 0.17），只看独立实验室做的那部分则不显著。<strong>诚实的状态是：这个效应目前未确立。</strong></p>
+<p class="en-brief"><b>EN</b> Douglas's second and bolder move: the rules a society places on the body take their shape from that society's situation at its own boundaries. The body is a bounded system with openings — mouth, breaks in the skin, orifices — and things that cross them: saliva, blood, milk, excreta. Rules about these, she argued, should be read as social boundaries rather than as hygiene. That yields a checkable expectation: the harder a group has to work to maintain who counts as one of its own, the more elaborate its rules about bodily margins. Her example was Srinivas's 1952 ethnography of the Coorgs of South India. The weightiest and most contested case is caste. Dumont argued in <i>Homo Hierarchicus</i> (1966) that the pure/impure opposition is the encompassing principle of the whole hierarchy. The criticisms are strong and varied: Raheja's 1988 fieldwork in north India placed the land-controlling dominant caste and its gift relations at the centre rather than a Brahmanical purity scale; Dirks argued in 2001 that colonial censuses and administration substantially produced the rigid ordering; earlier critics noted that Dumont relied on elite self-representation while those at the bottom experience domination and material deprivation rather than consensual hierarchy. No side is taken here, but one thing must be said plainly: caste discrimination causes real harm, and untouchability is abolished by Article 17 of India's constitution. Analysing a mechanism is not the same as treating it as a spectacle. For the contemporary case: Zhong and Liljenquist reported in <i>Science</i> in 2006 that recalling one's own unethical act increased desire for cleaning products — the much-cited Macbeth effect. Direct replications failed: Earp and colleagues ran three higher-powered attempts with the original materials across countries in 2014 and detected nothing, and a 2018 meta-analysis of 15 studies found a small pooled effect (g ≈ 0.17) that was non-significant among independent laboratories. The honest status is: not established.</p>
+</div>
+<div class="bigcat">
+<h3>🎒 场景 · BigCat</h3>
+<ul>
+<li><b>① 带团队与组织</b>——两个小组交界处那类活：每次来了都要先在群里争一轮归谁，争完才有人动手，下次再争一次。跑的是「头发掉进汤里，变的不是头发，是它的位置」那节的机制：装不进任何格子的东西引发的是回避，不是处理。可改的：给边界类目指定一个默认接手方，加一条事后改判的路径（先干，干完可以申诉重新归属），而不是再补细则把每种情况都分进格子。停掉：归属没定就不开工。</li>
+<li><b>② 投资与仓位</b>——每次大幅波动之后那一两周：你会给自己新加一串规矩，不看盘、收盘前半小时不下单、每天只准改一次计划。跑的是「关于身体开口的规矩，在一个群体最说不清自己边界的时候变得最多」那节的机制：规矩的密度跟着不确定感长，不跟着实际损失的大小长。可改的：每新加一条，当场写下它要拦住的那个具体动作和一个复核日期，到期翻记录看它拦下过几次，拦不到就删掉。</li>
+</ul>
+</div>
+<div class="crossx">
+<h3>🌀 越界 · 跨学科的联想</h3>
+<ul>
+<li><b>演化生物学与免疫学 · 全身规矩最密的那道边界，正好是最分不清敌我的那道</b>：免疫学的老框架是「自我／非我」：认得出是自己的就放过，认不出就打。按这个框架，防御该堆在威胁最凶的地方。实际不是——免疫细胞聚得最多的是肠道黏膜，而那里恰恰最难判定，几十万亿个共生细菌既不是自己，也不是病原。2011 年 Atarashi 等人报告，结肠里一类专管「按住不打」的调节性 T 细胞是被共生梭菌诱导出来的：最模糊的那条线上长出的不是更强的攻击，是一整套额外的裁决机制。跑的是「关于身体开口的规矩，在一个群体最说不清自己边界的时候变得最多」那节的机制：手续的繁复度跟着边界的不可判定性走。由此推出一个原本看不出的结论：<b>要预测一个群体在哪里会长出最啰嗦的规程，该去找它最说不清谁算自己人的那条线，而不是敌人最多的那条线</b>——这可以查：数规程条目，对边界模糊度，而不是对威胁强度。<b>但这里不成立</b>：免疫那套边界终究有外部裁判在筛，判错了个体会死；污染规则没有这个筛子，一条物理上根本不存在的区分，只靠人互相监督就能存续几百年。何况「自我／非我」在免疫学内部早被修正过（Matzinger 1994 年的危险模型），拿它给社会边界背书要小心。</li>
+<li><b>物理与数学 · 两瓶气体混在一起算不算变脏，取决于你手上有没有一张分得开它们的膜</b>：热力学里有个有名的别扭处叫吉布斯佯谬——把两瓶气体混起来，熵增多少取决于它们是不是同一种：不同种，混合不可逆；同一种，混合前后什么都没发生。Jaynes 1992 年重讲这件事时提了个思想实验：某种气体存在两个变种，能分离它们的半透膜要许多年后才造得出来。膜出现之前，混合不算任何损失；膜造出来之后，同一个动作立刻成了一次不可逆的污染——气体一点没变，变的只有你手上的分辨手段。跑的是「头发掉进汤里，变的不是头发，是它的位置」那节的机制：脏是分类表的函数，不是物质的属性。由此推出一个原本看不出的结论：<b>一个群体新拿到一种区分手段（新的检测、新的类别名），原本无所谓的混合会立刻变成污染，而被污染的东西完全没变</b>——这可以查：找一项新检测技术普及的前后，看同一批东西的「干净／不干净」判定是否翻转。<b>但这里不成立</b>：物理这边的可分辨性有外部裁决——存不存在一个实际过程能利用这个区分做出功来；社会那边没有这种裁判，做不出任何实效的区分照样可以被坚持。所以别把「熵依赖于观察者」搬过去说成「脏纯粹是主观的」。</li>
+</ul>
+</div>
+<div class="thinking">
+<h3>深入思考</h3>
+<details><summary>如果「脏」是分类的产物，那讲卫生是不是就白讲了？</summary>
+<div>是两回事。重合的那部分要靠测量来认，不能靠感觉——感觉认的是分类表。反过来也一样：一件在流行病学上毫无风险的事，仍然可能引起强烈的回避反应，而那反应会带来真实后果。把两条线分开查，比争论「脏到底是不是客观的」有用。</div>
+</details>
+<details><summary>为什么「正处在两个身份之间」的人，常常被当成危险的或者神圣的？</summary>
+<div>这跟仪式与集体欢腾那期的阈限状态接得上：一个人已经不是原来那个身份、又还没成为新的那个，在分类表上暂时没有格子——按本期的机制，这种状态必须被处置。常见做法是把这段时间隔离起来、加上一堆禁忌，或者反过来赋予它特殊的力量。可以自己数数：入职到转正、退休头半年，这些「之间」的时段周围有多少不成文的讲究。</div>
+</details>
+<details><summary>一个新的分类口径刚落地，为什么总跟着长出一堆「处理办法」？</summary>
+<div>因为新分类把原来混在一起的东西切开了，切不干净的地方就是剩余，而剩余必须被处置。想验证：找一个新分类刚落地的领域，数数配套规程头两年多了几条，其中几条真拦住了实际问题、几条只在维护类别本身的清楚。</div>
+</details>
+</div>
+<div class="refs">
+<h3>延伸阅读</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Purity_and_Danger" rel="noopener" target="_blank">《洁净与危险》(1966)</a> · <a href="https://www.taylorfrancis.com/chapters/mono/10.4324/9781315015811-4/abominations-leviticus-mary-douglas" rel="noopener" target="_blank">「利未记的可憎之物」一章</a> · <a href="https://en.wikipedia.org/wiki/Mary_Douglas" rel="noopener" target="_blank">Mary Douglas</a>（英文）</li>
+<li><a href="https://en.wikipedia.org/wiki/The_Lele_of_the_Kasai" rel="noopener" target="_blank">《开赛的 Lele 人》(1963)</a> · <a href="https://www.bytrentsacred.co.uk/index.php/douglas-purity-and-danger/10-the-lele-pangolin-cult" rel="noopener" target="_blank">Lele 的穿山甲祭仪</a>（英文）</li>
+<li><a href="https://monoskop.org/images/2/21/Douglas_Mary_Leviticus_As_Literature_2000.pdf" rel="noopener" target="_blank">《作为文学的利未记》(1999) 全文</a> · <a href="https://www.berghahnjournals.com/view/journals/religion-and-society/11/1/arrs110103.xml" rel="noopener" target="_blank">她为希伯来文译本写的序</a>（英文）</li>
+<li><a href="https://en.wikipedia.org/wiki/Marvin_Harris" rel="noopener" target="_blank">Marvin Harris 与文化唯物主义</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/15252963/" rel="noopener" target="_blank">Curtis 等：厌恶与疾病风险 (2004)</a>（英文）</li>
+<li><a href="https://press.uchicago.edu/ucp/books/book/chicago/H/bo25135790.html" rel="noopener" target="_blank">Dumont《Homo Hierarchicus》</a> · <a href="https://www.tandfonline.com/doi/full/10.1080/09584935.2023.2169904" rel="noopener" target="_blank">重估 Dumont：含 Raheja 与 Dirks 的批评 (2023)</a> · <a href="https://en.wikipedia.org/wiki/M._N._Srinivas" rel="noopener" target="_blank">M. N. Srinivas</a>（英文）</li>
+<li><a href="https://en.wikipedia.org/wiki/Lady_Macbeth_effect" rel="noopener" target="_blank">麦克白效应</a> · <a href="https://www.tandfonline.com/doi/abs/10.1080/01973533.2013.856792" rel="noopener" target="_blank">Earp 等：复制失败 (2014)</a> · <a href="https://econtent.hogrefe.com/doi/10.1027/1864-9335/a000349" rel="noopener" target="_blank">Siev 等：元分析 (2018)</a>（英文）</li>
+<li><a href="https://www.science.org/doi/abs/10.1126/science.1198469" rel="noopener" target="_blank">Atarashi 等：共生梭菌与调节性 T 细胞 (2011)</a> · <a href="https://en.wikipedia.org/wiki/Polly_Matzinger" rel="noopener" target="_blank">Matzinger 与危险模型</a>（英文）</li>
+<li><a href="https://en.wikipedia.org/wiki/Gibbs_paradox" rel="noopener" target="_blank">吉布斯佯谬</a> · <a href="https://www.semanticscholar.org/paper/d04cd073c8b139f20a43b799b02f07a82d7f89f0" rel="noopener" target="_blank">Jaynes《吉布斯佯谬》(1992)</a>（英文）</li>
+</ul>
+</div>
+<footer>BigCat Learning Hub · 社会学与人类学</footer>
+</div>
+<script src="https://hub.cissychen.com/comments.js" defer></script>
+<script src="https://hub.cissychen.com/search.js" defer></script>
+<script src="https://hub.cissychen.com/index-button.js" defer></script>
+<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
+</body></html>

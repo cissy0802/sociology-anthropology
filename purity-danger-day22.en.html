@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sociology &amp; Anthropology Day 22: Purity and Danger</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:linear-gradient(170deg,#1a140f,#171210 42%,#120e0b);color:#e6dacc;line-height:1.9;min-height:100vh}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 60px}
+header{padding:52px 0 30px;border-bottom:1px solid #33261d}
+header .kicker{font-size:0.75rem;color:#8fb0cc;letter-spacing:2.5px;font-family:"SF Mono",Menlo,monospace}
+header h1{font-size:2.1rem;font-weight:800;background:linear-gradient(100deg,#e08155,#eda07c 58%,#8fb0cc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:0.5px;margin-top:12px;line-height:1.28}
+header h2{font-size:1rem;color:#a08b78;margin-top:10px;font-weight:400}
+header .meta{margin-top:14px;font-size:0.85rem;color:#a08b78}
+header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
+.intro{margin-top:30px;font-size:1.02rem;color:#d8c9b8}
+.intro p{margin-bottom:13px}
+.section{margin:46px 0;background:rgba(255,255,255,0.028);padding:28px 26px;border-radius:14px;border:1px solid rgba(255,255,255,0.06)}
+.section .num{display:inline-block;font-size:0.75rem;color:#e08155;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;margin-bottom:8px}
+.section h2{font-size:1.32rem;color:#f4ece2;margin-bottom:16px;font-weight:700;line-height:1.35}
+.section p{margin-bottom:14px;font-size:0.98rem}
+.section strong{color:#fff}
+.section em{color:#e08155;font-style:normal}
+.section ul{list-style:none;margin:14px 0}
+.section li{margin-bottom:10px;padding-left:20px;position:relative}
+.section li::before{content:"◈";position:absolute;left:0;top:0.42em;color:#e08155;font-size:0.7rem}
+.fig{margin:24px 0 10px;text-align:center}
+.fig svg{max-width:100%;height:auto}
+.fig .cap{font-size:0.82rem;color:#a08b78;margin-top:8px;text-align:left;line-height:1.65}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(143,176,204,0.12),rgba(224,129,85,0.05));border:1px solid rgba(143,176,204,0.34);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#8fb0cc;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#dfe3e6;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e08155;font-size:0.72rem}
+.crossx b{color:#aecbe2;font-weight:600}
+.thinking{background:linear-gradient(135deg,rgba(224,129,85,0.06),rgba(143,176,204,0.05));border:1px solid rgba(224,129,85,0.24);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e08155;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(18,14,11,0.5);border:1px solid rgba(224,129,85,0.2);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(224,129,85,0.06);border-color:rgba(224,129,85,0.42)}
+.thinking summary{cursor:pointer;color:#eda07c;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#8fb0cc}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(143,176,204,0.22);color:#ddd0c1;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#8fb0cc;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a08b78}
+.refs a{color:#e08155;text-decoration:none;border-bottom:1px dotted rgba(224,129,85,0.42)}
+.refs a:hover{color:#eda07c;border-bottom-color:#eda07c}
+.bigcat{margin:40px 0 0;background:linear-gradient(135deg,rgba(224,129,85,0.11),rgba(143,176,204,0.04));border:1px solid rgba(224,129,85,0.32);border-radius:14px;padding:22px 26px}
+.bigcat h3{color:#eda07c;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.bigcat ul{list-style:none;margin:0}
+.bigcat li{color:#ece0d2;font-size:0.93rem;line-height:1.8;margin-bottom:14px}
+.bigcat li:last-child{margin-bottom:0}
+.bigcat b{color:#eda07c;font-weight:600}
+footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
+@media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+</style></head><body>
+<div class="container">
+<header>
+<div class="kicker">DAY 22 · PURITY AND DANGER</div>
+<h1>Purity and Danger</h1>
+<h2>The most counterintuitive line here: dirt is never about the thing itself but about where it is sitting — so a classification leaves behind exactly as much danger as it leaves residue</h2>
+<div class="meta">2026-09-15 · BigCat</div>
+<div class="pitch">A hair on your head is a hair, and you touch it all day. The same hair in the soup and the whole bowl is undrinkable. Nothing about the hair has changed except its address.</div>
+</header>
+<div class="intro">
+<p>Shoes in the shoe rack are fine; shoes on the dining table are not. The reaction arrives so fast and so certainly that it never seems to need a reason. Yet live somewhere else for two days and you run into another set of reactions, just as certain and not matching yours at all: in some places you must not hand something over with the left hand, in others walking indoors in outdoor shoes is simply what people do.</p>
+<p>In 1966 someone proposed that rules like these are not about hygiene at all, but about classification. She later retracted her own most famous chapter, and the mechanism underneath it came out stronger for it. This page takes apart three things: what dirt actually refers to, how one celebrated list of forbidden foods was derived, and why rules about the body suddenly multiply at certain moments.</p>
+</div>
+<div class="section">
+<span class="num">// 01</span>
+<h2>When a hair falls into the soup, what changes is not the hair but its position</h2>
+<p>Mary Douglas was a British anthropologist. From 1949 she twice went to the Kasai region of what was then the Belgian Congo and lived among the Lele, whose descendants live today in the Democratic Republic of the Congo. In 1966 she published <i>Purity and Danger</i>, and her opening move was to take the word "dirt" apart: <strong>there is no such thing as absolute dirt.</strong> Food is not dirty; food smeared down your front is. She borrowed an old formula — dirt is matter out of place.</p>
+<p>The sentence only bites when you run it backwards. To judge that something is in the wrong place you must already hold a table saying what belongs where. <em>So every flash of disgust is that table speaking on your behalf.</em> And no table is ever airtight. The whole book is one question: what happened to the things that fit no box?</p>
+<p>Her own field had a case. The Lele scheme has land animals, birds and water creatures, and the pangolin fits none of them: scaled like a fish yet it climbs trees; four-legged, yet it bears one young at a time, like a person; it has no teeth; and when a hunter comes upon it, it does not run. By the intuition that anomalies repel, it should have been shunned as taboo. The opposite is the case — it sits at the centre of a cult, only initiates may eat it, and eating it is held to bear on hunting and fertility.</p>
+<div class="fig">
+<svg viewBox="0 0 640 258" xmlns="http://www.w3.org/2000/svg">
+<g fill="none" stroke="#8fb0cc" stroke-width="1.3">
+<rect x="14" y="34" width="120" height="38" rx="6"></rect>
+<rect x="14" y="86" width="120" height="38" rx="6"></rect>
+<rect x="14" y="138" width="120" height="38" rx="6"></rect>
+<rect x="190" y="86" width="112" height="38" rx="8" stroke="#e08155" stroke-width="1.7"></rect>
+</g>
+<g stroke="#8fb0cc" stroke-width="1.1">
+<line x1="134" y1="53" x2="184" y2="99"></line>
+<line x1="134" y1="105" x2="184" y2="105"></line>
+<line x1="134" y1="157" x2="184" y2="111"></line>
+</g>
+<g stroke="#e08155" stroke-width="1.1">
+<line x1="302" y1="99" x2="384" y2="40"></line>
+<line x1="302" y1="103" x2="384" y2="82"></line>
+<line x1="302" y1="111" x2="384" y2="128"></line>
+<line x1="302" y1="115" x2="384" y2="170"></line>
+</g>
+<g fill="#d8c9b8" font-family="Georgia,serif" font-size="11.5" text-anchor="middle">
+<text x="74" y="58">Land animals</text>
+<text x="74" y="110">Birds</text>
+<text x="74" y="162">Water creatures</text>
+</g>
+<text x="246" y="110" fill="#eda07c" font-family="Georgia,serif" font-size="11.5" text-anchor="middle">Fits no box</text>
+<g fill="#d8c9b8" font-family="Georgia,serif" font-size="11" text-anchor="start">
+<text x="392" y="44">Force it into one class</text>
+<text x="392" y="86">Keep it physically apart</text>
+<text x="392" y="132">Declare it dangerous</text>
+<text x="392" y="174">Make it sacred, build a rite</text>
+</g>
+</svg>
+<div class="cap">Residue does not have only one fate. Douglas collected at least four kinds of handling; the pangolin took the last one.</div>
+</div>
+<p>This is the most durable part of the book: <strong>residue always gets handled, but the direction is open.</strong> The same ill-fitting thing can be made filthy or made sacred, and "it fits no box" alone tells you nothing about which.</p>
+<p>It is also where the sharpest criticism lands: Douglas insisted pollution rules have nothing to do with hygiene, and that claim is too strong. Curtis and colleagues in 2004 ran an image-rating survey on a broadcaster's website with more than forty thousand respondents; of two closely matched pictures, the one carrying disease cues — a lesion, a parasite, rotting meat — was rated more disgusting, consistently across regions. That is a self-selected web survey, correlational evidence rather than an experiment, but it is enough to show that disgust does latch onto some real disease cues. The honest statement is that pollution rules <em>partly overlap with pathogen transmission and partly do not, and the two have to be checked separately.</em></p>
+</div>
+<div class="section">
+<span class="num">// 02</span>
+<h2>That famous list of forbidden foods runs on "what an animal of this kind ought to look like", not on nutrition</h2>
+<p>Leviticus 11 and Deuteronomy 14 set out a list of what may and may not be eaten. The popular explanation is hygiene: pork carries parasites. Douglas said that reading does not work — many items on the list pose no health problem at all, and the reason the text itself gives is never sickness but uncleanness.</p>
+<p>Her reading: the text first states the standard form for each class, then rules out whatever falls short. On land, an animal must both chew the cud and have a cloven hoof to qualify (cattle, sheep); the pig has the hoof without the cud, so it fails; camel, hyrax and hare are described as having the cud without the hoof, so they fail too. In water, fins and scales are required, so shellfish fail. And there is a named class of things that swarm along the ground, moving in none of the three proper ways — walking, flying, swimming. <strong>What is forbidden is not the dangerous but the ill-fitting</strong> — residue left by the table, handled as taboo.</p>
+<div class="fig">
+<svg viewBox="0 0 580 230" xmlns="http://www.w3.org/2000/svg">
+<g fill="none" stroke="#8fb0cc" stroke-width="1.3">
+<rect x="170" y="56" width="190" height="66" rx="6"></rect>
+<rect x="360" y="56" width="190" height="66" rx="6"></rect>
+<rect x="170" y="122" width="190" height="66" rx="6"></rect>
+<rect x="360" y="122" width="190" height="66" rx="6"></rect>
+</g>
+<g fill="#a08b78" font-family="Georgia,serif" font-size="11.5">
+<text x="196" y="44">Chews the cud ✓</text>
+<text x="386" y="44">Chews the cud ✗</text>
+</g>
+<g fill="#a08b78" font-family="Georgia,serif" font-size="11.5" text-anchor="end">
+<text x="160" y="92">Cloven hoof ✓</text>
+<text x="160" y="158">Cloven hoof ✗</text>
+</g>
+<g font-family="Georgia,serif" font-size="12" text-anchor="middle">
+<text x="265" y="86" fill="#8fb0cc">Qualifies</text>
+<text x="265" y="106" fill="#d8c9b8">Cattle · sheep · goats</text>
+<text x="455" y="86" fill="#eda07c">Residue</text>
+<text x="455" y="106" fill="#d8c9b8">Pig</text>
+<text x="265" y="152" fill="#eda07c">Residue</text>
+<text x="265" y="172" fill="#d8c9b8">Camel · hyrax · hare</text>
+<text x="455" y="152" fill="#eda07c">Residue</text>
+<text x="455" y="172" fill="#d8c9b8">All other land animals</text>
+</g>
+</svg>
+<div class="cap">Both conditions must hold to qualify, and meeting only one is more conspicuous than meeting neither: the pig's problem is not that it is filthy but that it is half right.</div>
+</div>
+<p>One detail props her reading up from the other side: the hyrax and the hare do not in fact ruminate, they merely make a similar chewing motion. The text runs on folk classification as the eye sees it, not on zoology — the criterion really is "what does this look like it belongs to".</p>
+<p>The strongest rival statement comes from Marvin Harris: prohibitions of this kind write a long-running bad bargain into law. Pigs were expensive in that arid belt — they do not graze, they need shade and water, they give no milk and pull no plough. That explains the pig elegantly and the shellfish and the hyrax not at all. Each reading covers part of the list, and neither has won outright.</p>
+<p>The thing most worth telling is that Douglas later retracted this chapter. "Anomaly provokes rejection" is a universal claim, and it fails the moment you test it comparatively — her own pangolin is the counterexample lying ready to hand. By <i>Leviticus as Literature</i> (1999) she had changed her account: those animals are not abhorred but protected, and the structure of the book mirrors the layout of the tabernacle. What is worth keeping from that: <strong>a theory's most famous example can be wrong while the mechanism underneath it still stands.</strong> Evidence strength: this whole dispute is textual interpretation, with no experiment available; the only test is which reading covers more of the clauses without adding assumptions.</p>
+</div>
+<div class="section">
+<span class="num">// 03</span>
+<h2>Rules about the body's openings multiply exactly when a group can least say where its own boundary runs</h2>
+<p>Douglas's second move is bolder: the rules a society lays on the body copy the shape of that society's situation at its own edges. The body is a bounded system with openings, and with things that cross them — saliva, blood, milk, excreta. Rules about any of these, she argued, should not be read as hygiene but as social boundaries.</p>
+<p>The advantage is that it yields a checkable expectation: <em>the more a group treats "who counts as one of us" as something that takes effort to maintain and could be breached at any time, the finer its rules about bodily margins become.</em> Her example was Srinivas's 1952 ethnography of the Coorgs of South India — a small group with a strong sense of its own edges.</p>
+<p>The weightiest and most contested case is caste in India. In <i>Homo Hierarchicus</i> (1966) Dumont argued that the opposition of pure and impure is the organising principle of the entire hierarchy, encompassing even secular power. The criticism is hard, and it comes from several directions: Raheja's 1988 fieldwork in north Indian villages found the centre of village relations to be the land-controlling dominant caste and a traffic of ritual gifts, not a Brahmanical scale of purity; Dirks argued in 2001 that the rigid classification we see today was substantially produced by colonial censuses and administration; earlier critics noted that Dumont took an elite self-representation at face value while those at the bottom experience domination and deprivation. No side is taken here — but one thing must be said plainly: caste discrimination causes real harm, and untouchability is abolished by Article 17 of India's constitution. Taking a mechanism apart is not the same thing as treating it as a spectacle.</p>
+<p>And today? There is a tempting claim: does moral dirt actually make people want to wash? In 2006 Zhong and Liljenquist reported in <i>Science</i> that recalling one's own unethical act increased the desire for cleaning products — the much-cited Macbeth effect. Direct replications failed to reproduce it: Earp and colleagues in 2014 ran it three times with the original materials, larger samples and participants in several countries, and detected nothing; a 2018 meta-analysis covering fifteen studies found a small pooled effect (g ≈ 0.17), non-significant among the studies run by independent laboratories. <strong>The honest status is: this effect is not established.</strong></p>
+</div>
+<div class="bigcat">
+<h3>🎒 In practice · BigCat</h3>
+<ul>
+<li><b>① Running a team</b>—the kind of work that lands on the border between two groups: every time one arrives there is a round of argument in the channel about whose it is, and only then does anyone start, and the next one gets argued over again. This runs the mechanism from "when a hair falls into the soup, what changes is not the hair but its position": a thing that fits no box provokes avoidance, not handling. What to change: name a default owner for the border category plus a route to reassign afterwards (do it first, appeal the ownership once it is done), instead of adding more sub-rules to sort every case into a box. What to stop: refusing to start until ownership is settled.</li>
+<li><b>② Investing and position sizing</b>—the week or two after a violent move in the market: you add yourself a string of new rules, don't watch the screen, no orders in the last half hour, only one change of plan per day. This runs the mechanism from "rules about the body's openings multiply exactly when a group can least say where its own boundary runs": rule density tracks how uncertain you feel, not how large the actual loss was. What to change: for each new rule, write down on the spot the specific action it is meant to block and a review date; on that date go back through the record and count how many times it actually blocked anything, and delete it if the answer is none.</li>
+</ul>
+</div>
+<div class="crossx">
+<h3>🌀 Crossing over · Connections beyond the field</h3>
+<ul>
+<li><b>Evolutionary biology and immunology · The boundary carrying the densest rules is the one where friend and foe are hardest to tell apart</b>: the old immunological frame is self versus non-self — recognise it as yours and let it pass, otherwise attack. On that frame, defence should pile up where the threat is fiercest. It does not. The largest concentration of immune cells sits at the gut mucosa, which is precisely the least decidable boundary there is: tens of trillions of commensal bacteria are neither self nor pathogen. In 2011 Atarashi and colleagues reported that a class of colonic regulatory T cells whose whole job is holding fire is induced by commensal clostridia. What grows along the blurriest line is not a fiercer attack but an entire extra adjudication machinery. This runs the mechanism from "rules about the body's openings multiply exactly when a group can least say where its own boundary runs": procedural elaboration tracks the undecidability of the boundary. Which yields a conclusion you could not otherwise see: <b>to predict where a group will grow its most laborious procedures, look for the line along which it can least say who counts as one of its own, not the line with the most enemies</b> — and that is checkable: count the clauses and regress them on boundary ambiguity, not on threat intensity. <b>But it does not hold here</b>: the immune boundary is finally sifted by an outside judge, since getting it wrong kills the organism, whereas pollution rules face no such sieve — a distinction with no physical existence at all can persist for centuries on mutual policing alone. And self-versus-non-self was itself revised inside immunology long ago (Matzinger's danger model, 1994), so leaning on it to vouch for social boundaries needs care.</li>
+<li><b>Physics and mathematics · Whether mixing two flasks of gas counts as fouling them depends on whether you happen to own a membrane that tells them apart</b>: thermodynamics has a famous awkwardness called the Gibbs paradox. Mix two flasks of gas and how much the entropy rises depends on whether they are the same gas: different gases, and the mixing is irreversible; the same gas, and nothing has happened at all. Retelling this in 1992, Jaynes offered a thought experiment: suppose a gas comes in two variants, and the semi-permeable membrane that separates them will not be built for many years. Before the membrane exists, mixing them costs nothing; after it exists, the identical act is an irreversible contamination — and the gas has not changed in the slightest, only the discriminating apparatus in your hands. This runs the mechanism from "when a hair falls into the soup, what changes is not the hair but its position": dirt is a function of the classification, not a property of the substance. Which yields a conclusion you could not otherwise see: <b>the moment a group acquires a new means of discrimination — a new assay, a new category name — mixtures that nobody minded become pollution, while the polluted thing is entirely unchanged</b> — and that is checkable: take a detection technology before and after it spread, and see whether the clean-or-not verdict on the same batch of things flipped. <b>But it does not hold here</b>: on the physics side, discriminability has an external arbiter — either some real process can exploit the distinction to extract work, or none can; society has no such arbiter, and a distinction that yields nothing whatsoever can still be insisted upon. So do not carry "entropy depends on the observer" across and turn it into "dirt is purely subjective".</li>
+</ul>
+</div>
+<div class="thinking">
+<h3>Going deeper</h3>
+<details><summary>If dirt is a product of classification, has hygiene been a waste of breath?</summary>
+<div>They are two different things. The overlapping part has to be established by measurement, not by feel — feel reads the classification table. The converse holds too: something with no epidemiological risk whatsoever can still provoke a strong avoidance reaction, and that reaction has real consequences. Checking the two lines separately is more use than arguing about whether dirt is objective.</div>
+</details>
+<details><summary>Why are people caught between two identities so often treated as either dangerous or holy?</summary>
+<div>This connects to the liminal state from the issue on ritual and collective effervescence: someone who is no longer what they were and not yet what they will be has, for the moment, no box on the table — and by this page's mechanism, that state must be handled. The common move is to seal off the interval and pile taboos on it, or else to credit it with special power. Try counting for yourself: from being hired to passing probation, or the first six months of retirement, how many unwritten observances cluster around those in-between stretches.</div>
+</details>
+<details><summary>When a new classification is introduced, why does a pile of "handling procedures" always grow up around it?</summary>
+<div>Because the new classification cuts apart things that used to sit together, and wherever the cut is imperfect there is residue, and residue must be handled. To test it: find a domain where a new classification has just landed, count how many procedural clauses accumulated in the first two years, then ask how many of them actually blocked a real problem and how many only maintain the tidiness of the category itself.</div>
+</details>
+</div>
+<div class="refs">
+<h3>Further reading</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Purity_and_Danger" rel="noopener" target="_blank">Douglas, Purity and Danger (1966)</a> · <a href="https://www.taylorfrancis.com/chapters/mono/10.4324/9781315015811-4/abominations-leviticus-mary-douglas" rel="noopener" target="_blank">The Abominations of Leviticus (chapter)</a> · <a href="https://en.wikipedia.org/wiki/Mary_Douglas" rel="noopener" target="_blank">Mary Douglas</a></li>
+<li><a href="https://en.wikipedia.org/wiki/The_Lele_of_the_Kasai" rel="noopener" target="_blank">The Lele of the Kasai (1963)</a> · <a href="https://www.bytrentsacred.co.uk/index.php/douglas-purity-and-danger/10-the-lele-pangolin-cult" rel="noopener" target="_blank">The Lele pangolin cult</a></li>
+<li><a href="https://monoskop.org/images/2/21/Douglas_Mary_Leviticus_As_Literature_2000.pdf" rel="noopener" target="_blank">Douglas, Leviticus as Literature (1999), full text</a> · <a href="https://www.berghahnjournals.com/view/journals/religion-and-society/11/1/arrs110103.xml" rel="noopener" target="_blank">Her preface to the Hebrew translation, on changing her mind</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Marvin_Harris" rel="noopener" target="_blank">Marvin Harris and cultural materialism</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/15252963/" rel="noopener" target="_blank">Curtis et al., disgust and disease risk (2004)</a></li>
+<li><a href="https://press.uchicago.edu/ucp/books/book/chicago/H/bo25135790.html" rel="noopener" target="_blank">Dumont, Homo Hierarchicus</a> · <a href="https://www.tandfonline.com/doi/full/10.1080/09584935.2023.2169904" rel="noopener" target="_blank">Reassessing Dumont, with the Raheja and Dirks criticisms (2023)</a> · <a href="https://en.wikipedia.org/wiki/M._N._Srinivas" rel="noopener" target="_blank">M. N. Srinivas</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Lady_Macbeth_effect" rel="noopener" target="_blank">The Macbeth effect</a> · <a href="https://www.tandfonline.com/doi/abs/10.1080/01973533.2013.856792" rel="noopener" target="_blank">Earp et al., failed replications (2014)</a> · <a href="https://econtent.hogrefe.com/doi/10.1027/1864-9335/a000349" rel="noopener" target="_blank">Siev et al., meta-analysis (2018)</a></li>
+<li><a href="https://www.science.org/doi/abs/10.1126/science.1198469" rel="noopener" target="_blank">Atarashi et al., commensal clostridia and regulatory T cells (2011)</a> · <a href="https://en.wikipedia.org/wiki/Polly_Matzinger" rel="noopener" target="_blank">Matzinger and the danger model</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Gibbs_paradox" rel="noopener" target="_blank">The Gibbs paradox</a> · <a href="https://www.semanticscholar.org/paper/d04cd073c8b139f20a43b799b02f07a82d7f89f0" rel="noopener" target="_blank">Jaynes, The Gibbs Paradox (1992)</a></li>
+</ul>
+</div>
+<footer>BigCat Learning Hub · Sociology &amp; Anthropology</footer>
+</div>
+<script src="https://hub.cissychen.com/comments.js" defer></script>
+<script src="https://hub.cissychen.com/search.js" defer></script>
+<script src="https://hub.cissychen.com/index-button.js" defer></script>
+<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
+</body></html>
