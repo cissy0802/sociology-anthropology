@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>社会学与人类学 Day 24：国家的视角</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:linear-gradient(170deg,#1a140f,#171210 42%,#120e0b);color:#e6dacc;line-height:1.9;min-height:100vh}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 60px}
+header{padding:52px 0 30px;border-bottom:1px solid #33261d}
+header .kicker{font-size:0.75rem;color:#8fb0cc;letter-spacing:2.5px;font-family:"SF Mono",Menlo,monospace}
+header h1{font-size:2.1rem;font-weight:800;background:linear-gradient(100deg,#e08155,#eda07c 58%,#8fb0cc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:0.5px;margin-top:12px;line-height:1.28}
+header h2{font-size:1rem;color:#a08b78;margin-top:10px;font-weight:400}
+header .meta{margin-top:14px;font-size:0.85rem;color:#a08b78}
+header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
+.intro{margin-top:30px;font-size:1.02rem;color:#d8c9b8}
+.intro p{margin-bottom:13px}
+.section{margin:46px 0;background:rgba(255,255,255,0.028);padding:28px 26px;border-radius:14px;border:1px solid rgba(255,255,255,0.06)}
+.section .num{display:inline-block;font-size:0.75rem;color:#e08155;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;margin-bottom:8px}
+.section h2{font-size:1.32rem;color:#f4ece2;margin-bottom:16px;font-weight:700;line-height:1.35}
+.section p{margin-bottom:14px;font-size:0.98rem}
+.section strong{color:#fff}
+.section em{color:#e08155;font-style:normal}
+.section ul{list-style:none;margin:14px 0}
+.section li{margin-bottom:10px;padding-left:20px;position:relative}
+.section li::before{content:"◈";position:absolute;left:0;top:0.42em;color:#e08155;font-size:0.7rem}
+.fig{margin:24px 0 10px;text-align:center}
+.fig svg{max-width:100%;height:auto}
+.fig .cap{font-size:0.82rem;color:#a08b78;margin-top:8px;text-align:left;line-height:1.65}
+.en-brief{margin-top:18px;padding:12px 16px;border-left:2px solid rgba(160,139,120,0.5);background:rgba(255,255,255,0.02);border-radius:0 8px 8px 0;font-size:0.85rem;color:#b0a08e;line-height:1.62}
+.en-brief b{color:#bda994;font-family:"SF Mono",Menlo,monospace;font-size:0.68rem;letter-spacing:1.5px;margin-right:9px;font-weight:700}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(143,176,204,0.12),rgba(224,129,85,0.05));border:1px solid rgba(143,176,204,0.34);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#8fb0cc;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#dfe3e6;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e08155;font-size:0.72rem}
+.crossx b{color:#aecbe2;font-weight:600}
+.thinking{background:linear-gradient(135deg,rgba(224,129,85,0.06),rgba(143,176,204,0.05));border:1px solid rgba(224,129,85,0.24);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e08155;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(18,14,11,0.5);border:1px solid rgba(224,129,85,0.2);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(224,129,85,0.06);border-color:rgba(224,129,85,0.42)}
+.thinking summary{cursor:pointer;color:#eda07c;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#8fb0cc}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(143,176,204,0.22);color:#ddd0c1;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#8fb0cc;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a08b78}
+.refs a{color:#e08155;text-decoration:none;border-bottom:1px dotted rgba(224,129,85,0.42)}
+.refs a:hover{color:#eda07c;border-bottom-color:#eda07c}
+.bigcat{margin:40px 0 0;background:linear-gradient(135deg,rgba(224,129,85,0.11),rgba(143,176,204,0.04));border:1px solid rgba(224,129,85,0.32);border-radius:14px;padding:22px 26px}
+.bigcat h3{color:#eda07c;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.bigcat ul{list-style:none;margin:0}
+.bigcat li{color:#ece0d2;font-size:0.93rem;line-height:1.8;margin-bottom:14px}
+.bigcat li:last-child{margin-bottom:0}
+.bigcat b{color:#eda07c;font-weight:600}
+footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
+@media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+</style></head><body>
+<div class="container">
+<header>
+<div class="kicker">DAY 24 · 国家的视角</div>
+<h1>国家的视角</h1>
+<h2>这一期最反直觉的一句：要让台账变准，最省事的办法从来不是改进测量，是把现实改造成台账的样子——森林、村庄、姓氏都被这样改过</h2>
+<div class="meta">2026-09-17 · BigCat</div>
+<div class="pitch">你姓什么，在不少地方并不是祖上传下来的，是某一年官府照着一本册子发下来的。</div>
+</header>
+<div class="intro">
+<p>你填过的每一张表，开头都是那几个格子：姓名、住址、证件号。看着天经地义。可固定的、父子相传的姓氏在世界很多地方只有一两百年历史，而且它出现的理由写得明明白白——为了收税和征兵。</p>
+<p>这一页拆三件事：一个政府为了把治下看清楚都做过什么；那些怎么也写不进表格的知识长什么样；以及，有没有人干脆把日子过成了不值得被登记的样子。</p>
+</div>
+<div class="section">
+<span class="num">// 01</span>
+<h2>为了把树数清楚，他们重新种了一整片森林，一百年后第二茬长不动了</h2>
+<p>十八世纪后期的普鲁士和萨克森，林务官手上有了个新工具，叫标准木（Normalbaum）：先量出一棵「标准」树能出多少材积，再据此推算整片林子值多少钱。这是个漂亮的发明——森林第一次变成了可以写进预算的数字。</p>
+<p>接下来那一步才要命。台账要准，最费劲的办法是改进测量；最省事的办法是改造森林。于是灌丛清掉、杂树伐掉、落叶耙走，换上同一树种、同一年龄、成行成列的人工林，主要是云杉和赤松。走进去像走在货架中间。第一茬长得极好，产量可预测，官员很满意。</p>
+<p>第二茬出事了。大约一百年后，同样的地块产量掉了两到三成，德国林学界给最坏的情形造了个词：Waldsterben（森林死亡）。后来重建的解释是：第一茬吃的是老林子几百年攒下的土壤本钱——腐殖质、菌根、昆虫、鸟、倒木。这些东西一样都没进台账，因为它们不出木料。<em>台账不是漏记了它们，是根本没有装它们的格子。</em></p>
+<p>证据强度得说清楚：这是历史个案加事后重建，不是对照实验；而且 Waldsterben 这个词在 1980 年代主要被用来指酸沉降造成的森林损害，跟单一栽培那件事不完全是一回事，两者别混着讲。</p>
+<div class="fig">
+<svg viewBox="0 0 620 226" xmlns="http://www.w3.org/2000/svg">
+<g fill="none" stroke="#8fb0cc" stroke-width="1.3">
+<rect x="26" y="28" width="212" height="82" rx="9"></rect>
+<rect x="382" y="28" width="212" height="82" rx="9"></rect>
+</g>
+<g fill="#d8c9b8" font-family="Georgia,serif" font-size="11.5" text-anchor="middle">
+<text x="132" y="55">地上的林子</text>
+<text x="488" y="55">纸上的林子</text>
+</g>
+<g fill="#a08b78" font-family="Georgia,serif" font-size="10.5" text-anchor="middle">
+<text x="132" y="76">杂树 · 灌丛 · 菌根 · 拾柴的人</text>
+<text x="132" y="95">对本地人有用，不可加总</text>
+<text x="488" y="76">同种 · 同龄 · 成行成列</text>
+<text x="488" y="95">可加总，可在远处核对</text>
+</g>
+<g stroke="#8fb0cc" stroke-width="1.4">
+<line x1="246" x2="372" y1="60" y2="60"></line>
+<line x1="372" x2="364" y1="60" y2="56"></line>
+<line x1="372" x2="364" y1="60" y2="64"></line>
+</g>
+<text fill="#8fb0cc" font-family="Georgia,serif" font-size="10.5" text-anchor="middle" x="309" y="50">简化：只留数得清的</text>
+<g fill="none" stroke="#e08155" stroke-width="1.6">
+<path d="M488 118 L488 158 L132 158 L132 120"></path>
+</g>
+<g stroke="#e08155" stroke-width="1.6">
+<line x1="132" x2="127" y1="120" y2="130"></line>
+<line x1="132" x2="137" y1="120" y2="130"></line>
+</g>
+<text fill="#eda07c" font-family="Georgia,serif" font-size="11" text-anchor="middle" x="309" y="176">改造：把现实做成台账的样子</text>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="10.5" text-anchor="middle" x="309" y="200">出事的是这根，不是上面那根</text>
+</svg>
+<div class="cap">通常只画上面那根箭头。真正出事的是下面那根——清晰化不止是观察，它会回头改被观察的东西。</div>
+</div>
+<p>斯科特（James C. Scott）1998 年那本书把这件事提炼成一条机制，叫清晰化（legibility）。要点不在「国家想多知道点」——谁都想多知道点。要点在于：国家能用的知识必须可数、可比、能在两百公里外的办公室核对。一个只对本地人成立的事实，对那间办公室等于不存在。</p>
+<p>姓氏就是这么来的。1849 年西班牙殖民当局在菲律宾颁了克拉韦里亚法令，随令发下一本六万多个姓氏的册子，各省按镇、按字母分配，一家一个。法令把理由写得很直白：便于登记人口、征税、征兵。</p>
+<p>话要说全：同一套工程也是公共卫生、普及教育、疫苗记录和灾害救援的前提——找不到你，就没法给你打疫苗。<strong>清晰化不是坏事，是有代价的事。</strong>代价在下一节。</p>
+<p class="en-brief"><b>EN</b> In late-eighteenth-century Prussia and Saxony, foresters acquired a new instrument: the <i>Normalbaum</i>, a standard tree whose timber volume let them extrapolate what a whole forest was worth. For the first time a forest could be written into a budget. The decisive move came next. To make the ledger accurate, improving measurement is laborious; remaking the forest is cheap. Undergrowth was cleared, litter raked, mixed stands replaced by single-species, same-age rows, mostly spruce and pine. The first rotation grew superbly. About a century later the second rotation on the same ground yielded twenty to thirty percent less, and German forestry coined a word for the worst cases: <i>Waldsterben</i>, forest death. The reconstruction is that the first crop had been living on soil capital the old forest had banked over centuries — humus, mycorrhizal fungi, insects, birds, fallen wood — none of which appeared in the ledger, because none of it yields timber. The ledger had not omitted them; it had no column for them. Evidence strength: a historical case with retrospective reconstruction, not a controlled experiment, and the word <i>Waldsterben</i> in the 1980s referred mainly to acid-deposition damage, a different matter that should not be conflated with this one. James C. Scott's 1998 book distils this into one mechanism he calls legibility. The point is not that states want to know more — everyone does. It is that usable state knowledge must be countable, comparable and verifiable from an office two hundred kilometres away; a fact that holds only locally does not exist for that office. Surnames arrived the same way: in 1849 the Spanish colonial administration in the Philippines issued the Clavería decree with a catalogue of more than sixty thousand surnames, distributed town by town and alphabetically, one per household, for the stated purposes of registration, taxation and conscription. Say the whole thing, though: the same apparatus underwrites public health, mass schooling, vaccination records and disaster relief. Legibility is not a bad thing. It is a costly thing.</p>
+</div>
+<div class="section">
+<span class="num">// 02</span>
+<h2>照着规章一丝不苟地干活，是工人瘫痪一家工厂最快的办法</h2>
+<p>有一种罢工不停工。工人照常上班，只是把所有规章一条不落地执行——法语叫 grève du zèle，热心罢工。结果是生产垮掉。这件事比任何论证都直接：写下来的规程从来没有自足过，它一直跑在一大堆没写下来的判断上面。</p>
+<p>斯科特给这堆判断起了个名字：米提斯（mētis），借自古希腊语，取自德蒂安与韦尔南 1974 年讲希腊「狡黠智慧」的那本书。特征很好认：在地、随情境、只能靠做出来学会、一写成手册就掉一半。最古典的例子是引航——大船进港要请本地人上船，不是因为外来船长技术差，是因为那条水道的沙洲每年都在动，而「今年沙洲在哪」不在任何一张海图上。</p>
+<p>农业上有个扎实的田野。Paul Richards 1985 年的《本土的农业革命》写西非（主要在塞拉利昂）农民的混作：一块地上同时种好几样作物，成熟期错开、根系深浅不一、高的给矮的遮阴。殖民时期和之后的农艺官长期把这看成落后，推行单一作物成行播种。理由不全是偏见——单作能测产、能横向比较、能派人下去督导，混作这三样全做不到。Richards 指出，在当地的土壤与降雨条件下，混作往往更稳：抗旱、抗病、劳力摊得开。证据强度：田野研究加农学比较，不是普遍结论——换个条件，单作的产量确实更高。</p>
+<p>规模最大的一次是坦桑尼亚 1973 到 1976 年的村庄化。分散的农户被迁进规划好的新村，人数口径差别很大，从五百多万到上千万的估计都有。目的不坏，也部分做到了：住得集中才好建学校、通水、派农技员。但新村的位置是按图纸和路线定的，不是按各家几十年攒下的「哪块地哪年种什么、哪个坡先旱、哪片洼地涝年反而保收」。产量下去了。</p>
+<p>这本书最可迁移的是四个条件同时出现才出灾难：<em>行政上的简化、一种「我们已经看懂了」的自信、一个足以强推的权力、一个无力抵抗的社会。</em>少一样，通常只是个难看的项目，不是灾难。</p>
+<p>批评也要给。有人说他对国家能力过于悲观，也有人说他把米提斯浪漫化了——本地知识同样会错、同样会固守有害的旧法，而且<strong>「说不清楚」不等于「是对的」</strong>。这一页不选边：两种读法各自有站得住的案例。</p>
+<p class="en-brief"><b>EN</b> One kind of strike involves no stoppage at all. Workers turn up and follow every rule to the letter — the French call it <i>grève du zèle</i>, a zeal strike — and production collapses. Nothing argues the point more directly: written procedure has never been self-sufficient, because it runs on a mass of unwritten judgement. Scott names that judgement <i>mētis</i>, borrowing the Greek term from Detienne and Vernant's 1974 study of cunning intelligence. Its marks are easy to spot: local, situational, learned only by doing, and half-destroyed by being written into a manual. The classic case is river pilotage — a large ship takes a local pilot aboard not because the visiting captain lacks skill, but because the sandbars in that channel shift every year and where they are this year is on no chart. A solid field case comes from agriculture. Paul Richards's <i>Indigenous Agricultural Revolution</i> (1985) describes intercropping among West African, largely Sierra Leonean, farmers: several crops in one plot, maturing at different times, rooting at different depths, the tall shading the short. Colonial and later agronomists long read this as backward and pushed single crops in rows. The reason was not purely prejudice: monocrops can be yield-measured, compared across sites and supervised, and mixed plots allow none of the three. Richards argues that under local soils and rainfall, intercropping is often the more robust system — against drought, against disease, and in spreading labour across the season. Evidence strength: field research plus agronomic comparison, not a universal finding; under other conditions monocropping does yield more. The largest case is Tanzania's villagisation of 1973–76, when dispersed households were moved into planned villages; the counts vary widely, with estimates from somewhat over five million to above ten million people. The aims were not bad ones and were partly met, since concentration is what makes schools, water and extension services feasible. But the sites were chosen from plans and road lines rather than from what each household had learned over decades about which plot to plant in which year and which slope dries first. Yields fell. The book's most transferable passage is its four conditions, which produce catastrophe only in combination: administrative simplification, a confidence that the thing is now understood, a power able to impose it, and a society unable to resist. Remove one and you usually get a bad project rather than a disaster. Criticism belongs here too: Scott is read by some as too pessimistic about state capacity, and by others as romanticising <i>mētis</i> — local knowledge also errs, also clings to harmful practice, and being hard to articulate is not the same as being right. No side is taken here.</p>
+</div>
+<div class="section">
+<span class="num">// 03</span>
+<h2>有些人不是没被找到，是把日子过成了不值得被征收的样子</h2>
+<p>先看两种作物的差别。稻谷麦子长在地上，同时成熟，耐存耐运——收税的人骑马过来，一眼估得出这片地能征多少，而且非得在收割那几天来。薯类木薯这类块茎长在地下，什么时候要什么时候刨，刨出来放不久——要征收就得一块地一块地挖。同样是种地，<em>一种几乎是为征税准备的，另一种几乎是征不动的。</em></p>
+<p>Zomia 这个名字是历史学家范申德尔 2002 年提出的，取自当地藏缅语族里一个表示「山地人」的说法，指东南亚大陆海拔三百米以上那一大片山地，约两百五十万平方公里，跨着好几个国家，住着约一亿人。斯科特 2009 年那本《逃避统治的艺术》给了个挑衅的读法：这些人群身上被谷地视为「落后」的特征——游耕而不定居、口传而不用文字、谱系说改就改、社会结构分散没有中心——可能不是「还没发展到那一步」，而是次生的、策略性的，每一样都在降低被征税、被征兵、被抓去服徭役的概率。</p>
+<div class="fig">
+<svg viewBox="0 0 620 200" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 160 L150 158 L240 150 L320 92 L400 56 L470 84 L540 44 L600 60" fill="none" stroke="#a08b78" stroke-width="1.5"></path>
+<g stroke="#8fb0cc" stroke-width="1.2" stroke-dasharray="4 4">
+<line x1="20" x2="600" y1="132" y2="132"></line>
+</g>
+<text fill="#8fb0cc" font-family="Georgia,serif" font-size="10.5" x="24" y="126">海拔三百米</text>
+<g fill="#d8c9b8" font-family="Georgia,serif" font-size="11.5">
+<text x="60" y="180">谷地</text>
+<text x="400" y="180" text-anchor="middle">山地</text>
+</g>
+<g fill="#a08b78" font-family="Georgia,serif" font-size="10.5">
+<text x="60" y="196">谷物 · 定居 · 户籍 · 可征收</text>
+<text x="330" y="196">块茎 · 游耕 · 口传 · 征收成本高于收益</text>
+</g>
+<g fill="none" stroke="#e08155" stroke-width="1.4">
+<path d="M30 112 C 140 112, 200 108, 250 96"></path>
+</g>
+<g stroke="#e08155" stroke-width="1.4">
+<line x1="250" x2="241" y1="96" y2="94"></line>
+<line x1="250" x2="243" y1="96" y2="101"></line>
+</g>
+<text fill="#eda07c" font-family="Georgia,serif" font-size="11" x="30" y="102">国家能力</text>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="10.5" x="268" y="72">不是按距离递减，是按征收成本递减</text>
+</svg>
+<div class="cap">斯科特叫它摩擦地形：前现代国家的实际边界更像等高线，不像地图上那些直线。</div>
+</div>
+<p>批评挨得很重，要原样交代。历史学家指出，山地与谷地长期互市、进贡、通婚，不少山地群体自己也建过政体，「逃避」远不是唯一解释；把几百个来历各异的群体统一读成「逃避者」，本身就是一次简化——正是「为了把树数清楚，他们重新种了一整片森林」那节批评的那种简化。斯科特自己说这个论点对 1945 年之后基本不适用：现代国家的道路、通讯和测绘把摩擦地形抹平了。证据强度：历史人类学的解释性论证，不是可检验的因果推断。</p>
+<p>可以带走的不是「山民真高明」——那只是把「落后」换成「高明」，人照样没有自己的历史。可以带走的是一条更冷的规律：<strong>任何东西一旦被用来征收或考核，它就会开始朝难以被计量的方向变形。</strong>组织与制度那期讲过组织为什么长得越来越像；这里是反过来的一半——被计量的那一方也在动，而且往往动得更快。</p>
+<p class="en-brief"><b>EN</b> Start with two kinds of crop. Grain grows above ground, ripens at once and stores and travels well: a tax collector riding out can estimate the yield at a glance, and must come during the few days of harvest. Tubers such as yams and cassava grow underground, are dug when wanted and keep badly, so collecting them means digging plot by plot. The same farming labour is, in one case, almost purpose-built for taxation and, in the other, almost impossible to tax. The name Zomia was proposed in 2002 by the historian Willem van Schendel, from a Tibeto-Burman term for highlander, for the belt of mainland Southeast Asian uplands above three hundred metres — some 2.5 million square kilometres across several countries, home to roughly a hundred million people. Scott's <i>The Art of Not Being Governed</i> (2009) offers a provocative reading: the traits the lowlands read as backward — shifting cultivation rather than settlement, oral transmission rather than writing, genealogies revised at will, dispersed social structures without a centre — may not be stages not yet reached but secondary and strategic, each lowering the odds of being taxed, conscripted or seized for corvée labour. State power, on this account, does not fall off evenly with distance but with the cost of extraction, which Scott calls the friction of terrain; premodern borders look more like contour lines than like the straight lines on maps. The criticism is heavy and belongs here in full. Historians point out that uplands and lowlands traded, paid tribute and intermarried over long periods, that a number of upland groups built polities of their own, and that evasion is far from the only explanation. Reading hundreds of differently descended groups as a single category of evaders is itself a simplification — exactly the kind the forestry section criticises. Scott himself holds that the argument largely stops applying after 1945, when roads, communications and survey flattened the friction of terrain. Evidence strength: an interpretive argument in historical anthropology, not a testable causal claim. What travels is not admiration for highlanders, which merely swaps backward for clever and still leaves them without a history of their own. What travels is colder: once something is used for extraction or assessment, it starts deforming towards whatever is hard to measure. The piece on organisations and institutions covered why organisations come to look alike; this is the other half, in which the measured party moves too, and often moves faster.</p>
+</div>
+<div class="bigcat">
+<h3>🎒 场景 · BigCat</h3>
+<ul>
+<li><b>① 带团队与组织</b>——一套进度看板上线三个月后，卡片填得整整齐齐，可真正在拉扯的那些事挪去了私聊和临时文档。跑的是「有些人不是没被找到，是把日子过成了不值得被征收的样子」那节的机制：被用来考核的东西会朝难以计量的方向变形——这不是偷懒，是把工作搬去征收成本更高的地方。可改的：别再加字段、别再催更新，改成每周问一句「这周有哪件事你没往看板上写、为什么」；以及把看板从考核用途里摘出来，只要它同时用于打分，它就必然失真。</li>
+<li><b>② 修行与心性</b>——用 app 记打坐，它记的是分钟数和连续天数，于是有几天你为了不断签坐满五分钟就起身。跑的是「为了把树数清楚，他们重新种了一整片森林」那节的机制：可数的替代指标一旦成了被盯的对象，现实就开始朝它靠拢。可改的：把连续天数这个数关掉，换成每次记一句「今天坐的时候心最常跑去哪」——这句话不可加总也不可比，正因如此没法为它作弊。</li>
+</ul>
+</div>
+<div class="crossx">
+<h3>🌀 越界 · 跨学科的联想</h3>
+<ul>
+<li><b>分布式系统与 AI · 把自己设计成点不清的样子，代价不在带宽，在自己也点不清自己</b>：抗封锁的匿名网络有一类叫可插拔传输（pluggable transports）的模块，专门把流量伪装成别的东西；点对点网络则刻意不留可枚举的中心目录。跑的是「有些人不是没被找到，是把日子过成了不值得被征收的样子」那节的机制：不是躲得更远，是把自身形态改成让清点的成本高于收益。由此推出一个原本看不出的结论：<b>这类系统最硬的代价是内部可观测性——外面枚举不了它，它也枚举不了自己，所以长期报不出可信的用户数、也难做全局一致性；「更抗打击」和「更难管好自己」是同一个属性的两面，不能只要一半</b>。<b>但这里不成立</b>：Zomia 的摩擦来自地形，是白给的、一直在那儿的；网络里的摩擦全是设计出来并且要持续维护的，对手加算力或者改规则就能重新定价。所以「距离本身提供庇护」这条在网络里直接不成立——停止维护当天就失效，而山不会一夜之间被削平。</li>
+<li><b>医学与临床试验 · 把那个可测的数压到极致，人反而死得更多</b>：二型糖尿病的治疗长期盯着糖化血红蛋白，因为它可测、可比、能写进指南。ACCORD 试验把它推到极致：强化组的目标是降到 6% 以下。试验被提前终止，中位随访 3.7 年时，强化组的全因死亡率反而更高（年化约 1.41% 对 1.14%），结果 2008 年发表。跑的是「为了把树数清楚，他们重新种了一整片森林」那节的机制：被选中的是一个可远程核对的替代指标，而它与真正在意的事（活得久）之间那段连接是假设出来的，没人测。由此推出一个原本看不出的结论：<b>在用替代指标的地方，「指标达成度越高越好」系统性地不成立，而最该花钱去测的恰恰是指标与目标之间那段没被测过的连接，不是把指标压得更低</b>。<b>但这里不成立</b>：斯科特那边被抹掉的在地知识中央拿不到，也没有回滚的机会；临床这边有随机试验，ACCORD 本身就是这套体系自己把自己的错查出来的方式，查出来之后指南也真的改了。有可回滚的检验装置，就推不出他那套悲观结论。</li>
+</ul>
+</div>
+<div class="thinking">
+<h3>深入思考</h3>
+<details><summary>如果清晰化代价这么大，为什么没有哪个现代国家不做？</summary>
+<div>因为不做的撑不下去：征不到税就养不起军队和学校，找不到人就救不了灾。斯科特的论点不是「别看清楚」，是「看清楚之后别以为你看到的就是全部」。有个可观察的判据：一份规划里有没有给「我们可能错了」留下的回滚余地——试点、可逆、允许局部不照做。四个条件里最后那条（社会无力抵抗），本质上就是回滚开关被拆了。</div>
+</details>
+<details><summary>米提斯能不能写下来？</summary>
+<div>部分能，但写下来的那部分就不再是米提斯了——它变成规程，然后又需要一层新的、没写下来的判断来执行它。所以手册越厚，隐性判断不会减少，只会换个位置。你可以拿最近写的一份上手文档试试：第一个照着做的人卡在哪一步，那一步就是被挤到新位置上的米提斯。</div>
+</details>
+<details><summary>什么样的指标最不容易被变形？</summary>
+<div>大概是那些即使被人拼命优化，优化出来的也正好是你要的东西。挑一个你身边正在被追踪的数，问一句：它被做到极致之后，你还想不想要那个结果？答案是「不想」的，说明它是替代指标，得盯住它和真正目标之间那段连接；答案是「想」的，压它就没问题。</div>
+</details>
+</div>
+<div class="refs">
+<h3>延伸阅读</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Seeing_Like_a_State" rel="noopener" target="_blank">斯科特《国家的视角》(1998)</a> · <a href="https://theanarchistlibrary.org/library/james-c-scott-seeing-like-a-state" rel="noopener" target="_blank">全文（英文）</a> · <a href="https://networks.h-net.org/node/10000/reviews/10148/tauger-james-c-scott-seeing-state-how-certain-schemes-improve-human" rel="noopener" target="_blank">Tauger 的批评性书评</a>（英文）</li>
+<li><a href="https://en.wikipedia.org/wiki/Scientific_forestry" rel="noopener" target="_blank">科学林业与单一树种人工林</a> · <a href="https://en.wikipedia.org/wiki/Waldsterben" rel="noopener" target="_blank">Waldsterben 一词的两种用法</a>（英文）</li>
+<li><a href="https://en.wikipedia.org/wiki/Cat%C3%A1logo_alfab%C3%A9tico_de_apellidos" rel="noopener" target="_blank">1849 年菲律宾的姓氏册</a> · <a href="https://en.wikipedia.org/wiki/Surname" rel="noopener" target="_blank">固定姓氏的由来</a>（英文）</li>
+<li><a href="https://en.wikipedia.org/wiki/M%C4%93tis" rel="noopener" target="_blank">mētis（米提斯）</a> · <a href="https://en.wikipedia.org/wiki/Work-to-rule" rel="noopener" target="_blank">照章工作（grève du zèle）</a>（英文）</li>
+<li><a href="https://www.routledge.com/Indigenous-Agricultural-Revolution-Ecology-and-Food-Production-in-West-Africa/Richards/p/book/9781032469096" rel="noopener" target="_blank">Richards《本土的农业革命》(1985)</a> · <a href="https://en.wikipedia.org/wiki/Intercropping" rel="noopener" target="_blank">混作</a>（英文）</li>
+<li><a href="https://en.wikipedia.org/wiki/Operation_Vijiji" rel="noopener" target="_blank">坦桑尼亚村庄化 (1973–76)</a> · <a href="https://en.wikipedia.org/wiki/Ujamaa" rel="noopener" target="_blank">乌贾马</a>（英文）</li>
+<li><a href="https://en.wikipedia.org/wiki/The_Art_of_Not_Being_Governed" rel="noopener" target="_blank">斯科特《逃避统治的艺术》(2009)</a> · <a href="https://en.wikipedia.org/wiki/Zomia_(geography)" rel="noopener" target="_blank">Zomia</a> · <a href="https://www.chronicle.com/article/the-battle-over-zomia/" rel="noopener" target="_blank">围绕 Zomia 的争论</a>（英文）</li>
+<li><a href="https://www.nejm.org/doi/full/10.1056/NEJMoa0802743" rel="noopener" target="_blank">ACCORD：强化降糖试验 (2008)</a> · <a href="https://en.wikipedia.org/wiki/Surrogate_endpoint" rel="noopener" target="_blank">替代终点</a>（英文）</li>
+<li><a href="https://en.wikipedia.org/wiki/Pluggable_transports" rel="noopener" target="_blank">可插拔传输</a> · <a href="https://en.wikipedia.org/wiki/Internet_censorship_circumvention" rel="noopener" target="_blank">抗封锁网络</a>（英文）</li>
+</ul>
+</div>
+<footer>BigCat Learning Hub · 社会学与人类学</footer>
+</div>
+<script src="https://hub.cissychen.com/comments.js" defer></script>
+<script src="https://hub.cissychen.com/search.js" defer></script>
+<script src="https://hub.cissychen.com/index-button.js" defer></script>
+<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
+</body></html>
