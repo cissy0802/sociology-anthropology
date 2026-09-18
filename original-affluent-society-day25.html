@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>社会学与人类学 Day 25：原初丰裕社会</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:linear-gradient(170deg,#1a140f,#171210 42%,#120e0b);color:#e6dacc;line-height:1.9;min-height:100vh}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 60px}
+header{padding:52px 0 30px;border-bottom:1px solid #33261d}
+header .kicker{font-size:0.75rem;color:#8fb0cc;letter-spacing:2.5px;font-family:"SF Mono",Menlo,monospace}
+header h1{font-size:2.1rem;font-weight:800;background:linear-gradient(100deg,#e08155,#eda07c 58%,#8fb0cc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:0.5px;margin-top:12px;line-height:1.28}
+header h2{font-size:1rem;color:#a08b78;margin-top:10px;font-weight:400}
+header .meta{margin-top:14px;font-size:0.85rem;color:#a08b78}
+header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
+.intro{margin-top:30px;font-size:1.02rem;color:#d8c9b8}
+.intro p{margin-bottom:13px}
+.section{margin:46px 0;background:rgba(255,255,255,0.028);padding:28px 26px;border-radius:14px;border:1px solid rgba(255,255,255,0.06)}
+.section .num{display:inline-block;font-size:0.75rem;color:#e08155;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;margin-bottom:8px}
+.section h2{font-size:1.32rem;color:#f4ece2;margin-bottom:16px;font-weight:700;line-height:1.35}
+.section p{margin-bottom:14px;font-size:0.98rem}
+.section strong{color:#fff}
+.section em{color:#e08155;font-style:normal}
+.section ul{list-style:none;margin:14px 0}
+.section li{margin-bottom:10px;padding-left:20px;position:relative}
+.section li::before{content:"◈";position:absolute;left:0;top:0.42em;color:#e08155;font-size:0.7rem}
+.fig{margin:24px 0 10px;text-align:center}
+.fig svg{max-width:100%;height:auto}
+.fig .cap{font-size:0.82rem;color:#a08b78;margin-top:8px;text-align:left;line-height:1.65}
+.en-brief{margin-top:18px;padding:12px 16px;border-left:2px solid rgba(160,139,120,0.5);background:rgba(255,255,255,0.02);border-radius:0 8px 8px 0;font-size:0.85rem;color:#b0a08e;line-height:1.62}
+.en-brief b{color:#bda994;font-family:"SF Mono",Menlo,monospace;font-size:0.68rem;letter-spacing:1.5px;margin-right:9px;font-weight:700}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(143,176,204,0.12),rgba(224,129,85,0.05));border:1px solid rgba(143,176,204,0.34);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#8fb0cc;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#dfe3e6;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e08155;font-size:0.72rem}
+.crossx b{color:#aecbe2;font-weight:600}
+.thinking{background:linear-gradient(135deg,rgba(224,129,85,0.06),rgba(143,176,204,0.05));border:1px solid rgba(224,129,85,0.24);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e08155;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(18,14,11,0.5);border:1px solid rgba(224,129,85,0.2);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(224,129,85,0.06);border-color:rgba(224,129,85,0.42)}
+.thinking summary{cursor:pointer;color:#eda07c;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#8fb0cc}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(143,176,204,0.22);color:#ddd0c1;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#8fb0cc;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a08b78}
+.refs a{color:#e08155;text-decoration:none;border-bottom:1px dotted rgba(224,129,85,0.42)}
+.refs a:hover{color:#eda07c;border-bottom-color:#eda07c}
+.bigcat{margin:40px 0 0;background:linear-gradient(135deg,rgba(224,129,85,0.11),rgba(143,176,204,0.04));border:1px solid rgba(224,129,85,0.32);border-radius:14px;padding:22px 26px}
+.bigcat h3{color:#eda07c;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.bigcat ul{list-style:none;margin:0}
+.bigcat li{color:#ece0d2;font-size:0.93rem;line-height:1.8;margin-bottom:14px}
+.bigcat li:last-child{margin-bottom:0}
+.bigcat b{color:#eda07c;font-weight:600}
+footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
+@media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+</style></head><body>
+<div class="container">
+<header>
+<div class="kicker">DAY 25 · 原初丰裕社会</div>
+<h1>原初丰裕社会</h1>
+<h2>这一期最反直觉的一句：丰裕是「手段除以欲望」这个比值，不是手上东西的绝对数量——分母够小，几乎没有财产的人也算富</h2>
+<div class="meta">2026-09-18 · BigCat</div>
+<div class="pitch">「靠采集打猎过日子的人一天要为吃的忙多久」，这个问题到上世纪中叶才第一次有人拿本子跟着记。答案是四五个小时。</div>
+</header>
+<div class="intro">
+<p>你大概听过这条线：以前的人为了活下去从早忙到晚，后来有了农业和余粮，才有人闲得下来，才有了文字、庙宇和文明。这条线太顺了，顺到几乎没人回头查过第一句。</p>
+<p>1966 年春天芝加哥开了一场关于采集狩猎人群的会。会上有人把一叠工时记录摊开——不是推算，是一天天跟着记下来的。这一页讲那些数字、讲它们后来被修正掉多少，以及一个更麻烦的问题：把人类的过去排成一条由苦到甜的直线，站不站得住。</p>
+</div>
+<div class="section">
+<span class="num">// 01</span>
+<h2>一天的活儿四五个小时，剩下的时间，人类学家记下来的是睡觉和聊天</h2>
+<p>1948 年一支美澳联合科考队进了澳大利亚北部的阿纳姆地。麦卡锡和麦克阿瑟做了件很笨的事：拿本子记时间，谁几点出门找吃的、几点回来。1960 年的数字是：男人每天在找食物上花五小时上下，女人采集加加工约六个半小时，扣掉路程都降到三四小时；人均每天两千一百多大卡，按当时的营养标准算够。几年后李察·李（Richard B. Lee）在博茨瓦纳的多贝地区跟着朱／霍安西人（Ju/'hoansi，早期文献写作 !Kung）记了四周：每周十二到十九小时。</p>
+<p>萨林斯（Marshall Sahlins）在那场会上把这些数字拧成了一个概念，而他真正动的是定义：<em>丰裕（affluence）指欲望被满足，这是个比值——手段除以欲望。</em>于是通向它有两条路：把分子做大，不停提高产出，这是工业社会走的；或者把分母做小，想要的本来就少、伸手就有。采集者走的是第二条，所以才是「原初的丰裕社会」。这篇后来成了他 1972 年《石器时代经济学》的第一章。</p>
+<div class="fig">
+<svg viewBox="0 0 620 186" xmlns="http://www.w3.org/2000/svg">
+<g fill="#e6dacc" font-family="Georgia,serif" font-size="14" text-anchor="middle">
+<text x="300" y="74">手段</text>
+<text x="300" y="118">欲望</text>
+</g>
+<line stroke="#e6dacc" stroke-width="1.4" x1="252" x2="348" y1="90" y2="90"></line>
+<text fill="#eda07c" font-family="Georgia,serif" font-size="14" x="372" y="96">＝ 丰裕</text>
+<g fill="none" stroke="#e08155" stroke-width="1.5">
+<path d="M150 50 L228 50 L228 62"></path>
+<line x1="228" x2="223" y1="62" y2="53"></line>
+<line x1="228" x2="233" y1="62" y2="53"></line>
+</g>
+<g fill="none" stroke="#8fb0cc" stroke-width="1.5">
+<path d="M150 142 L228 142 L228 130"></path>
+<line x1="228" x2="223" y1="130" y2="139"></line>
+<line x1="228" x2="233" y1="130" y2="139"></line>
+</g>
+<text fill="#eda07c" font-family="Georgia,serif" font-size="11.5" text-anchor="end" x="144" y="54">路一 · 产出更多</text>
+<text fill="#aecbe2" font-family="Georgia,serif" font-size="11.5" text-anchor="end" x="144" y="146">路二 · 想要更少</text>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="10.5" text-anchor="middle" x="300" y="172">同一个比值，两个改法</text>
+</svg>
+<div class="cap">萨林斯动的是定义：丰裕是个比值，于是有两个改法。</div>
+</div>
+<p>修正削掉的比很多人以为的多。李的口径只算「找食物」，没算加工、修工具、家务、带孩子；他自己后来补进去，总工时升到每周四十小时上下，和工业社会不相上下。样本也小：两个营地、四个星期。</p>
+<p>更根本的一击叫卡拉哈里之辩。1980 年代末起，威尔姆森等人论证：朱／霍安西人从来不是与世隔绝的「活化石」，他们与周边讲班图语的农牧人群长期交换通婚、被卷进殖民与市场关系，是被挤到最贫瘠的地带才那样生活的。李一方不接受，争论至今没收口。</p>
+<p>还有一条不能省：<strong>工时短不等于日子好过。</strong>这些社群的婴儿死亡率、预期寿命、暴力致死率，都不是今天的人愿意接受的数字。证据强度：小样本、短周期、口径有争议，被后续修正削掉不少。但有一条在更广的证据里站得住——农业不自动带来更闲、更健康：多地骨骼样本显示，农业转型期人群身高下降、龋齿与釉质发育不全（牙齿发育期受压力留下的横纹）增多，各地强弱不一而方向一致。</p>
+<p class="en-brief"><b>EN</b> In 1948 an Australian–American expedition reached Arnhem Land, where McCarthy and McArthur did something crude and durable: they timed people — who left camp for food when, and when they came back. Published in 1960, their figures gave men about five hours a day in the food quest and women about six and a half including processing; deduct travel and both fall to three or four. Calories averaged a little over two thousand a day, adequate by the standards then in use. A few years later Richard B. Lee recorded four weeks among the Ju/'hoansi of the Dobe area in Botswana: twelve to nineteen hours a week obtaining food. Marshall Sahlins turned these numbers into a concept, and what he changed was the definition. Affluence means wants satisfied, and that is a ratio — means over wants — so there are two roads to it. Enlarge the numerator by producing more, which is the industrial road; or shrink the denominator, wanting little and getting it easily. Foragers took the second road, which makes them the original affluent society. The essay became the first chapter of his 1972 <i>Stone Age Economics</i>. The revisions cut deeper than most people realise. Lee counted only the food quest, excluding processing, tool maintenance, housework and childcare; when he later added them the total work week rose to around forty hours, comparable to industrial labour. The samples were small: two camps, four weeks. The more fundamental blow is the Kalahari debate. From the late 1980s Wilmsen and others argued the Ju/'hoansi were never isolated survivors of the Pleistocene but long entangled with Bantu-speaking herders and farmers, drawn into colonial and market relations, and pushed onto the poorest land. Lee's side rejects that reading and the argument has not closed. One more thing cannot be skipped: short hours are not a good life. Infant mortality, life expectancy and rates of violent death in these societies are not numbers anyone today would accept. Evidence strength: small, short, contested time budgets, substantially revised. What survives on wider evidence is that farming brings neither leisure nor health automatically — skeletal samples across many regions show falling stature and more caries and enamel hypoplasia across the agricultural transition, varying in size but consistent in direction.</p>
+</div>
+<div class="section">
+<span class="num">// 02</span>
+<h2>不是他们东西多，是想要的少——而且搬家那天，东西越多越受罪</h2>
+<p>1969 年李写过一篇很短的文章，讲他在卡拉哈里过的那个圣诞。他想答谢当地人，特意买了一头很大的牛。消息传开，人一个接一个来说：这牛太瘦了，大家要饿肚子。他窘了好几周。牛宰开，膘厚得很。后来一位当地人跟他解释：把别人带来的大猎物说得一文不值，是他们一直在做的事，为的是不让猎到东西的人抬起下巴。<em>这不是客套，是一套所有人都知道在干什么的制度。</em></p>
+<p>同一套制度里还有一条更妙的规矩：肉归谁分配，看的不是谁射中的，是那支箭属于谁——而箭恰恰是他们最常互相赠送的东西。于是猎术高超也换不成地位，分肉的风光被一支借来的箭带走了。他们另有一套叫 hxaro 的交换：每个成年人有十几二十个固定伙伴，不少住在上百公里外，给了不立刻还、也不讲究等价。礼物与互惠那期讲过白给为什么比交易更有约束力；这里是同一条机制的另一头——东西一直在流动，就沉淀不到谁手上。</p>
+<p>伍德伯恩（James Woodburn）1982 年那篇《平等社会》给了这一切一个更锋利的框架：即时回报与延迟回报。即时回报的系统里，今天弄到的今天吃掉，不储藏，不做长期绑定的投资，于是谁也没法靠掌握储备让别人依赖自己。延迟回报的系统里，劳动今天投进去、收获在几个月甚至几年后——要让这段时间差撑得住，就必须长出产权、约束、对人和对物的支配权。他自己指出，哈扎人是个中间情形。</p>
+<p>这里最容易读歪的一步：平等不是因为这些人心地好。它是一套持续运转、要付成本的装置——嘲笑猎物、箭的规矩、停不下来的礼物流动，每一样都在拆掉积累的可能。<strong>而一旦积累变便宜——可储藏的谷物、固定的地块、能围起来的水源——这套拉平的做法就维持不下去。</strong>证据强度：民族志的类型比较，不是因果检验；但预测力不错——考古上最早出现明显贫富差别的地方，几乎都先有了可储藏、可占有的东西。</p>
+<p>所以当代的映照不是「少买点东西就自由了」，而是：<em>能不能积累，是被外部条件定价的。</em>越难储藏、越难转让、越得当场用掉的东西，围绕它越长不出稳定的支配关系。这是描述条件，不是主张往哪边走。</p>
+<p class="en-brief"><b>EN</b> In 1969 Lee published a short piece about Christmas in the Kalahari. Wanting to thank his hosts, he bought the largest ox he could find. One after another people came to tell him it was a bag of bones and everyone would go hungry. He spent weeks embarrassed. The ox turned out thick with fat. A Ju/'hoansi man later explained the practice: belittling someone's kill is something they do deliberately, so that a successful hunter cannot start holding his chin up. Not politeness — an institution everyone knows they are operating. A second rule works alongside it: the right to distribute meat belongs not to whoever shot the animal but to whoever owns the arrow, and arrows are among the things most often given away, so hunting skill does not convert into standing. Their exchange system, hxaro, adds a third layer: each adult keeps ten or twenty standing partners, many of them a hundred kilometres off; gifts are never returned at once, equivalence is not sought, and the whole thing is kept carefully unlike trade. The piece on gifts and reciprocity covered why giving binds more tightly than trading; this is the other end of the same mechanism — goods that keep moving cannot settle on anyone. James Woodburn's 1982 paper on egalitarian societies sharpened this into two terms: immediate-return and delayed-return systems. In the first, what is obtained today is consumed today, nothing is stored and no long-binding investment is made, so nobody can make others dependent by controlling a stock. In the second, labour goes in now and yield comes months or years later, and holding that interval open requires property, obligation and rights over things and people. Woodburn noted the Hadza as an intermediate case rather than a clean type. The step most easily misread: equality here is not good-heartedness but a running apparatus with real costs — insulting the meat, the arrow rule, the ceaseless circulation of gifts, each dismantling the possibility of accumulation. Once accumulation becomes cheap — storable grain, fixed plots, enclosable water — the levelling apparatus stops holding. Evidence strength: ethnographic typology rather than causal test, with many intermediate forms; its predictive record is decent, since archaeologically the places where marked wealth differences first appear nearly always had storable, ownable things first. The contemporary lesson is not that owning less makes you free. It is that the cost of accumulating is set by external conditions: the harder something is to store, transfer or defer, the less stable domination grows around it, and the converse holds too. A description of conditions, not a recommendation.</p>
+</div>
+<div class="section">
+<span class="num">// 03</span>
+<h2>同一群人，可能冬天是一套规矩，夏天是另一套</h2>
+<p>1904 到 1905 年间，莫斯（Marcel Mauss）和布沙（Henri Beuchat）研究了因纽特人的社会形态怎么随季节变。事实很干净：冬天人们聚到大屋群里，共用、共食、仪式密集；夏天散成小家庭、住帐篷、各过各的。他们的结论是：这些人群一年之内有两套社会结构，也有两套法与宗教。</p>
+<p>北美大平原上有更硬的例子。夏季集体围猎野牛时，会有专门的社团行使强制权——可以没收财物，可以处罚提前惊跑牛群的人，很像一套警察。猎季一结束就地解散，第二年再组织。</p>
+<p>格雷伯与温格罗 2021 年的《人类新史》把这类材料推到了前台：如果同一群人一年内换两次政治形式，那「这个社会处于哪个发展阶段」就开始失效——你看到的不是阶段，是一群人按季节挑了不同的组织方式，而且知道自己在挑。</p>
+<p>考古那边还有两块硬石头。哥贝克力石阵在今天土耳其东南部，巨大的 T 形石柱围成建筑群，年代约公元前 9600 到 8200 年，遗址里至今没找到驯化的动植物——盖它的人还没开始种地。北美的庞氏点在路易斯安那，距今约三千七百到三千一百年，几道同心土垄加五座土丘，堆它的人靠渔猎采集为生。农业本身也不像一场革命：近东的植物遗存显示，驯化性状是在两三千年里一点点累积的。</p>
+<p>批评要给足。这本书是对已有材料的解释性综论，不是新数据；书评批评它选择性取证、把季节性材料读得太满。有一条反向读法值得原样摆出来：既然人很早就会在某些季节接受强制性权威，同一批材料也可以读成「人对层级的适应比想象的更早」，正好和作者的结论相反。证据强度：解释性综论——单个案例可靠，总论有争议。</p>
+<p>可以带走的不是「过去其实更好」，是更冷的一件事：<strong>把人类的过去排成一条直线，最大的代价不是顺序排错，是它让别的做法变得不可想象</strong>——凡是不在这条线上的，都被归进「还没走到那一步」。文化相对主义那期讲的博厄斯革命，反对的正是这个。</p>
+<p class="en-brief"><b>EN</b> In 1904–05 Marcel Mauss and Henri Beuchat studied how Inuit social form varied by season. The facts are clean: in winter people gathered into house complexes, sharing food and space with dense ritual life; in summer they dispersed into small family groups under tents. Their conclusion was that these societies had two social structures within a single year, and correspondingly two systems of law and religion. The North American Plains give a harder case. During the summer communal bison hunt, policing societies exercised coercive power, confiscating property and punishing anyone who broke ranks and startled the herd; when the hunt ended the power dissolved on the spot and was reconstituted the following year. Graeber and Wengrow's <i>The Dawn of Everything</i> (2021) pushed such material to the front: if the same people change political form twice a year, then asking what developmental stage a society is at begins to fail. What you observe is not a stage but people choosing arrangements by season, and knowing that they are choosing. Archaeology supplies two hard stones. Göbekli Tepe in south-eastern Turkey, with its monumental T-shaped pillars, dates to roughly 9600–8200 BCE, and no domesticated plants or animals have been recovered there — the builders were not farming. Poverty Point in Louisiana, about 3700–3100 years old, is a set of concentric earthen ridges and five mounds raised by fisher-hunter-gatherers. Nor was agriculture a revolution: plant remains in the Near East show domestication traits accumulating over two or three millennia, with long stretches in which people cultivated part-time and switched back. The criticism belongs here in full. The book is an interpretive synthesis of existing material rather than new data, and reviewers in archaeology and history have charged it with selective use of evidence and with over-reading the seasonality material. One reverse reading deserves to be stated plainly: if humans accepted coercive authority seasonally this early, the same evidence can be read as showing that people adapted to hierarchy earlier than assumed — the opposite of the authors' conclusion. Evidence strength: interpretive synthesis; the individual cases are solid, the overall argument contested. What travels is not that the past was better. It is colder: the real cost of arranging the human past in a single line is not that the order comes out wrong, but that it makes alternatives unthinkable, since anything off the line gets filed as not yet arrived. The Boasian revolution discussed in the piece on cultural relativism was against exactly this.</p>
+</div>
+<div class="bigcat">
+<h3>🎒 场景 · BigCat</h3>
+<ul>
+<li><b>① 投资与仓位</b>——每次加薪或奖金到账，头两个月很有感觉，第三个月起月支出把增量吃完，储蓄率回到原来那个数，而余额还在涨，于是你一直觉得情况在变好。跑的是「一天的活儿四五个小时」那节的机制：分子涨，分母跟着涨，比值原地不动。可改的：把盯的数从余额换成储蓄率；停掉「先花一个月看看感觉」，加薪当月就把增量自动划走。</li>
+<li><b>② 工程与系统设计</b>——一个服务跑了三四年谁都不敢动，因为状态散在本地磁盘、几张手改过的表和一台机器的定时任务里，每次想拆都卡在数据搬不动。跑的是「不是他们东西多，是想要的少」那节的机制：能不能沉淀，是被搬家成本定价的；搬家一贵，沉淀必然发生并把结构锁死。可改的：给新服务定一条硬规矩——状态只许落在能被整体导出的地方；再把「上次被完整重建是什么时候」当成要定期看的数，而不是只看它挂没挂过。</li>
+</ul>
+</div>
+<div class="crossx">
+<h3>🌀 越界 · 跨学科的联想</h3>
+<ul>
+<li><b>演化生态学 · 一只山雀什么时候离开一丛浆果可以用公式算出来，而公式里没有「吃饱了」这一项</b>：觅食生态学有个边际值定理（Charnov 1976）：动物在一个食物斑块里停留多久，取决于这个斑块的瞬时收益率什么时候掉到整片环境的平均之下——掉到了就走，跟它饿不饿关系不大。跑的是「一天的活儿四五个小时」那节的机制：停工点不是一个绝对量（今天够吃了），是一个门槛（继续找不如回去）。由此推出一个原本看不出的结论：<b>在这类经济里工时长短不能当生活水平的度量——环境和工具变好，工时可能不变甚至更短，因为斑块质量和门槛是一起动的；两个工时相同的社群，富裕程度可以差得很远</b>。<b>但这里不成立</b>：这条定理默认收获不能储藏、当场消耗完。一旦能储藏，超出当下需要的采集第一次有了价值，停工点就不再由当下收益率决定——那恰好是延迟回报系统出现的时刻。所以它对农业社会的工时几乎没有预测力。</li>
+<li><b>神经科学 · 从大太阳底下走进屋里，几分钟后你又看得见了，而屋里并没有变亮</b>：视网膜编码的从来不是绝对光强，是相对于当前基线的偏离，而基线会随环境平均亮度整体平移；正是这套机制让动态范围有限的硬件覆盖了跨十个数量级的光照。跑的是「不是他们东西多，是想要的少」那节的机制：<em>满足与否取决于比值，而分母跟着分子走。</em>由此推出一个原本看不出的结论：<b>任何以绝对水平定义的福利指标，长期都会与主观满足脱钩，而这不是人心不足，是基线平移的必然结果；所以要预测一个群体的不满，该看变化率和参照对象，不看水平值——两个水平相同的群体，一个在缓慢变好、一个刚从更高处掉下来，不满程度完全不同</b>。<b>但这里不成立</b>：适应有硬下限，光子少到一定程度再怎么适应也看不见。对应地，热量、疾病、寒冷这些绝对匮乏不随参照点移动——「把欲望做小」在这些维度上直接失效，这也正是原初丰裕最经不起推的地方：时间预算上的宽裕换不来婴儿死亡率上的宽裕。</li>
+</ul>
+</div>
+<div class="thinking">
+<h3>深入思考</h3>
+<details><summary>如果采集这么「丰裕」，为什么几乎所有人最后都转去种地了？</summary>
+<div>没有定论，但有几条线索站得住。农业能养活的人口密度高出一两个数量级，所以就算人均过得更差，种地的人群在数量上也会压过采集的——被选中的是群体规模，不是个体福利。还有很现实的一条：邻居一旦开始储粮，你不储就成了被抢的那个。</div>
+</details>
+<details><summary>「把欲望做小」到底算不算一条路？</summary>
+<div>作为社会机制它成立：社群有拉平装置——嘲笑猎物、礼物必须流动、谁也不许靠储备拿捏人——「想要更多」本身就要付社会代价。但它是集体装置的产物，不是个人修养：一个人靠意志压欲望，和一整个社群一起压，难度差着量级。而且这条路对绝对匮乏无效——热量不够就是不够。</div>
+</details>
+<details><summary>什么样的资源最容易长出不平等？</summary>
+<div>按伍德伯恩那套区分：能储藏、入口能被少数人把住、投入和收益隔得久的那些。挑一个你身边的资源问一句——它今天不用会不会坏？答案是「不会」的，围绕它迟早长出产权和依赖关系；答案是「会」的，规矩往往更像分享。非物质的也能这么试，比如团队里的信息。</div>
+</details>
+</div>
+<div class="refs">
+<h3>延伸阅读</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Original_affluent_society" rel="noopener" target="_blank">原初丰裕社会</a> · <a href="https://is.muni.cz/el/1423/jaro2016/SOC283/re/cp/Sahlins-Original-Affluent-Society-1972.pdf" rel="noopener" target="_blank">萨林斯原文（英文 PDF）</a> · <a href="https://www.routledge.com/Stone-Age-Economics/Sahlins/p/book/9780415330077" rel="noopener" target="_blank">《石器时代经济学》(1972)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Man_the_Hunter" rel="noopener" target="_blank"> 1966 年那场会议</a> · <a href="https://en.wikipedia.org/wiki/Richard_Borshay_Lee" rel="noopener" target="_blank">李察·李</a>（英文）</li>
+<li><a href="https://archive.org/details/kungsanmenwomenw0000leer" rel="noopener" target="_blank">Lee《!Kung San》(1979)</a> · <a href="https://en.wikipedia.org/wiki/Kalahari_Debate" rel="noopener" target="_blank">卡拉哈里之辩</a>（英文）</li>
+<li><a href="https://files.libcom.org/files/EGALITARIAN%20SOCIETIES%20-%20James%20Woodburn.pdf" rel="noopener" target="_blank">Woodburn《平等社会》(1982, PDF)</a> · <a href="https://en.wikipedia.org/wiki/Hadza_people" rel="noopener" target="_blank">哈扎人</a>（英文）</li>
+<li><a href="https://www.academia.edu/9828287/Eating_Christmas_in_the_Kalahari_by_Richard_Borshay_Lee" rel="noopener" target="_blank">Lee《在卡拉哈里过圣诞》(1969)</a> · <a href="https://en.wikipedia.org/wiki/%C7%83Kung_people" rel="noopener" target="_blank">朱／霍安西人</a>（英文）</li>
+<li><a href="https://en.wikipedia.org/wiki/The_Dawn_of_Everything" rel="noopener" target="_blank">格雷伯与温格罗《人类新史》(2021)</a> · <a href="https://www.journals.uchicago.edu/doi/full/10.1086/720603" rel="noopener" target="_blank">考古学期刊的批评性书评</a>（英文）</li>
+<li><a href="https://archive.org/details/seasonalvariatio0000maus" rel="noopener" target="_blank">莫斯与布沙论因纽特人的季节变化</a> · <a href="https://whc.unesco.org/en/list/1572/" rel="noopener" target="_blank">哥贝克力石阵</a> · <a href="https://whc.unesco.org/en/list/1435" rel="noopener" target="_blank">庞氏点</a>（英文）</li>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/21507735/" rel="noopener" target="_blank">农业转型期的身高与骨骼变化</a> · <a href="https://en.wikipedia.org/wiki/Optimal_foraging_theory" rel="noopener" target="_blank">最优觅食理论与边际值定理</a>（英文）</li>
+</ul>
+</div>
+<footer>BigCat Learning Hub · 社会学与人类学</footer>
+</div>
+<script src="https://hub.cissychen.com/comments.js" defer></script>
+<script src="https://hub.cissychen.com/search.js" defer></script>
+<script src="https://hub.cissychen.com/index-button.js" defer></script>
+<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
+</body></html>
