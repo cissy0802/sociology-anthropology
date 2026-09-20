@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sociology &amp; Anthropology Day 27: Media and Attention</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:linear-gradient(170deg,#1a140f,#171210 42%,#120e0b);color:#e6dacc;line-height:1.9;min-height:100vh}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 60px}
+header{padding:52px 0 30px;border-bottom:1px solid #33261d}
+header .kicker{font-size:0.75rem;color:#8fb0cc;letter-spacing:2.5px;font-family:"SF Mono",Menlo,monospace}
+header h1{font-size:2.1rem;font-weight:800;background:linear-gradient(100deg,#e08155,#eda07c 58%,#8fb0cc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:0.5px;margin-top:12px;line-height:1.28}
+header h2{font-size:1rem;color:#a08b78;margin-top:10px;font-weight:400}
+header .meta{margin-top:14px;font-size:0.85rem;color:#a08b78}
+header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
+.intro{margin-top:30px;font-size:1.02rem;color:#d8c9b8}
+.intro p{margin-bottom:13px}
+.section{margin:46px 0;background:rgba(255,255,255,0.028);padding:28px 26px;border-radius:14px;border:1px solid rgba(255,255,255,0.06)}
+.section .num{display:inline-block;font-size:0.75rem;color:#e08155;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;margin-bottom:8px}
+.section h2{font-size:1.32rem;color:#f4ece2;margin-bottom:16px;font-weight:700;line-height:1.35}
+.section p{margin-bottom:14px;font-size:0.98rem}
+.section strong{color:#fff}
+.section em{color:#e08155;font-style:normal}
+.section ul{list-style:none;margin:14px 0}
+.section li{margin-bottom:10px;padding-left:20px;position:relative}
+.section li::before{content:"◈";position:absolute;left:0;top:0.42em;color:#e08155;font-size:0.7rem}
+.fig{margin:24px 0 10px;text-align:center}
+.fig svg{max-width:100%;height:auto}
+.fig .cap{font-size:0.82rem;color:#a08b78;margin-top:8px;text-align:left;line-height:1.65}
+.en-brief{margin-top:18px;padding:12px 16px;border-left:2px solid rgba(160,139,120,0.5);background:rgba(255,255,255,0.02);border-radius:0 8px 8px 0;font-size:0.85rem;color:#b0a08e;line-height:1.62}
+.en-brief b{color:#bda994;font-family:"SF Mono",Menlo,monospace;font-size:0.68rem;letter-spacing:1.5px;margin-right:9px;font-weight:700}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(143,176,204,0.12),rgba(224,129,85,0.05));border:1px solid rgba(143,176,204,0.34);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#8fb0cc;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#dfe3e6;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e08155;font-size:0.72rem}
+.crossx b{color:#aecbe2;font-weight:600}
+.thinking{background:linear-gradient(135deg,rgba(224,129,85,0.06),rgba(143,176,204,0.05));border:1px solid rgba(224,129,85,0.24);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e08155;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(18,14,11,0.5);border:1px solid rgba(224,129,85,0.2);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(224,129,85,0.06);border-color:rgba(224,129,85,0.42)}
+.thinking summary{cursor:pointer;color:#eda07c;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#8fb0cc}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(143,176,204,0.22);color:#ddd0c1;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#8fb0cc;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a08b78}
+.refs a{color:#e08155;text-decoration:none;border-bottom:1px dotted rgba(224,129,85,0.42)}
+.refs a:hover{color:#eda07c;border-bottom-color:#eda07c}
+.bigcat{margin:40px 0 0;background:linear-gradient(135deg,rgba(224,129,85,0.11),rgba(143,176,204,0.04));border:1px solid rgba(224,129,85,0.32);border-radius:14px;padding:22px 26px}
+.bigcat h3{color:#eda07c;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.bigcat ul{list-style:none;margin:0}
+.bigcat li{color:#ece0d2;font-size:0.93rem;line-height:1.8;margin-bottom:14px}
+.bigcat li:last-child{margin-bottom:0}
+.bigcat b{color:#eda07c;font-weight:600}
+footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
+@media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+</style></head><body>
+</head><body>
+<div class="container">
+<header>
+<div class="kicker">DAY 27 · MEDIA AND ATTENTION</div>
+<h1>Media and Attention</h1>
+<h2>The counter-intuitive line of the day: the most stable bias in media is not a political leaning but a rhythm — whether a thing changes at a pace that matches the news cycle decides more about whether it becomes news than how important it is.</h2>
+<div class="meta">2026-09-20 · BigCat</div>
+<div class="pitch">In 1968 two researchers asked a hundred still-undecided voters what they thought the most important issue facing the country was, and counted what nine local news outlets had been running those same weeks. The two rankings were almost the same list.</div>
+</header>
+<div class="intro">
+<p>The last time you argued hard with someone over something, both sides had their reasons. Step back one pace and ask: who picked the topic? Not you, and not them. The harder the argument, the less likely either of you is to think of this layer.</p>
+<p>A century ago someone wrote it up as a mechanism: what people react to is never the world itself but a picture of the world in their heads, and the picture is drawn by someone else. This page covers how that picture gets drawn, why what goes into it is not the most important thing, and what changed — and what did not change at all — once the drawing was handed to a machine.</p>
+</div>
+<div class="section">
+<span class="num">// 01</span>
+<h2>You think you are arguing about the world; you are arguing about the few things someone picked out yesterday</h2>
+<p>In the autumn of 1914, on an island in the Atlantic, the English, French and Germans living there were still playing cards together. The mail boat came once every sixty days, so only in mid-September did they learn that their countries had gone to war in early August — for six weeks they lived inside a map of the world that had already expired. Walter Lippmann's <i>Public Opinion</i> (1922) opens there.</p>
+<p>His point was not that news travels slowly but that everyone lives inside a picture. He called it the pseudo-environment: the world is too large and too fast, so people assemble a small model of it out of a few second-hand reports and react to the model — while the reaction lands in the real world. The social-scientific use of the word stereotype is his too, borrowed from the print shop: a ready-made plate that saves you setting the type afresh each time.</p>
+<p>The claim is so plausible it sounds untestable. Fifty years later someone made it measurable. Maxwell McCombs and Donald Shaw, publishing in 1972, worked in Chapel Hill before the 1968 U.S. election: they interviewed only voters who had not yet decided, a hundred of them, asking what the most important issue facing the country was; at the same time they ranked, by amount of coverage, what the nine newspapers, magazines and television newscasts those residents actually read and watched had run over the same weeks. The rank-order correlations between the two lists were .967 for major issues and .979 for minor ones — almost the same list. <em>The media's order of emphasis was the public's order of importance.</em></p>
+<p>Evidence strength: this is correlation, not causation. The authors themselves wrote down the other possibility — that the media were reflecting what the public already cared about.</p>
+<p>Experiments settled the direction. Through the 1980s Shanto Iyengar and Donald Kinder ran a series: evening newscasts were edited and shown to participants over several days, with coverage of one issue quietly increased. Days later, the criteria people used to evaluate the president had shifted — they leaned more on the issue that had been boosted. They called the effect priming. The causal direction is clean; so is the boundary: that was an era when three networks held a near-monopoly on evening news, and how much survives today is contested.</p>
+<p>The sharpest summary of the mechanism is Bernard Cohen's, from 1963: the press may not be successful in telling people what to think, but it is stunningly successful in telling them what to think about. Notice how cold that is — it requires nobody to lie and nobody to coordinate. The state of the debate, stated plainly: in 2008 Bennett and Iyengar argued that such effects are receding now that everyone can pick their own sources; in 2010 Holbert and colleagues rebutted that this overstates how far people avoid views they disagree with. There is no consensus.</p>
+</div>
+<div class="section">
+<span class="num">// 02</span>
+<h2>What gets picked is not what matters most, it is what is easiest to pick</h2>
+<p>Put the question differently: what must an event satisfy before it can get into the news?</p>
+<p>In 1965 the Norwegians Johan Galtung and Mari Holmboe Ruge counted how four Norwegian papers covered the crises in the Congo, Cuba and Cyprus, and drew up a list of news values. First on it is not importance but frequency: the timescale on which an event unfolds has to match the publication cycle of the medium before it will be recognised as an event at all. A murder is complete overnight, exactly the length of a daily paper; a country growing poorer takes thirty years and has no day on which it happens, so it is never news — unless a riot breaks out or a report is released, which lends it the shape of an event for one day.</p>
+<p>Evidence strength: that list was a set of derived hypotheses, not a measurement. Tony Harcup and Deirdre O'Neill checked it against the actual contents of British newspapers in 2001 and again in 2017 and concluded that parts of it do not hold and need rewriting. The list changes; the requirement to match the cycle stays.</p>
+<div class="fig">
+<svg viewbox="0 0 620 220" xmlns="http://www.w3.org/2000/svg">
+<line stroke="#a08b78" stroke-width="1.2" x1="64" x2="566" y1="186" y2="186"></line>
+<g stroke="#5c4c40" stroke-dasharray="3 5" stroke-width="1">
+<line x1="120" x2="120" y1="40" y2="186"></line>
+<line x1="204" x2="204" y1="40" y2="186"></line>
+<line x1="288" x2="288" y1="40" y2="186"></line>
+<line x1="372" x2="372" y1="40" y2="186"></line>
+<line x1="456" x2="456" y1="40" y2="186"></line>
+<line x1="540" x2="540" y1="40" y2="186"></line>
+</g>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="10.5" x="64" y="32">↓ publication cycle</text>
+<path d="M76 92 L110 62 L134 118 L168 70 L196 116 L232 66 L258 120 L294 68 L320 118 L356 70 L384 114 L420 64 L448 118 L484 70 L512 114 L548 72" fill="none" stroke="#e08155" stroke-width="1.6"></path>
+<path d="M76 158 C180 154 300 148 420 142 C480 139 530 137 556 136" fill="none" stroke="#8fb0cc" stroke-width="1.8"></path>
+<circle cx="120" cy="66" fill="#e08155" r="3.4"></circle>
+<circle cx="204" cy="112" fill="#e08155" r="3.4"></circle>
+<circle cx="288" cy="70" fill="#e08155" r="3.4"></circle>
+<circle cx="372" cy="70" fill="#e08155" r="3.4"></circle>
+<circle cx="456" cy="112" fill="#e08155" r="3.4"></circle>
+<circle cx="540" cy="76" fill="#e08155" r="3.4"></circle>
+<text fill="#eda07c" font-family="Georgia,serif" font-size="11.5" x="352" y="44">faster than the cycle: a false curve</text>
+<text fill="#aecbe2" font-family="Georgia,serif" font-size="11.5" x="352" y="168">slower: not a single sample lands</text>
+</svg>
+<div class="cap">The dashed lines are the publication cycle. Anything faster is caught at a few points that join into a curve reality never had; anything slower never meets a sampling point at all, so nothing has happened.</div>
+</div>
+<p>Why is it so stable? The answer is not in reporters' heads but on the roster. Gaye Tuchman's <i>Making News</i> (1978) is a newsroom ethnography built on a decade of watching people work. She gave us the news net: an outlet cannot scatter reporters everywhere, so it pins a limited number of them to the few places where things come to you — city hall, the police station, the courts. Where the mesh is laid decides which fish are caught; what falls between the strands is not suppressed, it simply never passes through a net.</p>
+<p>She saw a finer layer too: a newsroom has to fit an unpredictable world into a predictable roster, so it sorts events in advance — spot news, developing news, material that can fill a page any time. That is an administrative necessity, and it decides in turn which kinds of fact can easily be written up as news. In the same years Herbert Gans sat in on two network evening newscasts and two weekly magazines and reached the same conclusion.</p>
+<p>Both are single-site ethnographies of 1970s American newsrooms and should not be read as general proportions; but the shape of the mechanism is clear, and it is what the piece on organizations and institutions described: structural constraints explain output better than individual intentions. So "the media are biased" is too coarse. The most stable bias, the one indifferent to politics, is a bias of accessibility and rhythm — replace the staff with people of entirely opposite views and, as long as the mesh and the roster stay put, the same fish come up.</p>
+</div>
+<div class="section">
+<span class="num">// 03</span>
+<h2>The people doing the ordering became a machine nobody can explain, and the ordering did not change at all</h2>
+<p>No single newsroom now selects for everyone. You open your phone and the first screen has already been ordered by some rule, one that is not published and is not the same for any two people.</p>
+<p>In <i>The Platform Society</i> (2018) José van Dijck, Thomas Poell and Martijn de Waal break platform operation into three mechanisms: datafication (ever more behaviour turned into recordable data), commodification (that data hooked into markets) and selection (deciding who sees what). The third is the newsroom's old job, with a different operator and a different yardstick.</p>
+<p>What is genuinely new is something else: the people being sorted try to guess the rule. Analysing how platforms distribute visibility, Taina Bucher argued in 2012 that what weighs on users is not the fear of being seen but its inverse — the constant possibility of sinking out of sight. In 2017 she interviewed ordinary users about what they thought the algorithm was thinking. The answers varied wildly and were mostly wrong, which does not matter; what matters is that people adjusted what they posted and when according to those guesses, and that behaviour became the algorithm's input. She calls it the algorithmic imaginary. <em>What is measured changes itself because it is guessing at the rule of measurement.</em></p>
+<div class="fig">
+<svg viewbox="0 0 620 176" xmlns="http://www.w3.org/2000/svg">
+<g fill="none" stroke="#e08155" stroke-width="1.3">
+<rect height="40" rx="6" width="140" x="34" y="66"></rect>
+<rect height="40" rx="6" width="140" x="214" y="66"></rect>
+<rect height="40" rx="6" width="140" x="394" y="66"></rect>
+</g>
+<text fill="#eda07c" font-family="Georgia,serif" font-size="12" text-anchor="middle" x="104" y="91">rule unpublished</text>
+<text fill="#eda07c" font-family="Georgia,serif" font-size="12" text-anchor="middle" x="284" y="91">people guess it</text>
+<text fill="#eda07c" font-family="Georgia,serif" font-size="12" text-anchor="middle" x="464" y="91">behaviour adjusts</text>
+<g fill="none" stroke="#8fb0cc" stroke-width="1.4">
+<path d="M174 86 L206 86"></path>
+<path d="M354 86 L386 86"></path>
+<path d="M534 86 C570 86 578 86 578 120 L578 142 L104 142 L104 112"></path>
+</g>
+<path d="M202 81 L212 86 L202 91 Z" fill="#8fb0cc"></path>
+<path d="M382 81 L392 86 L382 91 Z" fill="#8fb0cc"></path>
+<path d="M99 116 L104 106 L109 116 Z" fill="#8fb0cc"></path>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="10.5" text-anchor="middle" x="341" y="160">the behaviour becomes new data, and the rule is retuned on it</text>
+</svg>
+<div class="cap">A natural phenomenon does not revise its own regularity because it is being observed; people who are being ranked do. This loop is why measuring people with data never comes out clean.</div>
+</div>
+<p>But technology is not destiny. From 2011 to 2015 Angèle Christin spent four years in one American and one French web newsroom, with more than a hundred interviews. The result runs against most expectations: the American journalists more often set the traffic numbers aside and defined good work by what their peers thought, while the French ones watched the numbers closely and read them as their resonance in the public sphere. One set of metrics, two practices — what decided its use was the local status structure and professional tradition of journalism. The sample is two newsrooms; do not read it as a proportion.</p>
+<p>Echo chambers deserve the same honesty. Using the real browsing histories of fifty thousand U.S. users, Seth Flaxman, Sharad Goel and Justin Rao found in 2016 a result that pleases neither side: news reached through social media and search is associated both with a greater average ideological distance between people and with more encounters with material from the side they prefer less — and the overwhelming majority of news consumption is still people opening the front pages of a few mainstream outlets directly. This literature remains contested.</p>
+<p>What travels is the shape of the mechanism: attention is finite, so something must be ordered; wherever there is ordering there is a mesh and a yardstick; and when the yardstick is unpublished, those being sorted will guess at it, and the guessing changes the thing being sorted. That describes conditions, and it implies nothing about what anyone should read or whom they should support.</p>
+</div>
+<div class="bigcat">
+<h3>🎒 Scenes · BigCat</h3>
+<ul>
+<li><b>① Leading a team</b> — the agenda for the weekly meeting is usually a few leftovers from last week plus whatever broke yesterday, so the meeting is forever about incidents and never about the thing that has been rotting for six months. This runs the mechanism from "what gets picked is not what matters most": an incident has a timestamp, a number and an owner, which fits the meeting cycle exactly, while slow degradation has no event shape and never passes through the net. What can change: keep one fixed slot for what is quietly getting worse this quarter, and require it to come with a number that can be compared across three consecutive months.</li>
+<li><b>② Parenting and education</b> — every so often the groups and circles around education tense up about the same thing at once: an exam is being reformed, or some claim that it is too late if you have not already started. Two weeks later nobody mentions it and the next item arrives. Same mechanism: what gets onto an agenda has a timestamp, is easy to state and is forwardable, while the genuinely slow things — whether someone sleeps enough, who they spend years around, whether anything was actually absorbed — have no day on which they happen, so they are never in the group chat. What can change: replace "what the group is talking about this week" with one number of your own, looked at monthly.</li>
+</ul>
+</div>
+<div class="crossx">
+<h3>🌀 Crossing over · Connections across disciplines</h3>
+<ul>
+<li><b>Physics and mathematics · The wheel on screen turns backwards while the car drives forwards</b>: film a fast-spinning wheel at twenty-four frames per second and it may appear to rotate slowly in reverse. The sampling theorem is blunt about it: if the sampling rate is below twice the signal frequency, the high-frequency content does not vanish, it folds into a low frequency that does not exist in reality. This is aliasing. It runs the frequency condition from "what gets picked is not what matters most, it is what is easiest to pick" — <em>a medium is not a scaled-down copy of reality but a sampling of reality at some rhythm.</em> From which follows a conclusion you could not otherwise see: <b>you need not know anyone's political leaning; knowing only the ratio between a phenomenon's period of change and the news cycle lets you state in advance how it will be distorted — fluctuations far faster than the cycle get caught at a few points that join into a false trend line, while processes far slower than it (soil, demographic structure, chronic disease) never land on a sampling point at all, so their "nothing happened" is not someone suppressing them, it is sampling that cannot reach them</b>. <b>But here it does not hold</b>: the sampling theorem assumes signal and sampling do not interfere, and on that assumption offers its remedy — raise the sampling rate and you can reconstruct the original. News fails the first assumption, because coverage changes what it covers (more reporting leads to more reports filed and more complaints, so the numbers rise). The most useful conclusion is exactly the one that cannot be carried over: by the time you have raised the sampling rate, the signal itself has moved.</li>
+<li><b>Neuroscience · A stranger asking directions was swapped for a different person mid-conversation and nearly half the people did not notice</b>: in a 1998 street experiment, a researcher stopped passers-by to ask for directions, two people carrying a door cut between them, and in those few seconds the asker was replaced by someone else — in the first group only seven of fifteen noticed. This is change blindness, reproduced repeatedly in the laboratory and on the street. It runs the mechanism from "you think you are arguing about the world": attention is scarce and has to be allocated, and <em>the part that received none leaves no sense of a gap</em>. From which follows a conclusion you could not otherwise see: <b>the force of an agenda lies not in making you believe something but in the fact that what is omitted generates no subjective signal at all — so the feeling of reading a lot and being well informed cannot serve as evidence of coverage; noticing what you missed requires an external comparison, such as looking back six months later at what you were following at the time, and introspection cannot measure it</b>. <b>But here it does not hold</b>: the bottleneck on individual attention is physiological, much the same in everyone and not movable; the social "attention capacity" is built by institutions — page space, broadcast slots, recommendation positions, how often a team meets — and all of it can be designed and expanded. Running the two together as a fixed-sum game applies a physiological constant to a quantity that was adjustable all along.</li>
+</ul>
+</div>
+<div class="thinking">
+<h3>Going deeper</h3>
+<details><summary>If everyone now has different sources, does agenda setting still hold?</summary>
+<div>This is exactly the contested line: one reading is that the effect is receding, the other that the agenda has gone from one national list to many without disappearing, only changing shape. There is also a method problem — the Chapel Hill design needs a public agenda that can be ranked in the first place, and once sources fragment, how to measure a public agenda is itself unsettled.</div>
+</details>
+<details><summary>How do you tell whether a story is important or merely in phase?</summary>
+<div>Two imperfect but usable tests. One: if this happened ten times more slowly, would it still be covered? Two: when the coverage stops, does the thing stop with it? Both misfire — something genuinely important that happens to be in phase is killed by the first. So they suit looking at your own allocation of attention, not grading someone else's reporting.</div>
+</details>
+<details><summary>Is there a society that needs no agenda?</summary>
+<div>As soon as there are more people than can see each other, someone has to order things for everyone; the only difference is whether the sorter is an elder, an assembly, a newspaper or a model. The joint attention described in the piece on ritual and collective effervescence is the other route: gathering rather than filtering. Its cost is scale — a few hundred people can do it, a few million cannot, and then you are back to filtering.</div>
+</details>
+</div>
+<div class="refs">
+<h3>Further reading</h3>
+<ul>
+<li><a href="https://www.gutenberg.org/ebooks/6456" rel="noopener" target="_blank">Lippmann, <i>Public Opinion</i> (1922), full text</a></li>
+<li><a href="https://academic.oup.com/poq/article-abstract/36/2/176/1853310" rel="noopener" target="_blank">McCombs &amp; Shaw, "The Agenda-Setting Function of Mass Media" (1972)</a></li>
+<li><a href="https://press.uchicago.edu/ucp/books/book/chicago/N/bo10579884.html" rel="noopener" target="_blank">Iyengar &amp; Kinder, <i>News That Matters</i> (1987)</a></li>
+<li><a href="https://journals.sagepub.com/doi/10.1177/002234336500200104" rel="noopener" target="_blank">Galtung &amp; Ruge, "The Structure of Foreign News" (1965)</a> · <a href="https://www.tandfonline.com/doi/full/10.1080/1461670X.2016.1150193" rel="noopener" target="_blank">Harcup &amp; O'Neill, "What Is News? Revisited Again" (2017)</a></li>
+<li><a href="https://www.goodreads.com/book/show/3496395" rel="noopener" target="_blank">Tuchman, <i>Making News</i> (1978)</a> · <a href="https://nupress.northwestern.edu/9780810121881/deciding-whats-news/" rel="noopener" target="_blank">Gans, <i>Deciding What's News</i> (1979)</a></li>
+<li><a href="https://global.oup.com/academic/product/the-platform-society-9780190889777" rel="noopener" target="_blank">van Dijck, Poell &amp; de Waal, <i>The Platform Society</i> (2018)</a></li>
+<li><a href="https://journals.sagepub.com/doi/abs/10.1177/1461444812440159" rel="noopener" target="_blank">Bucher, "Want to Be on the Top?" (2012)</a> · <a href="https://www.tandfonline.com/doi/full/10.1080/1369118X.2016.1154086" rel="noopener" target="_blank">Bucher, "The Algorithmic Imaginary" (2017)</a></li>
+<li><a href="https://press.princeton.edu/books/hardcover/9780691175232/metrics-at-work" rel="noopener" target="_blank">Christin, <i>Metrics at Work</i> (2020)</a> · <a href="https://academic.oup.com/poq/article/80/S1/298/2223402" rel="noopener" target="_blank">Flaxman, Goel &amp; Rao, "Filter Bubbles, Echo Chambers, and Online News Consumption" (2016)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem" rel="noopener" target="_blank">The sampling theorem and aliasing</a> · <a href="https://en.wikipedia.org/wiki/Change_blindness" rel="noopener" target="_blank">Change blindness</a></li>
+</ul>
+</div>
+<footer>BigCat Learning Hub · Sociology &amp; Anthropology</footer>
+</div>
+<script src="https://hub.cissychen.com/comments.js" defer></script>
+<script src="https://hub.cissychen.com/search.js" defer></script>
+<script src="https://hub.cissychen.com/index-button.js" defer></script>
+<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
+</body></html>

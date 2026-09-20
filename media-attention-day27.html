@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>社会学与人类学 Day 27：媒介与注意力</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:linear-gradient(170deg,#1a140f,#171210 42%,#120e0b);color:#e6dacc;line-height:1.9;min-height:100vh}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 60px}
+header{padding:52px 0 30px;border-bottom:1px solid #33261d}
+header .kicker{font-size:0.75rem;color:#8fb0cc;letter-spacing:2.5px;font-family:"SF Mono",Menlo,monospace}
+header h1{font-size:2.1rem;font-weight:800;background:linear-gradient(100deg,#e08155,#eda07c 58%,#8fb0cc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:0.5px;margin-top:12px;line-height:1.28}
+header h2{font-size:1rem;color:#a08b78;margin-top:10px;font-weight:400}
+header .meta{margin-top:14px;font-size:0.85rem;color:#a08b78}
+header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
+.intro{margin-top:30px;font-size:1.02rem;color:#d8c9b8}
+.intro p{margin-bottom:13px}
+.section{margin:46px 0;background:rgba(255,255,255,0.028);padding:28px 26px;border-radius:14px;border:1px solid rgba(255,255,255,0.06)}
+.section .num{display:inline-block;font-size:0.75rem;color:#e08155;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;margin-bottom:8px}
+.section h2{font-size:1.32rem;color:#f4ece2;margin-bottom:16px;font-weight:700;line-height:1.35}
+.section p{margin-bottom:14px;font-size:0.98rem}
+.section strong{color:#fff}
+.section em{color:#e08155;font-style:normal}
+.section ul{list-style:none;margin:14px 0}
+.section li{margin-bottom:10px;padding-left:20px;position:relative}
+.section li::before{content:"◈";position:absolute;left:0;top:0.42em;color:#e08155;font-size:0.7rem}
+.fig{margin:24px 0 10px;text-align:center}
+.fig svg{max-width:100%;height:auto}
+.fig .cap{font-size:0.82rem;color:#a08b78;margin-top:8px;text-align:left;line-height:1.65}
+.en-brief{margin-top:18px;padding:12px 16px;border-left:2px solid rgba(160,139,120,0.5);background:rgba(255,255,255,0.02);border-radius:0 8px 8px 0;font-size:0.85rem;color:#b0a08e;line-height:1.62}
+.en-brief b{color:#bda994;font-family:"SF Mono",Menlo,monospace;font-size:0.68rem;letter-spacing:1.5px;margin-right:9px;font-weight:700}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(143,176,204,0.12),rgba(224,129,85,0.05));border:1px solid rgba(143,176,204,0.34);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#8fb0cc;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#dfe3e6;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e08155;font-size:0.72rem}
+.crossx b{color:#aecbe2;font-weight:600}
+.thinking{background:linear-gradient(135deg,rgba(224,129,85,0.06),rgba(143,176,204,0.05));border:1px solid rgba(224,129,85,0.24);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e08155;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(18,14,11,0.5);border:1px solid rgba(224,129,85,0.2);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(224,129,85,0.06);border-color:rgba(224,129,85,0.42)}
+.thinking summary{cursor:pointer;color:#eda07c;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#8fb0cc}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(143,176,204,0.22);color:#ddd0c1;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#8fb0cc;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a08b78}
+.refs a{color:#e08155;text-decoration:none;border-bottom:1px dotted rgba(224,129,85,0.42)}
+.refs a:hover{color:#eda07c;border-bottom-color:#eda07c}
+.bigcat{margin:40px 0 0;background:linear-gradient(135deg,rgba(224,129,85,0.11),rgba(143,176,204,0.04));border:1px solid rgba(224,129,85,0.32);border-radius:14px;padding:22px 26px}
+.bigcat h3{color:#eda07c;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.bigcat ul{list-style:none;margin:0}
+.bigcat li{color:#ece0d2;font-size:0.93rem;line-height:1.8;margin-bottom:14px}
+.bigcat li:last-child{margin-bottom:0}
+.bigcat b{color:#eda07c;font-weight:600}
+footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
+@media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+</style></head><body>
+</head><body>
+<div class="container">
+<header>
+<div class="kicker">DAY 27 · 媒介与注意力</div>
+<h1>媒介与注意力</h1>
+<h2>这一期最反直觉的一句：媒介最稳定的偏向不是立场，是节奏——一件事变化的快慢跟新闻周期合不合拍，比它有多重要更能决定它是不是新闻</h2>
+<div class="meta">2026-09-20 · BigCat</div>
+<div class="pitch">1968 年，两个研究者问一百个还没打定主意的选民「眼下国家最重要的问题是什么」，同时数了当地九家媒体那几周在报什么。两份排序几乎重合。</div>
+</header>
+<div class="intro">
+<p>上一次你为某件事跟人争得很凶，两边都有理有据。退一步问一句：这个题目是谁挑的？不是你，也不是对方。吵得越认真，越不会想到这一层。</p>
+<p>一百年前有人把它写成了一条机制：人反应的从来不是世界本身，而是脑子里那张关于世界的图，图是别人画的。这一页讲这张图怎么画、为什么画进去的不是最重要的那些事，以及画图的换成机器之后哪些变了、哪些一点没变。</p>
+</div>
+<div class="section">
+<span class="num">// 01</span>
+<h2>你以为你在讨论世界，其实你在讨论别人昨天挑出来的那几件事</h2>
+<p>1914 年秋天，大西洋上一座孤岛，英国人、法国人和德国人还在一起打牌。邮船六十天来一次，他们要到九月中旬才知道自己的国家八月初就开战了——有六个星期，他们活在一张已经作废的世界图里。李普曼（Walter Lippmann）1922 年的《舆论》（Public Opinion）就从这里开篇。</p>
+<p>他要说的不是消息慢，是人人都活在一张图里。这张图他叫拟态环境（pseudo-environment）：世界太大太快，人只能凭几条二手消息在脑子里搭个小模型，对着小模型做反应——而反应落回的是真实世界。「刻板印象」（stereotype）在社会科学里的用法也是他定的，本来指印刷厂的铅版：一套现成的模子，省得每次重新排字。</p>
+<p>这话顺得像不能验证。五十年后有人把它做成了可测的。麦库姆斯与肖（McCombs &amp; Shaw）1972 年发表的研究选在 1968 年美国大选前的教堂山（Chapel Hill）：只访问还没决定投给谁的人，一共一百个，问「眼下国家最重要的问题是什么」；同时把当地人在读在看的九家报纸杂志和电视新闻，按报道篇幅也排一份序。两份排序的等级相关系数，主要议题 0.967、次要议题 0.979——几乎是同一份名单。</p>
+<p>证据强度：这是相关，不是因果。他们自己也写明了另一种可能——也许是媒体在反映公众本来就关心的事。</p>
+<p>把方向定下来的是实验。艾英加与金德（Iyengar &amp; Kinder）在 1980 年代做了一串：把晚间新闻剪过再放给受试者连看几天，某个议题的报道被悄悄加多。几天后测他们怎么评价总统，标准变了——他们更多拿那个被加多的议题来打分，这个效应叫预示（priming）。因果方向干净；边界也得说：那是三家电视网几乎垄断晚间新闻的年代，放到今天还剩多少，有争论。</p>
+<p>这条机制最准的概括来自科恩（Bernard Cohen）1963 年的一句话：媒体不太能告诉你该怎么想，但极其擅长告诉你该想什么。注意它有多冷——不需要任何人撒谎，也不需要任何人串通。争论也照实说：2008 年班尼特与艾英加认为，人人能自选来源之后这类效应正在回落；2010 年霍尔伯特等人反驳说这高估了人对异见的回避。目前没有共识。</p>
+<p class="en-brief"><b>EN</b> In the autumn of 1914, on an island in the Atlantic, the English, French and Germans living there were still playing cards together: the mail boat came once every sixty days, and only in mid-September did they learn that their countries had gone to war in early August. For six weeks they lived quietly by a map of the world that had already expired. Walter Lippmann's <i>Public Opinion</i> (1922) opens there. His point was not that news travels slowly but that everyone lives inside a picture. He called it the pseudo-environment: the world outside is too large, too fast and too complex, so people assemble a small model of it in their heads out of a few second-hand reports and react to that model — while the reaction lands in the real world. The social-scientific use of the word stereotype is also his, borrowed from the printing trade: a ready-made plate that saves you from setting the type afresh each time. The claim is so plausible it sounds untestable, and fifty years later someone made it measurable. McCombs and Shaw, publishing in 1972, worked in Chapel Hill before the 1968 U.S. election: they interviewed only voters who had not yet decided, one hundred of them, asking what they thought the most important issue facing the country was; at the same time they classified and ranked, by amount of coverage, what the nine newspapers, magazines and television newscasts those residents actually used had run over the same weeks. The rank-order correlations were .967 and .979 — almost the same list. Evidence strength: this is correlation, not causation, as the authors themselves noted, since the media may have been reflecting what the public already cared about. Experiments settled the direction. Through the 1980s Iyengar and Kinder edited evening newscasts and had participants watch them for several days, quietly increasing coverage of one issue; afterwards, the criteria people used to evaluate the president had shifted toward that issue. They called the effect priming. The causal direction is clean, and so is the boundary: that was an era when three networks held a near-monopoly on evening news, and how much survives today is contested. Bernard Cohen put the mechanism best in 1963 — the press may not be successful in telling people what to think, but it is stunningly successful in telling them what to think about. Note how cold that is: it requires nobody to lie and nobody to coordinate. As for the current debate, Bennett and Iyengar argued in 2008 that such effects are receding now that everyone can choose their own sources; Holbert and colleagues rebutted point by point in 2010, arguing that they overstate how far people avoid disagreeable information. There is no consensus.</p>
+</div>
+<div class="section">
+<span class="num">// 02</span>
+<h2>挑出来的不是最重要的，是最挑得出来的</h2>
+<p>换个问法：一件事要满足什么条件，才进得了新闻？</p>
+<p>1965 年，挪威的加尔通与鲁格（Galtung &amp; Ruge）数了四家挪威报纸对刚果、古巴和塞浦路斯三场危机的报道，列出一张新闻价值清单。排在最前面的不是重要性，是频率（frequency）：一个事件展开的时间尺度要跟媒介出版的周期对得上，才会被认成一个「事件」。凶案一夜之间完成，正好是一份日报的长度；一个国家慢慢变穷要花三十年，没有哪天算「发生」，于是永远不是新闻——除非中间闹了骚乱或发布了报告，那天它才借到一个事件的形状。</p>
+<p>证据强度：那张清单是推演出来的假设，不是测出来的。哈卡普与奥尼尔（Harcup &amp; O'Neill）2001 年和 2017 年两次拿英国报纸的实际内容去核，结论是原清单部分不成立、需要改写。清单在变，「得跟周期合拍」这一条一直留着。</p>
+<div class="fig">
+<svg viewbox="0 0 620 220" xmlns="http://www.w3.org/2000/svg">
+<line stroke="#a08b78" stroke-width="1.2" x1="64" x2="566" y1="186" y2="186"></line>
+<g stroke="#5c4c40" stroke-dasharray="3 5" stroke-width="1">
+<line x1="120" x2="120" y1="40" y2="186"></line>
+<line x1="204" x2="204" y1="40" y2="186"></line>
+<line x1="288" x2="288" y1="40" y2="186"></line>
+<line x1="372" x2="372" y1="40" y2="186"></line>
+<line x1="456" x2="456" y1="40" y2="186"></line>
+<line x1="540" x2="540" y1="40" y2="186"></line>
+</g>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="10.5" x="64" y="32">↓ 出版周期</text>
+<path d="M76 92 L110 62 L134 118 L168 70 L196 116 L232 66 L258 120 L294 68 L320 118 L356 70 L384 114 L420 64 L448 118 L484 70 L512 114 L548 72" fill="none" stroke="#e08155" stroke-width="1.6"></path>
+<path d="M76 158 C180 154 300 148 420 142 C480 139 530 137 556 136" fill="none" stroke="#8fb0cc" stroke-width="1.8"></path>
+<circle cx="120" cy="66" fill="#e08155" r="3.4"></circle>
+<circle cx="204" cy="112" fill="#e08155" r="3.4"></circle>
+<circle cx="288" cy="70" fill="#e08155" r="3.4"></circle>
+<circle cx="372" cy="70" fill="#e08155" r="3.4"></circle>
+<circle cx="456" cy="112" fill="#e08155" r="3.4"></circle>
+<circle cx="540" cy="76" fill="#e08155" r="3.4"></circle>
+<text fill="#eda07c" font-family="Georgia,serif" font-size="11.5" x="392" y="44">快过周期：采到的点连成假曲线</text>
+<text fill="#aecbe2" font-family="Georgia,serif" font-size="11.5" x="392" y="168">慢过周期：一个点也采不到</text>
+</svg>
+<div class="cap">竖线是出版周期。比它快的东西只采到几个点，连起来是现实里没有的线；比它慢的东西一次也碰不上采样点，于是「什么都没发生」。</div>
+</div>
+<p>为什么这么稳？答案不在记者脑子里，在排班表上。塔奇曼（Gaye Tuchman）1978 年的《做新闻》（Making News）是一项做了十年的编辑室民族志。她给出新闻网（news net）这个说法：一家媒体没法把记者撒到各处，只能把有限的人钉在少数几个「事情会自己找上门」的地方——市政厅、警察局、法院。网眼撒在哪儿就捞得到哪些鱼；网眼之间的东西不是被压下去的，是根本没经过网。</p>
+<p>她还看到更细的一层：编辑部得把不可预测的世界排进可预测的班表，于是先把事件分类——突发的、进行中的、能随时填版面的。这是行政需要，却反过来决定了什么样的事实容易被写成新闻。同期甘斯（Herbert Gans）蹲了两家电视晚间新闻和两本周刊，结论一致。</p>
+<p>两项都是七十年代美国编辑室的民族志个案，别当普遍比例读；但机制的形状很清楚，正是组织与制度那期讲过的：结构约束比个人意图更能解释产出。所以「媒体有偏」这句话太粗。最稳定、最不挑立场的那种偏是可及性与节奏的偏——换一批政治观点完全相反的人来做，只要网眼和班表不变，捞上来的还是那批鱼。</p>
+<p class="en-brief"><b>EN</b> Put the question differently: what must an event satisfy before it can become news? In 1965 the Norwegians Johan Galtung and Mari Holmboe Ruge counted how four Norwegian newspapers covered the crises in the Congo, Cuba and Cyprus, and drew up a list of news values. The first item is not importance but frequency: the timescale on which an event unfolds has to match the publication cycle of the medium before it will be recognised as an event at all. A murder is complete overnight, exactly the length of a daily paper; a country growing poorer takes thirty years and has no day on which it happens, so it is never news — unless a riot breaks out or a report is released, which lends it the shape of an event for one day. Evidence strength: that list was a set of derived hypotheses, not a measurement. Tony Harcup and Deirdre O'Neill checked it against the actual contents of British newspapers in 2001 and again in 2017 and concluded that parts of it do not hold and need rewriting; their version adds the power elite, celebrity, entertainment, bad news, follow-ups and the newspaper's own agenda. The list changes; the requirement to match the cycle stays. Why is it so stable? The answer is not in reporters' heads but on the roster. Gaye Tuchman's <i>Making News</i> (1978) is a newsroom ethnography built on a decade of watching people work in papers and television stations. She called the arrangement the news net: an outlet cannot scatter reporters across the world, so it pins a limited number of them to the few places where things come to you — city hall, the police station, the courts. Where the mesh is laid determines which fish get caught, and what falls between the strands is not suppressed, it simply never passes through a net. She saw a finer layer too: a newsroom has to fit an unpredictable world into a predictable roster, so it sorts events in advance into spot news, developing news and material that can fill a page any time. The typology is an administrative necessity, and it decides in turn which kinds of fact can easily be written up as news. In the same years Herbert Gans, in <i>Deciding What's News</i> (1979), used the same method on two network evening newscasts and two weekly magazines and reached the same conclusion. Both are single-site ethnographies of 1970s American newsrooms and should not be read as general proportions; but the shape of the mechanism is clear, and it is what the piece on organizations and institutions described: structural constraints explain output better than individual intentions. So "the media are biased" is too coarse. The most stable bias, the one indifferent to politics, is a bias of accessibility and rhythm — replace the staff with people of entirely opposite views and, as long as the mesh and the roster stay the same, the same fish come up.</p>
+</div>
+<div class="section">
+<span class="num">// 03</span>
+<h2>排序的人换成了谁也说不清的机器，排序这件事一点没变</h2>
+<p>现在没有一间编辑部替所有人挑了。你打开手机，第一屏已经按某种规则排过，规则不公开，而且对每个人都不一样。</p>
+<p>范戴克、波尔与德瓦尔（van Dijck, Poell &amp; de Waal）2018 年的《平台社会》把平台的运作拆成三条：数据化（越来越多的行为被转成可记录的数据）、商品化（这些数据接上交易）、选择（决定谁看见什么）。第三条就是编辑部那份活，只是换了执行者和量尺。</p>
+<p>真正新的是另一件事：被排序的人会去猜规则。布赫（Taina Bucher）2012 年分析平台如何分配可见性时指出，压在用户头上的不是「被看见」的恐惧，而是反过来——随时可能沉下去、不再有人看见。她 2017 年访谈普通用户，问他们觉得算法是怎么想的。答案五花八门、大多不准，但这不重要——重要的是他们按猜测改了自己发什么、何时发，而这些行为又变成算法的输入。她管这叫算法想象（algorithmic imaginary）。</p>
+<div class="fig">
+<svg viewbox="0 0 620 176" xmlns="http://www.w3.org/2000/svg">
+<g fill="none" stroke="#e08155" stroke-width="1.3">
+<rect height="40" rx="6" width="122" x="40" y="66"></rect>
+<rect height="40" rx="6" width="122" x="208" y="66"></rect>
+<rect height="40" rx="6" width="122" x="376" y="66"></rect>
+</g>
+<text fill="#eda07c" font-family="Georgia,serif" font-size="12" text-anchor="middle" x="101" y="91">规则不公开</text>
+<text fill="#eda07c" font-family="Georgia,serif" font-size="12" text-anchor="middle" x="269" y="91">人去猜规则</text>
+<text fill="#eda07c" font-family="Georgia,serif" font-size="12" text-anchor="middle" x="437" y="91">按猜测改行为</text>
+<g fill="none" stroke="#8fb0cc" stroke-width="1.4">
+<path d="M162 86 L200 86"></path>
+<path d="M330 86 L368 86"></path>
+<path d="M498 86 C548 86 560 86 560 120 L560 140 L101 140 L101 112"></path>
+</g>
+<path d="M196 81 L206 86 L196 91 Z" fill="#8fb0cc"></path>
+<path d="M364 81 L374 86 L364 91 Z" fill="#8fb0cc"></path>
+<path d="M96 116 L101 106 L106 116 Z" fill="#8fb0cc"></path>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="10.5" text-anchor="middle" x="330" y="158">行为变成新数据，规则据此再调</text>
+</svg>
+<div class="cap">自然现象不会因为被观测就改掉自己的规律；被排序的人会。这条回路让「拿数据测人」永远测不干净。</div>
+</div>
+<p>但别把技术说成命运。克里斯汀（Angèle Christin）2011 到 2015 年在美国和法国各一家网络新闻编辑室做了四年田野、访谈一百多人。结果跟很多人的预期相反：美国那边的记者更常把流量数搁在一边，用同行怎么评价来定义什么算好新闻；法国那边反而更盯数字，把它读成自己在公共领域里的回响。同一套指标，两种实践——决定它怎么被用的是当地新闻业的地位结构和职业传统。样本只有两家编辑室，别当比例读。</p>
+<p>回音室也得照实讲。弗拉克斯曼、戈尔与拉奥（Flaxman, Goel &amp; Rao）2016 年用五万名美国用户的真实浏览记录做过一次测量，结论两头都不讨好：经社交和搜索来的新闻，既拉大了人与人之间的平均意识形态距离，也增加了人碰到不合自己口味那一侧材料的机会；而且绝大多数新闻消费其实是直接打开那几家主流站点的首页。这一支目前还有争论。</p>
+<p>能带走的是机制的形状：注意力有限，所以必须排序；只要排序就有网眼和量尺；量尺不公开时，被排序的人会去猜，而猜测会改变被排序的东西。这描述的是条件，推不出任何「该看什么、该支持谁」。</p>
+<p class="en-brief"><b>EN</b> No single newsroom now selects for everyone. You open your phone and the first screen has been ordered by some rule, one that is not published and is not the same for any two people. In <i>The Platform Society</i> (2018) José van Dijck, Thomas Poell and Martijn de Waal break platform operation into three mechanisms: datafication (ever more behaviour turned into recordable data), commodification (that data hooked into markets) and selection (deciding who sees what). The third is the newsroom's old job, with a different operator and a different yardstick. What is genuinely new is that the people being sorted try to guess the rule. Analysing how platforms distribute visibility, Taina Bucher argued in 2012 that what weighs on users is not the fear of being seen but its inverse — the constant possibility of sinking out of sight. In 2017 she did something more interesting: she interviewed ordinary users about what they thought the algorithm was thinking. The answers varied wildly and were mostly wrong, which does not matter; what matters is that people adjusted what they posted and when they posted it according to those guesses, and that behaviour became the algorithm's input. She calls it the algorithmic imaginary: what is measured changes itself because it is guessing at the rule of measurement. But technology is not destiny. Angèle Christin spent four years, from 2011 to 2015, doing fieldwork in one American and one French web newsroom, with more than a hundred interviews, watching what the same real-time traffic metrics became in each. The result runs against most expectations: the American journalists more often set the traffic numbers aside and defined good work by what their peers thought, while the French ones watched the numbers closely and read them as their resonance in the public sphere. One technology, two practices — what decided its use was the local status structure and professional tradition of journalism. The sample is two newsrooms; do not read it as a proportion. Echo chambers deserve the same honesty. Using the real browsing histories of fifty thousand U.S. users, Seth Flaxman, Sharad Goel and Justin Rao found in 2016 a result that satisfies neither side: news reached through social media and search is associated both with a greater average ideological distance between people and with more encounters with material from the side they prefer less — and the overwhelming majority of news consumption is still people opening the front pages of a few mainstream outlets directly. This literature remains contested and no strong conclusion in either direction is yet safe. What travels is the shape of the mechanism: attention is finite, so something must be ordered; wherever there is ordering there is a mesh and a yardstick; and when the yardstick is not published, those being sorted will guess at it, and the guessing changes the thing being sorted. Those are statements about conditions, and they imply nothing about what anyone should read or whom they should support.</p>
+</div>
+<div class="bigcat">
+<h3>🎒 场景 · BigCat</h3>
+<ul>
+<li><b>① 带团队与组织</b>——每周例会的议程多半是「上周遗留几条 + 昨天出的那件事」拼起来的，于是会上永远在谈故障，不谈已经烂了半年的东西。跑的是「挑出来的不是最重要的，是最挑得出来的」那节的机制：故障有时间点、有编号、有人负责，正好跟例会周期合拍；缓慢劣化没有事件形状，永远进不了网。可改的：固定留一格给「这季度什么在慢慢变坏」，并要求带一个能连着三个月对比的数。</li>
+<li><b>② 育儿与教育</b>——跟教育沾边的群每隔一阵会集体紧张同一件事：某项考试要改、某种「再不开始就晚了」的说法，两周后没人再提，换下一件。跑的是同一条机制：进得了议程的是有时间点、说得清、能转发的；真正慢的那些——睡够没有、长期跟谁待在一起、读进去没有——没有哪天算「发生」，于是从来不在群里。可改的：把「这周群里在说什么」换成一个自己定的、按月看的数。</li>
+</ul>
+</div>
+<div class="crossx">
+<h3>🌀 越界 · 跨学科的联想</h3>
+<ul>
+<li><b>物理与数学 · 电影里的车轮明明在倒转，车却在往前开</b>：每秒 24 帧去拍一个高速旋转的轮子，屏幕上它可能缓缓倒着转。采样定理说得很硬：采样频率低于信号频率的两倍，高频成分不会消失，而会被折叠成一个现实中不存在的低频，这叫混叠（aliasing）。跑的是「挑出来的不是最重要的，是最挑得出来的」那节的频率条件——<em>媒介不是现实的缩小版，是以某个节奏对现实取样。</em>由此能推出一个原本看不出的结论：<b>不必知道谁抱什么立场，只要知道一个现象的变化周期与新闻周期的比值，就能预先说出它会被怎样扭曲——远快于周期的波动会被采到的几个点连成一条假趋势线，远慢于周期的过程（土壤、人口结构、慢性病）连一个点都采不到，它们的「没有发生」不是被谁压下去的，是采样采不到</b>。<b>但这里不成立</b>：采样定理假定信号与采样互不干扰，并据此给出解药——提高采样率就能还原。新闻不满足第一条，报道会改变被报道的对象（报得多→报案与投诉也多→数字上升）。于是最有用的那个结论恰恰搬不过来：提高采样率的同时，信号本身已经变了。</li>
+<li><b>神经科学 · 问路问到一半，对面的人被换成了另一个，将近一半的人没发现</b>：1998 年的一项街头实验，研究者上前问路，两个人抬着门从中间穿过，趁这几秒把问路的人换成另一个——第一组十五人里只有七个察觉。这叫变化视盲（change blindness），实验室与街头都反复重现过。跑的是「你以为你在讨论世界」那节的机制：注意是稀缺的、要被分配的，而<em>没有分到的那部分不会留下缺口感</em>。由此推出一个原本看不出的结论：<b>议程的效力不在于它让你相信什么，而在于漏掉的东西不产生任何主观信号——「我每天看很多、知道得挺全」这种感觉因此不能当作覆盖面的证据；要察觉自己漏了什么只能靠外部对照，比如隔半年翻回去看当时在关心什么，靠内省测不出来</b>。<b>但这里不成立</b>：个体注意的瓶颈是生理的，人人相仿也改不动；社会层面的「注意力容量」却是制度造出来的——版面、时段、推荐位、一周开几次会，都可以设计、可以扩容。把两者混着说成「总量固定的零和」，等于把一条生理常数套到本来可调的量上。</li>
+</ul>
+</div>
+<div class="thinking">
+<h3>深入思考</h3>
+<details><summary>每个人的信息来源都不一样了，议程设置还成立吗？</summary>
+<div>这正是目前争论的那条线：一种读法是效应在回落，另一种是议程从「全国一份」变成「很多份」，没消失只是换了形状。还有个方法问题——教堂山那种做法要先有一份公共议程可以排序，来源碎掉之后，连「公共议程」怎么测都还没定下来。</div>
+</details>
+<details><summary>怎么判断一条新闻是「重要」还是只是「合拍」？</summary>
+<div>两个不完美但能用的测试。一：这件事如果发生得慢十倍，还会被报吗。二：报道停下之后，它会跟着停吗。两条都会误判——真正重要又恰好合拍的事会被第一条错杀。所以它们适合看自己的注意力分配，不适合给别人的报道打分。</div>
+</details>
+<details><summary>有没有哪种社会不需要「议程」？</summary>
+<div>只要人多到彼此看不见，就得有人替大家排序，区别只在排序的是长老、集会、报纸还是模型。仪式与集体欢腾那期讲的共同注意是另一条路：靠聚集而不是筛选。代价是规模——几百人可以，几百万人做不到，于是又退回筛选。</div>
+</details>
+</div>
+<div class="refs">
+<h3>延伸阅读</h3>
+<ul>
+<li><a href="https://www.gutenberg.org/ebooks/6456" rel="noopener" target="_blank">李普曼《舆论》(1922) 全文</a>（英文）</li>
+<li><a href="https://academic.oup.com/poq/article-abstract/36/2/176/1853310" rel="noopener" target="_blank">McCombs &amp; Shaw《大众媒介的议程设置功能》(1972)</a>（英文）</li>
+<li><a href="https://press.uchicago.edu/ucp/books/book/chicago/N/bo10579884.html" rel="noopener" target="_blank">Iyengar &amp; Kinder《要紧的新闻》(1987)</a>（英文）</li>
+<li><a href="https://journals.sagepub.com/doi/10.1177/002234336500200104" rel="noopener" target="_blank">Galtung &amp; Ruge《外国新闻的结构》(1965)</a> · <a href="https://www.tandfonline.com/doi/full/10.1080/1461670X.2016.1150193" rel="noopener" target="_blank">Harcup &amp; O'Neill《什么是新闻·再访》(2017)</a>（英文）</li>
+<li><a href="https://www.goodreads.com/book/show/3496395" rel="noopener" target="_blank">Tuchman《做新闻》(1978)</a> · <a href="https://nupress.northwestern.edu/9780810121881/deciding-whats-news/" rel="noopener" target="_blank">Gans《决定什么是新闻》(1979)</a>（英文）</li>
+<li><a href="https://global.oup.com/academic/product/the-platform-society-9780190889777" rel="noopener" target="_blank">van Dijck, Poell &amp; de Waal《平台社会》(2018)</a>（英文）</li>
+<li><a href="https://journals.sagepub.com/doi/abs/10.1177/1461444812440159" rel="noopener" target="_blank">Bucher《想上首页吗？》(2012)</a> · <a href="https://www.tandfonline.com/doi/full/10.1080/1369118X.2016.1154086" rel="noopener" target="_blank">Bucher《算法想象》(2017)</a>（英文）</li>
+<li><a href="https://press.princeton.edu/books/hardcover/9780691175232/metrics-at-work" rel="noopener" target="_blank">Christin《工作中的指标》(2020)</a> · <a href="https://academic.oup.com/poq/article/80/S1/298/2223402" rel="noopener" target="_blank">Flaxman, Goel &amp; Rao《过滤气泡与回音室》(2016)</a>（英文）</li>
+<li><a href="https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem" rel="noopener" target="_blank">采样定理与混叠</a> · <a href="https://en.wikipedia.org/wiki/Change_blindness" rel="noopener" target="_blank">变化视盲</a>（英文）</li>
+</ul>
+</div>
+<footer>BigCat Learning Hub · 社会学与人类学</footer>
+</div>
+<script src="https://hub.cissychen.com/comments.js" defer></script>
+<script src="https://hub.cissychen.com/search.js" defer></script>
+<script src="https://hub.cissychen.com/index-button.js" defer></script>
+<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
+</body></html>
