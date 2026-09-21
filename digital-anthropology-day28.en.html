@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sociology &amp; Anthropology Day 28: Digital Anthropology</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:linear-gradient(170deg,#1a140f,#171210 42%,#120e0b);color:#e6dacc;line-height:1.9;min-height:100vh}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 60px}
+header{padding:52px 0 30px;border-bottom:1px solid #33261d}
+header .kicker{font-size:0.75rem;color:#8fb0cc;letter-spacing:2.5px;font-family:"SF Mono",Menlo,monospace}
+header h1{font-size:2.1rem;font-weight:800;background:linear-gradient(100deg,#e08155,#eda07c 58%,#8fb0cc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:0.5px;margin-top:12px;line-height:1.28}
+header h2{font-size:1rem;color:#a08b78;margin-top:10px;font-weight:400}
+header .meta{margin-top:14px;font-size:0.85rem;color:#a08b78}
+header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
+.intro{margin-top:30px;font-size:1.02rem;color:#d8c9b8}
+.intro p{margin-bottom:13px}
+.section{margin:46px 0;background:rgba(255,255,255,0.028);padding:28px 26px;border-radius:14px;border:1px solid rgba(255,255,255,0.06)}
+.section .num{display:inline-block;font-size:0.75rem;color:#e08155;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;margin-bottom:8px}
+.section h2{font-size:1.32rem;color:#f4ece2;margin-bottom:16px;font-weight:700;line-height:1.35}
+.section p{margin-bottom:14px;font-size:0.98rem}
+.section strong{color:#fff}
+.section em{color:#e08155;font-style:normal}
+.section ul{list-style:none;margin:14px 0}
+.section li{margin-bottom:10px;padding-left:20px;position:relative}
+.section li::before{content:"◈";position:absolute;left:0;top:0.42em;color:#e08155;font-size:0.7rem}
+.fig{margin:24px 0 10px;text-align:center}
+.fig svg{max-width:100%;height:auto}
+.fig .cap{font-size:0.82rem;color:#a08b78;margin-top:8px;text-align:left;line-height:1.65}
+.en-brief{margin-top:18px;padding:12px 16px;border-left:2px solid rgba(160,139,120,0.5);background:rgba(255,255,255,0.02);border-radius:0 8px 8px 0;font-size:0.85rem;color:#b0a08e;line-height:1.62}
+.en-brief b{color:#bda994;font-family:"SF Mono",Menlo,monospace;font-size:0.68rem;letter-spacing:1.5px;margin-right:9px;font-weight:700}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(143,176,204,0.12),rgba(224,129,85,0.05));border:1px solid rgba(143,176,204,0.34);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#8fb0cc;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#dfe3e6;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e08155;font-size:0.72rem}
+.crossx b{color:#aecbe2;font-weight:600}
+.thinking{background:linear-gradient(135deg,rgba(224,129,85,0.06),rgba(143,176,204,0.05));border:1px solid rgba(224,129,85,0.24);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e08155;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(18,14,11,0.5);border:1px solid rgba(224,129,85,0.2);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(224,129,85,0.06);border-color:rgba(224,129,85,0.42)}
+.thinking summary{cursor:pointer;color:#eda07c;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#8fb0cc}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(143,176,204,0.22);color:#ddd0c1;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#8fb0cc;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a08b78}
+.refs a{color:#e08155;text-decoration:none;border-bottom:1px dotted rgba(224,129,85,0.42)}
+.refs a:hover{color:#eda07c;border-bottom-color:#eda07c}
+.bigcat{margin:40px 0 0;background:linear-gradient(135deg,rgba(224,129,85,0.11),rgba(143,176,204,0.04));border:1px solid rgba(224,129,85,0.32);border-radius:14px;padding:22px 26px}
+.bigcat h3{color:#eda07c;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.bigcat ul{list-style:none;margin:0}
+.bigcat li{color:#ece0d2;font-size:0.93rem;line-height:1.8;margin-bottom:14px}
+.bigcat li:last-child{margin-bottom:0}
+.bigcat b{color:#eda07c;font-weight:600}
+footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
+@media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+</style></head><body>
+<div class="container">
+<header>
+<div class="kicker">DAY 28 · DIGITAL ANTHROPOLOGY</div>
+<h1>Digital Anthropology</h1>
+<h2>The counter-intuitive line of the day: "online" and "offline" are a distinction the researcher carries into the field, not one used by the people who live there.</h2>
+<div class="meta">2026-09-21 · BigCat</div>
+<div class="pitch">An anthropologist spent more than two years inside a virtual world as nothing but an avatar, deliberately never meeting anyone in person. He insisted this was not a compromise forced on him but a recognition that his subject was already there.</div>
+</header>
+<div class="intro">
+<p>The last time you hesitated over whether to send a message or make a call, it probably took you half a second. In that half second you judged several things: how heavy the matter was, how close you are to the other person, whether it was wise to leave it in writing. Once channels are so plentiful they are practically free, which one you pick becomes a sentence in itself.</p>
+<p>This page is about how anthropology moved fieldwork into a place that is not a place: how you live there, how you study ranking rules you cannot see, and a harder question — who is actually doing the work behind the screen that everyone takes to be the machine's.</p>
+</div>
+<div class="section">
+<span class="num">// 01</span>
+<h2>He lived in a virtual world for more than two years and never met a single person in the flesh</h2>
+<p>From 2004 the anthropologist Tom Boellstorff did more than two years of fieldwork inside the virtual world Second Life, present only as an avatar called Tom Bukowski: buying land, dropping in on people, attending weddings and funerals, staying up late talking. He set himself a rule — never check who the person on the other side of the screen was in ordinary life, and never meet them there.</p>
+<p>This sounds like a shortcut. His defence: an anthropologist working in a village does not first require residents to prove their "real identity" before observation can begin. The moment you insist on going offline to verify before anything counts, you have already assumed that the offline side is the real one — and that assumption is something you brought with you, not something you observed.</p>
+<p>Evidence strength: one person, one platform, a single-site ethnography from the mid-2000s; do not read it as a general conclusion. The criticism is substantial too: staying entirely inside makes the offline conditions of online behaviour invisible — who can afford the equipment, who has unbroken hours. Both sides are still argued today.</p>
+<p>What made the question comparable was another project. From 2012 a team led by Daniel Miller sent nine anthropologists to spend a full fifteen months each in a small town: Brazil, Chile, industrial and rural China, England, India, Italy, Trinidad, Turkey — the same questions, the same length of stay, published as books free to download.</p>
+<p>One of them, Xinyuan Wang, lived in a factory town in southeastern China. What she saw was a second migration: people move from the countryside to the factory, and then from offline to online — for a substantial number of them, the side of life inside the phone is where relationships feel most solid. That turns the assumption that online ties are thin and offline ties are deep straight over.</p>
+<p>Earlier still, Miller and Mirca Madianou worked over a long period between Filipina mothers employed in Britain and the children they had left at home, and proposed the idea of polymedia. Choosing a cassette tape because you wanted a voice, or a letter because it felt serious, was a choice forced by cost; once dozens of channels are cheap enough to ignore, each can only be defined relative to the others, and the choice itself starts to carry meaning. When you send a voice note rather than a video today, what the other person reads is not only the contents.</p>
+<p>So the first thing digital anthropology had to take apart was not the technology but the online/offline split itself — in many field sites it is simply not a category the locals use. The boundary worth recording is the one they draw themselves, when they say a thing has to be said face to face.</p>
+</div>
+<div class="section">
+<span class="num">// 02</span>
+<h2>An anthropologist went to study the people who build recommender systems, and found their favourite word was "hooking"</h2>
+<p>Nick Seaver spent several years doing fieldwork inside American music recommendation companies, published as <i>Computing Taste</i> (2022). What he watched was not the algorithm but the people making it: how product managers describe the person listening, how scientists imagine listening itself as a form of data processing.</p>
+<p>One cluster of words kept coming back: hooking people, keeping them. This is not something said only in private; it is written into the metrics. Seaver calls them captivation metrics, and what they measure is not whether you liked something but whether you came back and how long you stayed.</p>
+<p>He then did something only an anthropologist would do: he went and read the anthropology of hunting traps. In a 1996 essay on African animal traps, Alfred Gell argued that a trap is a theory of its prey made solid — the thickness of the cord is the animal's strength, the height of the trigger its stride, the bait its desire. So a trap can be read: off it you read what its maker took the prey to be.</p>
+<div class="fig">
+<svg viewbox="0 0 620 200" xmlns="http://www.w3.org/2000/svg">
+<text fill="#a08b78" font-family="Georgia,serif" font-size="11" x="46" y="26">How the device is built</text>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="11" x="370" y="26">What it assumes about the prey</text>
+<g fill="none" stroke="#e08155" stroke-width="1.3">
+<rect height="34" rx="6" width="190" x="46" y="44"></rect>
+<rect height="34" rx="6" width="190" x="46" y="94"></rect>
+<rect height="34" rx="6" width="190" x="46" y="144"></rect>
+</g>
+<g fill="none" stroke="#8fb0cc" stroke-width="1.3">
+<rect height="34" rx="6" width="206" x="370" y="44"></rect>
+<rect height="34" rx="6" width="206" x="370" y="94"></rect>
+<rect height="34" rx="6" width="206" x="370" y="144"></rect>
+</g>
+<text fill="#eda07c" font-family="Georgia,serif" font-size="11.5" text-anchor="middle" x="141" y="66">Autoplay the next episode</text>
+<text fill="#eda07c" font-family="Georgia,serif" font-size="11.5" text-anchor="middle" x="141" y="116">A feed with no bottom</text>
+<text fill="#eda07c" font-family="Georgia,serif" font-size="11.5" text-anchor="middle" x="141" y="166">Picked-for-you up top</text>
+<text fill="#aecbe2" font-family="Georgia,serif" font-size="11.5" text-anchor="middle" x="473" y="66">Stopping takes an action</text>
+<text fill="#aecbe2" font-family="Georgia,serif" font-size="11.5" text-anchor="middle" x="473" y="116">No bottom, so you never look</text>
+<text fill="#aecbe2" font-family="Georgia,serif" font-size="11.5" text-anchor="middle" x="473" y="166">What you see first feels chosen</text>
+<g fill="none" stroke="#8fb0cc" stroke-width="1.4">
+<path d="M242 61 L362 61"></path>
+<path d="M242 111 L362 111"></path>
+<path d="M242 161 L362 161"></path>
+</g>
+<g fill="#8fb0cc">
+<path d="M358 56 L368 61 L358 66 Z"></path>
+<path d="M358 106 L368 111 L358 116 Z"></path>
+<path d="M358 156 L368 161 L358 166 Z"></path>
+</g>
+</svg>
+<div class="cap">The same reading transfers to interfaces. A trap is readable: you need not ask the designer's motives — measure the device itself and you can read off what sort of creature it assumes you are.</div>
+</div>
+<p>And the side being sorted? In 2015 Motahhare Eslami and colleagues asked forty Facebook users what they made of their own feed. More than sixty per cent had no idea it had been ordered at all. Not having seen a friend's posts lately got explained some other way: that person stopped posting, or — the paper's title is a participant's own words — "I always assumed that I wasn't really that close to her."</p>
+<p>Notice the shape of that: invisible ranking does not make people suspicious, it makes them rewrite their own relationship histories. Evidence strength: one platform, forty people, a single moment a decade ago; the proportion aware of algorithms today is certainly far higher, so do not take that number as current. What survives is the mechanism — attribution lands on the nearest explanation to hand, and a ranking rule never hands itself over as one.</p>
+<p>Seaver also draws a boundary worth copying: to speak of "the algorithm" as one thing is to misidentify the unit. What he found inside the companies was many teams, many compromises and a few stretches of legacy code nobody dared touch, with no single person holding "it." The piece on media and attention made the point that ordering itself did not change when the operator did; this is one layer further in, looking at how the people who build the ordering think.</p>
+</div>
+<div class="section">
+<span class="num">// 03</span>
+<h2>After you click "I am not a robot," sometimes a person really is looking at that picture for the machine</h2>
+<p>Mary Gray and Siddharth Suri spent close to five years on interviews and surveys in the United States and India, and gave a name to a category of work: ghost work — done by a person, but believed by the customer to have been done automatically. Labelling, moderating, correcting machine transcriptions, judging whether an image breaks a rule: cut into pieces that take seconds or minutes and dispatched through an interface.</p>
+<p>The mechanism they drew from it is the paradox of automation's last mile: every time machines take a class of problem, a new class of human task appears at the new boundary. Automation is not a straight line pushing people out; it is a line that keeps reassigning people to new positions — old jobs go, small fragmented ones appear, and they always appear exactly where the machine is still one step short.</p>
+<div class="fig">
+<svg viewbox="0 0 620 176" xmlns="http://www.w3.org/2000/svg">
+<text fill="#a08b78" font-family="Georgia,serif" font-size="10.5" x="44" y="24">← earlier    what automation covers    later →</text>
+<g fill="#e08155" opacity="0.75">
+<rect height="16" rx="4" width="150" x="44" y="42"></rect>
+<rect height="16" rx="4" width="250" x="44" y="88"></rect>
+<rect height="16" rx="4" width="350" x="44" y="134"></rect>
+</g>
+<g fill="#8fb0cc">
+<circle cx="208" cy="42" r="3"></circle><circle cx="220" cy="50" r="3"></circle><circle cx="206" cy="58" r="3"></circle><circle cx="222" cy="36" r="3"></circle>
+<circle cx="308" cy="88" r="3"></circle><circle cx="320" cy="96" r="3"></circle><circle cx="306" cy="104" r="3"></circle><circle cx="322" cy="82" r="3"></circle>
+<circle cx="408" cy="134" r="3"></circle><circle cx="420" cy="142" r="3"></circle><circle cx="406" cy="150" r="3"></circle><circle cx="422" cy="128" r="3"></circle>
+</g>
+<text fill="#aecbe2" font-family="Georgia,serif" font-size="11" x="240" y="50">the stretch patched by hand</text>
+<text fill="#aecbe2" font-family="Georgia,serif" font-size="11" x="340" y="96">still patched by hand</text>
+<text fill="#aecbe2" font-family="Georgia,serif" font-size="11" x="440" y="142">still patched by hand</text>
+</svg>
+<div class="cap">The orange bar gets longer every year and the blue dots stay glued to its right edge — the frontier keeps moving, and there is always somebody standing on it; only the people, the tasks and the name change.</div>
+</div>
+<p>Why are these people invisible? Not because anyone hides them, but because of the shape of the distribution. Tasks are cut extremely fine, paid by the piece, dispatched through an interface, without an employment relationship and with nobody owning a whole piece of work; meanwhile the system presents itself as fully automatic, and that presentation is part of the product. In <i>Behind the Screen</i> (2019), built on years of interviews with commercial content moderators, Sarah T. Roberts shows the difficulty is not only what they have to look at, but that the job was defined from the start as temporary, replaceable and not to be discussed outside.</p>
+<p>This subject tends to start an argument immediately, so both readings belong here. One descends from Tiziana Terranova's "Free Labor" (2000): the activity itself produces value while payment is decoupled from that value, which is a new form of appropriation. The other appears in Gray and Suri's own interviews: some people say plainly that this is income they could not otherwise get where they live, on hours they can set themselves — especially those with difficult commutes or family to care for. Both hold within the same set of interviews, which is not fence-sitting; this kind of work genuinely has both faces.</p>
+<p>The numbers deserve honesty too: there is no reliable count of how many people worldwide do this work — where the definition is drawn, whether part-time counts, whether platforms publish anything, each can shift an estimate several-fold. The mechanism implies nothing about what should be done either. What it does yield is a checkable question: of any process that calls itself fully automatic, you can ask who walks the last mile — and that question usually has an answer.</p>
+</div>
+<div class="bigcat">
+<h3>🎒 Scenes · BigCat</h3>
+<ul>
+<li><b>① Engineering and system design</b>—the months after an automated pipeline goes live: the cases it cannot handle have not disappeared, they have turned into "could you take a look at this one" in somebody's direct messages. This runs the last-mile mechanism from "After you click 'I am not a robot'" — what could be specified went to the machine, the rest falls back on people, and because it is not on the flowchart it counts against nobody's hours. What you can change: add a line to the dashboard for how many cases were patched by hand this week and whose hours that took, and stop treating the automation rate as the only acceptance metric.</li>
+<li><b>② Practice and the inner life</b>—you plan to go offline for a few days of quiet, and only on the day do you find that what you are cutting is not information but a few relationships: somebody is waiting for a reply on one particular channel, and what your silence reads as is not "he's on retreat" but "he doesn't want to talk to me." This runs the polymedia mechanism from "He lived in a virtual world for more than two years" — once channels cost nothing, which one you use and which you drop is itself speaking. What you can change: before going offline, tell those two or three people that you will not be on that channel for a few days and to call if it is urgent. The change is naming a fallback channel in advance, not steeling your will.</li>
+</ul>
+</div>
+<div class="crossx">
+<h3>🌀 Crossing over · Connections across disciplines</h3>
+<ul>
+<li><b>Evolutionary biology · In Western Australia an orchid looks like a flightless female wasp, and the male that pounces on it gets swung into the anther by a hinge</b>: hammer orchids (<i>Drakaea</i>) grow only in the southwest of Australia. The labellum mimics a female thynnid wasp in shape, colour and scent — the females of these wasps cannot fly, and mating happens with the male carrying her off. The labellum is hinged partway along; the male grips "her," tries to carry her away, and the whole insect is swung into the anther. Each species of hammer orchid has its own species of wasp. This runs the trap-reading from "An anthropologist went to study the people who build recommender systems": <em>how the device is built is itself a theory of the prey.</em> From which follows a conclusion you could not otherwise see: <b>the specificity of a capture device is a ruler, and what it measures is how finely it knows its prey. A recommendation slot identical for everyone says the model knows almost nothing about you; one that works only on you and looks baffling to anyone else says the resolution has gone down to the level of species — and you need no internal document to judge this, the device is enough</b>. <b>But this does not hold here</b>: there is no maker behind the hammer orchid, and its precision was filtered out by selection pressure — the inaccurate ones left no descendants. So "read the device, infer the theory" on the evolutionary side yields the prey's sensory world and no intention whatsoever. On the product side somebody really does hold a story about you, and that story can be wrong while the device keeps running — because the environment is theirs to arrange too. <b>The orchid's model has to be right; the product's does not.</b></li>
+<li><b>Engineering and human factors · The plane automated the easy part of flying and left the hardest thirty seconds to the person</b>: in 1983 Lisanne Bainbridge wrote a five-page paper called "Ironies of Automation" about process control in factories and power plants; it is now among the most cited papers in the history of human factors. Her observation: the designer thinks the human is unreliable and wants them out, yet the parts he cannot think how to automate are exactly what gets left to the human. So the person spends ordinary days watching a screen and loses the touch — and then, precisely when the system cannot cope, has to take over within seconds. This runs the last mile from "After you click 'I am not a robot'" — automation cuts along "can this be specified," and <em>what is left over is harder, more fragmented and less possible to schedule in advance</em>. From which follows a conclusion you could not otherwise see: <b>"will this job be automated" is the wrong question. The one to ask is what the leftover looks like — it is usually not on the flowchart, so it counts against no hours, enters no headcount budget and is hard to attribute when something goes wrong. The real workload of a job can rise after automation and fall to zero on the books at the same time: the books record the flowchart, not the work</b>. <b>But this does not hold here</b>: the person taking over in Bainbridge's setting is named, trained and on the payroll, and her remedies rest on that — more training, keep the touch, have them actually fly it now and then. The last mile is arranged the opposite way: the task is cut up until nobody owns it, and whoever takes over today is not who takes over tomorrow. So her remedies have nothing to grip — <b>it is not that the training is insufficient; there is no "that person" to train.</b></li>
+</ul>
+</div>
+<div class="thinking">
+<h3>Going deeper</h3>
+<details><summary>Doing fieldwork online, how do you know it is the same person on the other side of the screen?</summary>
+<div>Strictly, you do not. But offline fieldwork does not run on identity documents either; it runs on long-term consistency — turns of phrase, old events remembered, whether the web of relationships to other people lines up. Over time, impersonating someone else costs more online than off, because everything is recorded. What has no good solution is the reverse: one person appearing under several identities while you count them as several people.</div>
+</details>
+<details><summary>If "the algorithm" is not one thing, who is algorithmic accountability asking?</summary>
+<div>That is exactly the trouble. Demanding an explanation from a single subject that does not exist tends to get you a statement nobody is answerable for. The other route is to stop asking "why did it rank this way" and ask instead: who set this metric, how many times has it been changed, and what numbers were they looking at when they changed it. Those all have specific people and dates attached.</div>
+</details>
+<details><summary>Why not simply call the last-mile tasks a job?</summary>
+<div>Because in most places the word "job" comes attached to a string of other things: stability, protection, experience that accumulates. Whether or not you call it a job is really a question about whether that string is supplied. As the piece on purity and danger put it, classification is never only naming — which category something lands in decides what counts as normal and what counts as an exception.</div>
+</details>
+</div>
+<div class="refs">
+<h3>Further reading</h3>
+<ul>
+<li><a href="https://press.princeton.edu/books/paperback/9780691168340/coming-of-age-in-second-life" rel="noopener" target="_blank">Boellstorff, <i>Coming of Age in Second Life</i> (2008)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Why_We_Post" rel="noopener" target="_blank">The Why We Post project</a> · <a href="https://uclpress.co.uk/book/social-media-in-industrial-china/" rel="noopener" target="_blank">Xinyuan Wang, <i>Social Media in Industrial China</i> (2016, open access)</a></li>
+<li><a href="https://www.taylorfrancis.com/chapters/mono/10.4324/9780203154236-11/polymedia-mirca-madianou-daniel-miller" rel="noopener" target="_blank">Madianou &amp; Miller on polymedia (2012)</a></li>
+<li><a href="https://press.uchicago.edu/ucp/books/book/chicago/C/bo183892298.html" rel="noopener" target="_blank">Seaver, <i>Computing Taste</i> (2022)</a> · <a href="https://journals.sagepub.com/doi/10.1177/1359183518820366" rel="noopener" target="_blank">Seaver, "Captivating Algorithms: Recommender Systems as Traps" (2019)</a></li>
+<li><a href="https://journals.sagepub.com/doi/10.1177/135918359600100102" rel="noopener" target="_blank">Gell, "Vogel's Net: Traps as Artworks and Artworks as Traps" (1996)</a></li>
+<li><a href="https://dl.acm.org/doi/10.1145/2702123.2702556" rel="noopener" target="_blank">Eslami et al., "Reasoning about Invisible Algorithms in News Feeds" (2015)</a></li>
+<li><a href="https://ghostwork.info/" rel="noopener" target="_blank">Gray &amp; Suri, <i>Ghost Work</i> (2019)</a> · <a href="https://yalebooks.yale.edu/book/9780300261479/behind-the-screen/" rel="noopener" target="_blank">Roberts, <i>Behind the Screen</i> (2019)</a></li>
+<li><a href="https://read.dukeupress.edu/social-text/article-abstract/18/2%20(63)/33/33433/Free-LaborPRODUCING-CULTURE-FOR-THE-DIGITAL" rel="noopener" target="_blank">Terranova, "Free Labor" (2000)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Ironies_of_Automation" rel="noopener" target="_blank">Bainbridge, "Ironies of Automation" (1983)</a> · <a href="https://en.wikipedia.org/wiki/Drakaea" rel="noopener" target="_blank">Hammer orchids (<i>Drakaea</i>)</a></li>
+</ul>
+</div>
+<footer>BigCat Learning Hub · Sociology &amp; Anthropology</footer>
+</div>
+<script src="https://hub.cissychen.com/comments.js" defer></script>
+<script src="https://hub.cissychen.com/search.js" defer></script>
+<script src="https://hub.cissychen.com/index-button.js" defer></script>
+<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
+</body></html>

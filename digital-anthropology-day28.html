@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>社会学与人类学 Day 28：数字人类学</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:linear-gradient(170deg,#1a140f,#171210 42%,#120e0b);color:#e6dacc;line-height:1.9;min-height:100vh}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 60px}
+header{padding:52px 0 30px;border-bottom:1px solid #33261d}
+header .kicker{font-size:0.75rem;color:#8fb0cc;letter-spacing:2.5px;font-family:"SF Mono",Menlo,monospace}
+header h1{font-size:2.1rem;font-weight:800;background:linear-gradient(100deg,#e08155,#eda07c 58%,#8fb0cc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:0.5px;margin-top:12px;line-height:1.28}
+header h2{font-size:1rem;color:#a08b78;margin-top:10px;font-weight:400}
+header .meta{margin-top:14px;font-size:0.85rem;color:#a08b78}
+header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
+.intro{margin-top:30px;font-size:1.02rem;color:#d8c9b8}
+.intro p{margin-bottom:13px}
+.section{margin:46px 0;background:rgba(255,255,255,0.028);padding:28px 26px;border-radius:14px;border:1px solid rgba(255,255,255,0.06)}
+.section .num{display:inline-block;font-size:0.75rem;color:#e08155;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;margin-bottom:8px}
+.section h2{font-size:1.32rem;color:#f4ece2;margin-bottom:16px;font-weight:700;line-height:1.35}
+.section p{margin-bottom:14px;font-size:0.98rem}
+.section strong{color:#fff}
+.section em{color:#e08155;font-style:normal}
+.section ul{list-style:none;margin:14px 0}
+.section li{margin-bottom:10px;padding-left:20px;position:relative}
+.section li::before{content:"◈";position:absolute;left:0;top:0.42em;color:#e08155;font-size:0.7rem}
+.fig{margin:24px 0 10px;text-align:center}
+.fig svg{max-width:100%;height:auto}
+.fig .cap{font-size:0.82rem;color:#a08b78;margin-top:8px;text-align:left;line-height:1.65}
+.en-brief{margin-top:18px;padding:12px 16px;border-left:2px solid rgba(160,139,120,0.5);background:rgba(255,255,255,0.02);border-radius:0 8px 8px 0;font-size:0.85rem;color:#b0a08e;line-height:1.62}
+.en-brief b{color:#bda994;font-family:"SF Mono",Menlo,monospace;font-size:0.68rem;letter-spacing:1.5px;margin-right:9px;font-weight:700}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(143,176,204,0.12),rgba(224,129,85,0.05));border:1px solid rgba(143,176,204,0.34);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#8fb0cc;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#dfe3e6;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e08155;font-size:0.72rem}
+.crossx b{color:#aecbe2;font-weight:600}
+.thinking{background:linear-gradient(135deg,rgba(224,129,85,0.06),rgba(143,176,204,0.05));border:1px solid rgba(224,129,85,0.24);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e08155;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(18,14,11,0.5);border:1px solid rgba(224,129,85,0.2);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(224,129,85,0.06);border-color:rgba(224,129,85,0.42)}
+.thinking summary{cursor:pointer;color:#eda07c;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#8fb0cc}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(143,176,204,0.22);color:#ddd0c1;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#8fb0cc;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a08b78}
+.refs a{color:#e08155;text-decoration:none;border-bottom:1px dotted rgba(224,129,85,0.42)}
+.refs a:hover{color:#eda07c;border-bottom-color:#eda07c}
+.bigcat{margin:40px 0 0;background:linear-gradient(135deg,rgba(224,129,85,0.11),rgba(143,176,204,0.04));border:1px solid rgba(224,129,85,0.32);border-radius:14px;padding:22px 26px}
+.bigcat h3{color:#eda07c;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.bigcat ul{list-style:none;margin:0}
+.bigcat li{color:#ece0d2;font-size:0.93rem;line-height:1.8;margin-bottom:14px}
+.bigcat li:last-child{margin-bottom:0}
+.bigcat b{color:#eda07c;font-weight:600}
+footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
+@media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+</style></head><body>
+<div class="container">
+<header>
+<div class="kicker">DAY 28 · 数字人类学</div>
+<h1>数字人类学</h1>
+<h2>这一期最反直觉的一句：「线上」和「线下」是研究者带进田野的分法，不是住在那儿的人自己的分法</h2>
+<div class="meta">2026-09-21 · BigCat</div>
+<div class="pitch">一位人类学家花了两年多，只以一个虚拟人的身份待在一个虚拟世界里，刻意从不跟任何人在现实中见面。他坚持这不是没办法的将就，而是研究对象本来就在那儿。</div>
+</header>
+<div class="intro">
+<p>你上一次犹豫「这事儿是发消息说还是打个电话」，大概只花了半秒。可那半秒里你判断了好几件事：这事儿有多重、你跟对方多熟、留下白纸黑字合不合适。渠道多到几乎不要钱之后，选哪条本身就成了一句话。</p>
+<p>这一页讲人类学怎么把田野搬到一个没有地方的地方：怎么在那儿长住、怎么研究看不见的排序规则、以及一个更硬的问题——屏幕后面那些被当成机器干的活，究竟是谁在干。</p>
+</div>
+<div class="section">
+<span class="num">// 01</span>
+<h2>他在一个虚拟世界里住了两年多，从没在现实里见过任何一个人</h2>
+<p>2004 年起，人类学家博尔斯托夫（Tom Boellstorff）以一个叫 Tom Bukowski 的虚拟人身份，在虚拟世界「第二人生」（Second Life）里做了两年多田野：买地、串门、参加婚礼和葬礼、跟人熬夜聊天。他定了条规矩——不核对屏幕那头的人在现实里是谁，也不跟他们线下见面。</p>
+<p>这听上去像偷懒。他的辩护是：人类学去村子做田野，不会先要求村民证明「真实身份」再开始观察。你一旦坚持要跑到线下验一验才算数，就已经默认了线下那头才是真的——而这个默认是你带进去的，不是观察到的。</p>
+<p>证据强度：一个人、一个平台、2000 年代中期的单点民族志，别当普遍结论。批评也实在：完全不出线，就看不见线上行为的线下条件——谁买得起设备、谁有整块时间。这两边到今天还在争。</p>
+<p>把这件事做成可比较的是另一个项目。2012 年起，米勒（Daniel Miller）牵头的团队派了九位人类学家，每人在一个小镇待满十五个月：巴西、智利、中国的工业区和农村、英国、印度、意大利、特立尼达、土耳其，同一套问题、同一段时长，成书开放下载。</p>
+<p>其中一位王心远住在中国东南一个工厂镇。她看到的是「第二次迁移」：人先从农村迁到工厂，又从线下迁到线上——对相当一部分人来说，手机里那头才是关系最扎实的地方。这正好把「线上浅、线下深」的预设翻了过来。</p>
+<p>更早一点，米勒和马迪亚努（Mirca Madianou）在英国务工的菲律宾母亲与留在国内的孩子之间做过长期研究，提出了多元媒介（polymedia）：早年选录音带是为了听见声音、选写信是因为郑重，那是被成本逼的；等几十条渠道都便宜到可以忽略，每条只能相对于别的被定义，选择本身就开始承载意义。你今天发语音不发视频，对方读到的不只是内容。</p>
+<p>所以数字人类学一上来要拆的不是技术，是「线上／线下」这个二分本身——它在很多田野里根本不是当地人用的分类。真正要记录的界线，是当地人自己会说「这事儿得当面讲」的那一条。</p>
+<p class="en-brief"><b>EN</b> From 2004 the anthropologist Tom Boellstorff spent more than two years of fieldwork inside the virtual world Second Life, present only as an avatar named Tom Bukowski: buying land, visiting people, attending weddings and funerals, staying up talking. He set himself a rule — never verify who the person on the other side of the screen was offline, and never meet them there. This sounds like a shortcut, and his defence is that an anthropologist working in a village does not demand that residents prove their real identity before observation can begin. The moment you insist on checking offline before anything counts, you have already assumed that the offline side is the real one, and that assumption is something you brought with you rather than something you observed. Evidence strength: one person, one platform, one site in the mid-2000s; do not read it as a general conclusion. The criticism is substantial too — staying entirely inside makes the offline conditions of online behaviour invisible: who can afford the equipment, who has unbroken hours, who has someone at home cooking for them. Both sides of this are still argued. What made the question comparable was another project. From 2012 a team led by Daniel Miller sent nine anthropologists to spend fifteen months each in a small town — in Brazil, Chile, industrial and rural China, England, India, Italy, Trinidad and Turkey — working with the same questions for the same length of time, with the resulting books published open access. One of them, Xinyuan Wang, spent fifteen months in a factory town in southeastern China. What she saw was a second migration: people move from the countryside to the factory, and then from offline to online — for a substantial number of them the relationships that felt most solid were the ones on the phone, including with people they had never met. That inverts the assumption that online ties are thin and offline ties are deep. Earlier, Miller and Mirca Madianou had worked over a long period with Filipina mothers employed in Britain and their children left at home, and proposed the idea of polymedia. The point is this: choosing a cassette tape because you wanted a voice, or a letter because it seemed more serious, was a choice forced by cost and circumstance; once dozens of channels are cheap enough to ignore, each one can only be defined relative to the others, and the choice itself starts to carry meaning. Sending a voice note rather than a video today tells the other person more than its contents. So the first thing digital anthropology had to take apart was not the technology but the online/offline split itself — in many field sites it is simply not a category the locals use.</p>
+</div>
+<div class="section">
+<span class="num">// 02</span>
+<h2>人类学家去研究做推荐系统的人，发现他们最爱用的词是「钩住」</h2>
+<p>西弗（Nick Seaver）在美国做音乐推荐的公司里做了几年田野，写成《计算品味》（Computing Taste, 2022）。他盯的不是算法，是造算法的人：产品经理怎么描述听歌的人，科学家怎么把「听」想象成一种数据处理。</p>
+<p>有一组词反复出现：把人「钩住」、留下来。这不是私下才说的话，是写进指标的——西弗把这类指标叫捕获指标（captivation metrics），量的不是你喜不喜欢，是你回来了没有、待了多久。</p>
+<p>接下来他做了个只有人类学会做的动作：去翻打猎陷阱的人类学。盖尔（Alfred Gell）1996 年有篇文章讲非洲的兽夹，说陷阱是一份关于猎物的理论的实体化——绳结的粗细是猎物的力气，机关的高度是它的步幅，诱饵是它的欲望。于是陷阱可以「读」：读出造它的人心里猎物是什么样。</p>
+<div class="fig">
+<svg viewbox="0 0 620 200" xmlns="http://www.w3.org/2000/svg">
+<text fill="#a08b78" font-family="Georgia,serif" font-size="11" x="54" y="26">装置的构造</text>
+<text fill="#a08b78" font-family="Georgia,serif" font-size="11" x="378" y="26">关于猎物的假设</text>
+<g fill="none" stroke="#e08155" stroke-width="1.3">
+<rect height="34" rx="6" width="190" x="46" y="44"></rect>
+<rect height="34" rx="6" width="190" x="46" y="94"></rect>
+<rect height="34" rx="6" width="190" x="46" y="144"></rect>
+</g>
+<g fill="none" stroke="#8fb0cc" stroke-width="1.3">
+<rect height="34" rx="6" width="206" x="370" y="44"></rect>
+<rect height="34" rx="6" width="206" x="370" y="94"></rect>
+<rect height="34" rx="6" width="206" x="370" y="144"></rect>
+</g>
+<text fill="#eda07c" font-family="Georgia,serif" font-size="12" text-anchor="middle" x="141" y="66">自动播下一集</text>
+<text fill="#eda07c" font-family="Georgia,serif" font-size="12" text-anchor="middle" x="141" y="116">无限往下拉</text>
+<text fill="#eda07c" font-family="Georgia,serif" font-size="12" text-anchor="middle" x="141" y="166">「猜你喜欢」在首屏</text>
+<text fill="#aecbe2" font-family="Georgia,serif" font-size="12" text-anchor="middle" x="473" y="66">停下来需要一个动作</text>
+<text fill="#aecbe2" font-family="Georgia,serif" font-size="12" text-anchor="middle" x="473" y="116">看不见底就不会去找底</text>
+<text fill="#aecbe2" font-family="Georgia,serif" font-size="12" text-anchor="middle" x="473" y="166">先看见的就当成是自己挑的</text>
+<g fill="none" stroke="#8fb0cc" stroke-width="1.4">
+<path d="M242 61 L362 61"></path>
+<path d="M242 111 L362 111"></path>
+<path d="M242 161 L362 161"></path>
+</g>
+<g fill="#8fb0cc">
+<path d="M358 56 L368 61 L358 66 Z"></path>
+<path d="M358 106 L368 111 L358 116 Z"></path>
+<path d="M358 156 L368 161 L358 166 Z"></path>
+</g>
+</svg>
+<div class="cap">同一个读法可以搬到界面上。陷阱是可读的：不必问设计者的动机，量一量装置本身，就能读出它假设你是个什么样的人。</div>
+</div>
+<p>被排序的那一头呢。埃斯拉米（Motahhare Eslami）等人 2015 年找了四十个脸书用户，问他们怎么看自己的信息流。六成多的人根本不知道它被排过序。「最近没看到某个朋友的动态」被解释成别的：那人不发了，或者——论文标题就是一句受访者原话——「我一直以为我跟她其实没那么熟」。</p>
+<p>注意这件事的形状：看不见的排序不是让人起疑，是让人改写自己的关系史。证据强度：单一平台、四十人、十年前的一个时点，今天知道有算法的人比例肯定高得多，这个数字别当现状。留下的是机制——归因会落到手边最近的解释上，而排序规则从不把自己递过去当解释。</p>
+<p>西弗自己还划了条边界，值得照抄：把「算法」当成一个东西来谈，单位就认错了。他在公司里看到的是很多组人、很多次妥协、几套没人再敢动的老代码拼在一起，没有谁握着「它」。媒介与注意力那期讲过排序换了执行者却一点没变；这里再往里走一层，看造排序的人自己怎么想。</p>
+<p class="en-brief"><b>EN</b> Nick Seaver spent several years doing fieldwork inside American music recommendation companies, published as <i>Computing Taste</i> (2022). What he watched was not the algorithm but the people making it: how product managers describe listeners, how scientists imagine listening itself as a form of data processing, how engineers picture the world of music as a territory they tend. One cluster of words kept coming back: hooking people, keeping them. This is not something said in private; it is written into the metrics. Seaver calls them captivation metrics, and what they measure is not whether you liked something but whether you came back and how long you stayed. He then did something only an anthropologist would do: he went and read the anthropology of hunting traps. In a 1996 essay on African animal traps, Alfred Gell argued that a trap is a theory of its prey made solid — the thickness of the cord is the animal's strength, the height of the trigger is its stride, the bait is its desire. A trap can be read, and what you read off it is what its maker believed the prey to be. That hands you a ready-made method: interfaces are readable. Autoplaying the next episode, the feed with no bottom, recommendations on the first screen — each is a public hypothesis about where a person stops. You do not need to ask anyone's motives; measuring the device is enough. What about the side being sorted? In 2015 Motahhare Eslami and colleagues asked forty Facebook users what they made of the feed they saw. More than sixty per cent had no idea the feed had been ordered at all. They explained not seeing a friend's posts some other way: that person stopped posting, or — and the paper's title is a participant's own words — "I always assumed that I wasn't really that close to her." Notice the shape of that: invisible ranking does not produce suspicion, it makes people rewrite their own relationship histories. Evidence strength: one platform, forty people, a single moment a decade ago; the proportion aware of algorithms today is certainly far higher, so do not take that number as current. What survives is the mechanism — attribution lands on the nearest available explanation, and a ranking rule never offers itself as one. Seaver also draws a boundary worth copying: to speak of "the algorithm" as a single thing is to misidentify the unit. What he found inside the companies was many teams, many compromises and several stretches of legacy code nobody dared touch, with no single person holding "it." The piece on media and attention made the point that ordering itself did not change when the operator did; this is one layer further in, looking at how the people who build the ordering think.</p>
+</div>
+<div class="section">
+<span class="num">// 03</span>
+<h2>点完「我不是机器人」之后，有时候真的有个人在替机器看那张图</h2>
+<p>格雷（Mary Gray）与苏里（Siddharth Suri）花了将近五年，在美国和印度做访谈与调查，给一类活起了个名字：幽灵工作（ghost work）——由人完成、但用户以为是自动完成的工作。标注、审核、给机器转出来的文字纠错、判断一张图有没有违规，切成几秒到几分钟一条，隔着接口派下去。</p>
+<p>他们提出的机制叫自动化的最后一公里悖论：机器每攻下一类问题，就在新的边界上造出一类新的人类任务。自动化不是把人往外推的直线，是一条不断把人重新安排到新位置上的线——旧岗位没了，新的碎活出现了，总是出现在机器刚好还差一口气的地方。</p>
+<div class="fig">
+<svg viewbox="0 0 620 176" xmlns="http://www.w3.org/2000/svg">
+<text fill="#a08b78" font-family="Georgia,serif" font-size="10.5" x="44" y="24">← 早　　自动化覆盖的范围　　晚 →</text>
+<g fill="#e08155" opacity="0.75">
+<rect height="16" rx="4" width="150" x="44" y="42"></rect>
+<rect height="16" rx="4" width="250" x="44" y="88"></rect>
+<rect height="16" rx="4" width="350" x="44" y="134"></rect>
+</g>
+<g fill="#8fb0cc">
+<circle cx="208" cy="42" r="3"></circle><circle cx="220" cy="50" r="3"></circle><circle cx="206" cy="58" r="3"></circle><circle cx="222" cy="36" r="3"></circle>
+<circle cx="308" cy="88" r="3"></circle><circle cx="320" cy="96" r="3"></circle><circle cx="306" cy="104" r="3"></circle><circle cx="322" cy="82" r="3"></circle>
+<circle cx="408" cy="134" r="3"></circle><circle cx="420" cy="142" r="3"></circle><circle cx="406" cy="150" r="3"></circle><circle cx="422" cy="128" r="3"></circle>
+</g>
+<text fill="#aecbe2" font-family="Georgia,serif" font-size="11" x="244" y="50">人手补的那一截</text>
+<text fill="#aecbe2" font-family="Georgia,serif" font-size="11" x="344" y="96">还是人手补的那一截</text>
+<text fill="#aecbe2" font-family="Georgia,serif" font-size="11" x="444" y="142">仍然是人手补的那一截</text>
+</svg>
+<div class="cap">橙条一年比一年长，蓝点始终贴在它右端——边界一直往前移，站在边界上的始终有人，只是换了人、换了活、换了名字。</div>
+</div>
+<p>为什么这些人看不见？不是谁刻意藏，是分发方式的形状决定的。任务被切到极碎、按件计价、隔着接口派发、没有雇佣关系，也没有谁拥有一整件事；而系统对外呈现成「全自动」，这个呈现本身就是产品的一部分。罗伯茨（Sarah T. Roberts）多年访谈内容审核员写成的《屏幕背后》（Behind the Screen, 2019）里，难处不只在于他们看了什么，也在于这份活一开始就被定义成临时的、可替换的、不能对外讲的。</p>
+<p>这个题目容易一上来就吵起来，两种读法都得摆出来。一种从特拉诺瓦（Tiziana Terranova）2000 年那篇《免费劳动》下来：活动本身产生价值，而报酬与这份价值脱钩，这是新形式的占有。另一种在格雷与苏里自己的访谈里同样出现：有人明确说这是他所在的地方拿不到的一份收入，时间还能自己排——尤其对通勤困难或要照顾家人的人。两种说法在同一批访谈里同时成立，不是和稀泥，是这类工作确实长着这两面。</p>
+<p>数字也得诚实：全球有多少人在做这类活，目前没有可靠统计——定义划到哪、兼职算不算、平台肯不肯公布，每一样都能把估计拉开好几倍。机制本身也推不出任何「该怎么办」。但它推得出一个可查的问题：任何自称「全自动」的流程，都可以问一句「最后一公里是谁在走」——而这个问题，通常是有答案的。</p>
+<p class="en-brief"><b>EN</b> Mary Gray and Siddharth Suri spent close to five years doing interviews and surveys in the United States and India, and gave a name to a category of work: ghost work — work done by a person that the customer believes was done automatically. Labelling, moderating, correcting machine transcriptions, judging whether an image breaks a rule: chopped into pieces that take seconds or minutes and dispatched through an interface. The mechanism they drew from it is the paradox of automation's last mile: every time machines take a class of problem, a new class of human task appears at the new boundary. Automation is not a straight line pushing people out; it is a line that keeps reassigning people to new positions — old jobs go, small fragmented ones appear, and they always appear exactly where the machine is still one step short. Why are these people invisible? Not because anyone hides them, but because of the shape of the distribution. Tasks are cut extremely fine, paid by the piece, dispatched through an interface, without an employment relationship, and with nobody owning a whole piece of work. Meanwhile the system presents itself as fully automatic, and that presentation is itself part of the product. In <i>Behind the Screen</i> (2019), built on years of interviews with commercial content moderators, Sarah T. Roberts shows that the difficulty is not only what they have to look at, but that the job was defined from the start as temporary, replaceable and not to be discussed outside. This subject tends to start an argument immediately, so both readings belong here. One descends from Tiziana Terranova's "Free Labor" (2000): activity by users and outsourced workers on a platform produces value while payment is decoupled from that value, which is a new form of appropriation. The other appears in Gray and Suri's own interviews: some people say plainly that this is income they could not otherwise get where they live, on hours they can set themselves — especially for those with difficult commutes or family to care for. Both hold within the same set of interviews, which is not fence-sitting; this kind of work genuinely has both faces. The numbers deserve honesty too: there is no reliable count of how many people worldwide do this work. Where the definition is drawn, whether part-time counts, whether platforms publish anything — each can shift an estimate several-fold, so treat any global total you see with suspicion. The mechanism implies nothing about what should be done. What it does yield is a checkable question: of any process that calls itself fully automatic, you can ask who walks the last mile — and that question usually has an answer.</p>
+</div>
+<div class="bigcat">
+<h3>🎒 场景 · BigCat</h3>
+<ul>
+<li><b>① 工程与系统设计</b>——一条自动流程上线后的那几个月：它处理不了的那些 case 并没有消失，而是变成了某个人私信里的「帮忙看下这条」。跑的是「点完『我不是机器人』之后」那节的最后一公里机制——可规格化的归了机器，剩下的落回人身上，又因为不在流程图上，不计入谁的工时。可改的：看板上加一行「本周人工兜底多少条、占了谁多少小时」，并停掉拿自动化率当唯一验收指标。</li>
+<li><b>② 修行与心性</b>——打算断网几天静一静，真到那天才发现要断的不是信息，是几段关系：有人在某条渠道上等你回话，你不回，他读到的不是「他在闭关」，是「他不想理我」。跑的是「他在一个虚拟世界里住了两年多」那节的多元媒介机制——渠道都不要钱之后，用哪条、不用哪条本身在说话。可改的：断网前对那两三个人说一句「这几天我不在这条上，急事打电话」，改的是提前指定应急渠道，不是加强意志。</li>
+</ul>
+</div>
+<div class="crossx">
+<h3>🌀 越界 · 跨学科的联想</h3>
+<ul>
+<li><b>演化生物学 · 西澳有一种兰花长得像一只不会飞的母蜂，公蜂扑上去，被花的铰链甩向花药</b>：锤兰（Drakaea）只长在澳大利亚西南部。唇瓣在形状、颜色和气味上模拟一只雌性土蜂——这类蜂的雌虫不会飞，交配时由雄虫叼着走。唇瓣中段有铰链；雄蜂抓住「她」想带走，整只被甩向花药。每一种锤兰对应一种特定的蜂。跑的是「人类学家去研究做推荐系统的人」那节的陷阱读法：<em>装置的构造就是一份关于猎物的理论。</em>由此能推出一个原本看不出的结论：<b>捕获装置的特异性本身就是一把尺，量的是它对猎物了解到哪一级。对谁都一样的推荐位说明模型对你几乎一无所知；只对你成立、别人看了莫名其妙的那种，说明分辨率已细到「种」这一级——不需要任何内部文档，看装置就够</b>。<b>但这里不成立</b>：锤兰背后没有「造它的人」，那份精确是选择压力筛出来的，不准的没留下后代。所以「读装置反推理论」在演化这边只能读出猎物的感官世界，读不出任何意图。产品那边确实有人握着一套关于你的说法，而它可以是错的、装置照样跑得下去——因为环境也归他们布置。<b>兰花的模型必须准，产品的模型不必准。</b></li>
+<li><b>工程与人因 · 飞机把好开的那部分自动了，留给人的是最难的那三十秒</b>：1983 年班布里奇（Lisanne Bainbridge）写过五页纸的《自动化的反讽》，讲工厂和电厂的过程控制，如今是人因工程史上被引最多的文章之一。她的观察是：设计者嫌人不可靠、想把人去掉，可他想不出怎么自动的那部分最后还是留给了人。于是人平时只剩盯屏幕，手生了；偏偏系统撑不住时要他在几十秒里接手。跑的是「点完『我不是机器人』之后」那节的最后一公里——自动化按「能不能规格化」切，<em>剩下的那部分更难、更碎、更没法预先安排</em>。由此推出一个原本看不出的结论：<b>「这个岗位会不会被自动化」问错了题。该问的是剩下那部分长什么样——它通常不在流程图上，于是不计工时、不进预算、出事也不好归因。一个岗位的实际工作量可以在自动化之后上升，同时在账面上归零：账本记的是流程图，不是活</b>。<b>但这里不成立</b>：班布里奇笔下那个接手的人是被指名的、受过训的、算在编制里的，她的解药也建立在这上面——多训练、保持手感、定期真操作一次。最后一公里恰恰相反：任务被切到没有谁拥有它，今天接手的和明天接手的不是同一个人。于是那套解药无处下手——<b>不是训练不够，是没有一个可训练的「那个人」。</b></li>
+</ul>
+</div>
+<div class="thinking">
+<h3>深入思考</h3>
+<details><summary>在线上做田野，怎么知道屏幕那头一直是同一个人？</summary>
+<div>严格说不知道。但线下田野也不靠身份证，靠的是长期一致性：说话方式、记得住的旧事、跟别人的关系网对不对得上。时间一长，装成另一个人的成本比线下还高，因为一切都有记录。真正没法解决的是反过来——一个人用好几个身份出现，你把他们当成好几个人。</div>
+</details>
+<details><summary>如果「算法」不是一个东西，那「算法问责」在问谁？</summary>
+<div>这正是麻烦所在。指着一个不存在的单一主体要解释，容易换回一份谁也不担责的说明。另一条路是不问「它为什么这么排」，改问：这个指标是谁定的、改过几次、改时看的是什么数。这些都有具体的人和时间。</div>
+</details>
+<details><summary>最后一公里的那些活，为什么不干脆叫它工作？</summary>
+<div>因为「工作」这个词在多数地方连着一串东西：稳定、保障、可积累的经历。叫不叫它工作，其实是在问那串东西给不给。洁净与危险那期讲过，分类从来不只是命名——分到哪一类，决定了什么算正常、什么算例外。</div>
+</details>
+</div>
+<div class="refs">
+<h3>延伸阅读</h3>
+<ul>
+<li><a href="https://press.princeton.edu/books/paperback/9780691168340/coming-of-age-in-second-life" rel="noopener" target="_blank">Boellstorff《在第二人生中成年》(2008)</a>（英文）</li>
+<li><a href="https://en.wikipedia.org/wiki/Why_We_Post" rel="noopener" target="_blank">Why We Post 项目概览</a> · <a href="https://uclpress.co.uk/book/social-media-in-industrial-china/" rel="noopener" target="_blank">王心远《工业中国的社交媒体》(2016，开放获取)</a>（英文）</li>
+<li><a href="https://www.taylorfrancis.com/chapters/mono/10.4324/9780203154236-11/polymedia-mirca-madianou-daniel-miller" rel="noopener" target="_blank">Madianou &amp; Miller 论多元媒介 (2012)</a>（英文）</li>
+<li><a href="https://press.uchicago.edu/ucp/books/book/chicago/C/bo183892298.html" rel="noopener" target="_blank">Seaver《计算品味》(2022)</a> · <a href="https://journals.sagepub.com/doi/10.1177/1359183518820366" rel="noopener" target="_blank">Seaver《迷人的算法：作为陷阱的推荐系统》(2019)</a>（英文）</li>
+<li><a href="https://journals.sagepub.com/doi/10.1177/135918359600100102" rel="noopener" target="_blank">Gell《沃格尔的网：陷阱作为艺术品》(1996)</a>（英文）</li>
+<li><a href="https://dl.acm.org/doi/10.1145/2702123.2702556" rel="noopener" target="_blank">Eslami 等《推理信息流里看不见的算法》(2015)</a>（英文）</li>
+<li><a href="https://ghostwork.info/" rel="noopener" target="_blank">Gray &amp; Suri《幽灵工作》(2019)</a> · <a href="https://yalebooks.yale.edu/book/9780300261479/behind-the-screen/" rel="noopener" target="_blank">Roberts《屏幕背后》(2019)</a>（英文）</li>
+<li><a href="https://read.dukeupress.edu/social-text/article-abstract/18/2%20(63)/33/33433/Free-LaborPRODUCING-CULTURE-FOR-THE-DIGITAL" rel="noopener" target="_blank">Terranova《免费劳动》(2000)</a>（英文）</li>
+<li><a href="https://en.wikipedia.org/wiki/Ironies_of_Automation" rel="noopener" target="_blank">Bainbridge《自动化的反讽》(1983)</a> · <a href="https://en.wikipedia.org/wiki/Drakaea" rel="noopener" target="_blank">锤兰属（Drakaea）</a>（英文）</li>
+</ul>
+</div>
+<footer>BigCat Learning Hub · 社会学与人类学</footer>
+</div>
+<script src="https://hub.cissychen.com/comments.js" defer></script>
+<script src="https://hub.cissychen.com/search.js" defer></script>
+<script src="https://hub.cissychen.com/index-button.js" defer></script>
+<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
+</body></html>
