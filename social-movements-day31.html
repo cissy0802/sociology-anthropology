@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>社会学与人类学 Day 31：社会运动</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:linear-gradient(170deg,#1a140f,#171210 42%,#120e0b);color:#e6dacc;line-height:1.9;min-height:100vh}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 60px}
+header{padding:52px 0 30px;border-bottom:1px solid #33261d}
+header .kicker{font-size:0.75rem;color:#8fb0cc;letter-spacing:2.5px;font-family:"SF Mono",Menlo,monospace}
+header h1{font-size:2.1rem;font-weight:800;background:linear-gradient(100deg,#e08155,#eda07c 58%,#8fb0cc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:0.5px;margin-top:12px;line-height:1.28}
+header h2{font-size:1rem;color:#a08b78;margin-top:10px;font-weight:400}
+header .meta{margin-top:14px;font-size:0.85rem;color:#a08b78}
+header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
+.intro{margin-top:30px;font-size:1.02rem;color:#d8c9b8}
+.intro p{margin-bottom:13px}
+.section{margin:46px 0;background:rgba(255,255,255,0.028);padding:28px 26px;border-radius:14px;border:1px solid rgba(255,255,255,0.06)}
+.section .num{display:inline-block;font-size:0.75rem;color:#e08155;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;margin-bottom:8px}
+.section h2{font-size:1.32rem;color:#f4ece2;margin-bottom:16px;font-weight:700;line-height:1.35}
+.section p{margin-bottom:14px;font-size:0.98rem}
+.section strong{color:#fff}
+.section em{color:#e08155;font-style:normal}
+.section ul{list-style:none;margin:14px 0}
+.section li{margin-bottom:10px;padding-left:20px;position:relative}
+.section li::before{content:"◈";position:absolute;left:0;top:0.42em;color:#e08155;font-size:0.7rem}
+.fig{margin:24px 0 10px;text-align:center}
+.fig svg{max-width:100%;height:auto}
+.fig .cap{font-size:0.82rem;color:#a08b78;margin-top:8px;text-align:left;line-height:1.65}
+.en-brief{margin-top:18px;padding:12px 16px;border-left:2px solid rgba(160,139,120,0.5);background:rgba(255,255,255,0.02);border-radius:0 8px 8px 0;font-size:0.85rem;color:#b0a08e;line-height:1.62}
+.en-brief b{color:#bda994;font-family:"SF Mono",Menlo,monospace;font-size:0.68rem;letter-spacing:1.5px;margin-right:9px;font-weight:700}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(143,176,204,0.12),rgba(224,129,85,0.05));border:1px solid rgba(143,176,204,0.34);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#8fb0cc;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#dfe3e6;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e08155;font-size:0.72rem}
+.crossx b{color:#aecbe2;font-weight:600}
+.thinking{background:linear-gradient(135deg,rgba(224,129,85,0.06),rgba(143,176,204,0.05));border:1px solid rgba(224,129,85,0.24);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e08155;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(18,14,11,0.5);border:1px solid rgba(224,129,85,0.2);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(224,129,85,0.06);border-color:rgba(224,129,85,0.42)}
+.thinking summary{cursor:pointer;color:#eda07c;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#8fb0cc}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(143,176,204,0.22);color:#ddd0c1;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#8fb0cc;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a08b78}
+.refs a{color:#e08155;text-decoration:none;border-bottom:1px dotted rgba(224,129,85,0.42)}
+.refs a:hover{color:#eda07c;border-bottom-color:#eda07c}
+.bigcat{margin:40px 0 0;background:linear-gradient(135deg,rgba(224,129,85,0.11),rgba(143,176,204,0.04));border:1px solid rgba(224,129,85,0.32);border-radius:14px;padding:22px 26px}
+.bigcat h3{color:#eda07c;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.bigcat ul{list-style:none;margin:0}
+.bigcat li{color:#ece0d2;font-size:0.93rem;line-height:1.8;margin-bottom:14px}
+.bigcat li:last-child{margin-bottom:0}
+.bigcat b{color:#eda07c;font-weight:600}
+footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
+@media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+</style></head><body>
+<div class="container">
+<header>
+<div class="kicker">DAY 31 · 社会运动</div>
+<h1>社会运动</h1>
+<h2>这一期最反直觉的一句：一场运动闹多大，跟有多少人不满几乎无关</h2>
+<div class="meta">2026-09-24 · BigCat</div>
+<div class="pitch">1965 年一位经济学家顺手给社会学留下个麻烦：他论证了，一群人有共同利益，恰恰是他们不会一起行动的理由——而且人越多越不会动。</div>
+</header>
+<div class="intro">
+<p>电梯坏到第三天。业主群里二十几个人在骂，骂得很齐。没人打物业电话。</p>
+<p>你大概见过各种版本：会上所有人私下都说某个流程有毛病，轮到发言没人提；人人知道那份周报没人看，它还在发。</p>
+<p>老派的解释是「他们还不够生气」——不满攒够了自然就动。过去六十年这门学科最主要的发现方向正好反过来：不满几乎从来不缺，缺的是另外三样东西，而且每一样都能单独把事情卡死。</p>
+</div>
+<div class="section">
+<span class="num">// 01</span>
+<h2>「大家都想要」恰恰是没人去做的理由</h2>
+<p>1965 年，曼瑟·奥尔森（Mancur Olson）写了本薄书《集体行动的逻辑》。电梯修好了，打电话那个人和没打的二十个人用的是同一部电梯。这种拦不住别人一起用的东西叫公共物品（public good）。既然拦不住，对每个人最划算的就是等别人去打——搭便车（free riding）。要命的是这不是谁自私：每个人都算得没错，合起来就是没人动。「大家有共同利益」推不出「大家会一起行动」，两句话之间隔着一道闸。</p>
+<p>奥尔森由此推出两条。一是小团体比大团体容易动：三个人合租，好处每人分三分之一，谁没出力另外两个当场就知道；二十户的楼，好处摊到二十分之一，彼此还叫不出名字。二是大组织要动起来，得靠只发给参与者的东西——他叫它选择性激励（selective incentives）：工会的互助金和法律服务、行业协会的行情数据、教会里的婚丧帮忙。他那句最刺耳的话是：很多大组织的成员其实是冲这些来的，公共主张是附赠的。</p>
+<p>证据强度要说清楚：这是理论推演加历史例子，不是实验结果。实验室里有个对应物叫公共品博弈——几个人各拿一笔钱，投进公共池子的部分放大后平分。头一轮人们通常投一半上下，轮数一多贡献稳步往下掉；一旦允许自掏腰包去惩罚投得少的，合作就撑得住，这个结果被反复复制过。但 2008 年赫尔曼、特尼与盖希特在《科学》上比较了全球十六个可比的受试群体，发现有些地方的人反过来惩罚投得多的，强到把惩罚的好处整个抵掉。「让大家互相监督」不是到哪都能拧开的开关。</p>
+<p class="en-brief"><b>EN</b> In 1965 Mancur Olson wrote a thin book called <i>The Logic of Collective Action</i>. Once the lift is fixed, the person who made the call and the twenty who did not are riding the same lift. A thing you cannot stop other people from using is a public good. Since you cannot stop them, the smart move for each person is to wait for someone else to call — free riding. The awkward part is that nobody here is being selfish: each person's arithmetic is correct, and the sum of it is that nobody moves. "We share an interest" does not get you to "we will act together". There is a gate in between. Two things follow for Olson. First, small groups act more easily than large ones: three flatmates each get a third of the benefit, and if one of them does nothing the other two know at once; in a block of twenty flats the benefit is a twentieth each and nobody knows the neighbours' names. Second, a large organization gets moving on the back of things handed out only to participants — he called these selective incentives: a union's hardship fund and legal service, a trade association's market data, a congregation's help with weddings and funerals. His sharpest line is that many members of large organizations are in it for those, and the public cause is thrown in. Be clear about how strong the evidence is: this is a theoretical argument plus historical examples, not an experimental result. The laboratory has an analogue, the public goods game — several people each get a sum of money, and whatever they put into a common pot is multiplied and split evenly. In the first round people typically put in about half; over more rounds contributions slide steadily down. Allow people to spend their own money punishing low contributors and cooperation holds up, a result that has been replicated many times. But in 2008 Benedikt Herrmann, Christian Thöni and Simon Gächter compared sixteen comparable participant pools around the world in <i>Science</i> and found places where people punish the high contributors instead, strongly enough to wipe out the benefit of punishment altogether. So "let people police each other" is not a switch you can throw anywhere.</p>
+</div>
+<div class="section">
+<span class="num">// 02</span>
+<h2>不满从来不缺，缺的是钱、人和一间能开会的屋子</h2>
+<p>1977 年，麦卡锡与扎尔德写了篇后来被引到烂的文章，开头就把问题掉了个个儿：不满是常量，运动是变量。哪个年代哪个群体都有一肚子委屈，用一个不变的东西去解释一个在变的东西，注定解释不动。该问的不是「他们为什么生气」，是「这一次为什么组织得起来」。</p>
+<p>蒙哥马利公交抵制是个好例子，因为流传最广的版本恰好把这一层削掉了：一个人累了，不肯让座。莫里斯（Aldon Morris）1984 年那本《民权运动的起源》给的是另一面。1955 年 12 月 1 日罗莎·帕克斯被捕，当夜乔安·罗宾逊（Jo Ann Robinson）在阿拉巴马州立学院写好呼吁抵制的传单，拉上三个人用油印机印了一整夜——通行的说法是三万五千份，也有更高的数字——第二天散遍全城。罗宾逊属于妇女政治委员会（Women's Political Council），一个黑人职业女性的组织，为公交上的待遇已经准备了好几年，手里有名册、有联络人、有印刷机。</p>
+<p>后面那三百多天靠的也是现成的东西：教会是会场，教会名册是通讯录，黑人出租车和私家车拼出了接送网。麦克亚当（Doug McAdam）1982 年把尺度放大到几十年：黑人教会、黑人学院和全国有色人种协进会的地方支部，在抗争爆发之前先增长了很久，他管这个叫本土组织基础。这个视角有代价：写得不小心，人就成了资源的容器。后来的研究把不满请了回来，位置却换了——不满决定一场运动长什么样，组织决定它起不起得来。证据强度上，这一支是历史比较研究，软肋是事后挑案例。</p>
+<p class="en-brief"><b>EN</b> In 1977 John McCarthy and Mayer Zald published a paper, since cited to death, that turned the question over in its opening lines: grievance is the constant, movements are the variable. Every era and every group carries a stock of complaints, and explaining the rise and fall of movements with something that does not vary will not get you far. The question is not why they are angry. It is why they managed to organize this time. The Montgomery bus boycott makes the point, because the version everyone knows removes exactly this layer: one person was tired and would not give up a seat. Aldon Morris's <i>The Origins of the Civil Rights Movement</i> (1984) gives the other side. Rosa Parks was arrested on 1 December 1955; that night Jo Ann Robinson wrote a leaflet calling for a boycott at Alabama State College and, with three other people, ran the mimeograph machine all night — the usual figure is thirty-five thousand copies, and some sources give more — and the next day they went out across the city. Robinson belonged to the Women's Political Council, an organization of Black professional women that had been working on treatment on the buses for years and had lists, contacts and a printing machine. The three hundred-odd days that followed also ran on things already in place: churches were the venues, church rolls were the address book, Black taxi drivers and private cars were assembled into a lift network. Doug McAdam's 1982 book takes the scale out to decades: Black churches, Black colleges and local branches of the National Association for the Advancement of Colored People had been growing for a long time before the protest broke out, something he called indigenous organizational strength. The view has a cost: written carelessly, people turn into containers for resources. Later work brought grievance back, but in a different position — grievance shapes what a movement looks like, organization decides whether it gets off the ground. On evidence: this strand is mainly historical comparison, and its weak point is picking cases after the fact.</p>
+</div>
+<div class="fig">
+<svg viewBox="0 0 720 176" xmlns="http://www.w3.org/2000/svg">
+<g font-family="Georgia, 'Noto Serif SC', serif" text-anchor="middle">
+<rect x="6" y="54" width="150" height="50" rx="9" fill="rgba(143,176,204,0.10)" stroke="#8fb0cc" stroke-width="1"></rect>
+<text x="81" y="84" fill="#dfe3e6" font-size="15">共同的不满</text>
+<rect x="196" y="54" width="150" height="50" rx="9" fill="rgba(224,129,85,0.08)" stroke="#33261d" stroke-width="1"></rect>
+<text x="271" y="84" fill="#e6dacc" font-size="15">有人组织得起来</text>
+<rect x="386" y="54" width="150" height="50" rx="9" fill="rgba(224,129,85,0.08)" stroke="#33261d" stroke-width="1"></rect>
+<text x="461" y="84" fill="#e6dacc" font-size="15">有一个说得通的说法</text>
+<rect x="576" y="54" width="138" height="50" rx="9" fill="rgba(224,129,85,0.14)" stroke="#e08155" stroke-width="1"></rect>
+<text x="645" y="84" fill="#f4ece2" font-size="15">一次真的行动</text>
+<g stroke="#e08155" stroke-width="1.4">
+<line x1="158" y1="79" x2="192" y2="79"></line><line x1="186" y1="75" x2="192" y2="79"></line><line x1="186" y1="83" x2="192" y2="79"></line>
+<line x1="348" y1="79" x2="382" y2="79"></line><line x1="376" y1="75" x2="382" y2="79"></line><line x1="376" y1="83" x2="382" y2="79"></line>
+<line x1="538" y1="79" x2="572" y2="79"></line><line x1="566" y1="75" x2="572" y2="79"></line><line x1="566" y1="83" x2="572" y2="79"></line>
+</g>
+<g stroke="#a08b78" stroke-width="1" stroke-dasharray="3 3">
+<line x1="175" y1="30" x2="175" y2="66"></line><line x1="365" y1="30" x2="365" y2="66"></line><line x1="555" y1="30" x2="555" y2="66"></line>
+</g>
+<text x="175" y="22" fill="#e08155" font-size="13">闸一 · 搭便车</text>
+<text x="365" y="22" fill="#e08155" font-size="13">闸二 · 资源</text>
+<text x="555" y="22" fill="#e08155" font-size="13">闸三 · 框架</text>
+<text x="175" y="128" fill="#a08b78" font-size="12">只给参与者的好处</text>
+<text x="175" y="146" fill="#a08b78" font-size="12">或小到彼此看得见</text>
+<text x="365" y="128" fill="#a08b78" font-size="12">钱 · 专职的人 · 场地</text>
+<text x="365" y="146" fill="#a08b78" font-size="12">现成名册 · 传播渠道</text>
+<text x="555" y="128" fill="#a08b78" font-size="12">诊断 · 方案 · 号召</text>
+<text x="555" y="146" fill="#a08b78" font-size="12">三件要同时齐</text>
+</g>
+</svg>
+<div class="cap">三道闸串在一起，任何一道关着，前面攒了多少不满都出不来——「他们不够生气」通常是最不重要的解释。</div>
+</div>
+<div class="section">
+<span class="num">// 03</span>
+<h2>抗议的样子只有有限的几种，而且会整代整代地换</h2>
+<p>查尔斯·蒂利（Charles Tilly）和助手干过一件笨活：把 1758 到 1834 年英国报刊里提到的「抗争聚会」一条条编码，攒出八千多场。翻这堆卡片能看见一个换挡的过程。</p>
+<p>十八世纪中叶，表达不满的现成办法是这些：拦下运粮车按自己认的公道价卖掉；拆掉圈地的篱笆；把犯了众怒的人架起来游街羞辱；砸某一户人家的窗。全是本地的、冲着具体某个人去的，往往还要请一位有身份的人代为转达。到 1830 年代换成了另一套：公共集会、征签请愿、列队游行、成立专门协会、办刊物——全国性的、冲着议会去的、自己就能代表自己说话。</p>
+<p>蒂利把这有限的几种办法叫抗争剧目（repertoire of contention）。剧目这个词是故意挑的：一个剧团只会演那么几出戏，人也不是想怎么抗议就怎么抗议。为什么只有几种？因为形式必须是双方都认得的。参与者得知道自己该站哪儿、喊什么、什么时候散；对手也得知道这是要谈还是要打。发明新形式极贵，贵在没人知道怎么配合；可新形式只要被成功演示过一次，扩散就快得惊人——静坐、占领、人链都是这样。</p>
+<p>蒂利还留下一张清单：运动要向外展示四样东西——值得、一致、人数、决心；游行为什么排整齐、为什么抢着报人数、为什么静坐挨打也不还手，都在做这四样之一。证据强度：这是编码过历史材料撑起来的描述，不是因果识别。</p>
+<p class="en-brief"><b>EN</b> Charles Tilly and his assistants did a laborious thing: they coded, one by one, the "contentious gatherings" reported in British periodicals between 1758 and 1834, more than eight thousand of them. Going through the cards you can watch a gear change. In the mid-eighteenth century the ready-made ways of expressing a grievance were these: stopping a grain wagon and selling its load at what the crowd held to be a fair price; pulling down enclosure fences; carrying someone who had offended the neighbourhood through the streets to be shamed; breaking one particular household's windows. All local, aimed at a specific person, and often needing someone of standing to pass the claim upward. By the 1830s a different set was in use: public meetings, signature petitions, marches in column, founding a dedicated association, starting a periodical — national, aimed at Parliament, speaking for itself. Tilly called this limited set the repertoire of contention. The word repertoire is deliberate: a company only knows a few plays, and people do not protest in whatever way they please. Why only a few? Because the form has to be legible to both sides. Participants need to know where to stand, what to shout and when to disperse; the other side needs to know whether this is a bid to talk or a fight. Inventing a new form is expensive, and the expense is that nobody knows how to play along — but once a new form has been performed successfully a single time it spreads astonishingly fast. Sit-ins, occupations and human chains all went that way. Tilly also left a checklist: a movement has to display four things outward — worthiness, unity, numbers, commitment. Why a march forms up neatly, why everyone fights over the crowd count, why people being beaten at a sit-in do not hit back, are each one of those four. On evidence: this is description resting on coded historical material, not causal identification.</p>
+</div>
+<div class="section">
+<span class="num">// 04</span>
+<h2>同一件事，可以被说成不公，也可以被说成运气不好</h2>
+<p>框架（frame）这个词从戈夫曼那儿借来——拟剧论那期讲的那位——指人用来把一堆零碎事情看成「这是怎么回事」的那套说法。同一件事说成「制度把这批人筛掉了」，和说成「他运气不好」，动员出来的东西完全不同。斯诺（David Snow）等人 1986 年那篇讲框架校准的文章，后来被整理成三件得同时做完的活：诊断（问题是什么、记在谁头上）、方案（该怎么办）、号召（为什么是你、为什么是现在）。缺一件就卡住：只有诊断，人只会愤怒而无处下手；有诊断有方案没号召，就又回到「大家都想要」那道闸。</p>
+<p>盖姆森（William Gamson）1992 年做过一批焦点小组，让普通人聊核电、平权这类议题。他的观察是：光说「制度有问题」不够，得有一个能指认的施动者——不公这个框架需要一个「谁」。但框架得由人传过去。斯诺和同事 1980 年研究一个佛教团体在美国的招募，发现街头拉陌生人效率低得可怜，绝大多数新成员是沿着本来就有的亲友熟人关系进来的。</p>
+<p>最漂亮的材料来自 1964 年的密西西比自由之夏。上千名大学生申请去做选民登记，麦克亚当后来找到了一千零六十八份申请表：七百二十人去了，二百三十九人临到头退出。两拨人填的是同一张表，态度栏上几乎看不出差别——退出的那些并不更不在乎。差别在别处：和已经参加的人有没有强关系、此前有没有组织里的经历。他原本还预期没有全职工作和家庭牵绊的人更可能去（这叫生平可支配性，biographical availability），在这批申请者身上没干净地出来，他的解释是申请者本身已经被筛过一轮。这是少见的好材料：档案是事前留下的。</p>
+<p class="en-brief"><b>EN</b> The word frame is borrowed from Goffman — the man from the piece on dramaturgy — and means the account people use to see a pile of loose events as "what is going on here". The same event told as "the system filtered these people out" and told as "he was unlucky" mobilizes entirely different things. David Snow and colleagues wrote a 1986 paper on frame alignment, later tidied into three jobs that have to be done together: diagnosis (what the problem is, whose account it goes on), solution (what should be done) and the call (why you, why now). Leave one out and it jams. Diagnosis alone leaves people angry with nowhere to push; diagnosis and solution without a call takes you straight back to the gate in "'Everybody wants it' is exactly why nobody does it". William Gamson ran a set of focus groups in 1992, letting ordinary people talk about nuclear power, affirmative action and issues of that kind. His observation: saying "the system has a problem" is not enough to mobilize, because you need an agent that can be named — an injustice frame needs a "who". But a frame has to be carried by people. Snow and colleagues studied recruitment to a Buddhist group in the United States in 1980 and found that approaching strangers in the street worked miserably; the overwhelming majority of new members came in along ties of family, friends and acquaintances that were already there. The finest material comes from Mississippi Freedom Summer in 1964. More than a thousand students applied to do voter registration, and McAdam later found 1,068 application forms: 720 went, 239 withdrew at the last moment. Both groups had filled in the same form, and on attitudes you can barely tell them apart — the ones who withdrew did not care less. The difference is elsewhere: whether they had strong ties to someone already taking part, and whether they had prior experience inside an organization. He had also expected that people without full-time work or family commitments would be more likely to go (this is called biographical availability); it did not come out cleanly in this pool, and his own explanation is that the applicants had already been filtered once. This is a rare piece of material: the records were made in advance.</p>
+</div>
+<div class="bigcat">
+<h3>🎒 场景 · BigCat</h3>
+<ul>
+<li><b>① 带团队与组织</b>：全员会上问「大家有什么想法」，鸦雀无声；散会后走廊上五个人分别过来跟你说同一个问题。跑的是「『大家都想要』恰恰是没人去做的理由」那节的机制——第一个开口的人承担全部成本，好处归所有人。可改的动作：别在会上开放式征集，改成会前一对一收齐，由你在会上第一个把问题原样说出来，再指定一个人回应，而不是留给「大家」。</li>
+<li><b>② 工程与系统设计</b>：每次要推一个跨组的改动，光在「该走什么路」上就耗掉两周——发文档？拉个群？直接提改动请求？跑的是「抗议的样子只有有限的几种」那节的机制：形式的用处来自双方都认得，认得才不用每次重新协商怎么配合。可改的动作：把这类事的路径写死成两三条贴出来，不再每次挑「最合适」的那条——收益来自它固定，不来自它合适。</li>
+</ul>
+</div>
+<div class="crossx">
+<h3>🌀 越界 · 跨学科的联想</h3>
+<ul>
+<li><b>佛学 · 一场僧团会议，界内少一个人既没到也没托人带话，整件事就作废</b>：南传佛教的僧团议事叫羯磨（saṅghakamma），前提是先画一条地理边界，叫界（sīmā）。界内的比丘要么全到场，要么托一位到场的人把自己的「与欲」（chanda，即同意）带到；少一个人既没到又没带话，这次议事就不成立。跑的是「『大家都想要』恰恰是没人去做的理由」那节的机制：<em>搭便车之所以划算，是因为缺席的成本是零，而结果照样归你</em>。羯磨把这条堵死——沉默不算同意，不到场不是省事，是让整件事作废。由此能推出一个原本看不出的结论：<b>一个团体的行动力，可以从「缺席怎么记账」上读出来，不必去量成员有多热心。凡是把「没反对」默认成同意的规程都在补贴搭便车：不出席零成本，还自动被计进多数。所以改记账规则比动员情绪便宜——默认值从「沉默即同意」改成「必须各自表态」，成本就从到场的人挪到了缺席的人身上。</b><b>但这里不成立</b>：羯磨全靠那条界——界内有谁是能点名的、封闭的。社会运动没有界，谁算潜在参与者本身就说不清。<b>所以这套记账只在名册封闭时有意义；名册开放的地方，沉默根本不是一个能被登记的动作。</b></li>
+<li><b>演化生物学 · 两头雄鹿真顶上之前，要先按顺序走完吼叫赛和并肩走</b>：苏格兰的鹿岛（Isle of Rum）上，红鹿发情期的争斗有固定几步：先吼叫赛，两头轮流吼，节奏越来越快，通常一头突然停下走开；分不出才进到并肩走，平行走一段互相打量；再分不出，才低头顶角。克拉顿-布洛克与阿尔邦 1979 年那篇讲的就是这套。真打是少数，代价很实在——发情期的雄鹿每年有多达百分之六落下永久性伤。跑的是「抗议的样子只有有限的几种」那节的机制：<em>形式的用处在于双方都认得，认得才可能不付全额代价就把信息传完</em>。由此推出一个原本看不出的结论：<b>剧目之所以就那么几种，卡住它的不是想象力，是「对手得看得懂」这个约束。反过来还能读出一件事：一方开始频繁使用对方读不懂的新形式，多半不是创意爆发，而是原来那套读法失效了——双方对「走到这一步意味着什么」不再有共识，于是每次都得一路走到底。</b><b>但这里不成立</b>：红鹿那几步是筛出来的，个体不学也会；抗争剧目是学来的，能在几十年里整批换掉，还会被对手的反应回头改写——警察怎么处置、法院怎么判，都进下一轮的形式。<b>所以「展示能省下真打」借得过来，「形式固定」借不过来：剧目是一份双方随时都在改的合约。</b></li>
+</ul>
+</div>
+<div class="thinking">
+<h3>深入思考</h3>
+<details><summary>如果不满解释不了运动，那些「什么都没发生」的地方该怎么看？</summary>
+<div>最难研究的恰恰是没发生的事——没人给它立档。组织基础这条至少给了可查的东西：有没有跨群体的现成组织、能借的场地、一份名册。看不见的往往不是忍耐力有多强，是这几样有没有。</div>
+</details>
+<details><summary>选择性激励能解释所有参与吗？</summary>
+<div>不能。去密西西比做选民登记拿不到任何私人好处，还可能挨打。后来的补法是把「和谁一起去」也算成一种激励：让朋友失望是有代价的。但关系一旦也叫激励，这个框架就什么都能装，也就什么都解释不了。</div>
+</details>
+<details><summary>抗争剧目会不会被线上的形式重写？</summary>
+<div>线上形式成本极低，于是它能证明的东西也少：一百万个签名不再意味着一百万个人愿意为此付出什么。剧目的用处本来就是让代价看得见，代价一低，形式就说不动人——这大概能解释为什么熬时间的、身体在场的老形式又回来了。</div>
+</details>
+</div>
+<div class="refs">
+<h3>延伸阅读</h3>
+<ul>
+<li><a href="https://www.hup.harvard.edu/books/9780674537514" rel="noopener" target="_blank">Olson《集体行动的逻辑》(1965)</a> · <a href="https://en.wikipedia.org/wiki/Public_goods_game" rel="noopener" target="_blank">公共品博弈</a>（英文）</li>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/18323447/" rel="noopener" target="_blank">Herrmann、Thöni &amp; Gächter《跨社会的反社会惩罚》(2008)</a>（英文）</li>
+<li><a href="https://www.journals.uchicago.edu/doi/10.1086/226464" rel="noopener" target="_blank">McCarthy &amp; Zald《资源动员与社会运动》(1977)</a>（英文）</li>
+<li><a href="https://nmaahc.si.edu/explore/stories/jo-ann-robinson-heroine-montgomery-bus-boycott" rel="noopener" target="_blank">史密森学会：Jo Ann Robinson 与蒙哥马利抵制</a> · <a href="https://en.wikipedia.org/wiki/Aldon_Morris" rel="noopener" target="_blank">Aldon Morris</a>（英文）</li>
+<li><a href="https://www.journals.uchicago.edu/doi/abs/10.1086/228463" rel="noopener" target="_blank">McAdam《高风险行动主义的招募：自由之夏》(1986)</a> · <a href="https://en.wikipedia.org/wiki/Doug_McAdam" rel="noopener" target="_blank">Doug McAdam</a>（英文）</li>
+<li><a href="https://www.hup.harvard.edu/books/9780674689800" rel="noopener" target="_blank">Tilly《英国的民众抗争 1758–1834》</a> · <a href="https://en.wikipedia.org/wiki/Repertoire_of_contention" rel="noopener" target="_blank">抗争剧目</a>（英文）</li>
+<li><a href="https://www.annualreviews.org/content/journals/10.1146/annurev.soc.26.1.611" rel="noopener" target="_blank">Benford &amp; Snow《框架过程与社会运动》(2000)</a> · <a href="https://www.jstor.org/stable/2094895" rel="noopener" target="_blank">Snow 等《社会网络与社会运动》(1980)</a>（英文）</li>
+<li><a href="https://en.wikipedia.org/wiki/William_A._Gamson" rel="noopener" target="_blank">William Gamson 与《谈论政治》(1992)</a>（英文）</li>
+<li><a href="https://doi.org/10.1163/156853979X00449" rel="noopener" target="_blank">Clutton-Brock &amp; Albon《红鹿的吼叫与诚实广告的演化》(1979)</a>（英文）</li>
+<li><a href="https://www.dhammatalks.org/vinaya/bmc/Section0055.html" rel="noopener" target="_blank">《比丘戒律纲要》布萨一章</a>（英文）</li>
+</ul>
+</div>
+<footer>BigCat Learning Hub · 社会学与人类学</footer>
+</div>
+<script src="https://hub.cissychen.com/comments.js" defer></script>
+<script src="https://hub.cissychen.com/search.js" defer></script>
+<script src="https://hub.cissychen.com/index-button.js" defer></script>
+<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
+</body></html>
