@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>社会学与人类学 Day 32：信任与社会资本</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:linear-gradient(170deg,#1a140f,#171210 42%,#120e0b);color:#e6dacc;line-height:1.9;min-height:100vh}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 60px}
+header{padding:52px 0 30px;border-bottom:1px solid #33261d}
+header .kicker{font-size:0.75rem;color:#8fb0cc;letter-spacing:2.5px;font-family:"SF Mono",Menlo,monospace}
+header h1{font-size:2.1rem;font-weight:800;background:linear-gradient(100deg,#e08155,#eda07c 58%,#8fb0cc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:0.5px;margin-top:12px;line-height:1.28}
+header h2{font-size:1rem;color:#a08b78;margin-top:10px;font-weight:400}
+header .meta{margin-top:14px;font-size:0.85rem;color:#a08b78}
+header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
+.intro{margin-top:30px;font-size:1.02rem;color:#d8c9b8}
+.intro p{margin-bottom:13px}
+.section{margin:46px 0;background:rgba(255,255,255,0.028);padding:28px 26px;border-radius:14px;border:1px solid rgba(255,255,255,0.06)}
+.section .num{display:inline-block;font-size:0.75rem;color:#e08155;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;margin-bottom:8px}
+.section h2{font-size:1.32rem;color:#f4ece2;margin-bottom:16px;font-weight:700;line-height:1.35}
+.section p{margin-bottom:14px;font-size:0.98rem}
+.section strong{color:#fff}
+.section em{color:#e08155;font-style:normal}
+.section ul{list-style:none;margin:14px 0}
+.section li{margin-bottom:10px;padding-left:20px;position:relative}
+.section li::before{content:"◈";position:absolute;left:0;top:0.42em;color:#e08155;font-size:0.7rem}
+.fig{margin:24px 0 10px;text-align:center}
+.fig svg{max-width:100%;height:auto}
+.fig .cap{font-size:0.82rem;color:#a08b78;margin-top:8px;text-align:left;line-height:1.65}
+.en-brief{margin-top:18px;padding:12px 16px;border-left:2px solid rgba(160,139,120,0.5);background:rgba(255,255,255,0.02);border-radius:0 8px 8px 0;font-size:0.85rem;color:#b0a08e;line-height:1.62}
+.en-brief b{color:#bda994;font-family:"SF Mono",Menlo,monospace;font-size:0.68rem;letter-spacing:1.5px;margin-right:9px;font-weight:700}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(143,176,204,0.12),rgba(224,129,85,0.05));border:1px solid rgba(143,176,204,0.34);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#8fb0cc;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#dfe3e6;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e08155;font-size:0.72rem}
+.crossx b{color:#aecbe2;font-weight:600}
+.thinking{background:linear-gradient(135deg,rgba(224,129,85,0.06),rgba(143,176,204,0.05));border:1px solid rgba(224,129,85,0.24);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e08155;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(18,14,11,0.5);border:1px solid rgba(224,129,85,0.2);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(224,129,85,0.06);border-color:rgba(224,129,85,0.42)}
+.thinking summary{cursor:pointer;color:#eda07c;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#8fb0cc}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(143,176,204,0.22);color:#ddd0c1;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#8fb0cc;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a08b78}
+.refs a{color:#e08155;text-decoration:none;border-bottom:1px dotted rgba(224,129,85,0.42)}
+.refs a:hover{color:#eda07c;border-bottom-color:#eda07c}
+.bigcat{margin:40px 0 0;background:linear-gradient(135deg,rgba(224,129,85,0.11),rgba(143,176,204,0.04));border:1px solid rgba(224,129,85,0.32);border-radius:14px;padding:22px 26px}
+.bigcat h3{color:#eda07c;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.bigcat ul{list-style:none;margin:0}
+.bigcat li{color:#ece0d2;font-size:0.93rem;line-height:1.8;margin-bottom:14px}
+.bigcat li:last-child{margin-bottom:0}
+.bigcat b{color:#eda07c;font-weight:600}
+footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
+@media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+</style></head><body>
+<div class="container">
+<header>
+<div class="kicker">DAY 32 · 信任与社会资本</div>
+<h1>信任与社会资本</h1>
+<h2>这一期最反直觉的一句：信任不长在人身上，它长在关系的形状里——所以你一搬走，它就留在原地了</h2>
+<div class="meta">2026-09-25 · BigCat</div>
+<div class="pitch">从 1980 到 1993 年，美国打保龄球的人多了一成，保龄球联赛少了四成。有人把这个不起眼的差额拎出来当了书名，这门学科为它吵了三十年。</div>
+</header>
+<div class="intro">
+<p>你搬到一个新城市，第三个月发现最麻烦的不是找房子。是水管半夜漏了，你不知道该叫谁。</p>
+<p>在原来那个地方，你会直接打给楼下五金店那个人，他会说他侄子干这个，二十分钟就到。钱、学历、手艺，搬家时一样没少带；能办成的事却明显变少了。</p>
+<p>少掉的那样东西有名字。它的怪处在于：它不在你身上，也不在别人身上，它在你和别人<em>之间</em>——所以行李箱装不走。</p>
+</div>
+<div class="section">
+<span class="num">// 01</span>
+<h2>打保龄的人多了一成，保龄球联赛少了四成</h2>
+<p>1995 年，罗伯特·普特南（Robert Putnam）写了篇文章叫《独自打保龄》。里头那个数字后来被引了无数次：1980 到 1993 年，美国打保龄球的总人数涨了约一成，参加保龄球联赛的人少了约四成。球还在打，一起打球那件事散了。</p>
+<p>差在哪？联赛意味着每周三晚上你见同一批人。有人替你占了道，下次你替他带瓶水；谁家孩子要转学，席间就有人认识那所学校的老师；你要是老缺席，有人会当着面说你。单独去打球，动作一样，这些一样也没有。普特南把这层东西叫社会资本（social capital）：一张关系网络，加上从这张网里长出来的互惠规范和信任。叫「资本」是因为它能拿来办事，可它跟钱和技能不一样——它不归你一个人，你和别人共有它。</p>
+<p>他更早的证据来自意大利。1970 年那次改革新设了一层区政府，十五个新区的章程、职权、预算规则几乎一模一样。二十年后他和同事去量这些政府办事的效率：托儿所建了几个、预算有没有按时通过、公民写信问事多久有回音——差距大得刺眼，而且跟各地一百年前的东西对得上：合唱团多不多、互助会多不多、订报纸的人多不多。</p>
+<p>证据强度要说清：这是跨地区的相关加历史材料，不是因果识别。方向就说不清——也可能是别的什么（早年的土地制度、识字率）同时养出了合唱团和好政府。稍硬一点的是另一条：美国综合社会调查（General Social Survey）里答「大多数人可以信任」的比例，1972 年约四成七，2022 年约两成五。这条曲线在降是稳的；它究竟量的是什么，下面会看到还没定。</p>
+<p class="en-brief"><b>EN</b> In 1995 Robert Putnam published an essay called "Bowling Alone". The figure in it has been quoted ever since: between 1980 and 1993 the total number of bowlers in America rose by about ten per cent while league bowling fell by about forty. People were still bowling; bowling together had come apart. What is the difference? A league means you see the same people every Wednesday evening. Someone holds a lane for you and next time you bring him a drink; when a child needs to change school, someone at the table knows a teacher there; if you keep missing, someone says so to your face. Bowl on your own and the movements are identical and none of that exists. Putnam called this layer social capital: a network of relationships plus the norms of reciprocity and the trust that grow out of it. It is called capital because you can get things done with it, but unlike money or skill it is not yours alone — you hold it jointly with other people. His earlier evidence came from Italy. A reform in 1970 created a new tier of regional government, and the fifteen new regions had almost identical charters, powers and budget rules. Twenty years later he and his colleagues measured how well these governments worked: day-care places built, budgets passed on time, how long a citizen's letter of enquiry took to get an answer. The spread was glaring — and it lined up with things about each place from a century earlier: how many choral societies, how many mutual aid societies, how many newspaper subscriptions. Be clear about the evidence: this is cross-regional correlation plus historical material, not causal identification. The sharpest objection is that the direction is unreadable — something else (early land tenure, literacy) may have produced both the choral societies and the competent government. Slightly harder is a second line: in the General Social Survey, the share of Americans answering that most people can be trusted was about forty-seven per cent in 1972 and about twenty-five per cent in 2022, sliding the whole way. That the curve is falling is solid. What exactly it measures is, as you will see below, still open.</p>
+</div>
+<div class="section">
+<span class="num">// 02</span>
+<h2>他把一袋钻石交给你，连张收条都没有</h2>
+<p>1988 年，詹姆斯·科尔曼（James Coleman）在一篇文章里写了纽约钻石批发行的一个做法：一个商人把一袋石头交给同行，让他拿回去慢慢看货，没有合同、没有保险、没有押金。骗一次的收益极高——换几颗成色差的回来，很难查。可这种事几乎不发生。</p>
+<p>科尔曼的解释不靠人品。这一行的人住同一片街区、去同一个会堂、孩子上同一所学校，彼此之间还有姻亲。他把这个叫闭合（closure）：你的联系人彼此也认识。闭合一成立，两件事跟着成立——你干了什么当天就传遍；被这个圈子踢出去意味着整份生计没了。于是信任在这里不是美德，是一笔算得过来的下注。</p>
+<p>有个后来补上的细节值得记住。法学者丽莎·伯恩斯坦（Lisa Bernstein）1992 年整理这一行的规矩，发现它还有自己的私人仲裁庭和成文条款，纠纷不进法院，在行会内部判。所以「靠信任、不靠制度」这个对立可能本身是假的：闭合旁边一直立着一套制度，只是它不叫法院。</p>
+<p>普特南后来给了个区分，是这门课里最好用的一把刀。抱团型（bonding）关系往里收：同乡、亲戚、教友，彼此重叠，情绪浓。桥接型（bridging）关系往外伸：另一个行业的旧同事、爱好群里只见过两次的人。抱团型帮你把日子过下去，桥接型帮你换一条轨道——社会网络那期讲弱连带为什么更容易带来新工作，说的是同一件事。要紧的是：这是两样东西，不是一样东西的多和少。一个人可以抱团型极厚而桥接型近乎为零。所以「这个社区社会资本高不高」，只要落成一个数，就已经把最要紧的信息抹掉了。</p>
+<p class="en-brief"><b>EN</b> In 1988 James Coleman described a practice in the New York wholesale diamond trade: one merchant hands a bag of stones to another to take away and examine at leisure, with no contract, no insurance and no deposit. Cheating once would pay very well — swap in a few poorer stones and it is hard to trace — and yet it almost never happens. Coleman's explanation does not rest on character. People in this trade lived in the same few streets, attended the same congregation, sent their children to the same school and were often related by marriage. He called this closure: your contacts also know each other. Once closure holds, two things follow — what you did is round the whole network by the end of the day, and being pushed out of the circle means losing your entire livelihood. Trust here is not a virtue; it is a bet that adds up. One later detail is worth keeping. In 1992 the legal scholar Lisa Bernstein documented the trade's own rules and found it also ran a private arbitration system with written provisions: disputes stayed out of court and were judged inside the trade association. So the opposition between "running on trust" and "running on institutions" may be false — there was an institution standing next to the closure all along; it just was not called a court. Putnam later drew a distinction that is the most useful knife in this subject. Bonding ties pull inward: people from your home town, relatives, fellow congregants, heavily overlapping and emotionally thick. Bridging ties reach outward: a former colleague in another industry, someone from a hobby group you have met twice. Bonding gets you through the day; bridging gets you onto a different track — which is the same thing the piece on social networks was saying about why weak ties bring new jobs. The point is that these are two different things, not more and less of one thing. A person can be thick in bonding and have almost no bridging, or the reverse. So asking whether a community is high or low in social capital already erases the important information the moment the answer is a single number.</p>
+</div>
+<div class="fig">
+<svg viewbox="0 0 720 206" xmlns="http://www.w3.org/2000/svg">
+<g font-family="Georgia, 'Noto Serif SC', serif" text-anchor="middle">
+<g opacity="0.7" stroke="#8fb0cc" stroke-width="1.1">
+<line x1="170" x2="219" y1="33" y2="69"></line><line x1="170" x2="201" y1="33" y2="127"></line>
+<line x1="170" x2="139" y1="33" y2="127"></line><line x1="170" x2="121" y1="33" y2="69"></line>
+<line x1="219" x2="201" y1="69" y2="127"></line><line x1="219" x2="139" y1="69" y2="127"></line>
+<line x1="219" x2="121" y1="69" y2="69"></line><line x1="201" x2="139" y1="127" y2="127"></line>
+<line x1="201" x2="121" y1="127" y2="69"></line><line x1="139" x2="121" y1="127" y2="69"></line>
+</g>
+<g fill="#8fb0cc">
+<circle cx="170" cy="33" r="7"></circle><circle cx="219" cy="69" r="7"></circle><circle cx="201" cy="127" r="7"></circle>
+<circle cx="139" cy="127" r="7"></circle><circle cx="121" cy="69" r="7"></circle>
+</g>
+<g opacity="0.7" stroke="#8fb0cc" stroke-width="1.1">
+<line x1="455" x2="488" y1="47" y2="110"></line><line x1="455" x2="422" y1="47" y2="110"></line><line x1="422" x2="488" y1="110" y2="110"></line>
+<line x1="625" x2="658" y1="47" y2="110"></line><line x1="625" x2="592" y1="47" y2="110"></line><line x1="592" x2="658" y1="110" y2="110"></line>
+</g>
+<line stroke="#e08155" stroke-width="2.4" x1="488" x2="592" y1="110" y2="110"></line>
+<g fill="#8fb0cc">
+<circle cx="455" cy="47" r="7"></circle><circle cx="422" cy="110" r="7"></circle><circle cx="625" cy="47" r="7"></circle><circle cx="658" cy="110" r="7"></circle>
+</g>
+<g fill="#e08155">
+<circle cx="488" cy="110" r="7"></circle><circle cx="592" cy="110" r="7"></circle>
+</g>
+<text fill="#dfe3e6" font-size="15" x="170" y="168">抱团型 · 你的人彼此也认识</text>
+<text fill="#a08b78" font-size="12.5" x="170" y="190">干了什么当天就传遍，也不好走掉</text>
+<text fill="#dfe3e6" font-size="15" x="540" y="168">桥接型 · 一条线跨过两团</text>
+<text fill="#a08b78" font-size="12.5" x="540" y="190">团里没有的消息只能从这条线过来</text>
+</g>
+</svg>
+<div class="cap">两张图连线数差不多，能干的事完全不同——加总成「社会资本多少」这个单数，抹掉的正是最要紧的信息。</div>
+</div>
+<div class="section">
+<span class="num">// 03</span>
+<h2>同一堵墙，对里面的人是靠山，对外面的人是墙</h2>
+<p>1960 年代末，人类学家卡罗尔·斯塔克（Carol Stack）在美国中西部一个她称作 The Flats 的贫困黑人社区待了几年，写出《我们所有的亲人》（1974）。她记下的是一套极密的互助网：钱、吃的、衣服、看孩子，在亲属和「认下来的亲属」之间不停流转。收入随时可能断掉，这张网是唯一的保险。</p>
+<p>书里有一对夫妻得了一笔意外的遗产，打算买房子。钱没变成房子——一个多月里，各路亲属正当的要求（谁欠了房租、谁孩子要看病）一笔笔把它领走了；另一头福利部门查到他们手上有钱，停了补助。</p>
+<p>斯塔克自己的写法很要紧：这不是「他们不会理财」。在收入极不稳的处境里，把余钱借出去是一门技术——你换来的是自己断炊那周也有人接。代价是余钱永远攒不起来，而攒得起来恰恰是走出这个处境的前提。这是民族志个案，强在细，弱在不能直接推广。</p>
+<p>1998 年，亚历杭德罗·波特斯（Alejandro Portes）把这类代价归成四条：把外人挡在外面；对成员过度索取；限制个人自由（圈子知道你全部的事，也就管得着你全部的事）；把冒头的人拉回来。关键不是「滥用」——这四条和信任是同一个机制的两面。闭合之所以能产生信任，是因为它能制裁；而一个能制裁背叛的结构，必然也能制裁离开。所以在这门学科里，社会资本是个描述性概念，本身不含好坏；把它当成一个越多越好的指标，会在后两条上撞墙。</p>
+<p class="en-brief"><b>EN</b> In the late 1960s the anthropologist Carol Stack spent several years in a poor Black neighbourhood in the American Midwest that she called The Flats, and wrote <i>All Our Kin</i> (1974). What she recorded was an extremely dense network of mutual aid: money, food, clothes and childcare circulating constantly among kin and "kin" people had taken on as such. Where income can stop at any moment, this network is the only insurance there is. One couple in the book came into an unexpected inheritance and meant to buy a house. The money never became a house — over about six weeks, legitimate claims from various relatives (someone behind on rent, someone's child needing a doctor) drew it down piece by piece, while at the other end the welfare office found they had money and cut their payments. Stack's own framing matters: this is not a failure to manage money. Where income is deeply unstable, lending out your surplus is a skill — what you get back is that someone carries you through the week you have nothing. The price is that a surplus can never accumulate, and accumulating one is precisely the precondition for getting out. This is a single ethnographic case: strong in detail, weak as a basis for generalization. In 1998 Alejandro Portes sorted costs of this kind into four: the exclusion of outsiders; excessive claims on members; restrictions on individual freedom (a circle that knows everything about you can also govern everything about you); and the levelling down of anyone who rises. The point is not abuse. These four and trust are two faces of one mechanism: closure can generate trust because it can sanction, and a structure that can sanction betrayal can necessarily also sanction leaving. So in this field social capital is a descriptive concept carrying no valuation of its own; treat it as an index where more is better and you walk into the last two.</p>
+</div>
+<div class="section">
+<span class="num">// 04</span>
+<h2>同一个人的信任度，跟着环境走，不跟着人走</h2>
+<p>2019 年有组研究者干了件笨而漂亮的事。在四十个国家、三百五十五座城市，他们把一万七千多个钱包送到银行、剧院、警局、酒店的前台，说「街上捡的，不是我的，你能处理一下吗」，然后走掉。钱包里有个邮箱地址，有些里面有钱，有些没有。</p>
+<p>事先问经济学家和普通人，两拨都预测有钱的更少被归还。结果反过来：没钱的归还率约四成，有钱的约五成一，四十国里三十八个方向一致。研究者的解释是，拿走的代价不只是被抓的概率，还包括得把自己看成一个偷钱的人。这是真的田野实验，比问卷硬；软肋是唯一指标只有「有没有回邮件」，后来在中国做的扩展重复就是围着这一点争的。</p>
+<p>把它跟前面那条问卷曲线并排看，会看出一件原本不明显的事。2000 年，爱德华·格莱泽（Edward Glaeser）等人给同一批人同时做问卷和实验室里的信任博弈，发现问卷上「你觉得大多数人可信吗」这个答案，预测的不是他会不会去信任别人，而是他自己有多可信。于是合起来的结论是：信任更像一个人对所处环境的估计（对方会不会被制裁、这里出事有没有人管），不像身高那样是他的属性。同一个人换个环境，这个估计就该变——它确实在变。</p>
+<p class="en-brief"><b>EN</b> In 2019 a group of researchers did something laborious and elegant. Across forty countries and 355 cities they handed in more than seventeen thousand wallets at the counters of banks, theatres, police stations and hotels, saying "found this in the street, it isn't mine, could you deal with it", and walked away. Each wallet held an email address. Some contained money and some did not. Asked beforehand, both economists and members of the public predicted that wallets with money would be returned less often. It came out the other way: about forty per cent were reported when empty, about fifty-one per cent when they held money, and the direction held in thirty-eight of the forty countries. The authors' account is that the cost of keeping it is not only the chance of being caught but having to see yourself as someone who took money — and the more money, the bigger that cost. This is a genuine field experiment on a large scale, harder evidence than a survey; its weak point is that the only measure is whether an email came back, which is exactly what an extended replication in China argued about. Set it beside the survey curve above and something otherwise invisible appears. In 2000 Edward Glaeser and colleagues gave the same people both a questionnaire and a laboratory trust game, and found that the survey answer to "do you think most people can be trusted" predicts not whether this person will trust others but how trustworthy this person is. Put together, the conclusion is that trust looks more like a person's estimate of the environment they are in — will the other side face any sanction, does anyone here deal with trouble — than like a property of them in the way height is. Move the same person to another setting and the estimate should change; it does.</p>
+</div>
+<div class="bigcat">
+<h3>🎒 场景 · BigCat</h3>
+<ul>
+<li><b>① 投资与仓位</b>：某个决定之前，三个不同的人都跟你说了同一件事，于是你更确信了。跑的是「他把一袋钻石交给你」那节里抱团型的机制：抱团型的定义就是彼此重叠，信息在里面来回反射；三个互相认识的人说同一件事，很可能是一个来源被数了三遍。可改的动作：把「有几个人说」换成「有几条互不相识的来源」，重合的算一条。</li>
+<li><b>② 健康与精力</b>：搬到新城市、或换成远程工作之后那几个月，晚上没人约，你刷手机到很晚，第二天状态差。跑的是「打保龄的人多了一成」那节的机制：那层东西不在你身上，搬家时不跟着走，而它只从重复相遇里长，不从认识多少人里长。可改的动作：停掉「多认识些人」这个目标，换成锁定一个固定时段固定地点的重复出现，哪怕头一个月一句话都没搭上。</li>
+</ul>
+</div>
+<div class="crossx">
+<h3>🌀 越界 · 跨学科的联想</h3>
+<ul>
+<li><b>神经科学与意识 · 往鼻子里喷一剂激素，据说就能让人愿意把钱交给陌生人——这个结果后来基本没站住</b>：2005 年一项研究报告，催产素（oxytocin）鼻喷剂让受试者在实验室的「信任博弈」里交出更多钱，媒体讲了十几年。2015 年奈夫、卡默勒与麦卡洛梳理了一批重复尝试，发现最干净的那条结论重复得很差；2020 年一次有原作者参与的预注册重复实验，同样条件下没看到这个效应。跑的是「他把一袋钻石交给你」那节的机制：<em>信任不是一种美德也不是一种体质，是对「对方会不会被制裁」的一个估计</em>。由此能推出一个原本看不出的结论：<b>如果它是对环境的估计，同一个人的「信任度」就该随场合大幅漂移，而不该像身高那样稳定——这正解释了为什么测量一直对不齐。所以这类研究的正确读法不是「找到了信任的开关」，而是「实验室那个任务和那道问卷量的根本不是同一件事」。</b><b>但这里不成立</b>：实验室的信任博弈把闭合整个拿掉了——一次性、匿名、没有下一次，而本期机制说信任之所以合理，靠的正是重复相遇和名声。<b>所以那批零结果也不能反过来说成「生理状态影响不了信任」——那个任务根本就不在本期机制成立的条件里。</b></li>
+<li><b>复杂性科学 · 让图上每个点多连几条线，合作反而会被抹掉</b>：2006 年大内、豪尔特、利伯曼与诺瓦克给了条极简的规则：在一张网络上，一个「自己付代价、让每个邻居得好处」的合作者能不能不被淘汰，取决于好处与代价的比值是否大于平均邻居数。邻居数越大门槛越高；谁都认识谁的极限情形下，合作者直接被扫掉。跑的是「他把一袋钻石交给你」那节闭合的量化版：<em>邻居少而彼此重叠，你的行为才有人看见、才有人承受、才回得到你身上</em>。由此推出一个原本看不出的结论：<b>「连接越多社会资本越多」这个方向是错的。合作能力是两个量的比较，所以「增加连接」本身不定向——互助收益远大于付出的地方多连有用，勉强及格的地方多连会把合作直接压到线下。「多办活动多认识人」和「让固定的一小群人反复见」不是同一件事的两种力度，是两个方向。</b><b>但这里不成立</b>：模拟里的点不能挑邻居，图是外面给定且固定的；人会自己重排关系，还能在一张很稀的大网里嵌一个很密的小核（同事几百个，真能互相担事的三个），这个嵌套让「平均邻居数」不再是一个数。<b>所以借得过来的是「闭合有代价、代价随规模涨」，借不过来的是那条不等式本身。</b></li>
+</ul>
+</div>
+<div class="thinking">
+<h3>深入思考</h3>
+<details><summary>如果它不在任何人身上，还配叫「资本」吗？</summary>
+<div>钱和技能能盘点、能转让、能带走，社会资本三样都不行——人一走归零，人一散消失。有人因此说这个比喻害人：它让人以为可以像存钱那样积累它。留着它的理由是它至少提醒你，那层东西是能干活的，不是氛围。</div>
+</details>
+<details><summary>桥接型关系能刻意造出来吗？</summary>
+<div>难处在于它的价值来自对方跟你没有共同的熟人，可人之所以愿意跟你担事，通常正因为有共同的熟人。一条真跨团的线往往得靠一件双方都得硬着头皮做完的事立住，不是靠多认识。</div>
+</details>
+<details><summary>族群多样性会不会削弱信任？这场争论现在是什么状况</summary>
+<div>普特南 2007 年报告过一项美国社区的截面分析：族群越混杂的社区测出的信任更低，连对自己群体的也低；他同时强调这是短期图景、长期他判断是正面的。再分析分几路：2015 年阿巴斯卡尔与巴尔达萨里认为美国那个关联很大程度上来自居住分选；2014 年范德梅尔与托尔斯马的综述发现它在欧洲相当不一致；2020 年汇总八十七项研究的元分析报告负相关整体显著但小，且高度依赖尺度——量「对邻居的信任」、范围越小越明显，换成普遍信任基本就没了。全是相关性数据，人能选住在哪，因果读不出来。</div>
+</details>
+</div>
+<div class="refs">
+<h3>延伸阅读</h3>
+<ul>
+<li><a href="https://www.historyofsocialwork.org/1995_Putnam/1995,%20Putnam,%20bowling%20alone.pdf" rel="noopener" target="_blank">Putnam《独自打保龄》(1995)</a> · <a href="https://press.princeton.edu/books/paperback/9780691037387/making-democracy-work" rel="noopener" target="_blank">Putnam《让民主运转起来》(1993)</a>（英文）</li>
+<li><a href="https://faculty.washington.edu/matsueda/courses/587/readings/Coleman%201988.pdf" rel="noopener" target="_blank">Coleman《社会资本与人力资本的形成》(1988)</a> · <a href="https://www.journals.uchicago.edu/doi/10.1086/467902" rel="noopener" target="_blank">Bernstein《退出法律体系：钻石业》(1992)</a>（英文）</li>
+<li><a href="https://archive.org/details/allourkin0000unse" rel="noopener" target="_blank">Stack《我们所有的亲人》(1974)</a> · <a href="https://en.wikipedia.org/wiki/Carol_Stack" rel="noopener" target="_blank">Carol Stack</a>（英文）</li>
+<li><a href="https://www.annualreviews.org/content/journals/10.1146/annurev.soc.24.1.1" rel="noopener" target="_blank">Portes《社会资本：起源与应用》(1998)</a>（英文）</li>
+<li><a href="https://www.science.org/doi/10.1126/science.aau8712" rel="noopener" target="_blank">Cohn 等《全球的公民诚实》(2019)</a> · <a href="https://www.pnas.org/doi/10.1073/pnas.2213824120" rel="noopener" target="_blank">在中国的扩展重复与争论 (2023)</a>（英文）</li>
+<li><a href="https://academic.oup.com/qje/article-abstract/115/3/811/1828161" rel="noopener" target="_blank">Glaeser 等《测量信任》(2000)</a> · <a href="https://www.pewresearch.org/2025/05/08/americans-trust-in-one-another/" rel="noopener" target="_blank">皮尤：美国人之间的信任在降</a>（英文）</li>
+<li><a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-9477.2007.00176.x" rel="noopener" target="_blank">Putnam《合众为一》(2007)</a> · <a href="https://doi.org/10.1086/683144" rel="noopener" target="_blank">Abascal &amp; Baldassarri (2015)</a>（英文）</li>
+<li><a href="https://www.annualreviews.org/content/journals/10.1146/annurev-soc-071913-043309" rel="noopener" target="_blank">van der Meer &amp; Tolsma (2014)</a> · <a href="https://www.annualreviews.org/content/journals/10.1146/annurev-polisci-052918-020708" rel="noopener" target="_blank">Dinesen 等：元分析综述 (2020)</a>（英文）</li>
+<li><a href="https://www.nature.com/articles/nature03701" rel="noopener" target="_blank">Kosfeld 等《催产素提高人的信任》(2005)</a> · <a href="https://www.nature.com/articles/s41562-020-0878-x" rel="noopener" target="_blank">Declerck 等：预注册重复实验 (2020)</a>（英文）</li>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/16724065/" rel="noopener" target="_blank">Ohtsuki 等《网络上合作演化的一条简单规则》(2006)</a>（英文）</li>
+</ul>
+</div>
+<footer>BigCat Learning Hub · 社会学与人类学</footer>
+</div>
+<script src="https://hub.cissychen.com/comments.js" defer></script>
+<script src="https://hub.cissychen.com/search.js" defer></script>
+<script src="https://hub.cissychen.com/index-button.js" defer></script>
+<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
+</body></html>

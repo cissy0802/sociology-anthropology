@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sociology &amp; Anthropology Day 32: Trust and Social Capital</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:linear-gradient(170deg,#1a140f,#171210 42%,#120e0b);color:#e6dacc;line-height:1.9;min-height:100vh}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 60px}
+header{padding:52px 0 30px;border-bottom:1px solid #33261d}
+header .kicker{font-size:0.75rem;color:#8fb0cc;letter-spacing:2.5px;font-family:"SF Mono",Menlo,monospace}
+header h1{font-size:2.1rem;font-weight:800;background:linear-gradient(100deg,#e08155,#eda07c 58%,#8fb0cc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:0.5px;margin-top:12px;line-height:1.28}
+header h2{font-size:1rem;color:#a08b78;margin-top:10px;font-weight:400}
+header .meta{margin-top:14px;font-size:0.85rem;color:#a08b78}
+header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
+.intro{margin-top:30px;font-size:1.02rem;color:#d8c9b8}
+.intro p{margin-bottom:13px}
+.section{margin:46px 0;background:rgba(255,255,255,0.028);padding:28px 26px;border-radius:14px;border:1px solid rgba(255,255,255,0.06)}
+.section .num{display:inline-block;font-size:0.75rem;color:#e08155;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;margin-bottom:8px}
+.section h2{font-size:1.32rem;color:#f4ece2;margin-bottom:16px;font-weight:700;line-height:1.35}
+.section p{margin-bottom:14px;font-size:0.98rem}
+.section strong{color:#fff}
+.section em{color:#e08155;font-style:normal}
+.section ul{list-style:none;margin:14px 0}
+.section li{margin-bottom:10px;padding-left:20px;position:relative}
+.section li::before{content:"◈";position:absolute;left:0;top:0.42em;color:#e08155;font-size:0.7rem}
+.fig{margin:24px 0 10px;text-align:center}
+.fig svg{max-width:100%;height:auto}
+.fig .cap{font-size:0.82rem;color:#a08b78;margin-top:8px;text-align:left;line-height:1.65}
+.en-brief{margin-top:18px;padding:12px 16px;border-left:2px solid rgba(160,139,120,0.5);background:rgba(255,255,255,0.02);border-radius:0 8px 8px 0;font-size:0.85rem;color:#b0a08e;line-height:1.62}
+.en-brief b{color:#bda994;font-family:"SF Mono",Menlo,monospace;font-size:0.68rem;letter-spacing:1.5px;margin-right:9px;font-weight:700}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(143,176,204,0.12),rgba(224,129,85,0.05));border:1px solid rgba(143,176,204,0.34);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#8fb0cc;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#dfe3e6;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e08155;font-size:0.72rem}
+.crossx b{color:#aecbe2;font-weight:600}
+.thinking{background:linear-gradient(135deg,rgba(224,129,85,0.06),rgba(143,176,204,0.05));border:1px solid rgba(224,129,85,0.24);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e08155;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(18,14,11,0.5);border:1px solid rgba(224,129,85,0.2);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(224,129,85,0.06);border-color:rgba(224,129,85,0.42)}
+.thinking summary{cursor:pointer;color:#eda07c;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#8fb0cc}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(143,176,204,0.22);color:#ddd0c1;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#8fb0cc;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a08b78}
+.refs a{color:#e08155;text-decoration:none;border-bottom:1px dotted rgba(224,129,85,0.42)}
+.refs a:hover{color:#eda07c;border-bottom-color:#eda07c}
+.bigcat{margin:40px 0 0;background:linear-gradient(135deg,rgba(224,129,85,0.11),rgba(143,176,204,0.04));border:1px solid rgba(224,129,85,0.32);border-radius:14px;padding:22px 26px}
+.bigcat h3{color:#eda07c;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.bigcat ul{list-style:none;margin:0}
+.bigcat li{color:#ece0d2;font-size:0.93rem;line-height:1.8;margin-bottom:14px}
+.bigcat li:last-child{margin-bottom:0}
+.bigcat b{color:#eda07c;font-weight:600}
+footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
+@media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+</style></head><body>
+<div class="container">
+<header>
+<div class="kicker">DAY 32 · TRUST AND SOCIAL CAPITAL</div>
+<h1>Trust and Social Capital</h1>
+<h2>The counter-intuitive line of the day: trust does not grow inside people. It grows in the shape of their relationships — which is why it stays behind when you move.</h2>
+<div class="meta">2026-09-25 · BigCat</div>
+<div class="pitch">Between 1980 and 1993 the number of Americans who bowled rose by about a tenth, and league bowling fell by about four tenths. Someone pulled that unremarkable gap out and made it a book title, and the field has been arguing about it for thirty years.</div>
+</header>
+<div class="intro">
+<p>You move to a new city, and by the third month the hardest thing turns out not to be finding a flat. It is that a pipe bursts at midnight and you have no idea who to call.</p>
+<p>Where you used to live you would have phoned the man at the hardware shop downstairs, and he would have said his nephew does that and would be over in twenty minutes. Money, qualifications, skills — you brought all of it with you. What you can actually get done has dropped noticeably.</p>
+<p>The missing thing has a name. The odd part is that it is not in you and not in anyone else either. It is <em>between</em> you and other people — so a suitcase cannot carry it.</p>
+</div>
+<div class="section">
+<span class="num">// 01</span>
+<h2>The number of bowlers rose a tenth; bowling leagues fell four tenths</h2>
+<p>In 1995 Robert Putnam published an essay called "Bowling Alone". The figure in it has been quoted ever since: between 1980 and 1993 the total number of bowlers in America rose by about ten per cent, while the number bowling in leagues fell by about forty. People were still bowling. Bowling together had come apart.</p>
+<p>What is the difference? A league means you see the same people every Wednesday evening. Someone holds a lane for you and next time you bring him a drink; when a child needs to change school, someone at the table knows a teacher there; if you keep missing, someone says so to your face. Bowl on your own, make the same movements, and none of that exists. Putnam called this layer social capital: a network of relationships plus the norms of reciprocity and the trust that grow out of it. It is called capital because you can get things done with it — but unlike money or skill, it is not yours alone. You hold it jointly with other people.</p>
+<p>His earlier evidence came from Italy. The 1970 reform created a new tier of regional government, and the fifteen new regions had almost identical charters, powers and budget rules. Twenty years later he and his colleagues measured how well those governments worked: day-care places built, budgets passed on time, how long a citizen's letter of enquiry took to get an answer. The spread was glaring — and it lined up with things about each place from a century earlier: how many choral societies, how many mutual aid societies, how many newspaper subscriptions.</p>
+<p>Be clear about the evidence: this is cross-regional correlation plus historical material, not causal identification. The direction is unreadable — something else (early land tenure, literacy) may have produced both the choral societies and the competent government. Slightly harder is a second line: in the General Social Survey, the share of Americans answering that most people can be trusted was about forty-seven per cent in 1972 and about twenty-five per cent in 2022. That the curve is falling is solid. What exactly it measures is, as you will see below, still open.</p>
+</div>
+<div class="section">
+<span class="num">// 02</span>
+<h2>He hands you a bag of diamonds and there is not even a receipt</h2>
+<p>In 1988 James Coleman described a practice in the New York wholesale diamond trade: one merchant hands a bag of stones to another to take away and examine at leisure, with no contract, no insurance and no deposit. Cheating once would pay very well — swap in a few poorer stones and it is hard to trace. And yet it almost never happens.</p>
+<p>Coleman's explanation does not rest on character. People in this trade lived in the same few streets, attended the same congregation, sent their children to the same school, and were often related by marriage. He called this closure: your contacts also know each other. Once closure holds, two things follow. What you did is round the whole network by the end of the day, and being pushed out of the circle means your entire livelihood is gone. Trust here is not a virtue. It is a bet that adds up.</p>
+<p>One detail added later is worth keeping. In 1992 the legal scholar Lisa Bernstein documented the trade's own rules and found it also ran a private arbitration system with written provisions: disputes stayed out of court and were judged inside the trade association. So the opposition between "running on trust" and "running on institutions" may itself be false — there was an institution standing next to the closure all along, it just was not called a court.</p>
+<p>Putnam later drew a distinction that is the most useful knife in this subject. Bonding ties pull inward: people from your home town, relatives, fellow congregants, heavily overlapping and emotionally thick. Bridging ties reach outward: a former colleague in another industry, someone from a hobby group you have met twice. Bonding gets you through the day; bridging gets you onto another track — which is the same thing the piece on social networks was saying about why weak ties bring new jobs. What matters is that these are two things, not more and less of one thing. A person can be thick in bonding and have almost no bridging. So asking whether a community is high or low in social capital has, the moment the answer is a single number, already erased the information that matters most.</p>
+</div>
+<div class="fig">
+<svg viewbox="0 0 720 206" xmlns="http://www.w3.org/2000/svg">
+<g font-family="Georgia, serif" text-anchor="middle">
+<g opacity="0.7" stroke="#8fb0cc" stroke-width="1.1">
+<line x1="170" x2="219" y1="33" y2="69"></line><line x1="170" x2="201" y1="33" y2="127"></line>
+<line x1="170" x2="139" y1="33" y2="127"></line><line x1="170" x2="121" y1="33" y2="69"></line>
+<line x1="219" x2="201" y1="69" y2="127"></line><line x1="219" x2="139" y1="69" y2="127"></line>
+<line x1="219" x2="121" y1="69" y2="69"></line><line x1="201" x2="139" y1="127" y2="127"></line>
+<line x1="201" x2="121" y1="127" y2="69"></line><line x1="139" x2="121" y1="127" y2="69"></line>
+</g>
+<g fill="#8fb0cc">
+<circle cx="170" cy="33" r="7"></circle><circle cx="219" cy="69" r="7"></circle><circle cx="201" cy="127" r="7"></circle>
+<circle cx="139" cy="127" r="7"></circle><circle cx="121" cy="69" r="7"></circle>
+</g>
+<g opacity="0.7" stroke="#8fb0cc" stroke-width="1.1">
+<line x1="455" x2="488" y1="47" y2="110"></line><line x1="455" x2="422" y1="47" y2="110"></line><line x1="422" x2="488" y1="110" y2="110"></line>
+<line x1="625" x2="658" y1="47" y2="110"></line><line x1="625" x2="592" y1="47" y2="110"></line><line x1="592" x2="658" y1="110" y2="110"></line>
+</g>
+<line stroke="#e08155" stroke-width="2.4" x1="488" x2="592" y1="110" y2="110"></line>
+<g fill="#8fb0cc">
+<circle cx="455" cy="47" r="7"></circle><circle cx="422" cy="110" r="7"></circle><circle cx="625" cy="47" r="7"></circle><circle cx="658" cy="110" r="7"></circle>
+</g>
+<g fill="#e08155">
+<circle cx="488" cy="110" r="7"></circle><circle cx="592" cy="110" r="7"></circle>
+</g>
+<text fill="#dfe3e6" font-size="14.5" x="170" y="168">Bonding · your people also know each other</text>
+<text fill="#a08b78" font-size="12" x="170" y="190">what you did is round by evening; leaving is hard</text>
+<text fill="#dfe3e6" font-size="14.5" x="540" y="168">Bridging · one line across two clusters</text>
+<text fill="#a08b78" font-size="12" x="540" y="190">news the cluster lacks can only come along it</text>
+</g>
+</svg>
+<div class="cap">Much the same number of links on each side, completely different work — adding them into a single "amount of social capital" erases exactly the information that matters.</div>
+</div>
+<div class="section">
+<span class="num">// 03</span>
+<h2>The same wall is a support to the people inside and a wall to everyone outside</h2>
+<p>In the late 1960s the anthropologist Carol Stack spent several years in a poor Black neighbourhood in the American Midwest that she called The Flats, and wrote <i>All Our Kin</i> (1974). What she recorded was an extremely dense network of mutual aid: money, food, clothes and childcare circulating constantly among kin and among people taken on as kin. Income could stop at any time, and this network was the only insurance there was.</p>
+<p>One couple in the book came into an unexpected inheritance and meant to buy a house. The money never became a house. Over about six weeks, legitimate claims from various relatives — someone behind on rent, someone's child needing a doctor — drew it down piece by piece, while at the other end the welfare office found they had money and cut their payments.</p>
+<p>Stack's own framing matters: this is not a failure to manage money. Where income is deeply unstable, lending out your surplus is a skill — what you get back is that someone carries you through the week you have nothing. The price is that a surplus can never accumulate, and being able to accumulate one is exactly the precondition for getting out. This is a single ethnographic case: strong in detail, weak as a basis for generalization.</p>
+<p>In 1998 Alejandro Portes sorted costs of this kind into four: the exclusion of outsiders; excessive claims on members; restrictions on individual freedom (a circle that knows everything about you can also govern everything about you); the levelling down of anyone who rises. The point is not abuse — these four and trust are two faces of one mechanism. Closure can generate trust because it can sanction, and a structure that can sanction betrayal can necessarily also sanction leaving. So in this field social capital is a descriptive concept carrying no valuation of its own; treat it as an index where more is better and you walk into the last two.</p>
+</div>
+<div class="section">
+<span class="num">// 04</span>
+<h2>One person's level of trust tracks the environment, not the person</h2>
+<p>In 2019 a group of researchers did something laborious and elegant. Across forty countries and 355 cities they handed in more than seventeen thousand wallets at the counters of banks, theatres, police stations and hotels, saying "found this in the street, it isn't mine, could you deal with it", and walked away. Each wallet held an email address; some contained money and some did not.</p>
+<p>Asked beforehand, both economists and members of the public predicted that wallets with money would be returned less often. It came out the other way: about forty per cent were reported when empty, about fifty-one per cent when they held money, and the direction held in thirty-eight of the forty countries. The authors' account is that the cost of keeping it is not only the chance of being caught but having to see yourself as someone who took money. This is a genuine field experiment, harder evidence than a survey; its weak point is that the only measure is whether an email came back, which is exactly what an extended replication in China argued about.</p>
+<p>Set it beside the survey curve above and something otherwise invisible appears. In 2000 Edward Glaeser and colleagues gave the same people both a questionnaire and a laboratory trust game, and found that the survey answer to "do you think most people can be trusted" predicts not whether that person will trust others but how trustworthy that person is. Put together, the conclusion is that trust looks more like a person's estimate of the environment they are in — will the other side face any sanction, does anyone here deal with trouble — than like a property of them in the way height is. Move the same person to another setting and the estimate should shift. It does.</p>
+</div>
+<div class="bigcat">
+<h3>🎒 Scenes · BigCat</h3>
+<ul>
+<li><b>① Investing and position sizing</b>: before some decision you notice that three different people have told you the same thing, and you become more confident. What is running is the bonding mechanism from "He hands you a bag of diamonds": bonding ties are by definition overlapping, so information reflects back and forth inside them, and three people who know each other saying the same thing is quite possibly one source counted three times. The changeable move: replace "how many people said it" with "how many mutually unacquainted sources said it", and count overlapping ones once.</li>
+<li><b>② Health and energy</b>: in the months after moving to a new city, or switching to remote work, nobody asks you out in the evening, you scroll until late and the next day is poor. What is running is the mechanism from "The number of bowlers rose a tenth": that layer is not in you and does not travel with your luggage, and it grows only out of repeated encounters, not out of how many people you know. The changeable move: drop the goal of "meeting more people" and fix instead on one repeated appearance at a set time and place, even if nobody speaks to you for the first month.</li>
+</ul>
+</div>
+<div class="crossx">
+<h3>🌀 Crossing over · Connections beyond the field</h3>
+<ul>
+<li><b>Neuroscience and consciousness · A spray up the nose was said to make people hand money to strangers — and the result has largely not held up</b>: a 2005 study reported that intranasal oxytocin led participants to hand over more money in a laboratory trust game, and the media told that story for over a decade. In 2015 Nave, Camerer and McCullough went through a set of replication attempts and found the cleanest version of the claim replicated poorly; in 2020 a pre-registered replication involving some of the original authors found no such effect under the same conditions. What is running is the mechanism from "He hands you a bag of diamonds": <em>trust is neither a virtue nor a constitution, it is an estimate of whether the other side would face a sanction</em>. From which a conclusion follows that was not visible before: <b>if it is an estimate of the environment, then one person's "level of trust" should drift heavily with the setting rather than being stable like height — which is precisely why the measures have never lined up. So the right reading of this line of work is not "the switch for trust has been found" but "that laboratory task and that survey item are not measuring the same thing at all".</b> <b>But it does not hold here</b>: the laboratory trust game strips closure out entirely — one shot, anonymous, no next time — while the mechanism of this piece says trust is reasonable precisely because encounters repeat and reputations exist. <b>So the null results cannot be turned round into "physiological states cannot affect trust" either: that task simply is not within the conditions under which this piece's mechanism applies.</b></li>
+<li><b>Complexity science · Give every point on a graph a few more links and cooperation is wiped out instead</b>: in 2006 Ohtsuki, Hauert, Lieberman and Nowak gave a strikingly simple rule. On a network, whether a cooperator — one who pays a cost so that each neighbour gains a benefit — avoids being eliminated depends on whether the benefit-to-cost ratio exceeds the average number of neighbours. The more neighbours, the higher the bar; in the limiting case where everyone knows everyone, cooperators are simply swept away. What is running is a quantified version of the closure in "He hands you a bag of diamonds": <em>only when neighbours are few and overlapping is your behaviour seen by someone, borne by someone, and returned to you</em>. From which a conclusion follows that was not visible before: <b>"more connections means more social capital" points the wrong way. Cooperative capacity is a comparison between two quantities, so "add connections" has no direction on its own — adding links helps where the return on mutual aid far exceeds what it costs, and pushes cooperation below the line where that ratio barely passes. "Run more events, meet more people" and "have the same small group meet repeatedly" are not two intensities of one thing; they are two directions.</b> <b>But it does not hold here</b>: points in the simulation cannot choose their neighbours, and the graph is handed down from outside and fixed, whereas people rearrange their ties and can nest a very dense core inside a very sparse wide network — hundreds of colleagues, three who will actually carry something for you — and that nesting means "average number of neighbours" is no longer one number. <b>So what transfers is "closure has a cost, and the cost rises with scale"; what does not transfer is the inequality itself.</b></li>
+</ul>
+</div>
+<div class="thinking">
+<h3>Thinking further</h3>
+<details><summary>If it is not inside anyone, does it deserve the name "capital"?</summary>
+<div>Money and skills can be inventoried, transferred and carried away; social capital can do none of the three — it goes to zero when a person leaves and vanishes when a group disperses. Some argue the metaphor does damage, because it makes people think they can accumulate it the way they save money. The reason for keeping the word is that it at least reminds you the layer does work, and is not an atmosphere.</div>
+</details>
+<details><summary>Can bridging ties be built on purpose?</summary>
+<div>The difficulty is that their value comes from the other person having no acquaintances in common with you, while the usual reason someone will carry something for you is that you do have acquaintances in common. A line that really crosses clusters usually has to be set by some task both sides had to grit their teeth and finish, not by meeting more people.</div>
+</details>
+<details><summary>Does ethnic diversity weaken trust? Where the argument stands</summary>
+<div>In 2007 Putnam reported a cross-sectional analysis of American communities: in more ethnically mixed neighbourhoods measured trust was lower, including trust toward one's own group. He stressed at the same time that this was a short-run picture and that he judged the long run positive. The reanalyses run several ways. In 2015 Abascal and Baldassarri argued the American association is largely an artefact of residential sorting; in 2014 van der Meer and Tolsma's review found it quite inconsistent in Europe; in 2020 a meta-analysis pooling eighty-seven studies reported a negative relationship significant overall but small and highly scale-dependent — clearest for trust in neighbours over very small units, and largely gone for generalized trust. All of it is correlational, people choose where to live, and causation cannot be read off it.</div>
+</details>
+</div>
+<div class="refs">
+<h3>Further reading</h3>
+<ul>
+<li><a href="https://www.historyofsocialwork.org/1995_Putnam/1995,%20Putnam,%20bowling%20alone.pdf" rel="noopener" target="_blank">Putnam, "Bowling Alone" (1995)</a> · <a href="https://press.princeton.edu/books/paperback/9780691037387/making-democracy-work" rel="noopener" target="_blank">Putnam, <i>Making Democracy Work</i> (1993)</a></li>
+<li><a href="https://faculty.washington.edu/matsueda/courses/587/readings/Coleman%201988.pdf" rel="noopener" target="_blank">Coleman, "Social Capital in the Creation of Human Capital" (1988)</a> · <a href="https://www.journals.uchicago.edu/doi/10.1086/467902" rel="noopener" target="_blank">Bernstein, "Opting Out of the Legal System" (1992)</a></li>
+<li><a href="https://archive.org/details/allourkin0000unse" rel="noopener" target="_blank">Stack, <i>All Our Kin</i> (1974)</a> · <a href="https://en.wikipedia.org/wiki/Carol_Stack" rel="noopener" target="_blank">Carol Stack</a></li>
+<li><a href="https://www.annualreviews.org/content/journals/10.1146/annurev.soc.24.1.1" rel="noopener" target="_blank">Portes, "Social Capital: Its Origins and Applications" (1998)</a></li>
+<li><a href="https://www.science.org/doi/10.1126/science.aau8712" rel="noopener" target="_blank">Cohn et al., "Civic Honesty Around the Globe" (2019)</a> · <a href="https://www.pnas.org/doi/10.1073/pnas.2213824120" rel="noopener" target="_blank">Extended field replication in China (2023)</a></li>
+<li><a href="https://academic.oup.com/qje/article-abstract/115/3/811/1828161" rel="noopener" target="_blank">Glaeser et al., "Measuring Trust" (2000)</a> · <a href="https://www.pewresearch.org/2025/05/08/americans-trust-in-one-another/" rel="noopener" target="_blank">Pew: Americans' declining trust in each other</a></li>
+<li><a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-9477.2007.00176.x" rel="noopener" target="_blank">Putnam, "E Pluribus Unum" (2007)</a> · <a href="https://doi.org/10.1086/683144" rel="noopener" target="_blank">Abascal &amp; Baldassarri (2015)</a></li>
+<li><a href="https://www.annualreviews.org/content/journals/10.1146/annurev-soc-071913-043309" rel="noopener" target="_blank">van der Meer &amp; Tolsma (2014)</a> · <a href="https://www.annualreviews.org/content/journals/10.1146/annurev-polisci-052918-020708" rel="noopener" target="_blank">Dinesen et al., meta-analytical review (2020)</a></li>
+<li><a href="https://www.nature.com/articles/nature03701" rel="noopener" target="_blank">Kosfeld et al., "Oxytocin Increases Trust in Humans" (2005)</a> · <a href="https://www.nature.com/articles/s41562-020-0878-x" rel="noopener" target="_blank">Declerck et al., registered replication (2020)</a></li>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/16724065/" rel="noopener" target="_blank">Ohtsuki et al., "A Simple Rule for the Evolution of Cooperation on Graphs" (2006)</a></li>
+</ul>
+</div>
+<footer>BigCat Learning Hub · Sociology &amp; Anthropology</footer>
+</div>
+<script src="https://hub.cissychen.com/comments.js" defer></script>
+<script src="https://hub.cissychen.com/search.js" defer></script>
+<script src="https://hub.cissychen.com/index-button.js" defer></script>
+<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
+</body></html>
