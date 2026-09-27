@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>社会学与人类学 Day 34：科学的社会学</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:linear-gradient(170deg,#1a140f,#171210 42%,#120e0b);color:#e6dacc;line-height:1.9;min-height:100vh}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 60px}
+header{padding:52px 0 30px;border-bottom:1px solid #33261d}
+header .kicker{font-size:0.75rem;color:#8fb0cc;letter-spacing:2.5px;font-family:"SF Mono",Menlo,monospace}
+header h1{font-size:2.1rem;font-weight:800;background:linear-gradient(100deg,#e08155,#eda07c 58%,#8fb0cc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:0.5px;margin-top:12px;line-height:1.28}
+header h2{font-size:1rem;color:#a08b78;margin-top:10px;font-weight:400}
+header .meta{margin-top:14px;font-size:0.85rem;color:#a08b78}
+header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
+.intro{margin-top:30px;font-size:1.02rem;color:#d8c9b8}
+.intro p{margin-bottom:13px}
+.section{margin:46px 0;background:rgba(255,255,255,0.028);padding:28px 26px;border-radius:14px;border:1px solid rgba(255,255,255,0.06)}
+.section .num{display:inline-block;font-size:0.75rem;color:#e08155;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;margin-bottom:8px}
+.section h2{font-size:1.32rem;color:#f4ece2;margin-bottom:16px;font-weight:700;line-height:1.35}
+.section p{margin-bottom:14px;font-size:0.98rem}
+.section strong{color:#fff}
+.section em{color:#e08155;font-style:normal}
+.section ul{list-style:none;margin:14px 0}
+.section li{margin-bottom:10px;padding-left:20px;position:relative}
+.section li::before{content:"◈";position:absolute;left:0;top:0.42em;color:#e08155;font-size:0.7rem}
+.fig{margin:24px 0 10px;text-align:center}
+.fig svg{max-width:100%;height:auto}
+.fig .cap{font-size:0.82rem;color:#a08b78;margin-top:8px;text-align:left;line-height:1.65}
+.en-brief{margin-top:18px;padding:12px 16px;border-left:2px solid rgba(160,139,120,0.5);background:rgba(255,255,255,0.02);border-radius:0 8px 8px 0;font-size:0.85rem;color:#b0a08e;line-height:1.62}
+.en-brief b{color:#bda994;font-family:"SF Mono",Menlo,monospace;font-size:0.68rem;letter-spacing:1.5px;margin-right:9px;font-weight:700}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(143,176,204,0.12),rgba(224,129,85,0.05));border:1px solid rgba(143,176,204,0.34);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#8fb0cc;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#dfe3e6;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e08155;font-size:0.72rem}
+.crossx b{color:#aecbe2;font-weight:600}
+.thinking{background:linear-gradient(135deg,rgba(224,129,85,0.06),rgba(143,176,204,0.05));border:1px solid rgba(224,129,85,0.24);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e08155;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(18,14,11,0.5);border:1px solid rgba(224,129,85,0.2);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(224,129,85,0.06);border-color:rgba(224,129,85,0.42)}
+.thinking summary{cursor:pointer;color:#eda07c;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#8fb0cc}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(143,176,204,0.22);color:#ddd0c1;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#8fb0cc;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a08b78}
+.refs a{color:#e08155;text-decoration:none;border-bottom:1px dotted rgba(224,129,85,0.42)}
+.refs a:hover{color:#eda07c;border-bottom-color:#eda07c}
+.bigcat{margin:40px 0 0;background:linear-gradient(135deg,rgba(224,129,85,0.11),rgba(143,176,204,0.04));border:1px solid rgba(224,129,85,0.32);border-radius:14px;padding:22px 26px}
+.bigcat h3{color:#eda07c;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.bigcat ul{list-style:none;margin:0}
+.bigcat li{color:#ece0d2;font-size:0.93rem;line-height:1.8;margin-bottom:14px}
+.bigcat li:last-child{margin-bottom:0}
+.bigcat b{color:#eda07c;font-weight:600}
+footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
+@media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+</style></head><body>
+<div class="container">
+<header>
+<div class="kicker">DAY 34 · 科学的社会学</div>
+<h1>科学的社会学</h1>
+<h2>这一期最反直觉的一句：科学靠得住，靠的不是科学家更诚实，是一套让不诚实划不来的制度——制度一变，同一批诚实的人产出的文献就会歪。</h2>
+<div class="meta">2026-09-27 · BigCat</div>
+<div class="pitch">2011 年，三位心理学家用真的被试、真的数据、每一步都合规的统计，「证明」了听一首披头士的歌能让人年轻一岁半。他们是故意的。</div>
+</header>
+<div class="intro">
+<p>上一次你看到「研究表明」这四个字，是在哪？</p>
+<p>你多半没去查原文。也不全是懒——查了也没多大用：方法那节你读不懂，读懂了也重做不了。你实际在做的是另一件事：估计这结论有多像真的，依据是谁说的、登在哪、有多少人跟着说。</p>
+<p>这就是科学在社会里实际运转的样子。于是问题变得很硬：一套几乎没人能亲自验证的知识，凭什么整体上还算可靠？常见的答案是「科学家诚实」和「有科学方法」。这一期这批研究的答案在别处——在制度那一层；而看清它在那一层，也就看清了它会在哪里坏掉。</p>
+</div>
+<div class="section">
+<span class="num">// 01</span>
+<h2>没人念过这几条规矩，但你一违反，立刻有人不高兴</h2>
+<p>1942 年，美国社会学家罗伯特·默顿（Robert K. Merton）写了一篇短文，背景很具体：当时的德国把相对论当成「犹太物理」清出课堂，推行一套「德意志物理学」——一个主张成不成立，要先看提出者是谁。他想问的是，科学要能正常运转，这个行当在制度上必须有哪些条件。</p>
+<p>他数出四条。<em>普遍主义</em>：一个主张成不成立跟提出者的国籍、种族、身份无关，只看它经不经得起检验。<em>公有主义</em>：发现必须交出去，不能私藏——署上名，但知识归大家。<em>无私利性</em>（disinterestedness）：不是说科学家没私心，是说这一行不给「我需要这个结果所以它就是这个结果」发奖。<em>有组织的怀疑</em>：任何结论都可以被公开质疑，没有免检区。</p>
+<p>要紧的不是这四条听起来多正派，是它们互相锁死的方式。默顿另有一篇讲优先权之争：科学史上那些「谁先发现的」小气争吵，不是因为科学家格外虚荣，而是因为这一行唯一的硬通货就是名字被承认。你必须把发现完整交出去才拿得到这份报酬，而交出去这个动作，同时把它交给了所有想挑错的人。<strong>个人的野心和公共的可检验性，被拴在同一根绳上。</strong></p>
+<p>规范终归是规范。1974 年米特洛夫（Ian Mitroff）发表了一项历时三年半、访谈四十二位阿波罗月岩研究者的研究，看到另外四条同时在跑：对自己假说的强烈感情投入、发表前保密、也确实看人下菜碟。他的意思不是默顿错了，是科学家被两套要求同时拉扯，而这拉扯有功能——偏爱自己的假说，人才肯在证据还不够时把一条路走到底。这是小样本访谈个案，推广要小心。</p>
+<p class="en-brief"><b>EN</b> In 1942 the American sociologist Robert K. Merton wrote a short essay with a very concrete background: Germany at that time was clearing relativity out of its classrooms as "Jewish physics" and promoting something called Deutsche Physik, under which whether a claim holds depends first on who made it. Merton's question was what conditions this line of work needs institutionally in order to function at all. He counted four. <em>Universalism</em>: whether a claim holds has nothing to do with the nationality, race or standing of whoever made it, only with whether it survives testing. <em>Communism</em>: findings must be handed over, not kept — you get your name on it, but the knowledge belongs to everyone. <em>Disinterestedness</em> — not a claim that scientists have no self-interest, but that the trade gives no prize for "this is the result because I need it to be". <em>Organized skepticism</em>: any conclusion may be challenged in public, and nothing is exempt. What matters is not how upstanding the four sound but the way they lock together. Merton has another essay on priority disputes: those rather petty quarrels through the history of science about who found it first are not evidence that scientists are unusually vain, but of the fact that the only hard currency in the trade is having your name recognized. You have to hand the finding over completely before you can collect that payment — and the act of handing it over hands it, at the same time, to everybody who would like to find a hole in it. <strong>Personal ambition and public testability are tied to the same rope.</strong> Merton also saw that the rope can skew: in 1968, drawing on interviews with Nobel laureates, he found that the same piece of work attracts more credit under a better-known name, and that the extra credit converts into resources for the next round. Norms, though, are norms, not behaviour. In 1974 Ian Mitroff published a study running three and a half years, based on interviews with forty-two of the most prominent scientists working on the Apollo moon rocks, and found a second set of four running alongside: strong emotional commitment to one's own hypothesis, secrecy before publication, and a real readiness to weigh who was speaking. His conclusion was not that Merton was wrong but that scientists are pulled by both sets at once, and that the pull has a function — only someone partial to their own hypothesis will push a line all the way while the evidence is still thin. This is a small-sample interview study, to be generalized with care.</p>
+</div>
+<div class="section">
+<span class="num">// 02</span>
+<h2>有人在实验室待了两年，看见一个事实是怎么被造出来的</h2>
+<p>1975 年到 1977 年，法国人布鲁诺·拉图尔（Bruno Latour）在加州索尔克研究所的一个神经内分泌实验室里待了将近两年。他不懂那门科学，这是故意的：他按人类学家进入陌生村落的方式记录——这些人每天到底在干什么。</p>
+<p>他看到的第一件事是，实验室大半的空间和预算是仪器，而仪器干的活儿只有一句话：把物质变成纸上的线条。他管这些仪器叫<em>铭写装置</em>（inscription devices）。一段脑组织送进去，出来的是图上的一个峰；后面所有的争论争的都是那个峰。</p>
+<p>第二件事更要紧，跟句子有关。一个说法刚出生时挂满了限定：「某某的数据提示，在这种条件下，X 可能与 Y 有关。」它往下走的路，是限定词被一层层剥掉，最后成了「X 就是 Y」，没人再问它是怎么来的。拉图尔给「事实」下的定义就落在这儿：<strong>一个事实，就是一句被剥干净、没人再去追它来路的陈述。</strong>反过来也成立——一旦有人认真质疑，限定词会被一件件装回去。</p>
+<div class="fig">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 215">
+<g font-family="Georgia, 'Noto Serif SC', serif">
+<g fill="none" stroke="#8fb0cc" stroke-width="1.1">
+<rect x="92" y="22" width="516" height="28" rx="6"></rect>
+<rect x="92" y="58" width="516" height="28" rx="6"></rect>
+<rect x="92" y="94" width="516" height="28" rx="6"></rect>
+<rect x="92" y="130" width="516" height="28" rx="6"></rect>
+<rect x="92" y="166" width="516" height="28" rx="6"></rect>
+</g>
+<g fill="#dfe3e6" font-size="13" text-anchor="middle">
+<text x="350" y="41">「某某的数据提示，X 在这种条件下可能与 Y 有关」</text>
+<text x="350" y="77">「某某（1968）表明 X 与 Y 有关」</text>
+<text x="350" y="113">「X 与 Y 有关」</text>
+<text x="350" y="149">教科书：「X 就是 Y」</text>
+<text x="350" y="185">不再被提起 —— 写进了仪器和流程</text>
+</g>
+<line x1="62" y1="26" x2="62" y2="182" stroke="#e08155" stroke-width="1.6"></line>
+<polygon points="62,192 57,180 67,180" fill="#e08155"></polygon>
+<text x="46" y="108" fill="#e08155" font-size="12.5" text-anchor="middle" transform="rotate(-90 46 108)">限定词一层层被剥掉</text>
+<line x1="638" y1="190" x2="638" y2="34" stroke="#8fb0cc" stroke-width="1.6"></line>
+<polygon points="638,24 633,36 643,36" fill="#8fb0cc"></polygon>
+<text x="656" y="108" fill="#8fb0cc" font-size="12.5" text-anchor="middle" transform="rotate(90 656 108)">起了争议就装回去</text>
+</g>
+</svg>
+<div class="cap">同一句话在不同高度上意思不一样：越往下越像「世界本来如此」，越往上越像「有人做了什么才得到它」。</div>
+</div>
+<p>那照着论文做，能不能把一个结果重新做出来？1970 年代，英国社会学家哈里·柯林斯（Harry Collins）追踪了一批想自己造某种新式激光器的实验室：成功的都跟已经造成功的实验室有过面对面来往，只照已发表论文做的一家也没成。论文里写不下的那部分叫<em>默会知识</em>（tacit knowledge）——手上的分寸、机器的脾气、哪一步要多等十秒。</p>
+<p>这就逼出一个难受的圈，柯林斯叫它<em>实验者的回归</em>（experimenter's regress）：你怎么知道仪器工作正常？看它给不给出正确结果。什么算正确结果？仪器正常时给出的那个。在正吵着的领域里（他当时研究的是引力波探测的早期争论），这个圈没法靠逻辑打破，只能靠共同体判定谁的设备算数——那是个社会过程。</p>
+<p>要防一个常见的误读：说一个事实是被造出来的，不等于说它是假的——桥照样不塌。「造出来」讲的是这过程要花人、花钱、花仪器，不是说结论可以随便换一个。</p>
+<p class="en-brief"><b>EN</b> From October 1975 to August 1977 the Frenchman Bruno Latour sat in a neuroendocrinology laboratory at the Salk Institute in California. He did not understand the science, and that was deliberate: he took notes the way an anthropologist entering an unfamiliar village would, on what these people actually did all day. The first thing he saw was that most of the lab's space and budget is instruments, and that what the instruments do can be put in one line: they turn matter into lines on paper. He called them <em>inscription devices</em>. A piece of brain tissue goes in; what comes out is a peak on a chart. Every argument that follows is about the peak, and the tissue never appears in the paper at all. The second thing matters more, and it is about sentences. A statement is born covered in qualifiers: "so-and-so's data suggest that, under these conditions, X may be related to Y." Its route onward is that the qualifiers come off one layer at a time — first "may", then the conditions, then the citation — until it reads "X is Y", enters the textbook, and nobody asks where it came from any more. That is exactly where Latour puts his definition of a fact: <strong>a fact is a statement stripped bare, whose origins nobody traces any longer.</strong> The reverse holds too: as soon as someone challenges it seriously, the qualifiers get put back on one by one. So can you reproduce a result by following the paper? In the 1970s the British sociologist Harry Collins followed a set of labs trying to build a new kind of laser. The ones that succeeded had all had face-to-face contact with a lab that already had a working one; not a single lab managed it from the published papers alone. What the papers cannot hold has a name — <em>tacit knowledge</em>: the feel in the hands, the temperament of the machine, the step where you wait ten seconds longer. Out of that comes an uncomfortable loop that Collins calls the <em>experimenter's regress</em>. How do you know your apparatus is working properly? Because it gives the right result. What counts as the right result? The one a properly working apparatus gives. In settled fields nobody notices the loop; in a field still in dispute — his case was the early controversy over detecting gravitational waves — it cannot be broken by logic, only by the community deciding whose equipment counts, and that is a social process. One misreading to guard against: describing how a fact was made is not saying it is false. Bridges still stand, vaccines still work. "Made" refers to the people, money and instruments the process costs, not to any suggestion that the conclusion could just as well have been another one. Latour himself later wrote a piece worrying that his own line of argument was being taken up to attack climate science. That quarrel is known outside as the science wars, and it is not opened here.</p>
+</div>
+<div class="section">
+<span class="num">// 03</span>
+<h2>一百个实验重做一遍，三成多的结果还在</h2>
+<p>2011 年，三位心理学家做了个真实验：二十个本科生，听披头士的《When I'm Sixty-Four》或另一首曲子，然后报出生日期和父亲的年龄。用父亲的年龄做校正后，听披头士那组「年轻了将近一岁半」，达到了通常算数的显著水平。真被试、真数据、每一步都合规——他们是故意做给人看的。</p>
+<p>他们要展示的东西叫<em>研究者自由度</em>（researcher degrees of freedom）：什么时候停止收数据、量哪几个变量、控制什么、要不要剔除异常值。这些选择只要是看过数据之后做的，本该只有百分之五的假阳性率就能被推得很高。关键在于中间没有一步是造假：每一步单看都能写进方法部分。</p>
+<p>四年后有了系统的数字。2015 年，一个两百多人的合作项目重做了一百项已发表的心理学研究：原研究 97% 拿到显著结果，重做之后 36% 还显著，效应量平均掉了一半。这个 36% 依赖于「算不算复制成功」的判据，换个判据能给出三成多到六成多的数——但无论哪个，缩水都很明显。</p>
+<p>那些被反复讲的经典研究，现状得说清楚。<em>自我损耗</em>（ego depletion，先做一件费自控力的事会让你接下来更容易放弃）：2016 年二十三个实验室、两千一百多人的预注册联合复制，测出来的效应量几乎是零。「权势姿势」的激素那部分也没在 2015 年的大样本复制里出来，原作者之一 2016 年公开表示不再相信这个效应。</p>
+<p>社会学的读法要回到「没人念过这几条规矩」那节的那根绳子。这不是一群骗子，是奖励结构在跑：承认只付给「新」和「阳性」，期刊倾向于筛掉没做出结果的，没有谁的职业生涯是靠重做别人的实验建起来的。默顿那条「有组织的怀疑」，一直没有配套的岗位和经费。<strong>一条规范如果不被奖励，它就只是一句好话。</strong></p>
+<p>修法的形状值得留意，它是流程性的：预注册（收数据前先把假设和分析写死存档）、注册报告（期刊先审设计，审过了就承诺发表，不管结果是阳是阴）。2021 年有人比了心理学常规文献里的一百五十多篇和当时全部七十一篇注册报告：常规文献 96% 报告了支持假设的结果，注册报告 44%。这不是说注册报告里一半「失败了」，是说换一种制度，阴性结果终于出得来。危机是科学用自己的工具查出来的，修的也是流程，不是号召大家更诚实。</p>
+<p class="en-brief"><b>EN</b> In 2011 three psychologists ran a real experiment: twenty undergraduates listened either to the Beatles' "When I'm Sixty-Four" or to another track, then reported their date of birth and their father's age. After statistically adjusting for the father's age, the Beatles group came out nearly a year and a half younger, at the significance level people normally accept. Real participants, real data, every step above board. They did it on purpose, as a demonstration. What they were demonstrating is called <em>researcher degrees of freedom</em>: when to stop collecting data, which variables to measure, what to control for, whether to drop outliers. As long as those choices are made after seeing the data, a false-positive rate that should be five percent can be pushed very high. The crucial part is that no single step is fraud — each one, taken alone, could be written into a methods section. Four years later there were systematic numbers. In 2015 a collaboration of more than two hundred researchers repeated a hundred published psychology studies: 97% of the originals had reported significant results; 36% of the repeats were still significant, and effect sizes were on average halved. That 36% depends on what you count as a successful replication, and other criteria applied to the same data give anywhere from the mid-thirties to the high sixties — but on every criterion the shrinkage is plain. For the classics people keep retelling, the current state should be stated. <em>Ego depletion</em> (doing something that costs self-control makes you give up sooner on the next task): a 2016 preregistered multi-lab replication across twenty-three labs and more than two thousand one hundred participants measured an effect of almost exactly zero, with a confidence interval spanning zero. <em>Power posing</em> (holding an expansive posture for two minutes changes your hormones and your appetite for risk): a large replication in 2015 did not find the hormonal part, and one of the original authors said publicly in 2016 that she no longer believed in the effect; other researchers hold that the self-reported "feeling more powerful" part survives. The sociological reading takes us back to the rope in "nobody ever read out these rules". These are not crooks — it is the reward structure running: recognition pays only for the new and the positive, journals tend to filter out the studies that found nothing, and nobody's career has ever been built on repeating someone else's experiment. Merton's organized skepticism has never had posts and budgets attached to it. <strong>A norm nobody is rewarded for is just a nice sentiment.</strong> What is interesting is the shape of the repairs: what has appeared over the past decade is procedural — preregistration (hypotheses and analyses written down and filed before the data come in) and registered reports (the journal reviews the design first and commits to publishing whatever the result turns out to be). In 2021 somebody compared more than a hundred and fifty papers from the standard psychology literature with all seventy-one registered reports that existed at the time: 96% of the standard literature reported results supporting the hypothesis, against 44% of the registered reports. That does not mean half the registered reports "failed"; it means that under a different institutional arrangement, negative results can finally get out. The shape of the whole episode is worth noticing — the crisis was found by science using its own tools, and what is being repaired is the review process, not people's honesty.</p>
+</div>
+<div class="bigcat">
+<h3>🎒 场景 · BigCat</h3>
+<ul>
+<li><b>① 工程与系统设计</b>：一个问题只在你这台机器上复现，同事照步骤跑不出来。跑的是「有人在实验室待了两年」那节的机制：结果依赖一堆写不进文档的本地设置，「复现不了」于是同时兼容两种情况——问题不存在，或者对方缺了那部分默会知识。可改的动作：停掉把「我这儿能复现」当结论，改成把环境做成别人能整份取走的东西，再让第二个人在<strong>不许问你任何口头补充</strong>的前提下跑一遍。</li>
+<li><b>② 写作与这个学习站本身</b>：写一期东西时总想挑结论最干脆的研究来举例。跑的是「一百个实验重做一遍」那节的机制：文献本身已被筛过一轮（阳性的、意外的、好讲的更容易发出来），你再按「好讲」筛一次，等于在同方向上又加了一道筛子。可改的动作：停掉「某某实验证明了 X」这个句式，改成一并写出几个人、什么设计、有没有被重复过。</li>
+</ul>
+</div>
+<div class="crossx">
+<h3>🌀 越界 · 跨学科的联想</h3>
+<ul>
+<li><b>演化生物学 · 同一个课题，越晚发表的研究效应越小</b>：2002 年有两位研究者扫了生态学与演化生物学里的四十四篇元分析，把每篇内部的研究按发表年份排开，发现效应量随年份系统性地变小，控制取样努力后仍然在。跑的是「一百个实验重做一遍」那节的机制：变的不是世界，是筛子——早年样本小、波动大，只有碰巧偏大的那些过得了显著性的门槛并发得出去；后来样本变大，能过门槛的效应量下限跟着降，平均值一路往真值滑。由此推出一个原本看不出的结论：<b>「复制危机」不是某个学科的品德问题，而是「真效应小 + 单次样本小 + 只发阳性」三条同时成立时必然长出来的形状。于是可以事先预测哪个领域会有：不看它自称多严谨，看效应小不小、单次研究贵不贵、阴性结果发不发得出去——三条齐了就会长出一片先大后小的文献，包括从不自称「软科学」的那些。</b><b>但这里不成立</b>：生态学里很多对象没法随机分配，也没法重复同一个种群：那边的「复制」是换地点换年份重做一次，失败既可能是原结果假、也可能是真实的地区差异，两者分不开。实验室里同材料同流程的直接复制没有这层歧义。<b>所以借得过来的是「筛选机制会在任何领域制造衰减」，借不过来的是「衰减就等于原结果是假的」。</b></li>
+<li><b>分布式系统与 AI · 一批模型换一套新测试集，全体掉了十几个点，排名却基本没动</b>：2019 年有一组研究者按某个著名图像数据集原来的流程重做了一套新测试集，把一大批已发表的模型放上去重跑：准确率普遍掉了十一到十四个百分点。跑的是「一百个实验重做一遍」那节的机制：一个被整个共同体反复拿来筛选的公共基准，最后衡量的不只是被测对象，还有共同体在它上面搜索过多少次——分数里含着一份选择的红利。由此推出一个原本看不出的结论：<b>排行榜上的分数该被当成关于搜索过程的统计量，而不是模型本身的属性——同一个数字在「第一次评测」和「第一万次评测」下含义不同。于是「这个领域进步得快不快」光看榜单斜率答不了，得同时看测试集换过几次。</b><b>但这里不成立</b>：这篇论文自己的检验否掉了最直觉的解释——掉分主要不是在旧测试集上过拟合造成的，而是新采的图确实更难；旧集上更强的模型在新集上仍然更强，顺序基本保住。<b>所以借得过来的是「公共基准会把共同体的搜索烙进分数里」，借不过来的是「因此排名不可信」：心理学那边失效的恰恰是顺序，这边失效的是水平，不是顺序。</b></li>
+</ul>
+</div>
+<div class="thinking">
+<h3>深入思考</h3>
+<details><summary>一个从来没有第二个人重做过的发现，算不算知识？</summary>
+<div>按「有组织的怀疑」那条，它至少是没被检验过的。而绝大多数已发表的结果确实没人重做过——不是因为可疑，是因为重做没报酬。于是「可被检验」和「已被检验」之间横着一条很宽的缝，我们说「科学证明了」时指的往往是前者。</div>
+</details>
+<details><summary>复制失败到底否定了什么？</summary>
+<div>严格说，它否定的是「在那套条件下这个效应稳定地存在」，不否定「原作者当年诚实地报告了他看到的」。但公开讨论里这两件几乎总被读成一件——这本身就是个社会学问题：承认是发给个人的，对结果的质疑于是很难不被当成对人的质疑。</div>
+</details>
+<details><summary>别的知识体系里有没有等价于「有组织的怀疑」的东西？</summary>
+<div>巫术与理性那期里，阿赞德人对神谕结果有一整套复核程序——换一只鸡、反着问一遍。那是制度化的怀疑，只是对象是「这一次的神谕准不准」，不是「神谕这套东西成不成立」。更一般的问法是：任何检验体系都有一圈自己不检验的东西，差别在这圈画在哪、由谁来挪。</div>
+</details>
+</div>
+<div class="refs">
+<h3>延伸阅读</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Mertonian_norms" target="_blank" rel="noopener">默顿规范（CUDOS）</a> · <a href="https://en.wikipedia.org/wiki/Robert_K._Merton" target="_blank" rel="noopener">Robert K. Merton</a> · <a href="https://en.wikipedia.org/wiki/Matthew_effect" target="_blank" rel="noopener">马太效应 (1968)</a>（英文）</li>
+<li><a href="http://www.andreasaltelli.eu/file/repository/mitroff_OCR.pdf" target="_blank" rel="noopener">Mitroff《阿波罗月岩科学家中的规范与反规范》(1974)</a>（英文）</li>
+<li><a href="https://en.wikipedia.org/wiki/Laboratory_Life" target="_blank" rel="noopener">Latour &amp; Woolgar《实验室生活》(1979)</a> · <a href="https://en.wikipedia.org/wiki/Bruno_Latour" target="_blank" rel="noopener">Bruno Latour</a>（英文）</li>
+<li><a href="https://en.wikipedia.org/wiki/Experimenter%27s_regress" target="_blank" rel="noopener">实验者的回归</a> · <a href="https://en.wikipedia.org/wiki/Harry_Collins" target="_blank" rel="noopener">Harry Collins</a> · <a href="https://en.wikipedia.org/wiki/Tacit_knowledge" target="_blank" rel="noopener">默会知识</a>（英文）</li>
+<li><a href="https://journals.sagepub.com/doi/10.1177/0956797611417632" target="_blank" rel="noopener">Simmons 等《假阳性心理学》(2011)</a>（英文）</li>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/26315443/" target="_blank" rel="noopener">Open Science Collaboration：估计心理学的可复制性 (2015)</a>（英文）</li>
+<li><a href="https://journals.sagepub.com/doi/10.1177/1745691616652873" target="_blank" rel="noopener">Hagger 等：自我损耗的多实验室预注册复制 (2016)</a>（英文）</li>
+<li><a href="https://journals.sagepub.com/doi/10.1177/25152459211007467" target="_blank" rel="noopener">Scheel 等：阳性结果过剩 (2021)</a> · <a href="https://en.wikipedia.org/wiki/Registered_report" target="_blank" rel="noopener">注册报告</a>（英文）</li>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/11788035/" target="_blank" rel="noopener">Jennions &amp; Møller：效应随时间衰减 (2002)</a>（英文）</li>
+<li><a href="https://proceedings.mlr.press/v97/recht19a.html" target="_blank" rel="noopener">Recht 等：图像分类模型能推广到新测试集吗 (2019)</a>（英文）</li>
+</ul>
+</div>
+<footer>BigCat Learning Hub · 社会学与人类学</footer>
+</div>
+<script src="https://hub.cissychen.com/comments.js" defer></script>
+<script src="https://hub.cissychen.com/search.js" defer></script>
+<script src="https://hub.cissychen.com/index-button.js" defer></script>
+<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
+</body></html>

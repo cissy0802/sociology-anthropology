@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sociology &amp; Anthropology Day 34: The Sociology of Science</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:linear-gradient(170deg,#1a140f,#171210 42%,#120e0b);color:#e6dacc;line-height:1.9;min-height:100vh}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 60px}
+header{padding:52px 0 30px;border-bottom:1px solid #33261d}
+header .kicker{font-size:0.75rem;color:#8fb0cc;letter-spacing:2.5px;font-family:"SF Mono",Menlo,monospace}
+header h1{font-size:2.1rem;font-weight:800;background:linear-gradient(100deg,#e08155,#eda07c 58%,#8fb0cc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:0.5px;margin-top:12px;line-height:1.28}
+header h2{font-size:1rem;color:#a08b78;margin-top:10px;font-weight:400}
+header .meta{margin-top:14px;font-size:0.85rem;color:#a08b78}
+header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
+.intro{margin-top:30px;font-size:1.02rem;color:#d8c9b8}
+.intro p{margin-bottom:13px}
+.section{margin:46px 0;background:rgba(255,255,255,0.028);padding:28px 26px;border-radius:14px;border:1px solid rgba(255,255,255,0.06)}
+.section .num{display:inline-block;font-size:0.75rem;color:#e08155;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;margin-bottom:8px}
+.section h2{font-size:1.32rem;color:#f4ece2;margin-bottom:16px;font-weight:700;line-height:1.35}
+.section p{margin-bottom:14px;font-size:0.98rem}
+.section strong{color:#fff}
+.section em{color:#e08155;font-style:normal}
+.section ul{list-style:none;margin:14px 0}
+.section li{margin-bottom:10px;padding-left:20px;position:relative}
+.section li::before{content:"◈";position:absolute;left:0;top:0.42em;color:#e08155;font-size:0.7rem}
+.fig{margin:24px 0 10px;text-align:center}
+.fig svg{max-width:100%;height:auto}
+.fig .cap{font-size:0.82rem;color:#a08b78;margin-top:8px;text-align:left;line-height:1.65}
+.en-brief{margin-top:18px;padding:12px 16px;border-left:2px solid rgba(160,139,120,0.5);background:rgba(255,255,255,0.02);border-radius:0 8px 8px 0;font-size:0.85rem;color:#b0a08e;line-height:1.62}
+.en-brief b{color:#bda994;font-family:"SF Mono",Menlo,monospace;font-size:0.68rem;letter-spacing:1.5px;margin-right:9px;font-weight:700}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(143,176,204,0.12),rgba(224,129,85,0.05));border:1px solid rgba(143,176,204,0.34);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#8fb0cc;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#dfe3e6;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e08155;font-size:0.72rem}
+.crossx b{color:#aecbe2;font-weight:600}
+.thinking{background:linear-gradient(135deg,rgba(224,129,85,0.06),rgba(143,176,204,0.05));border:1px solid rgba(224,129,85,0.24);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e08155;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(18,14,11,0.5);border:1px solid rgba(224,129,85,0.2);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(224,129,85,0.06);border-color:rgba(224,129,85,0.42)}
+.thinking summary{cursor:pointer;color:#eda07c;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#8fb0cc}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(143,176,204,0.22);color:#ddd0c1;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#8fb0cc;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a08b78}
+.refs a{color:#e08155;text-decoration:none;border-bottom:1px dotted rgba(224,129,85,0.42)}
+.refs a:hover{color:#eda07c;border-bottom-color:#eda07c}
+.bigcat{margin:40px 0 0;background:linear-gradient(135deg,rgba(224,129,85,0.11),rgba(143,176,204,0.04));border:1px solid rgba(224,129,85,0.32);border-radius:14px;padding:22px 26px}
+.bigcat h3{color:#eda07c;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.bigcat ul{list-style:none;margin:0}
+.bigcat li{color:#ece0d2;font-size:0.93rem;line-height:1.8;margin-bottom:14px}
+.bigcat li:last-child{margin-bottom:0}
+.bigcat b{color:#eda07c;font-weight:600}
+footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
+@media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+</style></head><body>
+<div class="container">
+<header>
+<div class="kicker">DAY 34 · THE SOCIOLOGY OF SCIENCE</div>
+<h1>The Sociology of Science</h1>
+<h2>The counter-intuitive line of the day: science is trustworthy not because scientists are more honest than other people, but because of an institutional arrangement that makes dishonesty unrewarding — change the arrangement and the same honest people will produce a skewed literature.</h2>
+<div class="meta">2026-09-27 · BigCat</div>
+<div class="pitch">In 2011 three psychologists used real participants, real data and statistics that were above board at every step to "prove" that listening to a Beatles song makes you a year and a half younger. They did it on purpose.</div>
+</header>
+<div class="intro">
+<p>Where was the last place you saw the words "studies show"?</p>
+<p>You probably did not go and look up the original. That is not only laziness — looking it up would not help much: you cannot read the methods section, and if you could, you still could not redo the work. What you are actually doing is something else: estimating how true-looking the conclusion is, on the basis of who said it, where it appeared and how many people repeat it.</p>
+<p>This is how science actually runs inside a society. Which makes the question a hard one: a body of knowledge that almost nobody can verify for themselves — on what grounds is it, on the whole, reliable? The usual answers are "scientists are honest" and "there is a scientific method". The research in this issue puts the answer somewhere else: at the level of institutions. And once you see that it sits there, you also see where it will break.</p>
+</div>
+<div class="section">
+<span class="num">// 01</span>
+<h2>Nobody ever read out these rules, but break one and somebody is unhappy immediately</h2>
+<p>In 1942 the American sociologist Robert K. Merton wrote a short essay with a very concrete background: Germany at that time was clearing relativity out of its classrooms as "Jewish physics" and promoting something called Deutsche Physik, under which whether a claim holds depends first on who made it. His question was what conditions this line of work needs institutionally in order to function at all.</p>
+<p>He counted four. <em>Universalism</em>: whether a claim holds has nothing to do with the nationality, race or standing of whoever made it, only with whether it survives testing. <em>Communism</em>: findings must be handed over, not kept — you get your name on it, but the knowledge belongs to everyone. <em>Disinterestedness</em>: not a claim that scientists have no self-interest, but that the trade gives no prize for "this is the result because I need it to be". <em>Organized skepticism</em>: any conclusion may be challenged in public, and nothing is exempt.</p>
+<p>What matters is not how upstanding the four sound but the way they lock together. Merton has another essay on priority disputes: those rather petty quarrels through the history of science about who found it first are not evidence that scientists are unusually vain, but of the fact that the only hard currency in the trade is having your name recognized. You have to hand the finding over completely before you can collect that payment — and the act of handing it over hands it, at the same time, to everybody who would like to find a hole in it. <strong>Personal ambition and public testability are tied to the same rope.</strong></p>
+<p>Norms, though, are norms. In 1974 Ian Mitroff published a study running three and a half years, based on interviews with forty-two of the scientists working on the Apollo moon rocks, and found a second set of four running alongside: strong emotional commitment to one's own hypothesis, secrecy before publication, and a real readiness to weigh who was speaking. His point was not that Merton was wrong but that scientists are pulled by both sets at once, and that the pull has a function — only someone partial to their own hypothesis will push a line all the way while the evidence is still thin. This is a small-sample interview study, to be generalized with care.</p>
+</div>
+<div class="section">
+<span class="num">// 02</span>
+<h2>Someone sat in a laboratory for two years and watched a fact get made</h2>
+<p>From 1975 to 1977 the Frenchman Bruno Latour spent close to two years in a neuroendocrinology laboratory at the Salk Institute in California. He did not understand the science, and that was deliberate: he took notes the way an anthropologist entering an unfamiliar village would, on what these people actually did all day.</p>
+<p>The first thing he saw was that most of the lab's space and budget is instruments, and that what the instruments do takes one line to say: they turn matter into lines on paper. He called them <em>inscription devices</em>. A piece of brain tissue goes in; what comes out is a peak on a chart, and every argument that follows is about the peak.</p>
+<p>The second thing matters more, and it is about sentences. A statement is born covered in qualifiers: "so-and-so's data suggest that, under these conditions, X may be related to Y." Its route onward is that the qualifiers come off one layer at a time, until it reads "X is Y" and nobody asks where it came from any more. That is exactly where Latour puts his definition of a fact: <strong>a fact is a statement stripped bare, whose origins nobody traces any longer.</strong> The reverse holds too — as soon as someone challenges it seriously, the qualifiers get put back on one by one.</p>
+<div class="fig">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 215">
+<g font-family="Georgia, serif">
+<g fill="none" stroke="#8fb0cc" stroke-width="1.1">
+<rect x="92" y="22" width="516" height="28" rx="6"></rect>
+<rect x="92" y="58" width="516" height="28" rx="6"></rect>
+<rect x="92" y="94" width="516" height="28" rx="6"></rect>
+<rect x="92" y="130" width="516" height="28" rx="6"></rect>
+<rect x="92" y="166" width="516" height="28" rx="6"></rect>
+</g>
+<g fill="#dfe3e6" font-size="13" text-anchor="middle">
+<text x="350" y="41">"So-and-so's data suggest X may be related to Y under these conditions"</text>
+<text x="350" y="77">"So-and-so (1968) showed that X is related to Y"</text>
+<text x="350" y="113">"X is related to Y"</text>
+<text x="350" y="149">Textbook: "X is Y"</text>
+<text x="350" y="185">No longer mentioned — built into the instruments and the routine</text>
+</g>
+<line x1="62" y1="26" x2="62" y2="182" stroke="#e08155" stroke-width="1.6"></line>
+<polygon points="62,192 57,180 67,180" fill="#e08155"></polygon>
+<text x="46" y="108" fill="#e08155" font-size="12.5" text-anchor="middle" transform="rotate(-90 46 108)">qualifiers come off, layer by layer</text>
+<line x1="638" y1="190" x2="638" y2="34" stroke="#8fb0cc" stroke-width="1.6"></line>
+<polygon points="638,24 633,36 643,36" fill="#8fb0cc"></polygon>
+<text x="656" y="108" fill="#8fb0cc" font-size="12.5" text-anchor="middle" transform="rotate(90 656 108)">put back on once disputed</text>
+</g>
+</svg>
+<div class="cap">The same sentence means different things at different heights: the further down, the more it reads as "the world is simply like this"; the further up, the more it reads as "somebody did something to get this".</div>
+</div>
+<p>So can you reproduce a result by following the paper? In the 1970s the British sociologist Harry Collins followed a set of labs trying to build a new kind of laser: the ones that succeeded had all had face-to-face contact with a lab that already had a working one, and not a single lab managed it from the published papers alone. What the papers cannot hold has a name — <em>tacit knowledge</em>: the feel in the hands, the temperament of the machine, the step where you wait ten seconds longer.</p>
+<p>Out of that comes an uncomfortable loop that Collins calls the <em>experimenter's regress</em>. How do you know your apparatus is working properly? Because it gives the right result. What counts as the right result? The one a properly working apparatus gives. In a field still in dispute — his case was the early controversy over detecting gravitational waves — the loop cannot be broken by logic, only by the community deciding whose equipment counts, and that is a social process.</p>
+<p>One misreading to guard against: saying a fact was made is not saying it is false — bridges still stand. "Made" refers to the people, money and instruments the process costs, not to any suggestion that the conclusion could just as well have been another one.</p>
+</div>
+<div class="section">
+<span class="num">// 03</span>
+<h2>Redo a hundred experiments and about a third of the results are still there</h2>
+<p>In 2011 three psychologists ran a real experiment: twenty undergraduates listened either to the Beatles' "When I'm Sixty-Four" or to another track, then reported their date of birth and their father's age. After adjusting for the father's age, the Beatles group came out nearly a year and a half younger, at the significance level people normally accept. Real participants, real data, every step above board — and they did it on purpose, as a demonstration.</p>
+<p>What they were demonstrating is called <em>researcher degrees of freedom</em>: when to stop collecting data, which variables to measure, what to control for, whether to drop outliers. As long as those choices are made after seeing the data, a false-positive rate that should be five percent can be pushed very high. The crucial part is that no single step is fraud: each one, taken alone, could be written into a methods section.</p>
+<p>Four years later there were systematic numbers. In 2015 a collaboration of more than two hundred researchers repeated a hundred published psychology studies: 97% of the originals had reported significant results; 36% of the repeats were still significant, and effect sizes were on average halved. That 36% depends on what you count as a successful replication, and other criteria give anywhere from the mid-thirties to the high sixties — but on every criterion the shrinkage is plain.</p>
+<p>For the classics people keep retelling, the current state should be stated. <em>Ego depletion</em> (doing something that costs self-control makes you give up sooner on the next task): a 2016 preregistered multi-lab replication across twenty-three labs and more than two thousand one hundred participants measured an effect of almost exactly zero. The hormonal part of "power posing" likewise did not come out of a large replication in 2015, and one of the original authors said publicly in 2016 that she no longer believed in the effect.</p>
+<p>The sociological reading takes us back to the rope in "nobody ever read out these rules". These are not crooks — it is the reward structure running: recognition pays only for the new and the positive, journals tend to filter out the studies that found nothing, nobody's career has ever been built on repeating someone else's experiment. Merton's organized skepticism has never had posts and budgets attached to it. <strong>A norm nobody is rewarded for is just a nice sentiment.</strong></p>
+<p>The shape of the repairs is worth noticing, because it is procedural: preregistration (hypotheses and analyses written down and filed before the data come in) and registered reports (the journal reviews the design first and commits to publishing whatever the result turns out to be). In 2021 somebody compared more than a hundred and fifty papers from the standard psychology literature with all seventy-one registered reports that existed at the time: 96% of the standard literature reported results supporting the hypothesis, against 44% of the registered reports. That does not mean half the registered reports "failed"; it means that under a different arrangement, negative results can finally get out. The crisis was found by science using its own tools, and what is being repaired is a process, not people's honesty.</p>
+</div>
+<div class="bigcat">
+<h3>🎒 Scenes · BigCat</h3>
+<ul>
+<li><b>① Engineering and systems design</b>: A problem reproduces only on your machine, and a colleague following your steps cannot get it to happen. The mechanism running here is the one from "someone sat in a laboratory for two years": the result depends on a pile of local settings that never make it into the write-up, so "cannot reproduce" is compatible with two things at once — the problem does not exist, or the other person is missing that piece of tacit knowledge. What to change: stop treating "it reproduces on my machine" as a conclusion, turn the environment into something another person can take away whole, and then have a second person run it <strong>without being allowed to ask you anything not written down</strong>.</li>
+<li><b>② Writing and this learning site itself</b>: When writing an issue you always want to reach for the study with the cleanest conclusion. The mechanism is the one from "redo a hundred experiments": the literature has already been filtered once (positive, surprising and tellable results get published more readily), and filtering it again for "tellable" adds a second sieve pointing the same way. What to change: drop the sentence form "such-and-such an experiment proved X" and write instead how many people, what design, and whether anyone has repeated it.</li>
+</ul>
+</div>
+<div class="crossx">
+<h3>🌀 Crossing over · Connections beyond the field</h3>
+<ul>
+<li><b>Evolutionary biology · On the same question, the later a study is published, the smaller the effect</b>: In 2002 two researchers went through forty-four meta-analyses in ecology and evolutionary biology and laid out the studies inside each one by year of publication: effect sizes shrank systematically with year, and the pattern survived controlling for sampling effort. The mechanism running here is the one from "redo a hundred experiments": what changes is not the world but the sieve — early samples are small and noisy, so only the ones that happen to come out large clear the significance threshold and get published; as samples grow, the effect size needed to clear the threshold falls, and the average of the literature slides toward the true value. Which yields a conclusion you would not otherwise see: <b>the "replication crisis" is not a question of one discipline's character but the shape that necessarily grows wherever three things hold together — small true effects, small individual samples, and only positive results published. You can therefore predict in advance which fields will have one: not by how rigorous a field says it is, but by whether the effects are small, whether a single study is expensive, and whether negative results can get out. With all three in place a literature of early-large, later-small findings will grow, including in fields that would never call themselves "soft".</b> <b>But this does not hold here</b>: many objects in ecology cannot be randomly assigned and the same population cannot be run twice, so over there "replication" means redoing the work at a different site in a different year, and a failure may mean the original was false or may mean a real regional difference — the two cannot be separated. A direct replication in a lab, same materials and same procedure, has no such ambiguity. <b>So what carries over is "selection mechanisms manufacture decline in any field"; what does not carry over is "decline means the original was false".</b></li>
+<li><b>Distributed systems and AI · A batch of models loses more than ten points on a freshly built test set, and yet the ranking barely moves</b>: In 2019 a group of researchers rebuilt a test set for a well-known image dataset following its original collection procedure and re-ran a large number of published models on it: accuracy dropped by eleven to fourteen percentage points across the board. The mechanism running here is the one from "redo a hundred experiments": a public benchmark that an entire community keeps using to select on ends up measuring not only the thing under test but also how many times the community has searched against it — the reported score carries a selection dividend inside it. Which yields a conclusion you would not otherwise see: <b>a leaderboard number should be read as a statistic about a search process rather than a property of the model — the same number means different things on the first evaluation and on the ten-thousandth. So "is this field moving fast" cannot be answered from the slope of the leaderboard alone; you also have to ask how many times the test set was replaced.</b> <b>But this does not hold here</b>: the paper's own checks rule out the most intuitive explanation — the drop is mainly not overfitting to the old test set but the fact that the newly collected images really are harder, and models that were better on the old set are still better on the new one, so the ordering largely survives. <b>What carries over is "a public benchmark bakes the community's search into the score"; what does not carry over is "therefore the ranking cannot be trusted": in psychology it was precisely the ordering that failed, whereas here it is the level that fails, not the order.</b></li>
+</ul>
+</div>
+<div class="thinking">
+<h3>Going deeper</h3>
+<details><summary>Is a finding nobody has ever redone knowledge?</summary>
+<div>By the organized-skepticism norm it is at least untested. And the great majority of published results genuinely have never been redone — not because they are suspect but because redoing them pays nothing. So a wide gap sits between "testable" and "tested", and when we say "science has proved", we usually mean the former.</div>
+</details>
+<details><summary>What exactly does a failed replication negate?</summary>
+<div>Strictly, it negates "the effect exists stably under those conditions". It does not negate "the original author honestly reported what they saw". In public discussion the two are almost always read as one thing — which is itself a sociological question: recognition is awarded to individuals, so doubt about a result is hard to keep from landing as doubt about a person.</div>
+</details>
+<details><summary>Do other systems of knowledge have an equivalent of organized skepticism?</summary>
+<div>In the issue on witchcraft and rationality, the Azande have a whole procedure for cross-checking an oracle's verdict — a second fowl, the question put the other way round. That is institutionalized doubt, but its object is "was this particular verdict right", not "does the oracle hold up at all". The general question is: every system of testing has a ring of things it does not test, and the difference lies in where that ring is drawn and who gets to move it.</div>
+</details>
+</div>
+<div class="refs">
+<h3>Further reading</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Mertonian_norms" target="_blank" rel="noopener">The Mertonian norms (CUDOS)</a> · <a href="https://en.wikipedia.org/wiki/Robert_K._Merton" target="_blank" rel="noopener">Robert K. Merton</a> · <a href="https://en.wikipedia.org/wiki/Matthew_effect" target="_blank" rel="noopener">The Matthew effect (1968)</a></li>
+<li><a href="http://www.andreasaltelli.eu/file/repository/mitroff_OCR.pdf" target="_blank" rel="noopener">Mitroff, "Norms and Counter-Norms in a Select Group of the Apollo Moon Scientists" (1974)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Laboratory_Life" target="_blank" rel="noopener">Latour &amp; Woolgar, <i>Laboratory Life</i> (1979)</a> · <a href="https://en.wikipedia.org/wiki/Bruno_Latour" target="_blank" rel="noopener">Bruno Latour</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Experimenter%27s_regress" target="_blank" rel="noopener">The experimenter's regress</a> · <a href="https://en.wikipedia.org/wiki/Harry_Collins" target="_blank" rel="noopener">Harry Collins</a> · <a href="https://en.wikipedia.org/wiki/Tacit_knowledge" target="_blank" rel="noopener">Tacit knowledge</a></li>
+<li><a href="https://journals.sagepub.com/doi/10.1177/0956797611417632" target="_blank" rel="noopener">Simmons et al., "False-Positive Psychology" (2011)</a></li>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/26315443/" target="_blank" rel="noopener">Open Science Collaboration, "Estimating the reproducibility of psychological science" (2015)</a></li>
+<li><a href="https://journals.sagepub.com/doi/10.1177/1745691616652873" target="_blank" rel="noopener">Hagger et al., multilab preregistered replication of ego depletion (2016)</a></li>
+<li><a href="https://journals.sagepub.com/doi/10.1177/25152459211007467" target="_blank" rel="noopener">Scheel et al., "An Excess of Positive Results" (2021)</a> · <a href="https://en.wikipedia.org/wiki/Registered_report" target="_blank" rel="noopener">Registered reports</a></li>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/11788035/" target="_blank" rel="noopener">Jennions &amp; Møller, "Relationships fade with time" (2002)</a></li>
+<li><a href="https://proceedings.mlr.press/v97/recht19a.html" target="_blank" rel="noopener">Recht et al., "Do ImageNet Classifiers Generalize to ImageNet?" (2019)</a></li>
+</ul>
+</div>
+<footer>BigCat Learning Hub · Sociology &amp; Anthropology</footer>
+</div>
+<script src="https://hub.cissychen.com/comments.js" defer></script>
+<script src="https://hub.cissychen.com/search.js" defer></script>
+<script src="https://hub.cissychen.com/index-button.js" defer></script>
+<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
+</body></html>
