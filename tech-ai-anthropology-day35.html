@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>社会学与人类学 Day 35：人类学看技术与 AI</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:linear-gradient(170deg,#1a140f,#171210 42%,#120e0b);color:#e6dacc;line-height:1.9;min-height:100vh}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 60px}
+header{padding:52px 0 30px;border-bottom:1px solid #33261d}
+header .kicker{font-size:0.75rem;color:#8fb0cc;letter-spacing:2.5px;font-family:"SF Mono",Menlo,monospace}
+header h1{font-size:2.1rem;font-weight:800;background:linear-gradient(100deg,#e08155,#eda07c 58%,#8fb0cc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:0.5px;margin-top:12px;line-height:1.28}
+header h2{font-size:1rem;color:#a08b78;margin-top:10px;font-weight:400}
+header .meta{margin-top:14px;font-size:0.85rem;color:#a08b78}
+header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
+.intro{margin-top:30px;font-size:1.02rem;color:#d8c9b8}
+.intro p{margin-bottom:13px}
+.section{margin:46px 0;background:rgba(255,255,255,0.028);padding:28px 26px;border-radius:14px;border:1px solid rgba(255,255,255,0.06)}
+.section .num{display:inline-block;font-size:0.75rem;color:#e08155;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;margin-bottom:8px}
+.section h2{font-size:1.32rem;color:#f4ece2;margin-bottom:16px;font-weight:700;line-height:1.35}
+.section p{margin-bottom:14px;font-size:0.98rem}
+.section strong{color:#fff}
+.section em{color:#e08155;font-style:normal}
+.section ul{list-style:none;margin:14px 0}
+.section li{margin-bottom:10px;padding-left:20px;position:relative}
+.section li::before{content:"◈";position:absolute;left:0;top:0.42em;color:#e08155;font-size:0.7rem}
+.fig{margin:24px 0 10px;text-align:center}
+.fig svg{max-width:100%;height:auto}
+.fig .cap{font-size:0.82rem;color:#a08b78;margin-top:8px;text-align:left;line-height:1.65}
+.en-brief{margin-top:18px;padding:12px 16px;border-left:2px solid rgba(160,139,120,0.5);background:rgba(255,255,255,0.02);border-radius:0 8px 8px 0;font-size:0.85rem;color:#b0a08e;line-height:1.62}
+.en-brief b{color:#bda994;font-family:"SF Mono",Menlo,monospace;font-size:0.68rem;letter-spacing:1.5px;margin-right:9px;font-weight:700}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(143,176,204,0.12),rgba(224,129,85,0.05));border:1px solid rgba(143,176,204,0.34);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#8fb0cc;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#dfe3e6;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e08155;font-size:0.72rem}
+.crossx b{color:#aecbe2;font-weight:600}
+.thinking{background:linear-gradient(135deg,rgba(224,129,85,0.06),rgba(143,176,204,0.05));border:1px solid rgba(224,129,85,0.24);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e08155;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(18,14,11,0.5);border:1px solid rgba(224,129,85,0.2);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(224,129,85,0.06);border-color:rgba(224,129,85,0.42)}
+.thinking summary{cursor:pointer;color:#eda07c;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#8fb0cc}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(143,176,204,0.22);color:#ddd0c1;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#8fb0cc;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a08b78}
+.refs a{color:#e08155;text-decoration:none;border-bottom:1px dotted rgba(224,129,85,0.42)}
+.refs a:hover{color:#eda07c;border-bottom-color:#eda07c}
+.bigcat{margin:40px 0 0;background:linear-gradient(135deg,rgba(224,129,85,0.11),rgba(143,176,204,0.04));border:1px solid rgba(224,129,85,0.32);border-radius:14px;padding:22px 26px}
+.bigcat h3{color:#eda07c;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.bigcat ul{list-style:none;margin:0}
+.bigcat li{color:#ece0d2;font-size:0.93rem;line-height:1.8;margin-bottom:14px}
+.bigcat li:last-child{margin-bottom:0}
+.bigcat b{color:#eda07c;font-weight:600}
+footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
+@media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+</style></head>
+<body>
+<div class="container">
+<header>
+<div class="kicker">DAY 35 · 人类学看技术与 AI</div>
+<h1>人类学看技术与 AI</h1>
+<h2>这一期最反直觉的一句：一项技术最后长成什么样，用它的人有一大半的份——而用它的人从来不是一个人，是一群互相看着的人。</h2>
+<div class="meta">2026-09-28 · BigCat</div>
+<div class="pitch">一百年前美国的农民把汽车买回农场，架起车尾、卸下一只后轮，用皮带接上锯子和洗衣机。厂家后来只好照着他们的用法改车。</div>
+</header>
+<div class="intro">
+<p>你上一次因为一个软件改掉自己的一个动作，是什么时候？</p>
+<p>可能是发消息前删掉了一个表情，觉得显得没分寸；可能是标题写到一半改成更直白的说法，因为直白的那版上次被更多人看见。没有人通知过你，你也说不清这规矩是谁定的。</p>
+<p>关于技术和人，平常有两种现成讲法：一种说技术推着社会走，有了什么机器人就得变成什么样；另一种说技术只是工具，全看人怎么用。下面这批研究说两种都不够——机器和用机器的人是一起被做出来的，而这个「一起」有可以观察的步骤。</p>
+</div>
+<div class="section">
+<span class="num">// 01</span>
+<h2>农民把汽车后轮架起来带动锯子，厂家只好照着改车</h2>
+<p>二十世纪初的美国乡下。汽车刚卖到农场时，厂家心里的用法是代步。农民有别的想法：把车尾架高、卸下一只后轮，在轮毂上装个皮带盘，皮带一搭就能带锯木机、水泵、洗衣机。在他们眼里，买回来的不是一辆车，是一台能自己开到地头的发动机。</p>
+<p>克莱因和平奇（Ronald Kline、Trevor Pinch）1996 年翻过这段历史：厂家起初当这是乱来，可用的人一多，配件商开始卖改装件，厂家也照着改了设计和广告。<strong>技术变成什么样，用它的人是有份的</strong>——不是靠说服设计者，是靠大量地、就那么用着。</p>
+<p>这件事的名字叫解释弹性（interpretive flexibility）：同一件东西在不同人群眼里不是同一件东西，因为他们要解决的问题不同。平奇和比克（Wiebe Bijker）1984 年用自行车讲得更清楚：十九世纪那种前轮巨大的车，对一群年轻男人是运动器材，摔下来都算本事；对另一些人它是个压根上不去的危险玩意儿。当年争的不是「哪辆车更好」，是「车要解决的问题是哪一个」。充气轮胎刚出来时被嫌丑、被当成多余附件，直到装了它的车在赛场上跑赢，才被说成「提速的办法」，争论跟着收口。收口他们叫定型（closure）：不是所有人被说服了，是问题的提法不再被质疑了。</p>
+<div class="fig">
+<svg viewBox="0 0 720 236" xmlns="http://www.w3.org/2000/svg">
+<g font-family="Georgia, 'Noto Serif SC', serif">
+<rect x="14" y="92" width="118" height="52" rx="8" fill="none" stroke="#e08155" stroke-width="1.2"></rect>
+<text x="73" y="114" fill="#eda07c" font-size="12.5" text-anchor="middle">同一件东西</text>
+<text x="73" y="133" fill="#a08b78" font-size="11" text-anchor="middle">（早期的汽车）</text>
+<g fill="none" stroke="#8fb0cc" stroke-width="1.1">
+<rect x="212" y="18" width="268" height="44" rx="7"></rect>
+<rect x="212" y="96" width="268" height="44" rx="7"></rect>
+<rect x="212" y="174" width="268" height="44" rx="7"></rect>
+</g>
+<g fill="#dfe3e6" font-size="12.5" text-anchor="middle">
+<text x="346" y="45">城里买主：怎么跑得更快、更体面</text>
+<text x="346" y="123">农场主：一台能自己开到地头的发动机</text>
+<text x="346" y="201">道路与保险方：出了事谁来担</text>
+</g>
+<g stroke="#8fb0cc" stroke-width="1" fill="none">
+<path d="M132 108 C 172 108, 172 40, 208 40"></path>
+<path d="M132 118 C 172 118, 172 118, 208 118"></path>
+<path d="M132 128 C 172 128, 172 196, 208 196"></path>
+<path d="M484 40 C 520 40, 520 108, 556 108"></path>
+<path d="M484 118 C 520 118, 520 118, 556 118"></path>
+<path d="M484 196 C 520 196, 520 128, 556 128"></path>
+</g>
+<rect x="558" y="86" width="148" height="64" rx="8" fill="none" stroke="#e08155" stroke-width="1.2"></rect>
+<text x="632" y="110" fill="#eda07c" font-size="12.5" text-anchor="middle">定型</text>
+<text x="632" y="130" fill="#a08b78" font-size="11" text-anchor="middle">一种用法写进设计</text>
+<text x="632" y="145" fill="#a08b78" font-size="11" text-anchor="middle">与法规</text>
+</g>
+</svg>
+<div class="cap">争的从来不是「这机器好不好」，是「它要解决的问题是哪个」；定型就是这个问题被关掉——之后谁提别的用法，举证的力气就落在谁身上。</div>
+</div>
+<p>对面的说法也得给足。温纳（Langdon Winner）1980 年主张：一套要长期看守、层层授权、出事代价极大的系统，会把管它的组织推向集中和森严，不管这些人本来想要什么。<strong>合理的位置在中间：用法是争出来的，但不是什么都能争。</strong>证据强度也要说清楚：这一路是科技史个案重建，不是可重复的实验；常挨的批评是「哪些人算相关群体」由研究者事后圈定，容易圈出一个刚好讲得通的故事。</p>
+<p class="en-brief"><b>EN</b> Rural America in the early twentieth century. The manufacturers sold the automobile as a way of moving people from here to there; farmers had other ideas. They jacked up the rear of the car, took off one rear wheel, bolted a pulley to the hub and ran a belt from it — to a saw, a water pump, a thresher, a washing machine, and in some cases a generator to light the house; others rebuilt the thing into a tractor. What they had bought, as they saw it, was not a car but an engine that could drive itself out to the field. Ronald Kline and Trevor Pinch went back through that history in 1996. Makers first treated these uses as misuse and worried about accidents and their reputation; but once enough people were doing it, parts dealers began selling conversion kits and the manufacturers themselves slowly adjusted their designs and their advertising. <strong>The people who use a technology have a hand in what it becomes</strong> — not by persuading the designers, but by using it that way, in numbers. The concept has a name: <em>interpretive flexibility</em>. The same object is not the same object to different groups, because the problem each of them wants solved is a different problem. Pinch and Bijker's 1984 bicycle case puts it more sharply: the nineteenth-century high-wheeler was sporting equipment to one set of young men — you sat high, you went fast, and coming off it was part of the skill — and to other people it was simply a dangerous thing they could not get onto at all. So the argument of the day was not "which machine is better" but "which problem is the machine for". The pneumatic tyre was at first thought ugly, a needless attachment, until bicycles fitted with it won races and it was redescribed as "the way to go faster", at which point the argument closed. They call that settling <em>closure</em>: not everyone has been persuaded; the framing has simply stopped being challenged. The strongest version of the opposing view deserves its room. In 1980 Langdon Winner argued in "Do Artifacts Have Politics?" that how a thing is built can itself settle who may use it and who is kept out; the bridge example he used was later challenged by other researchers on the archival record. But the harder half of his argument was not overturned: some technologies, once adopted, make non-negotiable demands of an organization — a system that must be guarded around the clock, with layered authorization and catastrophic failure costs, pushes whoever runs it towards centralization and strictness, whatever kind of organization they would have preferred. <strong>The defensible position is in between: uses are fought over, but not everything is open to the fight</strong>; the materiality of a thing makes some arrangements cheap and others expensive. Evidence strength: this line of work is historical case reconstruction — archives, trade journals, interviews with participants — not repeatable experiment, and the criticism it most often draws lands exactly there: which groups count as "relevant" is drawn by the researcher after the fact, which makes it easy to end up with a story that happens to hang together.</p>
+</div>
+<div class="section">
+<span class="num">// 02</span>
+<h2>你没法访谈一台推荐系统，但你可以看一屋子人怎么跟它过日子</h2>
+<p>人类学做田野的老办法是住进去。可要研究的是一台推荐系统呢？它不说话，没有村口，代码拿到也读不出它为什么昨天给你推那首歌。</p>
+<p>西弗（Nick Seaver）的做法是住进做它的那群人里，跟音乐推荐系统的开发者待了数年，2022 年写成一本书。第一个结论很扫兴：所谓「算法」不是一个东西——它是模型、指标、季度目标、前任工程师留下的规则，加上一屋子人对「听的人想要什么」的猜想，没有谁掌握全貌。第二个更要紧：这些开发者越来越多用「把人留住」讲自己在干什么，于是衡量停留与回访的指标浮上来，成了判断好坏的尺子。他用陷阱作比：不是说这些人心术不正，而是当「留住人」变成每天能读的数，所有细小的选择都会悄悄朝它排列。</p>
+<p>那同一套指标换个地方，会长出一样的行为吗？克里斯丁（Angèle Christin）做了四年田野，在纽约和巴黎的网络新闻编辑部访谈了一百多位记者。两边后台的数据差不多，意思却不同：一边把实时流量大屏摆在办公室，点击跟评价、跟下一单接不接得到连着；另一边公开人人说不看这种东西，私下天天刷。她的结论是：算法不是把各地磨成一个样的同化机器，它落进哪套评价体系、撑的是谁的权威，行为就往哪边长。这是比较民族志，两国一个行业，往外推要小心；但「技术一到就同化」这个说法已经被它否掉。</p>
+<p>用户那侧也一样。2015 年一项四十人的研究里，超过六成的人不知道自己的信息流被筛过；没看到的帖子于是被归因成别的：那人大概不想理我。人对看不见的系统会自己编说法，叫做民间理论（folk theories）。</p>
+<p>所以「算法的民族志」研究的其实是关系：谁维护它、谁被它评价、谁绕开它。由此带出一个方法上的硬结论——问用户「你觉得这推荐怎么样」，拿回来的是民间理论；<strong>要看它改变了什么，得看人的动作，不是人的意见。</strong></p>
+<p class="en-brief"><b>EN</b> The old way to do anthropological fieldwork is to move in. But what if what you want to study is a recommender system? It does not talk, it has no village square, and even with the code in hand you cannot read off why it gave you that song yesterday. Nick Seaver's answer was to move in with the people who make one. He spent years among developers of music recommendation, in their meetings and their small talk and their arguments, and published a book on it in 2022. His first conclusion is deflating: the "algorithm" is not a thing. It is models, metrics, quarterly targets, rules left behind by an engineer who has since left, and a roomful of people's various guesses about what listeners actually want — a living assemblage of which nobody holds the whole picture. The second conclusion matters more. He noticed that these developers increasingly described what they were doing as keeping people around, and that a family of metrics for dwell time and return visits accordingly floated up and became the everyday measure of good work. He reaches for the metaphor of the trap — not a claim that these people are up to no good, but the observation that once "holding on to people" becomes a quantity you can read off daily, every small choice a team makes quietly lines itself up with it. Does the same set of metrics then produce the same behaviour everywhere? Angèle Christin spent four years in the field, in web newsrooms in New York and in Paris, interviewing more than a hundred journalists. The dashboards on the two sides were much alike; what they meant was not. In one, a live traffic screen sat in the office and clicks were tied to evaluation and to whether the next commission came; in the other, everyone said in public that they paid no attention to such things — the worth of journalism is not settled by clicks — and privately checked all day. Her conclusion: an algorithm is not a machine that grinds every place into the same shape; behaviour grows in the direction of whichever evaluation system it lands in and whoever's authority it is enlisted to support. This is comparative ethnography — two countries, one industry — so generalize with care; but it at least rules out the simple story in which technology arrives and homogenizes. There is one more thing on the user side. In a 2015 study of forty people, more than six in ten did not know their feed was being filtered at all; they believed they saw everything their friends posted. The posts they never saw were therefore attributed to something else: that person probably doesn't want much to do with me. After finding out, most were no less satisfied than before, but they began actively adjusting, going to look for the people who had been dropped. People build their own accounts of systems they cannot see, and researchers call these <em>folk theories</em>. So the ethnography of algorithms is really the study of a set of relations: who maintains the thing, who is evaluated by it, who works around it. Which carries a hard methodological conclusion — ask a user "what do you think of these recommendations" and what you get back is a folk theory, not what the system actually changed. <strong>To see what it changed, watch what people do, not what they say about it.</strong></p>
+</div>
+<div class="section">
+<span class="num">// 03</span>
+<h2>自动化很少整份拿走一个活，它拿走中间几个动作，剩下的重新排队</h2>
+<p>1980 年代，祖博夫（Shoshana Zuboff）在美国一家纸浆厂看到这样一幕：老工人原本靠身体判断，捏一把纸浆、闻一下、甚至嚼一嚼，就知道这批对不对；上了计算机控制之后，他们被请进有空调的控制室，面前只剩屏幕上一串数，有人会偷偷溜回车间摸一把设备，因为不信屏幕。她给这过程起名 informating：机器不只把动作接过去，还把整个过程变成可看、可存、可比较的信息。于是变的不只是谁动手，是<strong>谁的判断算数</strong>——老师傅那种说不出理由的准不以数的形式存在，在新场子里就没有位置。这跟「国家的视角」那期讲的那种只在当地长出来的手感是一类东西。</p>
+<p>1983 年，认知心理学家班布里奇（Lisanne Bainbridge）写过一篇很短的《自动化的反讽》。反讽在于：自动化先拿走容易的部分，留给人的恰恰是最难的两件——长时间盯着一个基本不出事的系统，以及在它真出事的几分钟里接手。可盯着不出事的东西人会走神，平时不动手技能会生；到要接手那一刻，正是这人状态最差的时候。</p>
+<p>更常被漏掉的是新长出来的活。谢斯塔科夫斯基（Benjamin Shestakofsky）2017 年发表的一项研究，在一家软件公司做了十九个月参与观察：软件不但没减少对人的需求，反而造出两类新工作——一类替软件补位，算法配不上时由人手工配上；一类帮用户适应软件，去解释它做的别扭决定。格雷和苏里（Mary Gray、Siddharth Suri）2019 年把一大片类似的活叫「幽灵工作」：标注、审核、纠错，按件计酬，成果看上去像机器干的。这些活的共同点不是辛苦，是<strong>不在组织图上</strong>。</p>
+<p>宏观数字要格外小心。2013 年一项常被引用的估计说美国约 47% 的就业处在高自动化风险；2016 年经合组织的一份工作报告把工作拆成任务重算，二十一国平均约 9%。差的不是算术是单位：前者问整份职业能不能被替掉，后者问里面哪几项任务能。哪个单位更对，取决于一个活拆不拆得开——而「农民把汽车后轮架起来」那节讲的正是，这本身是争出来的。</p>
+<p>于是「AI 与工作的意义」能落得实一点：意义不只在有没有活干，更在你做的哪部分被算成本事。判断被挪进系统之后，原来最值钱的那截手艺可能既没消失也没被承认，它变成了兜底——出事时你得在，平时不进职务描述、不进考核。这是可以去查的事：新职务描述写了什么，评估表上有哪几行，复盘里出现的是谁的名字。</p>
+<p class="en-brief"><b>EN</b> In the 1980s Shoshana Zuboff watched something happen in an American pulp mill. The older workers had judged with their bodies: a handful of pulp squeezed, sniffed, sometimes chewed, and they knew whether this batch was right. After the mill was computerized they were shown into an air-conditioned control room with a row of numbers on a screen in front of them. Some would slip back down to the floor to put a hand on the equipment, because they did not trust the screen. Zuboff gave the process a name — <em>informating</em>: the machine does not merely take the actions over, it turns the whole process into information that can be watched, stored and compared. So what changes is not only who does the work but <strong>whose judgement counts</strong>: the old hand's accuracy, the kind he cannot give reasons for, has no place in the new setup, because it does not exist in the form of numbers. This is the same sort of thing as the locally grown feel for a situation in the issue on seeing like a state. In 1983 the cognitive psychologist Lisanne Bainbridge wrote a very short paper called "Ironies of Automation". The irony is this: automation always takes the easy part first, and what it leaves the human being is precisely the two hardest things — watching a system that almost never fails for hours on end, and taking over in the few minutes when it does. But a person watching something that does not fail will drift, and skills that are not exercised go stale; so at the moment the takeover is required, that person is in their worst condition. A paper written for engineers more than forty years ago keeps being pulled out today, because the shape it describes has not changed. What gets missed more often is the work that grows. In 2017 Benjamin Shestakofsky published a study based on nineteen months of participant observation inside a software company: rather than reducing the demand for people, the software generated two new kinds of work — computational labour that stands in for the software, with humans matching by hand what the algorithm could not match, and the labour of helping users live with the software, explaining and smoothing over the awkward decisions it made. In 2019 Mary Gray and Siddharth Suri named a large adjacent territory <em>ghost work</em>: labelling, reviewing, correcting, paid by the piece, scattered across the world, producing output that looks as though a machine made it. What these jobs have in common is not that they are hard; it is that <strong>they are not on the org chart</strong>. Macro numbers need care. A much-cited 2013 estimate put about 47% of US employment at high risk of automation; a 2016 OECD working paper changed the method, decomposing jobs into tasks, and found an average of about 9% at high risk across twenty-one countries. The difference is not arithmetic but units: the first asks whether a whole occupation can be replaced, the second asks which tasks within it can. Which unit is right depends on whether a job can be pulled apart — and what the section on the farmers and their jacked-up cars describes is precisely that whether something comes apart is itself fought over. That lets the phrase "AI and the meaning of work" land somewhere more concrete. Meaning is not only about whether there is work to do; it is about which part of what you do is counted as skill. When judgement moves into the system, the most valuable stretch of craft may neither disappear nor be acknowledged — it becomes the backstop: you have to be there when it fails, and the rest of the time it does not appear in the job description, the review form or the pay. That is not a lament but something you can check: read what the new job descriptions say, look at which rows are on the evaluation sheet, and see whose name turns up in the post-mortem after something goes wrong.</p>
+</div>
+<div class="bigcat">
+<h3>🎒 场景 · BigCat</h3>
+<ul>
+<li><b>① 带团队与组织</b>：上线一个自动化工具之后，说好省下的工时没出现，反而多了一类新活——处理它判错的那些边角情况，而这类活在周报里没有名字。跑的是「自动化很少整份拿走一个活」那节的机制：被接走的是中间几个动作，兜底那部分留下来了，只是没人认它是工作。可改的动作：停掉拿「省下多少工时」当唯一验收指标；上线前先定死「它判不准的部分归谁、算谁的产出」，并让兜底在排期表上占一行。</li>
+<li><b>② 修行与心性</b>：每次打坐结束先看 app 给的分钟数和连续天数，几周后发现自己开始为了不断签而坐。跑的是「你没法访谈一台推荐系统」那节的机制：一个数一旦被拿来评价，就从记录变成目标，被记下的那部分会挤掉没被记下的。可改的动作：停掉结束后第一眼看统计，改成先写一句话记今天怎么坐的；断了的连续天数不补。</li>
+</ul>
+</div>
+<div class="crossx">
+<h3>🌀 越界 · 跨学科的联想</h3>
+<ul>
+<li><b>复杂性科学 · 一个只有「先来的多拿」这一条规则的罐子，能算出结局必被锁死，但锁在哪一个上算不出来</b>：罐里两种颜色的球，每次随机摸一个、再放回两个同色的。这类过程（数学上叫波利亚罐）的结果是：比例几乎必然收敛到某个值，但收敛到哪个由最早几次偶然决定，事先算不出。阿瑟（W. Brian Arthur）1989 年把它接到技术竞争上：两种有增强回报的技术相争（用的人越多越好用），早期一点偶然领先会滚成通吃，锁住的不一定是更好的那个。跑的是「农民把汽车后轮架起来」那节的机制：定型不是因为谁最优，是因为争论被关掉了。<b>由此能事先判断哪些领域会锁死：不看谁在宣传什么，看有没有增强回报；而且锁死发生在早期、窗口很短，于是「等更好的方案出来再选」这种单看自己很理性的策略会系统性失效——等的人越多，窗口关得越快。</b><b>但这里不成立</b>：罐里的球只进不出，没有外力能重开；真实系统里监管、标准组织、一个新的通用组件都能把关掉的争论撬开。而且「锁死等于次优」这步在经济史里一直有争议：最常被引的键盘案例，反方认为「替代方案更好」的证据本就单薄。<b>借得过来的是锁定的时机与形状，借不过来的是「锁住的那个一定更差」。</b></li>
+<li><b>神经科学与意识 · 猴子学会用耙子取食，不久之后它脑子里「手够得着的范围」长到了耙子尖上</b>：1996 年一项猕猴研究发现，顶内沟一带有一类细胞既管触觉又管视觉，视觉那部分原本紧贴着手；训练它用耙子去够拿不到的食物之后，这些细胞的视觉范围扩到了整根耙子。跑的是「你没法访谈一台推荐系统」那节的机制：工具不是被「使用」，是被并进实践里，人能做什么的边界跟着变形，而这变形不经过「我怎么看它」。<b>由此推出：想知道一个系统改变了用户什么，问「你觉得这算法怎么样」取回来的是民间理论；要看撤掉它时动作怎么变形——出错的形状比意见更说明它被并进去多深。</b><b>但这里不成立</b>：耙子那种并入是个体的、很快完成的重标定，撤掉就还原；算法那种并入是集体的、经由同事和行业规矩传下去——同一套流量数在两国编辑部意思都不同，这条通路猴子那边没有。<b>借得过来的是「用进来的东西会改写能力边界、而且绕过自我报告」，借不过来的是「因此在个体身上测完就够了」。</b></li>
+</ul>
+</div>
+<div class="thinking">
+<h3>深入思考</h3>
+<details><summary>如果用法是用户争出来的，「设计者的意图」还剩多少分量？</summary>
+<div>农场那批用法能反过来改设计，前提是设计者拦不住——车卖出去就管不着了。换成一个随时能改、用法在后台全看得见的系统，这个前提弱很多。</div>
+</details>
+<details><summary>算法的民族志里，被研究的「人」到底包括谁？</summary>
+<div>开发者、用户，还有在后面手工补位的那批人。麻烦在于这三群人互相不怎么照面，各自只看见系统的一面。田野的老办法假设村里的人彼此会遇到，这里不成立。</div>
+</details>
+<details><summary>一件事被机器接手之后，原来做它的人算不算技能退化？</summary>
+<div>至少两种读法。一种是手生了，动作还在只是不常做；另一种是「什么算本事」被重新定义了：纸浆厂里说不出理由的准，数字化之后不再是资产。前一种练得回来，后一种练也没用——分辨要看报酬和评估跟着哪一头走。</div>
+</details>
+</div>
+<div class="refs">
+<h3>延伸阅读</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Social_construction_of_technology" rel="noopener" target="_blank">技术的社会建构（SCOT）</a>（英文）</li>
+<li><a href="https://www.semanticscholar.org/paper/Users-as-Agents-of-Technological-Change:-The-Social-Kline-Pinch/eea8e7d28506105d0f800524d132e39a4ca32b69" rel="noopener" target="_blank">Kline &amp; Pinch：用户作为技术变迁的行动者 (1996)</a>（英文）</li>
+<li><a href="https://en.wikipedia.org/wiki/Langdon_Winner" rel="noopener" target="_blank">Langdon Winner《人造物有政治吗》(1980)</a>（英文）</li>
+<li><a href="https://press.uchicago.edu/ucp/books/book/chicago/C/bo183892298.html" rel="noopener" target="_blank">Nick Seaver《计算品味》(2022)</a> · <a href="https://journals.sagepub.com/doi/10.1177/1359183518820366" rel="noopener" target="_blank">《迷人的算法：作为陷阱的推荐系统》(2019)</a>（英文）</li>
+<li><a href="https://press.princeton.edu/books/hardcover/9780691175232/metrics-at-work" rel="noopener" target="_blank">Angèle Christin《工作中的指标》(2020)</a>（英文）</li>
+<li><a href="https://dl.acm.org/doi/10.1145/2702123.2702556" rel="noopener" target="_blank">Eslami 等：对看不见的信息流算法的推理 (2015)</a>（英文）</li>
+<li><a href="https://en.wikipedia.org/wiki/Informating" rel="noopener" target="_blank">Zuboff《智能机器时代》与 informating (1988)</a>（英文）</li>
+<li><a href="https://en.wikipedia.org/wiki/Ironies_of_Automation" rel="noopener" target="_blank">Bainbridge《自动化的反讽》(1983)</a>（英文）</li>
+<li><a href="https://journals.sagepub.com/doi/10.1177/0730888417726119" rel="noopener" target="_blank">Shestakofsky：工作中的算法 (2017)</a> · <a href="https://en.wikipedia.org/wiki/Ghost_work" rel="noopener" target="_blank">幽灵工作</a>（英文）</li>
+<li><a href="https://www.oecd.org/en/publications/the-risk-of-automation-for-jobs-in-oecd-countries_5jlz9h56dvq7-en.html" rel="noopener" target="_blank">经合组织：OECD 国家工作的自动化风险 (2016)</a>（英文）</li>
+<li><a href="https://academic.oup.com/ej/article-abstract/99/394/116/5188212" rel="noopener" target="_blank">Arthur：竞争性技术、增强回报与锁定 (1989)</a> · <a href="https://ios23.classes.ryansafner.com/files/readings/Leibowitz-Margolis-1990.pdf" rel="noopener" target="_blank">Liebowitz &amp; Margolis：键盘的寓言 (1990)</a>（英文）</li>
+<li><a href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2014.00310/full" rel="noopener" target="_blank">工具使用的神经基础（综述，含 Iriki 等 1996）</a>（英文）</li>
+</ul>
+</div>
+<footer>BigCat Learning Hub · 社会学与人类学</footer>
+</div>
+<script src="https://hub.cissychen.com/comments.js" defer></script>
+<script src="https://hub.cissychen.com/search.js" defer></script>
+<script src="https://hub.cissychen.com/index-button.js" defer></script>
+<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
+</body></html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sociology &amp; Anthropology Day 35: Anthropology Looks at Technology and AI</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:linear-gradient(170deg,#1a140f,#171210 42%,#120e0b);color:#e6dacc;line-height:1.9;min-height:100vh}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 60px}
+header{padding:52px 0 30px;border-bottom:1px solid #33261d}
+header .kicker{font-size:0.75rem;color:#8fb0cc;letter-spacing:2.5px;font-family:"SF Mono",Menlo,monospace}
+header h1{font-size:2.1rem;font-weight:800;background:linear-gradient(100deg,#e08155,#eda07c 58%,#8fb0cc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:0.5px;margin-top:12px;line-height:1.28}
+header h2{font-size:1rem;color:#a08b78;margin-top:10px;font-weight:400}
+header .meta{margin-top:14px;font-size:0.85rem;color:#a08b78}
+header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
+.intro{margin-top:30px;font-size:1.02rem;color:#d8c9b8}
+.intro p{margin-bottom:13px}
+.section{margin:46px 0;background:rgba(255,255,255,0.028);padding:28px 26px;border-radius:14px;border:1px solid rgba(255,255,255,0.06)}
+.section .num{display:inline-block;font-size:0.75rem;color:#e08155;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;margin-bottom:8px}
+.section h2{font-size:1.32rem;color:#f4ece2;margin-bottom:16px;font-weight:700;line-height:1.35}
+.section p{margin-bottom:14px;font-size:0.98rem}
+.section strong{color:#fff}
+.section em{color:#e08155;font-style:normal}
+.section ul{list-style:none;margin:14px 0}
+.section li{margin-bottom:10px;padding-left:20px;position:relative}
+.section li::before{content:"◈";position:absolute;left:0;top:0.42em;color:#e08155;font-size:0.7rem}
+.fig{margin:24px 0 10px;text-align:center}
+.fig svg{max-width:100%;height:auto}
+.fig .cap{font-size:0.82rem;color:#a08b78;margin-top:8px;text-align:left;line-height:1.65}
+.en-brief{margin-top:18px;padding:12px 16px;border-left:2px solid rgba(160,139,120,0.5);background:rgba(255,255,255,0.02);border-radius:0 8px 8px 0;font-size:0.85rem;color:#b0a08e;line-height:1.62}
+.en-brief b{color:#bda994;font-family:"SF Mono",Menlo,monospace;font-size:0.68rem;letter-spacing:1.5px;margin-right:9px;font-weight:700}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(143,176,204,0.12),rgba(224,129,85,0.05));border:1px solid rgba(143,176,204,0.34);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#8fb0cc;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#dfe3e6;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e08155;font-size:0.72rem}
+.crossx b{color:#aecbe2;font-weight:600}
+.thinking{background:linear-gradient(135deg,rgba(224,129,85,0.06),rgba(143,176,204,0.05));border:1px solid rgba(224,129,85,0.24);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e08155;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(18,14,11,0.5);border:1px solid rgba(224,129,85,0.2);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(224,129,85,0.06);border-color:rgba(224,129,85,0.42)}
+.thinking summary{cursor:pointer;color:#eda07c;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#8fb0cc}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(143,176,204,0.22);color:#ddd0c1;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#8fb0cc;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a08b78}
+.refs a{color:#e08155;text-decoration:none;border-bottom:1px dotted rgba(224,129,85,0.42)}
+.refs a:hover{color:#eda07c;border-bottom-color:#eda07c}
+.bigcat{margin:40px 0 0;background:linear-gradient(135deg,rgba(224,129,85,0.11),rgba(143,176,204,0.04));border:1px solid rgba(224,129,85,0.32);border-radius:14px;padding:22px 26px}
+.bigcat h3{color:#eda07c;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.bigcat ul{list-style:none;margin:0}
+.bigcat li{color:#ece0d2;font-size:0.93rem;line-height:1.8;margin-bottom:14px}
+.bigcat li:last-child{margin-bottom:0}
+.bigcat b{color:#eda07c;font-weight:600}
+footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
+@media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+</style></head>
+<body>
+<div class="container">
+<header>
+<div class="kicker">DAY 35 · ANTHROPOLOGY OF TECHNOLOGY AND AI</div>
+<h1>Anthropology Looks at Technology and AI</h1>
+<h2>The most counterintuitive line in this issue: what a technology finally becomes is largely down to the people who use it — and the people who use it are never one person, but a crowd watching each other.</h2>
+<div class="meta">2026-09-28 · BigCat</div>
+<div class="pitch">A hundred years ago American farmers drove cars home to the farm, jacked up the rear end, took off one wheel and ran a belt from the hub to a saw and a washing machine. The manufacturers ended up redesigning the car to match.</div>
+</header>
+<div class="intro">
+<p>When was the last time a piece of software changed something you do?</p>
+<p>Maybe you deleted an emoji before sending a message because it looked careless; maybe you rewrote a headline halfway through into something blunter, because the blunt version was seen by more people last time. Nobody told you to. You could not say who made the rule.</p>
+<p>There are two ready-made stories about technology and people. One says technology drives society: get a new machine and people have to become whatever it requires. The other says technology is only a tool, and everything depends on how people use it. The research below says neither is enough — machines and the people who use them are made together, and that "together" has observable steps.</p>
+</div>
+<div class="section">
+<span class="num">// 01</span>
+<h2>Farmers jacked up the back of the car to drive a saw, and the makers redesigned the car to match</h2>
+<p>Rural America in the early twentieth century. When cars first reached the farms, the use the manufacturers had in mind was transport. Farmers had other ideas: jack up the rear end, take off one rear wheel, bolt a pulley to the hub, run a belt, and you could drive a saw, a water pump, a washing machine. What they had bought, as they saw it, was not a car but an engine that could drive itself out to the field.</p>
+<p>Ronald Kline and Trevor Pinch went back through this history in 1996. Makers at first treated these uses as misuse; but once enough people were doing it, parts dealers began selling conversion kits and the manufacturers adjusted their designs and their advertising to suit. <strong>The people who use a technology have a hand in what it becomes</strong> — not by persuading the designers, but by using it that way, in numbers.</p>
+<p>The thing has a name: <em>interpretive flexibility</em>. The same object is not the same object to different groups, because the problem each wants solved is different. Pinch and Bijker's 1984 bicycle case puts it more clearly: the nineteenth-century high-wheeler was sporting equipment to one set of young men, coming off it included; to other people it was a dangerous thing they could not get onto at all. The argument of the day was not "which machine is better" but "which problem is the machine for". The pneumatic tyre was at first thought ugly, a needless attachment, until bicycles fitted with it won races and it was redescribed as "the way to go faster", at which point the argument closed. They call that settling <em>closure</em>: not everyone has been persuaded; the framing has simply stopped being challenged.</p>
+<div class="fig">
+<svg viewBox="0 0 720 236" xmlns="http://www.w3.org/2000/svg">
+<g font-family="Georgia, serif">
+<rect x="14" y="92" width="118" height="52" rx="8" fill="none" stroke="#e08155" stroke-width="1.2"></rect>
+<text x="73" y="114" fill="#eda07c" font-size="12.5" text-anchor="middle">One object</text>
+<text x="73" y="133" fill="#a08b78" font-size="11" text-anchor="middle">(the early car)</text>
+<g fill="none" stroke="#8fb0cc" stroke-width="1.1">
+<rect x="212" y="18" width="268" height="44" rx="7"></rect>
+<rect x="212" y="96" width="268" height="44" rx="7"></rect>
+<rect x="212" y="174" width="268" height="44" rx="7"></rect>
+</g>
+<g fill="#dfe3e6" font-size="12" text-anchor="middle">
+<text x="346" y="45">Town buyers: how to go faster, look right</text>
+<text x="346" y="123">Farmers: an engine that drives to the field</text>
+<text x="346" y="201">Roads and insurers: who carries a crash</text>
+</g>
+<g stroke="#8fb0cc" stroke-width="1" fill="none">
+<path d="M132 108 C 172 108, 172 40, 208 40"></path>
+<path d="M132 118 C 172 118, 172 118, 208 118"></path>
+<path d="M132 128 C 172 128, 172 196, 208 196"></path>
+<path d="M484 40 C 520 40, 520 108, 556 108"></path>
+<path d="M484 118 C 520 118, 520 118, 556 118"></path>
+<path d="M484 196 C 520 196, 520 128, 556 128"></path>
+</g>
+<rect x="558" y="86" width="148" height="64" rx="8" fill="none" stroke="#e08155" stroke-width="1.2"></rect>
+<text x="632" y="110" fill="#eda07c" font-size="12.5" text-anchor="middle">Closure</text>
+<text x="632" y="130" fill="#a08b78" font-size="11" text-anchor="middle">one use written into</text>
+<text x="632" y="145" fill="#a08b78" font-size="11" text-anchor="middle">design and regulation</text>
+</g>
+</svg>
+<div class="cap">The argument is never about whether the machine is good; it is about which problem the machine is for. Closure is that question being shut — afterwards, whoever proposes another use carries the burden of proof.</div>
+</div>
+<p>The opposing view deserves its strongest form. Langdon Winner argued in 1980 that a system which must be guarded for the long term, with layered authorization and catastrophic failure costs, pushes whoever runs it towards centralization and strictness, whatever kind of organization those people would have preferred. <strong>The defensible position is in between: uses are fought over, but not everything is open to the fight.</strong> Evidence strength should be stated too: this line of work is historical case reconstruction, not repeatable experiment, and the criticism it most often draws is that which groups count as "relevant" is drawn by the researcher after the fact, which makes it easy to end up with a story that happens to hang together.</p>
+</div>
+<div class="section">
+<span class="num">// 02</span>
+<h2>You cannot interview a recommender system, but you can watch a roomful of people live with one</h2>
+<p>The old way to do fieldwork is to move in. But what if the thing you want to study is a recommender system? It does not talk, it has no village square, and even with the code in hand you cannot read off why it gave you that song yesterday.</p>
+<p>Nick Seaver's answer was to move in with the people who make one, spending years among developers of music recommendation and publishing a book on it in 2022. The first conclusion is deflating: the "algorithm" is not a thing — it is models, metrics, quarterly targets, rules left by an engineer who has since left, plus a roomful of people's guesses about what listeners want, and nobody holds the whole picture. The second matters more: these developers increasingly described what they did as keeping people around, so metrics for dwell time and return visits floated up and became the measure of good work. He reaches for the metaphor of the trap: not a claim that these people are up to no good, but the observation that once "holding on to people" becomes a number you can read daily, every small choice quietly lines up with it.</p>
+<p>Does the same set of metrics produce the same behaviour somewhere else? Angèle Christin spent four years in the field, interviewing more than a hundred journalists in web newsrooms in New York and in Paris. The dashboards on the two sides were much alike; what they meant was not. In one, a live traffic screen sat in the office and clicks were tied to evaluation and to whether the next commission came; in the other, everyone said in public that they paid no attention to such things, and privately checked all day. Her conclusion: an algorithm is not a machine that grinds every place into the same shape; behaviour grows towards whichever evaluation system it lands in and whoever's authority it is enlisted to support. This is comparative ethnography — two countries, one industry — so generalize with care; but it does rule out the simple story in which technology arrives and homogenizes.</p>
+<p>The user side is the same. In a 2015 study of forty people, more than six in ten did not know their feed was being filtered at all; the posts they never saw were attributed to something else — that person probably doesn't want much to do with me. People build their own accounts of systems they cannot see, which researchers call <em>folk theories</em>.</p>
+<p>So the ethnography of algorithms is really the study of relations: who maintains the thing, who is evaluated by it, who works around it. Which carries a hard methodological conclusion — ask a user "what do you think of these recommendations" and what you get back is a folk theory. <strong>To see what it changed, watch what people do, not what they say about it.</strong></p>
+</div>
+<div class="section">
+<span class="num">// 03</span>
+<h2>Automation rarely takes a whole job; it takes a few of the actions in the middle, and the rest gets rearranged</h2>
+<p>In the 1980s Shoshana Zuboff watched this happen in an American pulp mill. The older workers had judged with their bodies — a handful of pulp squeezed, sniffed, sometimes chewed, and they knew whether the batch was right. After computer control came in they were shown into an air-conditioned room with a row of numbers on a screen, and some would slip back down to the floor to put a hand on the equipment, because they did not trust the screen. She named the process <em>informating</em>: the machine does not merely take the actions over, it turns the whole process into information that can be watched, stored and compared. So what changes is not only who does the work but <strong>whose judgement counts</strong> — the old hand's accuracy, the kind he cannot give reasons for, does not exist in the form of numbers, so in the new setup it has no place. This is the same sort of thing as the locally grown feel for a situation in the issue on seeing like a state.</p>
+<p>In 1983 the cognitive psychologist Lisanne Bainbridge wrote a very short paper called "Ironies of Automation". The irony: automation takes the easy part first, and what it leaves the human being is precisely the two hardest things — watching a system that almost never fails for hours on end, and taking over in the few minutes when it does. But a person watching something that does not fail will drift, and unexercised skills go stale; by the moment the takeover is required, that person is in their worst condition.</p>
+<p>What gets missed more often is the work that grows. Benjamin Shestakofsky published a study in 2017 based on nineteen months of participant observation inside a software company: rather than reducing the demand for people, the software generated two new kinds of work — one standing in for the software, with humans matching by hand what the algorithm could not, and one helping users live with the software, explaining the awkward decisions it made. In 2019 Mary Gray and Siddharth Suri named a large adjacent territory <em>ghost work</em>: labelling, reviewing, correcting, paid by the piece, with output that looks as though a machine made it. What these jobs have in common is not that they are hard; it is that <strong>they are not on the org chart</strong>.</p>
+<p>Macro numbers need care. A much-cited 2013 estimate put about 47% of US employment at high risk of automation; a 2016 OECD working paper recomputed it by decomposing jobs into tasks and found an average of about 9% across twenty-one countries. The difference is not arithmetic but units: the first asks whether a whole occupation can be replaced, the second asks which tasks within it can. Which unit is right depends on whether a job comes apart — and what the section on the farmers and their jacked-up cars describes is precisely that this, too, is fought over.</p>
+<p>That lets "AI and the meaning of work" land somewhere more concrete: meaning is not only about whether there is work to do, but about which part of what you do is counted as skill. When judgement moves into the system, the most valuable stretch of craft may neither disappear nor be acknowledged — it becomes the backstop: you have to be there when it fails, and the rest of the time it does not appear in the job description or the review. That is something you can check: what the new job descriptions say, which rows are on the evaluation sheet, whose name turns up in the post-mortem.</p>
+</div>
+<div class="bigcat">
+<h3>🎒 Scenes · BigCat</h3>
+<ul>
+<li><b>① Leading a team and organizations</b>: after an automation tool ships, the hours it was supposed to save never show up; instead a new kind of work appears — handling the edge cases it gets wrong — and that work has no name in the weekly report. The mechanism is the one in "automation rarely takes a whole job": what got taken over was a few actions in the middle, the backstop stayed, and nobody counts it as work. What to change: stop using "hours saved" as the only acceptance metric; before shipping, fix in advance who owns the part it judges badly and whose output it counts as, and give that backstop its own line in the schedule.</li>
+<li><b>② Practice and the mind</b>: you check the app's minute count and streak the moment each sitting ends, and a few weeks later you notice you are sitting in order not to break the streak. The mechanism is the one in "you cannot interview a recommender system": once a number is used to evaluate, it turns from a record into a target, and the part that gets recorded crowds out the part that does not. What to change: stop looking at the statistics first; write one line about how the sitting went instead, and do not make up a broken streak.</li>
+</ul>
+</div>
+<div class="crossx">
+<h3>🌀 Crossing over · Connections beyond the field</h3>
+<ul>
+<li><b>Complexity science · An urn with one rule — whoever arrives first takes more — lets you prove the outcome must lock in, without being able to compute which outcome</b>: an urn holds balls of two colours; each round you draw one at random and return it along with another of the same colour. For this family of processes (a Pólya urn, in mathematics) the proportion converges almost surely to some value, but which value is settled by the first few accidents and cannot be computed in advance. W. Brian Arthur connected this to technological competition in 1989: when two technologies with increasing returns compete (the more people use it, the better it works), a small early accidental lead can roll into taking the whole market, and what gets locked in is not necessarily the better one. The mechanism is the one in "farmers jacked up the back of the car": closure happens not because something is optimal but because the argument got shut. <b>From this follows something you could not otherwise see: you can judge in advance which domains will lock in — not by who is advertising what, but by whether increasing returns exist; and since lock-in happens early and the window is short, "wait for a better option and then choose" — a strategy that looks perfectly rational on its own — fails systematically, because the more people wait, the faster the window shuts.</b> <b>But it does not hold here</b>: balls only go into the urn, never out, and no outside force can reopen it; in real systems regulation, a standards body, or a new general-purpose component can all pry a closed argument back open. And the step from "locked in" to "suboptimal" has been disputed in economic history throughout — for the keyboard case that gets cited most, critics argue the evidence that the alternative was better was thin to begin with. <b>What transfers is the timing and shape of lock-in; what does not transfer is "whatever locked in must be worse".</b></li>
+<li><b>Neuroscience and consciousness · A monkey learns to use a rake, and shortly afterwards the reach of its hand, as its brain represents it, extends to the tip of the rake</b>: a 1996 macaque study found cells in the region of the intraparietal sulcus that handle both touch and vision, with the visual part originally hugging the hand; after the animal was trained to use a rake to get food it could not otherwise reach, the visual field of those cells expanded to cover the whole rake. The mechanism is the one in "you cannot interview a recommender system": a tool is not "used", it is incorporated into practice, and the boundary of what a person can do deforms accordingly — a deformation that does not pass through "what I think of it". <b>From this follows: to find out what a system changed about its users, asking "what do you think of this algorithm" returns a folk theory; watch instead how their actions deform when it is taken away — the shape of the errors says more than the opinions about how deeply it was incorporated.</b> <b>But it does not hold here</b>: the rake's incorporation is individual, a fast sensorimotor recalibration that reverses when the rake is removed; algorithmic incorporation is collective, passed along through colleagues and the conventions of a trade — the same traffic numbers mean different things in two countries' newsrooms, and that channel does not exist on the monkey's side. <b>What transfers is "what gets used into you rewrites the boundary of what you can do, and bypasses self-report"; what does not transfer is "so measuring it in individuals is enough".</b></li>
+</ul>
+</div>
+<div class="thinking">
+<h3>Questions to sit with</h3>
+<details><summary>If uses are fought out by users, how much weight is left in "the designer's intent"?</summary>
+<div>Those farm uses could feed back into the design because the designers could not stop them — once the car was sold it was out of reach. For a system that can be changed at any moment and whose uses are all visible from the back end, that premise is much weaker.</div>
+</details>
+<details><summary>In an ethnography of algorithms, who exactly are the "people" being studied?</summary>
+<div>Developers, users, and the people filling gaps by hand behind the scenes. The trouble is that these three groups rarely meet, and each sees only one face of the system. Fieldwork's old method assumes the villagers run into each other, which does not hold here.</div>
+</details>
+<details><summary>When a machine takes a task over, have the people who used to do it lost a skill?</summary>
+<div>At least two readings. One is rustiness: the actions are still there, just less practised. The other is that "what counts as skill" has been redefined — the pulp mill's unarticulated accuracy stopped being an asset after digitization. The first can be practised back; the second cannot. To tell them apart, watch which one pay and evaluation follow.</div>
+</details>
+</div>
+<div class="refs">
+<h3>Further reading</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Social_construction_of_technology" rel="noopener" target="_blank">Social construction of technology (SCOT)</a></li>
+<li><a href="https://www.semanticscholar.org/paper/Users-as-Agents-of-Technological-Change:-The-Social-Kline-Pinch/eea8e7d28506105d0f800524d132e39a4ca32b69" rel="noopener" target="_blank">Kline &amp; Pinch, Users as Agents of Technological Change (1996)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Langdon_Winner" rel="noopener" target="_blank">Langdon Winner, "Do Artifacts Have Politics?" (1980)</a></li>
+<li><a href="https://press.uchicago.edu/ucp/books/book/chicago/C/bo183892298.html" rel="noopener" target="_blank">Nick Seaver, Computing Taste (2022)</a> · <a href="https://journals.sagepub.com/doi/10.1177/1359183518820366" rel="noopener" target="_blank">Captivating Algorithms (2019)</a></li>
+<li><a href="https://press.princeton.edu/books/hardcover/9780691175232/metrics-at-work" rel="noopener" target="_blank">Angèle Christin, Metrics at Work (2020)</a></li>
+<li><a href="https://dl.acm.org/doi/10.1145/2702123.2702556" rel="noopener" target="_blank">Eslami et al., Reasoning about invisible algorithms in news feeds (2015)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Informating" rel="noopener" target="_blank">Zuboff, In the Age of the Smart Machine, and informating (1988)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Ironies_of_Automation" rel="noopener" target="_blank">Bainbridge, Ironies of Automation (1983)</a></li>
+<li><a href="https://journals.sagepub.com/doi/10.1177/0730888417726119" rel="noopener" target="_blank">Shestakofsky, Working Algorithms (2017)</a> · <a href="https://en.wikipedia.org/wiki/Ghost_work" rel="noopener" target="_blank">Ghost work</a></li>
+<li><a href="https://www.oecd.org/en/publications/the-risk-of-automation-for-jobs-in-oecd-countries_5jlz9h56dvq7-en.html" rel="noopener" target="_blank">OECD, The Risk of Automation for Jobs in OECD Countries (2016)</a></li>
+<li><a href="https://academic.oup.com/ej/article-abstract/99/394/116/5188212" rel="noopener" target="_blank">Arthur, Competing Technologies, Increasing Returns, and Lock-In (1989)</a> · <a href="https://ios23.classes.ryansafner.com/files/readings/Leibowitz-Margolis-1990.pdf" rel="noopener" target="_blank">Liebowitz &amp; Margolis, The Fable of the Keys (1990)</a></li>
+<li><a href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2014.00310/full" rel="noopener" target="_blank">The neural basis of human tool use (review, covers Iriki et al. 1996)</a></li>
+</ul>
+</div>
+<footer>BigCat Learning Hub · Sociology &amp; Anthropology</footer>
+</div>
+<script src="https://hub.cissychen.com/comments.js" defer></script>
+<script src="https://hub.cissychen.com/search.js" defer></script>
+<script src="https://hub.cissychen.com/index-button.js" defer></script>
+<script src="https://hub.cissychen.com/i18n-tts.js" defer></script>
+</body></html>
