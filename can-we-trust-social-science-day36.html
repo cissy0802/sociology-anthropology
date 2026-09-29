@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>社会学与人类学 Day 36：社会科学还能相信吗</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:linear-gradient(170deg,#1a140f,#171210 42%,#120e0b);color:#e6dacc;line-height:1.9;min-height:100vh}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 60px}
+header{padding:52px 0 30px;border-bottom:1px solid #33261d}
+header .kicker{font-size:0.75rem;color:#8fb0cc;letter-spacing:2.5px;font-family:"SF Mono",Menlo,monospace}
+header h1{font-size:2.1rem;font-weight:800;background:linear-gradient(100deg,#e08155,#eda07c 58%,#8fb0cc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:0.5px;margin-top:12px;line-height:1.28}
+header h2{font-size:1rem;color:#a08b78;margin-top:10px;font-weight:400}
+header .meta{margin-top:14px;font-size:0.85rem;color:#a08b78}
+header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
+.intro{margin-top:30px;font-size:1.02rem;color:#d8c9b8}
+.intro p{margin-bottom:13px}
+.section{margin:46px 0;background:rgba(255,255,255,0.028);padding:28px 26px;border-radius:14px;border:1px solid rgba(255,255,255,0.06)}
+.section .num{display:inline-block;font-size:0.75rem;color:#e08155;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;margin-bottom:8px}
+.section h2{font-size:1.32rem;color:#f4ece2;margin-bottom:16px;font-weight:700;line-height:1.35}
+.section p{margin-bottom:14px;font-size:0.98rem}
+.section strong{color:#fff}
+.section em{color:#e08155;font-style:normal}
+.section ul{list-style:none;margin:14px 0}
+.section li{margin-bottom:10px;padding-left:20px;position:relative}
+.section li::before{content:"◈";position:absolute;left:0;top:0.42em;color:#e08155;font-size:0.7rem}
+.fig{margin:24px 0 10px;text-align:center}
+.fig svg{max-width:100%;height:auto}
+.fig .cap{font-size:0.82rem;color:#a08b78;margin-top:8px;text-align:left;line-height:1.65}
+.en-brief{margin-top:18px;padding:12px 16px;border-left:2px solid rgba(160,139,120,0.5);background:rgba(255,255,255,0.02);border-radius:0 8px 8px 0;font-size:0.85rem;color:#b0a08e;line-height:1.62}
+.en-brief b{color:#bda994;font-family:"SF Mono",Menlo,monospace;font-size:0.68rem;letter-spacing:1.5px;margin-right:9px;font-weight:700}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(143,176,204,0.12),rgba(224,129,85,0.05));border:1px solid rgba(143,176,204,0.34);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#8fb0cc;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#dfe3e6;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e08155;font-size:0.72rem}
+.crossx b{color:#aecbe2;font-weight:600}
+.thinking{background:linear-gradient(135deg,rgba(224,129,85,0.06),rgba(143,176,204,0.05));border:1px solid rgba(224,129,85,0.24);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e08155;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(18,14,11,0.5);border:1px solid rgba(224,129,85,0.2);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(224,129,85,0.06);border-color:rgba(224,129,85,0.42)}
+.thinking summary{cursor:pointer;color:#eda07c;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#8fb0cc}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(143,176,204,0.22);color:#ddd0c1;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#8fb0cc;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a08b78}
+.refs a{color:#e08155;text-decoration:none;border-bottom:1px dotted rgba(224,129,85,0.42)}
+.refs a:hover{color:#eda07c;border-bottom-color:#eda07c}
+.bigcat{margin:40px 0 0;background:linear-gradient(135deg,rgba(224,129,85,0.11),rgba(143,176,204,0.04));border:1px solid rgba(224,129,85,0.32);border-radius:14px;padding:22px 26px}
+.bigcat h3{color:#eda07c;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.bigcat ul{list-style:none;margin:0}
+.bigcat li{color:#ece0d2;font-size:0.93rem;line-height:1.8;margin-bottom:14px}
+.bigcat li:last-child{margin-bottom:0}
+.bigcat b{color:#eda07c;font-weight:600}
+footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
+@media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+</style></head><body>
+<div class="container">
+<header>
+<div class="kicker">DAY 36 · 社会科学还能相信吗</div>
+<h1>社会科学还能相信吗</h1>
+<h2>这一期最反直觉的一句：社会科学最脆的地方不在统计，在更早的两环——你手里那个数还是不是你想量的东西，以及世上有没有一个跟人无关的动作替你把人分了组。</h2>
+<div class="meta">2026-09-29 · BigCat</div>
+<div class="pitch">印度喀拉拉邦的识字率和寿命都是全国最高的，自己报告的疾病也是全国最多的。按这套报告排名，全世界最不健康的地方是美国。</div>
+</header>
+<div class="intro">
+<p>「研究表明」你见得够多了。更值得停一下的是另一种句子：「调查显示，A 国的人际信任度比 B 国低十二个百分点。」</p>
+<p>它看起来更结实，因为它带数。但它要成立，先得过两关，而两关都在统计之前：那个勾，两国的人用的是同一把尺子吗；就算数是真的，「低」是国家造成的，还是那两拨人本来就不一样。</p>
+<p>这两关过不去，小数点有几位都不要紧。下面这些研究不是要给你一句「所以社会科学不可信」——它们是这门学科自己量出自己在哪儿脆，而量出来之后，你能分辨哪类结论能拿去做事、哪类只能当线索。</p>
+</div>
+<div class="section">
+<span class="num">// 01</span>
+<h2>最健康的地方，报告的病最多</h2>
+<p>体检问卷上有一栏：您近三个月的总体健康状况，很好／好／一般／差。你会勾一个。隔壁那位勾了同一格的人，说的是同一件事吗？</p>
+<p>经济学家阿马蒂亚·森（Amartya Sen）2002 年在《英国医学杂志》上摊开一组对比。印度的喀拉拉邦识字率和预期寿命全国最高（当时约七十四岁），自报疾病最多的也是它；比哈尔邦医疗教育条件最差，自报疾病率最低。同样几种病，美国人报告得比喀拉拉人还多。<strong>健康若用「自己说有没有病」来量，排名会是：美国最不健康，比哈尔最健康。</strong></p>
+<p>森的解释不复杂：报告自己有病，前提是你把那个状态认成「病」。周围人普遍带着病痛过日子的地方，很多状态被算成活着本来的样子；看过医生、知道病名的人，同一个身体会报出更多问题。不是谁说谎，是尺子长在本地，还跟着你见过什么漂。</p>
+<div class="fig">
+<svg viewbox="0 0 720 210" xmlns="http://www.w3.org/2000/svg">
+<g font-family="Georgia, 'Noto Serif SC', serif">
+<line stroke="#a08b78" stroke-width="1" x1="118" x2="668" y1="180" y2="180"></line>
+<text fill="#a08b78" font-size="12" x="118" y="198">实际更差</text>
+<text fill="#a08b78" font-size="12" text-anchor="end" x="668" y="198">实际更好</text>
+<g fill="#dfe3e6" font-size="12.5" text-anchor="end">
+<text x="108" y="40">甲地</text>
+<text x="108" y="90">乙地</text>
+<text x="108" y="140">丙地</text>
+</g>
+<g fill="none" stroke="#8fb0cc" stroke-width="1.1">
+<rect height="26" rx="5" width="550" x="118" y="22"></rect>
+<rect height="26" rx="5" width="550" x="118" y="72"></rect>
+<rect height="26" rx="5" width="550" x="118" y="122"></rect>
+</g>
+<g stroke="#8fb0cc" stroke-width="1.1">
+<line x1="228" x2="228" y1="22" y2="48"></line><line x1="348" x2="348" y1="22" y2="48"></line><line x1="468" x2="468" y1="22" y2="48"></line>
+<line x1="298" x2="298" y1="72" y2="98"></line><line x1="428" x2="428" y1="72" y2="98"></line><line x1="558" x2="558" y1="72" y2="98"></line>
+<line x1="178" x2="178" y1="122" y2="148"></line><line x1="268" x2="268" y1="122" y2="148"></line><line x1="368" x2="368" y1="122" y2="148"></line>
+</g>
+<g fill="#a08b78" font-size="11" text-anchor="middle">
+<text x="173" y="39">差</text><text x="288" y="39">一般</text><text x="408" y="39">好</text><text x="568" y="39">很好</text>
+<text x="208" y="89">差</text><text x="363" y="89">一般</text><text x="493" y="89">好</text><text x="613" y="89">很好</text>
+<text x="148" y="139">差</text><text x="218" y="139">一般</text><text x="318" y="139">好</text><text x="518" y="139">很好</text>
+</g>
+<line stroke="#e08155" stroke-dasharray="4 3" stroke-width="1.5" x1="398" x2="398" y1="14" y2="176"></line>
+<text fill="#e08155" font-size="12" text-anchor="middle" x="398" y="10">同一个身体</text>
+</g>
+</svg>
+<div class="cap">同一个身体落在三张问卷上，勾出三个不同答案。跨地比出来的差，一部分是身体的差，一部分是切点的差，问卷交回来之后就分不开了。</div>
+</div>
+<p>这一关有名字：把说不清的东西换成能记下来的数，叫<em>操作化</em>（operationalization）；换完再追问那个数还是不是原来那个东西，叫<em>构念效度</em>（construct validity）。第二问才要命。</p>
+<p>最流传的那个社会信任指标就卡在这儿。问法几十年没变：一般来说，你认为大多数人可以信任，还是跟人打交道要多加小心？2000 年 Glaeser 等四位经济学家让一百八十九个学生既填这份问卷、也做真给钱的实验：把钱交给一个陌生同学，对方可以还也可以不还。结果是错位的——答「可以信任」的人更会把钱还回来，却并不更愿意先把钱交出去。<strong>这个叫「信任」的指标，量到的更像「我自己守不守信」。</strong>单一样本、全是大学生，当不成定论，但「名字对不对」从此摆上了台面。</p>
+<p>修法也朴素：让所有人给同几个虚构人物打分，分差就是尺子的差（King 等，2004）。<strong>一个数能不能比，不看它精确到第几位，看不同人手里是不是同一把尺子。</strong></p>
+<p class="en-brief"><b>EN</b> A health form asks you to rate your own health over the past three months: very good, good, fair, poor. Does the person next to you, ticking the same box, mean the same thing? In 2002 the economist Amartya Sen laid out a comparison in the British Medical Journal. Kerala, in India, has the country's highest literacy and highest life expectancy (around seventy-four years at the time) — and also the country's highest rate of self-reported illness. Bihar has the worst medical and educational provision in India and the lowest rate of self-reported illness. Put the United States alongside, and for the same complaints Americans report more than Keralans do. So if health is measured by whether people say they are ill, the ranking is: the United States least healthy, Kerala next, Bihar healthiest. Sen's explanation is simple. Reporting that you are ill requires recognizing the state you are in as illness. Where care is scarce and people around you live with pain as a standing condition, many states get counted as simply what being alive is like; someone who has seen a doctor, knows the name of the condition and has watched someone else get treated will report more problems from the same body. Nobody is lying — the yardstick is local, and it drifts with what you have seen. This step has a name. Turning something hard to pin down into a number you can record is <em>operationalization</em>; asking afterwards whether that number is still the thing you started with is <em>construct validity</em>. The second question is the dangerous one. The most widely circulated measure of social trust is stuck on it. In 2000 Glaeser and three other economists recruited from Harvard's introductory economics course; a hundred and eighty-nine people completed everything, filling in the standard trust question and also playing for real money — handing cash to a stranger who could return it or keep it. The results came out crossed. People who answered "most can be trusted" were more trustworthy in the experiment (more likely to send the money back), but no more willing to hand money over in the first place. <strong>The measure called "trust" is capturing something closer to "do I keep my word".</strong> One sample, all undergraduates — not a verdict, but it put the question of whether the name fits on the table. There is a repair, and a plain one. In 2004 King and colleagues proposed that alongside asking about yourself, you read everyone the same few descriptions of invented people and have them rate those on the same scale. The invented cases are fixed, so any difference in how people rate them is a difference in yardsticks, and correcting self-ratings with it is what makes them comparable. <strong>Whether a number can be compared depends not on its decimal places but on whether the people producing it held the same ruler.</strong></p>
+</div>
+<div class="section">
+<span class="num">// 02</span>
+<h2>同一批家庭抽签搬家，真正的答案二十年后才出来</h2>
+<p>「住到更好的小区去，孩子会不会变好」——难点不在答案，在怎么知道。搬得走的家庭本来就跟搬不走的不一样：更有钱、更有主意。孩子后来好一点，你分不清是小区的功劳还是这家人本来的样子。这块石头叫<em>选择性</em>（selection）。</p>
+<p>1994 年起，美国五个城市做了件罕见的事：从高贫困率的公共住房里抽签发住房券，一部分券限定必须搬进低贫困率社区。项目叫「搬向机会」（Moving to Opportunity）。抽签是全部关键——谁拿到券跟这家人是什么样的家庭无关，所以两组后来的差别可以归到拿到券这件事上。</p>
+<p>2007 年 Kling、Liebman 与 Katz 报了第一轮：四到七年后，拿到券的家庭确实住进了更安全的社区，但成年人的就业和收入没有能检出的整体效应；成年人和女孩的心理健康改善明显，女孩那边的好处又被男孩那边反向的效应抵掉一部分。当时不少人读出：邻里效应大概被夸大了。</p>
+<p>2016 年 Chetty、Hendren 与 Katz 用税务数据把这批孩子追到二十多岁。搬家时不到十三岁的孩子，二十五六岁上的年收入平均高出三千四百七十七美元，比对照组均值高三成，上大学的比例也更高。搬家时已是青少年的那批，估出来的效应轻微偏负，作者猜是转学被打断的代价。</p>
+<p>同一个实验，同一批人，随机化一点没变，变的只有量什么、量谁、隔多久量。<strong>这说明的不是谁当年读错了，而是「效应」这个词本身不完整：不补上「对谁、多久之后、量的是哪个后果」，它连一个能对错的说法都不算。</strong></p>
+<p>还有一层散布来自分析的人：2018 年有项研究把同一份数据和同一个事先给定的问题交给二十九个团队，交回来的效应量从 0.89 铺到 2.93，二十个团队得到显著正效应，九个没有。<strong>「结果是多少」于是常常不是一个数而是一段区间，一部分来自世界，一部分来自坐在数据前面的人。</strong></p>
+<p class="en-brief"><b>EN</b> "If you move to a better neighbourhood, do your children do better?" — the hard part is not the answer but how anyone could know. Families who can move are already different from families who cannot: more money, more initiative, more relatives to lean on. If the children do better later, you cannot separate the neighbourhood's contribution from what the family already was. The rock you cannot walk around here is called <em>selection</em>. From 1994, five American cities did something rare: families in high-poverty public housing were offered housing vouchers by lottery, some restricted to moves into low-poverty neighbourhoods. The programme was Moving to Opportunity. The lottery is the whole point — who received a voucher had nothing to do with what kind of family they were. In 2007 Kling, Liebman and Katz reported the first round: four to seven years on, voucher families were indeed living in safer, lower-poverty neighbourhoods, but there was no detectable overall effect on adults' employment or earnings; mental health improved substantially for adults and girls, and gains for girls in education, health and risky behaviour were partly offset by effects running the other way for boys. What many people read off this at the time was that neighbourhood effects had been overstated. In 2016 Chetty, Hendren and Katz used administrative tax data to follow these children into their twenties. Those under thirteen when their family moved were earning, in their mid-twenties, an average of three thousand four hundred and seventy-seven dollars more a year — against a control mean of eleven thousand two hundred and seventy, about thirty-one per cent more — and were more likely to have attended college. For those already adolescent at the move, the estimated effect was slightly negative; the authors suspect the cost of disrupted schooling. Same experiment, same people, randomization untouched. All that changed was what was measured, on whom, and how long afterwards. <strong>The lesson is not that somebody misread it, but that the word "effect" is incomplete on its own: without "for whom, how long afterwards, and which outcome", it is not even the kind of statement that can be right or wrong.</strong> A further spread comes from the analysts. In 2018 one study handed the same dataset — one season of the top divisions in four countries, two thousand and fifty-three players, more than a hundred and forty thousand player-referee encounters — to twenty-nine teams and sixty-one analysts, with the same question specified in advance. Effect sizes came back from 0.89 to 2.93 in odds-ratio units, median 1.31; twenty teams found a statistically significant positive effect and nine did not. The point was not to answer the substantive question but to measure how much spread analytic choices produce by themselves. <strong>So "what is the result" is often not a number but an interval, part of it from the world and part from whoever sits in front of the data.</strong> Why, then, does everyone care so much about lotteries? In 1986 LaLonde ran a check: a job-training programme for which a randomized experiment had already produced an answer, against which he set the non-experimental methods then in standard use. Their numbers did not match. What a lottery buys is exactly that — not the right to ask more questions, but the ability to do justice to the one you did ask.</p>
+</div>
+<div class="section">
+<span class="num">// 03</span>
+<h2>那条线看起来长一点：这个例子曾是全学科的地基，现在它自己被撬了</h2>
+<p>你大概见过这张图：两条一样长的线，一条两端箭头朝外，一条朝内，朝外那条看起来更长。这叫缪勒-莱尔错觉。</p>
+<p>1966 年 Segall、Campbell 与 Herskovits 发表了一项跨十六个群体、近两千人的测量：平均误判幅度从 1.4% 排到 20.3%，三个欧洲裔样本最容易上当，卡拉哈里的桑人（San）最不容易。解释叫「木匠世界假说」：从小生活在直角和方屋子里的人，视觉系统被这些线条训练过。</p>
+<p>2010 年 Henrich、Heine 与 Norenzayan 把这个例子放在第一个，提出那个被引到烂的问题：心理学六个分支的顶级期刊里，68% 的被试来自美国，96% 来自西方工业化国家；一个西方大学的本科生被心理学家研究到的概率，是圈外随便一个人的四千倍。他们给这批人起的缩写 WEIRD——西方、受过教育、工业化、富裕、民主——连起来正好是英文里「古怪」。<strong>文献里那个「人」字，指的是一小撮很不典型的人。</strong></p>
+<p>但 2025 年，Dorsa Amir 与 Chaz Firestone 在《心理学评论》上把这个头号例子翻了一遍，结论是「木匠世界」几乎肯定不成立：这个错觉在生活环境差异极大的非人动物身上也出现，在视觉之外的感官通道里、在先天失明的人身上也出现。更要紧的是，重读 1966 年那批原始数据，跨文化差异跟那些文化变量的相关其实很不一致。</p>
+<p>怎么读才对？不是「WEIRD 问题是假的」，而是：<strong>一个学科反省自己时，用的也是同一套会出错的证据，所以反省本身也得被反省——这恰恰是这套机制还在跑的证明。</strong>WEIRD 这个问题更硬的证据在别处。</p>
+<p>Henrich 等人还组织了另一件事：把最后通牒博弈（ultimatum game）带进十五个小规模社会。规则是一个人分一笔真钱，另一个人只能全接或全拒，拒了两人都拿不到。欧美大学生里出价通常接近一半，出太低会被拒。这十五个群体的平均出价从 26% 排到 58%：亚马逊的 Machiguenga 人平均只出 26%，几乎不拒；巴布亚新几内亚有两个群体反过来，有人出到一半以上，这种「超公平」出价常被拒掉。</p>
+<p>定量和定性那场争论在这儿落了地。光看数字，「超公平出价被拒」只能记成噪音。它能被读懂，是因为出题的人在那些村子里住过：那套送礼的规矩下，接下过大的礼意味着背上还不清的人情。<strong>数字告诉你哪里不一样，住过的人才知道那个不一样是什么。</strong></p>
+<p>而样本偏窄，坏处从来不是「结论错了」。<strong>是「不知道结论管到哪儿为止」——两种情况在纸面上长得一模一样，都写成「人们倾向于……」。</strong></p>
+<p class="en-brief"><b>EN</b> You have probably seen the figure: two lines of equal length, one with arrowheads pointing out and one pointing in, and the outward one looks longer. It is the Müller-Lyer illusion. In 1966 Segall, Campbell and Herskovits published a six-year cross-cultural measurement covering sixteen groups and nearly two thousand people, from the United States, the Philippines and central Australia to Senegal, Nigeria, the Congo basin and the Kalahari. On this illusion the mean misjudgement ran from 1.4 per cent up to 20.3 per cent: the three European-descended samples were the most susceptible and the San foragers of the Kalahari the least — for them it is barely an illusion at all. The explanation was called the carpentered-world hypothesis: people raised among right angles, square rooms and long tables have visual systems trained by those lines. In 2010 Henrich, Heine and Norenzayan put this example first and raised the question that has since been cited to death: in the top journals of six subfields of psychology, 68 per cent of participants came from the United States and 96 per cent from Western industrialized countries, and an undergraduate at a Western university is some four thousand times more likely to be studied by a psychologist than a person picked at random outside. They gave these populations the acronym WEIRD — western, educated, industrialized, rich, democratic. <strong>The word "people" in the literature refers to a rather untypical handful of them.</strong> But in 2025 Dorsa Amir and Chaz Firestone went back through that flagship example in Psychological Review and concluded that the carpentered-world hypothesis is almost certainly false. Several strands are hard to get around: the illusion appears in non-human animals living in wildly different environments; the statistics of natural scenes are enough to produce it; it does not require the straight lines of a carpentered world; it appears in sense modalities other than vision; and it appears in congenitally blind subjects. More pointedly, they reread the 1966 data and field descriptions and found the evidence for cultural variation, and its correlation with the cultural variables in question, to be highly inconsistent — and amplified by layer upon layer of later citation. How should this be read? Not as "the WEIRD problem was fake", but: <strong>when a discipline examines itself it uses the same fallible evidence as everything else, so the self-examination has to be examined too — which is proof the machinery is still running.</strong> The harder evidence for the WEIRD problem lies elsewhere, precisely where quantitative and qualitative work meet. Henrich and colleagues organized something else: taking the economists' ultimatum game into fifteen small-scale societies. The rule is simple — one person splits a sum of real money, the other can only accept all of it or reject all of it, and a rejection leaves both with nothing. Among European and American undergraduates offers usually come close to half, and low offers get rejected. Across these fifteen groups mean offers ran from 26 to 58 per cent: the Machiguenga of the Amazon offered 26 per cent on average and almost never rejected anything. In Papua New Guinea two groups produced the opposite oddity: some people offered more than half, and these "hyper-fair" offers were frequently rejected. This is where the quantitative-versus-qualitative argument comes down to earth. From the numbers alone, "hyper-fair offers rejected" can only be recorded as noise, or diagnosed as participants not understanding the rules. It became readable because the people running the games had lived in those villages: under those rules of gift-giving, accepting an oversized gift means taking on an obligation you cannot discharge — better not to take it. <strong>Numbers tell you where something differs; only someone who has lived there knows what the difference is.</strong> The obligations discussed in the issue on gifts and reciprocity decide here, directly, how a piece of experimental data should be read. How much has changed since? In 2021 Thalmayer and colleagues went back through the same journals for 2014 to 2018: American authors and samples had fallen from over seventy per cent to a little over sixty, but the shift came mainly from other English-speaking countries and western Europe; authors and samples from the majority of the world still account for only 4 to 5 per cent. <strong>The damage a narrow sample does is not that the conclusion is wrong but that nobody knows how far it reaches — and on the page those two look identical, both written as "people tend to…".</strong></p>
+</div>
+<div class="bigcat">
+<h3>🎒 场景 · BigCat</h3>
+<ul>
+<li><b>① 健康与精力</b>：连着几周你觉得「精力还行」，但同一段路的配速在掉、晚上看不进字的时间越来越早。跑的是「最健康的地方，报告的病最多」那节的机制：自评用的是你自己的尺子，而尺子跟着你适应过的状态一起漂——适应了就报不出来。可改的动作：停掉拿「今天感觉怎么样」当趋势判据，改成固定一两个跟感觉无关的锚（配速、清早的静息心率），只比同一个锚的前后。</li>
+<li><b>② 投资与仓位</b>：每次判断一家公司值不值得拿三年，你最后总落到那几个算得出来的比率上。跑的是操作化到构念效度那一串：你想知道的是护城河，能拿到的是几个数，决策于是漂到拿得到的那部分上。可改的动作：写下任何一个比率之前，先写一句「我真正想知道的是什么，这个数跟它差在哪」，把差掉的那部分单列成待查项。</li>
+</ul>
+</div>
+<div class="crossx">
+<h3>🌀 越界 · 跨学科的联想</h3>
+<ul>
+<li><b>物理与数学 · 2019 年，一公斤被重新定义成一个常数，不再是巴黎郊外那根铁柱子</b>：一百三十年里，一公斤的定义就是巴黎近郊那块铂铱合金圆柱，各国砝码拿它当准。问题是它会变——跟副本比，百年里漂了几十微克。2019 年起公斤改由普朗克常数定义，这个数不随地点、年代、谁来量而变。跑的是「最健康的地方，报告的病最多」那节的机制：跨时跨地要比得成立，先得有一把不跟着比较对象漂的尺子。由此推出一个原本看不出的结论：<b>社会科学缺的不是统计而是可移植的单位，所以跨国信任排名的可比性问题加样本加不出来；反过来，挂上了物理锚的社会指标（寿命、识字、受教育年数）跨国比较相对站得住，靠打分量表的只能当线索。</b><b>但这里不成立</b>：物理学能钉住常数，是因为它可以不管人怎么感觉就把单位定下来；痛苦、公平感这类量定义里就含主观，没有量表之外的黄金标准可钉。<b>借得过来的是「没有共同单位就没有跨组比较」，借不过来的是「都该换成客观指标」——真正主观的东西换掉就没了。</b></li>
+<li><b>育儿与教育 · 一条十二世纪的律法，把以色列的班级规模变成了一场天然抽签</b>：迈蒙尼德在十二世纪写下一条规矩：一个班超过四十人就分班，它至今还在以色列的小学里执行。于是年级四十人的学校只开一个大班，四十一人的劈成两个小班——多出来那一个孩子跟别人没什么两样，却把两边分进了完全不同的班级规模。1999 年 Angrist 与 Lavy 用这个门槛估了班级规模对成绩的影响。跑的是「同一批家庭抽签搬家」那节的机制：因果这关过不过，看世上有没有一个跟人无关的动作替你分了组。由此推出一个原本看不出的结论：<b>你能在文献里查到答案的育儿问题，不是最重要的那些，而是恰好卡在某条制度门槛上的——入学月份、班额上限、摇号入学；「要不要多陪他读书」这种没人替你分组的，无论多要紧都只有相关性可看。</b><b>但这里不成立</b>：门槛给出的因果量只对「卡在门槛附近被分开的那批孩子」成立，四十人和四十一人之间的效应推不到十五人和三十人之间。<b>借得过来的是「分组动作决定了哪些问题可答」，借不过来的是「答了就能用在你家」。</b></li>
+</ul>
+</div>
+<div class="thinking">
+<h3>深入思考</h3>
+<details><summary>一个随机实验给出的答案，有效范围是多大？</summary>
+<div>「搬向机会」只覆盖了愿意报名、住在那五个城市高贫困率住房里的家庭。它对这批人是金标准，对别人不是。于是有个取舍：越干净的因果估计，覆盖的人群往往越窄；越覆盖得广的调查，越说不清因果。</div>
+</details>
+<details><summary>民族志只有一个案例，凭什么算证据？</summary>
+<div>它证不了「多数人如何」，但能证「某件事在人类里是可能的」——而大量理论恰恰靠断言某件事不可能站着。「超公平出价会被拒」，一个村子就足以推翻「人都想多拿」的普适版本。单案例的力量在否证那一侧。</div>
+</details>
+<details><summary>把一个指标公布出来之后，它还是同一个指标吗？</summary>
+<div>人会照着被考核的那个数改行为，这个数于是跟它原本代表的东西脱钩。国家的视角那期讲的清晰化工程是放大版：为了可测而简化，被测的人随后顺着简化活。社会科学的测量因此跟物理测量有一处不同——被测对象会读你的量表。</div>
+</details>
+</div>
+<div class="refs">
+<h3>延伸阅读</h3>
+<ul>
+<li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1122815/" rel="noopener" target="_blank">Sen《健康：感知与观察》(2002, BMJ)</a> · <a href="https://en.wikipedia.org/wiki/Amartya_Sen" rel="noopener" target="_blank">Amartya Sen</a>（英文）</li>
+<li><a href="https://academic.oup.com/qje/article-abstract/115/3/811/1828161" rel="noopener" target="_blank">Glaeser 等《测量信任》(2000, QJE)</a> · <a href="https://en.wikipedia.org/wiki/Construct_validity" rel="noopener" target="_blank">构念效度</a>（英文）</li>
+<li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1082804" rel="noopener" target="_blank">King 等《提升测量的跨文化可比性》(2004, APSR)</a> · <a href="https://en.wikipedia.org/wiki/Anchoring_vignettes" rel="noopener" target="_blank">锚定情境法</a>（英文）</li>
+<li><a href="https://en.wikipedia.org/wiki/Moving_to_Opportunity" rel="noopener" target="_blank">搬向机会（MTO）</a> · <a href="https://onlinelibrary.wiley.com/doi/10.1111/j.1468-0262.2007.00733.x" rel="noopener" target="_blank">Kling 等：邻里效应的实验分析 (2007)</a> · <a href="https://www.aeaweb.org/articles?id=10.1257/aer.20150572" rel="noopener" target="_blank">Chetty 等：更好社区对儿童的影响 (2016)</a>（英文）</li>
+<li><a href="https://journals.sagepub.com/doi/10.1177/2515245917747646" rel="noopener" target="_blank">Silberzahn 等《众多分析者，同一份数据》(2018)</a>（英文）</li>
+<li><a href="https://en.wikipedia.org/wiki/WEIRD_(psychology)" rel="noopener" target="_blank">WEIRD 样本问题</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/20550733/" rel="noopener" target="_blank">Henrich 等《世界上最古怪的人？》(2010)</a>（英文）</li>
+<li><a href="https://en.wikipedia.org/wiki/M%C3%BCller-Lyer_illusion" rel="noopener" target="_blank">缪勒-莱尔错觉</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/40388159/" rel="noopener" target="_blank">Amir &amp; Firestone：视知觉是 WEIRD 的吗 (2025)</a>（英文）</li>
+<li><a href="https://www.aeaweb.org/articles?id=10.1257/aer.91.2.73" rel="noopener" target="_blank">Henrich 等：十五个小规模社会中的行为实验 (2001)</a> · <a href="https://en.wikipedia.org/wiki/Ultimatum_game" rel="noopener" target="_blank">最后通牒博弈</a>（英文）</li>
+<li><a href="https://psycnet.apa.org/record/2020-24590-001" rel="noopener" target="_blank">Thalmayer 等：被忽略的 95% 再访 (2021)</a>（英文）</li>
+<li><a href="https://en.wikipedia.org/wiki/Maimonides%27_rule" rel="noopener" target="_blank">迈蒙尼德法则与班级规模</a> · <a href="https://en.wikipedia.org/wiki/Kilogram" rel="noopener" target="_blank">2019 年公斤的重新定义</a>（英文）</li>
+</ul>
+</div>
+<footer>BigCat Learning Hub · 社会学与人类学</footer>
+</div>
+<script defer="" src="https://hub.cissychen.com/comments.js"></script>
+<script defer="" src="https://hub.cissychen.com/search.js"></script>
+<script defer="" src="https://hub.cissychen.com/index-button.js"></script>
+<script defer="" src="https://hub.cissychen.com/i18n-tts.js"></script>
+</body></html>

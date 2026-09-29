@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sociology &amp; Anthropology Day 36: Can We Trust Social Science?</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Georgia,"Noto Serif SC","Songti SC",serif;background:linear-gradient(170deg,#1a140f,#171210 42%,#120e0b);color:#e6dacc;line-height:1.9;min-height:100vh}
+.container{max-width:760px;margin:0 auto;padding:24px 20px 60px}
+header{padding:52px 0 30px;border-bottom:1px solid #33261d}
+header .kicker{font-size:0.75rem;color:#8fb0cc;letter-spacing:2.5px;font-family:"SF Mono",Menlo,monospace}
+header h1{font-size:2.1rem;font-weight:800;background:linear-gradient(100deg,#e08155,#eda07c 58%,#8fb0cc);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:0.5px;margin-top:12px;line-height:1.28}
+header h2{font-size:1rem;color:#a08b78;margin-top:10px;font-weight:400}
+header .meta{margin-top:14px;font-size:0.85rem;color:#a08b78}
+header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
+.intro{margin-top:30px;font-size:1.02rem;color:#d8c9b8}
+.intro p{margin-bottom:13px}
+.section{margin:46px 0;background:rgba(255,255,255,0.028);padding:28px 26px;border-radius:14px;border:1px solid rgba(255,255,255,0.06)}
+.section .num{display:inline-block;font-size:0.75rem;color:#e08155;font-family:"SF Mono",Menlo,monospace;letter-spacing:2px;margin-bottom:8px}
+.section h2{font-size:1.32rem;color:#f4ece2;margin-bottom:16px;font-weight:700;line-height:1.35}
+.section p{margin-bottom:14px;font-size:0.98rem}
+.section strong{color:#fff}
+.section em{color:#e08155;font-style:normal}
+.section ul{list-style:none;margin:14px 0}
+.section li{margin-bottom:10px;padding-left:20px;position:relative}
+.section li::before{content:"◈";position:absolute;left:0;top:0.42em;color:#e08155;font-size:0.7rem}
+.fig{margin:24px 0 10px;text-align:center}
+.fig svg{max-width:100%;height:auto}
+.fig .cap{font-size:0.82rem;color:#a08b78;margin-top:8px;text-align:left;line-height:1.65}
+.en-brief{margin-top:18px;padding:12px 16px;border-left:2px solid rgba(160,139,120,0.5);background:rgba(255,255,255,0.02);border-radius:0 8px 8px 0;font-size:0.85rem;color:#b0a08e;line-height:1.62}
+.en-brief b{color:#bda994;font-family:"SF Mono",Menlo,monospace;font-size:0.68rem;letter-spacing:1.5px;margin-right:9px;font-weight:700}
+.crossx{margin:40px 0;background:linear-gradient(135deg,rgba(143,176,204,0.12),rgba(224,129,85,0.05));border:1px solid rgba(143,176,204,0.34);border-radius:14px;padding:22px 26px}
+.crossx h3{color:#8fb0cc;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.crossx ul{list-style:none;margin:0}
+.crossx li{color:#dfe3e6;font-size:0.93rem;line-height:1.8;margin-bottom:14px;padding-left:20px;position:relative}
+.crossx li:last-child{margin-bottom:0}
+.crossx li::before{content:"◈";position:absolute;left:0;top:0.35em;color:#e08155;font-size:0.72rem}
+.crossx b{color:#aecbe2;font-weight:600}
+.thinking{background:linear-gradient(135deg,rgba(224,129,85,0.06),rgba(143,176,204,0.05));border:1px solid rgba(224,129,85,0.24);border-radius:12px;padding:24px 26px;margin:40px 0}
+.thinking h3{color:#e08155;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px;font-family:"SF Mono",Menlo,monospace}
+.thinking details{background:rgba(18,14,11,0.5);border:1px solid rgba(224,129,85,0.2);border-radius:9px;padding:13px 17px;margin:10px 0;transition:all 0.2s}
+.thinking details[open]{background:rgba(224,129,85,0.06);border-color:rgba(224,129,85,0.42)}
+.thinking summary{cursor:pointer;color:#eda07c;font-weight:600;font-size:0.93rem;list-style:none;outline:none;line-height:1.55}
+.thinking summary::-webkit-details-marker{display:none}
+.thinking summary::before{content:"▸ ";color:#8fb0cc}
+.thinking details[open] summary::before{content:"▾ "}
+.thinking details>div{margin-top:12px;padding-top:12px;border-top:1px dashed rgba(143,176,204,0.22);color:#ddd0c1;font-size:0.9rem;line-height:1.8}
+.refs{margin-top:34px}
+.refs h3{color:#8fb0cc;font-size:0.85rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.refs ul{list-style:none}
+.refs li{margin-bottom:9px;font-size:0.88rem;color:#a08b78}
+.refs a{color:#e08155;text-decoration:none;border-bottom:1px dotted rgba(224,129,85,0.42)}
+.refs a:hover{color:#eda07c;border-bottom-color:#eda07c}
+.bigcat{margin:40px 0 0;background:linear-gradient(135deg,rgba(224,129,85,0.11),rgba(143,176,204,0.04));border:1px solid rgba(224,129,85,0.32);border-radius:14px;padding:22px 26px}
+.bigcat h3{color:#eda07c;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.bigcat ul{list-style:none;margin:0}
+.bigcat li{color:#ece0d2;font-size:0.93rem;line-height:1.8;margin-bottom:14px}
+.bigcat li:last-child{margin-bottom:0}
+.bigcat b{color:#eda07c;font-weight:600}
+footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
+@media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+</style></head><body>
+<div class="container">
+<header>
+<div class="kicker">DAY 36 · CAN WE TRUST SOCIAL SCIENCE?</div>
+<h1>Can We Trust Social Science?</h1>
+<h2>The counter-intuitive line of the day: the weakest point in social science is not the statistics but two earlier steps — whether the number in your hand is still the thing you wanted to measure, and whether anything in the world, independent of the people themselves, did the sorting for you.</h2>
+<div class="meta">2026-09-29 · BigCat</div>
+<div class="pitch">Kerala has the highest literacy and the longest lives in India, and also reports the most illness of any Indian state. Rank health that way and the least healthy place on earth is the United States.</div>
+</header>
+<div class="intro">
+<p>You have seen enough of "studies show". The sentence worth stopping at is a different one: "A survey finds interpersonal trust twelve percentage points lower in country A than in country B."</p>
+<p>It looks sturdier, because it comes with a number. But for it to hold, two gates have to be passed, and both sit before the statistics: when people in the two countries tick that box, are they holding the same ruler; and even if the number is real, is the "lower" something the country did, or were those two sets of people different to begin with?</p>
+<p>When those gates fail, no number of decimal places matters. The research below is not here to hand you "so social science is untrustworthy" — it is the discipline measuring where it is brittle with its own tools. Once it has been measured, you can tell which kind of conclusion you can act on and which kind is only a lead.</p>
+</div>
+<div class="section">
+<span class="num">// 01</span>
+<h2>The healthiest place reports the most illness</h2>
+<p>A health form has a line on it: your overall health these past three months — very good, good, fair, poor. You tick one. Does the person beside you, ticking the same box, mean the same thing?</p>
+<p>The economist Amartya Sen laid out a comparison in the British Medical Journal in 2002. Kerala, in India, has the country's highest literacy and highest life expectancy (around seventy-four years at the time), and the most self-reported illness of any state. Bihar has the worst medical and educational provision and the lowest rate of self-reported illness. For the same set of complaints, Americans report more than Keralans do. <strong>Measure health by whether people say they are ill, and the ranking comes out: the United States least healthy, Bihar healthiest.</strong></p>
+<p>Sen's explanation is simple: reporting that you are ill requires recognizing the state you are in as illness. Where the people around you live with pain as a standing condition, a great many states get counted as simply what being alive is like; someone who has seen a doctor and knows the name of the condition will report more problems from the same body. Nobody is lying. The ruler is local, and it drifts with what you have seen.</p>
+<div class="fig">
+<svg viewbox="0 0 720 210" xmlns="http://www.w3.org/2000/svg">
+<g font-family="Georgia, serif">
+<line stroke="#a08b78" stroke-width="1" x1="118" x2="668" y1="180" y2="180"></line>
+<text fill="#a08b78" font-size="12" x="118" y="198">actually worse off</text>
+<text fill="#a08b78" font-size="12" text-anchor="end" x="668" y="198">actually better off</text>
+<g fill="#dfe3e6" font-size="12.5" text-anchor="end">
+<text x="108" y="40">place A</text>
+<text x="108" y="90">place B</text>
+<text x="108" y="140">place C</text>
+</g>
+<g fill="none" stroke="#8fb0cc" stroke-width="1.1">
+<rect height="26" rx="5" width="550" x="118" y="22"></rect>
+<rect height="26" rx="5" width="550" x="118" y="72"></rect>
+<rect height="26" rx="5" width="550" x="118" y="122"></rect>
+</g>
+<g stroke="#8fb0cc" stroke-width="1.1">
+<line x1="228" x2="228" y1="22" y2="48"></line><line x1="348" x2="348" y1="22" y2="48"></line><line x1="468" x2="468" y1="22" y2="48"></line>
+<line x1="298" x2="298" y1="72" y2="98"></line><line x1="428" x2="428" y1="72" y2="98"></line><line x1="558" x2="558" y1="72" y2="98"></line>
+<line x1="178" x2="178" y1="122" y2="148"></line><line x1="268" x2="268" y1="122" y2="148"></line><line x1="368" x2="368" y1="122" y2="148"></line>
+</g>
+<g fill="#a08b78" font-size="11" text-anchor="middle">
+<text x="170" y="39">poor</text><text x="288" y="39">fair</text><text x="408" y="39">good</text><text x="566" y="39">very good</text>
+<text x="205" y="89">poor</text><text x="363" y="89">fair</text><text x="493" y="89">good</text><text x="611" y="89">very good</text>
+<text x="146" y="139">poor</text><text x="220" y="139">fair</text><text x="318" y="139">good</text><text x="516" y="139">very good</text>
+</g>
+<line stroke="#e08155" stroke-dasharray="4 3" stroke-width="1.5" x1="398" x2="398" y1="14" y2="176"></line>
+<text fill="#e08155" font-size="12" text-anchor="middle" x="398" y="10">the same body</text>
+</g>
+</svg>
+<div class="cap">One body landing on three questionnaires ticks three different boxes. The gap you measure between places is partly a gap in bodies and partly a gap in cut-points, and once the forms are handed in the two cannot be pulled apart.</div>
+</div>
+<p>This gate has a name. Turning something hard to pin down into a number you can record is <em>operationalization</em>; asking afterwards whether that number is still the thing you started with is <em>construct validity</em>. The second question is the dangerous one.</p>
+<p>The most widely circulated measure of social trust is stuck on it. The wording has barely changed in decades: generally speaking, would you say most people can be trusted, or that you need to be careful in dealing with people? In 2000 Glaeser and three other economists had a hundred and eighty-nine students both fill in that questionnaire and play for real money: hand cash to a stranger who may return it or keep it. The results came out crossed — people who answered "most can be trusted" were more likely to send money back, but no more willing to hand it over first. <strong>The measure called "trust" is capturing something closer to "do I keep my word".</strong> One sample, all undergraduates, so not a verdict; but from then on the question of whether the name fits was on the table.</p>
+<p>The repair is plain: have everyone rate the same few invented people on the same scale, and the difference in their ratings is the difference in their rulers (King and colleagues, 2004). <strong>Whether a number can be compared depends not on its decimal places but on whether the people producing it held the same ruler.</strong></p>
+</div>
+<div class="section">
+<span class="num">// 02</span>
+<h2>The same families moved by lottery, and the real answer arrived twenty years later</h2>
+<p>"If you move to a better neighbourhood, will your children do better?" — the hard part is not the answer but how anyone could know. Families who can move are already different from families who cannot: more money, more initiative. If the children do better later, you cannot separate the neighbourhood's contribution from what the family already was. This rock is called <em>selection</em>.</p>
+<p>From 1994, five American cities did something rare: housing vouchers handed out by lottery to families in high-poverty public housing, some of them restricted to moves into low-poverty neighbourhoods. The programme was Moving to Opportunity. The lottery is the whole point — who got a voucher had nothing to do with what kind of family they were, so the difference between the two groups afterwards can be put down to getting the voucher.</p>
+<p>In 2007 Kling, Liebman and Katz reported the first round: four to seven years on, voucher families were indeed living in safer neighbourhoods, but there was no detectable overall effect on adults' employment or earnings; mental health improved substantially for adults and girls, while the gains for girls were partly offset by effects running the other way for boys. What many people read off this was that neighbourhood effects had been overstated.</p>
+<p>In 2016 Chetty, Hendren and Katz used tax records to follow these children into their twenties. Those under thirteen when the family moved were earning, in their mid-twenties, an average of three thousand four hundred and seventy-seven dollars more a year, about thirty-one per cent above the control-group mean, and were more likely to have attended college. For those already adolescent at the move, the estimated effect was slightly negative; the authors suspect the cost of disrupted schooling.</p>
+<p>Same experiment, same people, randomization untouched. All that changed was what was measured, on whom, and how long afterwards. <strong>The lesson is not that somebody misread it, but that the word "effect" is incomplete on its own: without "for whom, how long afterwards, and which outcome", it is not even the kind of statement that can be right or wrong.</strong></p>
+<p>A further spread comes from the analysts. In 2018 one study handed the same dataset and the same question, specified in advance, to twenty-nine teams; the effect sizes that came back ran from 0.89 to 2.93, with twenty teams finding a significant positive effect and nine not. <strong>So "what is the result" is often not a number but an interval, part of it coming from the world and part from whoever sits in front of the data.</strong></p>
+</div>
+<div class="section">
+<span class="num">// 03</span>
+<h2>That line looks longer: the example was a foundation stone for the whole field, and now it has been prised up</h2>
+<p>You have probably seen the figure: two lines of equal length, one with arrowheads pointing out and one pointing in, and the outward one looks longer. It is the Müller-Lyer illusion.</p>
+<p>In 1966 Segall, Campbell and Herskovits published a measurement across sixteen groups and nearly two thousand people: the mean misjudgement ran from 1.4 per cent up to 20.3 per cent, with the three European-descended samples the most susceptible and the San foragers of the Kalahari the least. The explanation was the carpentered-world hypothesis: people raised among right angles and square rooms have visual systems trained by those lines.</p>
+<p>In 2010 Henrich, Heine and Norenzayan put this example first and raised the question that has since been cited to death: in the top journals of six subfields of psychology, 68 per cent of participants came from the United States and 96 per cent from Western industrialized countries, and an undergraduate at a Western university is some four thousand times more likely to be studied by a psychologist than someone picked at random outside. Their acronym for these populations — western, educated, industrialized, rich, democratic — spells WEIRD. <strong>The word "people" in the literature refers to a rather untypical handful of them.</strong></p>
+<p>But in 2025 Dorsa Amir and Chaz Firestone went back through that flagship example in Psychological Review and concluded that the carpentered-world hypothesis is almost certainly false: the illusion shows up in non-human animals living in wildly different environments, in sense modalities other than vision, and in congenitally blind subjects. More pointedly, on a rereading of the 1966 data the evidence for cultural variation, and its correlation with the cultural variables in question, turns out to be highly inconsistent.</p>
+<p>How should that be read? Not as "the WEIRD problem was fake", but: <strong>when a discipline examines itself it uses the same fallible evidence as everything else, so the self-examination has to be examined too — which is proof that the machinery is still running.</strong> The harder evidence for the WEIRD problem lies elsewhere.</p>
+<p>Henrich and colleagues also organized something else: taking the ultimatum game into fifteen small-scale societies. One person splits a sum of real money, the other can only accept all of it or reject all of it, and a rejection leaves both with nothing. Among European and American undergraduates offers usually come close to half, and low offers get rejected. Across these fifteen groups mean offers ran from 26 to 58 per cent: the Machiguenga of the Amazon offered 26 per cent on average and almost never rejected anything; two groups in Papua New Guinea went the other way, with some people offering more than half, and these "hyper-fair" offers were frequently turned down.</p>
+<p>This is where the quantitative-versus-qualitative argument comes down to earth. From the numbers alone, "hyper-fair offers rejected" can only be recorded as noise. It became readable because the people running the games had lived in those villages: under those rules of gift-giving, accepting an oversized gift means taking on an obligation you cannot discharge.<strong> Numbers tell you where something differs; only someone who has lived there knows what the difference is.</strong></p>
+<p>And the damage a narrow sample does is never that the conclusion is wrong. <strong>It is that nobody knows how far the conclusion reaches — and on the page those two look identical, both written as "people tend to…".</strong></p>
+</div>
+<div class="bigcat">
+<h3>🎒 In practice · BigCat</h3>
+<ul>
+<li><b>① Health and energy</b>: for weeks running you feel "energy's fine", but your pace on the same route is slipping and the hour at which you can no longer read is getting earlier. The mechanism from "the healthiest place reports the most illness" is running: self-assessment uses your own ruler, and the ruler drifts along with whatever state you have adapted to — once adapted, you cannot report it. What to change: stop using "how do I feel today" as the trend indicator, and fix one or two anchors that have nothing to do with feeling (pace on the same route, resting heart rate first thing), comparing only that anchor against itself.</li>
+<li><b>② Investing and position sizing</b>: every time you judge whether a company is worth holding for three years, you end up on the same few ratios you can actually calculate. That is the operationalization-to-construct-validity chain: what you want to know is the moat, what you can get is a few numbers, and the decision drifts onto the part you can get. What to change: before writing down any ratio, write one line — "what do I actually want to know, and how does this number fall short of it" — and keep the shortfall as its own open item.</li>
+</ul>
+</div>
+<div class="crossx">
+<h3>🌀 Crossing over · connections beyond the field</h3>
+<ul>
+<li><b>Physics and mathematics · in 2019 the kilogram was redefined as a constant instead of a metal cylinder outside Paris</b>: for a hundred and thirty years the kilogram simply was that platinum-iridium cylinder kept near Paris, against which every country's weights were set. The trouble is that it changes — against its own copies it drifted by tens of micrograms over a century. Since 2019 the kilogram has been defined through the Planck constant, a number that does not shift with place, era or who is doing the measuring. The mechanism from "the healthiest place reports the most illness" is running: for a comparison across times and places to hold, you first need a ruler that does not drift along with the thing being compared. Which yields a conclusion you could not otherwise see: <b>what social science lacks is not statistics but portable units, so the comparability problem in cross-national trust rankings cannot be fixed by adding sample. Conversely, social indicators with a physical anchor (life expectancy, literacy, years of schooling) do compare across countries reasonably well, while anything resting on a rating scale yields rankings that are only a lead.</b><b>But it does not hold here</b>: physics can pin a constant because it can fix the unit without regard to how anyone feels; suffering, or a sense of fairness, has subjectivity inside its definition, and there is no gold standard outside the scale to pin it to. <b>So what carries over is "no common unit, no comparison across groups", and what does not is "therefore everything should be replaced by objective indicators" — replace what is genuinely subjective and it is gone.</b></li>
+<li><b>Parenting and education · a twelfth-century legal rule turned Israeli class sizes into a natural lottery</b>: Maimonides wrote down a rule in the twelfth century — a class above forty pupils must be split — and it is still applied in Israeli primary schools. So a year group of forty runs as one large class while a year group of forty-one is split into two of around twenty. The one extra child is no different from the others, yet the two sides land in completely different class sizes. In 1999 Angrist and Lavy used that threshold to estimate the effect of class size on attainment. The mechanism from "the same families moved by lottery" is running: whether you clear the causal gate depends on whether anything in the world, independent of the people, did the sorting. Which yields a conclusion you could not otherwise see: <b>the parenting questions you can look up an answer to are not the most important ones but the ones that happen to sit on some institutional threshold — month of school entry, a class-size cap, admission by ballot. "Should I read with him more" — where nothing sorts the groups for you — will only ever have correlations available, however much it matters.</b><b>But it does not hold here</b>: the causal quantity a threshold delivers holds only for the children split right at that threshold; the effect between forty and forty-one does not extend to the difference between fifteen and thirty. <b>So what carries over is "the sorting act decides which questions are answerable", and what does not is "an answered question applies in your house".</b></li>
+</ul>
+</div>
+<div class="thinking">
+<h3>Going deeper</h3>
+<details><summary>How wide is the range over which a randomized experiment's answer holds?</summary>
+<div>Moving to Opportunity covered only families who volunteered and were living in high-poverty housing in those five cities. For them it is a gold standard; for anyone else it is not. Hence a trade-off: the cleaner the causal estimate, the narrower the population it covers, and the broader a survey's coverage, the less it can say about cause.</div>
+</details>
+<details><summary>Ethnography has a single case — on what grounds does it count as evidence?</summary>
+<div>It cannot establish "what most people do", but it can establish that something is possible among humans — and a great many theories stand on the claim that something is impossible. "Hyper-fair offers get rejected" needs one village to overturn the universal version of "everyone wants more". The force of a single case lies on the falsifying side.</div>
+</details>
+<details><summary>Once an indicator is published, is it still the same indicator?</summary>
+<div>People change their behaviour to suit the number they are assessed on, and the number comes unstuck from what it originally stood for. The legibility projects discussed in the issue on seeing like a state are the same thing writ large: simplify in order to measure, and those measured start living along the simplification. Social measurement therefore differs from physical measurement in one respect — the thing being measured reads your instrument.</div>
+</details>
+</div>
+<div class="refs">
+<h3>Further reading</h3>
+<ul>
+<li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1122815/" rel="noopener" target="_blank">Sen, "Health: perception versus observation" (2002, BMJ)</a> · <a href="https://en.wikipedia.org/wiki/Amartya_Sen" rel="noopener" target="_blank">Amartya Sen</a></li>
+<li><a href="https://academic.oup.com/qje/article-abstract/115/3/811/1828161" rel="noopener" target="_blank">Glaeser et al., "Measuring Trust" (2000, QJE)</a> · <a href="https://en.wikipedia.org/wiki/Construct_validity" rel="noopener" target="_blank">Construct validity</a></li>
+<li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1082804" rel="noopener" target="_blank">King et al., on cross-cultural comparability of measurement (2004, APSR)</a> · <a href="https://en.wikipedia.org/wiki/Anchoring_vignettes" rel="noopener" target="_blank">Anchoring vignettes</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Moving_to_Opportunity" rel="noopener" target="_blank">Moving to Opportunity</a> · <a href="https://onlinelibrary.wiley.com/doi/10.1111/j.1468-0262.2007.00733.x" rel="noopener" target="_blank">Kling et al., experimental analysis of neighborhood effects (2007)</a> · <a href="https://www.aeaweb.org/articles?id=10.1257/aer.20150572" rel="noopener" target="_blank">Chetty et al., effects of better neighborhoods on children (2016)</a></li>
+<li><a href="https://journals.sagepub.com/doi/10.1177/2515245917747646" rel="noopener" target="_blank">Silberzahn et al., "Many Analysts, One Data Set" (2018)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/WEIRD_(psychology)" rel="noopener" target="_blank">The WEIRD sample problem</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/20550733/" rel="noopener" target="_blank">Henrich et al., "The weirdest people in the world?" (2010)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/M%C3%BCller-Lyer_illusion" rel="noopener" target="_blank">The Müller-Lyer illusion</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/40388159/" rel="noopener" target="_blank">Amir &amp; Firestone, "Is visual perception WEIRD?" (2025)</a></li>
+<li><a href="https://www.aeaweb.org/articles?id=10.1257/aer.91.2.73" rel="noopener" target="_blank">Henrich et al., behavioral experiments in 15 small-scale societies (2001)</a> · <a href="https://en.wikipedia.org/wiki/Ultimatum_game" rel="noopener" target="_blank">The ultimatum game</a></li>
+<li><a href="https://psycnet.apa.org/record/2020-24590-001" rel="noopener" target="_blank">Thalmayer et al., "The neglected 95% revisited" (2021)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Maimonides%27_rule" rel="noopener" target="_blank">Maimonides' rule and class size</a> · <a href="https://en.wikipedia.org/wiki/Kilogram" rel="noopener" target="_blank">The 2019 redefinition of the kilogram</a></li>
+</ul>
+</div>
+<footer>BigCat Learning Hub · Sociology &amp; Anthropology</footer>
+</div>
+<script defer="" src="https://hub.cissychen.com/comments.js"></script>
+<script defer="" src="https://hub.cissychen.com/search.js"></script>
+<script defer="" src="https://hub.cissychen.com/index-button.js"></script>
+<script defer="" src="https://hub.cissychen.com/i18n-tts.js"></script>
+</body></html>
