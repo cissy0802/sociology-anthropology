@@ -58,6 +58,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -141,6 +147,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>物理与数学 · 一条被大量穿过、却依然存在的边界，在数学上一点也不奇怪</b>：图论里有个东西叫「割」——把网络的点分成两堆，跨过去的边叫割边。一个割可以被极多的边穿过，它仍然是那个割；判断有没有社区结构的量（模块度）看的从来不是跨界连边的<b>绝对数量</b>，而是它相对于「随机混起来该有多少」的偏离。跑的是「一户人家攒够了牛」那节的机制：<b>边界靠持续维持，不靠密封</b>。由此推出一个原本看不出的结论：<b>「他们已经通婚、通商、说同一种语言了，所以族群差异在消失」这个推论无效</b>——跨界互动的绝对量增加，完全可能伴随相对于随机期望的偏离不降反升。这是可算的：普查的婚配交叉表就能算出同类相配的强度，逐年比那个比值，不是比总数。<b>但这里不成立</b>：图上的割是分析者事后切的，节点不会因为被划到哪边就改变自己去连谁；族群边界会——被归到哪一格会改变一个人被谁接纳、跟谁通婚，于是下一期的网络已经被上一期的切法改造过。</li>
 <li><b>神经科学与意识 · 知觉系统天生就在连续量上切格子，但它切不出边界画在哪</b>：语音研究里有个稳固现象叫类别知觉——把一段声音沿一条连续的物理维度慢慢改，人听到的却是「巴」突然变成「帕」，中间那段被压掉了；颜色和面孔上也有类似压缩。面孔这侧还有个被反复复制的发现：辨认自己不常接触的那类面孔更差，且与接触量有关。跑的是「同一张脸，在两个国家的表格上填不同的格子」那节的机制：<b>切格子这个动作本身会压平格内差异、放大跨格差异</b>。由此推出一个原本看不出的结论：<b>「他们看着都差不多」不需要任何敌意就能产生</b>，它是知觉训练量的副产品；因此改变态度的干预不该期待它变化，增加跨类别接触量的干预才该——两类干预可以分开测。<b>但这里不成立</b>：知觉窄化在一个人脑袋里、几百毫秒，本期机制跑在登记表和几十年上；更要命的是知觉解释不了边界画在哪——同一张脸在两个国家被切进不同格子，两地的知觉系统是一样的。</li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 十条要点</h3>
+<ol class="takeaways">
+<li>族群边界不取决于两边文化差多少，Barth 主张该研究边界本身，而非它围起来的文化材料。</li>
+<li>达尔富尔的 Fur 农户攒够了牛就转去游牧，几年后被算作 Baggara，两族边界却没动。</li>
+<li>失去土地的 Pathan 在平等主义组织里无处容身，层级化的 Baluch 则能用投靠契约收留他们。</li>
+<li>人往哪个族群流动，取决于哪一边有站得住的位子，而不是两边文化像不像。</li>
+<li>族群边界靠互归与自归两个动作持续维持，通婚、通商、说同一种语言都不妨碍它存在。</li>
+<li>族群类别只是名称或登记表上的一格，能一致行动的族群群体却稀少，群体性是个会起落的变量。</li>
+<li>Brubaker 团队在罗马尼亚双语城市 Cluj 发现，日常买菜上班时族群大多根本没被提起。</li>
+<li>某个组织声称为某族群发言，不能当作这个族群已经是一个能行动的群体的证据。</li>
+<li>2022 年巴西普查里自报 parda 的比例首次超过 branca，变的是人怎么填表，不是人。</li>
+<li>寄简历实验显示美国白人名字平均多拿约 36% 回电，而各国差距相差数倍，说明这种后果是被生产出来的。</li>
+</ol>
 </div>
 <div class="thinking">
 <h3 data-tts="9adfebb5a77fd4f2">深入思考</h3>

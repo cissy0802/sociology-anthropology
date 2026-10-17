@@ -58,6 +58,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -140,6 +146,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>神经科学与意识 · 「说不出来」不是修辞，是两套记忆的分工</b>：骑车、母语的语法、盲打，都能做不能讲。神经科学里区分陈述性记忆（能说出来的事实）和程序性记忆（做得出来的技能），两者依赖的脑结构不同——最有名的证据来自海马体严重受损的病人：他们记不住昨天发生了什么，却仍能一天天练出新的运动技能，还不记得自己练过。跑的是「你说不出规则，可一进门就知道该怎么走路」那节的机制：<b>惯习是练出来的倾向，不是背下来的规则</b>，获取只能靠重复暴露。由此能推出一个原本看不出的结论：显性知识和隐性倾向的获取速度差着数量级，前者能速成、后者不能，所以任何一次筛选只要同时读这两类信号，能速成的那部分就会被培训班拉平，剩下的可区分度全落到教不了的那部分上。<b>于是有了那个反常现象：一项技能的培训越标准化越普及，它在选拔里的权重反而下降。</b><b>但这里不成立</b>：程序性学习本身不带地位——骑车骑得再好也没有社会溢价。大脑那层只能说明「有些东西只能练」，说明不了为什么其中一小部分（口音、餐桌上的谈法）被赋了价值而另一些没有。赋值那层完全是机构背书出来的，不在大脑里。</li>
 <li><b>分布式系统与 AI · 一个从不采集出身的系统，照样会把出身重建出来</b>：推荐系统最经典的做法叫协同过滤（collaborative filtering）——不理解内容是什么，只看「和你行为相似的人还消费了什么」。跑的是「品味里信息量最大的部分，是你觉得什么『太用力』」那节的机制：<b>品味是位置的函数，因此品味可以反推位置</b>。由此能推出一个原本看不出的结论：<b>一个只吃行为数据、从不采集任何人口属性的系统，仍会在内部表示里长出与阶层高度重合的分区</b>——分类信息本来就编码在偏好里面，不需要额外提供。落到可观察的后果上：评估这类系统时，「我们没采集敏感字段」不构成任何证据；能构成证据的只有把输出按外部人口数据分组之后差异有多大。<b>但这里不成立</b>：Bourdieu 那套里品味是有高低的，那个高低由学校、博物馆、评论界背书。协同过滤里没有合法化机构，只有共现统计——它能分出一群群彼此不重叠的人，却生不出「庸俗」这一档。所以它再生产得出分隔，产生不出鄙视链；平台上的鄙视链是用户自己带进去的，不来自算法结构。</li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 十条要点</h3>
+<ol class="takeaways">
+<li>布尔迪厄在法国贝亚恩发现，按继承规矩最占优的长子反而大量娶不到妻子，规则解释不了行为。</li>
+<li>惯习是长期处境沉淀进身体的一套倾向，能在没遇过的场合即时生成反应，所以规则可以背，倾向只能练。</li>
+<li>惯习概念最硬的批评是循环：任何行为都能事后说成惯习，它很难测量，也难以被证伪。</li>
+<li>学校奖励的能力有一部分不在课程里，而是在家里顺带学会的，这类东西被称为文化资本。</li>
+<li>文化资本有身体化、客体化、制度化三种状态；文凭把家庭出身兑换成资格，同时切断了来源。</li>
+<li>DiMaggio 用 1960 年美国高中生数据发现，控制能力和家庭地位后，文化资本仍与在校成绩相关。</li>
+<li>Lareau 发现中产孩子被教会在诊室里质问医生，工人阶级孩子被教导在权威面前保持安静。</li>
+<li>「自然成长」式教养给孩子更多自由玩耍和亲属关系，它的不利只在于学校和医院这类机构不认它。</li>
+<li>布尔迪厄认为品味主要靠否定运作：问一个人受不了什么，比问他喜欢什么更能定位他的社会位置。</li>
+<li>高地位者变成什么都消费的文化杂食者，区隔并未消失，只是从「听什么」移到「听多少种、以什么姿态听」。</li>
+</ol>
 </div>
 <div class="thinking">
 <h3 data-tts="6458e973c1b55edb">深入思考</h3>

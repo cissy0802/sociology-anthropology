@@ -58,6 +58,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head>
 <body>
 <div class="container">
@@ -147,6 +153,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>复杂性科学 · 一个只有「先来的多拿」这一条规则的罐子，能算出结局必被锁死，但锁在哪一个上算不出来</b>：罐里两种颜色的球，每次随机摸一个、再放回两个同色的。这类过程（数学上叫波利亚罐）的结果是：比例几乎必然收敛到某个值，但收敛到哪个由最早几次偶然决定，事先算不出。阿瑟（W. Brian Arthur）1989 年把它接到技术竞争上：两种有增强回报的技术相争（用的人越多越好用），早期一点偶然领先会滚成通吃，锁住的不一定是更好的那个。跑的是「农民把汽车后轮架起来」那节的机制：定型不是因为谁最优，是因为争论被关掉了。<b>由此能事先判断哪些领域会锁死：不看谁在宣传什么，看有没有增强回报；而且锁死发生在早期、窗口很短，于是「等更好的方案出来再选」这种单看自己很理性的策略会系统性失效——等的人越多，窗口关得越快。</b><b>但这里不成立</b>：罐里的球只进不出，没有外力能重开；真实系统里监管、标准组织、一个新的通用组件都能把关掉的争论撬开。而且「锁死等于次优」这步在经济史里一直有争议：最常被引的键盘案例，反方认为「替代方案更好」的证据本就单薄。<b>借得过来的是锁定的时机与形状，借不过来的是「锁住的那个一定更差」。</b></li>
 <li><b>神经科学与意识 · 猴子学会用耙子取食，不久之后它脑子里「手够得着的范围」长到了耙子尖上</b>：1996 年一项猕猴研究发现，顶内沟一带有一类细胞既管触觉又管视觉，视觉那部分原本紧贴着手；训练它用耙子去够拿不到的食物之后，这些细胞的视觉范围扩到了整根耙子。跑的是「你没法访谈一台推荐系统」那节的机制：工具不是被「使用」，是被并进实践里，人能做什么的边界跟着变形，而这变形不经过「我怎么看它」。<b>由此推出：想知道一个系统改变了用户什么，问「你觉得这算法怎么样」取回来的是民间理论；要看撤掉它时动作怎么变形——出错的形状比意见更说明它被并进去多深。</b><b>但这里不成立</b>：耙子那种并入是个体的、很快完成的重标定，撤掉就还原；算法那种并入是集体的、经由同事和行业规矩传下去——同一套流量数在两国编辑部意思都不同，这条通路猴子那边没有。<b>借得过来的是「用进来的东西会改写能力边界、而且绕过自我报告」，借不过来的是「因此在个体身上测完就够了」。</b></li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 十条要点</h3>
+<ol class="takeaways">
+<li>二十世纪初的美国农民卸下汽车后轮、接皮带带动锯子，厂家后来只好照着这种用法改设计。</li>
+<li>解释弹性指同一件东西在不同人群眼里不是同一件东西，因为各自要解决的问题不同。</li>
+<li>定型不是所有人被说服了，而是「它要解决哪个问题」的提法不再被质疑，充气轮胎之争就这样收口。</li>
+<li>温纳的反方观点：要长期看守、出事代价极大的系统会把管它的组织推向集中，用法能争但不是什么都能争。</li>
+<li>西弗在推荐系统开发者中做田野发现，「算法」是模型、指标、目标和众人猜想的拼装，没人掌握全貌。</li>
+<li>当「把人留住」变成每天能读的数，团队的细小选择都会悄悄朝停留与回访指标排列，西弗称之为陷阱。</li>
+<li>克里斯丁比较纽约和巴黎的编辑部发现，同样的流量数据落进不同评价体系会长出不同行为，算法不会把各地同化。</li>
+<li>人对看不见的系统会自己编出民间理论，所以要看算法改变了什么，得看人的动作，而不是问人的意见。</li>
+<li>自动化先拿走容易的部分，留给人的是盯着基本不出事的系统和出事时接手，而接手那一刻往往正是人状态最差的时候。</li>
+<li>波利亚罐式的增强回报让早期偶然领先滚成锁定，锁住的未必是更好的技术，但监管和标准能把锁撬开。</li>
+</ol>
 </div>
 <div class="thinking">
 <h3 data-tts="7a718706572ac7da">深入思考</h3>

@@ -58,6 +58,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -154,6 +160,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>演化生物学 · 松鼠按血缘远近决定要不要报警，人按称谓决定，两套账在一个点上分岔</b>：1964 年 Hamilton 给出一条式子：一个利他行为能被自然选择留下，条件是受益方的好处乘以双方的亲缘系数大于施予方的成本。1977 年 Sherman 蹲了三个夏天、约三千小时观察加州山区的金背地松鼠：公松鼠成年迁走、母松鼠留在出生地，所以一片地里的母松鼠彼此是亲戚，而身边有近亲的更常对逼近的地面捕食者发警报——发警报的那只更容易被盯上。后续研究收紧了边界：对空中捕食者的叫声更像自保。跑的是「『不能娶谁』这条规矩」那节的机制：亲缘系数完全相同的两个人被切进相反的类别。由此推出一个原本看不出的结论：<b>拿亲缘系数预测人类互助，出错的方向是可预期的，不是随机噪声</b>——该查的不是族谱，是称谓表。<b>但这里不成立</b>：那条式子算的是基因频率在世代之间的变化，系数是实际的，改叫法改不动它。凡是结果落在遗传后果上，社会分类就不起作用——两类表亲在近亲繁殖的风险上没有差别。</li>
 <li><b>物理与数学 · 有人把婚姻规则当置换群算了一遍，发现有些规矩数学上根本跑不起来</b>：1949 年那本书后面附了一篇数学附录，作者是当时在芝加哥大学的 André Weil，用置换群研究几类婚姻法则。做法很直接：把所有人分进有限几个「婚级」，「哪一级的男人娶哪一级的女人」「他们的孩子进哪一级」都是从婚级集合到自身的映射；一套规则能不能长期跑下去，就等于问这些映射复合起来是否闭合、有没有把某些人送进无人可娶的位置。跑的是「你叫『姑姑』的那个词」那节的机制：称谓把人归进有限个等价类，规则作用在类上而不在个人上——这恰好是有限集上的映射。由此推出一个原本看不出的结论：<b>一条婚姻规则自不自洽，不靠任何田野就能查</b>；听起来同样合理的规则里有些数学上不可能维持，田野里找不到它们不是巧合。<b>但这里不成立</b>：代数要求每个人恰好属于一个类、规则被严格执行，真实系统两样都不满足。2015 年 Guillot 等人拿一个印尼社群的全基因组数据做模拟正撞在这上面：严格遵守会压低遗传多样性，而实际数据更像「松散地遵守」。代数说得准的是哪些规则不可能，说不准的是人实际怎么走。</li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 十条要点</h3>
+<ol class="takeaways">
+<li>1930 年 Evans-Pritchard 受政府之托研究南苏丹 Nuer 人，而这个政府刚和他们打完仗。</li>
+<li>Nuer 人的婚姻靠把牛交给女方亲属来完成，哪头牛归哪个亲属有定数，一次分牛就念了一遍亲属结构。</li>
+<li>Nuer 鬼婚里孩子在法律上属于没有儿子的死者；不育的女人付牛娶妻，就成了孩子的「父亲」。</li>
+<li>pater 是占着父亲位置的人，genitor 是生育者；亲属制度先摆好位置再决定谁站进去，不看血缘。</li>
+<li>Lévi-Strauss 把乱伦禁忌读成命令：禁止娶姐妹，等于规定必须把姐妹给别的群体，强制交换。</li>
+<li>父亲兄弟的女儿和母亲兄弟的女儿血缘距离相同，在许多父系社会里却一个算姐妹、一个是首选配偶。</li>
+<li>阿拉伯—伊斯兰世界许多地方偏好娶父亲兄弟的女儿，说明 Lévi-Strauss 的交换结构不是普遍法则。</li>
+<li>汉语称谓属区分最细的 Sudanese 型，英语属 Eskimo 型；称谓把人归进等价类，同一类人义务相同。</li>
+<li>David Schneider 批评亲属研究把欧美关于「血」的民间理论当成了普遍的亲属骨架。</li>
+<li>亲缘系数决定的遗传后果改叫法改不动，两类表亲的近亲繁殖风险并无差别，社会分类在这里失效。</li>
+</ol>
 </div>
 <div class="thinking">
 <h3 data-tts="1b831b3d325b22f6">深入思考</h3>

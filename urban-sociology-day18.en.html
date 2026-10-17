@@ -58,6 +58,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -135,6 +141,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>Physics and mathematics · everyone is happy to live in a mixed neighbourhood, and everyone ends up living in a single-colour one</b>: in 1971 Thomas Schelling laid out a grid on paper, put down two kinds of counters, and gave each counter one very mild rule: if too few of my neighbours are like me, move to the nearest empty square where that isn't so. "Too few" can be set very loosely — loosely enough that every counter is perfectly happy in a mixed setting. Iterate anyway and the board splits into large blocks of single colour. Physicists later matched the thing up with the model of spin alignment in magnets, which brought the whole apparatus of phase transitions and critical thresholds with it. This runs the mechanism from "two streets apart": neighbourhood composition is an intermediate layer, and individual choices are not summed directly but first rewrite that layer, which then rewrites the next round of choices. Which yields a conclusion you could not otherwise see: <b>the degree of segregation you observe does not imply the strength of individual preferences</b> — "segregation this severe shows how deep the aversion runs" is an invalid inference, because mild and strong preferences can draw the same picture. <b>Where it fails</b>: on the grid, moving is free, an empty square waits for you, and every counter follows the same rule. In a real city moving costs money, the available housing has already been filtered by price and credit, and who could get a loan on which streets has a specific institutional history. So what the model proves is that strong preferences are <em>not required</em> to produce segregation, not that segregation comes <em>only</em> from preferences — reading the first as the second is its most common misuse.</li>
 <li><b>Evolutionary biology · larger animals are cheaper to run, larger cities are costlier, and the two ledgers must be kept apart</b>: biology has a very stable empirical regularity, Kleiber's law — double an animal's body mass and resting metabolic rate rises only about 68% (mass to the three-quarter power). So an elephant is cheaper per kilogram than a mouse, by sharing one distribution network that spreads the cost. In 2007 the group around Bettencourt and West carried the same fitting over to cities: total lane miles of road in US metropolitan areas scale with population at an exponent of about 0.85, sublinear, in the same direction as biology. But the socioeconomic side flips over — patents, wages and economic output scale with exponents generally above 1, so the more people, the more output per head. This runs Wirth's <em>density</em> variable from "someone moved into a 'chaotic' district": density directly raises the number of encounters per unit time. Which yields a conclusion you could not otherwise see: <b>"bigger cities are more efficient" means two different things for infrastructure and for output, and has to be measured separately</b>; and the encounter-rate half takes the bad with the good — the same superlinear exponents turn up in crime and epidemic data, so you cannot credit the city for innovation while blaming individuals for crime. <b>Where it fails</b>: larger organisms run slower and larger cities run faster, and that reversal of sign shows a city is not a scaled-up organism — the shared-network story only accounts for the sublinear half. These exponents are also quite sensitive to where a city's boundary is drawn: fit them to administrative borders or to commuting zones and the numbers shift.</li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 Ten takeaways</h3>
+<ol class="takeaways">
+<li>The Chicago School treated the city as a machine that sorts people into positions, and Burgess's zone of transition beside the business district was the cheapest, most crowded and most transient ring.</li>
+<li>Simmel's blasé attitude is not coldness but exhausted bandwidth: faced with too much stimulus, the metropolitan mind flattens differences.</li>
+<li>Wirth reduced urbanism to size, density and heterogeneity, arguing that the more of each, the more personal ties give way to functional ones.</li>
+<li>Living three and a half years in Boston's North End, Whyte found that a district labelled socially disorganised ran on a dense order of rank, favours and obligations.</li>
+<li>Bowling scores in the corner gang tracked status, so a skilled low-ranking bowler simply could not perform well against his seniors.</li>
+<li>Seeing no order usually means using the wrong instrument to look for it, and the disorganisation label read a way of life as pathology.</li>
+<li>Sampson and colleagues found less violence in Chicago neighbourhoods with high collective efficacy, though the design is correlational and causation may run backwards.</li>
+<li>In the randomised Moving to Opportunity experiment, children who moved before 13 earned about 31% more as adults, while those who moved later gained nothing.</li>
+<li>Low-income residents of gentrifying areas do not leave at higher rates; the change comes from who moves in, and those shut out never appear on any exit list.</li>
+<li>Schelling's grid model shows that mild preferences can still produce stark segregation, so the degree of segregation reveals little about how strong preferences are.</li>
+</ol>
 </div>
 <div class="thinking">
 <h3>Going Deeper</h3>

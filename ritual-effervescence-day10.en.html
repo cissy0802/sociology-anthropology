@@ -55,6 +55,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -136,6 +142,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>Evolutionary biology · what the apparently pointless rules are actually measuring</b>: evolutionary biology has a notion called costly signalling, proposed by Amotz Zahavi in 1975. A peacock's tail is heavy and gets in the way, and precisely because it gets in the way it cannot be faked — a bird in poor condition could not carry the cost. The apparently pointless requirements of religious communities run the mechanism from "The ones who hurt most gave most": a cost cannot be faked, so what it says is binding. Which yields a conclusion you would not otherwise reach: <b>to predict how long a voluntary organisation will last, how expensive its requirements are tells you more than whether its ideas are right — and the expense has to be of a kind that is visible inside and useless outside.</b> Richard Sosis and Eric Bressler assembled data on 83 nineteenth-century American communes in 2003: the costlier the requirements, the longer the commune lasted, and the relation was much stronger in religious than in secular communes (a historical correlation, not an experiment — do not read it as causation). <b>But it does not hold here</b>: Zahavi's model requires a stable correspondence between the cost of the signal and the quality being measured — the heavier the tail, the more surely only a healthy bird can bear it. There is no such function between ritual pain and whether a person will cooperate later: pain tolerance is physiological variation and does not have to run in the same direction as willingness to cooperate. So what ritual screens out is people unwilling to pay, not people unable to — one and the same thing for the peacock, two different things for us.</li>
 <li><b>Distributed systems and engineering · nobody crosses the line until everyone reaches it</b>: parallel computing has a basic primitive called a barrier — a set of tasks running at once must stop at a certain point and wait until the last one arrives before any of them enters the next phase. This runs the mechanism from "You are no longer the old person, and not yet the new one": the function of the liminal stretch is to keep a batch of people in the same state of being nothing until they can leave together — the Ndembu bush camp taking a cohort in and letting it out together is not a coincidence. Which yields a conclusion you would not otherwise reach: <b>a transition a batch goes through together and an equally long one a person goes through alone do not produce the same thing</b> — the first grows lateral ties across the cohort as well, the second only produces a vertical change of status. So moving onboarding, training or rotations from fixed cohorts to rolling admission improves scheduling, but the cohort layer is structurally cancelled, and no amount of team-building afterwards restores it. <b>But it does not hold here</b>: the cost of a barrier in engineering is the waiting, since the slowest task sets everyone's pace, which is why engineers work hard to eliminate it. The liminal stretch is the reverse: the waiting is the output. The task before and after a barrier is the same task; the person before and after liminality is not. Same shape — one wants the wait as short as possible, the other stops working when the wait gets short.</li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 Ten takeaways</h3>
+<ol class="takeaways">
+<li>In <i>Les rites de passage</i> (1909), van Gennep found that initiations, weddings and funerals everywhere share one skeleton: separation, liminality, incorporation.</li>
+<li>Liminality is the stretch when the old position has been removed and the new one not yet fitted, so none of society's slots apply.</li>
+<li>In the Ndembu Mukanda camp, Victor Turner saw boys stripped of clothing, names and rank and kept together in the bush for months.</li>
+<li>Communitas, the bare bond left once differences of position are stripped away, is why the same cohort still recognise each other decades later.</li>
+<li>A new identity cannot be loaded into someone still holding the old one, so the discomfort of transition is the dismantling itself.</li>
+<li>Durkheim's collective effervescence is the outside force people feel when acting in unison, a force that is really the assembled group.</li>
+<li>Sacredness is not a property of objects but an assembly's residual heat stored in a pole, a flag or a logo, which is why insulted relics explode.</li>
+<li>Synchrony's boost to cooperation is real but modest: a meta-analysis of 42 studies put it near 0.28, and one direct replication failed.</li>
+<li>At Thaipusam in Mauritius, both Kavadi piercers and mere onlookers donated more, because an unfakeable cost needs witnesses as its recipients.</li>
+<li>Turner's term liminoid marks optional events like festivals and marathons that change no one's position; real passage needs a public declaration and changed treatment afterwards.</li>
+</ol>
 </div>
 <div class="thinking">
 <h3>Questions worth sitting with</h3>

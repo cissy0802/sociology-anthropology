@@ -58,6 +58,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -140,6 +146,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>复杂性科学 · 一个人的门槛挪一格，整屋人两种结局</b>：1978 年 Mark Granovetter 提过一个门槛模型——每个人有一个「看到多少人已经动了，我才动」的数。他举的极端例子是一百个人，门槛分别是 0、1、2……一直到 99：门槛 0 的先动，门槛 1 的看到有人动了也动，一路连锁，全体都动。现在只把门槛为 1 的那人换成门槛 2，链条第一步就断，最后只有一个人动。同样一百个人，两种结局。跑的正是「你举手之前，先看了一圈屋里的人」那节里的规范性影响：人是按「已经有几个人这么做了」决定自己开不开口的。由此能推出一个原本看不出的结论：<b>会议室里的沉默不必用「团队氛围不好」来解释</b>——同一批人、同样的意见分布，差别可能只在有没有那一两个门槛特别低的人在场。想改结果，去降最左边那一两个人的开口成本，比改所有人的态度便宜得多，也可测得多。<b>但这里不成立</b>：门槛模型假设人人看得见全场比例，是在数人头；Asch 那组变体说的却不是比例——一个盟友就够，而且他答错也算数。变的不是数量，是「唯一」这个状态没了。纯计数模型会把这件事算成百分之一的扰动，从而系统性地低估第一个开口的人。</li>
 <li><b>神经科学 · 被踢出传球游戏的那六十秒</b>：2003 年 Naomi Eisenberger 等人让人躺在扫描仪里玩一个三人网络传球游戏，玩到一半，另外两个「玩家」（其实是程序）不再传球给他。被排除的人报告难受，背侧前扣带回一带活动增强。跑的是「用抛硬币分的组，十分钟后你就开始偏心自己人」那节的机制：成员资格是被授予的，授予得毫无理由也照样是真的——因而也能被毫无理由地撤回。由此能推出一个原本看不出的结论：<b>把一个人移出一个群，代价不为零，而且不经过任何实质利益</b>；那游戏里既没有钱，也没有熟人。于是组织里那些被当成零成本的动作——把人移出群、不再抄送、换个不带他的频道——其实是可测量的自变量，不是纯行政操作。<b>但这里不成立</b>：脑区重叠推不出「是同一种痛」，这是典型的反向推断问题；2014 年 Woo 等人用多体素模式分析发现，生理疼痛与社会排斥在同一片解剖区域里其实是两套可区分的表征。能用的只有「排除这个操作产生了可测反应」，不能升级成「社会排斥就是疼」。</li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 十条要点</h3>
+<ol class="takeaways">
+<li>在 Asch 的线段实验里，约三分之一的关键回答跟着一致的错误多数走，四分之三的人至少从众过一次。</li>
+<li>多数派里只要有一个人给出不同答案，从众率就降到约百分之五，哪怕那个答案同样是错的。</li>
+<li>信息性影响要靠独立证据来破，规范性影响要靠让表达异议不再需要勇气来破，两种办法不通用。</li>
+<li>17 个国家 133 项研究的汇总显示，从众程度随社会的集体主义倾向和年代而变，不是人性常数。</li>
+<li>Milgram 服从实验的数字要打折用，解释已换成「投入的追随」；斯坦福监狱实验不能再当证据。</li>
+<li>Moerman 在泰国北部找不到任何一条能划出泐人的文化标准，最后只剩当事人的自称，而且自称还随场合改变。</li>
+<li>Barth 主张研究族群的边界而不是边界里装的文化内容，因为人不断穿过边界，边界却照样存在。</li>
+<li>帕坦人失地后能变成俾路支人、反过来几乎不行，原因在于两边计算成员资格的方式不同。</li>
+<li>Tajfel 的最小群体实验里，随机分组的少年更爱选拉开组间差距的分法，哪怕自己组因此少拿。</li>
+<li>最小群体里长出来的主要是偏爱自己人而不是敌视外人，读成「人天生排外」是过度解读。</li>
+</ol>
 </div>
 <div class="thinking">
 <h3 data-tts="a9f4710d34cf0465">深入思考</h3>

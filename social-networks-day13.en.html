@@ -58,6 +58,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -135,6 +141,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>Evolutionary biology · Relationships have to be fed with time, so the affordable part is necessarily small</b>: primates maintain bonds by grooming — two monkeys spend a quarter of an hour picking through each other's fur, which is barely necessary hygienically; what it produces is the relationship itself. The cost is linear: one more partner is one more slice of time, and a day holds only so many hours. This runs the mechanism from "The person who found you that job is someone you see twice a year at most": <b>ties are stratified by maintenance cost, and it is the cheapest ones that reach outside your existing circle</b>. From which follows a conclusion not otherwise visible: <b>any technology that makes "staying in touch" cheap expands only the periphery, never the core</b> — the core is expensive in shared time, not in contact; and since a bridge is worth what it is scarce, more bridges means each is worth less. Landing on an observable consequence: to judge whether a platform has genuinely widened your information intake, do not look at the number of connections, look at how many of the things you first heard about there your existing circle would have told you anyway — if that redundancy rate does not fall, a tenfold rise in connections buys nothing. <b>But it does not hold here</b>: the figure extrapolated from that primate regression line, that a human can maintain about 150 relationships, does not survive scrutiny. A 2021 reanalysis found point estimates jumping between the teens and well over a hundred depending on dataset and method, with 95% intervals running from single digits to over five hundred. And humans can maintain a tie without being present — through a third party's relay, through shared institutions, through one message every six months — none of which is grooming's linear cost in time. So "maintenance has a cost" carries over; "how large the cost is and where the ceiling sits" does not.</li>
 <li><b>Complexity science · The average number of people someone knows is a nearly useless number</b>: those who run epidemic models on networks discovered long ago that what decides whether an outbreak takes off is not the average number of contacts but how dispersed that number is. In 2001 two physicists showed that on a network with a heavy-tailed degree distribution (a few nodes with enormous numbers of contacts), the classic threshold below which an epidemic dies out on its own approaches zero. This runs the mechanism from "A short path does not mean the thing will spread": <b>structure is not uniform, and a few long-range ties and a few very high-degree nodes carry the great majority of paths</b>. From which follows a conclusion not otherwise visible: the critical nodes are few and you do not know what the whole network looks like, so picking people at random is waste — <b>but there is a method that needs no global information: pick a person at random, ask them to name any acquaintance, and act on that acquaintance</b>. People who get named have systematically more ties (this is the statistical fact behind "your friends have more friends than you do"). For the same budget, that sampling covers far more transmission paths than sampling people at random, while demanding exactly as little information. <b>But it does not hold here</b>: disease can pass on a single contact, and social behaviour cannot. The complex contagion described in "A short path does not mean the thing will spread" needs repeated confirmation, and shortcuts thin the confirmations out. So the "spreads like a virus" metaphor, applied to ideas and behaviour, prescribes the opposite of what is needed: against disease, cut the shortcuts; for behaviour, manufacture redundancy.</li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 Ten takeaways</h3>
+<ol class="takeaways">
+<li>In Granovetter's 1969 Newton survey, nearly three in ten people who found jobs through a contact saw that contact once a year or less.</li>
+<li>Strong ties close into clusters whose members hear the same news; a weak tie matters because it is more likely to bridge two clusters.</li>
+<li>A 2022 randomised experiment on LinkedIn confirmed that weak ties raise job mobility, but along an inverted U: moderately weak ties help most.</li>
+<li>Sandra Smith found that referrals often stall because the person with the opportunity declines to vouch, since a bad referral costs the referrer's own credit.</li>
+<li>Ronald Burt calls the missing tie between two groups a structural hole, and the person who spans it a broker.</li>
+<li>Among supply-chain managers at a large US electronics firm, those spanning more structural holes had ideas rated more valuable and earned more.</li>
+<li>A broker's edge is vision arbitrage — seeing two groups' practices at once, not superior intelligence — so positional advantage is easily mistaken for talent.</li>
+<li>Bridging brings in new ideas, while closure, which James Coleman stressed, lets norms be enforced and gives trust a footing.</li>
+<li>Watts and Strogatz showed that rewiring a few edges of a regular network into long-range shortcuts collapses path length while barely changing clustering.</li>
+<li>Centola's experiment found a health behaviour spread farther and faster in clustered networks, because adoption needs repeated confirmation: complex contagion.</li>
+</ol>
 </div>
 <div class="thinking">
 <h3>Questions worth sitting with</h3>

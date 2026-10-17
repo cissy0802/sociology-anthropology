@@ -58,6 +58,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -142,6 +148,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>演化生物学 · 那些看起来纯属浪费的规矩，测的是别的东西</b>：演化生物学里有个说法叫代价信号（costly signaling，Amotz Zahavi 1975 年提出）。孔雀那身尾巴又重又碍事，正因为碍事才骗不了人——身体差的雄鸟顶不住这个成本。宗教社群里那些看起来纯属浪费的要求跑的是「痛得越狠的人捐得越多」那节的机制：代价没法伪造，所以它说的话是死的。由此能推出一个原本看不出的结论：<b>要预测一个自愿组织能撑多久，看它的要求贵不贵，比看它的理念对不对更管用，而且必须是对内可见、对外无用的那种贵。</b>Richard Sosis 与 Eric Bressler 2003 年收了 83 个 19 世纪美国公社的数据，要求越贵的存活越久，这个关系在宗教公社里比世俗公社强得多（历史相关性研究，不是实验，别读成因果）。<b>但这里不成立</b>：Zahavi 的模型要求信号成本和被测品质之间有稳定对应——尾巴越重，越只有健康的鸟扛得住。仪式的痛和「这人将来会不会合作」之间没有这条函数：疼痛耐受是生理差异，跟合作意愿不一定同向。所以仪式筛掉的其实是「不愿意付」的人，不是「付不起」的人——这两件事在孔雀那儿是一回事，在人这儿不是。</li>
 <li><b>分布式系统与工程 · 所有人都到了那条线，才能一起跨过去</b>：并行计算里有个基本部件叫同步屏障（barrier）：一堆同时在跑的任务，跑到某个点必须停下来等，等到最后一个也到了才一起进入下一阶段，谁也不许先走。跑的是「你已经不是原来那个人，但也还不是新的那个」那节的机制：阈限段的作用就是让一批人在同一个「什么都不是」的状态里待够再一起出去——恩登布人的割礼营同期进同期出，不是巧合。由此能推出一个原本看不出的结论：<b>一批人一起经历的过渡，和一个人单独经历的同样长的过渡，产出的不是同一种东西</b>——前者会额外长出同期人之间的横向连带，后者只有纵向的身份变更。所以把入职、培训、轮岗从固定批次改成「随到随办」，调度效率高了，但同期这层关系是被结构性取消的，事后靠团建补不回来。<b>但这里不成立</b>：屏障在工程上的代价是等待，最慢的那个决定所有人的进度，所以工程师拼命想消掉它。仪式的阈限刚好相反，等待本身就是产出——屏障前后是同一个任务，阈限前后的人不是。形状一样，一个要把等待压到最短，另一个的等待一短就失效。</li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 十条要点</h3>
+<ol class="takeaways">
+<li>van Gennep 在 1909 年的《过渡礼仪》里发现，各地成年礼、婚礼、葬礼共用分离、阈限、聚合三段骨架。</li>
+<li>阈限是旧位置已拆、新位置未装的那段时间，社会准备的格子此刻一个也套不上这个人。</li>
+<li>Victor Turner 在恩登布人的 Mukanda 割礼营里看到，男孩被剥掉衣着、名字和出身，几个月同吃同住。</li>
+<li>阈限里长出的交融（communitas）是剥掉位置差后的赤裸连带，同期的人几十年后还认彼此。</li>
+<li>新身份装不进还占着旧身份的人，所以过渡里的难受不是副作用，难受就是拆旧身份本身。</li>
+<li>Durkheim 的集体欢腾指人群齐唱齐动时感到一股外来的力量，其实那股力量就是在场的这群人。</li>
+<li>神圣不是物件的性质，而是人群聚会的余温被存进柱子、旗帜或 logo，所以圣物一被冒犯就能引爆众人。</li>
+<li>同步促进合作的效应真实但不大：一项 42 项研究的元分析给出的效应量约 0.28，单个实验还曾复制失败。</li>
+<li>毛里求斯大宝森节研究里，做过穿刺仪式和只在旁边看的人都捐得更多，因为没法伪造的代价需要观众当收信人。</li>
+<li>Turner 用 liminoid 区分音乐节、马拉松这类可选且不改变位置的场合，真正的通过仪式要有当众宣布和随之改变的对待。</li>
+</ol>
 </div>
 <div class="thinking">
 <h3 data-tts="b6ef26f384b971f5">深入思考</h3>

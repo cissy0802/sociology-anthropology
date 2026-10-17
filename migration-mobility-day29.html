@@ -58,6 +58,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -148,6 +154,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>复杂性科学 · 往塑料里掺导电颗粒，掺到某个比例之前完全不导电，再多掺一点，突然就通了</b>：做防静电材料时天天遇到。颗粒稀疏时各自孤立，电流没有连续的路；密到某个临界值，第一条贯穿整块材料的通路出现，电阻断崖式下跌。这套数学叫渗流（percolation），算的是连通性什么时候突然出现。跑的是「『哪儿穷就从哪儿走』这句话，对不上数据」那节的累积因果机制：<em>每多一个已经在外面的人，等于给网络多加一条边</em>。由此能推出一个原本看不出的结论：<b>要预测一个地方会不会开始大规模外流，量「本地人和外面的人之间还剩多少条能用的连线」比量两地工钱差更有用；同样的推力落在阈值两侧会给出完全不同的流量——「这些年怎么推都没动静」和「怎么突然停不下来了」可以是同一个参数的两边。</b><b>但这里不成立</b>：渗流里每条通路等价、被动、用不坏；移民网络里一条边是一个有义务的具体的人，能接待的人数有限，会挑人，资源会耗尽，所以它不会在临界之上长出越来越大的连通团，而是封顶——福塞尔与马西在城市样本里没看到累积因果，正是这个意思：<b>边会饱和的网络，没有真正的渗流阈值。</b></li>
 <li><b>心理学 · 同一批人，先看一眼美国符号再解释一张图，和先看一眼中国符号再解释同一张图，说法不一样</b>：洪瑀（Ying-yi Hong）等人 2000 年的实验。受访者是在两种文化里都长大的华裔美国人，先看一组文化提示图，再解释一个含糊场景：一群鱼里有一条游在最前面。看过美国提示的更多说「它自己想游」，看过中国提示的更多说「后面那群在推它」。跑的是「最快『融入』的那批孩子」那节的选择性涵化机制：<em>两套框架可以同时装在一个人身上，由线索调用，不是此消彼长</em>。由此推出一个原本看不出的结论：<b>「融入程度」这种单维度量表测的东西可能不存在——一个人在两套框架上可以都接近满格。「文化适应」更该记成「能调用哪几套、被什么线索调用」，而不是 0 到 1 之间的一个位置；这也解释了同一个人在不同场合填的问卷为什么会打架：不是不诚实，是问卷连线索一起换掉了。</b>这类切换在不同族群和任务上被重复出来过，但它属于启动（priming）范式，那一大类在复制危机里整体挨过打，单个效应的稳健度要分开看。<b>但这里不成立</b>：框架切换由你这边的线索触发，所以你调得动；别人把你归成哪一类，不随你调用哪套框架而变。实验室能替你换提示图，换不掉对面那个人的分类。<b>所以「切换自如」只在「自己怎么想」这层成立，在「别人怎么待你」那层不成立。</b></li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 十条要点</h3>
+<ol class="takeaways">
+<li>最穷的国家并不送出最多移民，收入从低位上涨时外流率通常先升后降，这叫迁移驼峰。</li>
+<li>迁移驼峰的原因是走一趟要花钱，太穷的人走不起，所以在很长一段区间里发展先是外流的燃料。</li>
+<li>皮奥雷的《过客鸟》指出，富裕经济体会长出本地人嫌掉价的不稳定岗位，吸引打算干几年就回去的人。</li>
+<li>马西等人从墨西哥迁移研究计划提炼出累积因果：每多一个人在外站稳，同村下一个人的成本就低一截。</li>
+<li>福塞尔与马西发现累积因果在墨西哥大城市基本不成立，因为城里的人际网本来就散。</li>
+<li>1994 年多米尼加米拉弗洛雷斯村超过六成五的人家在波士顿有亲人，一个村子摊在两个地方。</li>
+<li>社会汇款指移民寄回老家的不只是钱，还有开会方式、家里谁说了算、什么算体面这类做法和标准。</li>
+<li>方法论民族主义是默认「国家等于社会」，统计和问卷按国界收发，横跨国界的现象因此不在表格里。</li>
+<li>分层同化认为移民子女面前有几条岔路，保住父母语言的孩子平均并不吃亏，有些反而更好。</li>
+<li>越界：借渗流理论看，预测一地会不会大规模外流，数本地人与外面的人还剩多少连线比看工钱差更有用。</li>
+</ol>
 </div>
 <div class="thinking">
 <h3 data-tts="e6f8668a79521615">深入思考</h3>

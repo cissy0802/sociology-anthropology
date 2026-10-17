@@ -58,6 +58,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -140,6 +146,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>Evolutionary biology · On the same question, the later a study is published, the smaller the effect</b>: In 2002 two researchers went through forty-four meta-analyses in ecology and evolutionary biology and laid out the studies inside each one by year of publication: effect sizes shrank systematically with year, and the pattern survived controlling for sampling effort. The mechanism running here is the one from "redo a hundred experiments": what changes is not the world but the sieve — early samples are small and noisy, so only the ones that happen to come out large clear the significance threshold and get published; as samples grow, the effect size needed to clear the threshold falls, and the average of the literature slides toward the true value. Which yields a conclusion you would not otherwise see: <b>the "replication crisis" is not a question of one discipline's character but the shape that necessarily grows wherever three things hold together — small true effects, small individual samples, and only positive results published. You can therefore predict in advance which fields will have one: not by how rigorous a field says it is, but by whether the effects are small, whether a single study is expensive, and whether negative results can get out. With all three in place a literature of early-large, later-small findings will grow, including in fields that would never call themselves "soft".</b> <b>But this does not hold here</b>: many objects in ecology cannot be randomly assigned and the same population cannot be run twice, so over there "replication" means redoing the work at a different site in a different year, and a failure may mean the original was false or may mean a real regional difference — the two cannot be separated. A direct replication in a lab, same materials and same procedure, has no such ambiguity. <b>So what carries over is "selection mechanisms manufacture decline in any field"; what does not carry over is "decline means the original was false".</b></li>
 <li><b>Distributed systems and AI · A batch of models loses more than ten points on a freshly built test set, and yet the ranking barely moves</b>: In 2019 a group of researchers rebuilt a test set for a well-known image dataset following its original collection procedure and re-ran a large number of published models on it: accuracy dropped by eleven to fourteen percentage points across the board. The mechanism running here is the one from "redo a hundred experiments": a public benchmark that an entire community keeps using to select on ends up measuring not only the thing under test but also how many times the community has searched against it — the reported score carries a selection dividend inside it. Which yields a conclusion you would not otherwise see: <b>a leaderboard number should be read as a statistic about a search process rather than a property of the model — the same number means different things on the first evaluation and on the ten-thousandth. So "is this field moving fast" cannot be answered from the slope of the leaderboard alone; you also have to ask how many times the test set was replaced.</b> <b>But this does not hold here</b>: the paper's own checks rule out the most intuitive explanation — the drop is mainly not overfitting to the old test set but the fact that the newly collected images really are harder, and models that were better on the old set are still better on the new one, so the ordering largely survives. <b>What carries over is "a public benchmark bakes the community's search into the score"; what does not carry over is "therefore the ranking cannot be trusted": in psychology it was precisely the ordering that failed, whereas here it is the level that fails, not the order.</b></li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 Ten takeaways</h3>
+<ol class="takeaways">
+<li>Science is trustworthy not because scientists are more honest, but because institutions make dishonesty unrewarding.</li>
+<li>In 1942 Robert Merton named four norms of science: universalism, communism, disinterestedness and organized skepticism.</li>
+<li>Recognition is the only hard currency in science, and collecting it means publishing a finding in full to everyone who might attack it.</li>
+<li>Ian Mitroff's interviews with Apollo moon-rock scientists found counter-norms running alongside, such as attachment to one's own hypothesis and secrecy.</li>
+<li>In nearly two years at a Salk Institute lab, Bruno Latour saw that instruments mostly turn matter into lines on paper: inscription devices.</li>
+<li>A statement becomes a fact once its qualifiers are stripped away and nobody asks where it came from; serious challenge puts the qualifiers back.</li>
+<li>Harry Collins found that no lab built the new laser from published papers alone, because the tacit knowledge it needed never made it onto the page.</li>
+<li>The experimenter's regress means a working apparatus and a correct result can only vouch for each other, so the community has to settle disputes.</li>
+<li>When 100 psychology studies were redone in 2015, significant results fell from 97% to 36% and effects halved, driven by rewards for novel positive findings.</li>
+<li>Only 44% of registered reports support their hypothesis, against 96% of the standard literature: the repair is to process, not to honesty.</li>
+</ol>
 </div>
 <div class="thinking">
 <h3>Going deeper</h3>

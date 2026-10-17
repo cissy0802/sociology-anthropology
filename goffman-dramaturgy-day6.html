@@ -58,6 +58,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -141,6 +147,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>心理学 · 没人注意你，和大家一起装作没注意，是两回事</b>：2000 年康奈尔的一组实验里，学生被要求穿一件尴尬的 T 恤走进讨论室；事后他们估计约 46% 的在场者注意到了衣服上的图案，而实际回忆得起来的只有约 23%——高估了一倍。这叫聚光灯效应（spotlight effect）。这类结果被重复过不少次，但效应大小明显依赖场景，别当常数用。「他说错了话，尴尬的是全场」那节的机制却指出另一条路径：在场的人也可能<i>注意到了，但共同装作没有</i>，因为点破的代价点破的人自己也要担。由此能推出一个原本看不出的结论：<b>「没人拆穿我」在两种场合下由完全不同的机制产生，而对应的做法相反</b>——一次性相遇（机场、陌生的会）里是真的没人在看，你为破绽付的焦虑是纯浪费；而在要长期同场的团队里，人是看见了替你圆过去的，那意味着这是一笔真实存在的人情负债，会在关系变差那天被一次性拿出来清账。<b>但这里不成立</b>：那组实验的设计是陌生人、一次见面、几分钟，观众没有维持共同定义的动机，测到的是纯粹的知觉偏差；面子工作的前提恰恰是双方还要继续同场。把实验结论直接搬进熟人场景，就是把「没被注意到」和「被体谅了」混成一件事。</li>
 <li><b>演化生物学 · 装不出来的那部分才被当真</b>：雄孔雀的尾巴又重又扎眼，按理是纯负担。1975 年 Zahavi 的解释是：正因为昂贵，装不起的个体装不出来，所以可信；1990 年 Grafen 给出模型后，这一度成了动物通讯的主流说法。现状要说清楚：2020 年一篇综述系统论证「代价」既不充分也不必要，如今更被接受的框架是「权衡」——诚实靠的是好个体发信号的净收益更高。但一条硬核留了下来：<b>一个谁都能零成本发出的信号不携带信息。</b>「你其实一直在帮别人把戏演下去」那节说，前台的可信度不在表演本身，在于观众判断它有多难伪造。由此能推出：当某类前台的后台成本被压到接近零——模板化的措辞、一键生成的作品集、自动打磨语气的写作工具——这类信号不是变得更有效，而是<b>自动贬值</b>，接收方会转去看还没被压到零成本的那一格：现场追问、当场写下的推导过程。所以「人人都能做得更漂亮」的技术，可预测地把评判标准往仍然昂贵的地方推，而不是让评判变松。<b>但这里不成立</b>：动物信号的成本由生理硬约束担保，接收方是对手，绝无动机替发信者掩饰；而这一期讲的观众恰恰相反，他们主动配合，看见破绽装没看见，因为戏一崩大家都难堪。于是人这一侧多出一整条动物那边没有的通路——<b>可信度可以由观众的合作维持，而不必由发信者的成本担保</b>；这也解释了为什么明显不划算的伪装能在长期共处的群体里活很久，在一次性相遇里却活不过五分钟。</li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 十条要点</h3>
+<ol class="takeaways">
+<li>Goffman 在设得兰群岛翁斯特岛的旅馆里做了约一年田野，从那扇厨房门看出了前台与后台之分。</li>
+<li>后台并不是「真实的自我」，它同样是演出，只是观众换成了同事、剧本松了，是准备和卸妆的地方。</li>
+<li>从空乘的情绪劳动看：前台一旦写成公司规程，后台就成了唯一能不按规程活着的地方。</li>
+<li>一次见面靠在场者共同默认的情境定义撑住，大家不是真心同意，而是同意暂时不去挑战它。</li>
+<li>维持印象的活儿大部分是观众干的：不往后台瞟、看见破绽装没看见、给人留台阶，这叫体谅。</li>
+<li>在吃穿住行全被规定的总体机构里，人被收走前台道具后，第一件事就是重新造出一个后台。</li>
+<li>面子不长在人身上，而长在这一次相遇里，是你在这个场合主张、又被在场者认下的正面价值。</li>
+<li>保住对方的脸不是出于厚道，而是对方一掉脸整个场就崩了；常见补救分冒犯、点出、补偿、接受四步。</li>
+<li>face 一词借自中文，胡先缙 1944 年把它分成关乎道德声誉的「脸」和靠成就积累的「面子」。</li>
+<li>谁都能零成本发出的信号不携带信息，前台的伪造成本一旦被技术压到近零，这类信号就会自动贬值。</li>
+</ol>
 </div>
 <div class="thinking">
 <h3 data-tts="485e86cac2a4f058">深入思考</h3>

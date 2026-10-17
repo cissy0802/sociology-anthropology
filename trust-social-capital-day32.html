@@ -58,6 +58,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -153,6 +159,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>神经科学与意识 · 往鼻子里喷一剂激素，据说就能让人愿意把钱交给陌生人——这个结果后来基本没站住</b>：2005 年一项研究报告，催产素（oxytocin）鼻喷剂让受试者在实验室的「信任博弈」里交出更多钱，媒体讲了十几年。2015 年奈夫、卡默勒与麦卡洛梳理了一批重复尝试，发现最干净的那条结论重复得很差；2020 年一次有原作者参与的预注册重复实验，同样条件下没看到这个效应。跑的是「他把一袋钻石交给你」那节的机制：<em>信任不是一种美德也不是一种体质，是对「对方会不会被制裁」的一个估计</em>。由此能推出一个原本看不出的结论：<b>如果它是对环境的估计，同一个人的「信任度」就该随场合大幅漂移，而不该像身高那样稳定——这正解释了为什么测量一直对不齐。所以这类研究的正确读法不是「找到了信任的开关」，而是「实验室那个任务和那道问卷量的根本不是同一件事」。</b><b>但这里不成立</b>：实验室的信任博弈把闭合整个拿掉了——一次性、匿名、没有下一次，而本期机制说信任之所以合理，靠的正是重复相遇和名声。<b>所以那批零结果也不能反过来说成「生理状态影响不了信任」——那个任务根本就不在本期机制成立的条件里。</b></li>
 <li><b>复杂性科学 · 让图上每个点多连几条线，合作反而会被抹掉</b>：2006 年大内、豪尔特、利伯曼与诺瓦克给了条极简的规则：在一张网络上，一个「自己付代价、让每个邻居得好处」的合作者能不能不被淘汰，取决于好处与代价的比值是否大于平均邻居数。邻居数越大门槛越高；谁都认识谁的极限情形下，合作者直接被扫掉。跑的是「他把一袋钻石交给你」那节闭合的量化版：<em>邻居少而彼此重叠，你的行为才有人看见、才有人承受、才回得到你身上</em>。由此推出一个原本看不出的结论：<b>「连接越多社会资本越多」这个方向是错的。合作能力是两个量的比较，所以「增加连接」本身不定向——互助收益远大于付出的地方多连有用，勉强及格的地方多连会把合作直接压到线下。「多办活动多认识人」和「让固定的一小群人反复见」不是同一件事的两种力度，是两个方向。</b><b>但这里不成立</b>：模拟里的点不能挑邻居，图是外面给定且固定的；人会自己重排关系，还能在一张很稀的大网里嵌一个很密的小核（同事几百个，真能互相担事的三个），这个嵌套让「平均邻居数」不再是一个数。<b>所以借得过来的是「闭合有代价、代价随规模涨」，借不过来的是那条不等式本身。</b></li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 十条要点</h3>
+<ol class="takeaways">
+<li>1980 到 1993 年，美国打保龄球的人多了约一成，参加保龄球联赛的人却少了约四成。</li>
+<li>普特南把社会资本定义为关系网络加上从中长出的互惠规范和信任，它不归个人所有，而是与人共有。</li>
+<li>意大利十五个章程几乎相同的新区政府，二十年后的效率差距跟各地百年前合唱团、互助会的多少对得上。</li>
+<li>纽约钻石商不签合同就把整袋钻石交给同行看货，靠的是闭合：彼此都认识，骗一次就会传遍并丢掉生计。</li>
+<li>抱团型关系往里收、桥接型关系往外伸，两者是两样东西，把社会资本压成一个数会抹掉最要紧的信息。</li>
+<li>在收入极不稳的贫困社区，斯塔克记录的亲属互助网是唯一的保险，代价是余钱永远攒不起来。</li>
+<li>波特斯归纳的四条代价——排外、过度索取、限制自由、拉回冒头者——与信任出自同一个闭合机制。</li>
+<li>在四十国交出一万七千多个钱包的田野实验里，装了钱的钱包反而比空钱包更常被归还。</li>
+<li>格莱泽等人发现，问卷上答「大多数人可信」预测的是答题者自己有多可信；信任更像对环境的估计。</li>
+<li>催产素鼻喷剂能提高信任的 2005 年结果后来重复得很差，而实验室信任博弈本身就拿掉了闭合。</li>
+</ol>
 </div>
 <div class="thinking">
 <h3 data-tts="4beb2552fbb6fe5c">深入思考</h3>

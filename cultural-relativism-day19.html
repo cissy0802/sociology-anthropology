@@ -58,6 +58,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -124,6 +130,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>佛学 · 同一套教法在不同地方长出相反的做法，判准却没换</b>：佛教传到汉地长出禅门的农禅，到藏地长出繁复的仪轨与辩经，到南传长出以戒律和禅修次第为骨的僧团生活。单项做法常常正相反：有的地方僧人下田耕作是本分，有的地方明令不许碰农事。跑的是「他去北极过了一个冬天」那节的机制：把「不许耕作」从托钵、供养、在家人修福那一整个循环里拔出来，它就只剩一条奇怪的禁令。由此推出一个原本看不出的结论：<b>「哪个传统更正统」这个问题问错了层</b>，能比的是各套安排里同一个功能位由什么顶起来（谁供养、贪嗔靠什么对治、师承怎么验证），不是单项做法的清单；搬来一条别处的做法却没搬来它靠着的那半个循环，是改革者最常出的岔子。<b>但这里不成立</b>：文化相对主义是描述性方法，不判真假；这个传统自己是规范系统，明确区分正见与邪见。拿相对主义替任意做法背书，在它自己的框架里也通不过——「各有各的一套」推不出「各套一样有效」。</li>
 <li><b>分布式系统与 AI · 两套向量空间各自都自洽，坐标却没法直接对上</b>：把词变成一串数字的模型（词向量），各自训练出来的两个内部都自洽——近义词挨着、类比关系成立。可两边的坐标轴不是同一套，同一个词在两边的数字毫无可比性，要比就得先学一个对齐映射。2018 年 Conneau 等人证明连对照词典都不给也能对齐，后续研究随即找到边界：语言对越远，这类无监督对齐掉得越厉害，甚至塌成废解，因为它悄悄假定了两个空间近似同构。跑的是「有人用民族志的笔法写了一个部落的洗漱仪式」那节的机制：任何比较都得先有一个原点，而原点不在数据里，是外面选进去的。由此推出一个原本看不出的结论：<b>「跨文化没法比较」是个过强的说法——比较不是取消，是先付一笔对齐成本，而这笔成本可测，越远越贵</b>。<b>但这里不成立</b>：向量空间至少有个损失函数告诉你对齐得好不好，也有天然可当锚点的硬词；文化之间没有这个损失函数，也没人保证两套安排近似同构，「翻译总归能做到」这份乐观在这里没根据。</li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 十条要点</h3>
+<ol class="takeaways">
+<li>Franz Boas 学物理出身，1883 年在巴芬岛住了约一年，回来后不再信人类社会排成一条进化线。</li>
+<li>历史特殊论的机制是：一个做法的意义由它在整套生活安排里的位置决定，器物该按部落和地域陈列。</li>
+<li>Boas 测量上万名移民及其美国出生的子女，发现头型指数一代之内就会变，不配当固定的种族标志。</li>
+<li>1897 年被带到美国自然史博物馆的六名因纽特人有四人病亡，反对种族排名的学者也曾把人当标本。</li>
+<li>Ruth Benedict 在《文化模式》里把人类可能的做法比作一道弧，每个社会只选一小段并整合成风格。</li>
+<li>方法上的相对主义是描述时先搁置自己判准的工具，推不出「任何做法都不能从外部评价」的道德主张。</li>
+<li>1947 年 Herskovits 起草的人权声明意在护住被殖民者的文化，却也挡掉了从外部批评暴行的语言。</li>
+<li>Horace Miner 把美国人刷牙写成 Nacirema 部落的嘴部仪式，说明猎奇感来自描述角度而非做法本身。</li>
+<li>Tiv 长老用自己的一套理论纠正《哈姆雷特》的情节，换掉的是解释理论，不是解释能力。</li>
+<li>Hofstede 的国别文化维度出自 IBM 一家公司的员工问卷，把国家当文化单位，只宜当粗糙提示不宜当尺子。</li>
+</ol>
 </div>
 <div class="thinking">
 <h3 data-tts="012be9f3f35f517d">深入思考</h3>

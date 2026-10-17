@@ -58,6 +58,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -177,6 +183,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>分布式系统与 AI · 把自己设计成点不清的样子，代价不在带宽，在自己也点不清自己</b>：抗封锁的匿名网络有一类叫可插拔传输（pluggable transports）的模块，专门把流量伪装成别的东西；点对点网络则刻意不留可枚举的中心目录。跑的是「有些人不是没被找到，是把日子过成了不值得被征收的样子」那节的机制：不是躲得更远，是把自身形态改成让清点的成本高于收益。由此推出一个原本看不出的结论：<b>这类系统最硬的代价是内部可观测性——外面枚举不了它，它也枚举不了自己，所以长期报不出可信的用户数、也难做全局一致性；「更抗打击」和「更难管好自己」是同一个属性的两面，不能只要一半</b>。<b>但这里不成立</b>：Zomia 的摩擦来自地形，是白给的、一直在那儿的；网络里的摩擦全是设计出来并且要持续维护的，对手加算力或者改规则就能重新定价。所以「距离本身提供庇护」这条在网络里直接不成立——停止维护当天就失效，而山不会一夜之间被削平。</li>
 <li><b>医学与临床试验 · 把那个可测的数压到极致，人反而死得更多</b>：二型糖尿病的治疗长期盯着糖化血红蛋白，因为它可测、可比、能写进指南。ACCORD 试验把它推到极致：强化组的目标是降到 6% 以下。试验被提前终止，中位随访 3.7 年时，强化组的全因死亡率反而更高（年化约 1.41% 对 1.14%），结果 2008 年发表。跑的是「为了把树数清楚，他们重新种了一整片森林」那节的机制：被选中的是一个可远程核对的替代指标，而它与真正在意的事（活得久）之间那段连接是假设出来的，没人测。由此推出一个原本看不出的结论：<b>在用替代指标的地方，「指标达成度越高越好」系统性地不成立，而最该花钱去测的恰恰是指标与目标之间那段没被测过的连接，不是把指标压得更低</b>。<b>但这里不成立</b>：斯科特那边被抹掉的在地知识中央拿不到，也没有回滚的机会；临床这边有随机试验，ACCORD 本身就是这套体系自己把自己的错查出来的方式，查出来之后指南也真的改了。有可回滚的检验装置，就推不出他那套悲观结论。</li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 十条要点</h3>
+<ol class="takeaways">
+<li>十八世纪普鲁士和萨克森的林务官用「标准木」推算材积，森林第一次变成可写进预算的数字。</li>
+<li>要让台账变准，最省事的办法不是改进测量，而是把森林改造成同树种、同树龄、成行成列的人工林。</li>
+<li>单一栽培的第一茬长得极好，约百年后第二茬减产两到三成，因为没进台账的土壤本钱被吃光了。</li>
+<li>斯科特把这条机制叫清晰化：国家能用的知识必须可数、可比、能在远方办公室核对。</li>
+<li>1849 年菲律宾的克拉韦里亚法令按姓氏册给每户派姓，明说是为了登记、征税和征兵。</li>
+<li>清晰化也是公共卫生、普及教育和灾害救援的前提，它不是坏事，而是有代价的事。</li>
+<li>照章工作的「热心罢工」能让生产垮掉，说明写下来的规程一直跑在大量没写下来的判断上。</li>
+<li>斯科特把这种在地、随情境、只能靠做来学的知识叫米提斯，西非农民的混作和港口引航都是例子。</li>
+<li>简化、自信、强权与无力抵抗的社会四个条件同时出现，才会酿成坦桑尼亚村庄化那样的灾难。</li>
+<li>东西一旦被用来征收或考核，就会朝难以计量的方向变形，Zomia 山民的游耕口传或许正是如此。</li>
+</ol>
 </div>
 <div class="thinking">
 <h3 data-tts="43bd95a053afc341">深入思考</h3>

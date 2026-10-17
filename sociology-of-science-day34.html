@@ -58,6 +58,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -143,6 +149,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>演化生物学 · 同一个课题，越晚发表的研究效应越小</b>：2002 年有两位研究者扫了生态学与演化生物学里的四十四篇元分析，把每篇内部的研究按发表年份排开，发现效应量随年份系统性地变小，控制取样努力后仍然在。跑的是「一百个实验重做一遍」那节的机制：变的不是世界，是筛子——早年样本小、波动大，只有碰巧偏大的那些过得了显著性的门槛并发得出去；后来样本变大，能过门槛的效应量下限跟着降，平均值一路往真值滑。由此推出一个原本看不出的结论：<b>「复制危机」不是某个学科的品德问题，而是「真效应小 + 单次样本小 + 只发阳性」三条同时成立时必然长出来的形状。于是可以事先预测哪个领域会有：不看它自称多严谨，看效应小不小、单次研究贵不贵、阴性结果发不发得出去——三条齐了就会长出一片先大后小的文献，包括从不自称「软科学」的那些。</b><b>但这里不成立</b>：生态学里很多对象没法随机分配，也没法重复同一个种群：那边的「复制」是换地点换年份重做一次，失败既可能是原结果假、也可能是真实的地区差异，两者分不开。实验室里同材料同流程的直接复制没有这层歧义。<b>所以借得过来的是「筛选机制会在任何领域制造衰减」，借不过来的是「衰减就等于原结果是假的」。</b></li>
 <li><b>分布式系统与 AI · 一批模型换一套新测试集，全体掉了十几个点，排名却基本没动</b>：2019 年有一组研究者按某个著名图像数据集原来的流程重做了一套新测试集，把一大批已发表的模型放上去重跑：准确率普遍掉了十一到十四个百分点。跑的是「一百个实验重做一遍」那节的机制：一个被整个共同体反复拿来筛选的公共基准，最后衡量的不只是被测对象，还有共同体在它上面搜索过多少次——分数里含着一份选择的红利。由此推出一个原本看不出的结论：<b>排行榜上的分数该被当成关于搜索过程的统计量，而不是模型本身的属性——同一个数字在「第一次评测」和「第一万次评测」下含义不同。于是「这个领域进步得快不快」光看榜单斜率答不了，得同时看测试集换过几次。</b><b>但这里不成立</b>：这篇论文自己的检验否掉了最直觉的解释——掉分主要不是在旧测试集上过拟合造成的，而是新采的图确实更难；旧集上更强的模型在新集上仍然更强，顺序基本保住。<b>所以借得过来的是「公共基准会把共同体的搜索烙进分数里」，借不过来的是「因此排名不可信」：心理学那边失效的恰恰是顺序，这边失效的是水平，不是顺序。</b></li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 十条要点</h3>
+<ol class="takeaways">
+<li>科学靠得住，靠的不是科学家更诚实，而是一套让不诚实划不来的制度安排。</li>
+<li>默顿 1942 年提出科学的四条规范：普遍主义、公有主义、无私利性和有组织的怀疑。</li>
+<li>科学界的硬通货是名字被承认，要领这份报酬就得把发现完整交给所有想挑错的人。</li>
+<li>米特罗夫访谈阿波罗月岩科学家，发现还有一套反规范并行，比如偏爱自己的假说、发表前保密。</li>
+<li>拉图尔在实验室蹲点近两年，发现仪器的活儿是把物质变成纸上的线条，他称之为铭写装置。</li>
+<li>一个说法的限定词被层层剥掉、没人再问来历时就成了事实，一被质疑限定词又挂回去。</li>
+<li>柯林斯发现只照论文造不出新式激光器，因为手感这类隐性知识写不进论文。</li>
+<li>实验者的回归是个死圈：仪器正常和结果正确互相担保，争议只能靠共同体来裁定。</li>
+<li>2015 年重做一百项心理学研究，显著率从 97% 跌到 36%，根子在只奖励新颖阳性结果。</li>
+<li>注册报告里支持假说的结果只占 44%，远低于常规文献的 96%，修的是流程不是诚实。</li>
+</ol>
 </div>
 <div class="thinking">
 <h3 data-tts="63ca0919d08bfc51">深入思考</h3>

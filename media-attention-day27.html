@@ -58,6 +58,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <body>
 <div class="container">
@@ -165,6 +171,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>物理与数学 · 电影里的车轮明明在倒转，车却在往前开</b>：每秒 24 帧去拍一个高速旋转的轮子，屏幕上它可能缓缓倒着转。采样定理说得很硬：采样频率低于信号频率的两倍，高频成分不会消失，而会被折叠成一个现实中不存在的低频，这叫混叠（aliasing）。跑的是「挑出来的不是最重要的，是最挑得出来的」那节的频率条件——<em>媒介不是现实的缩小版，是以某个节奏对现实取样。</em>由此能推出一个原本看不出的结论：<b>不必知道谁抱什么立场，只要知道一个现象的变化周期与新闻周期的比值，就能预先说出它会被怎样扭曲——远快于周期的波动会被采到的几个点连成一条假趋势线，远慢于周期的过程（土壤、人口结构、慢性病）连一个点都采不到，它们的「没有发生」不是被谁压下去的，是采样采不到</b>。<b>但这里不成立</b>：采样定理假定信号与采样互不干扰，并据此给出解药——提高采样率就能还原。新闻不满足第一条，报道会改变被报道的对象（报得多→报案与投诉也多→数字上升）。于是最有用的那个结论恰恰搬不过来：提高采样率的同时，信号本身已经变了。</li>
 <li><b>神经科学 · 问路问到一半，对面的人被换成了另一个，将近一半的人没发现</b>：1998 年的一项街头实验，研究者上前问路，两个人抬着门从中间穿过，趁这几秒把问路的人换成另一个——第一组十五人里只有七个察觉。这叫变化视盲（change blindness），实验室与街头都反复重现过。跑的是「你以为你在讨论世界」那节的机制：注意是稀缺的、要被分配的，而<em>没有分到的那部分不会留下缺口感</em>。由此推出一个原本看不出的结论：<b>议程的效力不在于它让你相信什么，而在于漏掉的东西不产生任何主观信号——「我每天看很多、知道得挺全」这种感觉因此不能当作覆盖面的证据；要察觉自己漏了什么只能靠外部对照，比如隔半年翻回去看当时在关心什么，靠内省测不出来</b>。<b>但这里不成立</b>：个体注意的瓶颈是生理的，人人相仿也改不动；社会层面的「注意力容量」却是制度造出来的——版面、时段、推荐位、一周开几次会，都可以设计、可以扩容。把两者混着说成「总量固定的零和」，等于把一条生理常数套到本来可调的量上。</li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 十条要点</h3>
+<ol class="takeaways">
+<li>人反应的不是世界本身，而是脑中由二手消息搭成的拟态环境，而反应落回的是真实世界。</li>
+<li>李普曼 1922 年的《舆论》提出拟态环境，「刻板印象」的社会科学用法也出自他，原指印刷铅版。</li>
+<li>1968 年教堂山研究中，未决选民心中的议题排序与当地九家媒体的报道排序几乎重合。</li>
+<li>教堂山研究只证明相关；艾英加与金德剪辑晚间新闻的实验才确定方向，并发现了预示效应。</li>
+<li>媒体不太能告诉人该怎么想，却极擅长告诉人该想什么，而且这不需要任何人撒谎或串通。</li>
+<li>新闻价值排第一的是频率：凶案一夜完成正合日报节奏，国家慢慢变穷没有哪天算发生，于是永远不是新闻。</li>
+<li>塔奇曼的新闻网说明，记者被钉在市政厅、警察局和法院，网眼之间的事不是被压下，而是根本没经过网。</li>
+<li>媒体最稳定的偏向是可及性与节奏，换一批立场相反的人来做，只要网眼和班表不变，捞上来的还是那批鱼。</li>
+<li>平台把编辑部的「选择」交给不公开的算法，被排序的人会去猜规则并改变行为，布赫称之为算法想象。</li>
+<li>像低帧率拍车轮会倒转一样，比新闻周期快得多或慢得多的现象，都会在报道中被系统性扭曲或漏掉。</li>
+</ol>
 </div>
 <div class="thinking">
 <h3 data-tts="732d100d3318c131">深入思考</h3>

@@ -56,6 +56,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -133,6 +139,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>Distributed systems and AI · You only see outcomes for the ones you let through</b>: an automated approval system — lending, risk scoring, content moderation, all the same — grows an "outcome" field only for the samples it lets through; for the ones it blocks, what would have happened is never known. Machine learning calls this the <i>selective labels</i> problem. What is running is exactly the doors-close pathway from "After being called that once, he started living the way the word said": once the label lands it shuts off part of the future, so "sure enough, it went wrong later" is partly manufactured by the label. From this follows a conclusion you could not otherwise see: <b>such a system's live metrics will improve on their own while the model does not change at all</b> — it narrows the pass-through set on one side and scores itself only on that set on the other. Accuracy therefore cannot vouch for itself; the only way to separate the model's skill from the loop's contribution is to let a small random slice through and pay the real cost of doing so. Without that slice, "ship it and watch the numbers for a while" proves less the longer it runs. <b>Where it does not hold</b>: on the machine side the loop runs entirely through the observer's data — a machine tagged "high failure rate" does not become more likely to break because of the tag. The human side has an extra pathway: the labelled person rereads themselves. So random pass-through cleans up the machine-side bias completely and fixes only half of it in a system that handles people — even with the data bias fully removed, the gap between the two groups will not go to zero, and what remains is a difference the label really produced.</li>
 <li><b>Evolutionary biology · The line is drawn where there is no break</b>: California has a salamander, Ensatina, that spread south along both sides of the Central Valley; neighbouring populations interbreed all the way down, yet where the two arms meet again at the southern end they barely can. Whether they are one species has no factual answer — this is a <i>ring species</i>. As "The same act by a different person turns from 'messing around' into 'an incident'" puts it, deviance is not in the behaviour but in the step where a rule is successfully applied; species boundaries likewise are not in the salamanders but in the classification rule. What follows is not "all classification is arbitrary" — quite the opposite: drawing by interbreeding, by gene flow, or by morphology yields different boundaries, and each works for its own purpose. So <b>"is this classification correct" is the wrong question; the answerable one is "which decision is this line drawn for"</b>. Bring that back: do not ask whether a label is accurate, ask whose decision it is saving work for — which lands precisely on the power condition Link and Phelan added in the stigma section. <b>Where it does not hold</b>: boundary disputes in biology have an independent referee — gene-flow data do not change with what taxonomists think — so "wait for more data to settle it" is a viable route. Social classification has no such external referee: once a line is drawn, how officials write records and how employers screen résumés both shift with it, so the data collected afterwards already contain the line. Waiting for data to settle the dispute is, here, a circle.</li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 Ten takeaways</h3>
+<ol class="takeaways">
+<li>Deviance is not a quality of an act; it exists once someone has done something and someone else has successfully applied a rule to them.</li>
+<li>Deviance research should count four groups — caught offenders, uncaught offenders, the falsely accused and the untouched — because studying only the caught measures the catching machinery.</li>
+<li>Rules usually become rules because moral entrepreneurs push them — Becker's own example was the 1937 Marihuana Tax Act.</li>
+<li>Working alongside police and probation officers in two California cities, Cicourel found that staff's picture of which children go bad decided whether a file got written.</li>
+<li>The labeling lens works best as a division of labour: consequences of behaviour belong to behavioural research, what gets recorded as what belongs to this lens.</li>
+<li>Lemert separated primary deviance from secondary deviance, in which a person reorganises life around the new identity and the cause is the social reaction itself.</li>
+<li>Pooled Pygmalion experiments show a small expectancy effect of about 0.14 standard deviations that vanishes once teachers have known pupils for about two weeks.</li>
+<li>After Cahalan's 2019 archival work, Rosenhan's pseudopatient study can no longer serve as evidence.</li>
+<li>Random assignment of Chicago juvenile judges shows detained youths finish high school less often and are jailed more as adults.</li>
+<li>Goffman split the discredited from the discreditable, and Pager's Milwaukee audit found a single drug conviction halved callbacks for white applicants.</li>
+</ol>
 </div>
 <div class="thinking">
 <h3>Going deeper</h3>

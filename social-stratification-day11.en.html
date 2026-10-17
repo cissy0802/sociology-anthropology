@@ -56,6 +56,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -127,6 +133,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>Complexity science · a small head start gets amplified by the system into a chasm</b>: citation counts, inbound links to websites, city populations — none of these are bell-shaped. They are long tails in which a very few take most of everything. In 1999 Albert-László Barabási and Réka Albert gave a minimal model: the probability that a new node attaches to an old one is proportional to the connections that old node already has. The rule is called preferential attachment, and it needs no node to be "better" than any other to grow a long tail. This runs the mechanism from "The real sieve had already turned before you ever heard of the job": <b>each round of selection takes the previous round's output as this round's input signal</b> — the school on the list, the previous employer on the CV — so advantage compounds itself. Robert Merton named the phenomenon in <i>Science</i> in 1968: the Matthew effect. From which follows a conclusion you could not otherwise see: <b>the shape of an outcome distribution does not let you infer the shape of an ability distribution.</b> Even if ability is bell-shaped and people differ very little, positive feedback of this kind still produces an extreme long tail. Seeing that "the top one percent holds most of it" cannot be read backwards as "that one percent is dozens of times more able" — mathematically the two need not be related at all. <b>Where it does not hold</b>: nodes in that model have no origin. A new node arrives with zero connections and its parent's connection count is not transferred to it. Yet transfer across generations is exactly what stratification is most centrally about — a child arrives already carrying the parents' stock. So models of this kind can explain why concentration happens within one generation; they cannot explain why several generations concentrate on the same surnames.</li>
 <li><b>Physics and mathematics · the average over a crowd and the average over a life are not the same average</b>: statistical physics distinguishes two averages — look at a great many systems at one instant and you have an ensemble average; watch a single system for a long time and you have a time average. Only a system where the two coincide is called ergodic. This runs the distinction between relative and absolute mobility from "If your father earned a lot you probably will too — but that 'probably' was once systematically measured too small": <b>Gini coefficients and quintile shares are all ensemble quantities</b>, a snapshot of one year, whereas "what happens to one person over a lifetime" is a time quantity. From which follows a conclusion you could not otherwise see: <b>two societies can have identical cross-sectional inequality and completely different individual experience</b> — in one, the same families sit at the bottom every year; in the other, people take turns. So "how big the gap is" and "whether you get stuck" are two independent quantities, and the first does not let you read off the second. <b>Where it does not hold</b>: ergodicity in physics is a precisely defined property of a stationary process, and where the process is not stationary the term does not apply. Social mobility is conspicuously non-stationary — absolute mobility falling from nine in ten to one in two means the transmission rules between generations are themselves changing. So "society is non-ergodic" works only as a reminder not to read a cross-section as a personal fate. It cannot be used as a theorem, and it certainly cannot tell you by how much.</li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 Ten takeaways</h3>
+<ol class="takeaways">
+<li>Occupational prestige rankings show remarkably stable consensus: surveys in 1947 and 1964 correlated at 0.99, yet that says nothing about jobs having intrinsic rank.</li>
+<li>The Goldthorpe class schema sorts by employment relation, not income: a service relationship brings salary, a promotion ladder and a cushion; a labour contract is settled by the hour or piece.</li>
+<li>Class is less an income bracket than the logic by which money arrives, so two people earning the same this month can part ways after one illness.</li>
+<li>Income is a flow and wealth a stock; because stocks compound on themselves, wealth is far more concentrated than income in every country measured.</li>
+<li>Intergenerational income elasticity asks how much a child's income rises with a parent's, and noisy single-year income biases that estimate toward zero.</li>
+<li>Averaging five years of income, Gary Solon pushed the US estimate from about 0.3 to about 0.4, so part of America's apparent mobility was measurement error.</li>
+<li>Tax records reveal huge local gaps: a child from the bottom fifth reaches the top fifth 4.4% of the time in Charlotte but 12.9% in San Jose.</li>
+<li>US relative mobility has barely moved for decades, while the share of children out-earning their parents at thirty fell from about 90% to about 50%.</li>
+<li>Elite hiring screens people before any résumé is read: firms recruit only from a short list of core schools, then judge cultural fit by shared hobbies.</li>
+<li>Preferential attachment shows that self-reinforcing advantage turns small differences in ability into extreme long tails, so outcomes cannot reveal the ability distribution.</li>
+</ol>
 </div>
 <div class="thinking">
 <h3>Going deeper</h3>

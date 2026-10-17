@@ -56,6 +56,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -159,6 +165,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>Distributed systems and AI · the model writes out its reasoning for you, and that reasoning need not be what it actually computed</b>: in 2023 Turpin and colleagues ran a clean experiment. In the few worked examples shown to the model they put the correct option always in the same slot (always A, say); the model's answers drifted toward that hint, with accuracy dropping by more than thirty points on some tasks — and the passage it wrote explaining how it had thought never mentioned the hint at all, offering a perfectly reasonable-sounding rationale instead. This runs the mechanism from "when the oracle is wrong it is not counted as wrong": an explanatory system can be internally consistent and persuasive while being wired to nothing that actually drove the result. Hence a conclusion you could not otherwise see: <b>how reasonable an explanation sounds and whether it is the real cause are two things that must be measured separately</b> — and the only way to measure the second is to move the real cause (remove the hint, shuffle the options) and see whether the explanation moves with it; asking for more explanation only makes an unfaithful one rounder. <b>But it does not hold here</b>: with the model you can rewrite the input at will, run it a thousand times, and check against a known answer, and the witchcraft system offers none of the three. Its use was never prediction, but assigning responsibility and repair to a specific person after something has gone wrong.</li>
 <li><b>Neuroscience and consciousness · one hand picks up a shovel, the mouth supplies a reason on the spot, and the reason has nothing to do with the cause</b>: a class of epilepsy surgery cuts the main channel between the two hemispheres. In the classic demonstration a chicken claw is shown to the right visual field (seen by the left hemisphere) and a snow scene to the left; the patient's right hand points to a chicken and the left hand to a shovel. Asked why he pointed at the shovel — the left hemisphere never saw the snow — he does not say "I don't know". He says: you need a shovel to clean out the chicken shed. Gazzaniga and LeDoux called this the left-brain interpreter. This runs the mechanism from "termites hollowed out the supports": the causal chain and the why-this-time are two separate slots, and an empty second slot gets filled from whatever is nearest to hand. Hence a conclusion you could not otherwise see: <b>that a person can produce a reason is no evidence that the reason is the cause</b> — to find the cause you have to change the actual triggering conditions and watch whether the behaviour changes, while asking "why did you do that" mostly returns the output of this interpreter. <b>But it does not hold here</b>: the interpreter is inside one skull, instantaneous, with nobody present to contradict it, whereas the Zande system is public and procedural — the oracle is asked twice, reviewed at a prince's court, and someone else can bring a different consultation against yours. Having a procedure and having none is a difference in kind; blurring the two into "everyone is self-deceived" is where this crossing gets overused. Evidence strength: split-brain work rests on a handful of patients, and recent work by Pinto and colleagues has revised parts of the classic reading.</li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 Ten takeaways</h3>
+<ol class="takeaways">
+<li>The Zande agree that termites brought the granary down; witchcraft answers a different question, why it fell while those people sat beneath it.</li>
+<li>Evans-Pritchard likened witchcraft to the second spear in a Zande hunt: it does not replace the termite explanation but lies on top of it.</li>
+<li>Mangu, the Zande witchcraft substance, is inherited and lodged in the body, and its bearer may neither know of it nor intend harm.</li>
+<li>For serious questions the benge poison oracle must be consulted twice, the second time in reverse, which amounts to a built-in consistency check.</li>
+<li>When the oracle fails there are ready excuses such as bad poison, broken taboos or angry ghosts, so each failure is recycled as proof the oracle works.</li>
+<li>The Duhem-Quine thesis says no hypothesis is tested alone, so having an excuse for every miss cannot be what separates science from witchcraft.</li>
+<li>A more usable dividing line is whether patching auxiliary assumptions costs something: a new checkable prediction and a public record others can audit.</li>
+<li>Witchcraft accusations almost always land on neighbours of similar rank with recent friction, since accusing a noble mostly backfires on the accuser.</li>
+<li>Macfarlane's study of over five hundred Essex witchcraft indictments from 1560 to 1680 found most began with a poor neighbour being refused help.</li>
+<li>An AI model's plausible written reasoning is not evidence of its real cause; only changing the actual trigger and watching the answer shows that.</li>
+</ol>
 </div>
 <div class="thinking">
 <h3>Going deeper</h3>

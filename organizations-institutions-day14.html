@@ -58,6 +58,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -148,6 +154,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>分布式系统与 AI · 层级省下了沟通，代价是每一跳都在压缩</b>：一组机器要就一件事达成一致，两两直连的通道数随台数的平方涨；所以真实系统几乎都选一个协调者出来，把平方压成线性。组织长出层级是同一笔账：五十个人两两对齐是灾难，分成小队各有负责人就不是。跑的是「规则本来是手段，后来变成了目的」那节的机制：<b>每一跳都按本层的考核口径把上报的东西重新表述一遍</b>。由此能推出一个原本看不出的结论：<b>失真不是随层数相加，是相乘</b>——每层只走样两成，六层之后到顶上的还剩不到三成；所以扁平化确实降失真，但它把扇入压到顶点那一个人身上，两者不能同时优化，这个取舍的形状能算出来，不是态度问题。落到可观察的后果：想知道一条汇报链有多失真，别问人，去比同一件事在最底层的原始记录和最顶层的看板上分别长什么样。<b>但这里不成立</b>：分布式系统里消息是逐位复制的，损失发生在聚合环节，噪声大体无偏；组织里每一跳的动机方向一致——坏消息向上过滤，进度向上取整。所以「多路径冗余加表决」这套纠错在这里失效：三条汇报线受同一个激励压弯，表决只会把偏差再确认一遍。</li>
 <li><b>佛学 · 产出验证不了的组织，只能靠程序立信</b>：僧团的戒律（Vinaya）里占篇幅最大的不是「什么算证悟」，而是程序：布萨（uposatha）诵戒怎么走、羯磨（saṅghakamma）表决要几个人、谁有资格出席、争议按哪套流程消解。一个存续两千多年的组织，规则几乎全长在「怎么做决定」上，不在「什么算做成了」。跑的是「写在文件里的那一套，和实际干活的那一套，本来就不是一套」那节的机制反过来用：<b>核心产出没法从外部检验时，可信度只能挂在形式结构上</b>。由此能推出一个可以拿去核对的结论：<b>规程的繁复程度可以从「产出多难验收」预测</b>——宗教、教育、咨询、同行评审这类当场验不了货的地方，规则会往程序上长；反过来，产出明明可测的组织却把规程写得极细，那多半说明它真正在处理的不是效率，是责任归属。落到可观察的后果：翻一份组织手册，量一下「怎么做决定」和「什么算做成了」各占多少篇幅。<b>但这里不成立</b>：脱钩理论的前提是形式那层主要演给外部观众看，而戒律的第一受众是僧团自己，破戒有实打实的后果，形式和实践是紧耦合的。更根本的是，仪轨不是证明修行的外壳，它就是修行的一部分——「形式 / 实质」这对区分在这里失去了着力点。</li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 十条要点</h3>
+<ol class="takeaways">
+<li>美国城市采纳文官制度，早期由城市自身的规模和麻烦驱动，晚期则由「正经政府该有」的体面驱动。</li>
+<li>DiMaggio 和 Powell 把制度同构拆成三条来路：被法规逼的、在不确定中抄来的、由专业人员带进来的。</li>
+<li>模仿的触发条件是不确定而不是有效，所以一个行业可以整齐地走向一个谁也没验证过的做法。</li>
+<li>Meyer 和 Rowan 认为正式结构多半是给外面看的，它与实际活动挂着但不咬合，这叫脱钩。</li>
+<li>不少美国大公司宣布股票回购后并没有真去回购，市场却已为「宣布」本身给出了正面反应。</li>
+<li>脱钩不只是虚伪：把互相打架的外部要求挂在形式层，反倒护住了里面真正干活的人。</li>
+<li>比政策不落地更难发现的是手段与目的脱钩：活动做得很认真，却没人回头查它有没有产生结果。</li>
+<li>组织为了可靠要求严守规则，守久了遵守本身成了目的，Merton 称之为目标替代。</li>
+<li>Gouldner 在石膏矿发现规则执行到什么程度本身是一笔交换，新厂长照章办事换来的是野猫罢工。</li>
+<li>汇报链上每一跳都按本层考核口径重述信息，所以组织层级里的失真随层数相乘而不是相加。</li>
+</ol>
 </div>
 <div class="thinking">
 <h3 data-tts="83d3d3f5e5d50928">深入思考</h3>

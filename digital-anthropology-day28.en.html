@@ -58,6 +58,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -166,6 +172,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>Evolutionary biology · In Western Australia an orchid looks like a flightless female wasp, and the male that pounces on it gets swung into the anther by a hinge</b>: hammer orchids (<i>Drakaea</i>) grow only in the southwest of Australia. The labellum mimics a female thynnid wasp in shape, colour and scent — the females of these wasps cannot fly, and mating happens with the male carrying her off. The labellum is hinged partway along; the male grips "her," tries to carry her away, and the whole insect is swung into the anther. Each species of hammer orchid has its own species of wasp. This runs the trap-reading from "An anthropologist went to study the people who build recommender systems": <em>how the device is built is itself a theory of the prey.</em> From which follows a conclusion you could not otherwise see: <b>the specificity of a capture device is a ruler, and what it measures is how finely it knows its prey. A recommendation slot identical for everyone says the model knows almost nothing about you; one that works only on you and looks baffling to anyone else says the resolution has gone down to the level of species — and you need no internal document to judge this, the device is enough</b>. <b>But this does not hold here</b>: there is no maker behind the hammer orchid, and its precision was filtered out by selection pressure — the inaccurate ones left no descendants. So "read the device, infer the theory" on the evolutionary side yields the prey's sensory world and no intention whatsoever. On the product side somebody really does hold a story about you, and that story can be wrong while the device keeps running — because the environment is theirs to arrange too. <b>The orchid's model has to be right; the product's does not.</b></li>
 <li><b>Engineering and human factors · The plane automated the easy part of flying and left the hardest thirty seconds to the person</b>: in 1983 Lisanne Bainbridge wrote a five-page paper called "Ironies of Automation" about process control in factories and power plants; it is now among the most cited papers in the history of human factors. Her observation: the designer thinks the human is unreliable and wants them out, yet the parts he cannot think how to automate are exactly what gets left to the human. So the person spends ordinary days watching a screen and loses the touch — and then, precisely when the system cannot cope, has to take over within seconds. This runs the last mile from "After you click 'I am not a robot'" — automation cuts along "can this be specified," and <em>what is left over is harder, more fragmented and less possible to schedule in advance</em>. From which follows a conclusion you could not otherwise see: <b>"will this job be automated" is the wrong question. The one to ask is what the leftover looks like — it is usually not on the flowchart, so it counts against no hours, enters no headcount budget and is hard to attribute when something goes wrong. The real workload of a job can rise after automation and fall to zero on the books at the same time: the books record the flowchart, not the work</b>. <b>But this does not hold here</b>: the person taking over in Bainbridge's setting is named, trained and on the payroll, and her remedies rest on that — more training, keep the touch, have them actually fly it now and then. The last mile is arranged the opposite way: the task is cut up until nobody owns it, and whoever takes over today is not who takes over tomorrow. So her remedies have nothing to grip — <b>it is not that the training is insufficient; there is no "that person" to train.</b></li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 Ten takeaways</h3>
+<ol class="takeaways">
+<li>Tom Boellstorff spent more than two years in Second Life purely as an avatar, deliberately never meeting anyone he studied offline.</li>
+<li>Insisting on offline verification before anything counts already assumes the offline side is the real one, an assumption the researcher brings into the field.</li>
+<li>The fair criticism of staying wholly online is that it hides the offline conditions of being online, such as who can afford devices or spare time.</li>
+<li>Daniel Miller's project sent nine anthropologists to live fifteen months each in a small town, asking the same questions so sites could be compared.</li>
+<li>In a factory town in southeastern China, Xinyuan Wang found a second migration: from village to factory, then from offline to online.</li>
+<li>Polymedia means that once channels cost almost nothing, each is defined against the others, so the choice of channel itself carries meaning.</li>
+<li>Nick Seaver found recommender builders rely on captivation metrics, which measure not whether you liked something but whether you came back and stayed.</li>
+<li>Alfred Gell read a trap as a solid theory of its prey, so an interface's design reveals what kind of person it assumes you are.</li>
+<li>Invisible feed ranking does not make users suspicious; it leads them to explain a vanished friend as a relationship that was never that close.</li>
+<li>Ghost work exposes automation's last-mile paradox: each problem machines take over creates fragmented human tasks at the new frontier.</li>
+</ol>
 </div>
 <div class="thinking">
 <h3>Going deeper</h3>

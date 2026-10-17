@@ -55,6 +55,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -132,6 +138,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>Distributed systems and AI · observation has a price tag</b>: in a service running across many machines, working out which components a request passed through means attaching a trace to it. Recording every request is expensive — it slows responses and produces enormous volumes of data — so in practice only a small sample is kept. And the moment you raise the sampling rate to catch some rare fault, the system's latency and resource use themselves change, and what you are measuring is no longer quite the system you had. That is the shape of the mechanism in "who did the writing stays inside what got written": the observer enters and the scene is no longer the scene. Which yields a conclusion you would not otherwise reach: <b>the default order of "instrument more finely, then investigate" is self-defeating for a class of faults — the finer the observation, the further the observed object drifts from its ordinary state</b>; some problems can only be reconstructed from traces left behind, such as truncated logs and memory dumps from the crash. <b>Where it fails</b>: perturbation in machines is resource contention, quantifiable in milliseconds and bytes, and a server does not know it is being watched and will not perform for you; people in the field know you are looking and adjust <b>what they show you</b>, which is intentional and cannot be priced as overhead. And the reverse also fails: long residence lets that adjustment decay because people get used to you, whereas a server will not gradually adapt to a month of denser sampling.</li>
 <li><b>Physics and mathematics · you cannot climb between levels by adding precision</b>: in statistical physics the same body of gas can be described at two levels — microscopically, as the position and velocity of every molecule, and macroscopically, as temperature, pressure and entropy. The crucial point is that "temperature" does not exist at the micro level at all: a single molecule has no temperature. That is exactly what "a twitch and a wink look identical on camera" is about — thin and thick description differ by level, not by amount of detail. Which yields a conclusion you would not otherwise reach: <b>recording behaviour more precisely does not automatically converge on meaning; the two are not on the same axis of resolution</b> — raising sampling rates and sensor resolution by an order of magnitude is no substitute for knowing the setting, just as measuring molecular positions ever more exactly will never make "temperature" appear on its own. <b>Where it fails</b>, and the direction of the mismatch matters: physics has a rigorous derivable bridge from micro to macro, and temperature really is a kind of average over microscopic quantities. The meaning of a wink is not a function of eyelid motion — the same movement can mean opposite things in different communities, and the bridge lies not inside the system but in shared convention. So the analogy delivers only the half that says levels are not interchangeable, and none of the half that says the upper level can be derived from the lower — and that second half is precisely what gets wrongly expected of social science.</li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 Ten takeaways</h3>
+<ol class="takeaways">
+<li>Malinowski's 1922 rule — pitch your tent in the village, learn the language, stay a year or two — became the method called participant observation.</li>
+<li>Participant observation goes after the "imponderabilia" of daily life, such as how food is shared or how calm returns after a quarrel, which no questionnaire has a box for.</li>
+<li>Fieldwork demands two things that undercut each other: being close enough that people stop adjusting for you, yet distant enough to notice what is worth writing down.</li>
+<li>After three years on a Boston street corner, Whyte saw that each man's bowling score tracked his standing in the group, a pattern none of the bowlers knew existed.</li>
+<li>Ethnography is a single, long, deep case study: strong on how something actually works, silent on how widely it holds.</li>
+<li>An eyelid closing can be a twitch, a wink, a parody or a rehearsal; Geertz used this to separate thin description of the movement from thick description of the meaning.</li>
+<li>In Geertz's reading of the Balinese cockfight, the biggest bets are about standing rather than money, so the same stake is a gamble when thinly described and a public declaration of loyalty when thickly described.</li>
+<li>Thick description has no clear route to falsification, a charge Writing Culture pressed against the cockfight essay, so it offers a challengeable candidate explanation rather than a measurement.</li>
+<li>The 1967 publication of Malinowski's private diary pushed the field toward reflexivity: the observer's identity, language, funding and route into the field are themselves data.</li>
+<li>Pseudonyms protect nobody in a town of a few hundred people, where the description itself identifies them, and a fully non-intrusive observer does not exist.</li>
+</ol>
 </div>
 <div class="thinking">
 <h3>GOING DEEPER</h3>

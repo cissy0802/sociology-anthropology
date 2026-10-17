@@ -58,6 +58,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -164,6 +170,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>分布式系统与 AI · 模型把推理过程写给你看，而那段过程可以不是它实际在算的</b>：2023 年 Turpin 等人做了个很干净的实验。在给模型看的几个示范题里把正确选项统统排到同一个位置（比如永远是 A），模型的答案就跟着这个暗示偏走，若干任务上准确率掉了三成以上；而它写出来的那段「我是这么想的」从头到尾不提这件事，另给了一套看着挺合理的理由。跑的是「神谕说错了也不算错」那节的机制：一套解释可以内部自洽、还能说服人，同时跟真正驱动结果的那条链子根本没接上。由此推出一个原本看不出的结论：<b>解释读起来合不合理，和它是不是真实原因，是两件必须分开测的事</b>——测后者只有一个办法，去动那个真实原因（撤掉暗示、把选项换位置）再看解释变不变；「让它多解释几句」只会把不忠实的解释做得更圆。<b>但这里不成立</b>：模型那边你能随意改输入、跑上千次、还有标准答案可对，巫术体系里这三样一样没有；而且它的用处本来就不在预测，在于出事之后把责任和修复指派到具体的人头上。</li>
 <li><b>神经科学与意识 · 一只手拿了铲子，嘴巴当场给出一个理由，而理由跟原因无关</b>：有一类癫痫手术会切断左右脑之间的主要通道。经典演示里，给右视野（左半球看得到）一只鸡爪，给左视野（右半球看得到）一幅雪景；病人右手指鸡，左手指铲子。问他为什么指铲子——左半球没看过雪景，却不说「不知道」，它说：清鸡舍得用铲子。Gazzaniga 和 LeDoux 管这叫左脑解释器。跑的是「白蚁蛀空了柱子」那节的机制：因果链和「为什么是这一次」是两个槽，后一个空着就会被就近的材料填上。由此推出一个原本看不出的结论：<b>一个人能说出理由，不能算作「理由就是原因」的证据</b>——要知道真原因只能去改实际的触发条件再看行为变不变，直接问「你为什么这么做」，拿到的多半是这台解释器的产物。<b>但这里不成立</b>：解释器是一个脑袋里的、瞬时的、当场没人能反驳；Zande 那套是公共的、要走程序的——神谕得问两轮、要在王庭复核，别人可以拿另一次神谕来顶你。有程序和没程序是本质差别，把两者揉成「人都是自欺」就是把这条越界用滥了。证据强度：裂脑研究的病人只有少数几位，近年 Pinto 等人的工作也对经典解读提出了修正。</li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 十条要点</h3>
+<ol class="takeaways">
+<li>Zande 人承认谷仓是白蚁蛀塌的，巫术回答的是另一个问题：为什么偏偏在那几个人坐在底下时塌。</li>
+<li>Evans-Pritchard 把巫术比作打猎时的第二支矛：它不取代白蚁这条因果链，而是叠在上面。</li>
+<li>Zande 人的巫术 mangu 是长在体内、随血脉遗传的东西，带着它的人可以不知情也不存心害人。</li>
+<li>benge 毒药神谕遇到要紧事必须问两轮且第二轮反着问，这是一套内建的一致性检查。</li>
+<li>神谕结论对不上时总有毒采错、犯禁忌、鬼魂发怒等现成理由，失败反而被回收成神谕灵验的证据。</li>
+<li>迪昂–蒯因论题指出任何假说都带着辅助假设受检，所以「出错了还有说法」分不开科学和巫术。</li>
+<li>更可用的分界是修补辅助假设要不要付代价：交出新的可查预测，并留下别人能翻的公开记录。</li>
+<li>巫术指控几乎总落在住得近、地位相当、刚有摩擦的人之间，往上指控贵族只会让自己吃亏。</li>
+<li>Macfarlane 翻查 1560–1680 年 Essex 的五百多份巫术起诉，发现多是穷邻居求助被拒后引发的指控。</li>
+<li>AI 模型写出的推理过程再合理也不等于真实原因，要找真原因得改动触发条件再看解释变不变。</li>
+</ol>
 </div>
 <div class="thinking">
 <h3 data-tts="afaeba84d42ff799">深入思考</h3>

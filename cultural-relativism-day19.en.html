@@ -56,6 +56,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -119,6 +125,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>Buddhist studies · One body of teaching grew opposite practices in different places, while the criteria did not change</b>: Buddhism arriving in China grew the farming-and-meditation monasteries of Chan; in Tibet, elaborate ritual and formal debate; in the Theravada world, monastic life built around the precepts and a graded path of meditation. Individual practices are often exactly opposed: in some places a monk working the fields is a duty, in others touching agricultural work is expressly forbidden. This runs the mechanism from "he spent a winter in the Arctic": lift "no farming" out of the whole cycle of alms round, lay support and merit-making and it is left as nothing but a strange prohibition. Which yields a conclusion you could not otherwise see: <b>"which tradition is more orthodox" is a question asked at the wrong level</b>; what can be compared is what fills the same functional slot in each arrangement (who provides support, what counters craving and aversion, how lineage is verified), not a list of individual practices — and this is where reformers most often come unstuck, importing a practice from elsewhere without importing the half of the cycle it leans on. <b>But here it fails</b>: cultural relativism is a descriptive method and does not adjudicate truth, whereas this tradition is itself a normative system that draws an explicit line between right and wrong view. Using relativism to underwrite any practice at all does not pass inside its own frame either — "each has its own set" does not imply "every set works equally well".</li>
 <li><b>Distributed systems and AI · Two vector spaces are each coherent internally, yet their coordinates cannot be matched directly</b>: models that turn words into strings of numbers (word vectors) are coherent inside each training run — near-synonyms sit close, analogies hold. But the two sets of axes are not the same set, the numbers for one word on either side are entirely incomparable, and to compare them you first have to learn an alignment mapping. In 2018 Conneau and colleagues showed this can be done without even a bilingual dictionary; follow-up work promptly found the boundary: the more distant the language pair, the worse such unsupervised alignment degrades, sometimes collapsing into a useless solution, because it quietly assumes the two spaces are approximately isomorphic. This runs the mechanism from "someone wrote up a tribe's washing rituals": any comparison needs an origin point, and the origin point is not in the data — it is chosen from outside. Which yields a conclusion you could not otherwise see: <b>"cross-cultural comparison is impossible" is too strong a claim — comparison is not cancelled, it is prepaid with an alignment cost, and that cost is measurable, rising with distance</b>. <b>But here it fails</b>: a vector space at least has a loss function telling you how good the alignment is, plus words solid enough to serve as anchors. Between cultures there is no such loss function, and nobody guarantees two arrangements are approximately isomorphic, so the optimism that "translation can always be done" has no grounding here.</li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 Ten takeaways</h3>
+<ol class="takeaways">
+<li>Trained as a physicist, Franz Boas spent about a year on Baffin Island from 1883 and came to reject the idea that societies line up on a single evolutionary ladder.</li>
+<li>Historical particularism rests on a plain mechanism: a practice means what its position in a whole way of life makes it mean, so objects belong displayed by tribe and region.</li>
+<li>Measuring over ten thousand immigrants and their American-born children, Boas found the cephalic index shifted within one generation, too unstable to serve as a fixed racial marker.</li>
+<li>Of six Inuit brought to the American Museum of Natural History in 1897, four died, a reminder that a scholar opposing racial ranking could still treat people as specimens.</li>
+<li>In Patterns of Culture, Ruth Benedict pictured human possibilities as a great arc from which each society selects a short stretch and integrates it into a style.</li>
+<li>Methodological relativism, suspending your own standards while describing, is a tool; it does not imply the moral claim that no practice may be judged from outside.</li>
+<li>Herskovits's 1947 human rights statement aimed to shield colonised cultures, but the same shield removed the language for criticising abuses from outside.</li>
+<li>Horace Miner described American toothbrushing as the mouth-rites of the Nacirema, showing that exoticism comes from the angle of description, not the practice itself.</li>
+<li>Tiv elders corrected the plot of Hamlet with their own coherent theory, so what differed was the interpretive theory, not the capacity to interpret.</li>
+<li>Hofstede's national culture dimensions come from one firm's employee surveys at IBM and treat the nation as culture's unit, making them a rough prompt rather than a ruler.</li>
+</ol>
 </div>
 <div class="thinking">
 <h3>Going Deeper</h3>

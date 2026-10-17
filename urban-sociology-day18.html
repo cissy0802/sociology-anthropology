@@ -58,6 +58,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -137,6 +143,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>物理与数学 · 每个人都乐意住在混居的街区，最后所有人都住进了纯色的街区</b>：1971 年 Thomas Schelling 在纸上摆了个格子，放两种棋子，给每个棋子一条很温和的规则：周围同类邻居太少就搬到最近一个满足条件的空位。「太少」可以定得很宽松，宽松到每个棋子都乐意住在混居环境里；迭代下去，棋盘照样裂成大片纯色区块。后来物理学家把它和磁铁里自旋对齐的模型对上了号，相变、临界阈值那套工具就能用上。跑的是「隔两条街」那节的机制：街区构成是个中介层，个体选择不是直接加总，而是先改写它、再由它改写下一轮的选择。由此推出一个原本看不出的结论：<b>观察到的隔离程度推不出个体偏好的强度</b>——「隔离这么严重，可见排斥有多深」这个推论无效：温和偏好和强烈偏好能画出同一张图。<b>但这里不成立</b>：格子里搬家免费、空位等着你、每个棋子按同一条规则动。真实城市里搬迁要钱、房源先被价格和信贷筛过，哪些人拿得到哪片的贷款还有一段制度史。所以它证的是「不需要强偏好也<em>能</em>产生隔离」，不是「隔离<em>只</em>来自偏好」——把前者当后者用是最常见的误用。</li>
 <li><b>演化生物学 · 动物越大越省，城市越大越费，这两笔账得分开算</b>：生物学里有条很稳的经验规律，Kleiber 定律——动物体重翻倍，静息代谢率只增加约 68%（体重的四分之三次方）。所以大象按每公斤算比老鼠省，靠的是共享一套输送网络摊薄成本。2007 年 Bettencourt 和 West 那一组把同样的拟合搬到城市：美国都会区车道总里程随人口增长的指数约 0.85，亚线性，跟生物同向；社会经济那侧却翻了过来——专利、工资、经济产出的指数普遍大于 1，人越多人均产出越高。跑的是「有人搬进『一团乱』的街区」那节里 Wirth 的<em>密度</em>变量：密度直接抬高单位时间里的相遇次数。由此推出一个原本看不出的结论：<b>「城市越大越高效」在基建上和在产出上是两件事，得分开测</b>；而且相遇率那一半正负通吃，同样的超线性也出现在犯罪和传染病的数据里，没法一边把创新归功于城市、一边把犯罪归罪于人。<b>但这里不成立</b>：生物体越大节奏越慢，城市越大节奏越快，这个反号说明城市不是放大的生物体，共享网络那套只解释得了亚线性那一半；而且这类指数对「城市边界画在哪」很敏感，用行政边界还是通勤区去圈，数就会变。</li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 十条要点</h3>
+<ol class="takeaways">
+<li>芝加哥学派把城市看成分配人的机器，Burgess 同心圆里紧挨商业区的过渡带最廉价拥挤。</li>
+<li>Simmel 说都市人的厌倦态度不是冷漠，而是刺激太多、神经带宽用完后把差别调平。</li>
+<li>Wirth 把城市归结为规模、密度、异质性三个变量，人越多越挤越杂，熟人关系越让位给功能关系。</li>
+<li>Whyte 在波士顿北区住了三年半，发现被判为「社会解组」的街区秩序细密、位次稳定。</li>
+<li>街角帮里的保龄球分数跟帮内地位对得上：地位低但球技好的人，在高位者面前就是打不出来。</li>
+<li>所谓「没有秩序」常常是观察者用错了看秩序的方法，「社会解组」一词把一种生活方式判成了病理。</li>
+<li>芝加哥集体效能高的邻里暴力更少，但这是相关研究，因果也可能反过来。</li>
+<li>「搬向机会」实验里 13 岁前搬走的孩子成年后年收入高约 31%，13 岁后搬走的没有收益。</li>
+<li>士绅化街区低收入居民迁出率并不更高，换人主要来自迁入端，被挡在门外的人不上迁出名单。</li>
+<li>Schelling 格子模型里温和偏好也能裂出大片隔离，隔离程度推不出个人偏好有多强。</li>
+</ol>
 </div>
 <div class="thinking">
 <h3 data-tts="4b57894141bdd802">深入思考</h3>

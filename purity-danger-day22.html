@@ -58,6 +58,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -176,6 +182,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>演化生物学与免疫学 · 全身规矩最密的那道边界，正好是最分不清敌我的那道</b>：免疫学的老框架是「自我／非我」：认得出是自己的就放过，认不出就打。按这个框架，防御该堆在威胁最凶的地方。实际不是——免疫细胞聚得最多的是肠道黏膜，而那里恰恰最难判定，几十万亿个共生细菌既不是自己，也不是病原。2011 年 Atarashi 等人报告，结肠里一类专管「按住不打」的调节性 T 细胞是被共生梭菌诱导出来的：最模糊的那条线上长出的不是更强的攻击，是一整套额外的裁决机制。跑的是「关于身体开口的规矩，在一个群体最说不清自己边界的时候变得最多」那节的机制：手续的繁复度跟着边界的不可判定性走。由此推出一个原本看不出的结论：<b>要预测一个群体在哪里会长出最啰嗦的规程，该去找它最说不清谁算自己人的那条线，而不是敌人最多的那条线</b>——这可以查：数规程条目，对边界模糊度，而不是对威胁强度。<b>但这里不成立</b>：免疫那套边界终究有外部裁判在筛，判错了个体会死；污染规则没有这个筛子，一条物理上根本不存在的区分，只靠人互相监督就能存续几百年。何况「自我／非我」在免疫学内部早被修正过（Matzinger 1994 年的危险模型），拿它给社会边界背书要小心。</li>
 <li><b>物理与数学 · 两瓶气体混在一起算不算变脏，取决于你手上有没有一张分得开它们的膜</b>：热力学里有个有名的别扭处叫吉布斯佯谬——把两瓶气体混起来，熵增多少取决于它们是不是同一种：不同种，混合不可逆；同一种，混合前后什么都没发生。Jaynes 1992 年重讲这件事时提了个思想实验：某种气体存在两个变种，能分离它们的半透膜要许多年后才造得出来。膜出现之前，混合不算任何损失；膜造出来之后，同一个动作立刻成了一次不可逆的污染——气体一点没变，变的只有你手上的分辨手段。跑的是「头发掉进汤里，变的不是头发，是它的位置」那节的机制：脏是分类表的函数，不是物质的属性。由此推出一个原本看不出的结论：<b>一个群体新拿到一种区分手段（新的检测、新的类别名），原本无所谓的混合会立刻变成污染，而被污染的东西完全没变</b>——这可以查：找一项新检测技术普及的前后，看同一批东西的「干净／不干净」判定是否翻转。<b>但这里不成立</b>：物理这边的可分辨性有外部裁决——存不存在一个实际过程能利用这个区分做出功来；社会那边没有这种裁判，做不出任何实效的区分照样可以被坚持。所以别把「熵依赖于观察者」搬过去说成「脏纯粹是主观的」。</li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 十条要点</h3>
+<ol class="takeaways">
+<li>Mary Douglas 在《洁净与危险》里主张，不存在绝对的脏，脏是放错了地方的东西。</li>
+<li>每一次觉得某样东西脏，背后都有一张写着什么该待在哪的分类表在起作用。</li>
+<li>Lele 人的穿山甲哪一类都不合，却没被厌弃，反而成了只有入会者能吃的祭仪中心。</li>
+<li>装不进分类的剩余项一定会被处置，但可能被当成脏，也可能被抬成神圣。</li>
+<li>2004 年四万多人的图片评分显示，厌恶确实追踪一部分真实的疾病线索，污染规则不能说与卫生全然无关。</li>
+<li>《利未记》的禁食清单要求走兽既反刍又分蹄，猪只满足一半，于是成了分类表的剩余。</li>
+<li>Marvin Harris 用干旱地带养猪代价高解释猪肉禁令，却解释不了贝类和蹄兔。</li>
+<li>Douglas 在 1999 年推翻了自己的利未记读法，但分类留下剩余这条机制依然站得住。</li>
+<li>一个群体越难维持谁算自己人，关于身体开口的规矩往往就越细，种姓的洁净之争是最受争议的案例。</li>
+<li>肠道黏膜最难判定敌我，免疫裁决机制也最密，规程繁复度跟着边界模糊度走，而非威胁强度。</li>
+</ol>
 </div>
 <div class="thinking">
 <h3 data-tts="caea38f5bd3c8e3a">深入思考</h3>

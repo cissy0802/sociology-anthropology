@@ -58,6 +58,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -132,6 +138,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>复杂性科学 · 开头多出的一点点，会被系统自己放大成悬殊</b>：论文的引用数、网站被链接的次数、城市的人口，都不是钟形分布，而是极少数占掉绝大部分的长尾。1999 年 Albert-László Barabási 和 Réka Albert 给了一个极简模型：新节点连向某个老节点的概率，正比于那个老节点已有的连接数。这条规则叫优先连接（preferential attachment），不需要任何节点比别人「更好」，光靠它就能长出长尾。跑的是「真正的筛子，在你听说这份工作之前就已经转过了」那节的机制：<b>每一轮筛选把上一轮的结果当成这一轮的输入信号</b>——名单上的学校、简历上的前雇主——优势于是自己给自己加码。Robert Merton 1968 年在《科学》上给这个现象起过名字：马太效应。由此能推出一个原本看不出的结论：<b>从结果分布的形状，推不出能力分布的形状。</b>哪怕能力是钟形的、人和人差得很小，只要有这种正反馈，产出的仍是极端长尾。看到「顶端百分之一占了大半」，不能反过来读成「这百分之一的能力是别人的几十倍」——这两件事在数学上根本不需要有关系。<b>但这里不成立</b>：那个模型里的节点没有出身，新节点带着零连接进场，父节点的连接数不会传给它。而社会分层最核心的恰恰是跨代转移——孩子进场时就带着父母的存量。所以这类模型能解释一代人内部为什么会集中，解释不了为什么几代人集中在同一批姓氏上。</li>
 <li><b>物理与数学 · 一群人的平均，和一个人的一生，不是同一个平均</b>：统计物理里区分两种平均——同一时刻看一大堆系统，叫系综平均；盯着一个系统看很久，叫时间平均。两者相等的系统才叫遍历的（ergodic）。跑的是「你爸挣得多你大概率也挣得多，但『大概率』这个数曾经被系统性地量小了」那节里相对流动与绝对流动的分野：<b>基尼系数、五分位占比这类数全是系综量</b>（某一年的横截面照片），而「一个人这辈子会怎么样」是时间量。由此能推出一个原本看不出的结论：<b>两个社会可以有一模一样的横截面不平等，个人经历却完全不同</b>——一个里面每年是同一批家庭待在底部，另一个里面大家轮流待。所以「差距有多大」和「卡不卡得住」是两个独立的量，从前者读不出后者。<b>但这里不成立</b>：物理里的遍历性是平稳过程的一个有精确定义的性质，过程不平稳就根本谈不上。而社会流动恰恰不平稳——绝对流动从九成掉到一半，说明代际之间的转移规则本身在变。所以「社会不遍历」只能当一句提醒你别把横截面读成个人命运的比喻，不能当定理用，更算不出偏离了多少。</li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 十条要点</h3>
+<ol class="takeaways">
+<li>职业声望排序有惊人的稳定共识，1947 与 1964 年两次调查相关 0.99，但这不代表职业有内在高低。</li>
+<li>Goldthorpe 的阶级图式不按收入排，而按雇佣关系分：服务关系给年薪、晋升梯子和缓冲，劳动契约按时按件两清。</li>
+<li>阶级不是收入档位，而是钱按什么逻辑到账；同样月入的两人遇上一场大病就会分岔。</li>
+<li>收入是流量，财富是存量；存量有钱生钱的正反馈，所以各国财富都比收入集中得多。</li>
+<li>代际收入弹性问父辈收入高 10%、子辈平均高多少；单年收入里的偶然波动会把这个数系统性地拉向零。</li>
+<li>Solon 1992 年改用五年平均收入，美国的代际弹性估计从约 0.3 升到约 0.4，流动的印象部分来自测量误差。</li>
+<li>Chetty 团队用税务记录算到通勤区：最低五分之一家庭的孩子升到最高五分之一，Charlotte 是 4.4%，San Jose 是 12.9%。</li>
+<li>美国相对流动几十年几乎没动，绝对流动却腰斩：三十岁收入超过父母的比例从 1940 年生人的约九成跌到 1980 年生人的约五成。</li>
+<li>精英招聘的筛选在投简历前就开始了：顶级投行和律所只在核心院校名单里招人，面试又按爱好相似判断「文化匹配」。</li>
+<li>优先连接模型显示，只要优势自我加码，能力差很小也会长出极端长尾，所以从结果分布推不出能力分布。</li>
+</ol>
 </div>
 <div class="thinking">
 <h3 data-tts="3dbbd8ccb12251de">深入思考</h3>

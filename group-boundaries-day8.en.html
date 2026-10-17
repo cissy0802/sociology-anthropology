@@ -55,6 +55,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -134,6 +140,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>Complexity science · move one person's threshold by one and the whole room lands elsewhere</b>: in 1978 Mark Granovetter proposed a threshold model — each person has a number for "how many others must already be doing it before I do". His extreme illustration is a hundred people with thresholds 0, 1, 2, all the way to 99: the person at 0 goes first, the one at 1 sees someone acting and joins, and the chain runs until everyone has acted. Now change only the person at threshold 1 to threshold 2: the chain breaks at the first step and exactly one person acts. The same hundred people, two outcomes. What is running is the normative influence from "Before you raise your hand, you scan the room": people decide whether to speak by how many already have. Which yields a conclusion you would not otherwise reach: <b>silence in a meeting room need not be explained by "poor team culture"</b> — the same people with the same distribution of opinions may differ only in whether one or two very low-threshold people are present. To change the outcome, lowering the cost of speaking for those one or two at the left edge is far cheaper than shifting everyone's attitude, and far easier to measure. <b>Where it does not hold</b>: the threshold model assumes everyone can see the overall proportion; it counts heads. Asch's variations are not about proportion — one ally suffices, and it counts even when the ally is wrong. What changed is not the number but the disappearance of the "only one" position. A pure counting model scores that as a one-percent perturbation and therefore systematically underrates whoever speaks first.</li>
 <li><b>Neuroscience · the sixty seconds after they stop throwing you the ball</b>: in 2003 Naomi Eisenberger and colleagues had people play a three-way online ball-tossing game inside a scanner; halfway through, the other two "players" (in fact a program) stopped passing to them. The excluded reported distress, with heightened activity around the dorsal anterior cingulate. The mechanism at work is the one in "Split by a coin toss, and ten minutes later you favour your own side": membership is conferred, it is real even when conferred for no reason at all — and so it can be withdrawn for no reason at all. Which yields a conclusion you would not otherwise reach: <b>removing someone from a group has a non-zero cost, and that cost passes through no material interest</b>; there was no money in the game and nobody the player knew. So the moves an organisation treats as costless — dropping someone from a channel, quietly ending the cc, moving the conversation somewhere they are not — are measurable independent variables, not pure administration. <b>Where it does not hold</b>: overlapping activation cannot license "it is the same pain" — that is the classic reverse-inference problem, and in 2014 Woo and colleagues used multivariate pattern analysis to show that physical pain and social rejection are separable representations within the same anatomical territory. What sociology may use is that exclusion as an operation produces a measurable response; not that social rejection simply is pain.</li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 Ten takeaways</h3>
+<ol class="takeaways">
+<li>In Asch's line-judgment studies, about a third of critical answers followed a unanimous wrong majority, and three-quarters of people conformed at least once.</li>
+<li>A single dissenter in the majority cuts conformity to around five percent, even when the dissenter's answer is also wrong.</li>
+<li>Informational influence is countered with independent evidence; normative influence is countered by making disagreement cost no courage. One fix does not serve both.</li>
+<li>A synthesis of 133 studies across 17 countries shows conformity varies with collectivism and with the decade, so it is no human constant.</li>
+<li>Milgram's obedience figures now carry caveats and the agentic-state account has given way to engaged followership; the Stanford prison experiment no longer counts as evidence.</li>
+<li>In northern Thailand no cultural criterion could pick out the Lue; Moerman was left only with self-ascription, which itself shifted with the setting.</li>
+<li>Barth argued for studying the ethnic boundary rather than the cultural content inside it, since people keep crossing while the boundary persists.</li>
+<li>Landless Pathans can become Baluch but almost never the reverse, because the two sides reckon membership in different ways.</li>
+<li>In Tajfel's minimal-group studies, randomly sorted teenagers favoured allocations that maximised the gap between groups, even at a cost to their own.</li>
+<li>Minimal groups mainly produce in-group favouritism rather than out-group hostility, so reading them as proof that people are innately xenophobic goes too far.</li>
+</ol>
 </div>
 <div class="thinking">
 <h3>Deeper questions</h3>

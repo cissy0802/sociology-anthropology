@@ -57,6 +57,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -136,6 +142,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>Neuroscience and consciousness · "Cannot say it" is not a figure of speech but a division of labour between two memory systems</b>: riding a bike, the grammar of your first language, touch typing — all can be done and none can be recited. Neuroscience distinguishes declarative memory (facts you can state) from procedural memory (skills you can perform), and they depend on different brain structures; the most famous evidence comes from patients with severe hippocampal damage who cannot remember what happened yesterday yet still improve at a new motor skill day after day, with no memory of practising. This runs the mechanism from "You cannot state the rule, yet you know how to walk the moment you enter": <b>habitus is a trained disposition, not a memorised rule</b>, and can only be acquired through repeated exposure. From which follows a conclusion not otherwise visible: explicit knowledge and implicit disposition are acquired at speeds an order of magnitude apart, the first crammable and the second not, so any screening that reads both signals will have the crammable part flattened by coaching, leaving all remaining discriminating power in the part that cannot be taught. <b>Hence a perverse pattern: the more standardised and widely available the training for a skill, the less weight that skill carries in selection.</b> <b>But it does not hold here</b>: procedural learning by itself carries no status — however well you ride a bike, there is no social premium. The brain level can establish that some things can only be trained; it cannot say why a small subset of them (accent, how one talks at a table) is assigned value while others are not. That valuation is entirely institutional, and it is not in the head.</li>
 <li><b>Distributed systems and AI · A system that never collects origins will reconstruct them anyway</b>: the classic recommender technique is collaborative filtering — no understanding of the content, only "people whose behaviour resembles yours also consumed this". This runs the mechanism from "The most informative part of a taste is what strikes you as trying too hard": <b>taste is a function of position, so taste can be run backwards to infer position</b>. From which follows a conclusion not otherwise visible: <b>a system fed only behavioural data, collecting no demographic attribute at all, will still grow internal partitions that overlap heavily with class</b> — the classification is already encoded in the preferences and does not need to be supplied. Landing on an observable consequence: when evaluating such a system, "we collect no sensitive fields" is not evidence of anything; the only evidence is how far its outputs diverge once grouped by external population data. <b>But it does not hold here</b>: in Bourdieu's account tastes are ranked, and the ranking is underwritten by schools, museums and critics. Collaborative filtering has no legitimating institution, only co-occurrence counts — it can sort people into non-overlapping clusters but cannot produce the category "vulgar". So it reproduces separation without producing a hierarchy of contempt; the contempt on a platform is what users bring in, not a product of the algorithm's structure.</li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 Ten takeaways</h3>
+<ol class="takeaways">
+<li>In Béarn, Bourdieu found that eldest sons, the best matches by inheritance rules, were staying single in large numbers — the rules could not explain the behaviour.</li>
+<li>Habitus is a set of dispositions laid down in the body by a durable position; it improvises responses to new situations, so it can be trained but not memorised.</li>
+<li>The hardest objection to habitus is circularity: any behaviour can be labelled habitus after the fact, which makes the concept hard to measure or falsify.</li>
+<li>Part of what schools reward is never taught in class but picked up at home, and sociology calls this cultural capital.</li>
+<li>Cultural capital comes embodied, objectified and institutionalised; a diploma converts family background into a qualification and erases where it came from.</li>
+<li>Using 1960 US high-school data, DiMaggio found cultural capital still predicted grades after controlling for ability scores and family status.</li>
+<li>Lareau watched middle-class children coached to question their doctor, while working-class children were taught to stay quiet before authority.</li>
+<li>The natural-growth style of parenting gives children more free play and closer kin ties; its only handicap is that schools and clinics do not reward it.</li>
+<li>Taste works mainly by refusal: asking what someone cannot stand locates their social position faster than asking what they like.</li>
+<li>High-status cultural omnivores consume almost everything, yet distinction survives by moving from what you listen to toward how many kinds and in what stance.</li>
+</ol>
 </div>
 <div class="thinking">
 <h3>Questions worth sitting with</h3>

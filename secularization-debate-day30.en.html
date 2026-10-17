@@ -58,6 +58,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -162,6 +168,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>Distributed systems and AI · turn a hard-coded behaviour into a configurable switch and the code is no longer the same code, even if ninety-nine per cent of users stay on the old value</b>: from the day the switch lands, documentation, tests and error handling all carry an extra branch, and every feature afterwards has to be thought through under both values. This runs the mechanism from "it is not that fewer people believe — it is that the position of belief has changed": <em>when something goes from "it could not be otherwise" to "one option among many", the whole cost structure changes even if the distribution of choices barely moves</em>. From that follows a conclusion you would not otherwise see: <b>counting how many people believe misses the main change systematically. What you should be counting is everything that only needs to exist once belief became an option — funeral celebrants, end-of-life companionship and ethics courses built specifically for people who do not believe, and the sheer output of "why I believe / why I don't" talk. Those move earlier than the believer share does.</b> <b>But here it does not hold</b>: the value set of a config flag is defined by someone, finite, and exhaustively testable; the option set for belief is not — new options grow out of the gaps where existing options criticize each other, which Taylor calls the nova effect. <b>So "cover all the branches" has no counterpart here, and any exhaustive taxonomy is already incomplete the moment it is finished.</b></li>
 <li><b>Physics and mathematics · when a piece of iron is about to lose its magnetism, the most violent thing about it is not the magnetism but the trembling</b>: heat a ferromagnet towards its Curie point and the total magnetization falls towards zero, while its response to an external field and its own fluctuations shoot up to a maximum — the stock flattens out exactly as the flow peaks. This runs the measurement mechanism from "the question of whether religion will disappear has three different things packed into it": <em>the stock (how many believe now) and the flow (how many are switching) are two independent quantities that can move in different directions, and surveys report the former by default</em>. From that follows a conclusion you would not otherwise see: <b>"the share has stabilized" does not entail "the situation has stabilized". Two large flows in opposite directions can cancel in the stock, so the calmest-looking stock is exactly when you should be looking at flow — switching rates and cohort gaps. The share is a lagging indicator.</b> <b>But here it does not hold</b>: in physics, fluctuation and response are bound together by the same object (the fluctuation-dissipation relation), so violent trembling really does mean you are near a critical point. Society has no such conservation; a high switching rate may simply be a long-standing equilibrium of people moving in and out. <b>So all you get is "do not look only at the stock" — not "a turning point is near".</b></li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 Ten takeaways</h3>
+<ol class="takeaways">
+<li>When researchers physically counted people in American church pews in 1993, actual attendance came to roughly half of what surveys reported; self-reports consistently run higher than counts.</li>
+<li>Peter Berger predicted in 1968 that religious believers would dwindle to small huddled sects by the twenty-first century, and in 1999 declared the assumption of a secularized world to be false.</li>
+<li>The word secularization bundles three separate claims, differentiation, decline and privatization, each tested by a different kind of evidence, so one can hold while another fails.</li>
+<li>The religious economies approach treats demand for religion as roughly constant and explains participation from the supply side: who organizes, how hard, and whether a state church blocks competition.</li>
+<li>American church adherence rose from under 17 per cent in 1776 to about 62 per cent around 1980, long held up as proof that modernization need not bring religious decline.</li>
+<li>The pluralism index most often used in these studies is mathematically tied to the participation measure, so it produces a correlation even where none exists, undercutting the market theory's evidence.</li>
+<li>Voas and Chaves argued in 2016 that the United States is no longer a counterexample to secularization: its religiosity is falling cohort by cohort, just as in Western Europe.</li>
+<li>Charles Taylor rejects the subtraction story of modernity; the immanent frame had to be built, and once it was, belief turned from the taken-for-granted background into one position among several.</li>
+<li>Humanist funeral celebrants can neither promise an afterlife nor reach for stock consolation, so they must craft the words afresh each time, showing that the secular itself takes effort to build.</li>
+<li>Religiosity broadly falls as existential security rises, yet high-religiosity societies have more children, so the number of believers worldwide keeps growing; secularization is several processes moving in different directions.</li>
+</ol>
 </div>
 <div class="thinking">
 <h3>Going deeper</h3>

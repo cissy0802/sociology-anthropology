@@ -58,6 +58,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -154,6 +160,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>演化生物学 · 一只瞪羚看见猎豹之后，做的第一件事是原地把自己高高弹起来</b>：汤氏瞪羚遇到捕食者会四脚离地垂直弹跳（stotting），看上去是在白白浪费逃命的时间和力气；塞伦盖蒂的野外观察显示，弹得高的个体反而更少被追。跑的是「买得起没有用，得让人看见你为它吃了亏」那节的机制——<em>信号只有贵到假不了，才携带信息。</em>扎哈维 1975 年把这条叫累赘原理，当时挨了大量批评，直到 1990 年格拉芬做出形式模型才被广泛接受。由此能推出一个原本看不出的结论：<b>一个符号能传多少信息，不取决于它多好看、多稀少，而取决于伪造它的成本跟不跟真实水平挂钩；所以符号更替的节奏可由造假成本预测——分期、高仿、租赁一旦把伪造压便宜，这个符号就会被放弃，时点与审美潮流无关</b>。<b>但这里不成立</b>：生物信号必须由每个个体在每一代重新付出成本才维持得住；人的地位标记却可以被制度化和继承——学位、会员资格、一套从小养成的口音和举止，都能在持有者不再付成本时继续生效。一旦成本与当前水平脱钩，它就不再是信号，而是壁垒。瞪羚没有这个选项。</li>
 <li><b>分布式系统与 AI · 推荐系统根本不看内容，却比看内容的更准</b>：协同过滤只用「谁和谁一起被消费过」这一种信息，不读一首歌一个字、不看一件商品的材质，准确度却长期压过按属性分类的做法。跑的是「你买的不是那个东西，是它和别的东西之间的那点差别」那节的机制——口味不是物的属性，是物在一套差异系统里的位置，而位置由共现定义。由此推出一个原本看不出的结论：<b>这件工程事实是那条社会学命题的一次大规模检验，而且可证伪——如果品味主要由物的内在属性决定，按属性切分市场就该赢；现实里它输给按共现切分</b>。<b>但这里不成立</b>：日志里只有被平台记录的消费，而区隔中最有效的那一半常常不进日志——不消费什么，以及口音、坐姿、用词、在什么场合选择沉默，也就是布尔迪厄那期说的身体化的文化资本。系统能复制的只是可购买的那一半，于是它加速的是可购买符号的贬值。</li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 十条要点</h3>
+<ol class="takeaways">
+<li>凡勃伦《有闲阶级论》指出：陌生人社会中，财富必须被看见才算数，而让它被看见的办法是明显地浪费。</li>
+<li>上层先靠炫耀性闲暇证明不必劳动，城市化后观众成了陌生人，重心才转向炫耀性消费。</li>
+<li>地位信号要可信，就必须贵到别人学不起，所以浪费不是炫耀的副作用，而是信号本身。</li>
+<li>印尼一家银行的田野实验里，权益相同时客户仍明显更多选白金卡，多出的需求只能来自等级本身。</li>
+<li>放入参照群体的平均收入后，可见商品支出的族群差异大部分消失，解释从「谁更爱面子」挪到「你在跟谁比」。</li>
+<li>鲍德里亚提出，商品除了使用价值和交换价值，还有符号价值：它在一整套物的差异系统里所占的位置。</li>
+<li>需求会饱和而位置不会：「比周围好一点」的量尺是别人，按定义没有终点。</li>
+<li>米勒在北伦敦的购物民族志发现，多数日常采购是为家人买的，最常见的购物根本不在地位竞争的游戏里。</li>
+<li>标记一旦能被模仿就会贬值，区隔于是搬家：高地位品味变得杂食却仍有边界，富裕家庭的钱流向教育和育儿。</li>
+<li>汤氏瞪羚见到捕食者会原地高跳，扎哈维的累赘原理说明，信号只有贵到假不了才携带信息。</li>
+</ol>
 </div>
 <div class="thinking">
 <h3 data-tts="2b82d312027efd39">深入思考</h3>

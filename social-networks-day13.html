@@ -58,6 +58,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -138,6 +144,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>演化生物学 · 关系要花时间养，养得起的那部分注定很小</b>：灵长类维持关系靠理毛——两只猴子花十几分钟给对方梳毛，卫生上没什么必要，产出的是关系本身。这是线性成本：多一个伙伴多一份时间，而一天只有那么多小时。跑的是「帮你找到那份工作的那个人，你一年见不了两次」那节的机制：<b>连带按维护成本分层，而最便宜的那些才伸得出你原有的圈子</b>。由此能推出一个原本看不出的结论：<b>任何把「保持联系」变便宜的技术，扩张的只会是外圈，不是内核</b>——内核贵在共同经历的时间，不在联络本身；而桥的价值来自稀缺，桥一多，每座值的就少。落到可观察的后果上：判断一个平台有没有真扩大你的信息面，别看好友数，看你在那儿第一次听说的事里有多少条是原有的圈子也会告诉你的——这个冗余率不降，连接数涨十倍也没用。<b>但这里不成立</b>：从灵长类那条回归线外推出的「人大约能维持一百五十个关系」撑不住。2021 年一组研究者重做这项统计，点估计随数据集和方法在十几到一百多之间跳，95% 的区间宽到从个位数到五百多。而且人维持关系可以不靠在场——靠第三方转述、靠共同的机构、靠隔半年一条消息，都不是理毛那种线性成本。所以「维护有成本」过得来，「成本多大、上限在哪」过不来。</li>
 <li><b>复杂性科学 · 平均每个人认识多少人，是个几乎没用的数字</b>：跑传染病模型的人早就发现，决定一场传播能不能起来的不是平均连接数，是连接数的离散程度。2001 年两位物理学家论证：在连接数分布长尾很重的网络上（少数节点连接数极高），经典模型里「传播率低于某个阈值疫情就自己熄灭」的那个阈值会趋近于零。跑的是「路径短，不等于事情传得开」那节的机制：<b>结构不是均匀的，少数长程连接和少数超高连接度的节点承担了绝大部分路径</b>。由此能推出一个原本看不出的结论：关键节点是少数，而你并不知道整张网长什么样，随机找人纯属浪费——<b>但有个不需要全局信息的办法：随机挑一个人，请他随口说出一个熟人，去处理那个熟人</b>。被别人说出来的人天然连接数更高（这就是「你的朋友平均比你朋友多」那个统计事实）。同样的预算，这样抽样覆盖的传播路径远多于随机抽人，而两者要的信息量一样少。<b>但这里不成立</b>：疾病一次接触就可能传，社会行为不是。「路径短，不等于事情传得开」那节讲的复杂传染要的是重复确认，捷径反而把确认摊薄了。所以「像病毒一样传播」这个比喻套到观念和行为上会给出相反的处方：对病要切断捷径，对行为要制造冗余。</li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 十条要点</h3>
+<ol class="takeaways">
+<li>Granovetter 的牛顿镇调查发现，靠熟人换到工作的人里，近三成一年最多见那位熟人一次。</li>
+<li>强连带会一团团闭合，团内消息高度重合；弱连带的价值在于它更可能是连接两团人的桥。</li>
+<li>2022 年领英的大规模随机实验证实弱连带促进换工作，但呈倒 U 形，中等偏弱的连带最管用。</li>
+<li>Sandra Smith 的访谈显示，内推常卡在有机会的人不愿开口，因为推荐等于拿自己的信用做担保。</li>
+<li>Ronald Burt 把两群人之间缺失的关系叫结构洞，跨在洞上把两边接起来的人叫经纪人。</li>
+<li>在一家美国电子公司，跨越结构洞越多的管理者，点子被评得越有价值，薪酬晋升也偏高。</li>
+<li>经纪人的优势来自视野套利：同时看得见两套做法，未必更聪明；位置优势常被误读成个人特质。</li>
+<li>桥接带来新点子，闭合让规范得以执行、信任有着落，James Coleman 强调的正是后者。</li>
+<li>Watts 和 Strogatz 证明，规则网络里加几条长程捷径，平均路径骤降，聚集程度几乎不变。</li>
+<li>Centola 的实验发现健康行为在聚集网络里传得更远更快，因为改变行为需要多次确认，这叫复杂传染。</li>
+</ol>
 </div>
 <div class="thinking">
 <h3 data-tts="8237044abf0f28ec">深入思考</h3>

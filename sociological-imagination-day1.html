@@ -58,6 +58,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -122,6 +128,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>演化生物学 · 发育窗口</b>：同一个环境信号打在不同的发育阶段，会长出完全不同的身体——幼年营养不足留下的痕迹，和成年后节食完全不是一回事。跑的是「历史按你当时的年龄派发后果」那节的机制：<b>冲击按你当时所处的阶段分发后果，而早期状态会锁定后续路径</b>。由此推出一个原本看不出的结论：<b>"某一代人怎么样"里，有一部分根本不是价值观差异，只是同一个冲击打在了不同的窗口上</b>——把它当成观念之争来吵，等于把发育史当成了立场。<b>但这里不成立</b>：生物的发育窗口由发育程序界定，边界相对固定；人的"生命阶段"却是制度定义的（几岁上学、几岁工作、几岁退休），会随社会一起改变。所以窗口本身是可变的，这是生物那边没有的自由度。</li>
 <li><b>分布式系统 · 去池化</b>：当服务端不再保证可靠性，重试、退避、容错就被推给每一个客户端。系统整体的复杂度并没有减少，只是从一处集中承担，变成成千上万处分散承担，而且每个客户端都得独立重做一遍。这正是「制度要求你把它当成自己的问题」那节里<b>风险下移</b>的机制。由此推出一个原本看不出的结论：<b>风险下移不是"减负"，是去池化</b>——不确定性一点没消失，还额外丢掉了池化带来的对冲，所以社会总成本是上升的，只是账不记在同一处了。<b>但这里不成立</b>：客户端可以选择不接入，人不能退出劳动力市场或养老体系；而且分布式里的重试大多无状态，失败不累积，人的失败会。</li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 十条要点</h3>
+<ol class="takeaways">
+<li>米尔斯区分个人烦恼与公共议题：十万人的城里一人失业是烦恼，一千五百万人失业就是经济制度的问题。</li>
+<li>把制度问题误读成个人问题是一种系统性、可预测的错觉，因为烦恼感受得到，制度感受不到。</li>
+<li>把归因私人化是制度的减压阀：人人用性格解释自己的处境，就形不成集体表达，制度也就不承受压力。</li>
+<li>Elder 追踪大萧条时期的奥克兰孩子，发现家庭经济损失的后果因孩子当时的年龄而大不相同。</li>
+<li>同期群效应指历史冲击按生命阶段分配后果，早期状态再经路径依赖放大成终身差异。</li>
+<li>年龄、时期、同期群三者在数学上无法同时分辨，所以「某一代人怎样」的结论首先要问是不是人只是变老了。</li>
+<li>贝克的个体化理论认为，现代制度主动要求人们为系统性矛盾寻找传记式的解法。</li>
+<li>Chetty 用美国税收数据算出，三十岁收入超过父母的比例从 1940 年出生者约 90% 降到 1980 年出生者约 50%。</li>
+<li>风险下移与自我优化产业相互咬合，把结构问题重新编码成了可以花钱购买的技能问题。</li>
+<li>借分布式系统看，风险下移不是减负而是去池化：不确定性没有消失，还丢了池化的对冲，社会总成本反而上升。</li>
+</ol>
 </div>
 <div class="thinking">
 <h3 data-tts="a224137c0d67105d">深入思考</h3>

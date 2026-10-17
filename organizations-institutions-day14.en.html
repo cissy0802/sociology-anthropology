@@ -56,6 +56,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -143,6 +149,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>Distributed systems and AI · hierarchy buys down communication, and pays for it with compression at every hop</b>: for a set of machines to agree on one thing, the number of direct channels grows with the square of the machine count, which is why real systems almost always elect a coordinator and squash the square into a line. An organization growing layers is the same arithmetic: fifty people aligning pairwise is a disaster, split into squads each with a lead it is not. Running here is the mechanism from "The rule started out as a means and turned into the end": <b>every hop restates what it passes upward in the vocabulary its own layer is measured by</b>. From which follows a conclusion you would not otherwise see: <b>distortion does not add across layers, it multiplies</b> — lose only a fifth at each layer and under a third of the original reaches the top after six. So flattening genuinely reduces distortion, but it pushes the fan-in onto the single person at the apex; the two cannot be optimized together, and the shape of that trade-off can be computed rather than argued about. In observable terms: to find out how distorted a reporting chain is, don't ask people — compare what one event looks like in the raw record at the bottom and on the dashboard at the top. <b>Where it breaks down</b>: in distributed systems messages are copied bit for bit, the loss happens in aggregation, and the noise is roughly unbiased; in an organization every hop's incentive points the same way — bad news filtered on the way up, progress rounded up. So the error-correcting move of "redundant paths plus a vote" fails here: three reporting lines bent by the same incentive, and the vote only confirms the bias a second time.</li>
 <li><b>Buddhism · an organization whose output cannot be verified can only be trusted through procedure</b>: in the monastic code of the sangha, the Vinaya, the largest share of text is not about what counts as awakening but about procedure: how the uposatha recitation of the rules is conducted, how many are needed for a saṅghakamma decision, who is qualified to attend, which process settles a dispute. An organization that has lasted more than two millennia has almost all of its rules grown around "how a decision is made" rather than "what counts as having succeeded". Running here is the mechanism from "What is written in the documents and what people actually do were never one thing", used in reverse: <b>when the core output cannot be verified from outside, credibility can only be hung on formal structure</b>. From which follows a claim you can go and check: <b>how elaborate a rulebook is can be predicted from how hard the output is to inspect</b> — religion, education, consulting, peer review, places where nothing can be checked on the spot, grow their rules on procedure; conversely, an organization whose output is plainly measurable yet whose procedures are minutely specified is most likely handling not efficiency but the assignment of blame. In observable terms: open an organization's handbook and measure how much space goes to "how decisions are made" versus "what counts as done". <b>Where it breaks down</b>: decoupling theory assumes the formal layer is mainly performed for an outside audience, whereas the Vinaya's first audience is the sangha itself, a breach has concrete consequences, and form and practice are tightly coupled. More fundamentally, the rite is not a shell that proves the practice — it is part of the practice, so the form/substance distinction loses its purchase here.</li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 Ten takeaways</h3>
+<ol class="takeaways">
+<li>American cities adopted civil service reform early because they needed it, and late because a proper city government was simply expected to have one.</li>
+<li>DiMaggio and Powell trace institutional isomorphism to three routes: coercion by rules, copying under uncertainty, and templates carried in by professionals.</li>
+<li>Copying is triggered by uncertainty rather than effectiveness, so a whole industry can march in step toward a practice nobody has ever validated.</li>
+<li>Meyer and Rowan argued that much formal structure exists for outside viewers, hanging loosely off real activity; they called this decoupling.</li>
+<li>Many large American firms announced stock buybacks they never carried out, yet the market rewarded the announcement itself.</li>
+<li>Decoupling is not only hypocrisy: parking contradictory outside demands on the formal layer shields the people doing the actual work.</li>
+<li>Harder to spot than unimplemented policy is means decoupled from ends: activity done diligently with nobody checking whether it produced results.</li>
+<li>Rules demanded for reliability can, over time, turn compliance itself into the goal; Merton named this goal displacement.</li>
+<li>At a gypsum plant Gouldner found that how strictly rules get enforced is itself a bargain, and enforcing by the book triggered a wildcat strike.</li>
+<li>Each hop in a reporting chain restates information in its own layer's metrics, so distortion across a hierarchy multiplies rather than adds.</li>
+</ol>
 </div>
 <div class="thinking">
 <h3>Going deeper</h3>

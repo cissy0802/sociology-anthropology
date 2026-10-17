@@ -58,6 +58,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -169,6 +175,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>演化生物学 · 西澳有一种兰花长得像一只不会飞的母蜂，公蜂扑上去，被花的铰链甩向花药</b>：锤兰（Drakaea）只长在澳大利亚西南部。唇瓣在形状、颜色和气味上模拟一只雌性土蜂——这类蜂的雌虫不会飞，交配时由雄虫叼着走。唇瓣中段有铰链；雄蜂抓住「她」想带走，整只被甩向花药。每一种锤兰对应一种特定的蜂。跑的是「人类学家去研究做推荐系统的人」那节的陷阱读法：<em>装置的构造就是一份关于猎物的理论。</em>由此能推出一个原本看不出的结论：<b>捕获装置的特异性本身就是一把尺，量的是它对猎物了解到哪一级。对谁都一样的推荐位说明模型对你几乎一无所知；只对你成立、别人看了莫名其妙的那种，说明分辨率已细到「种」这一级——不需要任何内部文档，看装置就够</b>。<b>但这里不成立</b>：锤兰背后没有「造它的人」，那份精确是选择压力筛出来的，不准的没留下后代。所以「读装置反推理论」在演化这边只能读出猎物的感官世界，读不出任何意图。产品那边确实有人握着一套关于你的说法，而它可以是错的、装置照样跑得下去——因为环境也归他们布置。<b>兰花的模型必须准，产品的模型不必准。</b></li>
 <li><b>工程与人因 · 飞机把好开的那部分自动了，留给人的是最难的那三十秒</b>：1983 年班布里奇（Lisanne Bainbridge）写过五页纸的《自动化的反讽》，讲工厂和电厂的过程控制，如今是人因工程史上被引最多的文章之一。她的观察是：设计者嫌人不可靠、想把人去掉，可他想不出怎么自动的那部分最后还是留给了人。于是人平时只剩盯屏幕，手生了；偏偏系统撑不住时要他在几十秒里接手。跑的是「点完『我不是机器人』之后」那节的最后一公里——自动化按「能不能规格化」切，<em>剩下的那部分更难、更碎、更没法预先安排</em>。由此推出一个原本看不出的结论：<b>「这个岗位会不会被自动化」问错了题。该问的是剩下那部分长什么样——它通常不在流程图上，于是不计工时、不进预算、出事也不好归因。一个岗位的实际工作量可以在自动化之后上升，同时在账面上归零：账本记的是流程图，不是活</b>。<b>但这里不成立</b>：班布里奇笔下那个接手的人是被指名的、受过训的、算在编制里的，她的解药也建立在这上面——多训练、保持手感、定期真操作一次。最后一公里恰恰相反：任务被切到没有谁拥有它，今天接手的和明天接手的不是同一个人。于是那套解药无处下手——<b>不是训练不够，是没有一个可训练的「那个人」。</b></li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 十条要点</h3>
+<ol class="takeaways">
+<li>人类学家博尔斯托夫以虚拟人身份在「第二人生」里做了两年多田野，刻意不与任何人线下见面。</li>
+<li>坚持要到线下核实才算数，等于先默认线下才是真的，这个默认是研究者自己带进田野的。</li>
+<li>完全待在线上的批评也实在：它看不见线上行为的线下条件，比如谁买得起设备、谁有整块时间。</li>
+<li>米勒牵头的项目派九位人类学家各在一个小镇住满十五个月，用同一套问题做可比较的数字田野。</li>
+<li>王心远在中国东南的工厂镇看到「第二次迁移」：人从农村迁到工厂，又从线下迁到线上。</li>
+<li>多元媒介指渠道便宜到可以忽略之后，每条渠道只能相对于别的被定义，选哪条本身就承载意义。</li>
+<li>西弗研究造推荐系统的人，发现「捕获指标」量的不是喜不喜欢，而是你回没回来、待了多久。</li>
+<li>盖尔认为陷阱是关于猎物的理论的实体化，所以读一个界面的构造，就能读出它假设你是什么样的人。</li>
+<li>看不见的信息流排序不会让人起疑，反而让人把没看到朋友动态解释成自己跟对方其实没那么熟。</li>
+<li>幽灵工作揭示自动化的最后一公里悖论：机器每攻下一类问题，就在新边界上造出一类碎片化的人工任务。</li>
+</ol>
 </div>
 <div class="thinking">
 <h3 data-tts="dee5e8631a66bd49">深入思考</h3>

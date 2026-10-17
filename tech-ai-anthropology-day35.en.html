@@ -57,6 +57,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head>
 <body>
 <div class="container">
@@ -143,6 +149,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>Complexity science · An urn with one rule — whoever arrives first takes more — lets you prove the outcome must lock in, without being able to compute which outcome</b>: an urn holds balls of two colours; each round you draw one at random and return it along with another of the same colour. For this family of processes (a Pólya urn, in mathematics) the proportion converges almost surely to some value, but which value is settled by the first few accidents and cannot be computed in advance. W. Brian Arthur connected this to technological competition in 1989: when two technologies with increasing returns compete (the more people use it, the better it works), a small early accidental lead can roll into taking the whole market, and what gets locked in is not necessarily the better one. The mechanism is the one in "farmers jacked up the back of the car": closure happens not because something is optimal but because the argument got shut. <b>From this follows something you could not otherwise see: you can judge in advance which domains will lock in — not by who is advertising what, but by whether increasing returns exist; and since lock-in happens early and the window is short, "wait for a better option and then choose" — a strategy that looks perfectly rational on its own — fails systematically, because the more people wait, the faster the window shuts.</b> <b>But it does not hold here</b>: balls only go into the urn, never out, and no outside force can reopen it; in real systems regulation, a standards body, or a new general-purpose component can all pry a closed argument back open. And the step from "locked in" to "suboptimal" has been disputed in economic history throughout — for the keyboard case that gets cited most, critics argue the evidence that the alternative was better was thin to begin with. <b>What transfers is the timing and shape of lock-in; what does not transfer is "whatever locked in must be worse".</b></li>
 <li><b>Neuroscience and consciousness · A monkey learns to use a rake, and shortly afterwards the reach of its hand, as its brain represents it, extends to the tip of the rake</b>: a 1996 macaque study found cells in the region of the intraparietal sulcus that handle both touch and vision, with the visual part originally hugging the hand; after the animal was trained to use a rake to get food it could not otherwise reach, the visual field of those cells expanded to cover the whole rake. The mechanism is the one in "you cannot interview a recommender system": a tool is not "used", it is incorporated into practice, and the boundary of what a person can do deforms accordingly — a deformation that does not pass through "what I think of it". <b>From this follows: to find out what a system changed about its users, asking "what do you think of this algorithm" returns a folk theory; watch instead how their actions deform when it is taken away — the shape of the errors says more than the opinions about how deeply it was incorporated.</b> <b>But it does not hold here</b>: the rake's incorporation is individual, a fast sensorimotor recalibration that reverses when the rake is removed; algorithmic incorporation is collective, passed along through colleagues and the conventions of a trade — the same traffic numbers mean different things in two countries' newsrooms, and that channel does not exist on the monkey's side. <b>What transfers is "what gets used into you rewrites the boundary of what you can do, and bypasses self-report"; what does not transfer is "so measuring it in individuals is enough".</b></li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 Ten takeaways</h3>
+<ol class="takeaways">
+<li>In early twentieth-century rural America, farmers pulled a rear wheel off their cars to belt-drive saws and pumps, and manufacturers ended up redesigning around that use.</li>
+<li>Interpretive flexibility means the same object is a different object to different groups, because each group wants it to solve a different problem.</li>
+<li>Closure does not mean everyone was persuaded; it means the framing of what a technology is for stopped being challenged, as happened with the pneumatic tyre.</li>
+<li>Langdon Winner's counterpoint: systems that need constant guarding and fail catastrophically push their operators toward centralization, so uses are contested but not infinitely so.</li>
+<li>Nick Seaver's fieldwork among music-recommendation developers shows the "algorithm" is an assemblage of models, metrics, targets and guesses that nobody sees whole.</li>
+<li>Once "keeping people around" becomes a number read every day, a team's small choices quietly line up behind dwell and return metrics, which Seaver likens to a trap.</li>
+<li>Angèle Christin found that near-identical traffic dashboards meant different things in New York and Paris newsrooms, so algorithms do not simply homogenize behaviour.</li>
+<li>People invent folk theories about systems they cannot see, so to learn what an algorithm changed you watch what people do rather than ask what they think.</li>
+<li>Automation takes the easy part first and leaves people to monitor a system that rarely fails and take over when it does, exactly when they are least ready.</li>
+<li>Increasing returns, as in a Pólya urn, let an early lucky lead snowball into lock-in that need not favour the better technology, though regulators and standards can reopen it.</li>
+</ol>
 </div>
 <div class="thinking">
 <h3>Questions to sit with</h3>

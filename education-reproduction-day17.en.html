@@ -56,6 +56,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -127,6 +133,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>Complexity science · Add one more road to a network and everyone can end up slower</b>: in 1968 Dietrich Braess proved a perverse result — in a network where every driver picks their own fastest route, adding a shortcut can make travel time longer for everyone, because it changes each individual's optimal choice and funnels traffic onto the same few stretches. This runs the positional mechanism from "the same certificate": <b>when each person's payoff depends on relative position, individual optima do not add up to a better collective outcome</b>. From which follows a conclusion you could not otherwise see: <b>"more places" and "better outcomes" are not necessarily connected and have to be measured separately</b> — after an expansion, what to watch is not enrolment numbers but whether employers' sorting devices moved up (the share of adverts asking for things beyond a degree: years, projects, internships). <b>But here it does not hold</b>: in Braess's setting travel time is an objectively measurable physical quantity and everyone agrees faster is better, so a "socially optimal allocation" is a point you can compute. In the credential race, "better" is itself defined by ranking, with no objective quantity independent of the ranking — the optimum an engineer could compute simply does not exist here.</li>
 <li><b>Distributed systems and AI · A model learns whatever kept getting rewarded, not the thing you meant to teach</b>: an image classifier calls a husky a wolf, and it turns out to be reading the snow in the background, because in the training set most wolf photographs were taken on snow (the well-known example from Ribeiro and colleagues' 2016 paper on explaining models); medical imaging models have been found to decide on the scanner model or a ruler mark in the picture, and to collapse at another hospital. The family of faults is called shortcut learning. This runs the mechanism from "the bell rings and you switch subject": <b>what is rewarded repeatedly is what actually gets taught, and it is often not on the syllabus</b>. From which follows a conclusion you could not otherwise see: <b>spending on more data, more compute, teaching the lesson more carefully does not change a shortcut already learnt; only changing the reward structure does</b> — and there is a test you can run: scramble the co-varying features (change the background, change the scanner, set a form of exam never drilled) and a collapse in scores tells you what was learnt was the co-variation. <b>But here it does not hold</b>: a model has no stance and will not rebel because it has seen through the shortcut. The lads Willis followed saw that school was sorting them and set themselves against it openly, and it was that very opposition that walked them onto the shop floor. When the thing being optimised has agency, the agency reroutes reproduction without necessarily changing where it ends up — and there is no counterpart to that layer in an optimisation system.</li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 Ten takeaways</h3>
+<ol class="takeaways">
+<li>Following twelve families, Annette Lareau found middle-class concerted cultivation fits what schools and doctors expect; working-class natural growth does not.</li>
+<li>Whether a child questioning a doctor or teacher counts as confident or rude is decided by the institution, not by the family.</li>
+<li>In 1961–62, French children of senior executives were about 42 times as likely to reach university as children of workers.</li>
+<li>A single exam for all lets school translate origin into talent and talent into merit, so those who fail blame themselves — Bourdieu's méconnaissance.</li>
+<li>Later quantitative work finds cultural capital does affect attainment, but less than reproduction theory expected and very unevenly across countries.</li>
+<li>In five New Jersey schools, Jean Anyon saw 'good work' shift with social class, from following steps to owning your own analysis.</li>
+<li>The hidden curriculum teaches not content but which authority relation makes work count as done right.</li>
+<li>Willis's working-class lads saw through school and resisted it, and that resistance carried them to the factory: reproduction needs no believers.</li>
+<li>The Pygmalion effect replicated poorly; a 1984 meta-analysis found only a small effect, so expectations do not dramatically raise IQ.</li>
+<li>Credentials are positional: if everyone studies longer the ranking stays put, costs rise, and the sorting just moves up a level.</li>
+</ol>
 </div>
 <div class="thinking">
 <h3>Going Deeper</h3>

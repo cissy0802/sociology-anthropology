@@ -58,6 +58,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -146,6 +152,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>物理与数学 · 折现率一调，合作的账就算不平了</b>：博弈论里有个标准结论（无限重复囚徒困境中 folk theorem 的一个特例）：两个人反复打交道，只要他们对未来看得够重——用行话说折现因子够大——合作就能靠「你背叛我就不再合作」自己维持住；未来一旦看轻，背叛立刻变划算。跑的正是「你说『下次我请』的时候，是在把账故意留着」那节的机制：约束力来自未了结的将来，不来自这一次的对价。由此能推出一个原本看不出的结论：<b>要让一段关系更牢，与其加大违约的惩罚，不如把「还会再见」这件事做实</b>——固定的复盘节奏、稳定的对接人、可预期的下一轮，都是在往上调那个折现因子。惩罚条款调的是单次收益，看得见但边际递减；折现因子调的是整个和式，一动全动。<b>但这里不成立</b>：博弈论要求收益能标价、能加总，才谈得上折现。礼物制度恰恰在防这件事——回礼不等值不是没算清，是故意不让人算得清，账一旦能对上就结清了，关系跟着结束。库拉里的项链和臂镯不许当场折价换算，正是这个道理。所以模型解释得了「为什么要有下一轮」，解释不了「为什么要让这一轮算不清」。</li>
 <li><b>佛学 · 布施要练的，正是把这笔账销掉</b>：佛教讲布施（dāna），可真正的门槛在「三轮体空」——观照施者、受者、所施之物三者都不可执取，也就是心里不留下「我给了他、他欠我」这条记录。南传的托钵也是这个路数：次第乞食，不挑门户，受食不道谢。跑的是「给不出回礼的人，输掉的不是钱」那节的机制：欠着能定义位置，所以送礼能变成压。由此能推出一个原本看不出的结论：<b>匿名捐赠和具名捐赠不是同一件事的两个版本，社会后果几乎相反</b>——一个刻意不生成关系，也就不生成位置差；一个正是要生成关系。慈善机构把捐赠人姓名刻成一面墙，不是虚荣管理，是在选择要不要织出那张债务网。<b>但这里不成立</b>：业报的框架里，布施仍然被记账，只是债主从具体某个人换成了一套非人格的系统（功德）。所以它没有取消互惠，只是把它挪了个位置——真正被取消的只有「某人欠某人」这一层。</li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 十条要点</h3>
+<ol class="takeaways">
+<li>当场把饭钱转过去等于给关系定价并两清，「下次我请」则故意把账留着，成了下次见面的凭据。</li>
+<li>Mauss 在 1925 年的《礼物论》里提出三条扣成一环的义务：给予、接受、回报，其中不能拒收最容易被漏掉。</li>
+<li>回礼必须延迟而且最好不等值，早了、刚好等值就成了找零，账一结清关系就归零。</li>
+<li>三义务框架站得住，但把毛利人的 hau 读成礼物里的灵魂，遭到 Firth 和 Sahlins 质疑。</li>
+<li>库拉圈里红贝壳项链和白贝壳臂镯沿相反方向绕岛流动，回礼要隔几个月甚至几年。</li>
+<li>同一趟航行既做库拉也做可还价的 gimwali，礼物与交易是同一批人的两种工具，不是文明阶段。</li>
+<li>Annette Weiner 在基里维纳岛看见了 Malinowski 漏掉的女人香蕉叶财富系统：换了观察者，看到的就换了。</li>
+<li>西北海岸的夸富宴里，还不起更大回礼的一方会掉地位；只要欠着能定义位置，送礼就能变成施压。</li>
+<li>献血随机实验显示，给钱让女性的献血意愿降近一半，可转捐慈善时效应消失，可见挤出效应是有条件的。</li>
+<li>博弈论的越界联想：与其加大违约惩罚，不如把「还会再见」做实，但礼物恰恰要让每一轮算不清。</li>
+</ol>
 </div>
 <div class="thinking">
 <h3 data-tts="d9bc457be3772534">深入思考</h3>

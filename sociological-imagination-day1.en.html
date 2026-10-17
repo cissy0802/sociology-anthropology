@@ -58,6 +58,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 
@@ -128,6 +134,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 </ul>
 </div>
 
+<div class="tk">
+<h3>📝 Ten takeaways</h3>
+<ol class="takeaways">
+<li>Mills separates personal troubles from public issues: one unemployed man in a city of 100,000 is a trouble; 15 million unemployed is a problem of the economy.</li>
+<li>Misreading an institutional problem as a personal one is a systematic, predictable illusion, because you can feel a trouble but not an institution.</li>
+<li>Privatised attribution is the institution's pressure valve: if everyone blames their own character, no collective voice forms and nothing pushes back.</li>
+<li>Following Oakland children through the Depression, Glen Elder found that a family's economic loss played out very differently depending on the child's age.</li>
+<li>The cohort effect: history allocates consequences by life stage, and path dependence amplifies small early differences into lifelong ones.</li>
+<li>Age, period and cohort cannot be separated mathematically, so any claim about what a generation is like should first ask whether people simply got older.</li>
+<li>Beck's individualization thesis holds that modern institutions actively require biographical solutions to systemic contradictions.</li>
+<li>Chetty's tax-record work shows the share earning more at thirty than their parents fell from about 90% for those born in 1940 to about 50% for those born in 1980.</li>
+<li>Risk devolution and the self-optimisation industry mesh together, recoding structural problems as skill problems you can buy your way out of.</li>
+<li>Seen through distributed systems, devolving risk is un-pooling rather than lightening the load: uncertainty stays, the hedge is lost, and total social cost rises.</li>
+</ol>
+</div>
 <div class="thinking">
 <h3>One layer deeper</h3>
 <details><summary>Does something being common automatically make it a public issue?</summary>

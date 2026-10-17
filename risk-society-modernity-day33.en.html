@@ -58,6 +58,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -149,6 +155,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>Physics and mathematics · An insurer can work out in advance which things it cannot insure, and the test is two mathematical properties</b>: Insurance works by pooling a large number of mutually unrelated small losses so that the average settles down — which requires the losses to be independent and the tail of the distribution not to be too heavy. What is running here is the last two features of the new risks from "you cannot taste what is in the water, so all you can do is read a report": one event strikes every policyholder at once across space and time (correlated), and the loss has no upper bound (heavy-tailed). Once both hold, pooling no longer shrinks the relative variation, the premium has to approach the maximum possible loss, and nobody can buy it. From that follows a conclusion you would not otherwise see: <b>"uninsurable" is neither rhetoric nor a political stance but a property you can compute in advance; any technology meeting those two conditions will see commercial insurance withdraw of its own accord, and continued operation then requires legislation to cap liability. That prediction has been tested — the American Price-Anderson Act of 1957 exists precisely because no insurance company would underwrite a nuclear plant, and it put a ceiling on liability for a nuclear accident.</b> <b>But this is where it stops holding</b>: that mathematics requires the loss to be writable as a number. Property and medical bills can be; the part Beck emphasizes — exposure across generations, whether you can still live here — is not "hard to estimate", it is that no probability distribution is defined on that space at all. <b>So what carries over is why private insurance withdraws by itself; what does not carry over is how large the total loss to society is. The latter is not a harder number. It is not a number.</b></li>
 <li><b>Psychology · Given the same set of hazards, the ordering experts produce tracks annual fatalities and the ordering ordinary people produce does not</b>: In 1987 Paul Slovic reviewed a method in <i>Science</i>: have people rate dozens of hazards, then factor-analyse the ratings, and two dimensions fall out — dread (uncontrollable, catastrophic, inequitably distributed) and the unknown (imperceptible, new, not understood by science). Lay orderings track those two dimensions. What is running here is the mechanism from "you cannot taste what is in the water, so all you can do is read a report": the hazard is below the senses, so the quantity "how dangerous" exists only by way of a knowledge system. From that follows a conclusion you would not otherwise see: <b>the claim that the public cannot handle numbers is a misreading — the two sides are not at different precisions on one quantity, they are measuring two different quantities. So piling more numbers on the public should not narrow the disagreement, because numbers change the experts' quantity, while lay ratings contain "uncontrollable" and "not understood", and what would move those is institutional conduct: who can halt it, who answers when it goes wrong.</b> <b>But this is where it stops holding</b>: what Slovic measured was perceived ordering of a given list on a questionnaire — not behaviour, and not trust in institutions. The farmers in "the experts said the ban would last three weeks; it ran for twenty-six years" are precisely not on those two axes: they did not dispute the magnitude of the hazard from caesium, they were judging the institution's conduct. <b>So what carries over is that the two sides are not measuring the same quantity; what does not carry over is assigning lay judgement wholesale to perceptual dimensions.</b></li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 Ten takeaways</h3>
+<ol class="takeaways">
+<li>In Risk Society, Ulrich Beck argued that industrial society fights over sharing out goods, while risk society also fights over sharing out bads.</li>
+<li>The new risks are manufactured by technical decisions, invisible to the senses, and unbounded across borders and generations.</li>
+<li>With hazards you cannot sense, whether you have been harmed is something experts and paperwork must establish, not something you can know yourself.</li>
+<li>In post-Chernobyl Ukraine, people had to master dose units and diagnoses to claim a recognized status as victims, which Adriana Petryna calls biological citizenship.</li>
+<li>The claim that smog is democratic is contested: environmental inequality research keeps finding exposure steeply skewed toward poor and minority communities.</li>
+<li>A 1986 ban on Cumbrian sheep was announced for three weeks and lasted twenty-six years, because the forecast model assumed the wrong soil.</li>
+<li>Brian Wynne found that lay trust in science hinges less on the knowledge itself than on whether institutions admit error and respect local experience.</li>
+<li>Expert systems vouch for what we cannot check, and our verdict on a whole system comes mostly from access points like counters and consulting rooms.</li>
+<li>Challenger was lost through the normalization of deviance: each compliant sign-off shifted the baseline, so danger accumulated with no one to blame.</li>
+<li>Stating uncertainty as a numeric range barely dents trust while vague wording costs more; and correlated, heavy-tailed losses push private insurers out entirely.</li>
+</ol>
 </div>
 <div class="thinking">
 <h3>Going deeper</h3>

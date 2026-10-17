@@ -58,6 +58,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -152,6 +158,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>物理与数学 · 保险公司事先就算得出哪些东西它不能保，判据是两个数学性质</b>：保险的原理是把大量互不相关的小损失汇进一个池子，让平均数稳下来——这要求损失彼此独立，也要求分布的尾巴别太重。跑的是「你尝不出水里有什么」那节里新风险的后两条：一次事件跨时空同时命中所有投保人（相关），损失没有上界（重尾）。两条一满足，汇总就不再让相对波动变小，保费必须逼近最大可能损失，没人买得起。由此推出一个原本看不出的结论：<b>「不可保险」不是修辞也不是政治态度，是事先算得出的性质；凡符合这两条的技术，商业保险会自己退场，要继续运营就得由立法把责任截断。这条预测有验证——1957 年美国的《普莱斯—安德森法》正是因为没有保险公司肯承保核电站才立的，它给核事故责任设了上限。</b><b>但这里不成立</b>：那套数学要求损失能写成一个数。财产和医疗费写得出来；贝克强调的那部分——几代人的暴露、还能不能住这儿——不是「很难估」，是概率分布根本没定义在那个空间上。<b>所以借得过来的是「为什么私人保险会自己退场」，借不过来的是「社会承担的总损失有多大」：后者不是更难算的数，它不是数。</b></li>
 <li><b>心理学 · 同一批危险，专家排出来的顺序跟年死亡人数走，普通人排出来的不跟</b>：1987 年斯洛维克（Paul Slovic）在《科学》上综述过一套做法：让人给几十种危险打分再做因子分析，析出两个维度——「可怕程度」（不可控、灾难性、分布不公）和「未知程度」（感觉不到、新、科学也说不清）。普通人的排序跟这两个维度走。跑的是「你尝不出水里有什么」那节的机制：危险感官测不到，「有多危险」这个量只能经由一套知识系统才存在。由此推出一个原本看不出的结论：<b>所谓「公众不懂数字」是误判——两边不是同一个量上的精度差，是两个不同的量；于是往公众头上加数字不该缩小分歧，因为数字改的是专家那个量，而公众打的分里含「不可控」和「说不清」，那要改的是制度举止：谁能叫停它、出事谁负责。</b><b>但这里不成立</b>：斯洛维克测的是问卷上对一张给定清单的感知排序，不是行为，也不是对机构的信任。「专家说禁令管三周」那节的农民恰恰不在这两个轴上：他们对铯的危害量级没有异议，判断的是机构的举止。<b>所以借得过来的是「两边量的不是同一个量」，借不过来的是把公众的判断整体归进感知维度。</b></li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 十条要点</h3>
+<ol class="takeaways">
+<li>贝克在《风险社会》里提出，工业社会争的是好东西怎么分，风险社会还要争坏东西怎么分。</li>
+<li>新风险有三个特点：由技术决策制造出来、感官察觉不到、跨越国界和世代无处可躲。</li>
+<li>感官测不到的危险面前，「我受害了吗」要靠专家知识和文件去确立，自己无从知道。</li>
+<li>切尔诺贝利之后的乌克兰，人们得学会剂量和诊断门道，才能换来受害身份，这叫生物学公民。</li>
+<li>「烟雾是民主的」争议很大：环境不平等研究一再发现，污染暴露其实高度向穷人和少数族群倾斜。</li>
+<li>1986 年英国坎布里亚的羊禁令号称管三周，因为模型用错了土壤，实际拖了二十六年。</li>
+<li>布赖恩·温发现，公众信不信科学，看的不是知识内容，而是机构肯不肯认错、肯不肯尊重当地经验。</li>
+<li>吉登斯指出专家系统替人担保看不见的事，人们对它的判断主要来自柜台、诊室这类接入点。</li>
+<li>挑战者号失事源于偏离的正常化：每次合规放行都挪远一点基线，危险累加出来却无人可归责。</li>
+<li>用数值区间坦白不确定性只让信任略降；损失相关又重尾的技术，商业保险会自行退场。</li>
+</ol>
 </div>
 <div class="thinking">
 <h3 data-tts="553b19a7cc82e97e">深入思考</h3>

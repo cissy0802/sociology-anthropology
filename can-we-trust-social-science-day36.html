@@ -58,6 +58,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -152,6 +158,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>物理与数学 · 2019 年，一公斤被重新定义成一个常数，不再是巴黎郊外那根铁柱子</b>：一百三十年里，一公斤的定义就是巴黎近郊那块铂铱合金圆柱，各国砝码拿它当准。问题是它会变——跟副本比，百年里漂了几十微克。2019 年起公斤改由普朗克常数定义，这个数不随地点、年代、谁来量而变。跑的是「最健康的地方，报告的病最多」那节的机制：跨时跨地要比得成立，先得有一把不跟着比较对象漂的尺子。由此推出一个原本看不出的结论：<b>社会科学缺的不是统计而是可移植的单位，所以跨国信任排名的可比性问题加样本加不出来；反过来，挂上了物理锚的社会指标（寿命、识字、受教育年数）跨国比较相对站得住，靠打分量表的只能当线索。</b><b>但这里不成立</b>：物理学能钉住常数，是因为它可以不管人怎么感觉就把单位定下来；痛苦、公平感这类量定义里就含主观，没有量表之外的黄金标准可钉。<b>借得过来的是「没有共同单位就没有跨组比较」，借不过来的是「都该换成客观指标」——真正主观的东西换掉就没了。</b></li>
 <li><b>育儿与教育 · 一条十二世纪的律法，把以色列的班级规模变成了一场天然抽签</b>：迈蒙尼德在十二世纪写下一条规矩：一个班超过四十人就分班，它至今还在以色列的小学里执行。于是年级四十人的学校只开一个大班，四十一人的劈成两个小班——多出来那一个孩子跟别人没什么两样，却把两边分进了完全不同的班级规模。1999 年 Angrist 与 Lavy 用这个门槛估了班级规模对成绩的影响。跑的是「同一批家庭抽签搬家」那节的机制：因果这关过不过，看世上有没有一个跟人无关的动作替你分了组。由此推出一个原本看不出的结论：<b>你能在文献里查到答案的育儿问题，不是最重要的那些，而是恰好卡在某条制度门槛上的——入学月份、班额上限、摇号入学；「要不要多陪他读书」这种没人替你分组的，无论多要紧都只有相关性可看。</b><b>但这里不成立</b>：门槛给出的因果量只对「卡在门槛附近被分开的那批孩子」成立，四十人和四十一人之间的效应推不到十五人和三十人之间。<b>借得过来的是「分组动作决定了哪些问题可答」，借不过来的是「答了就能用在你家」。</b></li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 十条要点</h3>
+<ol class="takeaways">
+<li>阿马蒂亚·森发现，寿命最长的喀拉拉邦自报疾病最多，因为人要先把一种状态认成「病」才会报告。</li>
+<li>把模糊概念换成可记录的数叫操作化，追问这个数是否仍是原来那个东西叫构念效度，后者更要命。</li>
+<li>Glaeser 等人的实验显示，答「多数人可以信任」的人自己更守信，却不更愿意先把钱交出去。</li>
+<li>让所有人给同几个虚构人物打分，分差就暴露了尺子的差，自评据此校正后才能跨人比较。</li>
+<li>「搬向机会」用抽签发住房券避开选择性偏差，搬家时不满十三岁的孩子成年后收入高出约三成。</li>
+<li>「效应」必须补上对谁、多久之后、量哪个后果；同一份数据交给二十九个团队，交回的是一段区间。</li>
+<li>Henrich 等人指出，顶级心理学期刊的被试 96% 来自西方工业化国家，并称之为 WEIRD 样本。</li>
+<li>WEIRD 论证的头号例子缪勒-莱尔错觉，2025 年被重审后，「木匠世界」解释几乎站不住了。</li>
+<li>最后通牒博弈里「超公平出价被拒」要靠在村子里住过的人才读得懂，数字只告诉你哪里不一样。</li>
+<li>迈蒙尼德的四十人分班规矩造出一场天然抽签，能查到因果答案的育儿问题多半恰好卡在某条制度门槛上。</li>
+</ol>
 </div>
 <div class="thinking">
 <h3 data-tts="17afc9e621e061ec">深入思考</h3>

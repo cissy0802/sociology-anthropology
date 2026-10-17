@@ -58,6 +58,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -138,6 +144,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>分布式系统与 AI · 观测本身要花钱</b>：一套跑在很多台机器上的服务，要查清一个请求经过了哪些环节，得给它带上追踪记录。全量记录太贵——拖慢响应、产生海量数据，所以工程上只抽一小部分样本。而一旦为了逮住某个罕见故障把采样率调高，系统的时延和资源占用本身就变了，你测到的已经不是原来那个系统。「写的人是谁，会留在写出来的东西里」那节的机制正是这个形状：观察者一进场，场就不是原来的场了。由此能推出一个原本看不出的结论：<b>「先把监控加得更细再查问题」这个默认顺序，对某一类故障是自我否定的——观测精度越高，被观测的对象离原状越远</b>；因此有些问题只能靠事后的痕迹（残缺日志、崩溃现场的内存快照）反推。<b>但这里不成立</b>：机器上的扰动是资源竞争，能用毫秒和字节量出来，服务器也不知道自己在被观察、不会为你表演；田野里的人知道你在看，会调整<b>给你看什么</b>，这是有意图的，量不成开销。反过来还有一条：长期居留会让这种调整衰减，人会习惯你；采样率调高一个月，服务器不会慢慢适应。</li>
 <li><b>物理与数学 · 层次不能靠精度爬上去</b>：统计物理里，同一团气体可以在两个层次上描述——微观是每个分子的位置和速度，宏观是温度、压强、熵。关键在于「温度」这个量在微观层次上根本不存在：单个分子没有温度。「眨眼和使眼色，摄像机拍下来一模一样」那节说的正是这件事：薄描和深描不是详略之分，是层次之分。由此能推出一个原本看不出的结论：<b>把行为记录得更精确并不会自动逼近意义，两者不在同一条精度轴上</b>——把采样频率和传感器分辨率再提一个数量级，也替代不了对情境的了解，就像分子位置测得再准也不会自己冒出「温度」。<b>但这里不成立</b>，而且失配的方向很要命：物理里从微观到宏观有一座严格可推导的桥，温度确实是微观量的某种平均；使眼色的意义却不是眼皮运动的函数——同一个动作在不同社群里可以意思相反，桥不在系统内部，在人们共享的约定里。这个类比只给得出「层次不可互换」那一半，给不出「上层可由下层导出」那一半，而后者恰恰是最常被套到社会科学头上的期待。</li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 十条要点</h3>
+<ol class="takeaways">
+<li>Malinowski 1922 年立下规矩：住进村子、学当地话、一住一两年，这就是参与观察。</li>
+<li>参与观察要抓「日常生活里的不可测量者」，比如饭怎么分、吵完架怎么和好，问卷上没有这种格子。</li>
+<li>参与观察要求同时做到两件互相拆台的事：近到别人不再为你调整，又远到你还记得什么值得记下。</li>
+<li>Whyte 在波士顿街角混了三年多，发现保龄球分数跟各人在群体里的位置对得上，打球的人自己都不知道。</li>
+<li>民族志是单点、长期、深度的个案，擅长回答「原来是这么运转的」，不擅长回答「在多大比例的人身上成立」。</li>
+<li>眼皮合一下可以是抽动、使眼色、模仿或排练，只记动作是薄描，写出是哪件事才是深描。</li>
+<li>Geertz 分析巴厘斗鸡：下注最大的比赛赌的不是钱而是地位，同一笔钱在深描里是一次公开站队。</li>
+<li>深描没有明显的证伪办法，《写文化》曾借此批评斗鸡一文，深描给出的只是可被挑战的候选解释。</li>
+<li>Malinowski 日记 1967 年出版后，学科转向反身性：观察者的身份、经费和进场路径本身就是数据。</li>
+<li>化名在几百人的小镇上保护不了任何人，因为描述本身就是身份证；彻底不介入的观察者也并不存在。</li>
+</ol>
 </div>
 <div class="thinking">
 <h3 data-tts="ba41c55e3c7c28df">深入思考</h3>

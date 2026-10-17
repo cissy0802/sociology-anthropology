@@ -58,6 +58,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -132,6 +138,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>复杂性科学 · 给路网多修一条路，所有人可能都变慢</b>：1968 年 Dietrich Braess 证明了一个反常结果——在每个司机各自选最快路线的网络里，新增一条捷径可以让所有人的通行时间都变长，因为它改变了每个人的最优选择，把车流挤进同几段路。跑的是「同一张文凭」那节的位置性机制：<b>当每个人的收益取决于相对位置，个体最优叠加起来不等于集体更好</b>。由此推出一个原本看不出的结论：<b>「多给名额」和「结果更好」之间没有必然联系，得分开测</b>——扩招之后该看的不是入学人数，是招聘方的区分器有没有往上挪（学位之外的年限、项目、实习要求在广告里的占比）。<b>但这里不成立</b>：Braess 那套里通行时间是客观可测的物理量，谁都同意快就是好，所以「社会最优配置」是能算出来的一个点。文凭赛跑里「更好」本身由排名定义，没有独立于排名的客观量——工程里能算出的那个最优解，这里根本不存在。</li>
 <li><b>分布式系统与 AI · 模型学会的是一直被奖励的东西，不是你想教的那条</b>：图像分类器把哈士奇判成狼，事后查出来它看的是背景里的雪，因为训练集里狼的照片多半在雪地（Ribeiro 等 2016 年讲模型解释那篇里的著名例子）；医学影像模型被发现按扫描仪型号或图上的标尺记号下判断，换一家医院就崩。这类毛病叫捷径学习。跑的是「铃一响就换科目」那节的机制：<b>被反复奖励的那条才是真正被教会的那条，而它常常不在课程表上</b>。由此推出一个原本看不出的结论：<b>「加数据、加算力、把课讲得更用心」这一类投入不改变已经学到的捷径，只有改奖励结构才改得动</b>；而且有个可做的检验——把伴随变量打乱（换背景、换扫描仪、换一种没练过的考法）之后成绩骤降，就说明学到的是伴随规律。<b>但这里不成立</b>：模型没有立场，不会因为看穿了捷径而反抗。Willis 跟的那批男生看穿了学校在筛人、公开对着干，而正是那套对着干把他们送进了车间。被优化的对象有能动性时，能动性会改掉再生产的路径却不保证改掉终点——这一层在优化系统里没有对应物。</li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 十条要点</h3>
+<ol class="takeaways">
+<li>Lareau 跟踪 12 户家庭发现，中产的协作培养恰好对上学校和医院的期待，工人家庭的自然成长则对不上。</li>
+<li>同一种向权威提要求的行为，在机构眼里是会来事还是没规矩，判定权在机构而不在家庭。</li>
+<li>Bourdieu 和 Passeron 统计，1961–62 学年法国高级职员子女上大学的机会约为工人子女的 42 倍。</li>
+<li>所有人考同一张卷子，学校就把出身译成才能、再译成凭本事，落选者把结果算到自己头上，这叫误识。</li>
+<li>文化资本对成绩确有可测效应，但普遍小于再生产理论的预期，各国差别也很大。</li>
+<li>Anyon 在新泽西五所小学发现，阶层越高，「做对功课」越从照步骤做转向自主分析、自负其责。</li>
+<li>隐性课程每天教的不是内容，而是在什么样的权威关系里做事才算做对。</li>
+<li>Willis 跟踪的工人阶级男孩看穿并反抗学校，正是这份反抗把他们送进了车间：再生产不需要人相信它。</li>
+<li>皮格马利翁效应复制得并不顺，元分析效应很小，「期望能大幅抬高智力」没站住。</li>
+<li>文凭有位置性：人人多念几年排序不变、成本齐涨，区分器往上挪一层，筛人从未停止。</li>
+</ol>
 </div>
 <div class="thinking">
 <h3 data-tts="f5ef3672ccc39233">深入思考</h3>

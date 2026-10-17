@@ -58,6 +58,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -138,6 +144,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>分布式系统与 AI · 你只在放行的那一批身上看得到结果</b>：一套自动审批系统——放贷、风控、内容审核都一样——只有被它放行的样本才会长出「结果」这个字段；被拦下的那些，永远不知道原本会怎样。机器学习里管这叫<i>选择性标签问题</i>（selective labels）。跑的正是「被那么叫过之后，他开始按那个说法过日子」那节里门被关上那条通路：标签一落地就关掉了一部分未来，于是「后来果然出事了」里有一段是标签自己造出来的。由此能推出一个原本看不出的结论：<b>这类系统的线上指标会在模型完全没变的情况下自动变好</b>——它一边收窄放行面，一边只在放行面上给自己打分。准确率因此不能自证；要把模型的本事和回路的贡献分开，唯一的办法是留一小撮随机放行的样本，并为此付出真实代价；缺了这一撮，「先上线跑一段看效果」跑得越久越说明不了问题。<b>但这里不成立</b>：机器那侧的回路只走观测者的数据——一台被标成「高故障率」的机器不会因为被这么标就更容易坏。人这侧多出一条：被贴的人会重新理解自己。所以随机放行能把机器那侧的偏差修干净，在处理人的系统里却只修好一半——即便数据偏差完全消除，两组之间也不会归零，剩下那段是标签真的造出来的差别。</li>
 <li><b>演化生物学 · 那条线画在没有断口的地方</b>：加州有一类叫 Ensatina 的蝾螈，沿中央谷地两侧一路往南扩散，相邻族群之间都能交配繁殖；等两支在南端绕回来碰头，却几乎不能了。它们算不算同一个物种，没有事实答案——这叫<i>环状物种</i>。「同一件事换个人做，就从『闹着玩』变成了『出事』」那节说，越轨不在行为里，在规则被成功用上去这一步；物种边界同理，不在蝾螈身上，在分类规则里。能推出的不是「分类都是任意的」，恰恰相反：按能不能杂交划、按基因流划、按形态划会得到不同边界，而每一种在自己的用途里都好用。所以<b>「这个分类对不对」是个问错了的问题；能问也答得出的是「这条线是为哪个决定服务的」</b>。搬回本期：一个标签好不好，别问它准不准，问它在替谁的哪个决定省事——正好落在污名那节里 Link 和 Phelan 补的权力条件上。<b>但这里不成立</b>：生物学的边界之争有独立裁判——测基因流的数据不因分类学家怎么想而改变，所以「等更多数据来收口」走得通。社会分类没有这样的外部裁判：线一画上去，办事的人怎么写记录、雇主怎么筛简历都会跟着变，后面收上来的数据里已经含着这条线。等数据来解决争议，在这里是个循环。</li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 十条要点</h3>
+<ol class="takeaways">
+<li>越轨不是行为自带的性质，而是有人做了那件事、又有人成功把规则用到他身上之后的结果。</li>
+<li>越轨要数四种人：做了被抓的、做了没被抓的、被冤的、没事的；只研究被抓的，量到的是抓人流程。</li>
+<li>规矩常靠「道德事业家」推动才成为规矩，Becker 举的例子是 1937 年美国《大麻税法》。</li>
+<li>Cicourel 跟加州警察和缓刑官上班，发现办事人对「哪种孩子会变坏」的印象决定了写不写档案。</li>
+<li>标签视角的稳妥用法是分工：行为的后果归行为研究，「什么被记录成什么」归这副镜头。</li>
+<li>Lemert 区分初级越轨和次级越轨：后者是被处理之后围绕新身份重组生活，原因是社会反应本身。</li>
+<li>皮格马利翁实验合并后期望效应很小，约 0.14 个标准差，老师先和学生相处两周就基本消失。</li>
+<li>Rosenhan 的假病人研究经 Cahalan 2019 年查档后已不能再当证据用。</li>
+<li>芝加哥少年法庭随机分案的自然实验显示，被收押的孩子更难读完高中、成年后更常入狱。</li>
+<li>Goffman 区分已被知道和可能被知道的污名，Pager 的密尔沃基实验则显示一次毒品定罪让白人应聘者的回电率减半。</li>
+</ol>
 </div>
 <div class="thinking">
 <h3 data-tts="0116af80fb4d7f73">深入思考</h3>

@@ -55,6 +55,12 @@ header .pitch{margin-top:20px;font-size:0.97rem;color:#e08155;font-style:italic}
 .bigcat b{color:#eda07c;font-weight:600}
 footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;border-top:1px solid #33261d;margin-top:40px}
 @media(max-width:600px){header h1{font-size:1.55rem}.section{padding:22px 18px}.container{padding:16px 14px 40px}}
+.tk{margin:40px 0}
+.tk h3{color:#e08155;font-size:0.88rem;letter-spacing:2px;margin-bottom:12px;font-family:"SF Mono",Menlo,monospace}
+.takeaways{counter-reset:tk;list-style:none;margin:0;padding:0;border:1px solid rgba(224,129,85,0.3);border-radius:12px;background:rgba(224,129,85,0.04)}
+.takeaways li{counter-increment:tk;position:relative;margin:0;padding:11px 18px 11px 52px;border-top:1px solid rgba(224,129,85,0.12);font-size:0.93rem;line-height:1.75;color:#e6dacc}
+.takeaways li:first-child{border-top:none}
+.takeaways li::before{content:counter(tk,decimal-leading-zero);position:absolute;left:18px;top:12px;font-family:"SF Mono",Menlo,monospace;font-size:0.78rem;color:#e08155}
 </style></head><body>
 <div class="container">
 <header>
@@ -170,6 +176,21 @@ footer{text-align:center;padding:42px 0 12px;font-size:0.82rem;color:#a08b78;bor
 <li><b>Distributed systems and AI · designing yourself to be uncountable costs you bandwidth least and self-knowledge most</b>: censorship-resistant anonymity networks carry a class of modules called pluggable transports whose whole job is to make traffic look like something else, and peer-to-peer networks deliberately keep no enumerable central directory. This runs the mechanism from "Some people were never lost to the state": not hiding further away, but reshaping yourself so that the cost of counting exceeds the take. Which yields a conclusion you would not otherwise reach: <b>the hard price of such systems is internal observability — nothing outside can enumerate them, and neither can they enumerate themselves, so they cannot report trustworthy user counts and struggle with global consistency. "Harder to attack" and "harder to govern yourself" are two faces of one property, and you cannot take only one of them</b>. <b>But here it does not hold</b>: Zomia's friction comes from terrain, which is free and permanently there. Friction in a network is entirely designed and has to be maintained, and an adversary can reprice it by adding compute or changing the rules. So "distance itself gives shelter" simply fails here — stop maintaining it and it is gone the same day, whereas a mountain range does not flatten overnight.</li>
 <li><b>Medicine and clinical trials · push the measurable number to its limit and more people die</b>: type 2 diabetes care spent decades aimed at glycated haemoglobin, because it is measurable, comparable and can be written into a guideline. The ACCORD trial pushed it to the limit, with the intensive arm targeting a level below 6 percent. The trial was stopped early: at a median follow-up of 3.7 years, all-cause mortality was higher in the intensive arm (about 1.41 percent versus 1.14 percent per year), published in 2008. This runs the mechanism from "To count the trees properly, they replanted an entire forest": what got selected was a surrogate that can be checked remotely, while the link between it and the thing actually wanted — living longer — was assumed rather than measured. Which yields a conclusion you would not otherwise reach: <b>wherever a surrogate is in use, "the more fully the target is met, the better" fails systematically, and the thing worth spending money to measure is that unmeasured link between the indicator and the goal, not a still lower value of the indicator</b>. <b>But here it does not hold</b>: the local knowledge erased in Scott's cases is not retrievable by the centre and comes with no chance to roll back, whereas clinical medicine has randomised trials — ACCORD is precisely the mechanism by which this system caught its own error, and the guidelines did change afterwards. With a rollback-capable testing apparatus in place, his pessimistic conclusion does not follow.</li>
 </ul>
+</div>
+<div class="tk">
+<h3>📝 Ten takeaways</h3>
+<ol class="takeaways">
+<li>Foresters in eighteenth-century Prussia and Saxony used a standard tree to estimate timber volume, turning a forest into a budget line for the first time.</li>
+<li>The cheapest way to make the ledger accurate was not better measurement but remaking the forest into same-species, same-age rows.</li>
+<li>Monoculture's first rotation thrived, but the second yielded 20–30 percent less a century later, having used up soil capital the ledger never recorded.</li>
+<li>James C. Scott calls this mechanism legibility: usable state knowledge must be countable, comparable and checkable from a distant office.</li>
+<li>The 1849 Clavería decree in the Philippines assigned each household a surname from a catalogue of over sixty thousand, explicitly for registration, tax and conscription.</li>
+<li>Legibility also underpins public health, mass schooling, vaccination records and disaster relief: it is not a bad thing, but a costly one.</li>
+<li>A zeal strike, in which workers follow every rule to the letter, can collapse production, because written procedure runs on unwritten judgement.</li>
+<li>Scott names this local, situational, learned-by-doing knowledge mētis; harbour pilotage and West African intercropping are classic examples.</li>
+<li>Disaster like Tanzania's villagisation needs four conditions at once: simplification, confident certainty, power to impose and a society unable to resist.</li>
+<li>Whatever is used for extraction or assessment starts deforming towards the hard to measure, and Zomia's shifting cultivation and oral traditions may be just that.</li>
+</ol>
 </div>
 <div class="thinking">
 <h3>Going deeper</h3>
